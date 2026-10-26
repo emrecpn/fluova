@@ -65,7 +65,32 @@
     return best;
   }
 
-  const api = { assemble };
+  /* Single-task practice set ("drill"): N units of one task type, preferring unseen ones. Not a full test, so it
+     skips the full-test gate (each unit already passed the bank checks) and results show % correct, not a band. */
+  const DRILL = {
+    ctw: { n: 3, minutes: 7 }, daily_life: { n: 3, minutes: 6 }, academic: { n: 2, minutes: 12 },
+    choose_response: { n: 10, minutes: 5 }, conversation: { n: 3, minutes: 6 }, announcement: { n: 3, minutes: 5 }, talk: { n: 2, minutes: 10 },
+    build_sentence: { n: 10, minutes: 6 }, email: { n: 1, minutes: 7 }, discussion: { n: 1, minutes: 10 },
+    listen_repeat: { n: 1, minutes: 3 }, interview: { n: 1, minutes: 5 },
+  };
+  const SECTION_OF = { ctw: 'reading', daily_life: 'reading', academic: 'reading', choose_response: 'listening', conversation: 'listening',
+    announcement: 'listening', talk: 'listening', build_sentence: 'writing', email: 'writing', discussion: 'writing', listen_repeat: 'speaking', interview: 'speaking' };
+  function assembleDrill(bank, blueprint, opts) {
+    const task = opts.task, cfg = DRILL[task]; if (!cfg) return { error: 'unknown task ' + task };
+    const rand = rng(opts.seed >>> 0), exclude = new Set(opts.exclude || []);
+    let pool = bank.units.filter(u => u.task === task && (!opts.tier || opts.tier === 'any' || u.tier === opts.tier));
+    if (!pool.length) return { error: `no ${opts.tier || ''} ${task} units in the bank` };
+    const fresh = pool.filter(u => !exclude.has(u.id)), picked = [];
+    const take = list => { const l = list.slice(); while (l.length && picked.length < cfg.n) picked.push(l.splice(Math.floor(rand() * l.length), 1)[0]); };
+    take(fresh); if (picked.length < cfg.n) take(pool.filter(u => !picked.includes(u)));
+    const sec = SECTION_OF[task], d = blueprint.sections[sec];
+    const id = 'gen-' + task.replace(/_/g, '-') + '-' + (opts.seed >>> 0).toString(36);
+    return { test: { id, title: opts.title || `Practice set · ${opts.label || task}`, version: '1.0.0', license: 'CC-BY-SA-4.0', authors: ['Fluova contributors'], level: 'practice',
+      sections: [{ id: sec, name: d.name, minutes: cfg.minutes, ...(d.oneWay ? { oneWay: true } : {}), screens: picked.map(u => JSON.parse(JSON.stringify(u.screen))) }],
+      units: picked.map(u => u.id) }, repeats: picked.filter(u => exclude.has(u.id)).length, available: pool.length };
+  }
+
+  const api = { assemble, assembleDrill, DRILL };
   if (typeof window !== 'undefined') window.FluovaForm = api;
   if (typeof module === 'undefined' || require.main !== module) { if (typeof module !== 'undefined') module.exports = api; return; }
 

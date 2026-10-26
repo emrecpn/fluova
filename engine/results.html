@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Figtree:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="css/style.css?v=6">
-<script src="js/i18n.js?v=1"></script>
+<script src="js/i18n.js?v=2"></script>
 </head>
 <body>
 <div class="field" aria-hidden="true"><i></i><i></i><i></i></div>
@@ -76,7 +76,9 @@
   document.getElementById('formTitle').textContent = r.formTitle + ' · ' + when;
   document.getElementById('reviewLink').href = 'review.html?test=' + id;
 
+  const practice = r.level === 'practice';
   function card(name, s, overall) {
+    if (practice) return `<div class="scorecard"><div class="name" lang="en">${name}</div><div class="band">${Math.round((s.pct || 0) * 100)}%</div><div class="raw">${t('res.correctOf', { c: s.correct, t: s.total })}</div></div>`;
     const path = s.path ? ' · ' + t('res.path.' + s.path) : '';
     return `<div class="scorecard ${overall ? 'overall' : ''}">
       <div class="name" lang="en">${name}</div>
@@ -86,10 +88,18 @@
   }
   const blank = name => `<div class="scorecard"><div class="name" lang="en">${name}</div><div class="band">—</div><div class="raw">${t('res.notScored')}</div></div>`;
   document.getElementById('autoScores').innerHTML =
-    (r.reading ? card('Reading', r.reading) : '') + (r.listening ? card('Listening', r.listening) : '') + blank('Writing') + blank('Speaking');
+    (r.reading && !r.reading.missing ? card('Reading', r.reading) : '') + (r.listening && !r.listening.missing ? card('Listening', r.listening) : '') +
+    (practice ? '' : blank('Writing') + blank('Speaking'));
 
   let pn = '';
-  if ((r.reading && r.reading.path === 'easy') || (r.listening && r.listening.path === 'easy')) pn = t('res.easyNote');
+  // practice sets of Reading or Listening have nothing to say about Writing/Speaking
+  const hasWS = (r.writing && (r.writing.email || r.writing.discussion || (r.writing.buildSentence || []).length)) ||
+    (r.speaking && ((r.speaking.listenRepeat || []).length || (r.speaking.interview || []).length));
+  if (practice && !hasWS) ['[data-i18n="res.ws"]', '[data-i18n="res.wsP"]', '[data-i18n="res.wsHow"]', '#fbBox']
+    .forEach(q => { const n = document.querySelector(q); if (n) (n.closest('p') && q !== '#fbBox' && q !== '[data-i18n="res.ws"]' ? n.closest('p') : n).hidden = true; });
+  if (practice) { const sc = document.querySelector('[data-i18n="res.scale"]'); if (sc) sc.hidden = true; }
+  if (practice) pn = t('res.practiceNote');
+  else if ((r.reading && r.reading.path === 'easy') || (r.listening && r.listening.path === 'easy')) pn = t('res.easyNote');
   else if (r.reading && r.listening && r.reading.path === 'hard' && r.listening.path === 'hard') pn = t('res.hardNote');
   document.getElementById('pathNote').textContent = pn || t('res.adaptive');
 
@@ -105,7 +115,7 @@
   // Plain-text copy (English labels: meant for pasting into a feedback tool or sharing)
   const w = r.writing || {}, s = r.speaking || {}, none = '(blank)';
   let b = `===== FLUOVA ${id} — RESULTS =====\nDate: ${when}\n\n--- AUTO-SCORED ---\n`;
-  ['reading', 'listening'].forEach(k => { const x = r[k]; if (x) b += `${k[0].toUpperCase() + k.slice(1)}: band ${x.band.toFixed(1)} (${x.correct}/${x.total}, ${x.path || '-'})\n`; });
+  ['reading', 'listening'].forEach(k => { const x = r[k]; if (x && !x.missing && x.band != null) b += `${k[0].toUpperCase() + k.slice(1)}: band ${x.band.toFixed(1)} (${x.correct}/${x.total}, ${x.path || '-'})\n`; });
   b += '\n--- WRITING 1: BUILD A SENTENCE ---\n';
   (w.buildSentence || []).forEach((x, i) => { b += `${i + 1}) ${x.ok ? '[CORRECT]' : '[WRONG]'}  Mine: ${x.given || none}${x.ok ? '' : '  | Correct: ' + x.correct}\n`; });
   b += '\n--- WRITING 2: EMAIL ---\n' + (w.email ? w.email.trim() : none) + '\n';
@@ -206,7 +216,7 @@ Please do four things:
 4. A day-by-day plan ${date ? `until my test on ${date}` : 'for the next two weeks'}, about ${mins} minutes per day. Mix your drills, review of my mistakes, and full practice tests (I can take more at Fluova; each "New test" uses questions I have not seen).
 
 === SCORES ===
-${['reading', 'listening'].filter(k => r[k]).map(k => `${k[0].toUpperCase() + k.slice(1)}: band ${r[k].band.toFixed(1)} (${r[k].correct}/${r[k].total}${r[k].path ? ', ' + (r[k].path === 'hard' ? 'upper' : 'lower') + ' second module' : ''})`).join('\n')}
+${['reading', 'listening'].filter(k => r[k] && !r[k].missing && r[k].band != null).map(k => `${k[0].toUpperCase() + k.slice(1)}: band ${r[k].band.toFixed(1)} (${r[k].correct}/${r[k].total}${r[k].path ? ', ' + (r[k].path === 'hard' ? 'upper' : 'lower') + ' second module' : ''})`).join('\n')}
 
 === ACCURACY BY TASK AND QUESTION TYPE ===
 ${Object.entries(stats).map(([k, v]) => `${k}: ${v.ok}/${v.n}` + Object.entries(v.types).filter(([t]) => t !== 'word completion').map(([t, x]) => `\n   ${t}: ${x.ok}/${x.n}`).join('')).join('\n')}

@@ -731,7 +731,7 @@ function finishExam() {
   const reading = scoreSection('reading');
   const listening = scoreSection('listening');
   State.results = {
-    formId: State.form.id, formTitle: State.form.title, date: new Date().toISOString(),
+    formId: State.form.id, formTitle: State.form.title, date: new Date().toISOString(), level: State.form.level || 'real',
     reading, listening,
     details: { reading: collectDetails('reading'), listening: collectDetails('listening') },
     writing: collectWriting(), speaking: collectSpeaking(),

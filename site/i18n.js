@@ -65,7 +65,7 @@ window.FLUOVA_I18N = {
     path_2: "Review every answer",
     path_2p: "See the right option, the trap in each wrong one, and why.",
     path_3: "Practise weak tasks",
-    path_3p: "Short sets aimed at a single task type.",
+    path_3p: "Short timed sets of a single task type, built from questions you have not seen.",
     path_4: "Test day",
     path_4p: "You walk in already knowing how the real test feels.",
 
@@ -153,7 +153,7 @@ window.FLUOVA_I18N = {
     path_2: "Her cevabı incele",
     path_2p: "Doğru şıkkı, her yanlış şıktaki tuzağı ve nedenini gör.",
     path_3: "Zayıf görevlere çalış",
-    path_3p: "Tek bir görev tipine odaklanan kısa setler.",
+    path_3p: "Görmediğin sorulardan kurulan, tek görev tipine odaklanan kısa ve süreli setler.",
     path_4: "Sınav günü",
     path_4p: "Gerçek sınavın nasıl hissettirdiğini zaten bilerek girersin.",
 
@@ -236,7 +236,7 @@ window.FLUOVA_I18N = {
     path_2: "Revisa cada respuesta",
     path_2p: "Mira la opción correcta, la trampa de cada opción incorrecta y por qué.",
     path_3: "Practica tus puntos débiles",
-    path_3p: "Series cortas centradas en un solo tipo de tarea.",
+    path_3p: "Series cortas y cronometradas de un solo tipo de tarea, con preguntas que aún no has visto.",
     path_4: "El día del examen",
     path_4p: "Llegas sabiendo ya cómo se siente el examen real.",
     g2_label: "Pruébalo · Complete the Words",
