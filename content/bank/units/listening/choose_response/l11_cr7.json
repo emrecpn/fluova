@@ -1,0 +1,27 @@
+{
+ "id": "l11_cr7",
+ "task": "choose_response",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_cr7",
+  "audio": [
+   {
+    "text": "The printer on this floor is out of paper again.",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "There's a box in the supply closet.",
+   "I printed my essay last night.",
+   "This floor is the quietest one.",
+   "Paper is cheaper if you buy it online."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Problem → solution. B repeats the word \"printed\".",
+   "tr": "Sorun → çözüm. B \"printed\" ile kelime tekrarı."
+  }
+ }
+}

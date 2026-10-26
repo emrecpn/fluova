@@ -1,0 +1,50 @@
+{
+ "id": "ann_thesis_portal",
+ "task": "announcement",
+ "tier": "hard",
+ "topic": "graduate school",
+ "origin": "practice-02",
+ "screen": {
+  "type": "listening",
+  "title": "Announcement: New thesis portal",
+  "prompt": "Listen to an announcement for graduate students.",
+  "audio": [
+   {
+    "text": "Good afternoon, graduate students. Starting next month, theses will be submitted through the new online portal instead of by email. The portal checks your formatting automatically, so please allow extra time for corrections, because files that fail the check can't be submitted. Printed copies are no longer required, except in the architecture program, where students should still deliver two bound copies to the department office.",
+    "voice": "male:au"
+   }
+  ],
+  "questions": [
+   {
+    "id": "ann_thesis_portal_q1",
+    "stem": "What is changing?",
+    "options": [
+     "The formatting rules for theses",
+     "The deadline for submitting theses",
+     "The way theses are handed in",
+     "The number of copies every student prints"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Main change (paraphrase of \"submitted through the new online portal instead of by email\"). A: the rules are only checked, not changed.",
+     "tr": "Ana değişiklik (\"e-posta yerine çevrim içi portal\" parafrazı). A: kurallar değişmiyor, yalnızca kontrol ediliyor."
+    }
+   },
+   {
+    "id": "ann_thesis_portal_q2",
+    "stem": "What is implied about students who wait until the last day to submit?",
+    "options": [
+     "They will receive a lower grade for being late.",
+     "They will have to deliver two bound copies.",
+     "They will be allowed to send the thesis by email.",
+     "They may not have time to fix formatting problems."
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Inference from \"allow extra time for corrections\". B applies only to architecture students.",
+     "tr": "Çıkarım: \"düzeltmeler için fazladan zaman ayırın\". B yalnızca mimarlık öğrencileri için geçerli."
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "id": "p2_ecr7",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_ecr7",
+  "audio": [
+   {
+    "text": "What time does the bus leave?",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "Bus number twelve.",
+   "At the main gate.",
+   "In ten minutes.",
+   "It's very crowded."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "\"What time\" → a time. A repeats \"bus\".",
+   "tr": "\"What time\" → zaman. A \"bus\" kelimesini tekrar ediyor."
+  }
+ }
+}

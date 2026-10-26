@@ -1,0 +1,27 @@
+{
+ "id": "l11_cr1",
+ "task": "choose_response",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_cr1",
+  "audio": [
+   {
+    "text": "Didn't you say the study group was meeting in the library today?",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "It was, but they moved it to the student center.",
+   "Yes, the library closes at nine tonight.",
+   "I'd rather not join a new group this term.",
+   "No, I haven't been to the library yet."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "A natural reply saying the plan has changed. B repeats \"library\" but does not answer.",
+   "tr": "Planın değiştiğini söyleyen doğal yanıt. B \"library\" kelimesini tekrar edip soruyu yanıtlamıyor."
+  }
+ }
+}

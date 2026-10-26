@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>STT Lab — Speaking kayıt testi</title>
+<style>
+  :root{--bg:#f6f7fb;--card:#fff;--ink:#111827;--soft:#6b7280;--line:#e5e7eb;--acc:#4f46e5;--rec:#dc2626;--ok:#059669}
+  @media (prefers-color-scheme:dark){:root{--bg:#0f1220;--card:#171b2e;--ink:#eef0fa;--soft:#9aa3c0;--line:#2a3150;--acc:#818cf8;--rec:#f87171;--ok:#34d399}}
+  *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+  .wrap{max-width:820px;margin:0 auto;padding:24px 16px 80px}
+  h1{font-size:22px;margin:0 0 6px} .soft{color:var(--soft)} .small{font-size:13px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px 18px;margin:14px 0}
+  .row{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-top:10px}
+  button{font:inherit;font-weight:600;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:10px;padding:8px 14px;cursor:pointer}
+  button.primary{background:var(--acc);color:#fff;border-color:transparent}
+  button.rec{background:var(--rec);color:#fff;border-color:transparent}
+  button:disabled{opacity:.45;cursor:not-allowed}
+  .tag{font-size:12px;font-weight:700;padding:2px 8px;border-radius:999px;background:color-mix(in srgb,var(--acc) 15%,transparent);color:var(--acc)}
+  .done{color:var(--ok);font-weight:700}
+  .target{font-weight:600} .hidden{filter:blur(6px);user-select:none}
+  .readbox{background:var(--bg);border-radius:10px;padding:10px 12px;margin-top:6px}
+  .tr{margin-top:8px;font-size:13px;background:var(--bg);border-radius:8px;padding:8px 10px;white-space:pre-wrap}
+  .timer{font-variant-numeric:tabular-nums;font-weight:700}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>STT Lab — Speaking kayıt testi</h1>
+  <p class="soft">Amaç: aynı kayıtlar üzerinde <b>tarayıcı konuşma tanıması</b> (eski simülatörle birebir aynı ayar) ile <b>Whisper</b>'ı karşılaştırmak. Senaryo, ETS 2026 şartnamesindeki yapıya göre: tek senaryo, uzunluğu artan 7 cümle + aynı konuda 2 Interview sorusu.</p>
+  <div class="card small">
+    <b>Nasıl:</b> ① Chrome'da aç, mikrofon izni ver. ② Her maddede <i>Kaydet</i> → ekrandaki metni normal hızında, doğal bir şekilde sesli oku → <i>Durdur</i>. (İstersen önce <i>Dinle</i> ile örnek telaffuzu duyabilirsin.) ③ Interview maddelerinde soru değil, altındaki hazır cevap metni okunur (en fazla 60 sn). ④ En sonda <b>Sonuçları indir</b> — tek bir JSON dosyası İndirilenler'e iner. Hepsi ~6–8 dakika.
+    <div class="row"><button id="micBtn" class="primary">🎙 Mikrofonu aç</button><span id="micStatus" class="soft"></span></div>
+  </div>
+
+  <div class="card"><span class="tag">Senaryo</span>
+    <p style="margin:8px 0 0"><b>Kampüs kütüphanesi oryantasyonu.</b> Bir kütüphane görevlisi yeni öğrencilere bilgi veriyor. Ardından kütüphane kullanımı üzerine bir araştırma çalışması için kısa bir görüşme yapılıyor.</p>
+  </div>
+
+  <div id="items"></div>
+
+  <div class="card">
+    <div class="row"><button id="dlBtn" class="primary" disabled>⬇ Sonuçları indir (JSON)</button><span id="dlStatus" class="soft small"></span></div>
+  </div>
+</div>
+
+<script>
+const ITEMS = [
+  {id:"lr1", type:"lr", text:"Welcome to the main library."},
+  {id:"lr2", type:"lr", text:"Please show your student card at the front desk."},
+  {id:"lr3", type:"lr", text:"Quiet study rooms are on the third floor, near the elevators."},
+  {id:"lr4", type:"lr", text:"If you need help finding a book, ask a librarian at the information desk."},
+  {id:"lr5", type:"lr", text:"Laptops can be borrowed for up to four hours, but they must be returned before closing time."},
+  {id:"lr6", type:"lr", text:"Students who reserve a group study room online should arrive within fifteen minutes, or the reservation will be cancelled."},
+  {id:"lr7", type:"lr", text:"The interlibrary loan service, which allows you to request materials from other universities, usually takes about a week to process each request."},
+  {id:"iv1", type:"iv", text:"How often do you usually go to a library, and what do you do there?", seconds:60,
+   read:"I usually go to the library two or three times a week, mostly in the evenings after work. I like the quiet study rooms on the third floor, because it's much easier to focus there than at home. Sometimes I borrow books, but these days I mainly use the computers and the online databases. I also think the atmosphere helps, since everyone around me is working too."},
+  {id:"iv2", type:"iv", text:"Some people say university libraries will become less important because most information is now online. Do you agree or disagree? Explain why.", seconds:60,
+   read:"I disagree with that idea. It's true that most information is online, but finding reliable sources is getting harder, not easier. Librarians are trained to evaluate information, and they can show students how to search properly. In addition, libraries offer a quiet place to study, which many students don't have at home. So I think university libraries will change, but they will become even more important in the future."},
+];
+const results = {};
+let stream = null;
+
+// --- Eski simülatörle BİREBİR aynı tarayıcı STT oturumu (engine/js/audio.js) ---
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+function createSession(){
+  if(!SR) return null;
+  const r = new SR();
+  r.lang='en-US'; r.continuous=true; r.interimResults=true; r.maxAlternatives=1;
+  let finalText='', confSum=0, confN=0, endedEarlyAt=null; const t0=Date.now();
+  r.onresult = e => { let t=''; for(let i=0;i<e.results.length;i++){ t+=e.results[i][0].transcript+' '; if(e.results[i].isFinal){const c=e.results[i][0].confidence; if(c){confSum+=c;confN++;}} } finalText=t.replace(/\s+/g,' ').trim(); };
+  let started=false, stopping=false;
+  r.onend = () => { if(!stopping) endedEarlyAt=(Date.now()-t0)/1000; };
+  const result = () => ({transcript:finalText.trim(), confidence: confN?+(confSum/confN).toFixed(2):null, ended_early_at_s: endedEarlyAt});
+  return {
+    start(){ try{ r.start(); started=true; }catch(e){} },
+    stop(){ return new Promise(res=>{ if(!started) return res(result()); stopping=true; r.onend=()=>res(result()); try{ r.stop(); }catch(e){ res(result()); } setTimeout(()=>res(result()),1500); }); }
+  };
+}
+
+function speak(text){
+  speechSynthesis.cancel();
+  const u=new SpeechSynthesisUtterance(text); u.lang='en-US'; u.rate=0.95;
+  const v=speechSynthesis.getVoices().find(v=>/en-US/i.test(v.lang)); if(v) u.voice=v;
+  speechSynthesis.speak(u);
+}
+function blobToB64(b){ return new Promise(r=>{ const fr=new FileReader(); fr.onload=()=>r(fr.result.split(',')[1]); fr.readAsDataURL(b); }); }
+
+function render(){
+  const box=document.getElementById('items'); box.innerHTML='';
+  ITEMS.forEach((it,idx)=>{
+    const lr = it.type==='lr';
+    const el=document.createElement('div'); el.className='card'; el.id='card_'+it.id;
+    el.innerHTML = `<span class="tag">${lr?'Listen & Repeat '+(idx+1)+'/7':'Interview '+(idx-6)+'/2'}</span>
+      ${lr ? `<p class="target" id="t_${it.id}" style="margin:8px 0 0">${it.text}</p>`
+           : `<p class="soft small" style="margin:8px 0 4px">Soru: ${it.text}</p>
+              <div class="readbox"><div class="small soft" style="margin-bottom:4px">Bu metni sesli oku:</div><p class="target" id="t_${it.id}" style="margin:0">${it.read}</p></div>`}
+      <div class="row">
+        <button data-a="listen">🔊 Dinle</button>
+        <button data-a="rec" class="rec" disabled>● Kaydet</button>
+        <button data-a="stop" disabled>■ Durdur</button>
+        <span class="timer" id="tm_${it.id}"></span>
+        <span id="st_${it.id}" class="small"></span>
+      </div>
+      <div id="out_${it.id}"></div>`;
+    box.appendChild(el);
+    const q=s=>el.querySelector(`[data-a="${s}"]`);
+    q('listen').onclick=()=>speak(it.text);
+    let mr=null, chunks=[], sess=null, t0=0, tick=null;
+    q('rec').onclick=()=>{
+      if(!stream) return;
+      chunks=[]; mr=new MediaRecorder(stream); mr.ondataavailable=e=>e.data.size&&chunks.push(e.data);
+      sess=createSession(); mr.start(); if(sess) sess.start(); t0=Date.now();
+      q('rec').disabled=true; q('stop').disabled=false; document.getElementById('st_'+it.id).textContent='kayıtta…';
+      const limit = it.seconds||20;
+      tick=setInterval(()=>{ const s=(Date.now()-t0)/1000; document.getElementById('tm_'+it.id).textContent=s.toFixed(0)+' sn'; if(s>=limit) q('stop').click(); },250);
+    };
+    q('stop').onclick=async()=>{
+      if(!mr) return; clearInterval(tick); q('stop').disabled=true;
+      const secs=(Date.now()-t0)/1000;
+      const stopped=new Promise(r=>mr.onstop=r); mr.stop(); await stopped;
+      const stt = sess? await sess.stop() : {transcript:'',confidence:null};
+      const blob=new Blob(chunks,{type:mr.mimeType||'audio/webm'});
+      results[it.id]={id:it.id,type:it.type,target:it.read||it.text,question:it.read?it.text:undefined,seconds:+secs.toFixed(1),browser:stt,mime:blob.type,audio_b64:await blobToB64(blob)};
+      document.getElementById('st_'+it.id).innerHTML='<span class="done">✓ kaydedildi</span>';
+      document.getElementById('out_'+it.id).innerHTML=`<div class="tr"><b>Tarayıcı STT:</b> ${stt.transcript||'(boş)'}${stt.ended_early_at_s?`\n⚠ tanıma ${stt.ended_early_at_s.toFixed(1)} sn'de kendi kendine durdu`:''}</div><audio controls src="${URL.createObjectURL(blob)}" style="margin-top:6px;width:100%"></audio>`;
+      q('rec').disabled=false; q('rec').textContent='● Tekrar kaydet';
+      document.getElementById('dlBtn').disabled = Object.keys(results).length===0;
+      document.getElementById('dlStatus').textContent = Object.keys(results).length+'/'+ITEMS.length+' kayıt hazır';
+    };
+  });
+}
+render();
+
+document.getElementById('micBtn').onclick=async()=>{
+  const st=document.getElementById('micStatus');
+  if(!SR) st.textContent='⚠ Bu tarayıcıda Web Speech API yok — Chrome kullan.';
+  try{ stream=await navigator.mediaDevices.getUserMedia({audio:true}); st.innerHTML=(SR?'':'⚠ STT yok · ')+'<span class="done">✓ mikrofon açık</span>'; document.querySelectorAll('[data-a="rec"]').forEach(b=>b.disabled=false); }
+  catch(e){ st.textContent='Mikrofona erişilemedi: '+e.message; }
+};
+document.getElementById('dlBtn').onclick=()=>{
+  const data={created:new Date().toISOString(), ua:navigator.userAgent, items:ITEMS.map(i=>results[i.id]).filter(Boolean)};
+  const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([JSON.stringify(data)],{type:'application/json'}));
+  a.download='stt_lab_recordings.json'; a.click();
+  document.getElementById('dlStatus').textContent='İndirildi: stt_lab_recordings.json — Claude\'a "kayıtlar hazır" demen yeterli.';
+};
+</script>
+</body>
+</html>

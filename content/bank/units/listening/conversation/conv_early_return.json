@@ -1,0 +1,70 @@
+{
+ "id": "conv_early_return",
+ "task": "conversation",
+ "tier": "medium",
+ "topic": "bookstore",
+ "origin": "practice-02",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Returning a rented textbook",
+  "prompt": "Listen to a conversation between a student and a bookstore clerk.",
+  "audio": [
+   {
+    "text": "Hi, I rented this chemistry textbook, and I'd like to return it early.",
+    "voice": "female:gb"
+   },
+   {
+    "text": "Sure. Just so you know, early returns don't get a partial refund.",
+    "voice": "male:au"
+   },
+   {
+    "text": "That's fine. I found the e-book through the library, so I don't need the paper copy.",
+    "voice": "female:gb"
+   },
+   {
+    "text": "Okay. Hmm, there's some highlighting on a few pages. If there's too much, we charge a damage fee.",
+    "voice": "male:au"
+   },
+   {
+    "text": "It was already like that when I got it. I think it says so on my receipt.",
+    "voice": "female:gb"
+   },
+   {
+    "text": "Let me check. Yes, \"used, some highlighting.\" You're all set.",
+    "voice": "male:au"
+   }
+  ],
+  "questions": [
+   {
+    "id": "conv_early_return_q1",
+    "stem": "Why does the woman return the book early?",
+    "options": [
+     "She can use a digital version instead.",
+     "She wants some of her money back.",
+     "She has dropped the chemistry course.",
+     "The book has too much highlighting."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Reason (paraphrase of \"found the e-book\"). B contradicts \"no partial refund\", which she accepts.",
+     "tr": "Sebep (\"e-kitabı buldum\" parafrazı). B \"kısmi iade yok\" bilgisiyle çelişiyor; kadın bunu kabul ediyor."
+    }
+   },
+   {
+    "id": "conv_early_return_q2",
+    "stem": "Why does the woman mention her receipt?",
+    "options": [
+     "To ask the clerk for a partial refund",
+     "To show that the marks were already there",
+     "To prove that she rented the book",
+     "To check the last day for returns"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Function: the receipt shows the book was sold \"used, some highlighting\", so she avoids the damage fee.",
+     "tr": "İşlev: makbuz kitabın \"kullanılmış, biraz işaretli\" verildiğini gösteriyor; hasar ücretinden kurtuluyor."
+    }
+   }
+  ]
+ }
+}

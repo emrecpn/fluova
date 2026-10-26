@@ -1,0 +1,28 @@
+{
+ "id": "p2_ecr5",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_ecr5",
+  "audio": [
+   {
+    "text": "Who is your history teacher?",
+    "voice": "female:au"
+   }
+  ],
+  "options": [
+   "Professor Adams.",
+   "On Monday and Wednesday.",
+   "It is very interesting.",
+   "In room ten."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "\"Who\" → a person. B gives days.",
+   "tr": "\"Who\" → kişi. B günleri veriyor."
+  }
+ }
+}

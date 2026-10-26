@@ -1,0 +1,32 @@
+{
+ "id": "w11_disc",
+ "task": "discussion",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "writing",
+  "id": "w11_disc",
+  "kind": "discussion",
+  "minutes": 10,
+  "wordTarget": {
+   "en": "At least 100 words. State your opinion, support it, and add your own contribution to the discussion.",
+   "tr": "En az 100 kelime. Görüşünü belirt, destekle ve tartışmaya kendi katkını ekle.",
+   "es": "Al menos 100 palabras. Da tu opinión, justifícala y aporta algo propio a la discusión."
+  },
+  "prompt": "Your professor is teaching a class on urban studies. Write a post responding to the professor's question. Express and support your opinion, and make a contribution to the discussion in your own words.",
+  "professor": {
+   "name": "Okafor",
+   "post": "Some cities have closed their historic centers to private cars, allowing only pedestrians, bicycles and public transport. Supporters say this makes city centers cleaner and more pleasant; critics argue that it hurts local businesses and makes life harder for residents. Should more cities ban private cars from their historic centers? Why or why not?"
+  },
+  "students": [
+   {
+    "name": "Lin",
+    "post": "Yes. When my hometown closed its old town to cars, the streets became quieter and cafés put tables outside. More people came to walk around, so many shops actually did better than before."
+   },
+   {
+    "name": "Daniel",
+    "post": "I disagree. Older people and people with disabilities often rely on cars, and buses don't reach every street. A total ban punishes the people who have the fewest alternatives."
+   }
+  ]
+ }
+}

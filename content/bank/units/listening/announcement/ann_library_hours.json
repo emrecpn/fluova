@@ -1,0 +1,49 @@
+{
+ "id": "ann_library_hours",
+ "task": "announcement",
+ "tier": "easy",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "listening",
+  "title": "Announcement: Library hours",
+  "prompt": "Listen to an announcement in the library.",
+  "audio": [
+   {
+    "text": "Hello, students. The library will be open late this week for exams. It will close at midnight instead of ten. Group study rooms can be booked online for two hours at a time. Please keep your voices down on the quiet floors.",
+    "voice": "male:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "l11_ean_q1",
+    "stem": "Why will the library stay open late?",
+    "options": [
+     "Because students have exams",
+     "Because it is being cleaned",
+     "Because of a special event",
+     "Because new books arrived"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Reason.",
+     "tr": "Sebep."
+    }
+   },
+   {
+    "id": "l11_ean_q2",
+    "stem": "How can students reserve a study room?",
+    "options": [
+     "On the library website",
+     "At the front desk",
+     "By calling the library",
+     "By asking a teacher"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Detail (paraphrase): booked online.",
+     "tr": "Detay (parafraz): booked online."
+    }
+   }
+  ]
+ }
+}

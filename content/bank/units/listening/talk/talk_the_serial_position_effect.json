@@ -1,0 +1,87 @@
+{
+ "id": "talk_the_serial_position_effect",
+ "task": "talk",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "listening",
+  "title": "Academic Talk: The serial position effect",
+  "prompt": "Listen to part of a talk in a psychology class.",
+  "audio": [
+   {
+    "text": "Today I want to talk about something you've probably experienced without realizing it. Imagine I read you a list of twenty words and then ask you to write down as many as you can remember. Most people recall the first few words and the last few words quite well, but the words in the middle tend to disappear. Psychologists call this the serial position effect.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "So why does it happen? The words at the beginning get more rehearsal. When you hear the first word, you repeat it to yourself a few times, and that repetition helps move it into long-term memory. By the time the middle of the list arrives, you're trying to rehearse many words at once, so each one gets less attention. The words at the end are a different story. They're still sitting in short-term memory when you start writing, so you can simply read them off, so to speak.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "Here's the interesting part. If I make you wait thirty seconds and count backward before you write, the advantage for the final words disappears, but the advantage for the first words remains. That tells us two different memory systems are involved. So, practically speaking, when you study, try not to always start from the same page. Otherwise the middle chapters will always get the least attention.",
+    "voice": "male:gb"
+   }
+  ],
+  "questions": [
+   {
+    "id": "l11_ac1_q1",
+    "stem": "What is the talk mainly about?",
+    "options": [
+     "Why an item's place in a sequence affects how well it is remembered",
+     "How to write down long lists of words quickly",
+     "The difference between reading and listening to words",
+     "Why people forget information after thirty seconds"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main idea (paraphrase).",
+     "tr": "Ana fikir (parafraz)."
+    }
+   },
+   {
+    "id": "l11_ac1_q2",
+    "stem": "According to the professor, why are the first words remembered well?",
+    "options": [
+     "People repeat them to themselves more often.",
+     "They are still in short-term memory at the end.",
+     "They are usually shorter than other words.",
+     "People write them down first."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Detail (paraphrase): rehearsal. B is the explanation given for the last words.",
+     "tr": "Detay (parafraz): rehearsal. B son kelimeler için verilen açıklama."
+    }
+   },
+   {
+    "id": "l11_ac1_q3",
+    "stem": "What does the experiment with the thirty-second delay show?",
+    "options": [
+     "Different kinds of memory explain the two advantages.",
+     "Counting backward improves long-term memory.",
+     "The final words are always remembered best.",
+     "Short-term memory lasts longer than thirty seconds."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference: two different memory systems.",
+     "tr": "Çıkarım: iki farklı bellek sistemi."
+    }
+   },
+   {
+    "id": "l11_ac1_q4",
+    "stem": "Why does the professor mention starting from the same page?",
+    "options": [
+     "To apply the research to the students' own study habits",
+     "To explain why the middle of a list is easiest to recall",
+     "To suggest that textbooks are badly organized",
+     "To show that rehearsal is not important"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Purpose: to apply the research to how students study.",
+     "tr": "Amaç: araştırmayı öğrencilerin çalışmasına uygulamak."
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "id": "p2_hcr4",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_hcr4",
+  "audio": [
+   {
+    "text": "Should I print the report or just send it by email?",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "I sent you an email yesterday.",
+   "The report is about twenty pages.",
+   "Yes, you should do that.",
+   "Professor Kim prefers paper copies."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "An indirect answer to an either/or question (→ print it). C answers \"yes\" to a choice.",
+   "tr": "Seçim sorusuna dolaylı yanıt (→ yazdır). C seçim sorusuna \"evet\" diyor."
+  }
+ }
+}

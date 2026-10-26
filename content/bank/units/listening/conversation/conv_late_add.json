@@ -1,0 +1,66 @@
+{
+ "id": "conv_late_add",
+ "task": "conversation",
+ "tier": "medium",
+ "topic": "registration",
+ "origin": "practice-02",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Adding a course late",
+  "prompt": "Listen to a conversation between a student and a registrar.",
+  "audio": [
+   {
+    "text": "Hi, I'd like to add Introduction to Statistics, but the online system says the deadline has passed.",
+    "voice": "female:us"
+   },
+   {
+    "text": "That's right, the add period ended on Friday. You can still join if the instructor signs a late-add form, though.",
+    "voice": "male:us"
+   },
+   {
+    "text": "Oh, good. Do I just bring the form back here?",
+    "voice": "female:us"
+   },
+   {
+    "text": "Yes, but get it signed first. There's also a twenty-dollar late fee, which you pay at the cashier's office.",
+    "voice": "male:us"
+   },
+   {
+    "text": "Okay. I'll email Professor Grant this afternoon.",
+    "voice": "female:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "conv_late_add_q1",
+    "stem": "What is the woman's problem?",
+    "options": [
+     "She cannot log in to the online system.",
+     "She was charged a fee by mistake.",
+     "She missed the deadline to add a class.",
+     "She does not know which course to take."
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Problem (paraphrase of \"the deadline has passed\"). A borrows \"online system\".",
+     "tr": "Sorun (\"deadline has passed\" parafrazı). A \"online system\" ifadesini ödünç alıyor."
+    }
+   },
+   {
+    "id": "conv_late_add_q2",
+    "stem": "What will the woman probably do next?",
+    "options": [
+     "Pay the late fee at the registrar's desk",
+     "Return the form without a signature",
+     "Wait until the next add period",
+     "Contact the instructor of the course"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Inference: she will email Professor Grant to get the signature. A names the wrong office (the fee is paid at the cashier's).",
+     "tr": "Çıkarım: imza için Profesör Grant'e e-posta atacak. A yanlış ofis (ücret kasada ödenir)."
+    }
+   }
+  ]
+ }
+}

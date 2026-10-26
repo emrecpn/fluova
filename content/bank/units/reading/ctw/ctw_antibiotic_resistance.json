@@ -1,0 +1,65 @@
+{
+ "id": "ctw_antibiotic_resistance",
+ "task": "ctw",
+ "tier": "hard",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "ctw",
+  "title": "Complete the Words: Antibiotic resistance",
+  "text": [
+   "Antibiotic resistance is not a new phenomenon, but its acceleration has alarmed public health authorities. Whenever {{r11c1}} are {{r11c2}} to {{r11c3}} antibiotic, {{r11c4}} few {{r11c5}} that {{r11c6}} to {{r11c7}} protective {{r11c8}} survive {{r11c9}} reproduce, {{r11c10}} replacing their vulnerable competitors. Because bacteria can also exchange genetic material directly, resistance that emerges in one species may spread rapidly to entirely unrelated organisms. Consequently, the unnecessary prescription of antibiotics, together with their widespread use in livestock, has substantially reduced the effectiveness of medicines once considered reliable."
+  ],
+  "items": [
+   {
+    "id": "r11c1",
+    "stub": "bact",
+    "answer": "eria"
+   },
+   {
+    "id": "r11c2",
+    "stub": "exp",
+    "answer": "osed"
+   },
+   {
+    "id": "r11c3",
+    "stub": "a",
+    "answer": "n"
+   },
+   {
+    "id": "r11c4",
+    "stub": "t",
+    "answer": "he"
+   },
+   {
+    "id": "r11c5",
+    "stub": "indiv",
+    "answer": "iduals"
+   },
+   {
+    "id": "r11c6",
+    "stub": "hap",
+    "answer": "pen"
+   },
+   {
+    "id": "r11c7",
+    "stub": "ca",
+    "answer": "rry"
+   },
+   {
+    "id": "r11c8",
+    "stub": "muta",
+    "answer": "tions"
+   },
+   {
+    "id": "r11c9",
+    "stub": "a",
+    "answer": "nd"
+   },
+   {
+    "id": "r11c10",
+    "stub": "grad",
+    "answer": "ually"
+   }
+  ]
+ }
+}

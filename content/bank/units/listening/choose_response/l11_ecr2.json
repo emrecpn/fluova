@@ -1,0 +1,27 @@
+{
+ "id": "l11_ecr2",
+ "task": "choose_response",
+ "tier": "easy",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_ecr2",
+  "audio": [
+   {
+    "text": "Is this seat taken?",
+    "voice": "male:gb"
+   }
+  ],
+  "options": [
+   "No, go ahead and sit down.",
+   "I took the bus today.",
+   "The seats are all blue.",
+   "It's a long class."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Yes/no + invitation. B repeats \"took\".",
+   "tr": "Evet/hayır + davet. B \"took\" tekrarı."
+  }
+ }
+}

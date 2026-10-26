@@ -1,0 +1,28 @@
+{
+ "id": "p2_hcr2",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_hcr2",
+  "audio": [
+   {
+    "text": "Didn't the deadline for the scholarship get extended?",
+    "voice": "male:gb"
+   }
+  ],
+  "options": [
+   "Only for students who applied last year.",
+   "Yes, the scholarship is very generous.",
+   "I'm extending my stay until Sunday.",
+   "The deadline was printed in bold."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "A qualified answer (only for some students). C reuses \"extend\" with another meaning.",
+   "tr": "Kısıtlı bir yanıt (yalnızca bazı öğrenciler için). C \"extend\" kelimesini başka anlamda kullanıyor."
+  }
+ }
+}

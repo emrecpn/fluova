@@ -1,0 +1,28 @@
+{
+ "id": "p2_cr8",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_cr8",
+  "audio": [
+   {
+    "text": "Where should I put these chairs after the event?",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "The event starts at seven.",
+   "Just stack them against the back wall.",
+   "About fifty people came.",
+   "Yes, the chairs are comfortable."
+  ],
+  "answer": 1,
+  "why": {
+   "en": "\"Where\" → a place. A gives a time.",
+   "tr": "\"Where\" → yer. A zaman veriyor."
+  }
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "id": "p2_hcr6",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_hcr6",
+  "audio": [
+   {
+    "text": "Weren't you supposed to be in Chicago this week?",
+    "voice": "male:au"
+   }
+  ],
+  "options": [
+   "Chicago is great in the summer.",
+   "My flight got canceled because of the storm.",
+   "Yes, I lived there for two years.",
+   "I'm supposed to call them later."
+  ],
+  "answer": 1,
+  "why": {
+   "en": "Explains why the plan changed. D reuses \"supposed to\".",
+   "tr": "Planın neden değiştiğini açıklıyor. D \"supposed to\" ifadesini tekrar ediyor."
+  }
+ }
+}

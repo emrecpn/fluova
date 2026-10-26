@@ -1,0 +1,49 @@
+{
+ "id": "ann_lounge_kitchen",
+ "task": "announcement",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "listening",
+  "title": "Announcement: Lounge kitchen",
+  "prompt": "Listen to an announcement in a student lounge.",
+  "audio": [
+   {
+    "text": "Attention, residents. The kitchen in this lounge will be closed tomorrow from nine to noon while the old refrigerator is replaced. Please take any food you've stored in the fridge home with you tonight. Anything left inside will be thrown away by the cleaning staff. The microwave on the second floor will still be available.",
+    "voice": "female:au"
+   }
+  ],
+  "questions": [
+   {
+    "id": "l11_an2_q1",
+    "stem": "What is the main purpose of the announcement?",
+    "options": [
+     "To tell residents about a temporary change to a shared space",
+     "To advertise a new microwave on the second floor",
+     "To ask residents to clean the refrigerator",
+     "To invite residents to a cooking event"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main purpose (paraphrase).",
+     "tr": "Ana amaç (parafraz)."
+    }
+   },
+   {
+    "id": "l11_an2_q2",
+    "stem": "What should residents do tonight?",
+    "options": [
+     "Take their food out of the refrigerator",
+     "Move the microwave to the second floor",
+     "Tell the cleaning staff about their food",
+     "Throw away their old containers"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Detail.",
+     "tr": "Detay."
+    }
+   }
+  ]
+ }
+}

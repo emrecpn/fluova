@@ -1,0 +1,27 @@
+{
+ "id": "p2_bs9",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "build a sentence",
+ "origin": "practice-02",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p2_bs9",
+  "personA": "Can you lend me your notes from Monday?",
+  "frame": [
+   "Sure, as long as",
+   null,
+   null,
+   null,
+   null,
+   "before the quiz."
+  ],
+  "answer": [
+   "you",
+   "give",
+   "them",
+   "back"
+  ],
+  "distractors": []
+ }
+}

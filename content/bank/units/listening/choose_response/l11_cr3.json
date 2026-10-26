@@ -1,0 +1,27 @@
+{
+ "id": "l11_cr3",
+ "task": "choose_response",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_cr3",
+  "audio": [
+   {
+    "text": "How long does the shuttle take to get downtown?",
+    "voice": "female:au"
+   }
+  ],
+  "options": [
+   "About twenty minutes, if traffic is light.",
+   "It leaves every half hour from here.",
+   "Downtown is really crowded today.",
+   "I usually ride my bike there."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "A \"how long\" question. B gives a frequency (a classic trap).",
+   "tr": "Süre sorusu. B sıklık veriyor (ETS'nin klasik tuzağı)."
+  }
+ }
+}

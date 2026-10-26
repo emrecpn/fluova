@@ -1,0 +1,28 @@
+{
+ "id": "w11_bs1",
+ "task": "build_sentence",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "w11_bs1",
+  "personA": "How was the workshop you went to on Saturday?",
+  "frame": [
+   "The",
+   null,
+   null,
+   null,
+   null,
+   null,
+   "really useful."
+  ],
+  "answer": [
+   "tips",
+   "that",
+   "the speaker",
+   "shared",
+   "were"
+  ],
+  "distractors": []
+ }
+}

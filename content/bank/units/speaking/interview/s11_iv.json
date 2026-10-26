@@ -1,0 +1,42 @@
+{
+ "id": "s11_iv",
+ "task": "interview",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "interview",
+  "id": "s11_iv",
+  "scenario": {
+   "title": "Research study: how students use their free time",
+   "place": "Campus research office",
+   "intro": "A researcher from the psychology department is interviewing students about how they spend their free time. Answer each question in about forty-five seconds."
+  },
+  "interviewerVoice": "female",
+  "questions": [
+   {
+    "level": "factual",
+    "text": "To start, could you tell me what you usually do in your free time during a typical week?",
+    "prep": 3,
+    "respSeconds": 45
+   },
+   {
+    "level": "experience",
+    "text": "Can you describe a time when you learned something useful outside of class? What happened?",
+    "prep": 3,
+    "respSeconds": 45
+   },
+   {
+    "level": "opinion",
+    "text": "Some universities give students fewer assignments so that they have more free time. Do you think this is a good idea? Why or why not?",
+    "prep": 3,
+    "respSeconds": 45
+   },
+   {
+    "level": "prediction",
+    "text": "How do you think the way students spend their free time will change over the next ten years?",
+    "prep": 3,
+    "respSeconds": 45
+   }
+  ]
+ }
+}

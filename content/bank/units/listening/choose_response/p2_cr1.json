@@ -1,0 +1,28 @@
+{
+ "id": "p2_cr1",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_cr1",
+  "audio": [
+   {
+    "text": "Do you know if the bookstore is still open?",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "I think it closes at six on Fridays.",
+   "No, I already bought all my books.",
+   "It's on the second floor of the library.",
+   "The books cost more than I expected."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "An indirect but relevant answer about opening hours. C answers \"where\", D repeats \"books\".",
+   "tr": "Açılış saatiyle ilgili dolaylı ama ilgili yanıt. C \"nerede\" sorusuna cevap veriyor, D \"books\" kelimesini tekrar ediyor."
+  }
+ }
+}

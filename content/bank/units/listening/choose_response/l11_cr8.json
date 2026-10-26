@@ -1,0 +1,27 @@
+{
+ "id": "l11_cr8",
+ "task": "choose_response",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_cr8",
+  "audio": [
+   {
+    "text": "Why did the professor cancel today's lecture?",
+    "voice": "male:gb"
+   }
+  ],
+  "options": [
+   "She's at a conference in Chicago.",
+   "The lecture is in the main hall.",
+   "Yes, she cancelled it this morning.",
+   "I'll take notes for you next time."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "A \"why\" question → a reason. C answers a \"why\" question with \"Yes\".",
+   "tr": "Neden sorusu → sebep. C \"Neden\" sorusuna \"Evet\" diyor."
+  }
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "id": "l11_hcr1",
+ "task": "choose_response",
+ "tier": "hard",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_hcr1",
+  "audio": [
+   {
+    "text": "I can't believe the bookstore is already out of the chemistry textbook.",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "Maybe the library has a copy on reserve.",
+   "I believe it's the latest edition.",
+   "Chemistry was my favorite class too.",
+   "The bookstore opens at eight."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "An indirect suggestion for a solution. B repeats \"believe\".",
+   "tr": "Dolaylı çözüm önerisi. B \"believe\" kelimesini tekrar ediyor."
+  }
+ }
+}

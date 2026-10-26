@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fluova — Practice test</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Figtree:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/style.css?v=6">
+<script src="js/i18n.js?v=1"></script>
+</head>
+<body>
+<div class="field" aria-hidden="true"><i></i><i></i><i></i></div>
+<div id="topbar" class="topbar"></div>
+<main id="stage" class="stage"></main>
+<div id="footer" class="footer-nav"></div>
+
+<script src="js/audio.js?v=9"></script>
+<script src="js/whisper.js?v=1"></script>
+<script src="js/engine.js?v=17"></script>
+<script src="js/loader.js"></script>
+<script>
+(function () {
+  const id = FluovaContent.testId();
+  function notReady(msg) {
+    document.getElementById('stage').innerHTML =
+      `<div class="card"><h2>${t('ex.notFound')}</h2><p>${t('ex.notFoundP', { file: '<code>content/tests/' + id + '.json</code>', msg: msg || '' })}</p>` +
+      `<p><a class="btn" href="index.html">← ${t('home')}</a></p></div>`;
+  }
+  FluovaContent.load(id).then(function (form) {
+    window.addEventListener('beforeunload', function (e) {
+      if (window.State && State.form && !State.results) { e.preventDefault(); e.returnValue = ''; }
+    });
+    startExam(form);
+  }).catch(function (e) { notReady(e.message); });
+})();
+</script>
+</body>
+</html>

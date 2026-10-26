@@ -1,0 +1,50 @@
+{
+ "id": "ann_fire_drill",
+ "task": "announcement",
+ "tier": "medium",
+ "topic": "residence safety",
+ "origin": "practice-02",
+ "screen": {
+  "type": "listening",
+  "title": "Announcement: Fire drill",
+  "prompt": "Listen to an announcement in a residence hall.",
+  "audio": [
+   {
+    "text": "Good morning, residents of Hall B. A fire drill is scheduled for tomorrow at ten a.m. When the alarm sounds, please leave by the nearest stairway, and do not use the elevators. Gather on the lawn across the street and wait until a staff member tells you it's safe to return. The drill should take about fifteen minutes. Thank you for your cooperation.",
+    "voice": "male:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "ann_fire_drill_q1",
+    "stem": "What is the purpose of the announcement?",
+    "options": [
+     "To report a fire in Hall B",
+     "To prepare residents for a safety exercise",
+     "To announce repairs to the elevators",
+     "To invite residents to an event on the lawn"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Purpose (paraphrase of \"fire drill\"). A takes \"fire\" literally; D misuses \"lawn\".",
+     "tr": "Amaç (\"fire drill\" parafrazı). A \"fire\" kelimesini gerçek yangın sanıyor; D \"lawn\" kelimesini yanlış kullanıyor."
+    }
+   },
+   {
+    "id": "ann_fire_drill_q2",
+    "stem": "What are residents told to do?",
+    "options": [
+     "Take the elevators to the ground floor",
+     "Wait outside until staff say they can return",
+     "Stay in their rooms for fifteen minutes",
+     "Meet in the lobby of Hall B"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail (paraphrase). A contradicts \"do not use the elevators\"; C misuses \"fifteen minutes\".",
+     "tr": "Ayrıntı (parafraz). A \"asansör kullanmayın\" ile çelişiyor; C \"on beş dakika\" bilgisini yanlış kullanıyor."
+    }
+   }
+  ]
+ }
+}

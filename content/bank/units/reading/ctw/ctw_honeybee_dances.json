@@ -1,0 +1,65 @@
+{
+ "id": "ctw_honeybee_dances",
+ "task": "ctw",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "ctw",
+  "title": "Complete the Words: Honeybee dances",
+  "text": [
+   "Honeybees share information about food in a surprising way. When a {{r11a1}} finds a {{r11a2}} patch {{r11a3}} flowers, {{r11a4}} returns {{r11a5}} the {{r11a6}} and {{r11a7}} a {{r11a8}} dance {{r11a9}} the {{r11a10}} of the comb. The angle of the dance shows the direction of the food relative to the sun, and the length of the waggling run tells other bees how far they must fly. Researchers have found that bees can follow these signals even when the sun is hidden by clouds. This system allows a colony to send many workers to the best flowers within a few hours."
+  ],
+  "items": [
+   {
+    "id": "r11a1",
+    "stub": "for",
+    "answer": "ager"
+   },
+   {
+    "id": "r11a2",
+    "stub": "ri",
+    "answer": "ch"
+   },
+   {
+    "id": "r11a3",
+    "stub": "o",
+    "answer": "f"
+   },
+   {
+    "id": "r11a4",
+    "stub": "i",
+    "answer": "t"
+   },
+   {
+    "id": "r11a5",
+    "stub": "t",
+    "answer": "o"
+   },
+   {
+    "id": "r11a6",
+    "stub": "hi",
+    "answer": "ve"
+   },
+   {
+    "id": "r11a7",
+    "stub": "perf",
+    "answer": "orms"
+   },
+   {
+    "id": "r11a8",
+    "stub": "sh",
+    "answer": "ort"
+   },
+   {
+    "id": "r11a9",
+    "stub": "o",
+    "answer": "n"
+   },
+   {
+    "id": "r11a10",
+    "stub": "wa",
+    "answer": "ll"
+   }
+  ]
+ }
+}

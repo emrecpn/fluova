@@ -1,0 +1,66 @@
+{
+ "id": "conv_practice_room",
+ "task": "conversation",
+ "tier": "medium",
+ "topic": "music building",
+ "origin": "practice-02",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Booking a practice room",
+  "prompt": "Listen to a conversation between a student and a music department assistant.",
+  "audio": [
+   {
+    "text": "Excuse me, are any practice rooms free? I've got a piano exam on Monday.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "Not right now, I'm afraid. They're booked until eight. But you can reserve one for tomorrow morning on the department website.",
+    "voice": "female:au"
+   },
+   {
+    "text": "I tried that, but it said I need a music student account.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "Ah, students from other departments have to book in person. I can put your name down for nine tomorrow, if you like.",
+    "voice": "female:au"
+   },
+   {
+    "text": "That would be perfect, thanks.",
+    "voice": "male:gb"
+   }
+  ],
+  "questions": [
+   {
+    "id": "conv_practice_room_q1",
+    "stem": "Why does the man talk to the woman?",
+    "options": [
+     "He needs a place to prepare for an exam.",
+     "He wants to sign up for piano lessons.",
+     "He wants to open a music student account.",
+     "He hopes to move his exam to another day."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Purpose (paraphrase): a practice room before his piano exam. C borrows \"account\".",
+     "tr": "Amaç (parafraz): sınav öncesi çalışma odası. C \"account\" kelimesini ödünç alıyor."
+    }
+   },
+   {
+    "id": "conv_practice_room_q2",
+    "stem": "What can be inferred about the man?",
+    "options": [
+     "He already has a room booked for tonight.",
+     "He is not a student in the music department.",
+     "He prefers to practice in the evening.",
+     "He has an account on the department website."
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Inference: the website needs a music student account and \"students from other departments\" book in person. D contradicts the conversation.",
+     "tr": "Çıkarım: site müzik öğrencisi hesabı istiyor ve \"başka bölüm öğrencileri\" yüz yüze rezervasyon yapıyor. D konuşmayla çelişiyor."
+    }
+   }
+  ]
+ }
+}

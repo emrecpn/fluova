@@ -1,0 +1,65 @@
+{
+ "id": "conv_housing_office",
+ "task": "conversation",
+ "tier": "hard",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Housing office",
+  "prompt": "Listen to a conversation between a student and a housing officer.",
+  "audio": [
+   {
+    "text": "Hi, I submitted a maintenance request for my heater four days ago, and nobody has come.",
+    "voice": "male:au"
+   },
+   {
+    "text": "I'm sorry about that. Let me check. It looks like your request was marked as low priority.",
+    "voice": "female:us"
+   },
+   {
+    "text": "Low priority? It's been below freezing every night.",
+    "voice": "male:au"
+   },
+   {
+    "text": "That's our mistake, then. Heating problems in winter should be urgent. I'll change it now, and someone should be there this afternoon. In the meantime, I can lend you a portable heater from our office.",
+    "voice": "female:us"
+   },
+   {
+    "text": "That would help. Thanks.",
+    "voice": "male:au"
+   }
+  ],
+  "questions": [
+   {
+    "id": "l11_hcv2_q1",
+    "stem": "Why hasn't the heater been repaired?",
+    "options": [
+     "The request was given the wrong level of importance.",
+     "The maintenance staff are on vacation.",
+     "The man sent the request to the wrong office.",
+     "The heater needs parts that are not available."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Reason (paraphrase): low priority.",
+     "tr": "Sebep (parafraz): low priority."
+    }
+   },
+   {
+    "id": "l11_hcv2_q2",
+    "stem": "What is the woman's attitude toward the situation?",
+    "options": [
+     "She accepts responsibility and acts quickly.",
+     "She thinks the man is exaggerating.",
+     "She is unsure whether she can help.",
+     "She blames the maintenance staff."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inferring the speaker's attitude.",
+     "tr": "Tutum çıkarımı."
+    }
+   }
+  ]
+ }
+}

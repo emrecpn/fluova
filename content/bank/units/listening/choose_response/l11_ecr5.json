@@ -1,0 +1,27 @@
+{
+ "id": "l11_ecr5",
+ "task": "choose_response",
+ "tier": "easy",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_ecr5",
+  "audio": [
+   {
+    "text": "How was your math test?",
+    "voice": "female:gb"
+   }
+  ],
+  "options": [
+   "Better than I expected.",
+   "It's on Monday.",
+   "I really like math.",
+   "Yes, I took it."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "\"How did it go\" → an evaluation.",
+   "tr": "Nasıl geçti → değerlendirme."
+  }
+ }
+}

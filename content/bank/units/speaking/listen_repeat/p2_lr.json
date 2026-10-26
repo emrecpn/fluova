@@ -1,0 +1,26 @@
+{
+ "id": "p2_lr",
+ "task": "listen_repeat",
+ "tier": "medium",
+ "topic": "botanical garden",
+ "origin": "practice-02",
+ "screen": {
+  "type": "listen_repeat",
+  "id": "p2_lr",
+  "scenario": {
+   "title": "Botanical garden tour",
+   "place": "University botanical garden",
+   "intro": "You are visiting the university's botanical garden. A guide is giving instructions to visitors. Listen and repeat what the guide says."
+  },
+  "voice": "female",
+  "sentences": [
+   "Welcome to the botanical garden.",
+   "Please stay on the marked paths.",
+   "The tropical greenhouse is open until four.",
+   "Photos are allowed, but please do not touch the plants.",
+   "The tall trees near the pond were planted more than a century ago.",
+   "If you would like to learn more, our volunteers can answer questions at the visitor center.",
+   "Before you leave, remember that the seeds and small plants sold in our gift shop are grown by students in the university's horticulture program."
+  ]
+ }
+}

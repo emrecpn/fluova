@@ -1,0 +1,27 @@
+{
+ "id": "l11_hcr4",
+ "task": "choose_response",
+ "tier": "hard",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_hcr4",
+  "audio": [
+   {
+    "text": "I was hoping to get a refund for this course pack.",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "Do you still have your receipt?",
+   "The course starts next week.",
+   "I hope you enjoy the course.",
+   "It costs forty dollars."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "A question in response to a request (indirect answer). C repeats \"hope\".",
+   "tr": "Talebe karşı soru (dolaylı yanıt). C \"hope\" tekrarı."
+  }
+ }
+}

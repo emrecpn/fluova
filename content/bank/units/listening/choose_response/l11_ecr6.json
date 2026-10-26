@@ -1,0 +1,27 @@
+{
+ "id": "l11_ecr6",
+ "task": "choose_response",
+ "tier": "easy",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_ecr6",
+  "audio": [
+   {
+    "text": "Could you help me carry these boxes?",
+    "voice": "male:au"
+   }
+  ],
+  "options": [
+   "Of course. Where are they going?",
+   "The boxes are brown.",
+   "I carried them yesterday.",
+   "No, I don't have any boxes."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Request → agreement.",
+   "tr": "Rica → kabul."
+  }
+ }
+}

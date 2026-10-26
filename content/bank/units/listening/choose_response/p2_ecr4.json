@@ -1,0 +1,28 @@
+{
+ "id": "p2_ecr4",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_ecr4",
+  "audio": [
+   {
+    "text": "How was the soccer game?",
+    "voice": "male:au"
+   }
+  ],
+  "options": [
+   "It starts at four.",
+   "At the stadium.",
+   "I like soccer.",
+   "We won by two goals."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "\"How was\" → an evaluation. A gives a time.",
+   "tr": "\"How was\" → değerlendirme. A zaman veriyor."
+  }
+ }
+}

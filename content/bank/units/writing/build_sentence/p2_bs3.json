@@ -1,0 +1,27 @@
+{
+ "id": "p2_bs3",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "build a sentence",
+ "origin": "practice-02",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p2_bs3",
+  "personA": "What did the advisor say about the internship?",
+  "frame": [
+   "She explained",
+   null,
+   null,
+   null,
+   null,
+   "each week."
+  ],
+  "answer": [
+   "how many",
+   "hours",
+   "the internship",
+   "requires"
+  ],
+  "distractors": []
+ }
+}

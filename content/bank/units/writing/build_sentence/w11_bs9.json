@@ -1,0 +1,26 @@
+{
+ "id": "w11_bs9",
+ "task": "build_sentence",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "w11_bs9",
+  "personA": "Have you finished the reading for Thursday?",
+  "frame": [
+   "Not yet, but",
+   null,
+   null,
+   null,
+   null,
+   "by Wednesday."
+  ],
+  "answer": [
+   "I",
+   "will have",
+   "finished",
+   "it"
+  ],
+  "distractors": []
+ }
+}

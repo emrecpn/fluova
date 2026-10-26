@@ -1,0 +1,28 @@
+{
+ "id": "p2_hcr1",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_hcr1",
+  "audio": [
+   {
+    "text": "Are you going to Maya's presentation this afternoon?",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "She presented her research last semester.",
+   "I wouldn't miss it. She's been practicing all week.",
+   "It's in the afternoon, I think.",
+   "The room only holds about forty people."
+  ],
+  "answer": 1,
+  "why": {
+   "en": "Indirect \"yes\". A shifts the time; C just repeats \"afternoon\".",
+   "tr": "Dolaylı \"evet\". A zamanı kaydırıyor; C sadece \"afternoon\" kelimesini tekrar ediyor."
+  }
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "id": "p2_cr7",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_cr7",
+  "audio": [
+   {
+    "text": "The printer in the lab is out of paper again.",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "There's a box of paper in the supply closet.",
+   "I printed my essay yesterday.",
+   "The lab closes at nine tonight.",
+   "Yes, it's a brand-new printer."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Problem → solution. B repeats \"print\" without addressing the problem.",
+   "tr": "Sorun → çözüm. B \"print\" kelimesini tekrar ediyor ama soruna değinmiyor."
+  }
+ }
+}

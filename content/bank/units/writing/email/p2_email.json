@@ -1,0 +1,20 @@
+{
+ "id": "p2_email",
+ "task": "email",
+ "tier": "medium",
+ "topic": "online marketplace",
+ "origin": "practice-02",
+ "screen": {
+  "type": "writing",
+  "id": "p2_email",
+  "kind": "email",
+  "minutes": 7,
+  "wordTarget": {
+   "en": "Cover all three points in full sentences. Do not forget a closing.",
+   "tr": "Üç maddenin hepsini karşıla; tam cümleler kur. Kapanışı unutma.",
+   "es": "Cubre los tres puntos con oraciones completas. No olvides la despedida."
+  },
+  "prompt": "Write an email to the seller. In your email, do the following: (1) Explain what you ordered and what you received. (2) Describe why the difference matters for your course. (3) Suggest a way to solve the problem.",
+  "scenario": "You bought a used textbook from another student through your university's online marketplace. When the book arrived, it was a different edition from the one shown in the listing, and your instructor has said that students must use the edition in the listing because the page numbers and exercises are different."
+ }
+}

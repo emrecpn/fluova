@@ -1,0 +1,33 @@
+{
+ "id": "p2_disc",
+ "task": "discussion",
+ "tier": "medium",
+ "topic": "internships",
+ "origin": "practice-02",
+ "screen": {
+  "type": "writing",
+  "id": "p2_disc",
+  "kind": "discussion",
+  "minutes": 10,
+  "wordTarget": {
+   "en": "At least 100 words. State your opinion, support it, and add your own contribution to the discussion.",
+   "tr": "En az 100 kelime. Görüşünü belirt, destekle ve tartışmaya kendi katkını ekle.",
+   "es": "Al menos 100 palabras. Da tu opinión, justifícala y aporta algo propio a la discusión."
+  },
+  "prompt": "Your professor is teaching a class on higher education. Write a post responding to the professor's question. Express and support your opinion, and make a contribution to the discussion in your own words.",
+  "professor": {
+   "name": "Halvorsen",
+   "post": "Many universities now require students to complete an internship before they graduate. Supporters say internships teach practical skills that classes cannot. Others argue that a required internship is unfair to students who already work part-time or who cannot afford to accept an unpaid position. Should universities make an internship a graduation requirement? Why or why not?"
+  },
+  "students": [
+   {
+    "name": "Priya",
+    "post": "I think they should. My cousin did an internship at an engineering firm, and she said she learned more about teamwork in three months than in two years of group projects. Employers also expect some experience now, so a requirement protects students from graduating without any."
+   },
+   {
+    "name": "Marcus",
+    "post": "I disagree. I already work twenty hours a week to pay my rent, so an unpaid internship would mean losing my job. A requirement sounds fair, but it really helps students whose families can support them. Universities should encourage internships, not force them."
+   }
+  ]
+ }
+}

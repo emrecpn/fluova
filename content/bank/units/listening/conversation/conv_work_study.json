@@ -1,0 +1,66 @@
+{
+ "id": "conv_work_study",
+ "task": "conversation",
+ "tier": "hard",
+ "topic": "financial aid",
+ "origin": "practice-02",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Extra work-study hours",
+  "prompt": "Listen to a conversation between a student and a financial aid officer.",
+  "audio": [
+   {
+    "text": "Hi, I'm in the work-study program, and my manager at the library wants me to work more hours this month.",
+    "voice": "female:us"
+   },
+   {
+    "text": "Let's see. Your award covers about ten hours a week. If you go over that, the extra hours wouldn't be paid from work-study funds.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "So I'd just lose that money?",
+    "voice": "female:us"
+   },
+   {
+    "text": "Not necessarily. The library could pay you from its own budget, but your manager would have to approve that. Otherwise, you'd want to stay at ten.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "Okay. I'll ask her before I agree to anything.",
+    "voice": "female:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "conv_work_study_q1",
+    "stem": "What does the woman want to find out?",
+    "options": [
+     "How to apply for the work-study program",
+     "Why her manager reduced her hours",
+     "Whether she would be paid for extra hours",
+     "Where the library's budget office is located"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Purpose (paraphrase). B reverses the situation: the manager wants more hours.",
+     "tr": "Amaç (parafraz). B durumu tersine çeviriyor: yönetici daha fazla saat istiyor."
+    }
+   },
+   {
+    "id": "conv_work_study_q2",
+    "stem": "What is the man's view of the extra hours?",
+    "options": [
+     "They are not allowed under any circumstances.",
+     "They are the best way to increase her award.",
+     "They will be paid automatically from her award.",
+     "They are possible only if the library agrees to pay."
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Attitude/inference: \"not necessarily … the library could pay you … your manager would have to approve\". A is too extreme; C contradicts him.",
+     "tr": "Tutum/çıkarım: \"illa değil… kütüphane ödeyebilir… yönetici onaylamalı\". A aşırı; C onunla çelişiyor."
+    }
+   }
+  ]
+ }
+}

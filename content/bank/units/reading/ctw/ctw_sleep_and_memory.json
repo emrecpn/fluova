@@ -1,0 +1,65 @@
+{
+ "id": "ctw_sleep_and_memory",
+ "task": "ctw",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "ctw",
+  "title": "Complete the Words: Sleep and memory",
+  "text": [
+   "Sleep does much more than help the body rest. During {{r11b1}} sleep, {{r11b2}} brain {{r11b3}} the {{r11b4}} of {{r11b5}} day {{r11b6}} moves {{r11b7}} information {{r11b8}} long-term {{r11b9}}. In {{r11b10}} well-known study, students who slept after learning a list of words remembered more of them the next morning than students who stayed awake. Scientists believe that the sleeping brain also removes weaker connections, which makes useful memories easier to find later. For this reason, staying up all night before an exam may actually harm performance."
+  ],
+  "items": [
+   {
+    "id": "r11b1",
+    "stub": "de",
+    "answer": "ep"
+   },
+   {
+    "id": "r11b2",
+    "stub": "t",
+    "answer": "he"
+   },
+   {
+    "id": "r11b3",
+    "stub": "rep",
+    "answer": "lays"
+   },
+   {
+    "id": "r11b4",
+    "stub": "exper",
+    "answer": "iences"
+   },
+   {
+    "id": "r11b5",
+    "stub": "t",
+    "answer": "he"
+   },
+   {
+    "id": "r11b6",
+    "stub": "a",
+    "answer": "nd"
+   },
+   {
+    "id": "r11b7",
+    "stub": "impo",
+    "answer": "rtant"
+   },
+   {
+    "id": "r11b8",
+    "stub": "in",
+    "answer": "to"
+   },
+   {
+    "id": "r11b9",
+    "stub": "mem",
+    "answer": "ory"
+   },
+   {
+    "id": "r11b10",
+    "stub": "o",
+    "answer": "ne"
+   }
+  ]
+ }
+}

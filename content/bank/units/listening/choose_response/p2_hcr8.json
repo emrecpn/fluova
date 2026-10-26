@@ -1,0 +1,28 @@
+{
+ "id": "p2_hcr8",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_hcr8",
+  "audio": [
+   {
+    "text": "The professor's office hours keep changing.",
+    "voice": "male:gb"
+   }
+  ],
+  "options": [
+   "I changed my office last month.",
+   "She posts the updated times on the course page.",
+   "Her office is on the third floor.",
+   "Yes, she's a wonderful professor."
+  ],
+  "answer": 1,
+  "why": {
+   "en": "Complaint → helpful information. A reuses \"changed\" and \"office\".",
+   "tr": "Şikâyet → yardımcı bilgi. A \"changed\" ve \"office\" kelimelerini tekrar ediyor."
+  }
+ }
+}

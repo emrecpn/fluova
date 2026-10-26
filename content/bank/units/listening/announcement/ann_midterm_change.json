@@ -1,0 +1,49 @@
+{
+ "id": "ann_midterm_change",
+ "task": "announcement",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "listening",
+  "title": "Announcement: Midterm change",
+  "prompt": "Listen to an announcement in a classroom.",
+  "audio": [
+   {
+    "text": "Before you leave, a quick reminder about next week. Because of the holiday on Monday, our midterm exam will move to Wednesday, same time and room. The exam will cover chapters one through six, but not the guest lecture we had last week. You may bring one page of handwritten notes. If you have a conflict with another exam on Wednesday, email me by Friday.",
+    "voice": "male:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "l11_an1_q1",
+    "stem": "Why is the exam being moved?",
+    "options": [
+     "The original date falls on a holiday.",
+     "The room is needed for a guest lecture.",
+     "Students asked for more time to study.",
+     "The professor will be away on Monday."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Reason: Monday is a holiday.",
+     "tr": "Sebep: Pazartesi tatil."
+    }
+   },
+   {
+    "id": "l11_an1_q2",
+    "stem": "What are students allowed to bring to the exam?",
+    "options": [
+     "A sheet of notes written by hand",
+     "Their textbooks for chapters one to six",
+     "Their notes from the guest lecture",
+     "A printed copy of the lecture slides"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Detail (paraphrase): one page of handwritten notes.",
+     "tr": "Detay (parafraz): one page of handwritten notes."
+    }
+   }
+  ]
+ }
+}

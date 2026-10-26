@@ -1,0 +1,47 @@
+{
+ "id": "dl_campus_bike_repair_day",
+ "task": "daily_life",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "passage",
+  "title": "Campus Bike Repair Day",
+  "directions": "Read in Daily Life (notice)",
+  "text": [
+   "<strong>Campus Bike Repair Day</strong>",
+   "Saturday, 10 a.m. to 2 p.m., outside the Student Center. Volunteer mechanics will check brakes, adjust gears and fix flat tires at no cost. Replacement parts such as chains and lights are available at cost price. Bikes must be dropped off before noon to be ready the same day. Please remove baskets and child seats before you arrive."
+  ],
+  "questions": [
+   {
+    "id": "r11_dl1_q1",
+    "stem": "What is the main purpose of the notice?",
+    "options": [
+     "To announce a free service for keeping bicycles in good condition",
+     "To sell new bicycles to students at a discount",
+     "To recruit volunteer mechanics for the Student Center",
+     "To explain new parking rules for bicycles on campus"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main purpose (paraphrase): free repair service. B and C reuse words from the text (bikes, volunteer mechanics, Student Center) but distort the meaning.",
+     "tr": "Ana amaç (parafraz): ücretsiz bakım hizmeti. B/C metindeki kelimeleri (bikes, volunteer mechanics, Student Center) kullanıp anlamı bozuyor."
+    }
+   },
+   {
+    "id": "r11_dl1_q2",
+    "stem": "What will most likely happen to a bike that is dropped off at 1 p.m.?",
+    "options": [
+     "It may not be ready until a later day.",
+     "It will be checked by mechanics at no cost.",
+     "Its basket will be removed by the volunteers.",
+     "It will receive new parts at cost price."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference: a bike not dropped off before noon will not be ready the same day. B is true but does not answer the question.",
+     "tr": "Çıkarım: öğleden önce bırakılmayan bisiklet aynı gün hazır olmaz. B doğru bir bilgi ama soruyu yanıtlamıyor."
+    }
+   }
+  ]
+ }
+}

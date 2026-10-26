@@ -1,0 +1,66 @@
+{
+ "id": "conv_meal_card",
+ "task": "conversation",
+ "tier": "easy",
+ "topic": "cafeteria",
+ "origin": "practice-02",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Paying at the cafeteria",
+  "prompt": "Listen to a conversation between a student and a cafeteria cashier.",
+  "audio": [
+   {
+    "text": "Hi, can I pay with cash?",
+    "voice": "male:au"
+   },
+   {
+    "text": "Sorry, we only take meal cards now. You can add money to your card at the machine by the door.",
+    "voice": "female:us"
+   },
+   {
+    "text": "Oh, I didn't know that. Does the machine take cash?",
+    "voice": "male:au"
+   },
+   {
+    "text": "Yes, cash or a bank card. It only takes a minute.",
+    "voice": "female:us"
+   },
+   {
+    "text": "Great, thanks. I'll be right back.",
+    "voice": "male:au"
+   }
+  ],
+  "questions": [
+   {
+    "id": "conv_meal_card_q1",
+    "stem": "What is the man's problem?",
+    "options": [
+     "He lost his meal card.",
+     "He cannot pay with cash at the counter.",
+     "The machine by the door is broken.",
+     "The cafeteria is about to close."
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Problem: the cafeteria only takes meal cards. A and C are not mentioned.",
+     "tr": "Sorun: kafeterya yalnızca yemek kartı alıyor. A ve C söylenmiyor."
+    }
+   },
+   {
+    "id": "conv_meal_card_q2",
+    "stem": "What will the man probably do next?",
+    "options": [
+     "Go to the bank for cash",
+     "Put money on his meal card",
+     "Buy a new meal card",
+     "Eat somewhere else today"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Inference: he will use the machine and come right back.",
+     "tr": "Çıkarım: makineyi kullanıp hemen geri dönecek."
+    }
+   }
+  ]
+ }
+}

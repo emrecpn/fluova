@@ -1,0 +1,12 @@
+{
+ "id": "ctw_flat_maps",
+ "task": "ctw",
+ "tier": "medium",
+ "topic": "geography",
+ "origin": "practice-02",
+ "screen": {
+  "type": "ctw",
+  "title": "Complete the Words: Flat maps",
+  "source": "Every flat map of the world contains some distortion. The surface of a globe is curved, and it cannot be spread onto paper without stretching or tearing. Mapmakers must therefore decide which features to keep accurate. One popular design keeps the shapes of coastlines correct but greatly enlarges regions near the poles. As a result, Greenland appears almost as large as Africa, although Africa is about fourteen times bigger."
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "id": "w11_bs3",
+ "task": "build_sentence",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "w11_bs3",
+  "personA": "I'm thinking about applying for the summer internship.",
+  "frame": [
+   null,
+   null,
+   "tell me",
+   null,
+   null,
+   null,
+   "?"
+  ],
+  "answer": [
+   "Can",
+   "you",
+   "when",
+   "the deadline",
+   "is"
+  ],
+  "distractors": [
+   "does"
+  ]
+ }
+}

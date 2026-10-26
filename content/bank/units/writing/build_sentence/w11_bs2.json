@@ -1,0 +1,28 @@
+{
+ "id": "w11_bs2",
+ "task": "build_sentence",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "w11_bs2",
+  "personA": "The new café near the library opened yesterday.",
+  "frame": [
+   "Do",
+   null,
+   null,
+   null,
+   null,
+   null,
+   "on weekends?"
+  ],
+  "answer": [
+   "you",
+   "know",
+   "if",
+   "it",
+   "is open"
+  ],
+  "distractors": []
+ }
+}

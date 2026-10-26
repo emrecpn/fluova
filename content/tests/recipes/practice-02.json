@@ -1,0 +1,100 @@
+{
+ "id": "practice-02",
+ "title": "Fluova Practice Test 2",
+ "version": "1.0.0",
+ "level": "real",
+ "authors": [
+  "Fluova contributors"
+ ],
+ "sections": {
+  "reading": {
+   "screens": [
+    "ctw_flat_maps",
+    "ctw_desert_plants",
+    "dl_print_credits",
+    "dl_water_shutoff",
+    "ac_standard_time"
+   ],
+   "hard": [
+    "ctw_ocean_acidity",
+    "dl_overnight_parking",
+    "ac_fungal_networks"
+   ],
+   "easy": [
+    "ctw_recycled_paper",
+    "dl_lost_and_found",
+    "ac_autumn_leaves"
+   ]
+  },
+  "listening": {
+   "screens": [
+    "p2_cr5",
+    "p2_cr2",
+    "p2_cr4",
+    "p2_cr3",
+    "p2_cr1",
+    "p2_cr7",
+    "p2_cr6",
+    "p2_cr8",
+    "p2_cr9",
+    "conv_early_return",
+    "conv_late_add",
+    "conv_practice_room",
+    "ann_fire_drill",
+    "ann_guest_lecture",
+    "talk_bat_echolocation"
+   ],
+   "hard": [
+    "p2_hcr3",
+    "p2_hcr2",
+    "p2_hcr6",
+    "p2_hcr5",
+    "p2_hcr8",
+    "p2_hcr1",
+    "p2_hcr7",
+    "p2_hcr4",
+    "conv_work_study",
+    "conv_narrow_topic",
+    "ann_thesis_portal",
+    "talk_shared_resources",
+    "talk_linear_perspective"
+   ],
+   "easy": [
+    "p2_ecr3",
+    "p2_ecr4",
+    "p2_ecr2",
+    "p2_ecr1",
+    "p2_ecr7",
+    "p2_ecr6",
+    "p2_ecr5",
+    "p2_ecr8",
+    "conv_meal_card",
+    "ann_gym_closed",
+    "talk_cave_formation"
+   ]
+  },
+  "writing": {
+   "screens": [
+    "p2_bs9",
+    "p2_bs7",
+    "p2_bs10",
+    "p2_bs3",
+    "p2_bs6",
+    "p2_bs8",
+    "p2_bs5",
+    "p2_bs2",
+    "p2_bs1",
+    "p2_bs4",
+    "p2_email",
+    "p2_disc"
+   ]
+  },
+  "speaking": {
+   "screens": [
+    "p2_lr",
+    "p2_iv"
+   ]
+  }
+ },
+ "notes": "Second spec-faithful test, assembled from the question bank (all units new). Explanations are available in English and Turkish."
+}

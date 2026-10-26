@@ -1,0 +1,94 @@
+{
+ "id": "ac_fungal_networks",
+ "task": "academic",
+ "tier": "hard",
+ "topic": "forest ecology",
+ "origin": "practice-02",
+ "screen": {
+  "type": "passage",
+  "title": "Underground Fungal Networks",
+  "directions": "Read an Academic Passage — upper module",
+  "text": [
+   "Beneath most forests lies an extensive web of fungal threads known as mycorrhizal networks. These fungi colonize the roots of trees, supplying them with water and mineral nutrients such as phosphorus in exchange for sugars that the trees produce through photosynthesis.",
+   "Because a single network can connect the roots of many different trees, researchers have proposed that carbon and other resources may travel from one tree to another through these shared connections. Some experiments have reported that seedlings growing in deep shade receive carbon from larger neighbors, which might improve their chances of survival.",
+   "Nevertheless, the more dramatic claims, for instance that mature trees deliberately nurture their offspring or warn neighbors of insect attacks, remain contested. Critics note that many field studies were small, that the direction of transfer is difficult to measure, and that fungi may move resources primarily for their own benefit rather than for that of the forest."
+  ],
+  "questions": [
+   {
+    "id": "ac_fungal_networks_q1",
+    "stem": "What is the passage mainly about?",
+    "options": [
+     "How fungi harm the roots of young trees",
+     "Evidence about a forest-wide exchange system and its limits",
+     "The way trees warn one another of insect attacks",
+     "Methods for growing seedlings in deep shade"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Main idea (paraphrase): the networks, what they may do, and doubts about the strongest claims. C treats a contested claim as fact.",
+     "tr": "Ana fikir (parafraz): ağlar, ne yapıyor olabilecekleri ve en iddialı yorumlara dair şüpheler. C tartışmalı bir iddiayı gerçek gibi sunuyor."
+    }
+   },
+   {
+    "id": "ac_fungal_networks_q2",
+    "stem": "The word \"contested\" in the passage is closest in meaning to",
+    "options": [
+     "forgotten",
+     "confirmed",
+     "disputed",
+     "simplified"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Vocabulary in context: contested claims = claims that are disputed.",
+     "tr": "Bağlamda kelime: contested = tartışmalı, itiraz edilen."
+    }
+   },
+   {
+    "id": "ac_fungal_networks_q3",
+    "stem": "Why does the author mention seedlings growing in deep shade?",
+    "options": [
+     "To prove that mature trees protect their offspring",
+     "To show that young trees grow faster without sunlight",
+     "To explain why fungi avoid the roots of small trees",
+     "To give an example of evidence that resources may move between trees"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Author's purpose: an experimental result supporting transfer. A overstates it — the author says that claim remains contested.",
+     "tr": "Yazarın amacı: kaynak aktarımını destekleyen bir deney sonucu. A abartıyor; yazar bu iddianın tartışmalı olduğunu söylüyor."
+    }
+   },
+   {
+    "id": "ac_fungal_networks_q4",
+    "stem": "What does the author suggest about popular descriptions of trees \"caring\" for one another?",
+    "options": [
+     "They are supported by most large field studies",
+     "They go further than the current evidence allows",
+     "They were first proposed by critics of fungal research",
+     "They explain why fungi need phosphorus"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Inference: the critics' points (small studies, hard measurement, fungi's own benefit) imply the claims exceed the evidence. A contradicts \"many field studies were small\".",
+     "tr": "Çıkarım: eleştiriler (küçük çalışmalar, ölçüm zorluğu, mantarların kendi çıkarı) iddiaların kanıtı aştığını gösteriyor. A \"çalışmaların çoğu küçüktü\" bilgisiyle çelişiyor."
+    }
+   },
+   {
+    "id": "ac_fungal_networks_q5",
+    "stem": "According to the passage, what do trees provide to the fungi?",
+    "options": [
+     "Water absorbed from the soil",
+     "Sugars made through photosynthesis",
+     "Phosphorus and other minerals",
+     "Protection from insect attacks"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail: fungi get \"sugars that the trees produce through photosynthesis\". A and C are what the fungi give the trees — the direction trap.",
+     "tr": "Ayrıntı: mantarlar \"ağaçların fotosentezle ürettiği şekerleri\" alır. A ve C mantarların ağaçlara verdikleri — yön tuzağı."
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "id": "l11_ecr4",
+ "task": "choose_response",
+ "tier": "easy",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_ecr4",
+  "audio": [
+   {
+    "text": "Where did you buy that backpack?",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "At the campus store.",
+   "It's very heavy.",
+   "I bought it last year.",
+   "Yes, it's new."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "\"Where\" → a place. C gives a time.",
+   "tr": "Nerede → yer. C zaman veriyor."
+  }
+ }
+}

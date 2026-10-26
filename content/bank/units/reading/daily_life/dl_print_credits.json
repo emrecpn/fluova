@@ -1,0 +1,48 @@
+{
+ "id": "dl_print_credits",
+ "task": "daily_life",
+ "tier": "medium",
+ "topic": "campus printing",
+ "origin": "practice-02",
+ "screen": {
+  "type": "passage",
+  "title": "Print Center: New Printing Credits",
+  "directions": "Read in Daily Life (notice)",
+  "text": [
+   "<strong>Campus Print Center — New Printing Credits</strong>",
+   "Starting March 1, every student will receive 200 free printing credits per semester on their student ID card. One black-and-white page uses one credit, and a color page uses five. Unused credits do not carry over to the next semester. Additional credits can be purchased at the front desk or online through the student portal."
+  ],
+  "questions": [
+   {
+    "id": "dl_print_credits_q1",
+    "stem": "What is the main purpose of the notice?",
+    "options": [
+     "To explain a new way students will pay for printing",
+     "To announce that the print center will close in March",
+     "To remind students to renew their ID cards",
+     "To advertise a sale on color printers"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main purpose (paraphrase): a new credit system for printing. C and D reuse words from the notice (ID card, color) with a different meaning.",
+     "tr": "Ana amaç (parafraz): baskı için yeni kredi sistemi. C ve D metindeki kelimeleri (ID card, color) farklı anlamda kullanıyor."
+    }
+   },
+   {
+    "id": "dl_print_credits_q2",
+    "stem": "What is true about credits that are not used?",
+    "options": [
+     "They can be exchanged for cash at the front desk",
+     "They expire at the end of each term",
+     "They are added to the next semester's total",
+     "They can be used only for color pages"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Paraphrase: \"do not carry over to the next semester\" = they expire. C says the opposite; A borrows \"front desk\".",
+     "tr": "Parafraz: \"do not carry over\" = dönem sonunda geçersiz olur. C tam tersini söylüyor; A \"front desk\" ifadesini ödünç alıyor."
+    }
+   }
+  ]
+ }
+}

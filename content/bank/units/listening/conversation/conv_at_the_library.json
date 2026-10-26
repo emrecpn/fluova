@@ -1,0 +1,65 @@
+{
+ "id": "conv_at_the_library",
+ "task": "conversation",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: At the library",
+  "prompt": "Listen to a conversation between a student and a librarian.",
+  "audio": [
+   {
+    "text": "Hi, I'm looking for a book for my history paper, but the catalog says it's checked out.",
+    "voice": "female:us"
+   },
+   {
+    "text": "Let me see. Yes, it's due back next Tuesday. I can put a hold on it for you, and you'll get an email when it's returned.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "Next Tuesday? My paper is due on Monday.",
+    "voice": "female:us"
+   },
+   {
+    "text": "In that case, try the electronic version. Most of our history titles are available online, and you can read them from home with your student login.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "Oh, I didn't know that. I'll check tonight.",
+    "voice": "female:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "l11_cv1_q1",
+    "stem": "What is the woman's problem?",
+    "options": [
+     "A book she needs is not available right now.",
+     "She cannot find the library's online catalog.",
+     "She forgot her student login details.",
+     "Her paper is due next Tuesday."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Problem: the book is checked out. D is a wrong detail (Tuesday is when the book is due back).",
+     "tr": "Sorun: kitap ödünçte. D yanlış ayrıntı (Tuesday kitabın dönüş günü)."
+    }
+   },
+   {
+    "id": "l11_cv1_q2",
+    "stem": "What will the woman most likely do next?",
+    "options": [
+     "Look for a digital copy of the book",
+     "Place a hold on the printed book",
+     "Ask her professor for more time",
+     "Come back to the library on Tuesday"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference: \"I'll check tonight\" → the electronic version. B was suggested but does not help.",
+     "tr": "Çıkarım: \"I'll check tonight\" → elektronik sürüm. B önerildi ama işine yaramıyor."
+    }
+   }
+  ]
+ }
+}

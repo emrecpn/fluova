@@ -1,0 +1,83 @@
+{
+ "id": "talk_how_penguins_stay_warm",
+ "task": "talk",
+ "tier": "easy",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "listening",
+  "title": "Academic Talk: How penguins stay warm",
+  "prompt": "Listen to part of a talk in a biology class.",
+  "audio": [
+   {
+    "text": "Today we're going to look at how penguins survive in some of the coldest places on Earth. First, they have a thick layer of fat under their skin. This fat works like a blanket and keeps their body heat inside. Second, their feathers are very short and packed tightly together, so cold wind and water can't get through.",
+    "voice": "female:gb"
+   },
+   {
+    "text": "Penguins also have a clever trick in their feet. The blood going down to their feet passes right next to the blood coming back up, so heat moves back into the body instead of being lost. Finally, emperor penguins stand together in large groups called huddles. They take turns moving from the cold outside of the group to the warm center. Working together, they can survive temperatures far below freezing.",
+    "voice": "female:gb"
+   }
+  ],
+  "questions": [
+   {
+    "id": "l11_eac_q1",
+    "stem": "What is the talk mainly about?",
+    "options": [
+     "The ways penguins protect themselves from the cold",
+     "Where penguins find food in winter",
+     "How penguins raise their young",
+     "Why penguins cannot fly"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main idea.",
+     "tr": "Ana fikir."
+    }
+   },
+   {
+    "id": "l11_eac_q2",
+    "stem": "What does the fat under a penguin's skin do?",
+    "options": [
+     "It keeps body heat inside.",
+     "It helps penguins swim faster.",
+     "It makes their feathers short.",
+     "It stores food for the winter."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Detail.",
+     "tr": "Detay."
+    }
+   },
+   {
+    "id": "l11_eac_q3",
+    "stem": "Why do emperor penguins take turns in a huddle?",
+    "options": [
+     "So that each penguin spends time in the warm center",
+     "So that the strongest penguins eat first",
+     "So that they can watch for danger",
+     "So that young penguins learn to swim"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Reason.",
+     "tr": "Sebep."
+    }
+   },
+   {
+    "id": "l11_eac_q4",
+    "stem": "Why does the speaker compare fat to a blanket?",
+    "options": [
+     "To help listeners understand how it keeps penguins warm",
+     "To show that penguins sleep in groups",
+     "To explain why penguins need soft feathers",
+     "To describe what penguins build nests with"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Purpose.",
+     "tr": "Amaç."
+    }
+   }
+  ]
+ }
+}

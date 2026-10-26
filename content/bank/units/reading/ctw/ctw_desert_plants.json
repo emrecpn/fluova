@@ -1,0 +1,12 @@
+{
+ "id": "ctw_desert_plants",
+ "task": "ctw",
+ "tier": "medium",
+ "topic": "botany",
+ "origin": "practice-02",
+ "screen": {
+  "type": "ctw",
+  "title": "Complete the Words: Desert plants",
+  "source": "Many desert plants survive long periods without rain. Their roots spread widely just below the surface, so they can absorb water quickly after a short storm. Some species store this water in thick stems or leaves that swell like sponges. A waxy coating on the surface reduces the amount of moisture that escapes into the dry air. Other plants avoid the hottest months entirely by remaining as seeds in the soil until conditions improve."
+ }
+}

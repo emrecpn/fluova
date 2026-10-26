@@ -1,0 +1,80 @@
+{
+ "id": "talk_cave_formation",
+ "task": "talk",
+ "tier": "easy",
+ "topic": "geology",
+ "origin": "practice-02",
+ "screen": {
+  "type": "listening",
+  "title": "Academic Talk: How caves form",
+  "prompt": "Listen to part of a talk in a geology class.",
+  "audio": [
+   {
+    "text": "Today I want to explain how most caves form. It starts with rain. As rainwater moves through the soil, it picks up a gas called carbon dioxide and becomes a weak acid. When this water reaches limestone rock underground, it slowly dissolves the rock. Over thousands of years, small cracks become wide tunnels and large rooms. Later, water that drips from the ceiling leaves behind tiny amounts of mineral. These build up into the long stone shapes that hang down from cave ceilings. Some of them grow less than a centimeter in a hundred years. So a cave is really made by water, a little bit at a time.",
+    "voice": "male:gb"
+   }
+  ],
+  "questions": [
+   {
+    "id": "talk_cave_formation_q1",
+    "stem": "What is the talk mainly about?",
+    "options": [
+     "How water creates caves",
+     "Why caves are dark and cold",
+     "How people explore caves",
+     "Where the largest caves are"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main idea. The other options are not discussed.",
+     "tr": "Ana fikir. Diğer şıklar konuşmada yok."
+    }
+   },
+   {
+    "id": "talk_cave_formation_q2",
+    "stem": "What happens to rainwater as it moves through the soil?",
+    "options": [
+     "It turns into stone.",
+     "It becomes slightly acidic.",
+     "It gets much colder.",
+     "It loses its minerals."
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Paraphrase of \"picks up carbon dioxide and becomes a weak acid\".",
+     "tr": "\"Karbondioksit alır ve zayıf bir asit olur\" ifadesinin parafrazı."
+    }
+   },
+   {
+    "id": "talk_cave_formation_q3",
+    "stem": "What kind of rock do these caves form in?",
+    "options": [
+     "Sand",
+     "Granite",
+     "Limestone",
+     "Clay"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Detail: limestone.",
+     "tr": "Ayrıntı: kireç taşı."
+    }
+   },
+   {
+    "id": "talk_cave_formation_q4",
+    "stem": "Why does the speaker say \"a little bit at a time\"?",
+    "options": [
+     "To say that caves are getting smaller",
+     "To explain why caves are small",
+     "To describe how rain falls",
+     "To show that caves form very slowly"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Function: stresses the slow process (\"over thousands of years\").",
+     "tr": "İşlev: sürecin yavaşlığını vurguluyor (\"binlerce yıl boyunca\")."
+    }
+   }
+  ]
+ }
+}

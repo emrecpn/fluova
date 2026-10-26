@@ -1,0 +1,27 @@
+{
+ "id": "p2_bs5",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "build a sentence",
+ "origin": "practice-02",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p2_bs5",
+  "personA": "Have you read the article the professor recommended?",
+  "frame": [
+   "Not yet, but I",
+   null,
+   null,
+   null,
+   null,
+   "the weekend."
+  ],
+  "answer": [
+   "am planning",
+   "to read",
+   "it",
+   "over"
+  ],
+  "distractors": []
+ }
+}

@@ -1,0 +1,49 @@
+{
+ "id": "ann_lab_relocation",
+ "task": "announcement",
+ "tier": "hard",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "listening",
+  "title": "Announcement: Lab relocation",
+  "prompt": "Listen to an announcement in a chemistry class.",
+  "audio": [
+   {
+    "text": "Good morning, everyone. As you know, the science building is being renovated this semester. Starting next Monday, all chemistry labs will move to the temporary rooms in the west annex. Lab times will not change, but please allow an extra ten minutes to walk there, since the annex is on the far side of campus. Safety goggles will no longer be provided, so bring your own.",
+    "voice": "female:gb"
+   }
+  ],
+  "questions": [
+   {
+    "id": "l11_han_q1",
+    "stem": "What change is being announced?",
+    "options": [
+     "Lab sessions will take place in a different building.",
+     "Lab sessions will start ten minutes later.",
+     "The chemistry course will be cancelled.",
+     "The west annex will be renovated."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "The change (paraphrase). B distorts the time information.",
+     "tr": "Değişiklik (parafraz). B süre bilgisini çarpıtıyor."
+    }
+   },
+   {
+    "id": "l11_han_q2",
+    "stem": "What can be inferred about students who used the lab's goggles?",
+    "options": [
+     "They will need to get goggles of their own.",
+     "They can pick them up in the annex.",
+     "They will arrive ten minutes late.",
+     "They must move to a different lab time."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference.",
+     "tr": "Çıkarım."
+    }
+   }
+  ]
+ }
+}

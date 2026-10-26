@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fluova — Test builder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Figtree:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../engine/css/style.css?v=6">
+<style>
+  .steps{display:grid;gap:22px}
+  .meta{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,210px),1fr));gap:12px}
+  .meta label{display:grid;gap:4px;font:500 12.5px var(--f-mono);color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+  .meta input,.meta select{font:16px var(--f-body);color:var(--ink);background:var(--surface);border:2px solid var(--ink);border-radius:12px;padding:9px 12px;text-transform:none;letter-spacing:0}
+  .tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+  .tabs button{all:unset;cursor:pointer;font:600 14px var(--f-body);padding:7px 14px;border:2px solid var(--ink);border-radius:999px;background:var(--surface)}
+  .tabs button[aria-selected="true"]{background:var(--ink);color:var(--bg)}
+  .tabs button .dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-left:7px;border:1.5px solid currentColor;vertical-align:0}
+  .tabs button .dot.ok{background:var(--ok);border-color:var(--ok)}.tabs button .dot.bad{background:var(--bad);border-color:var(--bad)}
+  textarea.json{width:100%;min-height:300px;font:13px/1.5 var(--f-mono);color:var(--ink);background:var(--surface);border:2px solid var(--ink);border-radius:var(--r-sm);padding:12px;resize:vertical}
+  .row{display:flex;gap:10px;flex-wrap:wrap;align-items:center}
+  .results{display:grid;gap:10px}
+  .find{display:flex;gap:10px;align-items:flex-start;border:2px solid var(--ink);border-radius:12px;padding:9px 12px;background:var(--surface);font-size:15px}
+  .find .sev{flex:0 0 auto;font:500 11.5px var(--f-mono);border:1.5px solid var(--ink);border-radius:999px;padding:1px 8px}
+  .find.high .sev,.find.error .sev{background:var(--c4)}.find.med .sev{background:var(--c3)}.find.low .sev,.find.note .sev{background:var(--surface-2)}
+  .verdict{font:700 20px var(--f-display);margin:0}
+  .metrics-table{overflow-x:auto}
+  .metrics-table table{border-collapse:collapse;font:13px var(--f-mono);min-width:520px}
+  .metrics-table td,.metrics-table th{border-bottom:1px dashed var(--line);padding:5px 10px;text-align:left;white-space:nowrap}
+  ol.howto{margin:0;padding-left:20px;display:grid;gap:6px}
+</style>
+</head>
+<body>
+<div class="field" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="wrap">
+  <header class="pagebar">
+    <a class="brand" href="../engine/index.html">
+      <svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12.5" fill="var(--c2)" stroke="var(--ink)" stroke-width="2"/><path d="M8 16c3-6 9-6 12 0" fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-linecap="round"/><circle cx="14" cy="10" r="2.2" fill="var(--ink)"/></svg>
+      Fluova
+    </a>
+    <span class="grow"></span>
+    <a class="btn btn-sm" href="../engine/index.html">All tests</a>
+  </header>
+
+  <h1 class="page-h">Test <em>builder</em></h1>
+  <p class="sub">Draft a section with any chatbot, paste it here, and check it against the same quality gate that every published test passes. Nothing is uploaded: everything runs in your browser.</p>
+
+  <div class="steps">
+    <section class="tile">
+      <span class="pill">Step 1</span>
+      <h2>Get a draft</h2>
+      <ol class="howto">
+        <li>Pick a section below and press <strong>Copy prompt</strong>.</li>
+        <li>Paste the prompt into a chatbot and copy its JSON answer.</li>
+        <li>Paste the answer into the box for that section. Repeat for all four sections.</li>
+      </ol>
+      <p class="small mt">Complete the Words paragraphs only need a <code>"source"</code> paragraph. The blanks are made by the C-test algorithm, never by hand.</p>
+    </section>
+
+    <section class="tile">
+      <span class="pill yellow">Step 2</span>
+      <h2>Paste the sections</h2>
+      <div class="meta mt">
+        <label>Test id <input id="mId" value="my-test-01" pattern="[a-z0-9-]+" spellcheck="false"></label>
+        <label>Title <input id="mTitle" value="Fluova Practice Test (community draft)"></label>
+        <label>Level <select id="mLevel"><option value="real">real (adaptive)</option><option value="easy">easy</option><option value="medium">medium</option><option value="hard">hard</option></select></label>
+        <label>Drafted with <input id="mBy" placeholder="e.g. model name (optional)"></label>
+      </div>
+      <div class="tabs mt" role="tablist" id="tabs"></div>
+      <textarea class="json" id="box" spellcheck="false" aria-label="Section JSON"></textarea>
+      <div class="row mt">
+        <button class="btn" id="copyPrompt">Copy prompt</button>
+        <span class="small" id="promptMsg"></span>
+        <span class="grow" style="flex:1"></span>
+        <button class="btn btn-primary" id="check">Check test</button>
+      </div>
+    </section>
+
+    <section class="tile" id="out" hidden>
+      <span class="pill green">Step 3</span>
+      <h2>Quality gate</h2>
+      <p class="verdict" id="verdict"></p>
+      <div class="results mt" id="findings"></div>
+      <div class="metrics-table mt" id="metrics"></div>
+      <div class="row mt">
+        <button class="btn btn-primary" id="preview">Try it in the engine</button>
+        <button class="btn" id="download">Download test JSON</button>
+      </div>
+      <p class="small mt">To publish: save the file as <code>content/tests/&lt;id&gt;.json</code>, run <code>node tools/build_manifest.js</code> and open a pull request. See CONTRIBUTING.md. You remain responsible for the answer key: the gate checks structure and fidelity, not whether each answer is right.</p>
+    </section>
+  </div>
+  <p class="disclaimer">TOEFL® is a registered trademark of ETS. This product is not endorsed or approved by ETS.</p>
+</div>
+
+<script src="../tools/ctw_generate.js"></script>
+<script src="../tools/validate.js"></script>
+<script src="../tools/lint_forms.js"></script>
+<script src="assemble.js"></script>
+<script>
+(function () {
+  const SECS = ['reading', 'listening', 'writing', 'speaking'];
+  const NAME = { reading: 'Reading', listening: 'Listening', writing: 'Writing', speaking: 'Speaking' };
+  const store = { get: k => { try { return localStorage.getItem(k); } catch (e) { return null; } }, set: (k, v) => { try { localStorage.setItem(k, v); } catch (e) {} } };
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const drafts = JSON.parse(store.get('fluova_builder') || '{}');
+  let cur = 'reading', last = null, status = {};
+  const box = document.getElementById('box'), tabs = document.getElementById('tabs');
+
+  function drawTabs() {
+    tabs.innerHTML = SECS.map(s => `<button role="tab" data-s="${s}" aria-selected="${s === cur}">${NAME[s]}<span class="dot ${status[s] || ''}"></span></button>`).join('');
+  }
+  function show(s) { cur = s; box.value = drafts[s] || ''; box.placeholder = `Paste the ${NAME[s]} JSON here (from prompts/${s}.md)`; drawTabs(); document.getElementById('promptMsg').textContent = ''; }
+  tabs.addEventListener('click', e => { const b = e.target.closest('button[data-s]'); if (b) show(b.dataset.s); });
+  box.addEventListener('input', () => { drafts[cur] = box.value; store.set('fluova_builder', JSON.stringify(drafts)); });
+  show(cur);
+
+  document.getElementById('copyPrompt').onclick = async () => {
+    const msg = document.getElementById('promptMsg');
+    try {
+      const md = await (await fetch(`prompts/${cur}.md`)).text();
+      const prompt = md.split(/\n---\n/).slice(1).join('\n---\n').trim();
+      await navigator.clipboard.writeText(prompt);
+      msg.textContent = `✓ ${NAME[cur]} prompt copied`;
+    } catch (e) { msg.innerHTML = `Could not copy. Open <a href="prompts/${cur}.md">prompts/${cur}.md</a> instead.`; }
+  };
+
+  // Chatbots often wrap JSON in ``` fences or add a sentence before it: keep the outermost {...}
+  function parseLoose(txt) {
+    const t = txt.replace(/```(?:json)?/gi, '');
+    const a = t.indexOf('{'), b = t.lastIndexOf('}');
+    if (a < 0 || b < a) throw new Error('no JSON object found');
+    return JSON.parse(t.slice(a, b + 1));
+  }
+
+  document.getElementById('check').onclick = () => {
+    const parts = [], findings = [];
+    status = {};
+    SECS.forEach(s => {
+      const txt = (drafts[s] || '').trim();
+      if (!txt) return;
+      try {
+        const obj = parseLoose(txt);
+        if (!obj.sections && !obj.id) obj.id = s;
+        parts.push(obj);
+      } catch (e) { findings.push({ sev: 'error', sec: s, msg: `JSON could not be read: ${e.message}` }); status[s] = 'bad'; }
+    });
+    const meta = { id: document.getElementById('mId').value.trim(), title: document.getElementById('mTitle').value.trim(),
+      level: document.getElementById('mLevel').value, generatedBy: document.getElementById('mBy').value.trim() || undefined };
+    if (!/^[a-z0-9-]+$/.test(meta.id)) findings.push({ sev: 'error', sec: 'test', msg: 'test id may only contain a-z, 0-9 and -' });
+    const r = FluovaAssemble.assemble(meta, parts, { ctw: FluovaCTW, validate: FluovaValidate, lint: FluovaLint });
+    last = r.test;
+    r.notes.forEach(n => findings.push({ sev: 'note', sec: 'test', msg: n }));
+    r.errors.forEach(e => { const s = SECS.find(x => e.startsWith('section ' + x)); findings.push({ sev: 'error', sec: s || 'test', msg: e }); if (s) status[s] = 'bad'; });
+    r.findings.forEach(f => { findings.push(f); if (f.sev === 'high') status[f.sec] = 'bad'; });
+    SECS.forEach(s => { if (!status[s] && r.test.sections.some(x => x.id === s)) status[s] = 'ok'; });
+    drawTabs();
+
+    const blocking = findings.filter(f => f.sev === 'error' || f.sev === 'high').length;
+    const missing = SECS.filter(s => !r.test.sections.some(x => x.id === s));
+    document.getElementById('verdict').textContent = blocking
+      ? `✗ ${blocking} problem(s) block publishing`
+      : missing.length ? `Sections pass so far · still missing: ${missing.map(s => NAME[s]).join(', ')}` : '✓ Passes the quality gate';
+    const order = { error: 0, high: 1, med: 2, low: 3, note: 4 };
+    document.getElementById('findings').innerHTML = findings.sort((a, b) => order[a.sev] - order[b.sev])
+      .map(f => `<div class="find ${f.sev}"><span class="sev">${f.sev}</span><span><strong>${esc(NAME[f.sec] || f.sec)}</strong> · ${esc(f.msg)}</span></div>`).join('')
+      || '<p class="small">No findings.</p>';
+    const m = r.metrics, keys = Object.keys(m).filter(k => k !== 'form');
+    document.getElementById('metrics').innerHTML = `<table><tr>${keys.map(k => `<th>${esc(k)}</th>`).join('')}</tr><tr>${keys.map(k => `<td>${esc(m[k])}</td>`).join('')}</tr></table>`;
+    const out = document.getElementById('out'); out.hidden = false; out.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  };
+
+  document.getElementById('preview').onclick = () => {
+    if (!last) return;
+    store.set('fluova_draft', JSON.stringify(last));
+    window.open('../engine/exam.html?test=draft', '_blank');
+  };
+  document.getElementById('download').onclick = () => {
+    if (!last) return;
+    const a = document.createElement('a');
+    a.href = URL.createObjectURL(new Blob([JSON.stringify(last, null, 1) + '\n'], { type: 'application/json' }));
+    a.download = last.id + '.json'; document.body.appendChild(a); a.click();
+    setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+  };
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+{
+ "id": "p2_bs2",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "build a sentence",
+ "origin": "practice-02",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p2_bs2",
+  "personA": "The new science building looks amazing.",
+  "frame": [
+   "Do you know",
+   null,
+   null,
+   null,
+   null,
+   "to students?"
+  ],
+  "answer": [
+   "when",
+   "it",
+   "will",
+   "open"
+  ],
+  "distractors": [
+   "does"
+  ]
+ }
+}

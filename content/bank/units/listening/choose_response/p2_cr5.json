@@ -1,0 +1,28 @@
+{
+ "id": "p2_cr5",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_cr5",
+  "audio": [
+   {
+    "text": "Could you send me the slides from today's lecture?",
+    "voice": "female:gb"
+   }
+  ],
+  "options": [
+   "The lecture was really interesting.",
+   "Professor Lin gave it this morning.",
+   "Sure, I'll email them to you tonight.",
+   "I slid on the wet floor earlier."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "Request → agreement. D is a sound-alike trap (slides / slid).",
+   "tr": "Rica → kabul. D ses benzerliği tuzağı (slides / slid)."
+  }
+ }
+}

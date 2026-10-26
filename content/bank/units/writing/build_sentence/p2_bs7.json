@@ -1,0 +1,27 @@
+{
+ "id": "p2_bs7",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "build a sentence",
+ "origin": "practice-02",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p2_bs7",
+  "personA": "I'm looking for a quiet place to work.",
+  "frame": [
+   "I'm not sure",
+   null,
+   null,
+   null,
+   null,
+   "today, but you could check."
+  ],
+  "answer": [
+   "whether",
+   "the reading room",
+   "is",
+   "open"
+  ],
+  "distractors": []
+ }
+}

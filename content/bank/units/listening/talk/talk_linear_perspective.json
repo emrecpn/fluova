@@ -1,0 +1,88 @@
+{
+ "id": "talk_linear_perspective",
+ "task": "talk",
+ "tier": "hard",
+ "topic": "art history",
+ "origin": "practice-02",
+ "screen": {
+  "type": "listening",
+  "title": "Academic Talk: The rise of linear perspective",
+  "prompt": "Listen to part of a lecture in an art history class.",
+  "audio": [
+   {
+    "text": "Let's turn to one of the great technical advances of the Renaissance: linear perspective. Before the fifteenth century, European painters certainly suggested depth. They placed distant figures higher in the picture or made them smaller, but they lacked a consistent system, and different objects in the same painting often seemed to recede at different angles.",
+    "voice": "female:au"
+   },
+   {
+    "text": "In Florence, early in the fifteenth century, the architect Filippo Brunelleschi carried out a famous demonstration. He painted a small panel showing the city's baptistery and drilled a hole through it. A viewer looked through the hole from the back while holding a mirror in front of the panel, so the reflected painting could be compared directly with the real building. The two lined up remarkably well.",
+    "voice": "female:au"
+   },
+   {
+    "text": "The principle behind this is that parallel lines moving away from the viewer appear to meet at a single point, which we now call the vanishing point. In the 1430s, Leon Battista Alberti described the method in writing, which allowed it to spread far beyond Brunelleschi's circle. Keep in mind, though, that perspective wasn't only about accuracy. Painters used the vanishing point to guide the viewer's eye, often toward the most important figure in the scene.",
+    "voice": "female:au"
+   }
+  ],
+  "questions": [
+   {
+    "id": "talk_linear_perspective_q1",
+    "stem": "What is the lecture mainly about?",
+    "options": [
+     "How a system for showing depth developed and spread",
+     "Why Renaissance painters preferred religious subjects",
+     "How architects designed buildings in Florence",
+     "Why paintings before 1400 had no sense of depth"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main idea (paraphrase). D is too extreme: earlier painters did suggest depth.",
+     "tr": "Ana fikir (parafraz). D aşırı: önceki ressamlar da derinlik gösteriyordu."
+    }
+   },
+   {
+    "id": "talk_linear_perspective_q2",
+    "stem": "What was the purpose of the mirror in Brunelleschi's demonstration?",
+    "options": [
+     "To make the small painting look larger",
+     "To let viewers compare the painting with the real building",
+     "To light the panel from behind",
+     "To hide the hole drilled in the panel"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail (paraphrase of \"compared directly with the real building\").",
+     "tr": "Ayrıntı (\"gerçek binayla doğrudan karşılaştırılabilsin\" parafrazı)."
+    }
+   },
+   {
+    "id": "talk_linear_perspective_q3",
+    "stem": "Why does the professor mention Alberti?",
+    "options": [
+     "To describe a criticism of Brunelleschi",
+     "To name the artist who painted the baptistery",
+     "To explain how the method became widely known",
+     "To show that the method was invented in Rome"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Function: his written description \"allowed it to spread\". B confuses Alberti with Brunelleschi.",
+     "tr": "İşlev: yazılı anlatımı yöntemin \"yayılmasını sağladı\". B Alberti'yi Brunelleschi ile karıştırıyor."
+    }
+   },
+   {
+    "id": "talk_linear_perspective_q4",
+    "stem": "What point does the professor make at the end of the lecture?",
+    "options": [
+     "Perspective made paintings less accurate.",
+     "Important figures were always painted in the center.",
+     "The vanishing point was rarely used after Alberti.",
+     "Perspective also helped direct the viewer's attention."
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Inference from \"used the vanishing point to guide the viewer's eye\". B overgeneralizes \"often\".",
+     "tr": "Çıkarım: \"kaçış noktasını izleyicinin bakışını yönlendirmek için kullandılar\". B \"often\" ifadesini genelleştiriyor."
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "id": "ctw_school_gardens",
+ "task": "ctw",
+ "tier": "easy",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "ctw",
+  "title": "Complete the Words: School gardens",
+  "text": [
+   "Many schools now have small gardens. Students {{r11d1}} seeds {{r11d2}} the {{r11d3}} and {{r11d4}} care {{r11d5}} the {{r11d6}} every {{r11d7}}. They {{r11d8}} how {{r11d9}} water {{r11d10}} plant needs and why some vegetables grow faster than others. At the end of the year, the class often cooks a meal with the food they grew. Teachers say that children who work in the garden are more willing to try new vegetables."
+  ],
+  "items": [
+   {
+    "id": "r11d1",
+    "stub": "pl",
+    "answer": "ant"
+   },
+   {
+    "id": "r11d2",
+    "stub": "i",
+    "answer": "n"
+   },
+   {
+    "id": "r11d3",
+    "stub": "spr",
+    "answer": "ing"
+   },
+   {
+    "id": "r11d4",
+    "stub": "ta",
+    "answer": "ke"
+   },
+   {
+    "id": "r11d5",
+    "stub": "o",
+    "answer": "f"
+   },
+   {
+    "id": "r11d6",
+    "stub": "pla",
+    "answer": "nts"
+   },
+   {
+    "id": "r11d7",
+    "stub": "we",
+    "answer": "ek"
+   },
+   {
+    "id": "r11d8",
+    "stub": "le",
+    "answer": "arn"
+   },
+   {
+    "id": "r11d9",
+    "stub": "mu",
+    "answer": "ch"
+   },
+   {
+    "id": "r11d10",
+    "stub": "ea",
+    "answer": "ch"
+   }
+  ]
+ }
+}

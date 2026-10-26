@@ -1,0 +1,28 @@
+{
+ "id": "p2_cr9",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_cr9",
+  "audio": [
+   {
+    "text": "Would you rather study at the library or at the café?",
+    "voice": "female:au"
+   }
+  ],
+  "options": [
+   "Yes, I'd like to study tonight.",
+   "The café sells great muffins.",
+   "The library's quieter, so let's go there.",
+   "I studied there last week."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "Choice question → a choice with a reason. A answers \"Yes\" to an either/or question.",
+   "tr": "Seçim sorusu → gerekçeli seçim. A \"ya o ya bu\" sorusuna \"Evet\" diyor."
+  }
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "id": "l11_hcr6",
+ "task": "choose_response",
+ "tier": "hard",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_hcr6",
+  "audio": [
+   {
+    "text": "If I were you, I'd talk to the advisor before dropping that class.",
+    "voice": "female:au"
+   }
+  ],
+  "options": [
+   "You're right, I don't want to lose my financial aid.",
+   "The advisor's office is upstairs.",
+   "I dropped my phone in class today.",
+   "That class meets on Tuesdays."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Agreeing with advice and giving a reason. C uses \"dropped\" with a different meaning.",
+   "tr": "Tavsiyeye gerekçeli katılım. C \"dropped\" kelimesini başka anlamda kullanıyor."
+  }
+ }
+}

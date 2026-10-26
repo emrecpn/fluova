@@ -1,0 +1,27 @@
+{
+ "id": "l11_hcr3",
+ "task": "choose_response",
+ "tier": "hard",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_hcr3",
+  "audio": [
+   {
+    "text": "Do you think we should invite Marco to join our project group?",
+    "voice": "male:au"
+   }
+  ],
+  "options": [
+   "He'd be great with the data analysis.",
+   "The project is due next month.",
+   "I already joined a different group.",
+   "Marco invited me to dinner once."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Indirect agreement: support with a reason.",
+   "tr": "Dolaylı onay: gerekçeli destek."
+  }
+ }
+}

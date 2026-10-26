@@ -1,0 +1,65 @@
+{
+ "id": "conv_the_career_fair",
+ "task": "conversation",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: The career fair",
+  "prompt": "Listen to a conversation between two students.",
+  "audio": [
+   {
+    "text": "Are you going to the career fair on Thursday?",
+    "voice": "male:au"
+   },
+   {
+    "text": "I want to, but I have a lab until three, and I heard most companies leave by four.",
+    "voice": "female:us"
+   },
+   {
+    "text": "Actually, they extended the hours this year. It runs until six now, because so many students complained about class conflicts last year.",
+    "voice": "male:au"
+   },
+   {
+    "text": "Really? Then I'll go straight after my lab. Do I need to print my résumé?",
+    "voice": "female:us"
+   },
+   {
+    "text": "Bring a few copies. Some recruiters still prefer paper.",
+    "voice": "male:au"
+   }
+  ],
+  "questions": [
+   {
+    "id": "l11_cv2_q1",
+    "stem": "Why did the organizers change the fair's schedule?",
+    "options": [
+     "Many students could not attend because of their classes.",
+     "Companies wanted more time to interview students.",
+     "The building was not available in the morning.",
+     "The woman's lab was moved to Thursday."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Reason (paraphrase): \"class conflicts\".",
+     "tr": "Sebep (parafraz): \"class conflicts\"."
+    }
+   },
+   {
+    "id": "l11_cv2_q2",
+    "stem": "What does the man suggest the woman do?",
+    "options": [
+     "Bring printed copies of her résumé",
+     "Skip her lab on Thursday",
+     "Arrive before the companies leave at four",
+     "Email her résumé to the recruiters"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Suggestion: \"Bring a few copies\". C relies on outdated information.",
+     "tr": "Öneri: \"Bring a few copies\". C eski bilgiye dayanıyor."
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "id": "talk_bat_echolocation",
+ "task": "talk",
+ "tier": "medium",
+ "topic": "zoology",
+ "origin": "practice-02",
+ "screen": {
+  "type": "listening",
+  "title": "Academic Talk: How bats hunt in the dark",
+  "prompt": "Listen to part of a lecture in a biology class.",
+  "audio": [
+   {
+    "text": "Today let's look at how bats find their way in complete darkness. Most bats rely on a process called echolocation. A bat produces a series of very high-pitched calls, usually too high for humans to hear, and then listens for the echoes that bounce back from objects around it. By noticing how long each echo takes to return, the bat can judge how far away an object is, and differences between what its two ears hear tell it the direction.",
+    "voice": "female:gb"
+   },
+   {
+    "text": "Now, here's what I find remarkable. When a bat is simply flying across open space, it might call around ten times per second. But as it closes in on an insect, the rate rises sharply, to well over a hundred calls per second. Researchers call this final burst the feeding buzz. The faster calls give the bat almost continuous updates about the insect's position, which matters because the insect is moving too.",
+    "voice": "female:gb"
+   },
+   {
+    "text": "Some moths, by the way, have evolved a defense. They can hear bat calls, and when they detect one, they suddenly drop or change direction. A few species even produce clicks of their own that seem to interfere with the bat's signal. So this is really an ongoing contest between hunter and prey.",
+    "voice": "female:gb"
+   }
+  ],
+  "questions": [
+   {
+    "id": "talk_bat_echolocation_q1",
+    "stem": "What is the lecture mainly about?",
+    "options": [
+     "How bats use sound to locate objects and prey",
+     "Why bats prefer to hunt moths over other insects",
+     "How humans first discovered the calls of bats",
+     "Why bats fly faster in open spaces"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main idea (paraphrase of echolocation and hunting). B overgeneralizes the moth example.",
+     "tr": "Ana fikir (yankıyla yer bulma ve avlanma). B güve örneğini abartıyor."
+    }
+   },
+   {
+    "id": "talk_bat_echolocation_q2",
+    "stem": "According to the professor, what happens as a bat gets close to an insect?",
+    "options": [
+     "It stops calling so the insect cannot hear it.",
+     "It calls much more often than before.",
+     "It switches to sounds that humans can hear.",
+     "It relies only on its left ear."
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail (paraphrase of \"the rate rises sharply\"). A reverses what happens.",
+     "tr": "Ayrıntı (\"oran keskin biçimde artar\" parafrazı). A olanı tersine çeviriyor."
+    }
+   },
+   {
+    "id": "talk_bat_echolocation_q3",
+    "stem": "Why does the professor mention moths?",
+    "options": [
+     "To show that echolocation does not always work at night",
+     "To explain where bats usually find their food",
+     "To give an example of prey that responds to bat calls",
+     "To compare the hearing of moths and humans"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Function: moths illustrate the \"contest between hunter and prey\". A overstates the point.",
+     "tr": "İşlev: güveler \"avcı ile av arasındaki yarışı\" örnekliyor. A fazla genelleme yapıyor."
+    }
+   },
+   {
+    "id": "talk_bat_echolocation_q4",
+    "stem": "How does a bat judge the distance to an object?",
+    "options": [
+     "By comparing the loudness of its own calls",
+     "By the number of insects it can hear",
+     "By changing the direction of its flight",
+     "By the time an echo takes to come back"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Detail: \"how long each echo takes to return\". A is not mentioned; C is what moths do.",
+     "tr": "Ayrıntı: \"her yankının geri dönmesi ne kadar sürüyor\". A söylenmiyor; C güvelerin yaptığı şey."
+    }
+   }
+  ]
+ }
+}

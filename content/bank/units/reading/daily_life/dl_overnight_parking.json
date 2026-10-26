@@ -1,0 +1,63 @@
+{
+ "id": "dl_overnight_parking",
+ "task": "daily_life",
+ "tier": "hard",
+ "topic": "campus parking",
+ "origin": "practice-02",
+ "screen": {
+  "type": "passage",
+  "title": "Revised Overnight Parking Policy",
+  "directions": "Read in Daily Life (policy notice)",
+  "text": [
+   "<strong>Revised Overnight Parking Policy</strong>",
+   "Effective next term, overnight parking in Lots C and D will be limited to vehicles displaying a resident permit. Commuter permits will remain valid in these lots between 7 a.m. and 10 p.m. only; vehicles without a resident permit that remain after 10 p.m. may be towed at the owner's expense. Commuters who occasionally need to stay late for laboratory work or rehearsals may request a free one-night pass from Campus Security at least 24 hours in advance. Passes are limited to six per term. Lot E, behind the stadium, will continue to allow overnight parking for all permit holders."
+  ],
+  "questions": [
+   {
+    "id": "dl_overnight_parking_q1",
+    "stem": "What is the main change described in the notice?",
+    "options": [
+     "Commuters will no longer be allowed to use Lots C and D",
+     "Overnight parking in two lots will be reserved for residents",
+     "Lot E will now close to all vehicles at 10 p.m.",
+     "Resident permits will be given out free of charge"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Main change (paraphrase). A is too extreme (commuters can still park there during the day); C contradicts the last sentence.",
+     "tr": "Ana değişiklik (parafraz). A aşırı genelleme (gündüz hâlâ park edebilirler); C son cümleyle çelişiyor."
+    }
+   },
+   {
+    "id": "dl_overnight_parking_q2",
+    "stem": "What should a commuter with a late rehearsal next week most likely do?",
+    "options": [
+     "Buy a resident permit from the office near the stadium",
+     "Request a pass from Campus Security on the night itself",
+     "Ask Campus Security for a pass at least a day earlier",
+     "Park in Lot C and move the car before 7 a.m."
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Inference: passes must be requested 24 hours in advance. B is the timing trap; D ignores the 10 p.m. limit for commuter permits.",
+     "tr": "Çıkarım: geçiş izni 24 saat önceden istenmeli. B zamanlama tuzağı; D yolcu izinleri için 22.00 sınırını yok sayıyor."
+    }
+   },
+   {
+    "id": "dl_overnight_parking_q3",
+    "stem": "What is true about Lot E?",
+    "options": [
+     "It is now reserved for students who live on campus",
+     "Its users must leave by 10 p.m. on weekdays",
+     "Drivers need a one-night pass to park there",
+     "Drivers with any type of permit can stay there all night"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Detail (paraphrase of \"continue to allow overnight parking for all permit holders\"). A and B apply the new Lot D/C rules to the wrong lot.",
+     "tr": "Ayrıntı (\"tüm izin sahiplerine gece park\" ifadesinin parafrazı). A ve B, D/C otoparklarının yeni kurallarını yanlış otoparka uyguluyor."
+    }
+   }
+  ]
+ }
+}

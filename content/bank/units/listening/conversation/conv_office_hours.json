@@ -1,0 +1,65 @@
+{
+ "id": "conv_office_hours",
+ "task": "conversation",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Office hours",
+  "prompt": "Listen to a conversation between a student and a professor.",
+  "audio": [
+   {
+    "text": "Professor Hale, I wanted to ask about the research project. Could I change my topic?",
+    "voice": "male:us"
+   },
+   {
+    "text": "It's a bit late for that. Proposals were approved two weeks ago. What's the issue?",
+    "voice": "female:gb"
+   },
+   {
+    "text": "I planned to interview local farmers, but the harvest has started, and nobody has time to meet.",
+    "voice": "male:us"
+   },
+   {
+    "text": "I see. Rather than changing the topic, why not change the method? You could send a short survey. Farmers can answer it in five minutes whenever they're free.",
+    "voice": "female:gb"
+   },
+   {
+    "text": "That could work. I'll draft one this weekend.",
+    "voice": "male:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "l11_cv3_q1",
+    "stem": "Why does the student want to change his topic?",
+    "options": [
+     "The people he planned to talk to are too busy.",
+     "His proposal was not approved.",
+     "He finished the project two weeks early.",
+     "He is no longer interested in farming."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Reason (paraphrase): harvest → farmers have no time.",
+     "tr": "Sebep (parafraz): hasat → çiftçilerin zamanı yok."
+    }
+   },
+   {
+    "id": "l11_cv3_q2",
+    "stem": "What does the professor imply about the student's topic?",
+    "options": [
+     "It is too late to choose a different one.",
+     "It needs more farmers to be useful.",
+     "It should focus on the harvest season.",
+     "It was the best proposal she received."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference: \"It's a bit late for that\".",
+     "tr": "Çıkarım: \"It's a bit late for that\"."
+    }
+   }
+  ]
+ }
+}

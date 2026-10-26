@@ -1,0 +1,70 @@
+{
+ "id": "conv_narrow_topic",
+ "task": "conversation",
+ "tier": "hard",
+ "topic": "research paper",
+ "origin": "practice-02",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Narrowing a paper topic",
+  "prompt": "Listen to a conversation between a student and a professor.",
+  "audio": [
+   {
+    "text": "Professor Wright, could I talk to you about my paper on social media and news habits?",
+    "voice": "male:us"
+   },
+   {
+    "text": "Of course. I read your outline. It's ambitious, maybe a little too ambitious for ten pages.",
+    "voice": "female:gb"
+   },
+   {
+    "text": "I was worried about that. I'm trying to cover four different countries.",
+    "voice": "male:us"
+   },
+   {
+    "text": "Why not pick the one where you've found the most reliable data? You could mention the others briefly in your conclusion.",
+    "voice": "female:gb"
+   },
+   {
+    "text": "That would probably be Brazil. I found a really solid survey from last year.",
+    "voice": "male:us"
+   },
+   {
+    "text": "Then start there, and send me a revised outline by Monday.",
+    "voice": "female:gb"
+   }
+  ],
+  "questions": [
+   {
+    "id": "conv_narrow_topic_q1",
+    "stem": "What is the professor's main concern?",
+    "options": [
+     "The student's outline was submitted late.",
+     "The survey data is several years old.",
+     "The project is too broad for the assignment.",
+     "The student chose the wrong country."
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Main concern (paraphrase of \"too ambitious for ten pages\"). B contradicts \"a really solid survey from last year\".",
+     "tr": "Ana endişe (\"on sayfa için fazla iddialı\" parafrazı). B \"geçen yılın sağlam anketi\" bilgisiyle çelişiyor."
+    }
+   },
+   {
+    "id": "conv_narrow_topic_q2",
+    "stem": "What will the student probably do next?",
+    "options": [
+     "Meet the professor again on Monday",
+     "Discuss four countries in his conclusion",
+     "Look for a more recent survey",
+     "Focus his paper on a single country"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Inference: he will start with Brazil only. A twists the Monday deadline for the outline into a meeting.",
+     "tr": "Çıkarım: yalnızca Brezilya ile başlayacak. A taslak için verilen Pazartesi tarihini bir görüşmeye çeviriyor."
+    }
+   }
+  ]
+ }
+}

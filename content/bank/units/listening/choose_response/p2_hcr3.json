@@ -1,0 +1,28 @@
+{
+ "id": "p2_hcr3",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_hcr3",
+  "audio": [
+   {
+    "text": "I can't believe how crowded the gym is tonight.",
+    "voice": "female:gb"
+   }
+  ],
+  "options": [
+   "I believe it closes at eleven.",
+   "The new gym is next to the pool.",
+   "Everyone must be training for Saturday's race.",
+   "Yes, I counted the people there."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "A comment → a likely explanation. A reuses \"believe\".",
+   "tr": "Yorum → olası açıklama. A \"believe\" kelimesini tekrar ediyor."
+  }
+ }
+}

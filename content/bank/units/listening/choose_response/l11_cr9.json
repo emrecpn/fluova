@@ -1,0 +1,27 @@
+{
+ "id": "l11_cr9",
+ "task": "choose_response",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_cr9",
+  "audio": [
+   {
+    "text": "Can I borrow your calculator for the exam?",
+    "voice": "female:au"
+   }
+  ],
+  "options": [
+   "Sorry, I need it myself.",
+   "The exam is on Friday morning.",
+   "It's a scientific calculator.",
+   "I borrowed it from the library."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Request → refusal with a reason. D repeats \"borrow\".",
+   "tr": "Rica → ret gerekçesiyle. D \"borrow\" kelimesini tekrar ediyor."
+  }
+ }
+}

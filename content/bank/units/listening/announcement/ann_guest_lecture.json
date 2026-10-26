@@ -1,0 +1,50 @@
+{
+ "id": "ann_guest_lecture",
+ "task": "announcement",
+ "tier": "medium",
+ "topic": "course logistics",
+ "origin": "practice-02",
+ "screen": {
+  "type": "listening",
+  "title": "Announcement: Guest lecture moved",
+  "prompt": "Listen to an announcement in a class.",
+  "audio": [
+   {
+    "text": "Attention, students in Environmental Science 210. This Thursday's guest lecture by Dr. Ana Morales has moved from our usual classroom to the Hale Auditorium, because more than two hundred people have registered. The talk still starts at two o'clock. Please arrive a few minutes early, since there's no assigned seating. Attendance counts toward your participation grade.",
+    "voice": "female:gb"
+   }
+  ],
+  "questions": [
+   {
+    "id": "ann_guest_lecture_q1",
+    "stem": "Why was the lecture moved?",
+    "options": [
+     "The usual classroom is being repaired.",
+     "Dr. Morales asked for a larger screen.",
+     "Too many people signed up for the usual room.",
+     "The start time of the lecture changed."
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Reason (paraphrase of \"more than two hundred people have registered\"). D contradicts \"still starts at two\".",
+     "tr": "Sebep (\"iki yüzden fazla kişi kayıt oldu\" parafrazı). D \"yine saat ikide başlıyor\" ile çelişiyor."
+    }
+   },
+   {
+    "id": "ann_guest_lecture_q2",
+    "stem": "What does the speaker recommend?",
+    "options": [
+     "Registering online for a seat",
+     "Bringing a participation form",
+     "Sitting in the assigned section",
+     "Arriving before the talk begins"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Detail (paraphrase of \"arrive a few minutes early\"). C contradicts \"no assigned seating\".",
+     "tr": "Ayrıntı (\"birkaç dakika erken gelin\" parafrazı). C \"numaralı oturma yok\" bilgisiyle çelişiyor."
+    }
+   }
+  ]
+ }
+}

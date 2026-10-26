@@ -1,0 +1,25 @@
+{
+ "id": "s11_lr",
+ "task": "listen_repeat",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "listen_repeat",
+  "id": "s11_lr",
+  "scenario": {
+   "title": "Science museum tour",
+   "place": "Campus science museum",
+   "intro": "You are joining a guided tour of the campus science museum. Listen to the guide and repeat each sentence exactly as you hear it."
+  },
+  "voice": "male",
+  "sentences": [
+   "Welcome to the science museum.",
+   "Please keep your ticket with you.",
+   "The dinosaur hall is on the second floor.",
+   "Photos are allowed, but please turn off the flash.",
+   "If you lose your group, wait for us next to the main entrance.",
+   "The planetarium show, which lasts about twenty minutes, starts every hour on the hour.",
+   "Students who would like to volunteer at the museum this summer can pick up an application form at the information desk before they leave."
+  ]
+ }
+}

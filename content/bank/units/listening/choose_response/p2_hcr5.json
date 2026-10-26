@@ -1,0 +1,28 @@
+{
+ "id": "p2_hcr5",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_hcr5",
+  "audio": [
+   {
+    "text": "Do you think the library will still have a copy?",
+    "voice": "female:au"
+   }
+  ],
+  "options": [
+   "It's worth checking the online catalog.",
+   "I copied my notes from Jake.",
+   "Yes, I still live near the library.",
+   "The library has three floors."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Indirect: suggests how to find out. B reuses \"copy\" with another meaning.",
+   "tr": "Dolaylı: nasıl öğrenileceğini öneriyor. B \"copy\" kelimesini başka anlamda kullanıyor."
+  }
+ }
+}

@@ -1,0 +1,28 @@
+{
+ "id": "p2_hcr7",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_hcr7",
+  "audio": [
+   {
+    "text": "How about we split the cost of the textbook?",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "The textbook costs about eighty dollars.",
+   "I split my time between two jobs.",
+   "That works, since I only need it for one chapter.",
+   "The bookstore is across the street."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "Suggestion → agreement with a reason. B reuses \"split\".",
+   "tr": "Öneri → gerekçeli kabul. B \"split\" kelimesini tekrar ediyor."
+  }
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "id": "ctw_ocean_acidity",
+ "task": "ctw",
+ "tier": "hard",
+ "topic": "marine chemistry",
+ "origin": "practice-02",
+ "screen": {
+  "type": "ctw",
+  "title": "Complete the Words: Ocean acidity",
+  "source": "Oceans absorb roughly a quarter of the carbon dioxide that human activity releases into the atmosphere. When this gas dissolves in seawater, it forms a weak acid that gradually lowers the water's pH. The resulting chemical shift reduces the concentration of carbonate ions, which corals, oysters, and many plankton species require to construct their shells and skeletons. Consequently, organisms in more acidic conditions must expend additional energy on calcification, leaving fewer resources for growth and reproduction."
+ }
+}

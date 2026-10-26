@@ -1,0 +1,27 @@
+{
+ "id": "l11_hcr8",
+ "task": "choose_response",
+ "tier": "hard",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_hcr8",
+  "audio": [
+   {
+    "text": "I'd offer you a ride, but my car's in the shop.",
+    "voice": "female:gb"
+   }
+  ],
+  "options": [
+   "Thanks anyway, I'll take the bus.",
+   "I didn't know you worked in a shop.",
+   "The ride was very long.",
+   "I'd like to buy a car someday."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "\"in the shop\" = being repaired. B misreads the idiom.",
+   "tr": "\"in the shop\" = tamirde. B deyimi yanlış anlıyor."
+  }
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "id": "talk_path_dependence",
+ "task": "talk",
+ "tier": "hard",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "listening",
+  "title": "Academic Talk: Path dependence",
+  "prompt": "Listen to part of a lecture in an economics class.",
+  "audio": [
+   {
+    "text": "Let's talk about a concept economists call path dependence. The basic idea is that decisions made in the past can limit the choices available today, even when the original reasons no longer apply.",
+    "voice": "male:au"
+   },
+   {
+    "text": "The classic example is the keyboard layout most of you are using right now, known as QWERTY. It was designed in the 1870s for mechanical typewriters. One popular explanation is that it placed common letter pairs apart so the metal arms wouldn't jam, although historians still argue about how much that really mattered. Either way, the jamming problem disappeared long ago. Other layouts have been designed since then. The Dvorak keyboard, for example, put the most common letters on the middle row, where your fingers already rest, and some people claim it's faster. Yet QWERTY is everywhere.",
+    "voice": "male:au"
+   },
+   {
+    "text": "Why? Because once millions of people had learned it, and schools taught it, and manufacturers produced it, switching became very costly. A new layout would have to be better by enough to make everyone relearn typing at the same time. So the old standard survives, not necessarily because it's the best, but because everyone else is already using it. And economists find the same pattern whenever the value of a choice depends on what everyone else has already chosen.",
+    "voice": "male:au"
+   }
+  ],
+  "questions": [
+   {
+    "id": "l11_hac2_q1",
+    "stem": "What is the main purpose of the lecture?",
+    "options": [
+     "To illustrate an economic idea with a familiar example",
+     "To argue that QWERTY is the fastest layout",
+     "To explain how mechanical typewriters were built",
+     "To recommend that schools teach a new layout"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Purpose (paraphrase).",
+     "tr": "Amaç (parafraz)."
+    }
+   },
+   {
+    "id": "l11_hac2_q2",
+    "stem": "What does the professor say about the explanation that QWERTY prevented jamming?",
+    "options": [
+     "Its importance is still debated.",
+     "It has been proven completely false.",
+     "It explains why QWERTY is faster today.",
+     "It was proposed by modern economists."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Detail (paraphrase): historians still argue.",
+     "tr": "Detay (parafraz): historians still argue."
+    }
+   },
+   {
+    "id": "l11_hac2_q3",
+    "stem": "According to the professor, why has QWERTY survived?",
+    "options": [
+     "Changing would require too many people to relearn at once.",
+     "No other layouts have ever been designed.",
+     "Manufacturers are not allowed to produce other layouts.",
+     "Typewriter arms still jam on other layouts."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Reason (paraphrase).",
+     "tr": "Sebep (parafraz)."
+    }
+   },
+   {
+    "id": "l11_hac2_q4",
+    "stem": "Which situation is most similar to path dependence as described in the lecture?",
+    "options": [
+     "A city keeps an inconvenient rail gauge because replacing every track would cost too much.",
+     "A student changes majors after enjoying an elective.",
+     "A company lowers its prices to attract new customers.",
+     "A scientist repeats an experiment to confirm the results."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Application/inference.",
+     "tr": "Uygulama/çıkarım."
+    }
+   }
+  ]
+ }
+}

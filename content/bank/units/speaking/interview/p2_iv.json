@@ -1,0 +1,43 @@
+{
+ "id": "p2_iv",
+ "task": "interview",
+ "tier": "medium",
+ "topic": "transportation",
+ "origin": "practice-02",
+ "screen": {
+  "type": "interview",
+  "id": "p2_iv",
+  "scenario": {
+   "title": "Research study: how students get to campus",
+   "place": "Campus transportation office",
+   "intro": "A researcher from the urban planning department is interviewing students about how they travel to campus."
+  },
+  "interviewerVoice": "female",
+  "questions": [
+   {
+    "level": "factual",
+    "text": "To begin, could you tell me how you usually get to campus, and about how long the trip takes?",
+    "prep": 3,
+    "respSeconds": 45
+   },
+   {
+    "level": "experience",
+    "text": "Can you describe a time when your usual way of getting to campus didn't work, and what you did instead?",
+    "prep": 3,
+    "respSeconds": 45
+   },
+   {
+    "level": "opinion",
+    "text": "Some people think universities should reduce the number of parking spaces to encourage students to take the bus or ride bicycles. What is your opinion?",
+    "prep": 3,
+    "respSeconds": 45
+   },
+   {
+    "level": "prediction",
+    "text": "How do you think the way students travel to campus will change over the next ten years, and why?",
+    "prep": 3,
+    "respSeconds": 45
+   }
+  ]
+ }
+}

@@ -1,0 +1,63 @@
+{
+ "id": "dl_hiking_club_change_of_plans",
+ "task": "daily_life",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "passage",
+  "title": "Hiking Club: change of plans",
+  "directions": "Read in Daily Life (email)",
+  "text": [
+   "<strong>From:</strong> Lena Ortiz (Hiking Club)<br><strong>Subject:</strong> Change of plans for Sunday",
+   "Hi everyone, the weather service has issued a storm warning for the mountains this weekend, so we are moving Sunday's hike to the following Saturday. The bus will leave from the same place, but one hour earlier, at 7 a.m., because the new trail is longer. If you can no longer join, please reply by Thursday so we can offer your seat to someone on the waiting list. Those who already paid for the bus do not need to pay again.",
+   "— Lena"
+  ],
+  "questions": [
+   {
+    "id": "r11_dl2_q1",
+    "stem": "Why was the hike moved?",
+    "options": [
+     "Dangerous conditions are expected in the area.",
+     "The bus company cancelled the Sunday trip.",
+     "The mountain trail was closed for repairs.",
+     "Too few members signed up for Sunday."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Paraphrase: \"storm warning\" → dangerous conditions are expected. The others are not in the text.",
+     "tr": "Parafraz: \"storm warning\" → tehlikeli koşullar bekleniyor. Diğerleri metinde yok."
+    }
+   },
+   {
+    "id": "r11_dl2_q2",
+    "stem": "How is the new trip different from the original plan?",
+    "options": [
+     "It leaves one hour earlier in the morning.",
+     "It leaves from a different place.",
+     "It costs more than the first trip.",
+     "It follows a shorter trail."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "The change: one hour earlier. B and D say the opposite of the text (same place, longer trail).",
+     "tr": "Fark: bir saat erken. B ve D metnin söylediğinin tersi (same place, longer trail)."
+    }
+   },
+   {
+    "id": "r11_dl2_q3",
+    "stem": "What should a member who cannot attend do?",
+    "options": [
+     "Reply by Thursday so the seat can be offered to someone else.",
+     "Find a replacement from the waiting list.",
+     "Pay for the bus again on Saturday.",
+     "Join the original hike on Sunday."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Detail: \"reply by Thursday\" → let them know before the deadline. B borrows \"waiting list\" from the text and puts the responsibility on the member.",
+     "tr": "Detay: \"reply by Thursday\" → son tarihten önce haber ver. B metindeki \"waiting list\" kelimesini kullanıp sorumluluğu üyeye yüklüyor."
+    }
+   }
+  ]
+ }
+}

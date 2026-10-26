@@ -1,0 +1,27 @@
+{
+ "id": "l11_ecr8",
+ "task": "choose_response",
+ "tier": "easy",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_ecr8",
+  "audio": [
+   {
+    "text": "When is your flight home?",
+    "voice": "male:gb"
+   }
+  ],
+  "options": [
+   "Next Friday morning.",
+   "I'm flying to London.",
+   "Home is far away.",
+   "I like flying."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "\"When\" → a time. B gives a place.",
+   "tr": "Ne zaman → zaman. B yer veriyor."
+  }
+ }
+}

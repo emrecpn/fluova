@@ -1,0 +1,93 @@
+{
+ "id": "ac_why_cats_purr",
+ "task": "academic",
+ "tier": "easy",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "passage",
+  "title": "Why Cats Purr",
+  "directions": "Read an Academic Passage — lower module",
+  "text": [
+   "Cats purr when they are happy, but that is not the only reason. A cat may also purr when it is hurt, hungry or scared. Mother cats purr to their kittens, and kittens purr back to show that they are fine.",
+   "Some scientists think purring helps cats calm down. Others believe the low sound may even help bones and muscles heal faster. Cats make the sound by moving muscles in their throat very quickly as they breathe in and out.",
+   "Even after many studies, scientists still do not fully agree on why cats purr."
+  ],
+  "questions": [
+   {
+    "id": "r11_ace_q1",
+    "stem": "What is the passage mainly about?",
+    "options": [
+     "The different reasons a cat might make a certain sound",
+     "How mother cats take care of their kittens",
+     "Why cats are happier than other pets",
+     "How scientists study the bones of cats"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main idea (paraphrase).",
+     "tr": "Ana fikir (parafraz)."
+    }
+   },
+   {
+    "id": "r11_ace_q2",
+    "stem": "The word \"heal\" in paragraph 2 is closest in meaning to",
+    "options": [
+     "get better",
+     "grow longer",
+     "move faster",
+     "feel colder"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Vocabulary in context: heal = recover.",
+     "tr": "Bağlamda kelime: heal = iyileşmek."
+    }
+   },
+   {
+    "id": "r11_ace_q3",
+    "stem": "Why do kittens purr back to their mothers?",
+    "options": [
+     "To show their mothers that they are fine",
+     "To ask her for more food",
+     "To show that they are scared",
+     "To help their bones grow"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Detail: \"show that they are fine\".",
+     "tr": "Detay: \"show that they are fine\"."
+    }
+   },
+   {
+    "id": "r11_ace_q4",
+    "stem": "What can be inferred about a cat that is purring?",
+    "options": [
+     "It is not always feeling good.",
+     "It is always hungry.",
+     "It has just finished eating.",
+     "It wants to play with people."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference: cats in pain or afraid also purr → purring does not always mean the cat feels good.",
+     "tr": "Çıkarım: acıyan/korkan kedi de mırlar → her zaman iyi hissettiği anlamına gelmez."
+    }
+   },
+   {
+    "id": "r11_ace_q5",
+    "stem": "How do cats produce the sound?",
+    "options": [
+     "By quickly moving muscles in the throat",
+     "By pushing air out through the nose",
+     "By tapping their paws on the ground",
+     "By closing their mouth very tightly"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Detail.",
+     "tr": "Detay."
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,12 @@
+{
+ "id": "ctw_recycled_paper",
+ "task": "ctw",
+ "tier": "easy",
+ "topic": "recycling",
+ "origin": "practice-02",
+ "screen": {
+  "type": "ctw",
+  "title": "Complete the Words: Recycled paper",
+  "source": "Paper can be recycled several times before it is too weak to use. First, used paper is mixed with water to make a soft pulp. Machines then remove ink, glue, and small pieces of plastic. The clean pulp is pressed flat and dried on large hot rollers. Each time paper is recycled, its fibers become shorter, so new pulp is often added to keep it strong."
+ }
+}

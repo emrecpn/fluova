@@ -1,0 +1,28 @@
+{
+ "id": "p2_cr3",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_cr3",
+  "audio": [
+   {
+    "text": "Who's leading the review session tomorrow?",
+    "voice": "female:au"
+   }
+  ],
+  "options": [
+   "In Room 204 at three o'clock.",
+   "Yes, I'm going to review my notes.",
+   "It should last about an hour.",
+   "One of the teaching assistants, I think."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "\"Who\" → a person. B answers yes/no and repeats \"review\".",
+   "tr": "\"Who\" → kişi. B evet/hayır diyor ve \"review\" kelimesini tekrar ediyor."
+  }
+ }
+}

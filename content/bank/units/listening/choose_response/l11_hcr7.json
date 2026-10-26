@@ -1,0 +1,27 @@
+{
+ "id": "l11_hcr7",
+ "task": "choose_response",
+ "tier": "hard",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_hcr7",
+  "audio": [
+   {
+    "text": "Is it just me, or is the Wi-Fi really slow today?",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "It's not just you. Mine keeps disconnecting.",
+   "I usually study in my room.",
+   "Yes, it's me.",
+   "The password is on the wall."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Idiomatic question → a shared experience. C takes it literally.",
+   "tr": "Deyimsel soru → paylaşılan deneyim. C sözcüğü sözcüğüne yanıt."
+  }
+ }
+}

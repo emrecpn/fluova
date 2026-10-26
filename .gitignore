@@ -1,0 +1,16 @@
+# OS / editor
+.DS_Store
+*.swp
+.vscode/
+.idea/
+.claude/
+
+# build output
+site/dist/
+node_modules/
+
+# local test artefacts
+*_results.json
+*_report.json
+stt_lab_recordings*.json
+*.webm

@@ -1,0 +1,28 @@
+{
+ "id": "p2_cr2",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_cr2",
+  "audio": [
+   {
+    "text": "How long does it take to walk to the stadium?",
+    "voice": "male:gb"
+   }
+  ],
+  "options": [
+   "Every Saturday during the season.",
+   "I'd rather take the bus there.",
+   "About fifteen minutes from here.",
+   "It holds about ten thousand people."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "\"How long\" → a length of time. A gives a frequency, the classic trap.",
+   "tr": "\"How long\" → süre. A sıklık veriyor; klasik tuzak."
+  }
+ }
+}

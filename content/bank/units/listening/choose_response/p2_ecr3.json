@@ -1,0 +1,28 @@
+{
+ "id": "p2_ecr3",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_ecr3",
+  "audio": [
+   {
+    "text": "Can I borrow your pen?",
+    "voice": "female:gb"
+   }
+  ],
+  "options": [
+   "It's a blue pen.",
+   "I borrowed a book.",
+   "Sure, here you go.",
+   "On the table."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "Request → agreement. B repeats \"borrow\".",
+   "tr": "Rica → kabul. B \"borrow\" kelimesini tekrar ediyor."
+  }
+ }
+}

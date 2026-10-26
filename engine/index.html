@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fluova — Practice tests</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Figtree:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="css/style.css?v=6">
+<script src="js/i18n.js?v=1"></script>
+</head>
+<body>
+<div class="field" aria-hidden="true"><i></i><i></i><i></i></div>
+<div class="wrap">
+  <header class="pagebar">
+    <a class="brand" href="index.html">
+      <svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12.5" fill="var(--c2)" stroke="var(--ink)" stroke-width="2"/><path d="M8 16c3-6 9-6 12 0" fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-linecap="round"/><circle cx="14" cy="10" r="2.2" fill="var(--ink)"/></svg>
+      Fluova
+    </a>
+    <span class="grow"></span>
+    <a class="btn btn-sm" href="https://github.com/emrecpn/fluova" data-i18n="idx.source">Source code</a>
+    <div id="lang"></div>
+  </header>
+
+  <h1 class="page-h" data-i18n="idx.title">Free practice tests</h1>
+  <p class="sub" data-i18n="idx.sub"></p>
+
+  <div class="grid2" id="tests" aria-live="polite"><p class="small" data-i18n="idx.loading">Loading tests…</p></div>
+
+  <section class="tile" id="newTest" style="margin-top:22px" hidden>
+    <span class="pill green" data-i18n="idx.new.pill">Always new</span>
+    <h2 data-i18n="idx.new.h">New practice test</h2>
+    <p id="newP"></p>
+    <div class="tile-foot">
+      <button class="btn btn-primary" id="newBtn" data-i18n="idx.new.btn">Build a new test</button>
+      <a class="small" href="https://github.com/emrecpn/fluova/blob/main/CONTRIBUTING.md#question-bank" data-i18n="idx.bank">Add questions to the bank</a>
+    </div>
+    <p class="small mt" id="newMsg" aria-live="polite"></p>
+    <div id="genList"></div>
+  </section>
+
+  <section class="tile" style="margin-top:28px">
+    <span class="pill yellow" data-i18n="idx.check.pill">Before you start</span>
+    <h2 data-i18n="idx.check.h">Sound &amp; microphone check</h2>
+    <p data-i18n="idx.check.p"></p>
+    <div class="check-row">
+      <button class="btn" id="testAudio" data-i18n="idx.check.audio">Play sound check</button>
+      <span id="audioResult" class="small" data-i18n="idx.check.audioHint"></span>
+    </div>
+    <div class="check-row">
+      <button class="btn" id="testMic" data-i18n="idx.check.mic">Test microphone</button>
+      <span id="micResult" class="small" data-i18n="idx.check.micHint"></span>
+    </div>
+    <h3 id="sttH" style="margin-top:22px" data-i18n="stt.h">Speaking transcription</h3>
+    <p class="small"><span data-i18n="stt.p"></span> <a href="https://github.com/emrecpn/fluova/blob/main/docs/STT-RESULTS.md" data-i18n="stt.how">How we tested</a></p>
+    <div class="stt-choice" role="radiogroup" aria-labelledby="sttH">
+      <label class="stt-opt"><input type="radio" name="stt" value="browser">
+        <span><strong data-i18n="stt.browser.h">Browser speech recognition</strong> <span class="pill" data-i18n="stt.browser.tag">default</span><br>
+        <span class="small" data-i18n="stt.browser.p"></span></span></label>
+      <label class="stt-opt"><input type="radio" name="stt" value="whisper">
+        <span><strong data-i18n="stt.whisper.h">Whisper on your device</strong> <span class="pill green" data-i18n="stt.whisper.tag">more accurate</span><br>
+        <span class="small" data-i18n="stt.whisper.p"></span></span></label>
+    </div>
+    <div class="check-row" id="whisperRow" hidden>
+      <button class="btn" id="whisperBtn" data-i18n="stt.download">Download Whisper now</button>
+      <span class="small" id="whisperMsg" aria-live="polite"></span>
+    </div>
+  </section>
+
+  <div class="note"><span data-i18n="idx.gate"></span> <a href="https://github.com/emrecpn/fluova/issues" data-i18n="idx.issue">Found a problem? Open an issue</a> · <a href="../generator/index.html" data-i18n="idx.builder">Want to write a test? Use the test builder</a></div>
+
+  <p class="disclaimer" data-i18n="disclaimer"></p>
+</div>
+
+<script src="js/audio.js?v=9"></script>
+<script src="js/whisper.js?v=1"></script>
+<script src="../tools/validate.js"></script>
+<script src="../tools/lint_forms.js"></script>
+<script src="../tools/bank.js"></script>
+<script src="../generator/form_assemble.js"></script>
+<script>
+(function () {
+  I18N.apply(); I18N.switcher(document.getElementById('lang'));
+  const esc = s => String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
+  const read = k => { try { return localStorage.getItem(k); } catch (e) { return null; } };
+  const PILL = { real: '', easy: 'green', medium: 'yellow', hard: 'peach' };
+
+  function tile(x) {
+    const done = read('fluova_results_' + x.id), started = !done && read('fluova_progress_' + x.id);
+    const max = Math.max(...x.sections.map(s => s.items));
+    const bars = x.sections.map(s => `<div class="secbar"><span style="color:var(--ink)">${t('sec.' + s.id)}</span>
+      <b style="width:${Math.round(100 * s.items / max)}%"></b><span>${t('idx.items', { n: s.items })} · ${t('idx.min', { n: s.minutes })}</span></div>`).join('');
+    const links = done ? `<a href="results.html?test=${x.id}">${t('idx.last')}</a> · <a href="review.html?test=${x.id}">${t('idx.review')}</a>` : '';
+    return `<article class="tile">
+      <span class="pill ${PILL[x.level] || ''}">${esc(t('level.' + x.level))}</span>
+      <h2>${esc(x.title)}</h2>
+      <p>${t('idx.minutes', { n: x.minutes })}</p>
+      <div class="secbars">${bars}</div>
+      <div class="tile-foot">
+        <a class="btn btn-primary" href="exam.html?test=${x.id}">${started ? t('idx.resume') : t('idx.start')} →</a>
+        <span class="links small">${links}</span>
+        <span class="ver">v${esc(x.version)}</span>
+      </div>
+    </article>`;
+  }
+
+  fetch('../content/tests/index.json', { cache: 'no-cache' })
+    .then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+    .then(m => { document.getElementById('tests').innerHTML = m.tests.map(tile).join(''); })
+    .catch(e => { document.getElementById('tests').innerHTML = `<p class="status-bad">${t('idx.loadFail', { msg: esc(e.message) })}</p>`; });
+
+  // ---------- New test from the question bank ----------
+  const readJSON = (k, d) => { try { return JSON.parse(localStorage.getItem(k)) ?? d; } catch (e) { return d; } };
+  const genIds = () => { try { return Object.keys(localStorage).filter(k => k.startsWith('fluova_gen_')).map(k => k.slice(11)); } catch (e) { return []; } };
+  function drawGenerated() {
+    const ids = genIds();
+    document.getElementById('genList').innerHTML = !ids.length ? '' : `<h3 style="margin-top:22px">${t('idx.gen.h')}</h3><p class="small">${t('idx.gen.p')}</p>` +
+      ids.map(id => { const done = read('fluova_results_' + id); return `<p class="small"><a href="exam.html?test=${id}">${esc(id)}</a>${done ? ` · <a href="results.html?test=${id}">${t('idx.last')}</a> · <a href="review.html?test=${id}">${t('idx.review')}</a>` : ''}</p>`; }).join('');
+  }
+  Promise.all(['../content/bank/bank.json', '../content/bank/blueprint.json'].map(u => fetch(u, { cache: 'no-cache' }).then(r => { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })))
+    .then(([bank, blueprint]) => {
+      document.getElementById('newTest').hidden = false;
+      document.getElementById('newP').textContent = t('idx.new.p', { n: bank.units.length });
+      drawGenerated();
+      const btn = document.getElementById('newBtn'), msg = document.getElementById('newMsg');
+      btn.onclick = () => {
+        btn.disabled = true; btn.textContent = t('idx.new.building');
+        setTimeout(() => {
+          const seen = readJSON('fluova_seen_units', []);
+          const r = FluovaForm.assemble(bank, blueprint, { seed: Math.floor(Math.random() * 2 ** 31), exclude: seen },
+            { bank: FluovaBank, validate: FluovaValidate, lint: FluovaLint });
+          btn.disabled = false; btn.textContent = t('idx.new.btn');
+          if (r.error || r.high) { msg.innerHTML = `<span class="status-bad">${esc(t('idx.new.fail', { msg: r.error || 'quality gate' }))}</span>`; return; }
+          try { localStorage.setItem('fluova_gen_' + r.test.id, JSON.stringify(r.test)); } catch (e) { msg.innerHTML = `<span class="status-bad">${esc(t('idx.new.fail', { msg: e.message }))}</span>`; return; }
+          const repeats = r.test.units.filter(u => seen.includes(u)).length;
+          if (repeats) { msg.innerHTML = `${esc(t('idx.new.repeat', { n: repeats }))} <a class="btn btn-sm" href="exam.html?test=${r.test.id}">${t('idx.new.anyway')} →</a>`; drawGenerated(); }
+          else location.href = 'exam.html?test=' + r.test.id;
+        }, 30);
+      };
+    }).catch(() => {});
+
+  // ---------- Speaking transcription choice ----------
+  const radios = [...document.querySelectorAll('input[name="stt"]')], wRow = document.getElementById('whisperRow');
+  const wBtn = document.getElementById('whisperBtn'), wMsg = document.getElementById('whisperMsg');
+  function syncStt() {
+    const m = WhisperSTT.mode(); radios.forEach(r => { r.checked = r.value === m; });
+    wRow.hidden = m !== 'whisper';
+    if (m === 'whisper' && !WhisperSTT.isReady()) wMsg.textContent = WhisperSTT.isCached() ? t('stt.cached') : '';
+  }
+  radios.forEach(r => r.addEventListener('change', () => { WhisperSTT.setMode(r.value); syncStt(); }));
+  wBtn.onclick = () => {
+    wBtn.disabled = true;
+    WhisperSTT.load((f, l, tot) => { wMsg.textContent = t('stt.downloading', { p: Math.round(f * 100), l: Math.round(l), t: Math.round(tot) }); })
+      .then(() => { wMsg.innerHTML = `<span class="status-ok">${t('stt.ready')}</span>`; })
+      .catch(e => { wBtn.disabled = false; wMsg.innerHTML = `<span class="status-bad">${esc(t('stt.fail', { msg: e.message }))}</span>`; WhisperSTT.setMode('browser'); syncStt(); });
+  };
+  syncStt();
+
+  document.getElementById('testAudio').onclick = () => {
+    const r = document.getElementById('audioResult');
+    if (!TTS.available()) { r.innerHTML = `<span class="status-bad">${t('idx.check.noTts')}</span>`; return; }
+    r.textContent = t('idx.check.playing');
+    TTS.speakOne('This is a sound check for the listening section. If you can hear this clearly, your audio is working.', 'female',
+      () => { r.innerHTML = `<span class="status-ok">${t('idx.check.audioOk')}</span>`; });
+  };
+  document.getElementById('testMic').onclick = async () => {
+    const r = document.getElementById('micResult');
+    if (!Recorder.supported()) { r.innerHTML = `<span class="status-bad">${t('idx.check.noRec')}</span>`; return; }
+    r.textContent = t('idx.check.asking');
+    const ok = await Recorder.test();
+    r.innerHTML = ok ? `<span class="status-ok">${t('idx.check.micOk')}</span>` : `<span class="status-bad">${t('idx.check.micBad')}</span>`;
+  };
+})();
+</script>
+</body>
+</html>

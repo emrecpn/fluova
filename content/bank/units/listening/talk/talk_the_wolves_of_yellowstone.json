@@ -1,0 +1,87 @@
+{
+ "id": "talk_the_wolves_of_yellowstone",
+ "task": "talk",
+ "tier": "hard",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "listening",
+  "title": "Academic Talk: The wolves of Yellowstone",
+  "prompt": "Listen to part of a lecture in an environmental science class.",
+  "audio": [
+   {
+    "text": "In 1995, wolves were reintroduced to Yellowstone National Park after an absence of about seventy years. What happened next became one of the most famous stories in ecology. Without wolves, elk had grazed freely along the rivers, eating young willow and aspen trees before they could grow. Once wolves returned, the story goes, elk began avoiding open river valleys where they could easily be hunted. The trees recovered, beavers returned to use the wood, and their dams created ponds that supported fish and birds. Ecologists call a chain of effects like this a trophic cascade.",
+    "voice": "female:us"
+   },
+   {
+    "text": "Now, it's a great story, and parts of it are clearly true. But more recent research suggests the picture is messier. Elk numbers also fell because of hunting by people, harsh winters, and a growing population of bears. And in some areas the willows haven't recovered at all, because without beaver dams the water table had dropped too low for the trees to grow back. In other words, removing a predator can trigger changes that simply adding it back doesn't reverse.",
+    "voice": "female:us"
+   },
+   {
+    "text": "So what's the lesson? Not that the wolves didn't matter. They did. The lesson is that ecosystems don't always work like a light switch. Restoring one species is often only the first step.",
+    "voice": "female:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "l11_hac1_q1",
+    "stem": "What is the lecture mainly about?",
+    "options": [
+     "A well-known ecological success story is more complicated than it first seemed.",
+     "Wolves were the only reason the elk population declined.",
+     "Beavers are more important to ecosystems than wolves.",
+     "Bringing back predators always reverses earlier damage."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main idea (paraphrase). B and D are too extreme.",
+     "tr": "Ana fikir (parafraz). B ve D aşırı uç."
+    }
+   },
+   {
+    "id": "l11_hac1_q2",
+    "stem": "Why does the professor mention bears and harsh winters?",
+    "options": [
+     "To point out other factors that reduced the number of elk",
+     "To describe dangers that wolves face in the park",
+     "To explain why beavers left the rivers",
+     "To compare Yellowstone with other national parks"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Purpose.",
+     "tr": "Amaç."
+    }
+   },
+   {
+    "id": "l11_hac1_q3",
+    "stem": "What can be inferred about the areas where willows have not recovered?",
+    "options": [
+     "Restoring the trees there requires more than bringing back wolves.",
+     "Elk still graze freely along those rivers.",
+     "Beavers built too many dams in those areas.",
+     "The water table there has returned to normal."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference. D contradicts the talk.",
+     "tr": "Çıkarım. D metnin tersi."
+    }
+   },
+   {
+    "id": "l11_hac1_q4",
+    "stem": "What does the professor mean when she says ecosystems \"don't always work like a light switch\"?",
+    "options": [
+     "Undoing an earlier change may not return a system to its original state.",
+     "Ecosystems change too slowly for scientists to study.",
+     "Some species matter only at certain times of day.",
+     "Predators should be reintroduced gradually."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Figurative meaning.",
+     "tr": "Mecaz anlamı."
+    }
+   }
+  ]
+ }
+}

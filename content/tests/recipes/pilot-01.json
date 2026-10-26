@@ -1,0 +1,100 @@
+{
+ "id": "pilot-01",
+ "title": "Fluova Practice Test 1 (pilot)",
+ "version": "1.2.1",
+ "level": "real",
+ "authors": [
+  "Fluova contributors"
+ ],
+ "notes": "First spec-faithful test. Explanations are available in English and Turkish.",
+ "sections": {
+  "reading": {
+   "screens": [
+    "ctw_honeybee_dances",
+    "ctw_sleep_and_memory",
+    "dl_campus_bike_repair_day",
+    "dl_hiking_club_change_of_plans",
+    "ac_urban_heat_islands"
+   ],
+   "hard": [
+    "ctw_antibiotic_resistance",
+    "dl_library_loan_policy",
+    "ac_color_words_and_perception"
+   ],
+   "easy": [
+    "ctw_school_gardens",
+    "dl_pool_rules",
+    "ac_why_cats_purr"
+   ]
+  },
+  "listening": {
+   "screens": [
+    "l11_cr1",
+    "l11_cr2",
+    "l11_cr3",
+    "l11_cr4",
+    "l11_cr5",
+    "l11_cr6",
+    "l11_cr7",
+    "l11_cr8",
+    "l11_cr9",
+    "conv_at_the_library",
+    "conv_the_career_fair",
+    "conv_office_hours",
+    "ann_midterm_change",
+    "ann_lounge_kitchen",
+    "talk_the_serial_position_effect"
+   ],
+   "hard": [
+    "l11_hcr1",
+    "l11_hcr2",
+    "l11_hcr3",
+    "l11_hcr4",
+    "l11_hcr5",
+    "l11_hcr6",
+    "l11_hcr7",
+    "l11_hcr8",
+    "conv_essay_feedback",
+    "conv_housing_office",
+    "ann_lab_relocation",
+    "talk_the_wolves_of_yellowstone",
+    "talk_path_dependence"
+   ],
+   "easy": [
+    "l11_ecr1",
+    "l11_ecr2",
+    "l11_ecr3",
+    "l11_ecr4",
+    "l11_ecr5",
+    "l11_ecr6",
+    "l11_ecr7",
+    "l11_ecr8",
+    "conv_at_the_bus_stop",
+    "ann_library_hours",
+    "talk_how_penguins_stay_warm"
+   ]
+  },
+  "writing": {
+   "screens": [
+    "w11_bs1",
+    "w11_bs2",
+    "w11_bs3",
+    "w11_bs4",
+    "w11_bs5",
+    "w11_bs6",
+    "w11_bs7",
+    "w11_bs8",
+    "w11_bs9",
+    "w11_bs10",
+    "w11_email",
+    "w11_disc"
+   ]
+  },
+  "speaking": {
+   "screens": [
+    "s11_lr",
+    "s11_iv"
+   ]
+  }
+ }
+}

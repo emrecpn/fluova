@@ -1,0 +1,64 @@
+{
+ "id": "dl_water_shutoff",
+ "task": "daily_life",
+ "tier": "medium",
+ "topic": "apartment notice",
+ "origin": "practice-02",
+ "screen": {
+  "type": "passage",
+  "title": "Building email: water shut-off",
+  "directions": "Read in Daily Life (email)",
+  "text": [
+   "<strong>From:</strong> Daniel Reyes (Apartment 4B)<br><strong>To:</strong> All residents<br><strong>Subject:</strong> Water shut-off on Thursday",
+   "Hi everyone, the building manager asked me to pass this on. Workers will replace the main water pipe on Thursday, so the water will be turned off from 9 a.m. to about 3 p.m. Please fill a few bottles the night before if you need water for cooking. The laundry room will also be closed that day, but it will reopen on Friday morning with two new washing machines. If you have questions, please contact the office directly rather than replying to this email.",
+   "— Daniel"
+  ],
+  "questions": [
+   {
+    "id": "dl_water_shutoff_q1",
+    "stem": "Why did Daniel write the email?",
+    "options": [
+     "To ask the manager to repair a pipe in his apartment",
+     "To invite residents to try the new washing machines",
+     "To warn neighbors about a planned interruption in service",
+     "To complain about the noise from the construction work"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Purpose (paraphrase): the water will be turned off for repairs. A misreads who is asking for the repair; B picks a minor detail.",
+     "tr": "Amaç (parafraz): onarım için suyun kesileceği uyarısı. A onarımı kimin istediğini yanlış okuyor; B küçük bir ayrıntıyı ana amaç sanıyor."
+    }
+   },
+   {
+    "id": "dl_water_shutoff_q2",
+    "stem": "What are residents advised to do?",
+    "options": [
+     "Do their laundry early on Thursday morning",
+     "Send any questions to Daniel by email",
+     "Avoid cooking until the pipe is replaced",
+     "Store some water before the work begins"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Paraphrase of \"fill a few bottles the night before\". B contradicts the email (contact the office, not Daniel); A is impossible because the laundry room is closed.",
+     "tr": "\"Fill a few bottles the night before\" ifadesinin parafrazı. B e-postayla çelişiyor (Daniel'e değil ofise yazılmalı); A imkânsız çünkü çamaşırhane kapalı."
+    }
+   },
+   {
+    "id": "dl_water_shutoff_q3",
+    "stem": "What can be inferred about the laundry room?",
+    "options": [
+     "It will be closed for the rest of the week",
+     "Its equipment is being upgraded.",
+     "It is the reason the water must be turned off",
+     "It will be open only to residents of Apartment 4B"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Inference: it \"will reopen ... with two new washing machines\". A contradicts \"reopen on Friday\"; C confuses the cause of the shut-off.",
+     "tr": "Çıkarım: \"iki yeni çamaşır makinesiyle yeniden açılacak\". A \"Cuma açılacak\" bilgisiyle çelişiyor; C kesintinin nedenini karıştırıyor."
+    }
+   }
+  ]
+ }
+}

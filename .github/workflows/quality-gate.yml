@@ -1,0 +1,29 @@
+name: Quality gate
+on:
+  pull_request:
+  push:
+    branches: [main]
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: Question bank (every unit + fixed-test recipes)
+        run: |
+          node tools/bank.js
+          git diff --exit-code content/bank/bank.json content/tests/*.json || (echo "::error::Run node tools/bank.js and commit the result" && exit 1)
+      - name: Random forms from the bank pass the gate
+        run: node generator/form_assemble.js --check 20
+      - name: Validate test structure
+        run: node tools/validate.js
+      - name: Fidelity linter (fails on critical findings)
+        run: node tools/lint_forms.js --report lint-report.md
+      - name: Manifest is up to date
+        run: |
+          node tools/build_manifest.js
+          git diff --exit-code content/tests/index.json || (echo "::error::Run node tools/build_manifest.js and commit content/tests/index.json" && exit 1)
+      - name: Lint report
+        if: always()
+        run: test -f lint-report.md && cat lint-report.md >> "$GITHUB_STEP_SUMMARY" || true

@@ -1,0 +1,28 @@
+{
+ "id": "p2_cr6",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_cr6",
+  "audio": [
+   {
+    "text": "Which dorm did you end up choosing?",
+    "voice": "male:au"
+   }
+  ],
+  "options": [
+   "I'm still choosing my classes.",
+   "Yes, I moved in last weekend.",
+   "My roommate is from Chile.",
+   "The one closest to the gym."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "\"Which\" → a choice. A repeats \"choosing\" with a different object.",
+   "tr": "\"Which\" → seçim. A \"choosing\" kelimesini başka bir nesneyle tekrar ediyor."
+  }
+ }
+}

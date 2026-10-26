@@ -1,0 +1,27 @@
+{
+ "id": "l11_cr5",
+ "task": "choose_response",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_cr5",
+  "audio": [
+   {
+    "text": "Would you mind opening the window? It's really warm in here.",
+    "voice": "female:gb"
+   }
+  ],
+  "options": [
+   "Sure, let me get that for you.",
+   "I don't mind warm weather at all.",
+   "The window looks out on the garden.",
+   "It was even warmer yesterday."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Request → agreement. B repeats \"mind\" and \"warm\" without answering the request.",
+   "tr": "Rica → kabul. B \"mind\" ve \"warm\" kelimelerini tekrar edip isteği yanıtlamıyor."
+  }
+ }
+}

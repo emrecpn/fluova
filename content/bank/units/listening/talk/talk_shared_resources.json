@@ -1,0 +1,88 @@
+{
+ "id": "talk_shared_resources",
+ "task": "talk",
+ "tier": "hard",
+ "topic": "economics",
+ "origin": "practice-02",
+ "screen": {
+  "type": "listening",
+  "title": "Academic Talk: Managing shared resources",
+  "prompt": "Listen to part of a lecture in an economics class.",
+  "audio": [
+   {
+    "text": "In economics there's a well-known idea called the tragedy of the commons. Picture a pasture that everyone in a village may use. Each herder reasons that adding one more cow brings him the full benefit of that cow, while the cost, slightly less grass, is shared by everyone. So each herder adds cows, and eventually the pasture is ruined, even though no one wanted that outcome.",
+    "voice": "male:us"
+   },
+   {
+    "text": "For a long time, economists assumed there were only two solutions: either the government controls the resource, or it's divided into private property. But the political economist Elinor Ostrom challenged that view. She studied fisheries, forests, and irrigation systems around the world that communities had managed successfully for centuries without either solution.",
+    "voice": "male:us"
+   },
+   {
+    "text": "What did those communities have in common? Ostrom found that they set clear boundaries around who could use the resource, they made their own rules about how much each person could take, and, this is important, they monitored one another and applied gradually increasing penalties to people who broke the rules. In 2009 she became the first woman to win the Nobel Prize in economics, partly for this work. So the lesson isn't that shared resources are always doomed. It's that the outcome depends on how the users organize themselves.",
+    "voice": "male:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "talk_shared_resources_q1",
+    "stem": "What is the main point of the lecture?",
+    "options": [
+     "Shared resources can survive when their users organize well.",
+     "Governments should control all natural resources.",
+     "Private property is the only way to protect a pasture.",
+     "Fisheries are harder to manage than forests."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main idea (paraphrase of the conclusion). B and C are the views Ostrom challenged.",
+     "tr": "Ana fikir (sonucun parafrazı). B ve C, Ostrom'un karşı çıktığı görüşler."
+    }
+   },
+   {
+    "id": "talk_shared_resources_q2",
+    "stem": "According to the professor, why does each herder add more cows?",
+    "options": [
+     "The village requires a minimum number of cows.",
+     "He gains the full benefit but shares the cost.",
+     "The grass grows back faster with more animals.",
+     "He expects the government to divide the pasture."
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail (paraphrase of the herder's reasoning). C contradicts the outcome described.",
+     "tr": "Ayrıntı (çobanın mantığının parafrazı). C anlatılan sonuçla çelişiyor."
+    }
+   },
+   {
+    "id": "talk_shared_resources_q3",
+    "stem": "Why does the professor mention fisheries, forests, and irrigation systems?",
+    "options": [
+     "To list resources that are often destroyed",
+     "To show where governments succeeded",
+     "To give examples of resources that communities managed well",
+     "To explain how Ostrom won the Nobel Prize"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Function: evidence for Ostrom's challenge. A reverses their role.",
+     "tr": "İşlev: Ostrom'un itirazının kanıtı. A rollerini tersine çeviriyor."
+    }
+   },
+   {
+    "id": "talk_shared_resources_q4",
+    "stem": "What would Ostrom most likely say about a fishing village where no one checks how much others catch?",
+    "options": [
+     "It needs stricter national laws to survive.",
+     "It will succeed if the boundaries are clear.",
+     "It should give its waters to a private company.",
+     "Its fish stocks are at greater risk of being overused."
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Inference: monitoring was one of the shared features she found. B ignores that all features mattered; C and A are the two \"standard\" solutions.",
+     "tr": "Çıkarım: karşılıklı denetim bulduğu ortak özelliklerden biriydi. B bunu yok sayıyor; C ve A iki \"standart\" çözüm."
+    }
+   }
+  ]
+ }
+}

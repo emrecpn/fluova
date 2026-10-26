@@ -1,0 +1,27 @@
+{
+ "id": "l11_cr2",
+ "task": "choose_response",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_cr2",
+  "audio": [
+   {
+    "text": "Where can I pick up my student ID card?",
+    "voice": "male:gb"
+   }
+  ],
+  "options": [
+   "At the registration office on the first floor.",
+   "I picked mine up yesterday afternoon.",
+   "You'll need a recent photo for that.",
+   "It stays valid for four years."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "A \"where\" question → a place. C is true but does not answer the question.",
+   "tr": "Nerede sorusuna yer. C doğru bir bilgi ama soruyu yanıtlamıyor."
+  }
+ }
+}

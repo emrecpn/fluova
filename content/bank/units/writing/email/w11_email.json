@@ -1,0 +1,19 @@
+{
+ "id": "w11_email",
+ "task": "email",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "writing",
+  "id": "w11_email",
+  "kind": "email",
+  "minutes": 7,
+  "wordTarget": {
+   "en": "Cover all three points in full sentences. Do not forget a closing.",
+   "tr": "Üç maddenin hepsini karşıla; tam cümleler kur. Kapanışı unutma.",
+   "es": "Cubre los tres puntos con oraciones completas. No olvides la despedida."
+  },
+  "prompt": "Write an email to the community center. In your email, do the following: (1) Say what you were looking forward to in the workshop. (2) Explain what happened. (3) Ask what the center can do about the time you missed.",
+  "scenario": "You signed up for a Saturday photography workshop at your local community center. At the last minute the workshop was moved to a different room, but nobody told the participants. You waited in the original room and missed the first hour. To: workshops@riversidecenter.org · Subject: Missed part of Saturday's workshop"
+ }
+}

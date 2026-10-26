@@ -1,0 +1,27 @@
+{
+ "id": "l11_ecr7",
+ "task": "choose_response",
+ "tier": "easy",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_ecr7",
+  "audio": [
+   {
+    "text": "Why are you wearing a coat?",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "It's freezing outside.",
+   "I bought it on sale.",
+   "Yes, it's a new coat.",
+   "My coat is in the closet."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "\"Why\" → a reason.",
+   "tr": "Neden → sebep."
+  }
+ }
+}

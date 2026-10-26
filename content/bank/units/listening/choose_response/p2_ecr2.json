@@ -1,0 +1,28 @@
+{
+ "id": "p2_ecr2",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_ecr2",
+  "audio": [
+   {
+    "text": "When does the movie start?",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "In the student center.",
+   "At seven thirty.",
+   "It's a comedy.",
+   "I saw it already."
+  ],
+  "answer": 1,
+  "why": {
+   "en": "\"When\" → a time. A gives a place.",
+   "tr": "\"When\" → zaman. A yer veriyor."
+  }
+ }
+}

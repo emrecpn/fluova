@@ -1,0 +1,27 @@
+{
+ "id": "l11_cr6",
+ "task": "choose_response",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_cr6",
+  "audio": [
+   {
+    "text": "Have you decided which elective to take next term?",
+    "voice": "male:au"
+   }
+  ],
+  "options": [
+   "I'm leaning toward the photography course.",
+   "Yes, I decided to take the bus instead.",
+   "Next term starts in early September.",
+   "The electives are all listed online."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "\"Which class\" → a choice. D is true but is not an answer.",
+   "tr": "Hangi ders → seçim. D doğru bir bilgi ama yanıt değil."
+  }
+ }
+}

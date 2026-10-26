@@ -1,0 +1,27 @@
+{
+ "id": "l11_hcr5",
+ "task": "choose_response",
+ "tier": "hard",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_hcr5",
+  "audio": [
+   {
+    "text": "Wasn't the deadline for scholarship applications yesterday?",
+    "voice": "male:gb"
+   }
+  ],
+  "options": [
+   "They extended it to the end of the month.",
+   "I applied for a scholarship last year.",
+   "Yesterday was a really long day.",
+   "The applications are available online."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "A correction with new information.",
+   "tr": "Yeni bilgiyle düzeltme."
+  }
+ }
+}

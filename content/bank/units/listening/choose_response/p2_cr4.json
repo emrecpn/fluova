@@ -1,0 +1,28 @@
+{
+ "id": "p2_cr4",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_cr4",
+  "audio": [
+   {
+    "text": "Why didn't you come to the club meeting?",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "Yes, I joined the club last year.",
+   "I had a dentist appointment.",
+   "It was in the student lounge.",
+   "We're meeting again next week."
+  ],
+  "answer": 1,
+  "why": {
+   "en": "\"Why\" → a reason. A answers a \"why\" question with \"Yes\".",
+   "tr": "\"Why\" → sebep. A \"neden\" sorusuna \"Evet\" ile cevap veriyor."
+  }
+ }
+}

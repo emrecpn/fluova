@@ -1,0 +1,94 @@
+{
+ "id": "ac_standard_time",
+ "task": "academic",
+ "tier": "medium",
+ "topic": "history of technology",
+ "origin": "practice-02",
+ "screen": {
+  "type": "passage",
+  "title": "The Invention of Standard Time",
+  "directions": "Read an Academic Passage — module 1",
+  "text": [
+   "Until the late nineteenth century, most towns set their clocks by the sun. Noon was the moment when the sun stood highest in the sky, so the time in one city could differ by several minutes from the time in a city a short distance to the east or west.",
+   "This local system caused few problems while travel was slow. The arrival of railroads, however, changed the situation. Each railway company kept its own schedule, and a single station might display several clocks showing different times. Passengers often missed connections.",
+   "In 1883, railroads in the United States and Canada adopted a system of time zones, each differing from its neighbor by exactly one hour. Many communities at first resisted giving up \"sun time,\" but the convenience of the new system gradually won acceptance."
+  ],
+  "questions": [
+   {
+    "id": "ac_standard_time_q1",
+    "stem": "What is the passage mainly about?",
+    "options": [
+     "Why railroad companies charged different prices",
+     "Why people preferred sun time to railroad time",
+     "How faster travel led to a shared way of keeping time",
+     "How engineers built more accurate clocks"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Main idea (paraphrase). B reverses the outcome; A and D are not discussed.",
+     "tr": "Ana fikir (parafraz). B sonucu tersine çeviriyor; A ve D metinde yok."
+    }
+   },
+   {
+    "id": "ac_standard_time_q2",
+    "stem": "The word \"adopted\" in the passage is closest in meaning to",
+    "options": [
+     "officially ended",
+     "carefully tested",
+     "strongly opposed",
+     "began to use"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Vocabulary in context: adopted a system = began to use it.",
+     "tr": "Bağlamda kelime: adopted a system = kullanmaya başladı."
+    }
+   },
+   {
+    "id": "ac_standard_time_q3",
+    "stem": "Why does the author mention that a station \"might display several clocks showing different times\"?",
+    "options": [
+     "To show how confusing travel had become",
+     "To describe the design of early railway stations",
+     "To explain why clocks were expensive at the time",
+     "To argue that railway workers were careless"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Author's purpose: an example of the confusion caused by local time. B takes the example literally.",
+     "tr": "Yazarın amacı: yerel saatin yarattığı karmaşaya örnek. B örneği gerçek anlamıyla alıyor."
+    }
+   },
+   {
+    "id": "ac_standard_time_q4",
+    "stem": "What can be inferred about the time before railroads?",
+    "options": [
+     "Most travelers carried several clocks with them",
+     "Slight differences between places mattered little",
+     "Towns to the east always set their clocks later",
+     "Governments required every town to use sun time"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Inference from \"caused few problems while travel was slow\". C reverses the direction; D is not stated.",
+     "tr": "\"Yolculuk yavaşken pek sorun çıkarmadı\" ifadesinden çıkarım. C yönü tersine çeviriyor; D metinde yok."
+    }
+   },
+   {
+    "id": "ac_standard_time_q5",
+    "stem": "According to the passage, what was true of the new time zones?",
+    "options": [
+     "Each zone set its clocks by the local sun",
+     "They were first used in European cities",
+     "Neighboring zones were exactly one hour apart",
+     "Communities accepted them immediately"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Detail: \"each differing from its neighbor by exactly one hour\". D contradicts \"at first resisted\".",
+     "tr": "Ayrıntı: \"her biri komşusundan tam bir saat farklı\". D \"başta direndiler\" bilgisiyle çelişiyor."
+    }
+   }
+  ]
+ }
+}

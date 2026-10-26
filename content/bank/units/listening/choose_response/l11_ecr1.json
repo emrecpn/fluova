@@ -1,0 +1,27 @@
+{
+ "id": "l11_ecr1",
+ "task": "choose_response",
+ "tier": "easy",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_ecr1",
+  "audio": [
+   {
+    "text": "What time does the cafeteria close?",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "At eight on weekdays.",
+   "I had pasta for lunch.",
+   "Yes, it's very close to here.",
+   "The food there is great."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "A \"what time\" question. C is a sound-alike trap (\"close\").",
+   "tr": "Saat sorusu. C \"close\" eş sesli tuzak."
+  }
+ }
+}

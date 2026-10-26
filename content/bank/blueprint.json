@@ -1,0 +1,329 @@
+{
+ "$comment": "Section settings for every test + the slot recipe the form assembler fills (task/tier[/questions]). Edit with care: the recipe encodes the 2026 blueprint (docs/FIDELITY-SPEC.md).",
+ "sections": {
+  "reading": {
+   "name": "Reading",
+   "minutes": 29,
+   "intro": {
+    "en": "Reading: Complete the Words, Read in Daily Life and Read an Academic Passage. After the first module the section adapts to you and gets harder or easier. Correct answers often do not repeat the words in the text; they say the same thing in other words.",
+    "tr": "Reading: Complete the Words, Read in Daily Life ve Read an Academic Passage. İlk modülden sonra bölüm sana göre zorlaşır ya da kolaylaşır. Doğru cevaplar çoğu zaman metindeki kelimeleri tekrar etmez; anlamı başka sözcüklerle verir.",
+    "es": "Reading: Complete the Words, Read in Daily Life y Read an Academic Passage. Después del primer módulo, la sección se adapta a ti y se vuelve más difícil o más fácil. Las respuestas correctas a menudo no repiten las palabras del texto: dicen lo mismo con otras palabras."
+   }
+  },
+  "listening": {
+   "name": "Listening",
+   "minutes": 29,
+   "oneWay": true,
+   "intro": {
+    "en": "Listening: Listen and Choose a Response, conversations, announcements and academic talks. Each recording plays once; you may take notes. Speakers use US, British and Australian accents. After the first module the section adapts to you and gets harder or easier.",
+    "tr": "Listening: Listen and Choose a Response, konuşmalar, duyurular ve akademik konuşmalar. Her ses bir kez çalınır; not alabilirsiniz. Konuşmacılar ABD, İngiliz ve Avustralya aksanlarıyla konuşur. İlk modülden sonra bölüm sana göre zorlaşır ya da kolaylaşır.",
+    "es": "Listening: Listen and Choose a Response, conversaciones, avisos y clases académicas. Cada grabación se reproduce una vez; puedes tomar notas. Se oyen acentos de EE. UU., Reino Unido y Australia. Después del primer módulo, la sección se adapta a ti y se vuelve más difícil o más fácil."
+   }
+  },
+  "writing": {
+   "name": "Writing",
+   "minutes": 23,
+   "intro": {
+    "en": "Writing: Build a Sentence (10), Write an Email (7 min) and Write for an Academic Discussion (10 min). In Build a Sentence some words are already in place, and a tile can hold more than one word.",
+    "tr": "Writing: Build a Sentence (10), Write an Email (7 dk) ve Write for an Academic Discussion (10 dk). Build a Sentence'ta bazı kelimeler cümlede hazır gelir; kutular bazen birden fazla kelimedir.",
+    "es": "Writing: Build a Sentence (10), Write an Email (7 min) y Write for an Academic Discussion (10 min). En Build a Sentence algunas palabras ya están colocadas y una ficha puede tener más de una palabra."
+   }
+  },
+  "speaking": {
+   "name": "Speaking",
+   "minutes": 8,
+   "intro": {
+    "en": "Speaking: two tasks. Each task opens with a scenario. In Listen and Repeat the sentences get longer; in the Interview, the interviewer asks four questions on one topic.",
+    "tr": "Speaking: iki görev. Her görev bir senaryoyla başlar. Listen & Repeat'te cümleler giderek uzar; Interview'da görüşmeci aynı konuda dört soru sorar.",
+    "es": "Speaking: dos tareas. Cada tarea empieza con un escenario. En Listen and Repeat las oraciones se van alargando; en la entrevista, la persona que entrevista hace cuatro preguntas sobre un mismo tema."
+   }
+  }
+ },
+ "recipe": {
+  "reading": {
+   "screens": [
+    {
+     "task": "ctw",
+     "tier": "medium"
+    },
+    {
+     "task": "ctw",
+     "tier": "medium"
+    },
+    {
+     "task": "daily_life",
+     "tier": "medium",
+     "questions": 2
+    },
+    {
+     "task": "daily_life",
+     "tier": "medium",
+     "questions": 3
+    },
+    {
+     "task": "academic",
+     "tier": "medium"
+    }
+   ],
+   "hard": [
+    {
+     "task": "ctw",
+     "tier": "hard"
+    },
+    {
+     "task": "daily_life",
+     "tier": "hard",
+     "questions": 3
+    },
+    {
+     "task": "academic",
+     "tier": "hard"
+    }
+   ],
+   "easy": [
+    {
+     "task": "ctw",
+     "tier": "easy"
+    },
+    {
+     "task": "daily_life",
+     "tier": "easy",
+     "questions": 2
+    },
+    {
+     "task": "academic",
+     "tier": "easy"
+    }
+   ]
+  },
+  "listening": {
+   "screens": [
+    {
+     "task": "choose_response",
+     "tier": "medium"
+    },
+    {
+     "task": "choose_response",
+     "tier": "medium"
+    },
+    {
+     "task": "choose_response",
+     "tier": "medium"
+    },
+    {
+     "task": "choose_response",
+     "tier": "medium"
+    },
+    {
+     "task": "choose_response",
+     "tier": "medium"
+    },
+    {
+     "task": "choose_response",
+     "tier": "medium"
+    },
+    {
+     "task": "choose_response",
+     "tier": "medium"
+    },
+    {
+     "task": "choose_response",
+     "tier": "medium"
+    },
+    {
+     "task": "choose_response",
+     "tier": "medium"
+    },
+    {
+     "task": "conversation",
+     "tier": "medium"
+    },
+    {
+     "task": "conversation",
+     "tier": "medium"
+    },
+    {
+     "task": "conversation",
+     "tier": "medium"
+    },
+    {
+     "task": "announcement",
+     "tier": "medium"
+    },
+    {
+     "task": "announcement",
+     "tier": "medium"
+    },
+    {
+     "task": "talk",
+     "tier": "medium"
+    }
+   ],
+   "hard": [
+    {
+     "task": "choose_response",
+     "tier": "hard"
+    },
+    {
+     "task": "choose_response",
+     "tier": "hard"
+    },
+    {
+     "task": "choose_response",
+     "tier": "hard"
+    },
+    {
+     "task": "choose_response",
+     "tier": "hard"
+    },
+    {
+     "task": "choose_response",
+     "tier": "hard"
+    },
+    {
+     "task": "choose_response",
+     "tier": "hard"
+    },
+    {
+     "task": "choose_response",
+     "tier": "hard"
+    },
+    {
+     "task": "choose_response",
+     "tier": "hard"
+    },
+    {
+     "task": "conversation",
+     "tier": "hard"
+    },
+    {
+     "task": "conversation",
+     "tier": "hard"
+    },
+    {
+     "task": "announcement",
+     "tier": "hard"
+    },
+    {
+     "task": "talk",
+     "tier": "hard"
+    },
+    {
+     "task": "talk",
+     "tier": "hard"
+    }
+   ],
+   "easy": [
+    {
+     "task": "choose_response",
+     "tier": "easy"
+    },
+    {
+     "task": "choose_response",
+     "tier": "easy"
+    },
+    {
+     "task": "choose_response",
+     "tier": "easy"
+    },
+    {
+     "task": "choose_response",
+     "tier": "easy"
+    },
+    {
+     "task": "choose_response",
+     "tier": "easy"
+    },
+    {
+     "task": "choose_response",
+     "tier": "easy"
+    },
+    {
+     "task": "choose_response",
+     "tier": "easy"
+    },
+    {
+     "task": "choose_response",
+     "tier": "easy"
+    },
+    {
+     "task": "conversation",
+     "tier": "easy"
+    },
+    {
+     "task": "announcement",
+     "tier": "easy"
+    },
+    {
+     "task": "talk",
+     "tier": "easy"
+    }
+   ]
+  },
+  "writing": {
+   "screens": [
+    {
+     "task": "build_sentence",
+     "tier": "any"
+    },
+    {
+     "task": "build_sentence",
+     "tier": "any"
+    },
+    {
+     "task": "build_sentence",
+     "tier": "any"
+    },
+    {
+     "task": "build_sentence",
+     "tier": "any"
+    },
+    {
+     "task": "build_sentence",
+     "tier": "any"
+    },
+    {
+     "task": "build_sentence",
+     "tier": "any"
+    },
+    {
+     "task": "build_sentence",
+     "tier": "any"
+    },
+    {
+     "task": "build_sentence",
+     "tier": "any"
+    },
+    {
+     "task": "build_sentence",
+     "tier": "any"
+    },
+    {
+     "task": "build_sentence",
+     "tier": "any"
+    },
+    {
+     "task": "email",
+     "tier": "any"
+    },
+    {
+     "task": "discussion",
+     "tier": "any"
+    }
+   ],
+   "buildSentenceDistractors": 2
+  },
+  "speaking": {
+   "screens": [
+    {
+     "task": "listen_repeat",
+     "tier": "any"
+    },
+    {
+     "task": "interview",
+     "tier": "any"
+    }
+   ]
+  }
+ }
+}

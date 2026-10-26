@@ -1,0 +1,28 @@
+{
+ "id": "p2_ecr8",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_ecr8",
+  "audio": [
+   {
+    "text": "Why are you so tired?",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "Yes, I am.",
+   "At eleven o'clock.",
+   "In my room.",
+   "I studied all night."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "\"Why\" → a reason. A answers \"yes\".",
+   "tr": "\"Why\" → sebep. A \"evet\" diyor."
+  }
+ }
+}

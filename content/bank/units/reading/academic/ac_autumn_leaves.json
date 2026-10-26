@@ -1,0 +1,93 @@
+{
+ "id": "ac_autumn_leaves",
+ "task": "academic",
+ "tier": "easy",
+ "topic": "plant biology",
+ "origin": "practice-02",
+ "screen": {
+  "type": "passage",
+  "title": "Why Leaves Change Color",
+  "directions": "Read an Academic Passage — lower module",
+  "text": [
+   "In summer, leaves are green because they contain a large amount of chlorophyll, a substance that helps plants make food from sunlight. Leaves also contain yellow and orange substances, but the strong green color usually hides them.",
+   "In autumn, days become shorter and cooler. Trees stop producing chlorophyll, and the green color slowly fades. The yellow and orange colors that were there all along become visible. Some trees also produce new red substances in autumn. Bright, sunny days and cool nights often make these red colors stronger."
+  ],
+  "questions": [
+   {
+    "id": "ac_autumn_leaves_q1",
+    "stem": "What is the passage mainly about?",
+    "options": [
+     "Why leaves show different colors in autumn",
+     "How trees store water for the winter",
+     "Which trees have the brightest red leaves",
+     "Why some leaves stay green all year"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main idea. The other options are not discussed.",
+     "tr": "Ana fikir. Diğer şıklar metinde ele alınmıyor."
+    }
+   },
+   {
+    "id": "ac_autumn_leaves_q2",
+    "stem": "According to the passage, why are leaves green in summer?",
+    "options": [
+     "They receive more rain in summer",
+     "They contain a lot of chlorophyll",
+     "They have no yellow substances",
+     "They are younger than autumn leaves"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail: green comes from chlorophyll. C contradicts the text: yellow substances are there but hidden.",
+     "tr": "Ayrıntı: yeşil renk klorofilden gelir. C metinle çelişiyor: sarı maddeler vardır ama gizlidir."
+    }
+   },
+   {
+    "id": "ac_autumn_leaves_q3",
+    "stem": "The word \"fades\" in the passage is closest in meaning to",
+    "options": [
+     "spreads quickly",
+     "becomes darker",
+     "becomes weaker",
+     "changes shape"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Vocabulary in context: the green color slowly fades = slowly becomes weaker.",
+     "tr": "Bağlamda kelime: fades = solar, zayıflar."
+    }
+   },
+   {
+    "id": "ac_autumn_leaves_q4",
+    "stem": "Where do the yellow and orange colors of autumn come from?",
+    "options": [
+     "They are made only after the first frost",
+     "They are caused by the cool nights",
+     "They come from the soil in autumn",
+     "They were in the leaves all summer"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Paraphrase of \"were there all along\". A and C invent a new source; B is said about the red colors only.",
+     "tr": "\"Were there all along\" ifadesinin parafrazı. A ve C yeni bir kaynak uyduruyor; B yalnızca kırmızı renkler için söyleniyor."
+    }
+   },
+   {
+    "id": "ac_autumn_leaves_q5",
+    "stem": "What can be inferred about a cloudy autumn with warm nights?",
+    "options": [
+     "The red shades might look duller",
+     "Leaves would stay green until winter",
+     "Trees would produce more chlorophyll",
+     "Yellow colors would not appear"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference: sunny days and cool nights make red stronger, so the opposite weather likely makes it weaker. D is too strong — yellow appears anyway.",
+     "tr": "Çıkarım: güneşli gün ve serin gece kırmızıyı güçlendirir, tersi hava muhtemelen zayıflatır. D fazla iddialı — sarı her durumda görünür."
+    }
+   }
+  ]
+ }
+}

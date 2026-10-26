@@ -1,0 +1,27 @@
+{
+ "id": "p2_bs10",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "build a sentence",
+ "origin": "practice-02",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p2_bs10",
+  "personA": "Do you know why the bus was late this morning?",
+  "frame": [
+   "The driver told us",
+   null,
+   null,
+   null,
+   null,
+   "on the bridge."
+  ],
+  "answer": [
+   "that",
+   "there",
+   "had been",
+   "an accident"
+  ],
+  "distractors": []
+ }
+}

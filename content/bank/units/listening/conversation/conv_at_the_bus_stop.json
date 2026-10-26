@@ -1,0 +1,65 @@
+{
+ "id": "conv_at_the_bus_stop",
+ "task": "conversation",
+ "tier": "easy",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: At the bus stop",
+  "prompt": "Listen to a conversation between two people.",
+  "audio": [
+   {
+    "text": "Excuse me, is this the line for the bus to the airport?",
+    "voice": "female:us"
+   },
+   {
+    "text": "It is, but the next bus isn't until two thirty. The one thirty bus was cancelled.",
+    "voice": "male:au"
+   },
+   {
+    "text": "Oh no. My flight leaves at four.",
+    "voice": "female:us"
+   },
+   {
+    "text": "You could take a taxi from the stand around the corner. It's faster, but it costs more.",
+    "voice": "male:au"
+   },
+   {
+    "text": "I think I'll do that. I can't miss my flight.",
+    "voice": "female:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "l11_ecv_q1",
+    "stem": "What is the woman's problem?",
+    "options": [
+     "Her bus was cancelled and she might be late.",
+     "She lost her airline ticket.",
+     "She is waiting in the wrong line.",
+     "Her flight was cancelled."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "The problem. D moves the bus cancellation to a flight.",
+     "tr": "Sorun. D otobüs iptalini uçağa taşıyor."
+    }
+   },
+   {
+    "id": "l11_ecv_q2",
+    "stem": "What will the woman probably do?",
+    "options": [
+     "Take a taxi to the airport",
+     "Wait for the two thirty bus",
+     "Change her flight to a later time",
+     "Walk to the airport"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference: \"I think I'll do that\".",
+     "tr": "Çıkarım: \"I think I'll do that\"."
+    }
+   }
+  ]
+ }
+}

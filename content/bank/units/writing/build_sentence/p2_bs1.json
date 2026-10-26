@@ -1,0 +1,27 @@
+{
+ "id": "p2_bs1",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "build a sentence",
+ "origin": "practice-02",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p2_bs1",
+  "personA": "Are you coming to the study group tonight?",
+  "frame": [
+   "Sorry, I can't.",
+   null,
+   null,
+   null,
+   null,
+   "afterward?"
+  ],
+  "answer": [
+   "Could",
+   "you",
+   "send me",
+   "the notes"
+  ],
+  "distractors": []
+ }
+}

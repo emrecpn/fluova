@@ -1,0 +1,27 @@
+{
+ "id": "l11_cr4",
+ "task": "choose_response",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_cr4",
+  "audio": [
+   {
+    "text": "I'm sorry, I can't make it to your presentation tomorrow.",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "No problem, I'll send you the slides.",
+   "It starts at ten in room two-oh-four.",
+   "I made it all myself, actually.",
+   "Tomorrow works better for me too."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Responding to an apology. C repeats \"make it\" with a different meaning.",
+   "tr": "Özre karşılık. C \"make it\" ifadesini yanlış anlamda tekrar ediyor."
+  }
+ }
+}

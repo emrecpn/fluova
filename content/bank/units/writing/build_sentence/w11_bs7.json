@@ -1,0 +1,26 @@
+{
+ "id": "w11_bs7",
+ "task": "build_sentence",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "w11_bs7",
+  "personA": "My roommate is moving out next month.",
+  "frame": [
+   "Do you know",
+   null,
+   null,
+   null,
+   null,
+   "?"
+  ],
+  "answer": [
+   "where",
+   "she",
+   "is going",
+   "to live"
+  ],
+  "distractors": []
+ }
+}

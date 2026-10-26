@@ -1,0 +1,27 @@
+{
+ "id": "w11_bs6",
+ "task": "build_sentence",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "w11_bs6",
+  "personA": "I'm going to the farmers' market tomorrow.",
+  "frame": [
+   null,
+   null,
+   null,
+   null,
+   null,
+   "?"
+  ],
+  "answer": [
+   "What",
+   "time",
+   "does",
+   "it",
+   "open"
+  ],
+  "distractors": []
+ }
+}

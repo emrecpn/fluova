@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Fluova</title>
+<meta name="description" content="Fluova is a free, open-source practice platform for the TOEFL® test (2026 format). Full-length adaptive tests built from the official specification, each one checked automatically before release.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fluova · Practice like the real test. Free for everyone.">
+<meta property="og:description" content="Free and open source. Built from the official 2026 specification and checked automatically before release.">
+<meta name="twitter:card" content="summary_large_image">
+<meta property="og:image" content="https://emrecpn.github.io/fluova/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Fluova: practice like the real test. Free for everyone.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Figtree:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap">
+<style>
+/* Layout concept: a board game. Chunky sticker tiles with ink outlines and offset shadows sit on a soft
+   pastel field; a dotted quest path links the route to test day; solving a question pays out XP. */
+:root{
+  --bg:#f6f4fd; --surface:#ffffff; --ink:#2a2342; --muted:#6c6488; --accent:#5b3fd9; --on-accent:#ffffff;
+  --c1:#cbbcff; --c2:#b6ecd5; --c3:#ffe59e; --c4:#ffc6b4; --ok:#1d7f5c; --bad:#bd3d35;
+  --f-display:"Unbounded","Arial Rounded MT Bold",system-ui,sans-serif;
+  --f-body:"Figtree",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"DM Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+  --r:22px; color-scheme:light;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#17132a; --surface:#221c3c; --ink:#f2eefe; --muted:#a69dc9; --accent:#b9a8ff; --on-accent:#17132a;
+  --c1:#54449e; --c2:#2d6e5a; --c3:#7a6426; --c4:#86493b; --ok:#86e2bf; --bad:#ffab9d; color-scheme:dark;}}
+:root[data-theme="dark"]{
+  --bg:#17132a; --surface:#221c3c; --ink:#f2eefe; --muted:#a69dc9; --accent:#b9a8ff; --on-accent:#17132a;
+  --c1:#54449e; --c2:#2d6e5a; --c3:#7a6426; --c4:#86493b; --ok:#86e2bf; --bad:#ffab9d; color-scheme:dark;}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 var(--f-body);overflow-x:hidden;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;position:relative}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:10px}
+h1,h2,h3{font-family:var(--f-display);text-wrap:balance;margin:0;letter-spacing:-.02em}
+.mono{font-family:var(--f-mono);font-size:13px;letter-spacing:.04em}
+
+/* soft field blobs (decor) */
+.field{position:fixed;inset:0;z-index:-1;overflow:hidden;pointer-events:none}
+.field i{position:absolute;border-radius:50%;filter:blur(60px);opacity:.55;animation:drift 22s ease-in-out infinite alternate}
+.field i:nth-child(1){width:420px;height:420px;background:var(--c1);top:-120px;left:-80px}
+.field i:nth-child(2){width:360px;height:360px;background:var(--c2);top:30%;right:-120px;animation-duration:26s}
+.field i:nth-child(3){width:320px;height:320px;background:var(--c3);bottom:-100px;left:30%;animation-duration:30s}
+@keyframes drift{to{transform:translate(40px,30px) scale(1.08)}}
+
+.sticker{background:var(--surface);border:2px solid var(--ink);border-radius:var(--r);box-shadow:5px 5px 0 var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:10px;cursor:pointer;font:700 16px/1 var(--f-body);text-decoration:none;
+  padding:14px 20px;border:2px solid var(--ink);border-radius:999px;background:var(--surface);color:var(--ink);
+  box-shadow:4px 4px 0 var(--ink);transition:transform .12s,box-shadow .12s}
+.btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink)}
+.btn:active{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--ink)}
+.btn-primary{background:var(--accent);color:var(--on-accent)}
+.btn-sm{padding:9px 14px;font-size:14px;box-shadow:3px 3px 0 var(--ink)}
+
+/* top bar */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:10;padding-block:12px}
+.top-in{max-width:1120px;margin:0 auto;display:flex;align-items:center;gap:12px;flex-wrap:wrap;
+  background:color-mix(in srgb,var(--surface) 86%,transparent);backdrop-filter:blur(8px);border:2px solid var(--ink);border-radius:999px;padding:8px 10px 8px 16px}
+.brand{display:flex;align-items:center;gap:9px;font:800 19px var(--f-display);text-decoration:none}
+.brand svg{width:28px;height:28px}
+.xp{display:flex;align-items:center;gap:8px;margin-left:auto}
+.xp-track{width:104px;height:14px;border:2px solid var(--ink);border-radius:999px;overflow:hidden;background:var(--bg)}
+.xp-track i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--c2),var(--c1));border-right:2px solid var(--ink);transition:width .7s cubic-bezier(.34,1.56,.64,1)}
+#xpNum{font-variant-numeric:tabular-nums;min-width:4ch}
+.seg{display:flex;border:2px solid var(--ink);border-radius:999px;overflow:hidden}
+.seg button{all:unset;cursor:pointer;padding:5px 10px;font:500 13px var(--f-mono)}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+.seg a{all:unset;cursor:pointer;padding:5px 10px;font:500 13px var(--f-mono)}
+.seg a[aria-current="page"]{background:var(--ink);color:var(--bg)}
+.seg a:focus-visible{outline:3px solid var(--accent);outline-offset:-3px}
+.lang-suggest{max-width:1120px;margin:8px auto 0;display:flex;align-items:center;gap:12px;flex-wrap:wrap;background:var(--c3);border:2px solid var(--ink);border-radius:16px;padding:8px 14px;font-size:15px}
+.lang-suggest a{font-weight:700;color:var(--ink)}
+.lang-suggest button{all:unset;cursor:pointer;margin-inline-start:auto;font-size:20px;line-height:1;padding:0 4px}
+@media (max-width:680px){.top .btn-sm{display:none}.xp-track{width:64px}.top-in{border-radius:20px}}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:44px;align-items:center;padding-block:48px 36px}
+.hero > *{min-width:0}
+.kicker{display:inline-block;background:var(--c3);border:2px solid var(--ink);border-radius:999px;padding:5px 12px;margin-bottom:18px}
+h1{font-size:clamp(34px,5.4vw,64px);font-weight:800;line-height:1.05}
+h1 em{font-style:normal;display:inline-block;background:var(--c2);border:2px solid var(--ink);border-radius:18px;padding:0 .25em;transform:rotate(-2deg);box-shadow:4px 4px 0 var(--ink);margin-top:.15em;max-width:100%;overflow-wrap:break-word;hyphens:auto}
+h1{overflow-wrap:break-word;hyphens:auto}  /* uzun tek kelimeler (TR/ES) sütundan taşmasın */
+.sub{color:var(--muted);font-size:18px;max-width:54ch;margin:22px 0 26px}
+.ctas{display:flex;gap:14px;flex-wrap:wrap}
+
+/* game cards */
+.game{position:relative;padding:22px}
+.chip{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--ink);border-radius:999px;padding:4px 11px;background:var(--c1);font:500 13px var(--f-mono)}
+.game-head{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:14px}
+.passage{background:var(--bg);border-radius:14px;padding:12px 14px;margin:0 0 12px;font-size:16px}
+.q{margin:0 0 12px}.q span{display:block;color:var(--muted);font-size:14px}
+.opts{display:grid;gap:9px}
+.opt{all:unset;cursor:pointer;display:flex;gap:12px;align-items:flex-start;padding:11px 13px;border:2px solid var(--ink);border-radius:16px;background:var(--surface);line-height:1.45;transition:transform .12s,background .12s}
+.opt:hover{transform:translateY(-2px);background:color-mix(in srgb,var(--c1) 35%,var(--surface))}
+.opt:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+.opt .key{flex:0 0 auto;width:26px;height:26px;border-radius:50%;border:2px solid var(--ink);display:grid;place-items:center;font:500 12px var(--f-mono);background:var(--c3)}
+.opt.is-right{background:var(--c2);transform:none}
+.opt.is-wrong{background:var(--c4);animation:wobble .35s}
+.opt:disabled{cursor:default}
+@keyframes wobble{25%{transform:rotate(-1.5deg)}75%{transform:rotate(1.5deg)}}
+.feedback{min-height:1.5em;margin:12px 0 0;font-size:15px;font-weight:600}
+.feedback.ok{color:var(--ok)}.feedback.bad{color:var(--bad)}
+.xp-pop{position:absolute;right:16px;top:-16px;font:700 14px var(--f-display);background:var(--c3);border:2px solid var(--ink);border-radius:999px;padding:5px 10px;animation:pop 1.6s cubic-bezier(.34,1.56,.64,1) forwards}
+@keyframes pop{0%{transform:scale(.4)}20%{transform:scale(1.1)}100%{transform:translateY(-18px) scale(1)}}
+.confetti{position:absolute;width:10px;height:10px;border-radius:50%;border:1.5px solid var(--ink);pointer-events:none;animation:burst .9s cubic-bezier(.2,.8,.2,1) forwards}
+@keyframes burst{to{transform:translate(var(--dx),var(--dy)) scale(.4);opacity:0}}
+
+/* sections */
+section{padding-block:46px}
+.sec-head{display:flex;flex-direction:column;gap:10px;margin-bottom:26px;max-width:720px}
+h2{font-size:clamp(26px,3.4vw,40px);font-weight:800;line-height:1.1}
+.lead{color:var(--muted);margin:0;max-width:62ch}
+
+/* proof */
+.proof{display:grid;grid-template-columns:auto 1fr;gap:34px;align-items:center;padding:26px;background:var(--c4)}
+.proof > *{min-width:0}
+.bubbles{display:flex;align-items:center;gap:14px}
+.bubble{width:118px;height:118px;border-radius:50%;border:2px solid var(--ink);background:var(--surface);display:grid;place-items:center;text-align:center;font:800 38px var(--f-display);line-height:1}
+.bubble small{display:block;font:500 11px var(--f-mono);letter-spacing:.04em;margin-top:6px;color:var(--muted)}
+.bubble.from{color:var(--muted)}
+.bubble.from .num{text-decoration:line-through;text-decoration-thickness:4px;text-decoration-color:var(--bad)}
+.bubble.to{width:140px;height:140px;font-size:50px;background:var(--c3);box-shadow:5px 5px 0 var(--ink)}
+.bubbles svg{width:44px;height:30px;color:var(--ink)}
+.proof .big{font:700 22px/1.3 var(--f-display);margin:0 0 10px}
+.proof .small{margin:0;max-width:60ch}
+
+/* spec */
+.spec{display:grid;gap:18px;padding:24px}
+.row{display:grid;grid-template-columns:minmax(0,250px) 1fr;gap:18px;align-items:center}
+.row-label{font-weight:700}
+.bars{display:grid;gap:7px;min-width:0}
+.bar{display:flex;align-items:center;gap:10px}
+.bar b{height:20px;border:2px solid var(--ink);border-radius:999px;flex:0 0 auto;transform-origin:left;animation:grow .9s .25s cubic-bezier(.34,1.56,.64,1) backwards}
+.bar.real b{background:var(--c2)}.bar.draft b{background:var(--c4)}
+.bar span{font:500 14px var(--f-mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+.bar em{font-style:normal;color:var(--muted)}
+@keyframes grow{from{transform:scaleX(0)}}
+.legend{display:flex;gap:16px;flex-wrap:wrap;color:var(--muted)}
+.legend i{display:inline-block;width:20px;height:12px;border:2px solid var(--ink);border-radius:999px;margin-right:7px;vertical-align:middle}
+.legend .real i{background:var(--c2)}.legend .draft i{background:var(--c4)}
+.note{color:var(--muted);font-size:14px;max-width:72ch;margin:14px 0 0}
+.scale{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px;align-items:flex-end}
+.stone{display:grid;place-items:center;text-align:center;border:2px solid var(--ink);border-radius:18px;background:var(--surface);width:64px;padding:8px 0;font:800 20px var(--f-display)}
+.stone small{font:500 11px var(--f-mono);color:var(--muted)}
+.stone:nth-child(n+5) small,.bubble.to small{color:var(--ink)}  /* muted grey fails contrast on coloured fills */
+.stone:nth-child(n+5){background:var(--c1)}.stone:last-child{background:var(--c3);box-shadow:4px 4px 0 var(--ink)}
+.scale-cap{width:100%;color:var(--muted);margin:0 0 4px}
+
+/* features */
+.feats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.feat{border:2px solid var(--ink);border-radius:var(--r);padding:20px;background:var(--surface);transition:transform .15s}
+.feat:hover{transform:rotate(-1deg) translateY(-3px)}
+.feat:nth-child(1){background:var(--c2)}.feat:nth-child(2){background:var(--c3)}.feat:nth-child(3){background:var(--c1)}
+.feat h3{font-size:18px;font-weight:700;margin:10px 0 8px}
+.feat p{margin:0;font-size:15px}
+.feat .tag{display:inline-block;font:500 12px var(--f-mono);border:2px solid var(--ink);border-radius:999px;padding:2px 9px;background:var(--surface)}
+.feat.soon{border-style:dashed;background:transparent}
+.soon-tag{background:var(--c4)!important}
+
+/* quest path */
+.quest-wrap{position:relative;isolation:isolate}
+.quest{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:18px;padding-top:10px}
+.quest-wrap svg.route{position:absolute;left:26px;right:26px;top:22px;width:calc(100% - 52px);height:28px;color:var(--ink);z-index:-1}
+.station{display:flex;flex-direction:column;gap:8px}
+.station .n{width:52px;height:52px;border-radius:50%;border:2px solid var(--ink);display:grid;place-items:center;font:800 22px var(--f-display);background:var(--c1);box-shadow:3px 3px 0 var(--ink)}
+.station:last-child .n{background:var(--c3)}
+.station h3{font-size:16px;font-weight:700;margin:4px 0 0}
+.station p{margin:0;color:var(--muted);font-size:15px;max-width:28ch}
+
+/* game 2 + badge */
+.games{display:grid;grid-template-columns:1.25fr .75fr;gap:22px;align-items:stretch}
+.games > *{min-width:0}
+.ctw{font-size:19px;line-height:2.5;margin:0}
+.ctw .stub{font-weight:700}
+.ctw input{font:500 19px var(--f-mono);letter-spacing:.6em;padding:2px 0 2px .3em;border:2px solid var(--ink);border-radius:10px;background:var(--c3);color:var(--ink);outline:none;vertical-align:baseline}
+.ctw input:focus{background:var(--surface);box-shadow:3px 3px 0 var(--ink)}
+.ctw input.is-right{background:var(--c2)}.ctw input.is-wrong{background:var(--c4)}
+.g2-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:12px}
+.badge{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:12px;padding:22px}
+.badge .seal{width:92px;height:92px;filter:grayscale(1);opacity:.55;transition:filter .4s,opacity .4s}
+.badge.is-open .seal{filter:none;opacity:1;animation:wiggle 1.2s ease-in-out 2}
+@keyframes wiggle{25%{transform:rotate(-8deg)}75%{transform:rotate(8deg)}}
+.badge p{margin:0}
+
+/* open source + donate */
+.wl{display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:start;padding:28px;background:var(--c1)}
+.wl > *{min-width:0}
+.donate{background:var(--surface);border:2px solid var(--ink);border-radius:18px;padding:18px 20px}
+.donate h3{font-size:18px;margin:0 0 8px}
+.donate p{margin:0 0 10px;font-size:15px}
+.wallet{background:var(--bg);border:2px dashed var(--ink);border-radius:12px;padding:8px 12px;overflow-wrap:anywhere;margin:0!important}
+.soon-pill{display:inline-block;vertical-align:3px;font-size:11px;border:2px solid var(--ink);border-radius:999px;padding:0 8px;background:var(--c4);font-weight:500}
+.soon-st .n{background:var(--surface)!important;border-style:dashed}
+
+footer{padding-block:24px 44px;color:var(--muted);font-size:14px;display:flex;gap:10px 22px;flex-wrap:wrap;justify-content:space-between;border-top:2px dashed color-mix(in srgb,var(--ink) 30%,transparent);margin-top:20px}
+footer p{margin:0;max-width:70ch}
+
+@media (max-width:900px){
+  .hero,.games,.wl,.proof{grid-template-columns:1fr}
+  .feats{grid-template-columns:1fr 1fr}
+  .quest{grid-template-columns:1fr 1fr}.quest-wrap svg.route{display:none}
+  .row{grid-template-columns:1fr;gap:6px}
+}
+@media (max-width:560px){
+  .feats,.quest{grid-template-columns:1fr}
+  .hero{padding-block:30px 16px;gap:30px}
+  .bubble{width:96px;height:96px;font-size:30px}.bubble.to{width:116px;height:116px;font-size:40px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body data-direction="pastel">
+<div class="field" aria-hidden="true"><i></i><i></i><i></i></div>
+
+<header class="top">
+  <div class="top-in">
+    <a class="brand" href="#">
+      <svg viewBox="0 0 28 28" aria-hidden="true"><circle cx="14" cy="14" r="12.5" fill="var(--c2)" stroke="var(--ink)" stroke-width="2"/><path d="M8 16c3-6 9-6 12 0" fill="none" stroke="var(--ink)" stroke-width="2.4" stroke-linecap="round"/><circle cx="14" cy="10" r="2.2" fill="var(--ink)"/></svg>
+      Fluova
+    </a>
+    <div class="xp" id="xpBar" role="progressbar" aria-valuemin="0" aria-valuemax="50" aria-valuenow="0" aria-label="XP">
+      <span class="mono" data-i18n="xp_label">XP</span>
+      <span class="xp-track"><i id="xpFill"></i></span>
+      <span class="mono" id="xpNum">0/50</span>
+    </div>
+    <div class="seg" role="group" aria-label="Language">
+      <button data-lang="en" aria-pressed="true">EN</button><button data-lang="tr" aria-pressed="false">TR</button><button data-lang="es" aria-pressed="false">ES</button>
+    </div>
+    <div class="seg"><button id="themeBtn" aria-label="Toggle theme"><span data-i18n="theme">Theme</span></button></div>
+    <a class="btn btn-sm btn-primary" href="../engine/index.html" data-i18n="nav_cta">Start a free test</a>
+  </div>
+</header>
+<div id="langSuggest" class="lang-suggest" role="region" aria-label="Language" hidden><span data-suggest-text></span><a href="#"></a><button type="button" aria-label="Close">×</button></div>
+
+<main class="wrap">
+  <section class="hero" aria-labelledby="h1">
+    <div>
+      <span class="kicker mono" data-i18n="kicker">Fluova · preparation for the TOEFL® test</span>
+      <h1 id="h1" data-i18n="h1">Practice like the real test. <em>Free for everyone.</em></h1>
+      <p class="sub" data-i18n="sub">Most practice tests are easier than the real exam. Fluova builds every test from the official 2026 specification and checks it automatically before release. It is free, open source and runs in your browser, with no account needed.</p>
+      <div class="ctas">
+        <a class="btn btn-primary" href="../engine/index.html" data-i18n="cta_primary">Start a free test</a>
+        <a class="btn" href="#try" data-i18n="cta_secondary">Try a 30-second question</a>
+      </div>
+    </div>
+
+    <div class="sticker game" id="try" data-game="g1" data-answer="b">
+      <div class="game-head"><span class="chip" data-i18n="g1_label">Try it · Reading</span><span class="mono">+20 XP</span></div>
+      <p class="passage">During exam weeks, the library stays open until midnight instead of closing at eight.</p>
+      <p class="q"><b>What changes during exam weeks?</b><span data-i18n="g1_hint">Choose the best answer.</span></p>
+      <div class="opts">
+        <button class="opt" data-opt="a"><span class="key">A</span><span>The library is only open during exam weeks.</span></button>
+        <button class="opt" data-opt="b"><span class="key">B</span><span>Students can study there later in the evening.</span></button>
+        <button class="opt" data-opt="c"><span class="key">C</span><span>The library closes at eight every night.</span></button>
+      </div>
+      <p class="feedback" data-feedback aria-live="polite"></p>
+    </div>
+  </section>
+
+  <section aria-labelledby="proofh">
+    <div class="sticker proof">
+      <div class="bubbles" aria-hidden="true">
+        <div class="bubble from"><div><span class="num">5.5</span><small data-i18n="proof_from">Practice tests</small></div></div>
+        <svg viewBox="0 0 44 30"><path d="M2 15h36M28 5l12 10-12 10" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div class="bubble to"><div>4.0<small data-i18n="proof_to">Real test</small></div></div>
+      </div>
+      <div>
+        <p class="mono" style="margin:0 0 8px" data-i18n="proof_label">Reading band</p>
+        <p class="big" id="proofh" data-i18n="proof_big">Practice tests said 5.5. The real test said 4.0.</p>
+        <p class="small" data-i18n="proof_small">Our founder's result, overall C1 (100/120). The practice questions could be solved by matching words. The real ones needed inference. Fluova exists to close that gap.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="spech">
+    <div class="sec-head">
+      <h2 id="spech" data-i18n="spec_h">Built from the test's own specification</h2>
+      <p class="lead" data-i18n="spec_lead">ETS publishes how the 2026 test is put together. We measure every practice test against it, automatically, before anyone sees it.</p>
+      <div class="legend mono"><span class="real"><i></i><span data-i18n="spec_c1">Real test</span></span><span class="draft"><i></i><span data-i18n="spec_c2">Our early drafts</span></span></div>
+    </div>
+    <div class="sticker spec">
+      <div class="row"><div class="row-label" data-i18n="spec_r1">Listening questions</div>
+        <div class="bars"><div class="bar real"><b style="width:calc(100% - 70px)"></b><span data-count="47">47</span></div>
+          <div class="bar draft"><b style="width:calc((100% - 70px) * 32 / 47)"></b><span data-count="32">32</span></div></div></div>
+      <div class="row"><div class="row-label" data-i18n="spec_r2">Longest lecture</div>
+        <div class="bars"><div class="bar real"><b style="width:calc(100% - 120px)"></b><span><span data-count="250">250</span> <em data-i18n="spec_words">words</em></span></div>
+          <div class="bar draft"><b style="width:calc((100% - 120px) * 140 / 250)"></b><span><span data-count="140">140</span> <em data-i18n="spec_words">words</em></span></div></div></div>
+      <div class="row"><div class="row-label" data-i18n="spec_r3">Complete the Words blanks</div>
+        <div class="bars"><div class="bar real"><b style="width:calc(100% - 70px)"></b><span data-count="30">30</span></div>
+          <div class="bar draft"><b style="width:calc((100% - 70px) * 18 / 30)"></b><span data-count="18">18</span></div></div></div>
+      <div class="row"><div class="row-label" data-i18n="spec_r4">Reading answers that paraphrase the text</div>
+        <div class="bars"><div class="bar real"><b style="width:calc(100% - 70px)"></b><span data-count="35" data-suffix="%">35%</span></div>
+          <div class="bar draft"><b style="width:20px"></b><span>0%</span></div></div></div>
+    </div>
+    <p class="note" data-i18n="spec_note">Real-test values come from the ETS 2026 test specification and ETS Practice Test 1. Draft values come from our own early forms, which failed this check. That is why the check exists.</p>
+    <div class="scale" aria-label="Score scale from band 1 (A1) to band 6 (C2)">
+      <p class="scale-cap mono"><span data-i18n="scale_h">The 2026 score scale</span> · <span data-i18n="scale_note">Bands 1 to 6, in half steps, aligned to CEFR.</span></p>
+      <div class="stone">1<small>A1</small></div><div class="stone">2<small>A2</small></div><div class="stone">3<small>B1</small></div>
+      <div class="stone">4<small>B2</small></div><div class="stone">5<small>C1</small></div><div class="stone">6<small>C2</small></div>
+    </div>
+  </section>
+
+  <section aria-labelledby="feath">
+    <div class="sec-head">
+      <h2 id="feath" data-i18n="feat_h">What changes when practice matches the test</h2>
+      <p class="lead" data-i18n="feat_lead">The two things test takers ask most: why was the real test harder, and which practice score should I believe?</p>
+    </div>
+    <div class="feats">
+      <article class="feat"><span class="tag">Reading · Listening</span><h3 data-i18n="f1_h">Real-test difficulty</h3><p data-i18n="f1_p">Item counts, lecture lengths and inference questions follow the official specification. Every test passes an automatic check first.</p></article>
+      <article class="feat"><span class="tag">Open source</span><h3 data-i18n="f2_h">Open and checkable</h3><p data-i18n="f2_p">Every test, every rule and the checker itself are public. Anyone can see why a test passed, and report anything that feels off.</p></article>
+      <article class="feat"><span class="tag">Speaking</span><h3 data-i18n="f3_h">Speaking with transcripts</h3><p data-i18n="f3_p">Your answers are recorded and transcribed by your browser's speech recognition, so you see exactly which words were heard. Better recognition for non-native accents is in progress.</p></article>
+      <article class="feat"><span class="tag">Reading · Listening</span><h3 data-i18n="f4_h">Adaptive, like the real test</h3><p data-i18n="f4_p">Reading and Listening send you to an easier or harder second module based on your first-module answers, just as the actual test does.</p></article>
+      <article class="feat"><span class="tag">EN · TR · ES</span><h3 data-i18n="f5_h">Explained in your language</h3><p data-i18n="f5_p">The test stays in English. The interface is available in English, Turkish and Spanish, and answer explanations in English and Turkish. More languages come with community help.</p></article>
+      <article class="feat"><span class="tag">GitHub</span><h3 data-i18n="f6_h">Built by the community</h3><p data-i18n="f6_p">Write a test, translate the interface or improve the checker. Every contribution passes the same quality gate.</p></article>
+    </div>
+  </section>
+
+  <section aria-labelledby="pathh">
+    <div class="sec-head"><h2 id="pathh" data-i18n="path_h">Your route to test day</h2></div>
+    <div class="quest-wrap">
+      <svg class="route" viewBox="0 0 1000 28" preserveAspectRatio="none" aria-hidden="true"><path d="M0 14 C 110 30, 220 -2, 333 14 S 555 30, 666 14 S 888 -2, 1000 14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-dasharray="2 10" stroke-linecap="round"/></svg>
+    <ol class="quest" style="list-style:none;margin:0;padding:0">
+      <li class="station"><div class="n">1</div><h3 data-i18n="path_1">Take a full test</h3><p data-i18n="path_1p">Timed and adaptive, all four sections, about 90 minutes.</p></li>
+      <li class="station"><div class="n">2</div><h3 data-i18n="path_2">Review every answer</h3><p data-i18n="path_2p">See the right option, the trap in each wrong one, and why.</p></li>
+      <li class="station soon-st"><div class="n">3</div><h3><span data-i18n="path_3">Practise weak tasks</span> <span class="soon-pill mono" data-i18n="soon">soon</span></h3><p data-i18n="path_3p">Short sets aimed at a single task type.</p></li>
+      <li class="station"><div class="n">4</div><h3 data-i18n="path_4">Test day</h3><p data-i18n="path_4p">You walk in already knowing how the real test feels.</p></li>
+    </ol>
+    </div>
+  </section>
+
+  <section class="games" aria-label="Second question">
+    <div class="sticker game" data-game="g2">
+      <div class="game-head"><span class="chip" data-i18n="g2_label">Try it · Complete the Words</span><span class="mono">+30 XP</span></div>
+      <p style="margin:0 0 10px;color:var(--muted);font-size:15px" data-i18n="g2_intro">Fill in the missing letters. Each box is one letter, the way the real task works.</p>
+      <p class="ctw">Many students take practice tests before the exam. Some of <span class="stub">th</span><input aria-label="these" data-ans="ese" maxlength="3" size="3" autocomplete="off" spellcheck="false"> tests <span class="stub">fe</span><input aria-label="feel" data-ans="el" maxlength="2" size="2" autocomplete="off" spellcheck="false"> easier <span class="stub">th</span><input aria-label="than" data-ans="an" maxlength="2" size="2" autocomplete="off" spellcheck="false"> the <span class="stub">re</span><input aria-label="real" data-ans="al" maxlength="2" size="2" autocomplete="off" spellcheck="false"> exam.</p>
+      <div class="g2-row"><button class="btn btn-primary btn-sm" data-check data-i18n="g2_check">Check</button><p class="feedback" data-feedback aria-live="polite" style="margin:0"></p></div>
+    </div>
+    <div class="sticker badge" id="badge">
+      <svg class="seal" viewBox="0 0 92 92" aria-hidden="true"><path d="M46 4l9 8 12-2 4 11 11 5-2 12 8 9-8 9 2 12-11 5-4 11-12-2-9 8-9-8-12 2-4-11-11-5 2-12-8-9 8-9-2-12 11-5 4-11 12 2z" fill="var(--c3)" stroke="var(--ink)" stroke-width="2"/><circle cx="46" cy="46" r="22" fill="var(--c2)" stroke="var(--ink)" stroke-width="2"/><path d="M36 46l7 7 14-15" fill="none" stroke="var(--ink)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <p class="mono" data-i18n="badge_label">WARM-UP</p>
+      <p style="font-weight:700" data-badge-text>Answer both questions to finish the warm-up.</p>
+      <a class="btn btn-sm btn-primary" href="../engine/index.html" data-i18n="nav_cta">Start a free test</a>
+    </div>
+  </section>
+
+  <section id="open" aria-labelledby="openh">
+    <div class="sticker wl">
+      <div>
+        <h2 id="openh" data-i18n="open_h">Free, open source, and yours to improve</h2>
+        <p class="lead" style="margin-top:10px;color:var(--ink)" data-i18n="open_lead">No account, no ads, no paywall. Your results are saved only in your browser.</p>
+        <div class="ctas" style="margin-top:20px">
+          <a class="btn btn-primary" href="../engine/index.html" data-i18n="cta_primary">Start a free test</a>
+          <a class="btn" href="https://github.com/emrecpn/fluova" data-i18n="open_gh">View on GitHub</a>
+        </div>
+      </div>
+      <div class="donate">
+        <h3 data-i18n="open_donate_h">Support the project</h3>
+        <p data-i18n="open_donate">Fluova is non-commercial. If it helped you, you can donate in crypto.</p>
+        <p class="small" style="margin:0 0 6px" data-i18n="open_wallet">EVM address (Ethereum and compatible networks):</p>
+        <p class="wallet mono" id="wallet">0x2C97C0EC81D2FE7887aefFaDe57196F6b9476d28</p>
+        <button class="btn btn-sm" type="button" id="copyWallet" data-i18n="open_copy" style="margin-top:10px">Copy address</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p><span data-i18n="disc">TOEFL® is a registered trademark of ETS. This product is not endorsed or approved by ETS.</span> <span data-i18n="disc2">Band estimates are unofficial and for practice only.</span></p>
+    <p>© <span id="year">2026</span> Fluova</p>
+  </footer>
+</main>
+
+<script src="i18n.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

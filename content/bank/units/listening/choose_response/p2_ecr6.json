@@ -1,0 +1,28 @@
+{
+ "id": "p2_ecr6",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_ecr6",
+  "audio": [
+   {
+    "text": "Is the café open today?",
+    "voice": "male:gb"
+   }
+  ],
+  "options": [
+   "I had a sandwich.",
+   "Yes, until five.",
+   "It's near the gym.",
+   "The coffee is good."
+  ],
+  "answer": 1,
+  "why": {
+   "en": "Yes/no question → yes + detail. C answers \"where\".",
+   "tr": "Evet/hayır sorusu → evet + ayrıntı. C \"nerede\" sorusuna cevap veriyor."
+  }
+ }
+}

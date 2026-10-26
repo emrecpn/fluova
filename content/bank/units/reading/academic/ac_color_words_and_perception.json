@@ -1,0 +1,93 @@
+{
+ "id": "ac_color_words_and_perception",
+ "task": "academic",
+ "tier": "hard",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "passage",
+  "title": "Color Words and Perception",
+  "directions": "Read an Academic Passage — upper module",
+  "text": [
+   "Languages differ considerably in how they divide the color spectrum. Russian, for instance, obligatorily distinguishes between lighter blues (goluboy) and darker blues (siniy), whereas English speakers use a single basic term. This raises a question that has long intrigued linguists and psychologists: does the vocabulary a person habitually uses shape the way that person actually perceives the world?",
+   "Experimental evidence suggests a modest but measurable influence. In one study, Russian speakers distinguished between two shades of blue more rapidly when the shades straddled the boundary between goluboy and siniy than when both fell within a single category; English speakers showed no comparable advantage. Crucially, the effect vanished when participants simultaneously performed a verbal task that occupied their linguistic resources.",
+   "Researchers therefore caution against strong claims. Language does not appear to determine what people are capable of seeing; it seems instead to provide a convenient shortcut that accelerates certain judgments whenever linguistic processing is available."
+  ],
+  "questions": [
+   {
+    "id": "r11_ach_q1",
+    "stem": "Which of the following best states the main idea of the passage?",
+    "options": [
+     "Color terms can slightly speed up some visual decisions without limiting what people perceive.",
+     "Russian speakers are able to see more colors than English speakers can.",
+     "Doing a verbal task improves people's ability to tell colors apart.",
+     "Linguists disagree about how many basic color terms each language has."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main idea (paraphrase). B is too extreme; C contradicts the text.",
+     "tr": "Ana fikir (parafraz). B aşırı uç; C metnin tersi."
+    }
+   },
+   {
+    "id": "r11_ach_q2",
+    "stem": "The word \"straddled\" in paragraph 2 is closest in meaning to",
+    "options": [
+     "crossed",
+     "matched",
+     "avoided",
+     "darkened"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Vocabulary in context: straddle the boundary = fall on both sides of the boundary, cross it.",
+     "tr": "Bağlamda kelime: straddle the boundary = sınırın iki yanına düşmek, sınırı geçmek."
+    }
+   },
+   {
+    "id": "r11_ach_q3",
+    "stem": "Why does the author mention the verbal task?",
+    "options": [
+     "To show that the advantage depends on language being actively engaged",
+     "To explain why English speakers performed poorly overall",
+     "To prove that Russian speakers have sharper eyesight",
+     "To describe a common method of teaching color names"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Author's purpose: the effect disappears when language resources are busy → the advantage depends on actively using language.",
+     "tr": "Yazarın amacı: etki dil kaynakları meşgulken kayboluyor → avantaj dilin aktif kullanımına bağlı."
+    }
+   },
+   {
+    "id": "r11_ach_q4",
+    "stem": "What would the researchers most likely say about the claim that speakers cannot see a color their language has no word for?",
+    "options": [
+     "It goes further than the evidence supports.",
+     "It is confirmed by the Russian study.",
+     "It explains why the effect vanished.",
+     "It applies only to shades of blue."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference: \"caution against strong claims\" → it goes beyond the evidence.",
+     "tr": "Çıkarım: \"caution against strong claims\" → kanıtın ötesine geçiyor."
+    }
+   },
+   {
+    "id": "r11_ach_q5",
+    "stem": "According to paragraph 2, when did Russian speakers respond faster?",
+    "options": [
+     "When the two shades fell on different sides of the category boundary",
+     "When both shades were dark blue",
+     "When they were also doing a verbal task",
+     "When English speakers had answered first"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Detail: shades on both sides of the boundary = groups with different names. C contradicts the text.",
+     "tr": "Detay : sınırın iki yanındaki tonlar = farklı adlandırılmış gruplar. C metnin tersi."
+    }
+   }
+  ]
+ }
+}

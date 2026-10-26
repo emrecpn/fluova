@@ -1,0 +1,27 @@
+{
+ "id": "l11_hcr2",
+ "task": "choose_response",
+ "tier": "hard",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "choose_response",
+  "id": "l11_hcr2",
+  "audio": [
+   {
+    "text": "You're not still working on that essay, are you?",
+    "voice": "female:gb"
+   }
+  ],
+  "options": [
+   "I'm just giving it one last read.",
+   "No, I'm not working this semester.",
+   "The essay is about climate policy.",
+   "Yes, I'm still waiting for you."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "An indirect \"yes\": the final reading. B uses \"working\" with a different meaning.",
+   "tr": "Dolaylı \"evet\": son okuma. B \"working\" kelimesini başka anlamda kullanıyor."
+  }
+ }
+}

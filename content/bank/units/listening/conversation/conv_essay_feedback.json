@@ -1,0 +1,65 @@
+{
+ "id": "conv_essay_feedback",
+ "task": "conversation",
+ "tier": "hard",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Essay feedback",
+  "prompt": "Listen to a conversation between two students.",
+  "audio": [
+   {
+    "text": "Did you get your feedback on the economics essay? I got a B, but the comments were mostly about my sources.",
+    "voice": "female:us"
+   },
+   {
+    "text": "Same here. Dr. Patel said I relied too much on news websites. She wants peer-reviewed articles.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "I thought news sites were fine as long as they were reputable.",
+    "voice": "female:us"
+   },
+   {
+    "text": "For background, maybe. But she said a university essay has to engage with the research itself, not with someone's summary of it.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "So I should have gone to the journals. Lesson learned for the final paper.",
+    "voice": "female:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "l11_hcv1_q1",
+    "stem": "What was the main criticism of their essays?",
+    "options": [
+     "They depended on secondary rather than original research.",
+     "They were too short for a university essay.",
+     "They summarized the news incorrectly.",
+     "They used too many peer-reviewed articles."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main criticism (paraphrase): relying on the research summary.",
+     "tr": "Ana eleştiri (parafraz): araştırmanın özetine dayanmak."
+    }
+   },
+   {
+    "id": "l11_hcv1_q2",
+    "stem": "What does the woman imply she will do for the final paper?",
+    "options": [
+     "Base her arguments on academic journals",
+     "Ask Dr. Patel to change her grade",
+     "Write about a different economic topic",
+     "Use only reputable news websites"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference: \"Lesson learned\" → journals.",
+     "tr": "Çıkarım: \"Lesson learned\" → dergiler."
+    }
+   }
+  ]
+ }
+}

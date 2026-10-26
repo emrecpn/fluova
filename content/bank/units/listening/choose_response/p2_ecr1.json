@@ -1,0 +1,28 @@
+{
+ "id": "p2_ecr1",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "response",
+ "origin": "practice-02",
+ "screen": {
+  "type": "choose_response",
+  "id": "p2_ecr1",
+  "audio": [
+   {
+    "text": "Where is the computer lab?",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "Next to the main office.",
+   "At nine in the morning.",
+   "Yes, it is.",
+   "About twenty computers."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "\"Where\" → a place. B gives a time.",
+   "tr": "\"Where\" → yer. B zaman veriyor."
+  }
+ }
+}

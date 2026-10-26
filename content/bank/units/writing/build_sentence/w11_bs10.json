@@ -1,0 +1,24 @@
+{
+ "id": "w11_bs10",
+ "task": "build_sentence",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "w11_bs10",
+  "personA": "Is the shuttle still running this late?",
+  "frame": [
+   "I'm not sure",
+   null,
+   null,
+   null,
+   "after ten."
+  ],
+  "answer": [
+   "whether",
+   "it",
+   "runs"
+  ],
+  "distractors": []
+ }
+}

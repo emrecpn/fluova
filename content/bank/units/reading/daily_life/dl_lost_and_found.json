@@ -1,0 +1,48 @@
+{
+ "id": "dl_lost_and_found",
+ "task": "daily_life",
+ "tier": "easy",
+ "topic": "lost and found",
+ "origin": "practice-02",
+ "screen": {
+  "type": "passage",
+  "title": "Lost and Found",
+  "directions": "Read in Daily Life (sign)",
+  "text": [
+   "<strong>Lost and Found</strong>",
+   "Items found in the Student Center are kept at the information desk for 30 days. To claim an item, describe it and show your student ID. Phones and wallets are taken to Campus Security."
+  ],
+  "questions": [
+   {
+    "id": "dl_lost_and_found_q1",
+    "stem": "Where should a student go to look for a lost wallet?",
+    "options": [
+     "The information desk",
+     "The library front desk",
+     "The Student Center café",
+     "Campus Security"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Detail: phones and wallets go to Campus Security. A is the general rule for other items — the classic trap.",
+     "tr": "Ayrıntı: telefon ve cüzdanlar Campus Security'ye gider. A diğer eşyalar için genel kural — klasik tuzak."
+    }
+   },
+   {
+    "id": "dl_lost_and_found_q2",
+    "stem": "What must students do to get an item back?",
+    "options": [
+     "Wait at least 30 days",
+     "Pay a small fee at the desk",
+     "Describe it and show an ID",
+     "Fill in a form online"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Detail: \"describe it and show your student ID\". A misuses the 30-day storage period.",
+     "tr": "Ayrıntı: \"tarif et ve öğrenci kimliğini göster\". A 30 günlük saklama süresini yanlış kullanıyor."
+    }
+   }
+  ]
+ }
+}

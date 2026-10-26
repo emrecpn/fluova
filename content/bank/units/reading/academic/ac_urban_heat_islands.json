@@ -1,0 +1,93 @@
+{
+ "id": "ac_urban_heat_islands",
+ "task": "academic",
+ "tier": "medium",
+ "origin": "pilot-01",
+ "screen": {
+  "type": "passage",
+  "title": "Urban Heat Islands",
+  "directions": "Read an Academic Passage — module 1",
+  "text": [
+   "On a summer afternoon, the center of a large city can be several degrees warmer than the countryside around it. Scientists call this an urban heat island. The main cause is the material that cities are built from: asphalt, concrete and brick absorb sunlight during the day and slowly release that heat at night.",
+   "Cities also lack the natural cooling that plants provide. Trees shade the ground, and they release water vapor through their leaves, which cools the surrounding air in much the same way that sweat cools skin. Where green spaces are replaced by roads and buildings, this effect disappears.",
+   "The consequences go beyond discomfort. Warmer nights prevent people from recovering from daytime heat, and heat waves in cities are linked to more hospital visits. Some cities now paint roofs white, plant trees along streets and build parks, and early results suggest that these simple changes can lower local temperatures noticeably."
+  ],
+  "questions": [
+   {
+    "id": "r11_ac1_q1",
+    "stem": "What is the passage mainly about?",
+    "options": [
+     "The causes and effects of extra warmth in urban areas, and possible solutions",
+     "The history of the building materials used in large cities",
+     "The way sweat helps people stay comfortable in hot weather",
+     "Differences in summer weather between countries"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main idea (paraphrase). B and C mistake details (materials, sweat) for the whole.",
+     "tr": "Ana fikir (parafraz). B ve C metindeki ayrıntıları (materials, sweat) bütün sanıyor."
+    }
+   },
+   {
+    "id": "r11_ac1_q2",
+    "stem": "The word \"release\" in paragraph 1 is closest in meaning to",
+    "options": [
+     "give off",
+     "store up",
+     "reflect",
+     "block"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Vocabulary in context: release = give off.",
+     "tr": "Bağlamda kelime: release = give off."
+    }
+   },
+   {
+    "id": "r11_ac1_q3",
+    "stem": "Why does the author mention sweat in paragraph 2?",
+    "options": [
+     "To compare the way trees cool the air with how sweat cools skin",
+     "To show that people in cities sweat more than people in the countryside",
+     "To suggest that hot weather is dangerous for health",
+     "To describe how plants take in water from the ground"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Author's purpose: to compare how trees cool the air with a familiar process (sweating). B builds a false claim from words in the text.",
+     "tr": "Yazarın amacı: ağaçların havayı serinletmesini tanıdık bir süreçle (terleme) karşılaştırmak. B metindeki kelimelerle yanlış bir iddia kuruyor."
+    }
+   },
+   {
+    "id": "r11_ac1_q4",
+    "stem": "What can be inferred about people who live in city centers during a heat wave?",
+    "options": [
+     "They get little relief even after the sun goes down.",
+     "They visit parks more often than other residents.",
+     "They usually paint their roofs white.",
+     "They are less affected than people in the countryside."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference: warm nights prevent recovery. C wrongly attributes \"paint roofs white\" to individuals.",
+     "tr": "Çıkarım: sıcak geceler toparlanmayı engelliyor. C metindeki \"paint roofs white\" ifadesini kişilere yanlış atfediyor."
+    }
+   },
+   {
+    "id": "r11_ac1_q5",
+    "stem": "According to paragraph 3, which step have some cities taken?",
+    "options": [
+     "Planting trees along streets",
+     "Building roads to replace green spaces",
+     "Opening more hospitals during heat waves",
+     "Using darker materials on roofs"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Detail: planting trees along streets. B mistakes the cause in paragraph 2 for the solution; D says the opposite.",
+     "tr": "Detay: sokaklara ağaç dikmek. B paragraf 2'deki nedeni çözüm sanıyor; D tersini söylüyor."
+    }
+   }
+  ]
+ }
+}
