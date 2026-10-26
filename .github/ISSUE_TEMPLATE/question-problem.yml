@@ -1,0 +1,17 @@
+name: Problem with a question
+description: A wrong answer key, a confusing question, or a difficulty that does not match the real test
+labels: [content]
+body:
+  - type: input
+    id: test
+    attributes: { label: Test or question id, description: "e.g. pilot-01 / r11_dl1_q2 (shown on the review page)" }
+    validations: { required: true }
+  - type: dropdown
+    id: kind
+    attributes:
+      label: What is wrong?
+      options: [The answer key is wrong, Two answers could be right, The question is unclear, Too easy compared with the real test, Too hard compared with the real test, Typo or audio problem, Something else]
+    validations: { required: true }
+  - type: textarea
+    id: details
+    attributes: { label: Details, description: Why do you think so? If you took the real test, your scores help a lot. }

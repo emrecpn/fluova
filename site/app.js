@@ -1,6 +1,5 @@
-/* Fluova landing — ortak davranış: dil, tema, XP, iki mini oyun, sayaçlar.
-   İki tasarım yönü (blueprint / pastel) aynı id ve data-* kancalarını kullanır.
-   Sayfa JS olmadan da tam okunur: sayılar ve metinler HTML'de son halleriyle durur. */
+/* Fluova landing page behaviour: language, theme, XP, two mini games, counters, donation address.
+   The page reads fully without JavaScript: numbers and texts are already final in the HTML. */
 (function () {
   var I18N = window.FLUOVA_I18N;
   var root = document.documentElement;
@@ -24,7 +23,7 @@
     store.set('fluova_lang', lang);
     renderBadge();
   }
-  // Statik mod (build.js çıktısı, /en/ /tr/): içerik HTML'de hazır; dil seçici gerçek bağlantıdır.
+  // Static mode (build.js output, /en/ /tr/ /es/): content is already in the HTML; the language switch is a real link.
   var STATIC = root.dataset.static === '1';
   document.querySelectorAll('[data-lang]').forEach(function (b) {
     b.addEventListener('click', function () {
@@ -33,7 +32,7 @@
     });
   });
 
-  // ---------- tema (sistem → açık → koyu) ----------
+  // ---------- theme (system → light → dark) ----------
   var themeBtn = document.getElementById('themeBtn');
   if (themeBtn) themeBtn.addEventListener('click', function () {
     var cur = root.getAttribute('data-theme');
@@ -72,7 +71,7 @@
     celebrate(el, key === 'g1' ? 20 : 30);
   }
 
-  // ---------- kutlama: yöne göre (pastel = renkli parçacık, blueprint = onay damgası) ----------
+  // ---------- celebration (confetti) ----------
   function celebrate(el, pts) {
     if (!el) return;
     var host = el.closest('[data-game]') || el;
@@ -127,7 +126,7 @@
     });
   }
 
-  // ---------- Oyun 2: Complete the Words (C-test kuralı) ----------
+  // ---------- Game 2: Complete the Words (C-test rule) ----------
   var g2 = document.querySelector('[data-game="g2"]');
   if (g2) {
     var inputs = g2.querySelectorAll('input[data-ans]');
@@ -155,7 +154,7 @@
     g2.querySelector('[data-check]').addEventListener('click', check);
   }
 
-  // ---------- sayaçlar: HTML son değeri taşır, hareket izinliyse 0'dan sayar ----------
+  // ---------- counters: the HTML holds the final value; count up from 0 only if motion is allowed ----------
   if (!reduce) {
     document.querySelectorAll('[data-count]').forEach(function (el) {
       var end = parseFloat(el.dataset.count), dec = (el.dataset.count.split('.')[1] || '').length;
@@ -170,7 +169,7 @@
     });
   }
 
-  // ---------- bağış adresi kopyalama ----------
+  // ---------- copy the donation address ----------
   var cw = document.getElementById('copyWallet');
   if (cw) cw.addEventListener('click', function () {
     var w = document.getElementById('wallet').textContent.trim(), d = I18N[root.lang] || I18N.en;
@@ -183,7 +182,7 @@
   var saved = store.get('fluova_lang');
   if (STATIC) {
     renderBadge();
-    // Öneri bandı: tercih kaydı yoksa ve tarayıcı dili bu sayfadan farklı bir desteklenen dilse
+    // Suggestion banner: no saved choice and the browser language is another supported language
     var nav = (navigator.language || 'en').slice(0, 2), bar = document.getElementById('langSuggest');
     if (bar && !saved && nav !== root.lang && I18N[nav]) {
       var a = bar.querySelector('a');
@@ -198,7 +197,7 @@
     setLang(saved || ((navigator.language || 'en').slice(0, 2) === 'tr' ? 'tr' : 'en'));
   }
   renderXP();
-  // Daha önce çözülen oyunları çözülmüş göster (XP korunuyor; kart da tutarlı olsun)
+  // Show games solved earlier as solved (XP is kept, so the cards should match)
   (function restoreSolved() {
     var d = I18N[root.lang] || I18N.en;
     if (state.g1 && g1) {

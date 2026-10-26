@@ -64,7 +64,7 @@
   <p class="disclaimer" data-i18n="disclaimer"></p>
 </div>
 
-<script src="js/loader.js"></script>
+<script src="js/loader.js?v=2"></script>
 <script>
 (function () {
   I18N.apply(); I18N.switcher(document.getElementById('lang'));
@@ -241,7 +241,7 @@ ${(s.interview || []).map((x, i) => `Interview ${i + 1}: ${x.question}\n   I sai
   }
   const planBtn = document.getElementById('planBtn'), planMsg = document.getElementById('planMsg'), planText = document.getElementById('planText');
   planBtn.onclick = () => {
-    let answers = null; try { answers = (JSON.parse(localStorage.getItem('fluova_progress_' + id) || '{}')).answers || null; } catch (e) {}
+    let answers = r.answers || null; if (!answers) try { answers = (JSON.parse(localStorage.getItem('fluova_progress_' + id) || '{}')).answers || null; } catch (e) {}
     FluovaContent.load(id).catch(() => null).then(test => {
       planText.value = studyPlanPrompt(test, answers); planText.classList.remove('hidden');
       const ok = () => { planMsg.textContent = t('res.fb.copied'); };

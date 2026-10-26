@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>STT Lab — Speaking kayıt testi</title>
+<title>STT Lab — Speaking transcription test</title>
 <style>
   :root{--bg:#f6f7fb;--card:#fff;--ink:#111827;--soft:#6b7280;--line:#e5e7eb;--acc:#4f46e5;--rec:#dc2626;--ok:#059669}
   @media (prefers-color-scheme:dark){:root{--bg:#0f1220;--card:#171b2e;--ink:#eef0fa;--soft:#9aa3c0;--line:#2a3150;--acc:#818cf8;--rec:#f87171;--ok:#34d399}}
@@ -26,21 +26,21 @@
 </head>
 <body>
 <div class="wrap">
-  <h1>STT Lab — Speaking kayıt testi</h1>
-  <p class="soft">Amaç: aynı kayıtlar üzerinde <b>tarayıcı konuşma tanıması</b> (eski simülatörle birebir aynı ayar) ile <b>Whisper</b>'ı karşılaştırmak. Senaryo, ETS 2026 şartnamesindeki yapıya göre: tek senaryo, uzunluğu artan 7 cümle + aynı konuda 2 Interview sorusu.</p>
+  <h1>STT Lab — Speaking transcription test</h1>
+  <p class="soft">Goal: compare <b>browser speech recognition</b> (the same settings as the test engine) with <b>Whisper</b> on the same recordings. The task follows the 2026 structure: one scenario, 7 sentences of increasing length, then 2 interview answers on the same topic. Results: <a href="../../docs/STT-RESULTS.md">docs/STT-RESULTS.md</a>.</p>
   <div class="card small">
-    <b>Nasıl:</b> ① Chrome'da aç, mikrofon izni ver. ② Her maddede <i>Kaydet</i> → ekrandaki metni normal hızında, doğal bir şekilde sesli oku → <i>Durdur</i>. (İstersen önce <i>Dinle</i> ile örnek telaffuzu duyabilirsin.) ③ Interview maddelerinde soru değil, altındaki hazır cevap metni okunur (en fazla 60 sn). ④ En sonda <b>Sonuçları indir</b> — tek bir JSON dosyası İndirilenler'e iner. Hepsi ~6–8 dakika.
-    <div class="row"><button id="micBtn" class="primary">🎙 Mikrofonu aç</button><span id="micStatus" class="soft"></span></div>
+    <b>How:</b> ① Open in Chrome and allow the microphone. ② For each item press <i>Record</i>, read the text on screen aloud at your normal pace, then press <i>Stop</i>. (<i>Listen</i> plays a sample pronunciation first if you want.) ③ For the interview items, read the prepared answer below the question, not the question (60 s max). ④ At the end press <b>Download results</b>: one JSON file with your audio and transcripts. About 6–8 minutes. Then run <code>python -I evaluate.py stt_lab_recordings.json small.en</code>.
+    <div class="row"><button id="micBtn" class="primary">🎙 Turn on microphone</button><span id="micStatus" class="soft"></span></div>
   </div>
 
   <div class="card"><span class="tag">Senaryo</span>
-    <p style="margin:8px 0 0"><b>Kampüs kütüphanesi oryantasyonu.</b> Bir kütüphane görevlisi yeni öğrencilere bilgi veriyor. Ardından kütüphane kullanımı üzerine bir araştırma çalışması için kısa bir görüşme yapılıyor.</p>
+    <p style="margin:8px 0 0"><b>Campus library orientation.</b> A librarian gives new students some information. Then a researcher asks a few questions about how students use the library.</p>
   </div>
 
   <div id="items"></div>
 
   <div class="card">
-    <div class="row"><button id="dlBtn" class="primary" disabled>⬇ Sonuçları indir (JSON)</button><span id="dlStatus" class="soft small"></span></div>
+    <div class="row"><button id="dlBtn" class="primary" disabled>⬇ Download results (JSON)</button><span id="dlStatus" class="soft small"></span></div>
   </div>
 </div>
 
@@ -61,7 +61,7 @@ const ITEMS = [
 const results = {};
 let stream = null;
 
-// --- Eski simülatörle BİREBİR aynı tarayıcı STT oturumu (engine/js/audio.js) ---
+// --- Browser speech recognition session with the same settings as engine/js/audio.js ---
 const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
 function createSession(){
   if(!SR) return null;
@@ -93,12 +93,12 @@ function render(){
     const el=document.createElement('div'); el.className='card'; el.id='card_'+it.id;
     el.innerHTML = `<span class="tag">${lr?'Listen & Repeat '+(idx+1)+'/7':'Interview '+(idx-6)+'/2'}</span>
       ${lr ? `<p class="target" id="t_${it.id}" style="margin:8px 0 0">${it.text}</p>`
-           : `<p class="soft small" style="margin:8px 0 4px">Soru: ${it.text}</p>
-              <div class="readbox"><div class="small soft" style="margin-bottom:4px">Bu metni sesli oku:</div><p class="target" id="t_${it.id}" style="margin:0">${it.read}</p></div>`}
+           : `<p class="soft small" style="margin:8px 0 4px">Question: ${it.text}</p>
+              <div class="readbox"><div class="small soft" style="margin-bottom:4px">Read this aloud:</div><p class="target" id="t_${it.id}" style="margin:0">${it.read}</p></div>`}
       <div class="row">
-        <button data-a="listen">🔊 Dinle</button>
-        <button data-a="rec" class="rec" disabled>● Kaydet</button>
-        <button data-a="stop" disabled>■ Durdur</button>
+        <button data-a="listen">🔊 Listen</button>
+        <button data-a="rec" class="rec" disabled>● Record</button>
+        <button data-a="stop" disabled>■ Stop</button>
         <span class="timer" id="tm_${it.id}"></span>
         <span id="st_${it.id}" class="small"></span>
       </div>
@@ -111,7 +111,7 @@ function render(){
       if(!stream) return;
       chunks=[]; mr=new MediaRecorder(stream); mr.ondataavailable=e=>e.data.size&&chunks.push(e.data);
       sess=createSession(); mr.start(); if(sess) sess.start(); t0=Date.now();
-      q('rec').disabled=true; q('stop').disabled=false; document.getElementById('st_'+it.id).textContent='kayıtta…';
+      q('rec').disabled=true; q('stop').disabled=false; document.getElementById('st_'+it.id).textContent='recording…';
       const limit = it.seconds||20;
       tick=setInterval(()=>{ const s=(Date.now()-t0)/1000; document.getElementById('tm_'+it.id).textContent=s.toFixed(0)+' sn'; if(s>=limit) q('stop').click(); },250);
     };
@@ -123,10 +123,10 @@ function render(){
       const blob=new Blob(chunks,{type:mr.mimeType||'audio/webm'});
       results[it.id]={id:it.id,type:it.type,target:it.read||it.text,question:it.read?it.text:undefined,seconds:+secs.toFixed(1),browser:stt,mime:blob.type,audio_b64:await blobToB64(blob)};
       document.getElementById('st_'+it.id).innerHTML='<span class="done">✓ kaydedildi</span>';
-      document.getElementById('out_'+it.id).innerHTML=`<div class="tr"><b>Tarayıcı STT:</b> ${stt.transcript||'(boş)'}${stt.ended_early_at_s?`\n⚠ tanıma ${stt.ended_early_at_s.toFixed(1)} sn'de kendi kendine durdu`:''}</div><audio controls src="${URL.createObjectURL(blob)}" style="margin-top:6px;width:100%"></audio>`;
+      document.getElementById('out_'+it.id).innerHTML=`<div class="tr"><b>Browser STT:</b> ${stt.transcript||'(empty)'}${stt.ended_early_at_s?`\n⚠ recognition stopped by itself at ${stt.ended_early_at_s.toFixed(1)} s`:''}</div><audio controls src="${URL.createObjectURL(blob)}" style="margin-top:6px;width:100%"></audio>`;
       q('rec').disabled=false; q('rec').textContent='● Tekrar kaydet';
       document.getElementById('dlBtn').disabled = Object.keys(results).length===0;
-      document.getElementById('dlStatus').textContent = Object.keys(results).length+'/'+ITEMS.length+' kayıt hazır';
+      document.getElementById('dlStatus').textContent = Object.keys(results).length+'/'+ITEMS.length+' recordings ready';
     };
   });
 }
@@ -134,15 +134,15 @@ render();
 
 document.getElementById('micBtn').onclick=async()=>{
   const st=document.getElementById('micStatus');
-  if(!SR) st.textContent='⚠ Bu tarayıcıda Web Speech API yok — Chrome kullan.';
-  try{ stream=await navigator.mediaDevices.getUserMedia({audio:true}); st.innerHTML=(SR?'':'⚠ STT yok · ')+'<span class="done">✓ mikrofon açık</span>'; document.querySelectorAll('[data-a="rec"]').forEach(b=>b.disabled=false); }
-  catch(e){ st.textContent='Mikrofona erişilemedi: '+e.message; }
+  if(!SR) st.textContent='⚠ This browser has no Web Speech API. Use Chrome.';
+  try{ stream=await navigator.mediaDevices.getUserMedia({audio:true}); st.innerHTML=(SR?'':'⚠ no STT · ')+'<span class="done">✓ microphone on</span>'; document.querySelectorAll('[data-a="rec"]').forEach(b=>b.disabled=false); }
+  catch(e){ st.textContent='No microphone access: '+e.message; }
 };
 document.getElementById('dlBtn').onclick=()=>{
   const data={created:new Date().toISOString(), ua:navigator.userAgent, items:ITEMS.map(i=>results[i.id]).filter(Boolean)};
   const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([JSON.stringify(data)],{type:'application/json'}));
   a.download='stt_lab_recordings.json'; a.click();
-  document.getElementById('dlStatus').textContent='İndirildi: stt_lab_recordings.json — Claude\'a "kayıtlar hazır" demen yeterli.';
+  document.getElementById('dlStatus').textContent='Downloaded: stt_lab_recordings.json';
 };
 </script>
 </body>

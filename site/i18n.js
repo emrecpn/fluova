@@ -1,7 +1,7 @@
-/* Fluova landing — arayüz metinleri (EN + TR).
-   Sınav içeriği (pasaj, soru, şıklar, CTW cümlesi) bilerek İngilizce kalır ve burada yer almaz.
-   ETS marka kuralı: "TOEFL" yalnızca "the TOEFL® test" biçiminde, sıfat olarak; başlıkta vurgulanmaz,
-   iyelik/çoğul eki almaz, çevrilmez. Alt bilgi uyarısı ETS'nin önerdiği kalıpla birebir. */
+/* Fluova landing page: interface texts (EN, TR, ES).
+   Test content (passages, questions, options, the CTW sentence) stays in English on purpose and is not here.
+   ETS trademark rule: write "TOEFL" only as an adjective ("the TOEFL® test"), never emphasised in a headline,
+   never with a possessive or plural, never translated. The footer disclaimer uses ETS's wording. */
 window.FLUOVA_I18N = {
   en: {
     meta_title: "Fluova · Free practice for the TOEFL® test, built from the 2026 specification",

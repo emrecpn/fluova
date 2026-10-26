@@ -38,7 +38,7 @@ The interface is available in English, Turkish and Spanish (Spanish still needs 
 
 ```bash
 git clone https://github.com/emrecpn/fluova.git && cd fluova
-python3 -m http.server 8000
+npm run serve
 ```
 
 Open <http://localhost:8000/engine/>. Use Chrome or Edge, because Listening uses the browser's speech synthesis and Speaking uses its speech recognition.
@@ -49,19 +49,24 @@ Open <http://localhost:8000/engine/>. Use Chrome or Edge, because Listening uses
 engine/     the test player (static HTML/JS/CSS) and its UI translations (js/i18n.js)
 content/    question bank (content/bank), fixed-test recipes and rendered tests (content/tests), schema
 generator/  form assembler, test builder page, prompt pack, Build a Sentence builder
-tools/      validate.js (structure), lint_forms.js (fidelity gate), build_manifest.js, ctw_generate.js, layout_audit.js
+tools/      bank.js, validate.js (structure), lint_forms.js (fidelity gate), check_syntax.js, build_manifest.js, ctw_generate.js, layout_audit.js, stt-lab/
+test/       unit tests (node:test)
 site/       landing page (multilingual static build)
 docs/       fidelity spec, i18n architecture
 ```
 
-## Quality gate
+## Quality gate and development
+
+No dependencies: Node.js 22+ and Python 3 (for the local server) are enough.
 
 ```bash
-node tools/validate.js      # structure: ids, answers, required fields
-node tools/lint_forms.js    # fidelity: item counts, lengths, answer/text overlap vs. the 2026 spec
+npm run check   # syntax of every script, unit tests, question bank, random forms, validator, fidelity linter
+npm test        # unit tests only (node:test)
+npm run build   # rebuild bank.json, fixed tests, the manifest and the landing page
+npm run serve   # http://localhost:8000/engine/
 ```
 
-Both commands run on every pull request, and a test with a critical finding cannot be merged.
+The same checks run on every pull request, and a test with a critical finding cannot be merged. Content is rendered as HTML, so only a few formatting tags are allowed (see [SECURITY.md](SECURITY.md)).
 
 ## Question bank
 

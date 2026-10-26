@@ -7,19 +7,20 @@ permissions:
   contents: read
   pages: write
   id-token: write
-concurrency: { group: pages, cancel-in-progress: true }
+concurrency: { group: pages, cancel-in-progress: false }   # never cancel a deployment half-way
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     environment: { name: github-pages, url: "${{ steps.deploy.outputs.page_url }}" }
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with: { node-version: 20 }
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with: { node-version: 24 }
       - run: node tools/validate.js && node tools/lint_forms.js
       - run: node tools/bank.js --check && node tools/build_manifest.js
       - id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
       - name: Build site
         env:
           SITE_URL: ${{ steps.pages.outputs.base_url }}
@@ -31,7 +32,7 @@ jobs:
           mkdir -p _site/content && cp -r content/tests content/schema content/bank _site/content/ && rm -rf _site/content/bank/units _site/content/tests/recipes
           cp -r generator _site/generator
           mkdir -p _site/tools && cp tools/ctw_generate.js tools/validate.js tools/lint_forms.js tools/bank.js _site/tools/
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with: { path: _site }
       - id: deploy
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5

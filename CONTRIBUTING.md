@@ -38,7 +38,7 @@ A unit is one small JSON file in `content/bank/units/<section>/<task>/<id>.json`
 
 Steps:
 1. Write the unit (by hand, or with the prompt in [`generator/prompts/bank-unit.md`](generator/prompts/bank-unit.md) and any chatbot).
-2. Run `node tools/bank.js` — it checks every unit (structure, length for its tier, question count, unique ids) and rebuilds `content/bank/bank.json`.
+2. Run `node tools/bank.js`. It checks every unit (structure, length for its tier, question count, unique ids, allowed HTML) and rebuilds `content/bank/bank.json`. Then run `npm run check` to run everything CI runs.
 3. Open a pull request. CI runs the same checks and also builds random tests from the bank to make sure they still pass the quality gate.
 
 ## 3. Add a fixed test
@@ -79,7 +79,9 @@ AI drafts are fine, but **you are responsible for the result**. Set `"generatedB
 - Keep "TOEFL®", task names (Complete the Words, Build a Sentence…) and all test content in English. See [docs/I18N-ARCHITECTURE.md](docs/I18N-ARCHITECTURE.md).
 
 ## 5. Code
-Plain HTML/CSS/JS with no build step for the engine and no dependencies. Keep it that way unless there is a strong reason. Before you open a PR, test in Chrome at desktop width and at 375 px, in both light and dark mode.
+Plain HTML/CSS/JS with no build step for the engine and no dependencies. Keep it that way unless there is a strong reason. Before you open a PR, run `npm run check`, add a test in `test/` for new logic, and try the change in Chrome at desktop width and at 375 px, in both light and dark mode.
+
+By taking part you agree to the [code of conduct](CODE_OF_CONDUCT.md). Security issues: see [SECURITY.md](SECURITY.md).
 
 ## Trademark
 Write "the TOEFL® test" or "the TOEFL iBT® test", using the mark only as an adjective. Do not put "TOEFL" in names, ids or file names. Every page carries the ETS disclaimer.

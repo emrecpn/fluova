@@ -1,10 +1,10 @@
 #!/usr/bin/env node
-/* Fluova landing — çok dilli statik derleme (I18N-ARCHITECTURE.md §1–2).
-   Şablon: index.html + i18n.js  →  dist/<dil>/index.html (+ dist/index.html = x-default/EN)
-   - data-i18n öğelerini dilin sözlüğünden basar; eksik anahtar → uyarı + İngilizceye düşer
-   - <html lang>, başlık, açıklama, Open Graph, canonical, hreflang (tüm diller + x-default)
-   - dil seçici gerçek bağlantıya dönüşür (/en/ ↔ /tr/)
-   Kullanım: node build.js   (çıktı: landing/dist/) */
+/* Fluova landing page: static multilingual build (docs/I18N-ARCHITECTURE.md).
+   Template index.html + dictionaries i18n.js → dist/<lang>/index.html (+ dist/index.html = x-default, English)
+   - fills every data-i18n element from the language's dictionary; a missing key warns and falls back to English
+   - sets <html lang>, title, description, Open Graph, canonical and hreflang (all languages + x-default)
+   - turns the language switch into real links (/en/ ↔ /tr/ ↔ /es/)
+   Usage: node site/build.js   (output: site/dist/) */
 const fs = require('fs'), path = require('path');
 // Public URL of the site. CI sets SITE_URL from GitHub Pages (e.g. https://<user>.github.io/fluova or a custom domain).
 const SITE = (process.env.SITE_URL || 'https://emrecpn.github.io/fluova').replace(/\/$/, '');
@@ -20,15 +20,15 @@ let warnings = 0;
 function render(lang, { base, canonical }) {
   const d = I18N[lang];
   let html = tpl;
-  // 1) data-i18n içerikleri (iç içe aynı etiket yok varsayımı; şablonda kontrol edildi)
+  // 1) data-i18n contents (assumes no nested element with the same tag; true for the template)
   html = html.replace(/(<(\w+)\b[^>]*\bdata-i18n="([^"]+)"[^>]*>)([\s\S]*?)(<\/\2>)/g, (m, open, tag, key, inner, close) => {
     let v = d[key];
-    if (v == null) { console.warn(`  ⚠ [${lang}] eksik anahtar: ${key} → İngilizce kullanıldı`); warnings++; v = EN[key] ?? inner; }
+    if (v == null) { console.warn(`  ⚠ [${lang}] missing key: ${key} → using English`); warnings++; v = EN[key] ?? inner; }
     return open + v + close;
   });
   // 2) <html> etiketi
   html = html.replace(/<html lang="[^"]*">/, `<html lang="${lang}" data-static="1" data-base="${base}">`);
-  // 3) başlık + meta
+  // 3) title + meta
   html = html.replace(/<title>[\s\S]*?<\/title>/, `<title>${esc(d.meta_title)}</title>`);
   html = html.replace(/<meta name="description" content="[^"]*">/, `<meta name="description" content="${esc(d.meta_desc)}">`);
   html = html.replace(/<meta property="og:title" content="[^"]*">/, `<meta property="og:title" content="${esc(d.og_title)}">`);
@@ -38,12 +38,12 @@ function render(lang, { base, canonical }) {
   html = html.replace('<meta name="twitter:card" content="summary_large_image">',
     `<meta name="twitter:card" content="summary_large_image">\n<meta property="og:locale" content="${LOCALE[lang] || lang}">\n<meta property="og:url" content="${canonical}">\n<link rel="canonical" href="${canonical}">\n${alt}`);
   html = html.split('https://emrecpn.github.io/fluova/og.png').join(`${SITE}/og.png`);
-  // 4) dil seçici → bağlantı
+  // 4) language switch → links
   html = html.replace(/<button data-lang="(\w+)" aria-pressed="(?:true|false)">(\w+)<\/button>/g,
     (m, l, label) => `<a data-lang="${l}" href="${base}${l}/" hreflang="${l}"${l === lang ? ' aria-current="page"' : ''}>${label}</a>`);
-  // 5) sınav motoru bağlantıları (dil seçimi motora taşınır)
+  // 5) links to the test engine carry the language
   html = html.replace(/href="\.\.\/engine\/index\.html"/g, `href="${base}engine/index.html${base === './' ? '' : '?lang=' + lang}"`);
-  // 6) varlık yolları
+  // 6) asset paths
   html = html.replace('<script src="i18n.js"></script>', `<script src="${base}i18n.js"></script>`)
              .replace('<script src="app.js"></script>', `<script src="${base}app.js"></script>`);
   return html;
@@ -56,8 +56,8 @@ for (const lang of LANGS) {
   fs.writeFileSync(path.join(OUT, lang, 'index.html'), render(lang, { base: '../', canonical: `${SITE}/${lang}/` }));
   console.log(`✓ dist/${lang}/index.html`);
 }
-// kök: x-default (İngilizce içerik), canonical → /en/ (kopya içerik cezası olmasın)
+// root: x-default (English content), canonical → /en/ to avoid duplicate-content penalties
 fs.writeFileSync(path.join(OUT, 'index.html'), render('en', { base: './', canonical: `${SITE}/en/` }));
 console.log('✓ dist/index.html (x-default)');
 for (const f of ['i18n.js', 'app.js', 'og.png']) fs.copyFileSync(path.join(DIR, f), path.join(OUT, f));
-console.log(warnings ? `\n${warnings} eksik çeviri uyarısı.` : '\nEksik çeviri yok.');
+console.log(warnings ? `\n${warnings} missing translation(s).` : '\nNo missing translations.');

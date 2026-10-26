@@ -20,6 +20,21 @@ function validateTest(t, base) {
   if (t.license && t.license !== 'CC-BY-SA-4.0') err('test', 'license must be CC-BY-SA-4.0');
   if (/toefl/i.test(t.title || '') && !/TOEFL®/.test(t.title)) err('test', 'title: write "the TOEFL® test" with ®, or avoid the mark');
 
+  // Content is rendered as HTML: allow only a few formatting tags, never attributes, scripts or URLs
+  const ALLOWED = /^(strong|em|b|i|u|br|sub|sup)$/i;
+  (function scan(v, where) {
+    if (typeof v === 'string') {
+      const tags = v.match(/<\/?\s*([a-z0-9-]+)([^>]*)>/gi) || [];
+      tags.forEach(tag => {
+        const m = /<\/?\s*([a-z0-9-]+)([^>]*)>/i.exec(tag);
+        if (!ALLOWED.test(m[1])) err(where, `HTML tag <${m[1]}> is not allowed (only strong, em, b, i, u, br, sub, sup)`);
+        else if (m[2].replace('/', '').trim()) err(where, `HTML attributes are not allowed: ${tag}`);
+      });
+      if (/javascript:|data:text\/html/i.test(v)) err(where, 'script-like content is not allowed');
+    } else if (Array.isArray(v)) v.forEach((x, i) => scan(x, `${where}[${i}]`));
+    else if (v && typeof v === 'object') Object.entries(v).forEach(([k, x]) => scan(x, where === 'test' ? k : `${where}.${k}`));
+  })(t, 'test');
+
   const ids = new Map();
   const seeId = (id, where) => { if (!id) return err(where, 'missing id'); if (ids.has(id)) err(where, `duplicate id "${id}" (also in ${ids.get(id)})`); else ids.set(id, where); };
   const mcq = (q, where) => {

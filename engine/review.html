@@ -35,7 +35,7 @@
   <p class="disclaimer" data-i18n="disclaimer"></p>
 </div>
 
-<script src="js/loader.js"></script>
+<script src="js/loader.js?v=2"></script>
 <script>
 (function () {
   I18N.apply(); I18N.switcher(document.getElementById('lang'));
@@ -182,7 +182,7 @@
   let progress = {}, results = {};
   try { progress = JSON.parse(localStorage.getItem('fluova_progress_' + id) || '{}'); } catch (e) {}
   try { results = JSON.parse(localStorage.getItem('fluova_results_' + id) || '{}'); } catch (e) {}
-  const answers = progress.answers || {};
+  const answers = results.answers || progress.answers || {};
   if (Object.keys(answers).length || results.reading || results.speaking) renderAll(results, answers, progress);
   else c.innerHTML = `<div class="note">${t('rv.noData')}</div>`;
   } // boot

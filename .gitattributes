@@ -1,0 +1,5 @@
+* text=auto eol=lf
+*.png binary
+*.webm binary
+content/bank/bank.json linguist-generated=true
+content/tests/*.json linguist-generated=true

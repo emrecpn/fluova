@@ -12,7 +12,7 @@
     "version": { "type": "string", "pattern": "^\\d+\\.\\d+\\.\\d+$" },
     "license": { "const": "CC-BY-SA-4.0" },
     "authors": { "type": "array", "items": { "type": "string" } },
-    "level": { "enum": ["easy", "medium", "hard", "real"], "description": "real = adaptive, like the actual test" },
+    "level": { "enum": ["easy", "medium", "hard", "real", "practice"], "description": "real = adaptive, like the actual test; practice = a single-task set built in the browser" },
     "units": { "type": "array", "items": { "type": "string" }, "description": "Question-bank unit ids this test was built from (written by tools/bank.js)" },
     "generatedBy": { "type": "string", "description": "Optional: tool or model used to draft the test (human review still required)" },
     "notes": { "type": "string" },

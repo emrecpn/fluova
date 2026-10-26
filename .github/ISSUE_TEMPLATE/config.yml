@@ -1,0 +1,5 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Want to add questions?
+    url: https://github.com/emrecpn/fluova/blob/main/CONTRIBUTING.md#question-bank
+    about: The contributing guide explains how to add units to the question bank.

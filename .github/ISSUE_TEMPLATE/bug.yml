@@ -1,0 +1,15 @@
+name: Bug in the site
+description: Something does not work (timer, audio, recording, layout…)
+labels: [bug]
+body:
+  - type: textarea
+    id: what
+    attributes: { label: What happened, and what did you expect? }
+    validations: { required: true }
+  - type: input
+    id: where
+    attributes: { label: Page and test, description: "e.g. engine/exam.html?test=practice-02, Listening" }
+  - type: input
+    id: browser
+    attributes: { label: Browser and device, description: "e.g. Chrome 140 on Windows, Safari on iPhone 15" }
+    validations: { required: true }

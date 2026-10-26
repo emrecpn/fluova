@@ -1,20 +1,21 @@
-/* engine.js — Fluova sınav motoru (TOEFL® iBT 2026 formatı için deneme sınavı)
-   Bölüm sırası, süre, görev render, adaptif yönlendirme, otomatik puanlama. */
+/* engine.js — Fluova test engine (practice tests in the 2026 format of the TOEFL iBT® test).
+   Section order, timing, rendering of every task type, adaptive routing, automatic scoring. */
 
 const State = {
   form: null,
   sectionIndex: 0,
-  screens: [],            // aktif bölümün ekranları (adaptif dahil)
+  screens: [],            // screens of the current section (adaptive module included)
   screenIndex: 0,
   stage2Injected: false,
   answers: {},            // qid -> cevap
   recordings: {},         // "s_iv_1" -> url
-  transcripts: {},        // "s_iv_1" -> konuşma dökümü (speech-to-text)
+  transcripts: {},        // "s_iv_1" -> speech transcript
   speechMeta: {},         // "s_iv_1" -> {seconds, wordCount, wpm, repetitions, confidence}
   writing: {},            // taskId -> metin
   buildSentence: {},      // id -> {given, correct}
-  remaining: 0,           // aktif bölüm kalan saniye
+  remaining: 0,           // seconds left in the current section
   timerHandle: null,
+  deadline: 0,            // wall-clock end of the current section (ms)
   results: null,
 };
 
@@ -22,7 +23,7 @@ const $ = sel => document.querySelector(sel);
 const el = (tag, cls, html) => { const n = document.createElement(tag); if (cls) n.className = cls; if (html != null) n.innerHTML = html; return n; };
 const esc = s => (s == null ? '' : String(s).replace(/[&<>"]/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c])));
 const fmt = s => { s = Math.max(0, Math.round(s)); const m = Math.floor(s / 60), r = s % 60; return `${m}:${String(r).padStart(2, '0')}`; };
-// Şık sırasını rastgele göster (konum yanlılığını önler). value=orijinal indeks kalır → puanlama bozulmaz.
+// Show options in random order (prevents position bias); the value stays the original index, so scoring is unaffected.
 function shuffleArr(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));[a[i], a[j]] = [a[j], a[i]]; } return a; }
 
 /* ---------------- Boot ---------------- */
@@ -35,8 +36,29 @@ function startExam(form) {
     (form.units || []).forEach(u => seen.add(u));
     localStorage.setItem('fluova_seen_units', JSON.stringify([...seen]));
   } catch (e) {}
+  if (resumeProgress()) return;
   State.sectionIndex = 0;
   loadSection(0);
+}
+
+/* Resume an unfinished attempt saved in this browser (answers, position, remaining time, adaptive route).
+   Speaking recordings are not stored, so a Speaking task that was in progress starts again. */
+function resumeProgress() {
+  let p = null;
+  try { p = JSON.parse(localStorage.getItem('fluova_progress_' + State.form.id) || 'null'); } catch (e) {}
+  if (!p || p.sectionIndex == null || !State.form.sections[p.sectionIndex]) return false;
+  Object.assign(State.answers, p.answers || {}); Object.assign(State.writing, p.writing || {}); Object.assign(State.buildSentence, p.buildSentence || {});
+  Object.entries(p.paths || {}).forEach(([k, v]) => { State['_' + k + '_path'] = v; });
+  loadSection(p.sectionIndex);
+  const sec = currentSection();
+  if (p.stage2Injected && sec.adaptive && State['_' + sec.id + '_path']) {
+    const path = State['_' + sec.id + '_path'];
+    State.screens = State.screens.concat(sec.adaptive[path].map(x => ({ ...x }))); State.stage2Injected = true; State._stage2Path = path;
+  }
+  State.screenIndex = Math.min(p.screenIndex || 0, State.screens.length - 1);
+  if (p.remaining > 0) { State.remaining = p.remaining; startTimer(); }
+  render();
+  return true;
 }
 
 function loadSection(i) {
@@ -50,13 +72,19 @@ function loadSection(i) {
   render();
 }
 
+// The countdown is derived from a wall-clock deadline: browsers slow down timers in background tabs,
+// so counting interval ticks would let the section clock drift.
 function startTimer() {
   clearInterval(State.timerHandle);
+  State.deadline = Date.now() + State.remaining * 1000;
   State.timerHandle = setInterval(() => {
-    State.remaining--;
+    const left = Math.max(0, Math.ceil((State.deadline - Date.now()) / 1000));
+    if (left === State.remaining) return;
+    State.remaining = left;
     updateTimerUI();
-    if (State.remaining <= 0) { clearInterval(State.timerHandle); nextSection(true); }
-  }, 1000);
+    if (left % 5 === 0) saveProgress();
+    if (left <= 0) { clearInterval(State.timerHandle); nextSection(true); }
+  }, 250);
 }
 
 function updateTimerUI() {
@@ -72,7 +100,7 @@ function currentSection() { return State.form.sections[State.sectionIndex]; }
 function next() {
   TTS.stop();
   const sec = currentSection();
-  // Adaptif: çekirdek ekranlar bittiğinde Stage 2 modülünü enjekte et
+  // Adaptive: when the router module is done, append the second-stage module
   const coreCount = sec.screens.length; // + 1 intro at front
   if (sec.adaptive && !State.stage2Injected && State.screenIndex === coreCount) {
     injectStage2(sec);
@@ -113,7 +141,7 @@ function injectStage2(sec) {
   State._stage2Path = path;
   State.screens = State.screens.concat(a[path].map(s => ({ ...s })));
   State.stage2Injected = true;
-  // İstenirse görünmez rota bilgisi sakla (puanlamada kullanılacak)
+  // remember the route (used for scoring and resume)
   State['_' + sec.id + '_path'] = path;
 }
 
@@ -131,8 +159,8 @@ function render() {
     build_sentence: renderBuildSentence, sentence_dialogue: renderSentenceDialogue, writing: renderWriting,
     listen_repeat: renderListenRepeat, interview: renderInterview,
   };
-  // Footer'ı ekran içeriğinden ÖNCE çiz: Speaking görevleri "İleri/Bölümü Bitir"i
-  // devre dışı bırakabilsin (yoksa footer sonradan çizilip butonu tekrar aktif ediyordu).
+  // Draw the footer BEFORE the screen, so Speaking tasks can disable "Next / Finish section"
+  // (drawing it afterwards re-enabled the button).
   renderFooter(sec, scr);
   (map[scr.type] || renderUnknown)(stage, scr, sec);
   window.scrollTo(0, 0);
@@ -178,7 +206,7 @@ function renderIntro(stage, scr) {
   </div>`;
 }
 
-/* Passage + soaru seti (Daily Life kısa, Academic uzun) */
+/* Passage + question set (Daily Life: short, Academic: long) */
 function renderPassage(stage, scr) {
   const qs = scr.questions.map((q, idx) => qBlockMCQ(q, idx + 1)).join('');
   stage.innerHTML = `<div class="card">
@@ -226,7 +254,7 @@ function renderCTW(stage, scr) {
     `<p>${p.replace(/\{\{(\w+)\}\}/g, (m, id) => {
       const it = scr.items.find(x => x.id === id);
       const val = State.answers[id] || '';
-      // Kutu, eksik harf sayısı kadar geniş + o kadar harfe sınırlı (gerçek testteki gibi)
+      // The box is as wide as the number of missing letters and limited to that many (as in the real test)
       return `<span class="stub">${esc(it.stub)}</span><input class="blank" data-id="${id}" value="${esc(val)}" maxlength="${it.answer.length}" placeholder="${'_'.repeat(it.answer.length)}" autocomplete="off" spellcheck="false">`;
     })}</p>`).join('');
   stage.innerHTML = `<div class="card ctw">
@@ -309,7 +337,7 @@ function renderBuildSentence(stage, scr) {
   const bank = stage.querySelector('#basBank');
   const target = stage.querySelector('#basTarget');
   const order = saved ? saved.order.slice() : [];
-  // Kelimeleri bir kez karıştır (yeniden çizimde sabit kalsın)
+  // Shuffle the words once (stable across redraws)
   if (!scr._shuffle) {
     scr._shuffle = scr.words.map((_, i) => i);
     for (let i = scr._shuffle.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));[scr._shuffle[i], scr._shuffle[j]] = [scr._shuffle[j], scr._shuffle[i]]; }
@@ -334,10 +362,9 @@ function renderBuildSentence(stage, scr) {
   redraw();
 }
 
-/* Build a Sentence — GERÇEK 2026 FORMATI: A konuşur/sorar, B'nin yanıtını
-   kelime bankasından (fazladan çeldirici kelimelerle) sırayla kur.
-   scr.frame (ETS Practice Test 1 formatı): cümle iskeleti; null = boşluk, diğerleri önceden yerleşik
-   kelimeler. Kutucuklar kelime grubu olabilir ("showed us around"); çeldirici genelde 0–1. */
+/* Build a Sentence (2026 format): speaker A says something; the test taker builds B's reply from a bank of tiles.
+   scr.frame: the sentence skeleton; null = a blank, strings = prefilled words. Tiles can be word groups
+   ("showed us around"); there is usually no distractor tile, at most one. */
 function basFill(scr, chunks) {
   if (!scr.frame) return chunks.join(' ');
   let k = 0;
@@ -356,13 +383,13 @@ function renderSentenceDialogue(stage, scr) {
   </div>`;
   const bank = stage.querySelector('#basBank');
   const bResp = stage.querySelector('#bResp');
-  // banka = doğru cevap + çeldiriciler (bir kez karıştır)
+  // bank = correct tiles + distractors (shuffled once)
   const pool = scr.answer.concat(scr.distractors || []);
   if (!scr._shuffle) {
     scr._shuffle = pool.map((_, i) => i);
     for (let i = scr._shuffle.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));[scr._shuffle[i], scr._shuffle[j]] = [scr._shuffle[j], scr._shuffle[i]]; }
   }
-  const order = saved ? saved.order.slice() : []; // seçilen banka indeksleri, sırayla
+  const order = saved ? saved.order.slice() : []; // chosen bank indexes, in order
   const slots = scr.frame ? scr.frame.filter(t => t === null).length : Infinity;
   function commit() {
     const given = basFill(scr, order.map(i => pool[i]));
@@ -375,7 +402,7 @@ function renderSentenceDialogue(stage, scr) {
     return c;
   }
   function redraw() {
-    // B yanıtı — iskeletli formatta sabit kelimeler + boşluklar
+    // B's reply: prefilled words + blanks
     if (scr.frame) {
       bResp.innerHTML = ''; let k = 0;
       scr.frame.forEach(t => {
@@ -403,7 +430,7 @@ function renderSentenceDialogue(stage, scr) {
   redraw();
 }
 
-/* Read in Daily Life — Text Chain (sohbet/mesajlaşma) formatı */
+/* Read in Daily Life — Text Chain (chat/messaging) format */
 function renderTextChain(stage, scr) {
   const bubbles = scr.messages.map((m, i) => {
     const side = i % 2 === 0 ? 'left' : 'right';
@@ -420,7 +447,7 @@ function renderTextChain(stage, scr) {
   attachMCQ(stage);
 }
 
-/* Reading: Insert Text — verilen cümlenin pasajda en iyi oturduğu yeri seç */
+/* Reading: Insert Text — choose where the given sentence fits best in the passage */
 function renderInsertText(stage, scr) {
   const sel = State.answers[scr.id];
   const body = scr.paragraph.replace(/\[\[(\d+)\]\]/g, (m, num) => {
@@ -463,11 +490,11 @@ function renderWriting(stage, scr) {
   ta.addEventListener('input', upd); upd();
 }
 
-/* ETS 2026 şartnamesi: her Speaking görevi bir senaryo tanıtımıyla (sesli + yazılı) başlar.
-   scr.scenario = { title, intro, place? } — yoksa eski davranış (senaryosuz) korunur. */
+/* 2026 spec: every Speaking task opens with a scenario introduction (spoken + written).
+   scr.scenario = { title, intro, place? }; without it the task starts directly. */
 function scenarioCardHTML(sc) {
   if (!sc) return '';
-  // lang="en": sayfa lang="tr" olduğundan büyük harf dönüşümü "i"yi "İ" yapıyordu (SCENARİO)
+  // lang="en": on a Turkish page, CSS uppercase turned "i" into "İ" (SCENARİO)
   return `<div class="directions scenario" lang="en">
     <div class="small eyebrow">Scenario${sc.place ? ' · ' + esc(sc.place) : ''}</div>
     <div><strong>${esc(sc.title)}</strong></div><div>${esc(sc.intro)}</div></div>`;
@@ -485,13 +512,13 @@ function renderListenRepeat(stage, scr) {
   </div>`;
   runSpeakingItems(stage, scr.sentences.map((s, i) => ({
     label: `Sentence ${i + 1} of ${scr.sentences.length}`, audio: withIntro(scr.scenario, i, [{ text: s, voice: scr.voice || 'neutral' }]),
-    // Gerçek sınav: 8–12 sn yanıt penceresi, cümle uzunluğuyla artar
+    // Real test: an 8–12 s response window that grows with sentence length
     respSeconds: Math.min(12, Math.max(8, Math.round(s.split(/\s+/).length * 0.8))),
     prep: 0, key: `${scr.id}_${i}`, target: s, kind: 'repeat'
   })), '#lrCount', '#recArea', stage.querySelector('#playBtn'));
 }
 
-/* Speaking: Interview — tek konu, olgusal → görüş/tahmin ilerlemesi (ETS şartnamesi) */
+/* Speaking: Interview — one topic, moving from factual to opinion/prediction (2026 spec) */
 function renderInterview(stage, scr) {
   const intro = scr.scenario ? '' : esc(scr.topicIntro || '');
   stage.innerHTML = `<div class="card center">
@@ -507,7 +534,7 @@ function renderInterview(stage, scr) {
   })), '#ivCount', '#recArea', stage.querySelector('#playBtn'));
 }
 
-/* Konuşma öğelerini sırayla yürütür: dinle → (hazırlık) → kaydet → oynat → sonraki */
+/* Runs the speaking items in order: listen → (prepare) → record → play back → next */
 function runSpeakingItems(stage, items, countSel, areaSel, playBtn) {
   let idx = 0;
   const countEl = stage.querySelector(countSel);
@@ -519,7 +546,7 @@ function runSpeakingItems(stage, items, countSel, areaSel, playBtn) {
   function show() {
     nextBtnDisable(true);
     const it = items[idx];
-    countEl.textContent = it.label;   // soru metni dinlemeden önce gösterilmez (gerçek sınavdaki gibi)
+    countEl.textContent = it.label;   // the question text is hidden until it has been heard (as in the real test)
     area.innerHTML = `<p class="small">${t('iv.pressListen')}</p>`;
     playBtn.disabled = false; playBtn.textContent = '▶ ' + t('iv.listen');
     playBtn.onclick = () => {
@@ -544,7 +571,7 @@ function runSpeakingItems(stage, items, countSel, areaSel, playBtn) {
     let rec = null;
     if (Recorder.supported()) {
       try { await Recorder.start(); }
-      catch (e) { /* kayıt olmasa da speech-to-text ile devam */ }
+      catch (e) { /* continue with speech-to-text even without a recording */ }
     }
     if (stt) stt.start();
     const t0 = Date.now();
@@ -604,7 +631,7 @@ function runSpeakingItems(stage, items, countSel, areaSel, playBtn) {
     if (idx < items.length - 1) {
       html += `<button class="btn btn-primary" id="nextItem">${t('ex.next')}</button>`;
     } else if (it.kind === 'interview') {
-      // Speaking'in SON ekranı → tüm kayıtların indirme linklerini burada topla (sınav süresince uğraştırma)
+      // Last Speaking screen: offer all recordings for download here (not during the test)
       const keys = Object.keys(State.recordings);
       const dls = keys.map(k => `<a class="btn btn-ghost btn-sm" href="${State.recordings[k]}" download="speaking_${k}.webm">⬇ ${esc(k)}</a>`).join(' ');
       html += `<p class="small">${t('sp.allDone')}</p>`;
@@ -635,7 +662,7 @@ function isCorrect(qid) {
   return State.answers[qid] === q.answer;
 }
 
-// İki metin arasında kelime düzeyinde basit benzerlik (0..1) — Listen & Repeat için
+// Simple word-level similarity between two texts (0..1), for Listen and Repeat
 function similarity(said, target) {
   const norm = s => (s || '').toLowerCase().replace(/[^a-z0-9\s]/g, '').split(/\s+/).filter(Boolean);
   const a = norm(said), b = norm(target);
@@ -646,7 +673,7 @@ function similarity(said, target) {
   return Math.min(1, match / b.length);
 }
 
-// Konuşma akıcılığı ölçümleri (objektif Delivery göstergeleri)
+// Fluency measures (objective delivery indicators)
 function speechMetrics(transcript, seconds, confidence) {
   const words = (transcript || '').trim().split(/\s+/).filter(Boolean);
   const wc = words.length;
@@ -661,7 +688,7 @@ function speechMetrics(transcript, seconds, confidence) {
 }
 
 function findQuestion(qid) {
-  // Tüm bölümlerdeki soruları düz liste olarak arar (adaptif dahil)
+  // Finds a question in any section (adaptive modules included)
   for (const sec of State.form.sections) {
     const pools = [sec.screens];
     if (sec.adaptive) pools.push(sec.adaptive.hard, sec.adaptive.easy);
@@ -674,19 +701,19 @@ function findQuestion(qid) {
   return null;
 }
 
-// yüzdeden band'e (yaklaşık, README'de açıklanır)
+// percent correct → band (approximate)
 function pctToBand(pct, capEasy) {
   const table = [[.92, 6], [.85, 5.5], [.78, 5], [.70, 4.5], [.62, 4], [.52, 3.5], [.42, 3], [.32, 2.5], [.22, 2], [.12, 1.5]];
   let band = 1;
   for (const [p, b] of table) { if (pct >= p) { band = b; break; } }
-  if (capEasy && band > 4) band = 4; // kolay yola yönlenenler için tavan
+  if (capEasy && band > 4) band = 4; // cap for the lower route
   return band;
 }
 const bandTo30 = b => ({ 6: 30, 5.5: 28, 5: 26, 4.5: 24, 4: 22, 3.5: 19, 3: 16, 2.5: 13, 2: 10, 1.5: 7, 1: 4 }[b] || 4);
 
 function scoreSection(secId) {
   const sec = State.form.sections.find(s => s.id === secId);
-  if (!sec) return { correct: 0, total: 0, pct: 0, band: null, scaled30: null, path: null, missing: true }; // yapım aşamasındaki (pilot) formlarda bölüm eksik olabilir
+  if (!sec) return { correct: 0, total: 0, pct: 0, band: null, scaled30: null, path: null, missing: true }; // a test may leave out a section (e.g. a practice set)
   const ids = [];
   const collect = pool => pool.forEach(scr => {
     if (scr.type === 'ctw') (scr.items || []).forEach(it => ids.push(it.id));
@@ -735,26 +762,15 @@ function finishExam() {
     reading, listening,
     details: { reading: collectDetails('reading'), listening: collectDetails('listening') },
     writing: collectWriting(), speaking: collectSpeaking(),
-    est0120_RL: reading.scaled30 + listening.scaled30, // W+S sonra eklenecek
+    answers: State.answers, // kept with the results so the review page does not depend on the in-progress save
   };
-  localStorage.setItem('fluova_results_' + State.form.id, JSON.stringify(State.results));
-  localStorage.setItem('fluova_results_last', JSON.stringify(State.results));
-  downloadResults(State.results);
+  try {
+    localStorage.setItem('fluova_results_' + State.form.id, JSON.stringify(State.results));
+    localStorage.removeItem('fluova_progress_' + State.form.id);
+  } catch (e) {}
   location.href = 'results.html?test=' + encodeURIComponent(State.form.id);
 }
 
-// Tüm sonuçları (Writing metinleri + Speaking dökümleri dahil) tek dosya olarak indirir.
-// Bu dosya Claude tarafından okunup değerlendirilir.
-function downloadResults(results) {
-  try {
-    const blob = new Blob([JSON.stringify(results, null, 2)], { type: 'application/json' });
-    const a = document.createElement('a');
-    a.href = URL.createObjectURL(blob);
-    a.download = `fluova_${results.formId}_results.json`;
-    document.body.appendChild(a); a.click();
-    setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 1000);
-  } catch (e) {}
-}
 
 function collectWriting() {
   const out = { buildSentence: [], email: '', discussion: '' };
@@ -793,10 +809,14 @@ function collectSpeaking() {
 
 /* ---------------- Persistence ---------------- */
 function saveProgress() {
+  if (!State.form || State.results) return;
+  const paths = {};
+  State.form.sections.forEach(s => { if (State['_' + s.id + '_path']) paths[s.id] = State['_' + s.id + '_path']; });
   try {
     localStorage.setItem('fluova_progress_' + State.form.id, JSON.stringify({
       answers: State.answers, writing: State.writing, buildSentence: State.buildSentence,
-      sectionIndex: State.sectionIndex, screenIndex: State.screenIndex, remaining: State.remaining
+      sectionIndex: State.sectionIndex, screenIndex: State.screenIndex, remaining: State.remaining,
+      stage2Injected: State.stage2Injected, paths, saved: Date.now()
     }));
   } catch (e) {}
 }
