@@ -1,6 +1,15 @@
 # Fluova
 
+[![Quality gate](https://github.com/emrecpn/fluova/actions/workflows/quality-gate.yml/badge.svg)](https://github.com/emrecpn/fluova/actions/workflows/quality-gate.yml)
+[![Deploy](https://github.com/emrecpn/fluova/actions/workflows/pages.yml/badge.svg)](https://github.com/emrecpn/fluova/actions/workflows/pages.yml)
+[![License: MIT](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
+[![Content: CC BY-SA 4.0](https://img.shields.io/badge/content-CC%20BY--SA%204.0-lightgrey.svg)](content/LICENSE.md)
+
 **Free, open-source practice tests for the TOEFL iBT® test (January 2026 format).**
+
+**▶ Try it: [emrecpn.github.io/fluova](https://emrecpn.github.io/fluova/)** · [Start a test](https://emrecpn.github.io/fluova/engine/) · [Add questions to the bank](CONTRIBUTING.md#question-bank)
+
+![Fluova](site/og.png)
 
 Full-length tests with real timing, adaptive modules, and every task type from the 2026 specification. Everything runs in your browser: no account and no Fluova server, and your results are saved only on your device. (For Speaking transcripts you choose: the browser's own recognition, which Chrome and Edge run on their servers, or Whisper running on your device after a one-time ~250 MB download. See [docs/STT-RESULTS.md](docs/STT-RESULTS.md).)
 
