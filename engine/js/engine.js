@@ -32,6 +32,7 @@ document.addEventListener('click', e => {
   const b = e.target.closest('[data-action]'); if (!b || b.disabled) return;
   if (b.dataset.action === 'next') next();
   else if (b.dataset.action === 'back') back();
+  else if (b.dataset.action === 'exit') exitExam();
   else if (b.dataset.action === 'finish' && confirm(t('ex.confirmFinish'))) finishExam();
 });
 
@@ -78,6 +79,14 @@ function showResumeNote(saved) {
   el.innerHTML = `<span>${t('ex.resumed', { time: fmt(State.remaining) })}${away >= 1 ? ' ' + t('ex.resumedAway', { n: away }) : ''}</span><button type="button" aria-label="${t('ex.close')}">×</button>`;
   el.querySelector('button').addEventListener('click', () => el.remove());
   $('#stage').prepend(el); // inside the stage, so it covers nothing and goes away with the next screen
+}
+
+/* Leave without finishing: the attempt is saved and can be resumed from the test list. */
+function exitExam() {
+  clearInterval(State.timerHandle); TTS.stop();
+  saveProgress();
+  State.leaving = true; // no "leave site?" prompt: nothing is lost
+  location.href = 'index.html';
 }
 
 function loadSection(i) {
@@ -191,6 +200,7 @@ function renderTopbar(sec, scr) {
     <div class="sec">${esc(State.form.title)}</div>
     <div class="mid">${qInfo}<span id="timer" class="timer">${fmt(State.remaining)}</span></div>
     <div class="tools">
+      <button data-action="exit">${t('ex.exit')}</button>
       <button data-action="finish">${t('ex.finish')}</button>
     </div>`;
   updateTimerUI();

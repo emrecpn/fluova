@@ -8,7 +8,7 @@
   }
   FluovaContent.load(id).then(function (form) {
     window.addEventListener('beforeunload', function (e) {
-      if (window.State && State.form && !State.results) { e.preventDefault(); e.returnValue = ''; }
+      if (window.State && State.form && !State.results && !State.leaving) { e.preventDefault(); e.returnValue = ''; }
     });
     startExam(form);
   }).catch(function (e) { notReady(e.message); });

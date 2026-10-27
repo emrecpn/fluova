@@ -48,7 +48,7 @@
       'level.real': 'Real test · adaptive', 'level.easy': 'Easier', 'level.medium': 'Medium', 'level.hard': 'Harder',
       'sec.reading': 'Reading', 'sec.listening': 'Listening', 'sec.writing': 'Writing', 'sec.speaking': 'Speaking',
       'disclaimer': 'TOEFL® is a registered trademark of ETS. This product is not endorsed or approved by ETS.',
-      'home': 'All tests',
+      'home': 'All tests', 'nav.home': 'Home', 'ex.exit': 'Save & exit',
       // exam chrome
       'ex.notFound': 'Test not found', 'ex.notFoundP': 'Could not load {file} ({msg}).',
       'ex.confirmNextSection': 'You are about to finish "{name}" and move on. You cannot return to this section. Continue?',
@@ -161,7 +161,7 @@
       'res.practiceNote': 'Bu tam bir test değil, alıştırma setiydi; bu yüzden band puanı yerine doğru cevap oranı gösteriliyor.',
       'level.real': 'Gerçek sınav · adaptif', 'level.easy': 'Daha kolay', 'level.medium': 'Orta', 'level.hard': 'Daha zor',
       'disclaimer': 'TOEFL®, ETS’nin tescilli markasıdır. Bu ürün ETS tarafından onaylanmamış veya desteklenmemektedir.',
-      'home': 'Tüm testler',
+      'home': 'Tüm testler', 'nav.home': 'Ana sayfa', 'ex.exit': 'Kaydet ve çık',
       'ex.notFound': 'Test bulunamadı', 'ex.notFoundP': '{file} yüklenemedi ({msg}).',
       'ex.confirmNextSection': '"{name}" bölümünü bitirip sonraki bölüme geçmek üzeresin. Bu bölüme geri dönemezsin. Devam edilsin mi?',
       'ex.section': 'Bölüm {i}/{n}', 'ex.finish': 'Sınavı bitir',
@@ -299,7 +299,7 @@
       'level.medium': 'Medio',
       'level.hard': 'Más difícil',
       'disclaimer': 'TOEFL® es una marca registrada de ETS. Este producto no está respaldado ni aprobado por ETS.',
-      'home': 'Todos los exámenes',
+      'home': 'Todos los exámenes', 'nav.home': 'Inicio', 'ex.exit': 'Guardar y salir',
       'ex.notFound': 'Examen no encontrado',
       'ex.notFoundP': 'No se pudo cargar {file} ({msg}).',
       'ex.confirmNextSection': 'Vas a terminar "{name}" y pasar a la siguiente sección. No podrás volver a esta sección. ¿Continuar?',
@@ -430,9 +430,14 @@
   }
   /* Fill [data-i18n] (text) and [data-i18n-html] (markup from our own dictionary) inside root. */
   function apply(root) {
+    homeLinks(root);
     (root || document).querySelectorAll('[data-i18n]').forEach(el => { el.textContent = t(el.dataset.i18n); });
     (root || document).querySelectorAll('[data-i18n-html]').forEach(el => { el.innerHTML = t(el.dataset.i18nHtml); });
   }
+  /* Links back to the landing page, in the visitor's language (site root is English; /tr/, /es/ are the others). */
+  const homeHref = () => '../' + (lang === 'en' ? '' : lang + '/');
+  function homeLinks(root) { (root || document).querySelectorAll('[data-home]').forEach(a => { a.href = homeHref(); }); }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', () => homeLinks()); else homeLinks();
   /* Segmented EN | TR switch. Changing language reloads the page so every string re-renders. */
   function switcher(el) {
     el.className = 'seg'; el.setAttribute('role', 'group'); el.setAttribute('aria-label', 'Language');
@@ -444,6 +449,6 @@
       const u = new URL(location.href); u.searchParams.delete('lang'); location.replace(u);
     });
   }
-  window.I18N = { t, tx, apply, switcher, get lang() { return lang; }, langs: Object.keys(LANGS) };
+  window.I18N = { t, tx, apply, switcher, homeHref, get lang() { return lang; }, langs: Object.keys(LANGS) };
   window.t = t; window.tx = tx;
 })();

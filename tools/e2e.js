@@ -236,6 +236,23 @@ async function main() {
       return await page.evaluate("new URLSearchParams(location.search).get('test')");
     });
 
+    await check('"Home" leads back to the landing page in the chosen language; "Save & exit" keeps the attempt', async () => {
+      await page.evaluate("localStorage.setItem('fluova_lang', 'tr')");
+      await page.goto('/engine/');
+      const home = await page.evaluate("[...document.querySelectorAll('[data-home]')].map(a => a.getAttribute('href'))");
+      if (!home.length || home.some(h => h !== '../tr/')) throw new Error('home links: ' + JSON.stringify(home));
+      await page.evaluate("document.querySelector('.pagebar .btn[data-home]').click()");
+      await page.waitFor("location.pathname.endsWith('/tr/') && document.documentElement.lang === 'tr' && !!document.querySelector('.ctw')", 'the Turkish landing page');
+      await page.evaluate("localStorage.removeItem('fluova_lang'); localStorage.removeItem('fluova_progress_practice-02')");
+      await page.goto('/engine/exam.html?test=practice-02');
+      await page.waitFor("document.querySelector('[data-action=exit]') && document.querySelector('[data-action=next]')", 'the exam');
+      await page.evaluate("document.querySelector('[data-action=next]').click()");
+      await sleep(200);
+      await page.evaluate("document.querySelector('[data-action=exit]').click()");
+      await page.waitFor("location.pathname.endsWith('/engine/index.html') && !!localStorage.getItem('fluova_progress_practice-02')", 'the test list with a saved attempt');
+      await clean(page, 'home and exit');
+    });
+
     await check('question builder page loads', async () => {
       await page.goto('/generator/');
       await sleep(300);
