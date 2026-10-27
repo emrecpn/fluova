@@ -1,0 +1,29 @@
+{
+ "id": "p3_hcr6",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "opening a window",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_hcr6",
+  "audio": [
+   {
+    "text": "Do you mind if I open the window a bit?",
+    "voice": "male:au"
+   }
+  ],
+  "options": [
+   "Go ahead, it's getting stuffy in here.",
+   "Yes, I'll mind your bag while you're gone.",
+   "The window looks out on the main square.",
+   "I opened a bank account last week."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Permission request → \"Go ahead\" grants it. B uses \"mind\" in another sense (= look after), and \"Yes\" here would actually mean a refusal; D repeats \"open\" with another meaning.",
+   "tr": "İzin isteme → \"Go ahead\" izin veriyor. B \"mind\" kelimesini başka anlamda (= göz kulak olmak) kullanıyor, üstelik burada \"Yes\" aslında itiraz anlamına gelir; D \"open\" kelimesini başka anlamda tekrar ediyor.",
+   "es": "Petición de permiso → \"Go ahead\" lo concede. B usa \"mind\" en otro sentido (= vigilar), y aquí \"Yes\" significaría en realidad que sí le molesta; D repite \"open\" con otro significado."
+  }
+ }
+}

@@ -1,0 +1,68 @@
+{
+ "id": "p3_conv_tutoring_center",
+ "task": "conversation",
+ "tier": "medium",
+ "topic": "peer tutoring",
+ "origin": "practice-03",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Booking a tutor",
+  "prompt": "Listen to a conversation between a student and a receptionist at the peer tutoring center.",
+  "audio": [
+   {
+    "text": "Hi, I'd like to see a tutor for my economics course. Is anyone free this afternoon?",
+    "voice": "male:au"
+   },
+   {
+    "text": "Let me check. Our economics tutors are fully booked today, but there's an opening tomorrow at eleven.",
+    "voice": "female:gb"
+   },
+   {
+    "text": "I've got a lab then. Is there anything later in the day?",
+    "voice": "male:au"
+   },
+   {
+    "text": "Not tomorrow, no. But we also run a drop-in group session on Thursday evenings. You don't need an appointment, just bring your questions.",
+    "voice": "female:gb"
+   },
+   {
+    "text": "That might actually suit me better. Most of my questions are about the chapter everyone's stuck on.",
+    "voice": "male:au"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p3_conv_tutoring_center_q1",
+    "stem": "Why can't the student meet a tutor tomorrow at eleven?",
+    "options": [
+     "The tutor will be leading a group",
+     "He has another class at that time",
+     "The center is closed in the morning",
+     "No economics tutors work that day"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail (paraphrase of \"I've got a lab then\"). C and D contradict the eleven o'clock opening; A confuses the tutor with the Thursday group session.",
+     "tr": "Ayrıntı (\"I've got a lab then\" ifadesinin parafrazı). C ve D saat on birdeki boş randevuyla çelişiyor; A tutor'ı perşembe akşamki grup oturumuyla karıştırıyor.",
+     "es": "Detalle (paráfrasis de \"I've got a lab then\"). C y D contradicen el hueco de las once; A confunde al tutor con la sesión de grupo del jueves."
+    }
+   },
+   {
+    "id": "p3_conv_tutoring_center_q2",
+    "stem": "What will the student probably do?",
+    "options": [
+     "Return to the center this afternoon",
+     "Ask his lab instructor for help",
+     "Attend a group session without booking",
+     "Reserve a private tutor for next week"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Inference: he says the drop-in session \"might actually suit me better\". A is impossible because today's tutors are fully booked; B is never mentioned.",
+     "tr": "Çıkarım: randevusuz grup oturumu için \"might actually suit me better\" diyor. A imkânsız, çünkü bugünkü tutorların hepsi dolu; B hiç söz edilmiyor.",
+     "es": "Inferencia: dice que la sesión sin cita \"might actually suit me better\". A es imposible porque hoy los tutores están completos; B nunca se menciona."
+    }
+   }
+  ]
+ }
+}

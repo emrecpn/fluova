@@ -1,0 +1,29 @@
+{
+ "id": "p3_cr8",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "exam date change",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_cr8",
+  "audio": [
+   {
+    "text": "Who should I talk to about changing my exam date?",
+    "voice": "male:gb"
+   }
+  ],
+  "options": [
+   "The exam is on the fourteenth.",
+   "The department secretary handles that.",
+   "I changed my mind about the course.",
+   "Yes, you should ask quite soon."
+  ],
+  "answer": 1,
+  "why": {
+   "en": "\"Who\" → a person. A gives a date; C repeats \"change\" with another meaning; D answers with \"Yes\".",
+   "tr": "\"Who\" → kişi. A tarih veriyor; C \"change\" kelimesini başka anlamda tekrar ediyor; D \"Yes\" ile cevap veriyor.",
+   "es": "\"Who\" → una persona. A da una fecha; C repite \"change\" con otro significado; D responde \"Yes\"."
+  }
+ }
+}

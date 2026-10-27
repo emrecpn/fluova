@@ -1,0 +1,29 @@
+{
+ "id": "p3_hcr2",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "dropping a class",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_hcr2",
+  "audio": [
+   {
+    "text": "I'm thinking of dropping my evening class.",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "I dropped my phone on the way to class this morning.",
+   "Evening classes usually start at six.",
+   "I think the class has about forty students.",
+   "Talk to your advisor before you make up your mind."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "Statement → advice (idiom: \"make up your mind\" = decide). A repeats \"drop\" in its literal sense; C echoes \"think\" and \"class\" without responding.",
+   "tr": "Bildirim → tavsiye (deyim: \"make up your mind\" = karar vermek). A \"drop\" kelimesini gerçek anlamıyla tekrar ediyor; C \"think\" ve \"class\" kelimelerini yankılıyor ama cevap vermiyor.",
+   "es": "Comentario → un consejo (expresión: \"make up your mind\" = decidirse). A repite \"drop\" en sentido literal; C repite \"think\" y \"class\" sin responder."
+  }
+ }
+}

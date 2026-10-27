@@ -1,0 +1,72 @@
+{
+ "id": "p3_conv_news_story",
+ "task": "conversation",
+ "tier": "hard",
+ "topic": "student newspaper",
+ "origin": "practice-03",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Revising a news story",
+  "prompt": "Listen to a conversation between a student reporter and the editor of the student newspaper.",
+  "audio": [
+   {
+    "text": "Jamal, I've read your piece on the new food trucks. The writing's lively, but right now it's mostly your own impressions.",
+    "voice": "female:au"
+   },
+   {
+    "text": "Well, I did spend a whole afternoon watching how busy they were.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "Which is useful, but readers will want to hear from someone who's responsible for the program. Have you contacted the campus services office?",
+    "voice": "female:au"
+   },
+   {
+    "text": "I emailed them on Monday, but nobody's replied.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "Then give them a call. We can hold the story for Thursday's issue, but not any longer.",
+    "voice": "female:au"
+   },
+   {
+    "text": "Okay. I'll phone them first thing tomorrow.",
+    "voice": "male:gb"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p3_conv_news_story_q1",
+    "stem": "What is the editor's main concern about the story?",
+    "options": [
+     "It is written in a style that readers may find dull",
+     "It was handed in well after the deadline for this week's issue",
+     "It includes incorrect prices for the food trucks",
+     "It relies too heavily on the reporter's personal observations"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Main concern (paraphrase of \"mostly your own impressions\"). A contradicts \"The writing's lively\"; B misreads the plan to hold the story for Thursday's issue.",
+     "tr": "Asıl endişe (\"mostly your own impressions\" ifadesinin parafrazı). A \"The writing's lively\" ile çelişiyor; B haberin perşembe sayısına bekletilmesini yanlış yorumluyor.",
+     "es": "Preocupación principal (paráfrasis de \"mostly your own impressions\"). A contradice \"The writing's lively\"; B malinterpreta el plan de guardar la noticia para el número del jueves."
+    }
+   },
+   {
+    "id": "p3_conv_news_story_q2",
+    "stem": "What will the reporter most likely do next?",
+    "options": [
+     "Send the office a second email",
+     "Try to reach the office by telephone",
+     "Watch the food trucks again",
+     "Ask the editor to run it now"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Next action: \"I'll phone them first thing tomorrow\". A is the method that has already failed; D contradicts the plan to hold the story.",
+     "tr": "Sonraki adım: \"I'll phone them first thing tomorrow\". A zaten işe yaramamış olan yöntem; D haberi bekletme planıyla çelişiyor.",
+     "es": "Siguiente paso: \"I'll phone them first thing tomorrow\". A es el método que ya no funcionó; D contradice el plan de guardar la noticia."
+    }
+   }
+  ]
+ }
+}

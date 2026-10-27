@@ -1,0 +1,99 @@
+{
+ "id": "p3_ac_three_field_system",
+ "task": "academic",
+ "tier": "medium",
+ "topic": "medieval crop rotation",
+ "origin": "practice-03",
+ "screen": {
+  "type": "passage",
+  "title": "The Three-Field System",
+  "directions": "Read an Academic Passage — module 1",
+  "text": [
+   "For many centuries, farmers across much of Europe divided their land into two large fields. Each year, one field was planted with grain, while the other was deliberately left unplanted, or fallow, so that the soil could recover its natural fertility. This method protected the soil, but it meant that half of the available land produced nothing in any given year.",
+   "Around the eighth century, many villages began organizing their land into three fields instead. One field was sown with wheat or rye in the autumn, a second was planted in spring with oats, peas, or beans, and the third was allowed to rest. The crops then rotated to a different field each year.",
+   "This change brought two significant advantages. First, two-thirds of the land was now under cultivation at any time. Second, peas and beans naturally return nitrogen to the soil, so the fields remained productive for longer. The additional oats also supported more horses, which could plow considerably faster than oxen."
+  ],
+  "questions": [
+   {
+    "id": "p3_ac_three_field_system_q1",
+    "stem": "What is the passage mainly about?",
+    "options": [
+     "Why European farmers stopped growing wheat and rye",
+     "A new way of farming that made fields more productive",
+     "How horses gradually replaced oxen on farms across Europe",
+     "Why fallow fields produced the largest harvests"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Main idea (paraphrase): the move from two fields to three and its advantages. C turns a minor detail into the main topic; A and D contradict the passage.",
+     "tr": "Ana fikir (parafraz): iki tarladan üç tarlaya geçiş ve faydaları. C küçük bir ayrıntıyı ana konu yapıyor; A ve D metinle çelişiyor.",
+     "es": "Idea principal (paráfrasis): el paso de dos campos a tres y sus ventajas. C convierte un detalle menor en el tema principal; A y D contradicen el texto."
+    }
+   },
+   {
+    "id": "p3_ac_three_field_system_q2",
+    "stem": "The word \"recover\" in the passage is closest in meaning to",
+    "options": [
+     "measure",
+     "protect",
+     "regain",
+     "remove"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Vocabulary in context: the field rested so that the soil could \"recover\" (regain) its natural fertility. B borrows \"protected\" from the next sentence.",
+     "tr": "Bağlamda kelime: tarla, toprak doğal verimliliğini \"recover\" etsin (geri kazansın) diye dinlendiriliyordu. B sonraki cümledeki \"protected\" kelimesini ödünç alıyor.",
+     "es": "Vocabulario en contexto: el campo descansaba para que la tierra pudiera \"recover\" (recuperar) su fertilidad natural. B toma prestado \"protected\" de la frase siguiente."
+    }
+   },
+   {
+    "id": "p3_ac_three_field_system_q3",
+    "stem": "Why does the author mention that \"half of the available land produced nothing in any given year\"?",
+    "options": [
+     "To show a disadvantage of the two-field method",
+     "To show that European soil was too poor for grain",
+     "To explain why villages needed more horses",
+     "To argue that resting the soil was unnecessary"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Author's purpose: the sentence shows the cost of the two-field system, which the three-field system later reduced. D goes too far, since one field still rested; C links the point to a later, unrelated detail.",
+     "tr": "Yazarın amacı: cümle, iki tarla sisteminin bedelini gösteriyor; üç tarla sistemi bu bedeli sonradan azalttı. D aşırıya kaçıyor, çünkü bir tarla yine dinlendiriliyordu; C bu noktayı sonraki ilgisiz bir ayrıntıya bağlıyor.",
+     "es": "Propósito del autor: la frase muestra el coste del sistema de dos campos, que el de tres campos redujo después. D va demasiado lejos, porque un campo seguía descansando; C relaciona la idea con un detalle posterior que no tiene que ver."
+    }
+   },
+   {
+    "id": "p3_ac_three_field_system_q4",
+    "stem": "What can be inferred about villages that adopted the three-field system?",
+    "options": [
+     "They no longer needed to leave any of their fields empty",
+     "They planted all of their crops in the spring",
+     "They gave up keeping oxen within a few years",
+     "They could grow more food on the same amount of land"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Inference: two-thirds of the land was cultivated instead of half. A contradicts \"the third was allowed to rest\"; B ignores the autumn sowing of wheat or rye.",
+     "tr": "Çıkarım: arazinin yarısı yerine üçte ikisi ekiliyordu. A \"the third was allowed to rest\" bilgisiyle çelişiyor; B buğday ya da çavdarın sonbaharda ekildiğini göz ardı ediyor.",
+     "es": "Inferencia: se cultivaban dos tercios de la tierra en lugar de la mitad. A contradice \"the third was allowed to rest\"; B ignora la siembra de trigo o centeno en otoño."
+    }
+   },
+   {
+    "id": "p3_ac_three_field_system_q5",
+    "stem": "According to the passage, why did the fields remain productive for longer?",
+    "options": [
+     "Oats were planted in autumn instead of spring",
+     "Peas and beans returned nitrogen to the soil",
+     "Horses plowed the soil more deeply than oxen",
+     "The same crop grew in each field every year"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail (close to the text): \"peas and beans naturally return nitrogen to the soil\". A reverses the seasons; C turns the point about plowing speed into a point about the soil.",
+     "tr": "Ayrıntı (metne yakın): \"peas and beans naturally return nitrogen to the soil\". A mevsimleri tersine çeviriyor; C sürme hızıyla ilgili bilgiyi toprakla ilgili bir bilgiye dönüştürüyor.",
+     "es": "Detalle (cercano al texto): \"peas and beans naturally return nitrogen to the soil\". A invierte las estaciones; C convierte lo dicho sobre la velocidad al arar en algo sobre la tierra."
+    }
+   }
+  ]
+ }
+}

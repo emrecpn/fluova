@@ -1,0 +1,92 @@
+{
+ "id": "p3_talk_planet_transits",
+ "task": "talk",
+ "tier": "hard",
+ "topic": "exoplanet detection",
+ "origin": "practice-03",
+ "screen": {
+  "type": "listening",
+  "title": "Academic Talk: Finding planets around other stars",
+  "prompt": "Listen to part of a lecture in an astronomy class.",
+  "audio": [
+   {
+    "text": "Planets orbiting other stars are extremely hard to see directly. A star is millions of times brighter than any planet near it, so the planet's faint light is simply lost in the glare. Instead, astronomers usually detect these planets indirectly, and today the most productive approach is called the transit method.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "Here's the idea. If a planet's orbit happens to be lined up with our line of sight, then once per orbit the planet passes in front of its star. When that happens, it blocks a tiny fraction of the starlight, often less than one percent. A sensitive telescope that measures the star's brightness continuously will record a small, regular dip. The time between dips tells us the length of the planet's year, and the depth of each dip tells us how large the planet is compared with its star.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "Now, a single dip doesn't prove anything. Stars have dark spots, and a second star passing in front can produce a similar signal. That's why astronomers want to see at least three evenly spaced dips before they take a candidate seriously. And keep in mind the method's built-in bias: it only finds systems whose orbits we happen to see edge-on, so for every planet detected this way, many more must be passing by unseen.",
+    "voice": "male:gb"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p3_talk_planet_transits_q1",
+    "stem": "What is the lecture mainly about?",
+    "options": [
+     "Why some stars shine much more brightly than others",
+     "How telescopes take direct photographs of distant planets",
+     "Detecting distant planets by measuring changes in starlight",
+     "Why the planets that orbit other stars have such short years"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Main idea: the transit method, its logic and its limits. B contradicts the opening point that such planets are \"extremely hard to see directly\".",
+     "tr": "Ana fikir: geçiş yöntemi, mantığı ve sınırları. B bu gezegenlerin \"extremely hard to see directly\" olduğu yönündeki açılış bilgisiyle çelişiyor.",
+     "es": "Idea principal: el método de tránsito, su lógica y sus límites. B contradice la idea inicial de que estos planetas son \"extremely hard to see directly\"."
+    }
+   },
+   {
+    "id": "p3_talk_planet_transits_q2",
+    "stem": "According to the professor, what does the depth of a dip reveal?",
+    "options": [
+     "The planet's size relative to its star",
+     "The length of the planet's year",
+     "The planet's distance from Earth",
+     "The temperature of the planet"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Detail: \"the depth of each dip tells us how large the planet is compared with its star\". B is what the time between dips shows, the classic swap.",
+     "tr": "Ayrıntı: \"the depth of each dip tells us how large the planet is compared with its star\". B düşüşler arasındaki sürenin gösterdiği şey; klasik yer değiştirme tuzağı.",
+     "es": "Detalle: \"the depth of each dip tells us how large the planet is compared with its star\". B es lo que indica el tiempo entre caídas: la trampa clásica del intercambio."
+    }
+   },
+   {
+    "id": "p3_talk_planet_transits_q3",
+    "stem": "Why does the professor mention dark spots on stars?",
+    "options": [
+     "To show how stars lose brightness as they grow older",
+     "To explain why one dip cannot confirm a planet",
+     "To describe a feature that makes planets easier to see",
+     "To compare the size of the spots with that of planets"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Purpose: spots, like a second star, can imitate a dip, so \"a single dip doesn't prove anything\". C reverses their role, since they are a source of false signals.",
+     "tr": "Amaç: lekeler, tıpkı ikinci bir yıldız gibi, düşüşü taklit edebilir; bu yüzden \"a single dip doesn't prove anything\". C rollerini tersine çeviriyor, çünkü lekeler yanıltıcı sinyal kaynağı.",
+     "es": "Propósito: las manchas, como una segunda estrella, pueden imitar una caída, así que \"a single dip doesn't prove anything\". C invierte su papel, porque son una fuente de señales falsas."
+    }
+   },
+   {
+    "id": "p3_talk_planet_transits_q4",
+    "stem": "What does the professor imply about the planets found with the transit method?",
+    "options": [
+     "They all orbit stars that are covered with dark spots",
+     "They are the largest planets in our galaxy",
+     "They can also be seen directly with telescopes",
+     "They are only a small share of the planets that exist"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Inference from \"for every planet detected this way, many more must be passing by unseen\". C contradicts the opening of the lecture; A misuses the point about dark spots, which can only imitate a planet's signal.",
+     "tr": "\"For every planet detected this way, many more must be passing by unseen\" ifadesinden çıkarım. C dersin girişiyle çelişiyor; A yalnızca gezegen sinyalini taklit edebilen karanlık lekelerle ilgili bilgiyi yanlış kullanıyor.",
+     "es": "Inferencia a partir de \"for every planet detected this way, many more must be passing by unseen\". C contradice el inicio de la clase; A usa mal lo dicho sobre las manchas oscuras, que solo pueden imitar la señal de un planeta."
+    }
+   }
+  ]
+ }
+}

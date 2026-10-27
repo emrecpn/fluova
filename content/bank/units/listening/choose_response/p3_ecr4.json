@@ -1,0 +1,29 @@
+{
+ "id": "p3_ecr4",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "getting to stadium",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_ecr4",
+  "audio": [
+   {
+    "text": "How do you get to the stadium?",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "It's a very big stadium.",
+   "On Saturday afternoon.",
+   "I got a ticket for the game.",
+   "Take the number five bus."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "\"How do you get to\" → a way to travel. B gives a day; C repeats \"get\" with another meaning.",
+   "tr": "\"How do you get to\" → nasıl gidileceği. B gün veriyor; C \"get\" kelimesini başka anlamda tekrar ediyor.",
+   "es": "\"How do you get to\" → una forma de llegar. B da un día; C repite \"get\" con otro significado."
+  }
+ }
+}

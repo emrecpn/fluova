@@ -1,0 +1,29 @@
+{
+ "id": "p3_ecr7",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "movie length",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_ecr7",
+  "audio": [
+   {
+    "text": "How long is the movie?",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "It's a funny movie.",
+   "At the cinema downtown.",
+   "Every Friday night.",
+   "About two hours."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "\"How long\" → a length of time. C gives a frequency; B gives a place.",
+   "tr": "\"How long\" → süre. C sıklık veriyor; B yer veriyor.",
+   "es": "\"How long\" → una duración. C da una frecuencia; B da un lugar."
+  }
+ }
+}

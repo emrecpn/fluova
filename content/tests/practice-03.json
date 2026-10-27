@@ -1,0 +1,2626 @@
+{
+ "$schema": "../schema/test.schema.json",
+ "id": "practice-03",
+ "title": "Fluova Practice Test 3",
+ "version": "1.0.0",
+ "license": "CC-BY-SA-4.0",
+ "authors": [
+  "Fluova contributors"
+ ],
+ "level": "real",
+ "notes": "Spec-faithful test assembled from the question bank (all units new). Explanations in English, Turkish and Spanish.",
+ "sections": [
+  {
+   "id": "reading",
+   "name": "Reading",
+   "minutes": 29,
+   "intro": {
+    "en": "Reading: Complete the Words, Read in Daily Life and Read an Academic Passage. After the first module the section adapts to you and gets harder or easier. Correct answers often do not repeat the words in the text; they say the same thing in other words.",
+    "tr": "Reading: Complete the Words, Read in Daily Life ve Read an Academic Passage. İlk modülden sonra bölüm sana göre zorlaşır ya da kolaylaşır. Doğru cevaplar çoğu zaman metindeki kelimeleri tekrar etmez; anlamı başka sözcüklerle verir.",
+    "es": "Reading: Complete the Words, Read in Daily Life y Read an Academic Passage. Después del primer módulo, la sección se adapta a ti y se vuelve más difícil o más fácil. Las respuestas correctas a menudo no repiten las palabras del texto: dicen lo mismo con otras palabras."
+   },
+   "screens": [
+    {
+     "type": "ctw",
+     "title": "Complete the Words: Twinkling stars",
+     "text": [
+      "On a clear night, the stars seem to flicker and change color, even though the light they give off is actually steady. This {{p3_ctw_twinkling_stars_1}}, called {{p3_ctw_twinkling_stars_2}}, is {{p3_ctw_twinkling_stars_3}} by {{p3_ctw_twinkling_stars_4}} air {{p3_ctw_twinkling_stars_5}} us {{p3_ctw_twinkling_stars_6}} than {{p3_ctw_twinkling_stars_7}} the {{p3_ctw_twinkling_stars_8}} themselves. {{p3_ctw_twinkling_stars_9}} starlight {{p3_ctw_twinkling_stars_10}} our eyes, it passes through layers of air that differ in temperature and density. Each layer bends the light slightly, and because the layers are always moving, the image of the star shifts many times per second. Planets usually twinkle less, since they appear as tiny disks rather than single points of light."
+     ],
+     "items": [
+      {
+       "id": "p3_ctw_twinkling_stars_1",
+       "stub": "eff",
+       "answer": "ect"
+      },
+      {
+       "id": "p3_ctw_twinkling_stars_2",
+       "stub": "twin",
+       "answer": "kling"
+      },
+      {
+       "id": "p3_ctw_twinkling_stars_3",
+       "stub": "cau",
+       "answer": "sed"
+      },
+      {
+       "id": "p3_ctw_twinkling_stars_4",
+       "stub": "t",
+       "answer": "he"
+      },
+      {
+       "id": "p3_ctw_twinkling_stars_5",
+       "stub": "ab",
+       "answer": "ove"
+      },
+      {
+       "id": "p3_ctw_twinkling_stars_6",
+       "stub": "rat",
+       "answer": "her"
+      },
+      {
+       "id": "p3_ctw_twinkling_stars_7",
+       "stub": "b",
+       "answer": "y"
+      },
+      {
+       "id": "p3_ctw_twinkling_stars_8",
+       "stub": "st",
+       "answer": "ars"
+      },
+      {
+       "id": "p3_ctw_twinkling_stars_9",
+       "stub": "Bef",
+       "answer": "ore"
+      },
+      {
+       "id": "p3_ctw_twinkling_stars_10",
+       "stub": "rea",
+       "answer": "ches"
+      }
+     ]
+    },
+    {
+     "type": "ctw",
+     "title": "Complete the Words: Ancient rubbish heaps",
+     "text": [
+      "Some of the most useful evidence that archaeologists study comes from ancient piles of household waste. These {{p3_ctw_ancient_middens_1}}, known {{p3_ctw_ancient_middens_2}} middens, {{p3_ctw_ancient_middens_3}} over {{p3_ctw_ancient_middens_4}} years {{p3_ctw_ancient_middens_5}} people {{p3_ctw_ancient_middens_6}} away {{p3_ctw_ancient_middens_7}}, bones, {{p3_ctw_ancient_middens_8}} pots, {{p3_ctw_ancient_middens_9}} ashes {{p3_ctw_ancient_middens_10}} their fires. Because new layers were added on top of older ones, a midden works like a calendar of daily life. By examining each layer in turn, researchers can tell which foods people ate and how their diet changed over time. In this way, objects that once seemed worthless now help explain how whole communities lived."
+     ],
+     "items": [
+      {
+       "id": "p3_ctw_ancient_middens_1",
+       "stub": "pi",
+       "answer": "les"
+      },
+      {
+       "id": "p3_ctw_ancient_middens_2",
+       "stub": "a",
+       "answer": "s"
+      },
+      {
+       "id": "p3_ctw_ancient_middens_3",
+       "stub": "gr",
+       "answer": "ew"
+      },
+      {
+       "id": "p3_ctw_ancient_middens_4",
+       "stub": "ma",
+       "answer": "ny"
+      },
+      {
+       "id": "p3_ctw_ancient_middens_5",
+       "stub": "a",
+       "answer": "s"
+      },
+      {
+       "id": "p3_ctw_ancient_middens_6",
+       "stub": "th",
+       "answer": "rew"
+      },
+      {
+       "id": "p3_ctw_ancient_middens_7",
+       "stub": "she",
+       "answer": "lls"
+      },
+      {
+       "id": "p3_ctw_ancient_middens_8",
+       "stub": "bro",
+       "answer": "ken"
+      },
+      {
+       "id": "p3_ctw_ancient_middens_9",
+       "stub": "a",
+       "answer": "nd"
+      },
+      {
+       "id": "p3_ctw_ancient_middens_10",
+       "stub": "fr",
+       "answer": "om"
+      }
+     ]
+    },
+    {
+     "type": "passage",
+     "title": "Notice: Graduation Photo Day",
+     "directions": "Read in Daily Life (notice)",
+     "text": [
+      "<strong>Graduation Photo Day — Thursday, April 17</strong>",
+      "Graduating students can have their official portraits taken free of charge in the Student Union ballroom between 10 a.m. and 6 p.m. Gowns will be provided, but please bring your own tie or scarf if you would like to wear one. To keep waiting times short, choose a fifteen-minute time slot on the alumni website by Monday. Students who arrive without a booking will be photographed only if a slot becomes free."
+     ],
+     "questions": [
+      {
+       "id": "p3_dl_graduation_photos_q1",
+       "stem": "What is the main purpose of the notice?",
+       "options": [
+        "To announce that the graduation ceremony will be held in the ballroom",
+        "To explain how final-year students can get their official photos",
+        "To ask graduating students to return the gowns they borrowed",
+        "To advertise a photography course for students in their last year"
+       ],
+       "answer": 1,
+       "why": {
+        "en": "Main purpose (paraphrase): the notice tells graduating students how to have their portraits taken. A confuses the photo session with the ceremony; C misuses the word \"gowns\", which will be provided on the day.",
+        "tr": "Ana amaç (parafraz): duyuru, mezun olacak öğrencilere portre fotoğraflarını nasıl çektireceklerini anlatıyor. A fotoğraf çekimini mezuniyet töreniyle karıştırıyor; C \"gowns\" kelimesini yanlış kullanıyor, cübbeler o gün zaten verilecek.",
+        "es": "Propósito principal (paráfrasis): el aviso explica a quienes se gradúan cómo hacerse el retrato oficial. A confunde la sesión de fotos con la ceremonia; C usa mal la palabra \"gowns\": las togas se entregan ese mismo día."
+       }
+      },
+      {
+       "id": "p3_dl_graduation_photos_q2",
+       "stem": "What are students asked to do by Monday?",
+       "options": [
+        "Pay a small fee for their portrait at the union",
+        "Collect a gown from the Student Union ballroom",
+        "Bring a tie or scarf to the alumni office",
+        "Reserve a time on the alumni website"
+       ],
+       "answer": 3,
+       "why": {
+        "en": "Detail (paraphrase of \"choose a fifteen-minute time slot ... by Monday\"). A contradicts \"free of charge\"; B misreads the gown information, since gowns are handed out at the session itself.",
+        "tr": "Ayrıntı (\"choose a fifteen-minute time slot ... by Monday\" ifadesinin parafrazı). A \"free of charge\" bilgisiyle çelişiyor; B cübbe bilgisini yanlış okuyor, cübbeler çekimin kendisinde veriliyor.",
+        "es": "Detalle (paráfrasis de \"choose a fifteen-minute time slot ... by Monday\"). A contradice \"free of charge\"; B malinterpreta lo de las togas, que se entregan en la propia sesión."
+       }
+      }
+     ]
+    },
+    {
+     "type": "passage",
+     "title": "Lab email: booking the microscopes",
+     "directions": "Read in Daily Life (email)",
+     "text": [
+      "<strong>From:</strong> Lena Hoffmann, Biology Lab Coordinator<br><strong>To:</strong> Biology 210 students<br><strong>Subject:</strong> Booking the microscopes",
+      "Hi all, starting next week, the four digital microscopes in Room 118 must be booked through the department's online calendar instead of the paper sign-up sheet. Each booking can last up to two hours, and you may hold only one future booking at a time. If you can't use your slot, please cancel it at least a day ahead so that classmates can take it. Students who miss two bookings without cancelling will lose access for the rest of the month.",
+      "— Lena"
+     ],
+     "questions": [
+      {
+       "id": "p3_dl_microscope_booking_q1",
+       "stem": "Why did Lena write the email?",
+       "options": [
+        "To announce that the microscopes in Room 118 will be replaced",
+        "To ask students to write their names on the paper sign-up sheet",
+        "To describe a new procedure for reserving equipment",
+        "To remind students that their lab reports are due next week"
+       ],
+       "answer": 2,
+       "why": {
+        "en": "Purpose (paraphrase): the email explains the new online booking rules. B describes the old method that is being replaced; A wrongly assumes the microscopes themselves are changing.",
+        "tr": "Amaç (parafraz): e-posta yeni çevrim içi rezervasyon kurallarını açıklıyor. B kaldırılan eski yöntemi anlatıyor; A mikroskopların değiştirileceğini sanıyor.",
+        "es": "Propósito (paráfrasis): el correo explica las nuevas normas de reserva en línea. B describe el método antiguo que se elimina; A supone por error que se cambian los microscopios."
+       }
+      },
+      {
+       "id": "p3_dl_microscope_booking_q2",
+       "stem": "What should a student do if they cannot use a booked slot?",
+       "options": [
+        "Cancel it at least one day in advance",
+        "Give the slot to a classmate",
+        "Email Lena before the session begins",
+        "Book a second slot later in the week"
+       ],
+       "answer": 0,
+       "why": {
+        "en": "Detail (close to \"cancel it at least a day ahead\"). B misreads \"so that classmates can take it\": the slot is freed by cancelling, not handed over; D breaks the one-booking rule.",
+        "tr": "Ayrıntı (\"cancel it at least a day ahead\" ifadesine yakın). B \"so that classmates can take it\" kısmını yanlış okuyor: saat iptal edilerek boşaltılır, birine devredilmez; D tek rezervasyon kuralını çiğniyor.",
+        "es": "Detalle (cercano a \"cancel it at least a day ahead\"). B malinterpreta \"so that classmates can take it\": el turno se libera cancelándolo, no se cede; D incumple la regla de una sola reserva."
+       }
+      },
+      {
+       "id": "p3_dl_microscope_booking_q3",
+       "stem": "What can be inferred about the new booking rules?",
+       "options": [
+        "Bookings longer than two hours need special permission",
+        "Students who cancel twice will lose access for a month",
+        "The paper sign-up sheet can still be used in emergencies",
+        "A student cannot reserve several future sessions at once"
+       ],
+       "answer": 3,
+       "why": {
+        "en": "Inference from \"you may hold only one future booking at a time\". B changes the rule: access is lost for missing bookings without cancelling, not for cancelling; A adds a permission that is never mentioned.",
+        "tr": "\"You may hold only one future booking at a time\" ifadesinden çıkarım. B kuralı değiştiriyor: erişim, iptal etmeden gelmemek yüzünden kaybedilir, iptal etmek yüzünden değil; A hiç söz edilmeyen bir izin ekliyor.",
+        "es": "Inferencia a partir de \"you may hold only one future booking at a time\". B cambia la norma: el acceso se pierde por faltar sin cancelar, no por cancelar; A añade un permiso que nunca se menciona."
+       }
+      }
+     ]
+    },
+    {
+     "type": "passage",
+     "title": "The Three-Field System",
+     "directions": "Read an Academic Passage — module 1",
+     "text": [
+      "For many centuries, farmers across much of Europe divided their land into two large fields. Each year, one field was planted with grain, while the other was deliberately left unplanted, or fallow, so that the soil could recover its natural fertility. This method protected the soil, but it meant that half of the available land produced nothing in any given year.",
+      "Around the eighth century, many villages began organizing their land into three fields instead. One field was sown with wheat or rye in the autumn, a second was planted in spring with oats, peas, or beans, and the third was allowed to rest. The crops then rotated to a different field each year.",
+      "This change brought two significant advantages. First, two-thirds of the land was now under cultivation at any time. Second, peas and beans naturally return nitrogen to the soil, so the fields remained productive for longer. The additional oats also supported more horses, which could plow considerably faster than oxen."
+     ],
+     "questions": [
+      {
+       "id": "p3_ac_three_field_system_q1",
+       "stem": "What is the passage mainly about?",
+       "options": [
+        "Why European farmers stopped growing wheat and rye",
+        "A new way of farming that made fields more productive",
+        "How horses gradually replaced oxen on farms across Europe",
+        "Why fallow fields produced the largest harvests"
+       ],
+       "answer": 1,
+       "why": {
+        "en": "Main idea (paraphrase): the move from two fields to three and its advantages. C turns a minor detail into the main topic; A and D contradict the passage.",
+        "tr": "Ana fikir (parafraz): iki tarladan üç tarlaya geçiş ve faydaları. C küçük bir ayrıntıyı ana konu yapıyor; A ve D metinle çelişiyor.",
+        "es": "Idea principal (paráfrasis): el paso de dos campos a tres y sus ventajas. C convierte un detalle menor en el tema principal; A y D contradicen el texto."
+       }
+      },
+      {
+       "id": "p3_ac_three_field_system_q2",
+       "stem": "The word \"recover\" in the passage is closest in meaning to",
+       "options": [
+        "measure",
+        "protect",
+        "regain",
+        "remove"
+       ],
+       "answer": 2,
+       "why": {
+        "en": "Vocabulary in context: the field rested so that the soil could \"recover\" (regain) its natural fertility. B borrows \"protected\" from the next sentence.",
+        "tr": "Bağlamda kelime: tarla, toprak doğal verimliliğini \"recover\" etsin (geri kazansın) diye dinlendiriliyordu. B sonraki cümledeki \"protected\" kelimesini ödünç alıyor.",
+        "es": "Vocabulario en contexto: el campo descansaba para que la tierra pudiera \"recover\" (recuperar) su fertilidad natural. B toma prestado \"protected\" de la frase siguiente."
+       }
+      },
+      {
+       "id": "p3_ac_three_field_system_q3",
+       "stem": "Why does the author mention that \"half of the available land produced nothing in any given year\"?",
+       "options": [
+        "To show a disadvantage of the two-field method",
+        "To show that European soil was too poor for grain",
+        "To explain why villages needed more horses",
+        "To argue that resting the soil was unnecessary"
+       ],
+       "answer": 0,
+       "why": {
+        "en": "Author's purpose: the sentence shows the cost of the two-field system, which the three-field system later reduced. D goes too far, since one field still rested; C links the point to a later, unrelated detail.",
+        "tr": "Yazarın amacı: cümle, iki tarla sisteminin bedelini gösteriyor; üç tarla sistemi bu bedeli sonradan azalttı. D aşırıya kaçıyor, çünkü bir tarla yine dinlendiriliyordu; C bu noktayı sonraki ilgisiz bir ayrıntıya bağlıyor.",
+        "es": "Propósito del autor: la frase muestra el coste del sistema de dos campos, que el de tres campos redujo después. D va demasiado lejos, porque un campo seguía descansando; C relaciona la idea con un detalle posterior que no tiene que ver."
+       }
+      },
+      {
+       "id": "p3_ac_three_field_system_q4",
+       "stem": "What can be inferred about villages that adopted the three-field system?",
+       "options": [
+        "They no longer needed to leave any of their fields empty",
+        "They planted all of their crops in the spring",
+        "They gave up keeping oxen within a few years",
+        "They could grow more food on the same amount of land"
+       ],
+       "answer": 3,
+       "why": {
+        "en": "Inference: two-thirds of the land was cultivated instead of half. A contradicts \"the third was allowed to rest\"; B ignores the autumn sowing of wheat or rye.",
+        "tr": "Çıkarım: arazinin yarısı yerine üçte ikisi ekiliyordu. A \"the third was allowed to rest\" bilgisiyle çelişiyor; B buğday ya da çavdarın sonbaharda ekildiğini göz ardı ediyor.",
+        "es": "Inferencia: se cultivaban dos tercios de la tierra en lugar de la mitad. A contradice \"the third was allowed to rest\"; B ignora la siembra de trigo o centeno en otoño."
+       }
+      },
+      {
+       "id": "p3_ac_three_field_system_q5",
+       "stem": "According to the passage, why did the fields remain productive for longer?",
+       "options": [
+        "Oats were planted in autumn instead of spring",
+        "Peas and beans returned nitrogen to the soil",
+        "Horses plowed the soil more deeply than oxen",
+        "The same crop grew in each field every year"
+       ],
+       "answer": 1,
+       "why": {
+        "en": "Detail (close to the text): \"peas and beans naturally return nitrogen to the soil\". A reverses the seasons; C turns the point about plowing speed into a point about the soil.",
+        "tr": "Ayrıntı (metne yakın): \"peas and beans naturally return nitrogen to the soil\". A mevsimleri tersine çeviriyor; C sürme hızıyla ilgili bilgiyi toprakla ilgili bir bilgiye dönüştürüyor.",
+        "es": "Detalle (cercano al texto): \"peas and beans naturally return nitrogen to the soil\". A invierte las estaciones; C convierte lo dicho sobre la velocidad al arar en algo sobre la tierra."
+       }
+      }
+     ]
+    }
+   ],
+   "adaptive": {
+    "routeFrom": [
+     "p3_dl_graduation_photos_q1",
+     "p3_dl_graduation_photos_q2",
+     "p3_dl_microscope_booking_q1",
+     "p3_dl_microscope_booking_q2",
+     "p3_dl_microscope_booking_q3",
+     "p3_ac_three_field_system_q1",
+     "p3_ac_three_field_system_q2",
+     "p3_ac_three_field_system_q3",
+     "p3_ac_three_field_system_q4",
+     "p3_ac_three_field_system_q5"
+    ],
+    "threshold": 7,
+    "hard": [
+     {
+      "type": "ctw",
+      "title": "Complete the Words: Metal fatigue",
+      "text": [
+       "Engineers have long recognized that metal components can fail suddenly even when the loads applied to them remain well below the strength measured in laboratory tests. This {{p3_ctw_metal_fatigue_1}}, termed {{p3_ctw_metal_fatigue_2}}, results {{p3_ctw_metal_fatigue_3}} repeated {{p3_ctw_metal_fatigue_4}} of {{p3_ctw_metal_fatigue_5}} rather {{p3_ctw_metal_fatigue_6}} from a {{p3_ctw_metal_fatigue_7}} excessive {{p3_ctw_metal_fatigue_8}}. Each {{p3_ctw_metal_fatigue_9}} may {{p3_ctw_metal_fatigue_10}} enlarge microscopic cracks that originate at scratches, sharp corners, or internal defects. Because the damage accumulates invisibly, a component can appear perfectly sound until the remaining material becomes too small to support the load. Consequently, designers specify regular inspections and smooth, rounded transitions that reduce local concentrations of stress."
+      ],
+      "items": [
+       {
+        "id": "p3_ctw_metal_fatigue_1",
+        "stub": "pheno",
+        "answer": "menon"
+       },
+       {
+        "id": "p3_ctw_metal_fatigue_2",
+        "stub": "fat",
+        "answer": "igue"
+       },
+       {
+        "id": "p3_ctw_metal_fatigue_3",
+        "stub": "fr",
+        "answer": "om"
+       },
+       {
+        "id": "p3_ctw_metal_fatigue_4",
+        "stub": "cyc",
+        "answer": "les"
+       },
+       {
+        "id": "p3_ctw_metal_fatigue_5",
+        "stub": "str",
+        "answer": "ess"
+       },
+       {
+        "id": "p3_ctw_metal_fatigue_6",
+        "stub": "th",
+        "answer": "an"
+       },
+       {
+        "id": "p3_ctw_metal_fatigue_7",
+        "stub": "sin",
+        "answer": "gle"
+       },
+       {
+        "id": "p3_ctw_metal_fatigue_8",
+        "stub": "fo",
+        "answer": "rce"
+       },
+       {
+        "id": "p3_ctw_metal_fatigue_9",
+        "stub": "cy",
+        "answer": "cle"
+       },
+       {
+        "id": "p3_ctw_metal_fatigue_10",
+        "stub": "slig",
+        "answer": "htly"
+       }
+      ]
+     },
+     {
+      "type": "passage",
+      "title": "Updated Course Withdrawal Policy",
+      "directions": "Read in Daily Life (policy notice)",
+      "text": [
+       "<strong>Updated Course Withdrawal Policy</strong>",
+       "Beginning this fall, students may withdraw from a course through the student portal until the end of the tenth week of the semester; previously, the limit was the eighth week. Withdrawals made after the second week will appear on the transcript as a \"W,\" which does not affect the grade point average. Tuition is refunded in full only for withdrawals completed during the first two weeks. Students holding scholarships that require full-time enrollment should consult the Financial Aid Office before withdrawing, since dropping below twelve credits may reduce their award. After the tenth week, withdrawals are approved only in documented exceptional circumstances."
+      ],
+      "questions": [
+       {
+        "id": "p3_dl_course_withdrawal_q1",
+        "stem": "What is the main change described in the notice?",
+        "options": [
+         "Students can no longer withdraw through the online portal",
+         "Tuition refunds will now cover the first ten weeks of a term",
+         "A \"W\" on the transcript will now lower the grade point average",
+         "The period for leaving a class has been extended"
+        ],
+        "answer": 3,
+        "why": {
+         "en": "Main change (paraphrase): the deadline moves from the eighth to the tenth week. B mixes up the refund period with the withdrawal deadline; C contradicts \"does not affect the grade point average\".",
+         "tr": "Ana değişiklik (parafraz): son tarih sekizinci haftadan onuncu haftaya kayıyor. B ücret iadesi süresini çekilme son tarihiyle karıştırıyor; C \"does not affect the grade point average\" bilgisiyle çelişiyor.",
+         "es": "Cambio principal (paráfrasis): el plazo pasa de la octava a la décima semana. B confunde el periodo de reembolso con el plazo para retirarse; C contradice \"does not affect the grade point average\"."
+        }
+       },
+       {
+        "id": "p3_dl_course_withdrawal_q2",
+        "stem": "What can be inferred about a student who withdraws from a course in the fourth week?",
+        "options": [
+         "The course will not appear on the student's transcript",
+         "Not all of the money they paid will be returned",
+         "The student's grade point average will be lowered",
+         "The student must provide documents explaining the decision"
+        ],
+        "answer": 1,
+        "why": {
+         "en": "Inference: full refunds are given only in the first two weeks, so a fourth-week withdrawal does not qualify. A applies only to very early withdrawals (a \"W\" appears after week two); D describes withdrawals after the tenth week.",
+         "tr": "Çıkarım: tam iade yalnızca ilk iki haftada yapılıyor, dördüncü haftadaki çekilme bu kapsama girmiyor. A yalnızca çok erken çekilmeler için geçerli (ikinci haftadan sonra transkriptte \"W\" görünür); D onuncu haftadan sonraki çekilmeleri anlatıyor.",
+         "es": "Inferencia: el reembolso completo solo se da en las dos primeras semanas, así que retirarse en la cuarta no da derecho a él. A solo vale para retiradas muy tempranas (tras la segunda semana aparece una \"W\"); D describe las retiradas después de la décima semana."
+        }
+       },
+       {
+        "id": "p3_dl_course_withdrawal_q3",
+        "stem": "Why should some scholarship holders contact the Financial Aid Office?",
+        "options": [
+         "Their scholarships pay tuition only for the first two weeks",
+         "They are not allowed to use the student portal to withdraw",
+         "Taking fewer credits could reduce the money they receive",
+         "They need special approval to take more than twelve credits"
+        ],
+        "answer": 2,
+        "why": {
+         "en": "Detail (paraphrase of \"dropping below twelve credits may reduce their award\"). D reverses the direction (more instead of fewer credits); A borrows the two-week refund rule.",
+         "tr": "Ayrıntı (\"dropping below twelve credits may reduce their award\" ifadesinin parafrazı). D yönü tersine çeviriyor (daha az yerine daha fazla kredi); A iki haftalık iade kuralını ödünç alıyor.",
+         "es": "Detalle (paráfrasis de \"dropping below twelve credits may reduce their award\"). D invierte la dirección (más créditos en vez de menos); A toma prestada la regla del reembolso de dos semanas."
+        }
+       }
+      ]
+     },
+     {
+      "type": "passage",
+      "title": "The Strength of Weak Ties",
+      "directions": "Read an Academic Passage — upper module",
+      "text": [
+       "Sociologists distinguish between strong ties, such as those connecting close friends and relatives, and weak ties, which link acquaintances who interact only occasionally. Intuitively, one might assume that strong ties constitute the more valuable resource, since close contacts are typically more willing to offer assistance.",
+       "A frequently cited study of professional workers, however, found that people who had obtained jobs through personal contacts more often heard about the position from acquaintances than from close friends. The explanation proposed was structural: members of a tightly knit circle tend to know the same people and encounter the same information, whereas acquaintances move in different social circles and can therefore transmit news that would otherwise remain inaccessible.",
+       "Subsequent research has qualified this conclusion. Strong ties appear more influential when information is scarce or when a recommendation requires considerable trust, and the advantage of weak ties seems to depend on the type of labor market. Nevertheless, the central insight, that the value of a connection lies partly in the novelty of what it can provide, has proved remarkably durable."
+      ],
+      "questions": [
+       {
+        "id": "p3_ac_weak_ties_q1",
+        "stem": "What is the passage mainly about?",
+        "options": [
+         "A finding about the value of distant contacts and later limits on it",
+         "How professional workers can turn their acquaintances into close friends",
+         "Why strong ties always outperform weak ties during a job search",
+         "The research methods that sociologists use to measure friendship"
+        ],
+        "answer": 0,
+        "why": {
+         "en": "Main idea (paraphrase): the weak-ties finding, its explanation and the later qualifications. C contradicts the study; B invents a topic the passage never discusses.",
+         "tr": "Ana fikir (parafraz): zayıf bağlar bulgusu, açıklaması ve sonradan getirilen sınırlamalar. C çalışmayla çelişiyor; B metinde hiç ele alınmayan bir konu uyduruyor.",
+         "es": "Idea principal (paráfrasis): el hallazgo sobre los lazos débiles, su explicación y los matices posteriores. C contradice el estudio; B se inventa un tema que el texto nunca trata."
+        }
+       },
+       {
+        "id": "p3_ac_weak_ties_q2",
+        "stem": "The word \"qualified\" in the passage is closest in meaning to",
+        "options": [
+         "certified",
+         "confirmed",
+         "rejected",
+         "limited"
+        ],
+        "answer": 3,
+        "why": {
+         "en": "Vocabulary in context: later research \"qualified\" the conclusion, i.e. limited it by adding conditions. A is another meaning of \"qualified\" that does not fit here; C is too strong, because the central insight survived.",
+         "tr": "Bağlamda kelime: sonraki araştırmalar sonucu \"qualified\" etti, yani koşullar ekleyerek sınırladı. A \"qualified\" kelimesinin buraya uymayan başka bir anlamı; C fazla güçlü, çünkü temel fikir geçerliliğini korudu.",
+         "es": "Vocabulario en contexto: la investigación posterior \"qualified\" la conclusión, es decir, la limitó añadiendo condiciones. A es otro significado de \"qualified\" que aquí no encaja; C es demasiado fuerte, porque la idea central se mantuvo."
+        }
+       },
+       {
+        "id": "p3_ac_weak_ties_q3",
+        "stem": "Why does the author mention that members of a tightly knit circle \"tend to know the same people\"?",
+        "options": [
+         "To argue that close friends are usually unwilling to help",
+         "To explain why close contacts often provide little new information",
+         "To show that the study included too few professional workers",
+         "To describe how acquaintances eventually become close friends"
+        ],
+        "answer": 1,
+        "why": {
+         "en": "Author's purpose: it is part of the structural explanation, in which close friends share the same information while acquaintances bring news from other circles. A contradicts \"more willing to offer assistance\".",
+         "tr": "Yazarın amacı: bu, yapısal açıklamanın parçası; yakın arkadaşlar aynı bilgiyi paylaşırken tanıdıklar başka çevrelerden haber getirir. A \"more willing to offer assistance\" bilgisiyle çelişiyor.",
+         "es": "Propósito del autor: forma parte de la explicación estructural: los amigos íntimos comparten la misma información, mientras que los conocidos traen noticias de otros círculos. A contradice \"more willing to offer assistance\"."
+        }
+       },
+       {
+        "id": "p3_ac_weak_ties_q4",
+        "stem": "Based on the passage, in which situation would a strong tie most likely be more useful than a weak one?",
+        "options": [
+         "When news about job openings is easy to find",
+         "When a person wants news from unfamiliar social circles",
+         "When an employer wants a reliable personal reference",
+         "When acquaintances belong to many different groups"
+        ],
+        "answer": 2,
+        "why": {
+         "en": "Inference: strong ties matter more \"when a recommendation requires considerable trust\". A is the opposite of \"information is scarce\"; B and D describe situations in which weak ties are the useful ones.",
+         "tr": "Çıkarım: güçlü bağlar \"when a recommendation requires considerable trust\" durumunda daha etkili. A \"information is scarce\" ifadesinin tersi; B ve D zayıf bağların işe yaradığı durumları anlatıyor.",
+         "es": "Inferencia: los lazos fuertes pesan más \"when a recommendation requires considerable trust\". A es lo contrario de \"information is scarce\"; B y D describen situaciones en las que son útiles los lazos débiles."
+        }
+       },
+       {
+        "id": "p3_ac_weak_ties_q5",
+        "stem": "According to the passage, what did the study of professional workers find?",
+        "options": [
+         "Job news came more often from acquaintances than from friends",
+         "Close friends were the most common source of job leads",
+         "Most workers found their jobs without help from any personal contacts",
+         "Acquaintances gave less reliable information than friends"
+        ],
+        "answer": 0,
+        "why": {
+         "en": "Detail (paraphrase): people more often heard about the position \"from acquaintances than from close friends\". B reverses the finding; C contradicts \"obtained jobs through personal contacts\".",
+         "tr": "Ayrıntı (parafraz): insanlar iş ilanını daha çok \"from acquaintances than from close friends\" duymuştu. B bulguyu tersine çeviriyor; C \"obtained jobs through personal contacts\" bilgisiyle çelişiyor.",
+         "es": "Detalle (paráfrasis): la gente se enteraba del puesto más a menudo \"from acquaintances than from close friends\". B invierte el hallazgo; C contradice \"obtained jobs through personal contacts\"."
+        }
+       }
+      ]
+     }
+    ],
+    "easy": [
+     {
+      "type": "ctw",
+      "title": "Complete the Words: Salmon going home",
+      "text": [
+       "Many salmon begin their lives in small rivers that are far away from the sea. When {{p3_ctw_salmon_homing_1}} young {{p3_ctw_salmon_homing_2}} are {{p3_ctw_salmon_homing_3}} enough, {{p3_ctw_salmon_homing_4}} swim {{p3_ctw_salmon_homing_5}} the {{p3_ctw_salmon_homing_6}} to {{p3_ctw_salmon_homing_7}} ocean. {{p3_ctw_salmon_homing_8}} stay {{p3_ctw_salmon_homing_9}} for a {{p3_ctw_salmon_homing_10}} years, eating a lot and growing fast. Then they do something amazing: they swim all the way back to the same river where they were born. Scientists think that the fish use the smell of the water to find their way home."
+      ],
+      "items": [
+       {
+        "id": "p3_ctw_salmon_homing_1",
+        "stub": "t",
+        "answer": "he"
+       },
+       {
+        "id": "p3_ctw_salmon_homing_2",
+        "stub": "fi",
+        "answer": "sh"
+       },
+       {
+        "id": "p3_ctw_salmon_homing_3",
+        "stub": "b",
+        "answer": "ig"
+       },
+       {
+        "id": "p3_ctw_salmon_homing_4",
+        "stub": "th",
+        "answer": "ey"
+       },
+       {
+        "id": "p3_ctw_salmon_homing_5",
+        "stub": "do",
+        "answer": "wn"
+       },
+       {
+        "id": "p3_ctw_salmon_homing_6",
+        "stub": "ri",
+        "answer": "ver"
+       },
+       {
+        "id": "p3_ctw_salmon_homing_7",
+        "stub": "t",
+        "answer": "he"
+       },
+       {
+        "id": "p3_ctw_salmon_homing_8",
+        "stub": "Th",
+        "answer": "ey"
+       },
+       {
+        "id": "p3_ctw_salmon_homing_9",
+        "stub": "th",
+        "answer": "ere"
+       },
+       {
+        "id": "p3_ctw_salmon_homing_10",
+        "stub": "f",
+        "answer": "ew"
+       }
+      ]
+     },
+     {
+      "type": "passage",
+      "title": "Fitness Class Sign-Up",
+      "directions": "Read in Daily Life (sign)",
+      "text": [
+       "<strong>Fitness Class Sign-Up</strong>",
+       "Spring yoga and dance classes are free for students. Sign up at the front desk with your student ID. Each class has 20 places. If a class is full, add your name to the waiting list."
+      ],
+      "questions": [
+       {
+        "id": "p3_dl_fitness_signup_q1",
+        "stem": "How can students join a class?",
+        "options": [
+         "By paying for it at the desk",
+         "By calling the yoga teacher",
+         "By signing up at the front desk",
+         "By sending an email to the sports center"
+        ],
+        "answer": 2,
+        "why": {
+         "en": "Detail: \"Sign up at the front desk with your student ID\". A contradicts \"free for students\".",
+         "tr": "Ayrıntı: \"Sign up at the front desk with your student ID\". A \"free for students\" bilgisiyle çelişiyor.",
+         "es": "Detalle: \"Sign up at the front desk with your student ID\". A contradice \"free for students\"."
+        }
+       },
+       {
+        "id": "p3_dl_fitness_signup_q2",
+        "stem": "What should a student do if a class is full?",
+        "options": [
+         "Put their name on the waiting list",
+         "Come back when the next term starts",
+         "Join a dance class at the same time",
+         "Ask the desk staff for a bigger room"
+        ],
+        "answer": 0,
+        "why": {
+         "en": "Detail: \"add your name to the waiting list\". C is not suggested anywhere on the sign.",
+         "tr": "Ayrıntı: \"add your name to the waiting list\". C tabelada hiçbir yerde önerilmiyor.",
+         "es": "Detalle: \"add your name to the waiting list\". C no se sugiere en ningún lugar del cartel."
+        }
+       }
+      ]
+     },
+     {
+      "type": "passage",
+      "title": "Light in the Ocean",
+      "directions": "Read an Academic Passage — lower module",
+      "text": [
+       "Sunlight does not go very deep into the ocean. Scientists divide the ocean into zones based on how much light reaches them. The top zone, down to about 200 meters, gets plenty of sunlight. Most sea plants and many fish live there.",
+       "Below that is the twilight zone. Only a little blue light reaches it, and plants cannot grow there. Deeper still, below 1,000 meters, the water is completely dark. Many animals in this deep zone make their own light. They use it to find food, to attract partners, or to confuse enemies."
+      ],
+      "questions": [
+       {
+        "id": "p3_ac_ocean_light_q1",
+        "stem": "What is the passage mainly about?",
+        "options": [
+         "Why fish need blue light in order to grow",
+         "How scientists measure how deep the sea is",
+         "Why most sea plants live in shallow water close to the shore",
+         "How the amount of light changes with depth in the ocean"
+        ],
+        "answer": 3,
+        "why": {
+         "en": "Main idea: the passage describes the ocean's zones by the light that reaches them. A and C are never discussed; B misreads \"Scientists divide the ocean into zones\".",
+         "tr": "Ana fikir: metin okyanus katmanlarını aldıkları ışığa göre anlatıyor. A ve C metinde hiç geçmiyor; B \"Scientists divide the ocean into zones\" cümlesini yanlış okuyor.",
+         "es": "Idea principal: el texto describe las zonas del océano según la luz que les llega. A y C no se tratan; B malinterpreta \"Scientists divide the ocean into zones\"."
+        }
+       },
+       {
+        "id": "p3_ac_ocean_light_q2",
+        "stem": "According to the passage, where do most sea plants live?",
+        "options": [
+         "In the twilight zone of the ocean",
+         "In the water below 1,000 meters",
+         "In the top zone of the ocean",
+         "Next to deep-sea animals"
+        ],
+        "answer": 2,
+        "why": {
+         "en": "Detail: \"Most sea plants and many fish live there\", in the top zone. A is the zone where \"plants cannot grow\".",
+         "tr": "Ayrıntı: \"Most sea plants and many fish live there\", yani en üst katmanda. A \"plants cannot grow\" denen katman.",
+         "es": "Detalle: \"Most sea plants and many fish live there\", es decir, en la zona superior. A es la zona donde \"plants cannot grow\"."
+        }
+       },
+       {
+        "id": "p3_ac_ocean_light_q3",
+        "stem": "The word \"plenty\" in the passage is closest in meaning to",
+        "options": [
+         "a small amount",
+         "a large amount",
+         "a certain color",
+         "a short time"
+        ],
+        "answer": 1,
+        "why": {
+         "en": "Vocabulary in context: the top zone \"gets plenty of sunlight\" = a large amount. A is the opposite meaning.",
+         "tr": "Bağlamda kelime: en üst katman \"gets plenty of sunlight\" = bol miktarda alıyor. A tam tersi anlam.",
+         "es": "Vocabulario en contexto: la zona superior \"gets plenty of sunlight\" = recibe mucha luz. A significa lo contrario."
+        }
+       },
+       {
+        "id": "p3_ac_ocean_light_q4",
+        "stem": "Why can't plants grow in the twilight zone?",
+        "options": [
+         "There is not enough light for them",
+         "The water there is completely dark",
+         "The animals there eat all of them",
+         "The water there is far too salty"
+        ],
+        "answer": 0,
+        "why": {
+         "en": "Inference: only \"a little blue light\" reaches this zone, so plants lack the light they need. B describes the zone below 1,000 meters, not the twilight zone.",
+         "tr": "Çıkarım: bu katmana yalnızca \"a little blue light\" ulaşıyor, bitkilere yetecek ışık yok. B alacakaranlık katmanını değil, 1.000 metrenin altındaki katmanı anlatıyor.",
+         "es": "Inferencia: a esta zona solo llega \"a little blue light\", así que a las plantas les falta luz. B describe la zona por debajo de los 1.000 metros, no la zona de penumbra."
+        }
+       },
+       {
+        "id": "p3_ac_ocean_light_q5",
+        "stem": "What is one way deep-sea animals use their own light?",
+        "options": [
+         "To help plants grow in the dark",
+         "To warm the cold water around them",
+         "To help them catch food",
+         "To show scientists where they live"
+        ],
+        "answer": 2,
+        "why": {
+         "en": "Detail (paraphrase of \"to find food\"). A contradicts the passage: no plants grow in the deep zone.",
+         "tr": "Ayrıntı (\"to find food\" ifadesinin parafrazı). A metinle çelişiyor: derin katmanda bitki yetişmiyor.",
+         "es": "Detalle (paráfrasis de \"to find food\"). A contradice el texto: en la zona profunda no crecen plantas."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "listening",
+   "name": "Listening",
+   "minutes": 29,
+   "oneWay": true,
+   "intro": {
+    "en": "Listening: Listen and Choose a Response, conversations, announcements and academic talks. Each recording plays once; you may take notes. Speakers use US, British and Australian accents. After the first module the section adapts to you and gets harder or easier.",
+    "tr": "Listening: Listen and Choose a Response, konuşmalar, duyurular ve akademik konuşmalar. Her ses bir kez çalınır; not alabilirsiniz. Konuşmacılar ABD, İngiliz ve Avustralya aksanlarıyla konuşur. İlk modülden sonra bölüm sana göre zorlaşır ya da kolaylaşır.",
+    "es": "Listening: Listen and Choose a Response, conversaciones, avisos y clases académicas. Cada grabación se reproduce una vez; puedes tomar notas. Se oyen acentos de EE. UU., Reino Unido y Australia. Después del primer módulo, la sección se adapta a ti y se vuelve más difícil o más fácil."
+   },
+   "screens": [
+    {
+     "type": "choose_response",
+     "id": "p3_cr2",
+     "audio": [
+      {
+       "text": "Could you help me move these boxes to the storage room?",
+       "voice": "male:gb"
+      }
+     ],
+     "options": [
+      "Sure, just let me finish this email first.",
+      "The storage room is down in the basement.",
+      "I'm moving to a new apartment next month.",
+      "They're the boxes from last week's book fair."
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Request → agreement with a short delay. B answers \"where\" and repeats \"storage room\"; C repeats \"move\" with a different meaning.",
+      "tr": "Rica → kısa bir gecikmeyle kabul. B \"nerede\" sorusuna cevap veriyor ve \"storage room\" ifadesini tekrar ediyor; C \"move\" kelimesini başka anlamda kullanıyor.",
+      "es": "Petición → aceptación con un pequeño retraso. B responde a \"where\" y repite \"storage room\"; C repite \"move\" con otro significado."
+     }
+    },
+    {
+     "type": "choose_response",
+     "id": "p3_cr1",
+     "audio": [
+      {
+       "text": "When is the deadline for the physics lab report?",
+       "voice": "female:us"
+      }
+     ],
+     "options": [
+      "In the lab on the third floor.",
+      "I already reported it to the instructor.",
+      "It's due next Thursday by noon.",
+      "Yes, the physics lab is really hard."
+     ],
+     "answer": 2,
+     "why": {
+      "en": "\"When\" → a time. A answers \"where\"; B repeats \"report\" with a different meaning; D answers a yes/no question nobody asked.",
+      "tr": "\"When\" → zaman. A \"nerede\" sorusunu cevaplıyor; B \"report\" kelimesini başka anlamda tekrar ediyor; D sorulmamış bir evet/hayır sorusuna cevap veriyor.",
+      "es": "\"When\" → un momento. A responde a \"where\"; B repite \"report\" con otro significado; D responde a una pregunta de sí/no que nadie hizo."
+     }
+    },
+    {
+     "type": "choose_response",
+     "id": "p3_cr4",
+     "audio": [
+      {
+       "text": "How many people signed up for the museum trip?",
+       "voice": "male:us"
+      }
+     ],
+     "options": [
+      "I signed the form this morning.",
+      "Almost thirty, so we'll need a bigger bus.",
+      "It opens at ten o'clock on weekends.",
+      "Yes, I've been to that museum twice with my class."
+     ],
+     "answer": 1,
+     "why": {
+      "en": "\"How many\" → a number. A repeats \"signed\" in another sense; C gives a time; D answers with \"Yes\".",
+      "tr": "\"How many\" → sayı. A \"signed\" kelimesini başka anlamda tekrar ediyor; C saat veriyor; D \"Yes\" ile cevap veriyor.",
+      "es": "\"How many\" → una cantidad. A repite \"signed\" con otro sentido; C da una hora; D responde \"Yes\"."
+     }
+    },
+    {
+     "type": "choose_response",
+     "id": "p3_cr3",
+     "audio": [
+      {
+       "text": "Why is the science building locked this afternoon?",
+       "voice": "female:au"
+      }
+     ],
+     "options": [
+      "Yes, I locked my bike to the railing right outside it.",
+      "Until about five o'clock today.",
+      "It's the tall one next to the library.",
+      "They're replacing some of the windows, I heard."
+     ],
+     "answer": 3,
+     "why": {
+      "en": "\"Why\" → a reason. A answers with \"Yes\" and repeats \"locked\"; B gives a time; C says where the building is.",
+      "tr": "\"Why\" → sebep. A \"Yes\" diyor ve \"locked\" kelimesini tekrar ediyor; B zaman veriyor; C binanın nerede olduğunu söylüyor.",
+      "es": "\"Why\" → un motivo. A responde \"Yes\" y repite \"locked\"; B da una hora; C dice dónde está el edificio."
+     }
+    },
+    {
+     "type": "choose_response",
+     "id": "p3_cr6",
+     "audio": [
+      {
+       "text": "Which of these two laptops would you recommend for writing papers?",
+       "voice": "male:au"
+      }
+     ],
+     "options": [
+      "I wrote my last paper on a completely different topic.",
+      "Yes, I'd happily recommend it to anyone.",
+      "The lighter one, since you'll carry it to class.",
+      "The store closes at nine o'clock tonight."
+     ],
+     "answer": 2,
+     "why": {
+      "en": "\"Which\" → a choice. A repeats \"writing\" and \"papers\" in another sense; B answers a which-question with \"Yes\".",
+      "tr": "\"Which\" → seçim. A \"writing\" ve \"papers\" kelimelerini başka anlamda tekrar ediyor; B \"hangisi\" sorusuna \"Yes\" ile cevap veriyor.",
+      "es": "\"Which\" → una elección. A repite \"writing\" y \"papers\" con otro sentido; B responde \"Yes\" a una pregunta de \"cuál\"."
+     }
+    },
+    {
+     "type": "choose_response",
+     "id": "p3_cr5",
+     "audio": [
+      {
+       "text": "Do you want to grab lunch after the seminar?",
+       "voice": "female:gb"
+      }
+     ],
+     "options": [
+      "I'd love to, but I have a meeting at one.",
+      "The seminar room is on the second floor.",
+      "I grabbed a few notes from the board.",
+      "Yes, the seminar starts at eleven."
+     ],
+     "answer": 0,
+     "why": {
+      "en": "Invitation → a polite refusal with a reason. C repeats \"grab\" with another meaning; D says \"Yes\" but talks about the seminar, not lunch.",
+      "tr": "Davet → gerekçeli, kibar bir ret. C \"grab\" kelimesini başka anlamda tekrar ediyor; D \"Yes\" diyor ama öğle yemeğinden değil seminerden söz ediyor.",
+      "es": "Invitación → un rechazo amable con un motivo. C repite \"grab\" con otro significado; D dice \"Yes\", pero habla del seminario, no de la comida."
+     }
+    },
+    {
+     "type": "choose_response",
+     "id": "p3_cr8",
+     "audio": [
+      {
+       "text": "Who should I talk to about changing my exam date?",
+       "voice": "male:gb"
+      }
+     ],
+     "options": [
+      "The exam is on the fourteenth.",
+      "The department secretary handles that.",
+      "I changed my mind about the course.",
+      "Yes, you should ask quite soon."
+     ],
+     "answer": 1,
+     "why": {
+      "en": "\"Who\" → a person. A gives a date; C repeats \"change\" with another meaning; D answers with \"Yes\".",
+      "tr": "\"Who\" → kişi. A tarih veriyor; C \"change\" kelimesini başka anlamda tekrar ediyor; D \"Yes\" ile cevap veriyor.",
+      "es": "\"Who\" → una persona. A da una fecha; C repite \"change\" con otro significado; D responde \"Yes\"."
+     }
+    },
+    {
+     "type": "choose_response",
+     "id": "p3_cr7",
+     "audio": [
+      {
+       "text": "I can't find my student ID card anywhere.",
+       "voice": "female:us"
+      }
+     ],
+     "options": [
+      "My student number starts with a four.",
+      "Anywhere is fine with me, really.",
+      "I found the library much quieter than usual today.",
+      "Have you checked the pockets of your jacket?"
+     ],
+     "answer": 3,
+     "why": {
+      "en": "Problem → a helpful suggestion. B repeats \"anywhere\" as if a choice had been offered; C uses \"found\" in a different sense; A only repeats \"student\".",
+      "tr": "Sorun → yardımcı bir öneri. B \"anywhere\" kelimesini sanki bir seçenek sunulmuş gibi tekrar ediyor; C \"found\" kelimesini başka anlamda kullanıyor; A yalnızca \"student\" kelimesini tekrar ediyor.",
+      "es": "Problema → una sugerencia útil. B repite \"anywhere\" como si le hubieran ofrecido elegir; C usa \"found\" con otro sentido; A solo repite \"student\"."
+     }
+    },
+    {
+     "type": "choose_response",
+     "id": "p3_cr9",
+     "audio": [
+      {
+       "text": "Would you rather present first or last on Friday?",
+       "voice": "female:au"
+      }
+     ],
+     "options": [
+      "Yes, I'd rather present on Friday.",
+      "I gave her a present for her birthday last week.",
+      "Last, if that gives me more time to practice.",
+      "Friday's session is in Room 5."
+     ],
+     "answer": 2,
+     "why": {
+      "en": "Either/or question → a choice with a reason. A answers \"Yes\" to a choice; B uses \"present\" as a noun (a gift).",
+      "tr": "\"Ya o ya bu\" sorusu → gerekçeli seçim. A seçim sorusuna \"Yes\" diyor; B \"present\" kelimesini isim (hediye) anlamında kullanıyor.",
+      "es": "Pregunta de \"esto o aquello\" → una elección con un motivo. A responde \"Yes\" a una elección; B usa \"present\" como sustantivo (regalo)."
+     }
+    },
+    {
+     "type": "listening",
+     "title": "Conversation: Swapping dorm rooms",
+     "prompt": "Listen to a conversation between a student and an employee at the housing office.",
+     "audio": [
+      {
+       "text": "Hi, my friend and I want to switch dorm rooms. She lives in Baker Hall, and I'm in Lin Hall. Is that allowed?",
+       "voice": "female:au"
+      },
+      {
+       "text": "It is, as long as you both agree. Each of you fills out a swap request, and both forms have to reach us in the same week.",
+       "voice": "male:us"
+      },
+      {
+       "text": "Great. Could we move this weekend, then?",
+       "voice": "female:au"
+      },
+      {
+       "text": "Not that fast, I'm afraid. We inspect both rooms first, which usually takes about ten days. Then you'll get an email with a moving date.",
+       "voice": "male:us"
+      },
+      {
+       "text": "Okay. I'll ask her to stop by tomorrow, then.",
+       "voice": "female:au"
+      }
+     ],
+     "questions": [
+      {
+       "id": "p3_conv_room_swap_q1",
+       "stem": "What does the woman want to do?",
+       "options": [
+        "Move out of student housing completely",
+        "Find a room in a quieter residence hall",
+        "Report a problem in her friend's room",
+        "Exchange rooms with a student in another hall"
+       ],
+       "answer": 3,
+       "why": {
+        "en": "Main topic (paraphrase of \"switch dorm rooms\"). B adds a reason that is never mentioned; A goes much further than a swap between two students.",
+        "tr": "Ana konu (\"switch dorm rooms\" ifadesinin parafrazı). B hiç söylenmeyen bir gerekçe ekliyor; A iki öğrenci arasındaki oda değişiminin çok ötesine geçiyor.",
+        "es": "Tema principal (paráfrasis de \"switch dorm rooms\"). B añade un motivo que nunca se menciona; A va mucho más allá de un intercambio entre dos estudiantes."
+       }
+      },
+      {
+       "id": "p3_conv_room_swap_q2",
+       "stem": "What will the woman's friend most likely do next?",
+       "options": [
+        "Submit her own swap request",
+        "Inspect the two rooms with the staff",
+        "Move into Lin Hall this weekend",
+        "Email the office to ask for a date"
+       ],
+       "answer": 0,
+       "why": {
+        "en": "Inference: both students must send a swap request, so the friend will come in to fill out hers. C contradicts \"Not that fast\"; B is the office's job, not the friend's.",
+        "tr": "Çıkarım: iki öğrencinin de değişim talebi göndermesi gerekiyor, bu yüzden arkadaşı kendi formunu doldurmaya gelecek. C \"Not that fast\" ile çelişiyor; B arkadaşın değil ofisin işi.",
+        "es": "Inferencia: los dos estudiantes deben enviar una solicitud, así que la amiga irá a rellenar la suya. C contradice \"Not that fast\"; B es tarea de la oficina, no de la amiga."
+       }
+      }
+     ]
+    },
+    {
+     "type": "listening",
+     "title": "Conversation: Booking a tutor",
+     "prompt": "Listen to a conversation between a student and a receptionist at the peer tutoring center.",
+     "audio": [
+      {
+       "text": "Hi, I'd like to see a tutor for my economics course. Is anyone free this afternoon?",
+       "voice": "male:au"
+      },
+      {
+       "text": "Let me check. Our economics tutors are fully booked today, but there's an opening tomorrow at eleven.",
+       "voice": "female:gb"
+      },
+      {
+       "text": "I've got a lab then. Is there anything later in the day?",
+       "voice": "male:au"
+      },
+      {
+       "text": "Not tomorrow, no. But we also run a drop-in group session on Thursday evenings. You don't need an appointment, just bring your questions.",
+       "voice": "female:gb"
+      },
+      {
+       "text": "That might actually suit me better. Most of my questions are about the chapter everyone's stuck on.",
+       "voice": "male:au"
+      }
+     ],
+     "questions": [
+      {
+       "id": "p3_conv_tutoring_center_q1",
+       "stem": "Why can't the student meet a tutor tomorrow at eleven?",
+       "options": [
+        "The tutor will be leading a group",
+        "He has another class at that time",
+        "The center is closed in the morning",
+        "No economics tutors work that day"
+       ],
+       "answer": 1,
+       "why": {
+        "en": "Detail (paraphrase of \"I've got a lab then\"). C and D contradict the eleven o'clock opening; A confuses the tutor with the Thursday group session.",
+        "tr": "Ayrıntı (\"I've got a lab then\" ifadesinin parafrazı). C ve D saat on birdeki boş randevuyla çelişiyor; A tutor'ı perşembe akşamki grup oturumuyla karıştırıyor.",
+        "es": "Detalle (paráfrasis de \"I've got a lab then\"). C y D contradicen el hueco de las once; A confunde al tutor con la sesión de grupo del jueves."
+       }
+      },
+      {
+       "id": "p3_conv_tutoring_center_q2",
+       "stem": "What will the student probably do?",
+       "options": [
+        "Return to the center this afternoon",
+        "Ask his lab instructor for help",
+        "Attend a group session without booking",
+        "Reserve a private tutor for next week"
+       ],
+       "answer": 2,
+       "why": {
+        "en": "Inference: he says the drop-in session \"might actually suit me better\". A is impossible because today's tutors are fully booked; B is never mentioned.",
+        "tr": "Çıkarım: randevusuz grup oturumu için \"might actually suit me better\" diyor. A imkânsız, çünkü bugünkü tutorların hepsi dolu; B hiç söz edilmiyor.",
+        "es": "Inferencia: dice que la sesión sin cita \"might actually suit me better\". A es imposible porque hoy los tutores están completos; B nunca se menciona."
+       }
+      }
+     ]
+    },
+    {
+     "type": "listening",
+     "title": "Conversation: Hosting a radio show",
+     "prompt": "Listen to a conversation between a student and the manager of the campus radio station.",
+     "audio": [
+      {
+       "text": "Hi, I'm interested in hosting a music show on the station. How do I get started?",
+       "voice": "female:us"
+      },
+      {
+       "text": "Great! New hosts first complete two training sessions on the equipment. After that, you co-host with an experienced student for a month.",
+       "voice": "male:au"
+      },
+      {
+       "text": "A whole month? I was hoping to have my own show this term.",
+       "voice": "female:us"
+      },
+      {
+       "text": "You still might. Training starts next week, so if it goes well, you'd have your own slot by November. Late-night slots are the easiest to get, though.",
+       "voice": "male:au"
+      },
+      {
+       "text": "Honestly, I don't mind staying up late. Sign me up.",
+       "voice": "female:us"
+      }
+     ],
+     "questions": [
+      {
+       "id": "p3_conv_radio_show_q1",
+       "stem": "What is the conversation mainly about?",
+       "options": [
+        "What a student must do before hosting her own show",
+        "How the station decides what music to play",
+        "Why the station needs new recording equipment",
+        "When the station's first program will air"
+       ],
+       "answer": 0,
+       "why": {
+        "en": "Main topic: the steps (training, then co-hosting) before she can have her own show. C misuses \"equipment\", which is only what the training covers.",
+        "tr": "Ana konu: kendi programını yapabilmesi için gereken adımlar (önce eğitim, sonra ortak sunuculuk). C \"equipment\" kelimesini yanlış kullanıyor; ekipman yalnızca eğitimin konusu.",
+        "es": "Tema principal: los pasos (formación y luego copresentar) antes de tener su propio programa. C usa mal \"equipment\", que solo es el contenido de la formación."
+       }
+      },
+      {
+       "id": "p3_conv_radio_show_q2",
+       "stem": "What does the woman imply when she says, \"I don't mind staying up late\"?",
+       "options": [
+        "She usually prefers to study late at night",
+        "She hopes to skip the two training sessions entirely",
+        "She plans to co-host for only one week",
+        "She will accept a time slot others may not want"
+       ],
+       "answer": 3,
+       "why": {
+        "en": "Implication: late-night slots are \"the easiest to get\", so she is willing to take a less popular time to get her own show sooner. B contradicts her agreement to sign up for the training.",
+        "tr": "İma: gece geç saatler \"the easiest to get\", yani kendi programına daha erken sahip olmak için daha az tercih edilen bir saati kabul ediyor. B eğitime kaydolmayı kabul etmesiyle çelişiyor.",
+        "es": "Implicación: las franjas de madrugada son \"the easiest to get\", así que acepta un horario menos deseado para tener antes su propio programa. B contradice que acepte apuntarse a la formación."
+       }
+      }
+     ]
+    },
+    {
+     "type": "listening",
+     "title": "Announcement: New shuttle timetable",
+     "prompt": "Listen to an announcement at a campus shuttle stop.",
+     "audio": [
+      {
+       "text": "Attention, passengers. From Monday, the campus shuttle will follow a new timetable. Buses will run every ten minutes between eight and ten a.m., when most classes begin, and every twenty minutes for the rest of the day. The last shuttle will now leave the library at eleven p.m., an hour later than before. Paper copies of the timetable are available at the information desk.",
+       "voice": "male:gb"
+      }
+     ],
+     "questions": [
+      {
+       "id": "p3_ann_shuttle_timetable_q1",
+       "stem": "Why will buses run more often in the early morning?",
+       "options": [
+        "The library opens at eight o'clock",
+        "Fewer drivers work in the afternoon",
+        "Many students are traveling to class then",
+        "The old timetable caused long delays at most stops"
+       ],
+       "answer": 2,
+       "why": {
+        "en": "Reason (paraphrase of \"when most classes begin\"). A and B are never said; D invents a problem with the old timetable.",
+        "tr": "Sebep (\"when most classes begin\" ifadesinin parafrazı). A ve B hiç söylenmiyor; D eski tarifeyle ilgili bir sorun uyduruyor.",
+        "es": "Motivo (paráfrasis de \"when most classes begin\"). A y B nunca se dicen; D se inventa un problema del horario anterior."
+       }
+      },
+      {
+       "id": "p3_ann_shuttle_timetable_q2",
+       "stem": "What is true about the last shuttle of the day?",
+       "options": [
+        "It will start from the information desk",
+        "It will leave later than it does now",
+        "It will run every twenty minutes",
+        "It will no longer stop at the library"
+       ],
+       "answer": 1,
+       "why": {
+        "en": "Detail (paraphrase of \"an hour later than before\"). A misuses \"information desk\", where the timetables are handed out; D contradicts \"leave the library\".",
+        "tr": "Ayrıntı (\"an hour later than before\" ifadesinin parafrazı). A tarifelerin dağıtıldığı \"information desk\" ifadesini yanlış kullanıyor; D \"leave the library\" bilgisiyle çelişiyor.",
+        "es": "Detalle (paráfrasis de \"an hour later than before\"). A usa mal \"information desk\", donde se reparten los horarios; D contradice \"leave the library\"."
+       }
+      }
+     ]
+    },
+    {
+     "type": "listening",
+     "title": "Announcement: Study-abroad information session",
+     "prompt": "Listen to an announcement at the end of a class.",
+     "audio": [
+      {
+       "text": "Before you go, a quick message from the International Office. If you're thinking about spending next year at one of our partner universities, there's an information session this Wednesday at four in the Lecture Theatre. Former exchange students will talk about housing, costs, and course credit. Applications open the following Monday, and places at the most popular universities usually fill within two weeks, so it's well worth coming along.",
+       "voice": "female:au"
+      }
+     ],
+     "questions": [
+      {
+       "id": "p3_ann_study_abroad_q1",
+       "stem": "What is the purpose of the announcement?",
+       "options": [
+        "To introduce a new international relations course",
+        "To invite students to learn about studying overseas",
+        "To remind students that applications are due",
+        "To report a change to Wednesday's lectures"
+       ],
+       "answer": 1,
+       "why": {
+        "en": "Purpose (paraphrase): an invitation to an information session about spending a year at a partner university. C confuses the session with a deadline (applications only open the following Monday).",
+        "tr": "Amaç (parafraz): bir yılı anlaşmalı bir üniversitede geçirmeyle ilgili bilgilendirme toplantısına davet. C toplantıyı bir son tarihle karıştırıyor (başvurular ancak sonraki pazartesi açılıyor).",
+        "es": "Propósito (paráfrasis): una invitación a una sesión informativa sobre pasar un año en una universidad asociada. C confunde la sesión con un plazo (las solicitudes no se abren hasta el lunes siguiente)."
+       }
+      },
+      {
+       "id": "p3_ann_study_abroad_q2",
+       "stem": "Why does the speaker recommend attending the session?",
+       "options": [
+        "Attendance is required in order to apply",
+        "Students will receive course credit for attending",
+        "The session will not be offered again this year",
+        "Spaces at some universities are taken quickly"
+       ],
+       "answer": 3,
+       "why": {
+        "en": "Reason (paraphrase of \"places ... usually fill within two weeks\"). B misuses \"course credit\", which is only one of the topics; A and C are never said.",
+        "tr": "Sebep (\"places ... usually fill within two weeks\" ifadesinin parafrazı). B yalnızca konulardan biri olan \"course credit\" ifadesini yanlış kullanıyor; A ve C hiç söylenmiyor.",
+        "es": "Motivo (paráfrasis de \"places ... usually fill within two weeks\"). B usa mal \"course credit\", que solo es uno de los temas; A y C nunca se dicen."
+       }
+      }
+     ]
+    },
+    {
+     "type": "listening",
+     "title": "Academic Talk: From harpsichord to piano",
+     "prompt": "Listen to part of a lecture in a music history class.",
+     "audio": [
+      {
+       "text": "Today I want to look at an instrument you all know, the piano, and why it was such an important change. Before about 1700, the main keyboard instrument in Europe was the harpsichord. When you press a key on a harpsichord, a small hook plucks the string. The problem is that the hook plucks it in the same way no matter how hard you press, so a player can't make one note louder than another.",
+       "voice": "male:au"
+      },
+      {
+       "text": "Around 1700, an instrument maker in Florence, Bartolomeo Cristofori, replaced the hook with a small hammer that strikes the string and then falls away. Press the key gently and the hammer hits softly; press it hard and the note is loud. That's where the name comes from: pianoforte means soft-loud in Italian.",
+       "voice": "male:au"
+      },
+      {
+       "text": "Interestingly, the new instrument didn't catch on right away. Early pianos were quiet and expensive, and many musicians saw no reason to give up the harpsichord. It took several decades before composers began writing music that depended on gradual changes in volume. Then, in the nineteenth century, builders added iron frames, which could hold thicker strings under much greater tension. Pianos became loud enough to fill large concert halls, and that's the instrument we recognize today.",
+       "voice": "male:au"
+      }
+     ],
+     "questions": [
+      {
+       "id": "p3_talk_pianoforte_q1",
+       "stem": "What is the lecture mainly about?",
+       "options": [
+        "The development of a keyboard that could play softly or loudly",
+        "Why many performers today still prefer the harpsichord to the piano",
+        "How concert halls in Florence were designed for music",
+        "The life and work of a famous composer of the 1700s"
+       ],
+       "answer": 0,
+       "why": {
+        "en": "Main idea: how the piano solved the harpsichord's volume problem and later grew louder. B reverses the direction of the lecture; C misuses \"Florence\", where the inventor worked.",
+        "tr": "Ana fikir: piyanonun klavsenin ses şiddeti sorununu nasıl çözdüğü ve sonra nasıl daha güçlü hâle geldiği. B dersin yönünü tersine çeviriyor; C mucidin çalıştığı yer olan \"Florence\" kelimesini yanlış kullanıyor.",
+        "es": "Idea principal: cómo el piano resolvió el problema de volumen del clavecín y después ganó potencia. B invierte el sentido de la clase; C usa mal \"Florence\", donde trabajaba el inventor."
+       }
+      },
+      {
+       "id": "p3_talk_pianoforte_q2",
+       "stem": "According to the professor, what was the main limitation of the harpsichord?",
+       "options": [
+        "Its strings often broke when the keys were pressed hard",
+        "It was much too loud for small rooms in private homes",
+        "Players could not make some notes louder than others",
+        "Its hammers fell away from the strings too quickly"
+       ],
+       "answer": 2,
+       "why": {
+        "en": "Detail: the hook plucks the string \"in the same way no matter how hard you press\". D gives the harpsichord the piano's hammers; A is never mentioned.",
+        "tr": "Ayrıntı: kanca teli \"in the same way no matter how hard you press\" çekiyor. D piyanonun çekiçlerini klavsene mal ediyor; A hiç söylenmiyor.",
+        "es": "Detalle: el gancho pulsa la cuerda \"in the same way no matter how hard you press\". D atribuye al clavecín los martillos del piano; A nunca se menciona."
+       }
+      },
+      {
+       "id": "p3_talk_pianoforte_q3",
+       "stem": "Why does the professor explain the meaning of the word \"pianoforte\"?",
+       "options": [
+        "To prove that the piano was invented by an Italian composer",
+        "To explain why early pianos were so expensive to build",
+        "To introduce a second instrument made in Florence",
+        "To show that the name describes what the instrument could do"
+       ],
+       "answer": 3,
+       "why": {
+        "en": "Purpose: \"soft-loud\" names exactly the new ability to vary the volume. A turns the instrument maker into a composer; B links the name to a different point.",
+        "tr": "Amaç: \"soft-loud\", ses şiddetini değiştirme yeteneğini tam olarak adlandırıyor. A çalgı yapımcısını besteciye dönüştürüyor; B adı başka bir noktaya bağlıyor.",
+        "es": "Propósito: \"soft-loud\" nombra justo la nueva capacidad de variar el volumen. A convierte al fabricante de instrumentos en compositor; B relaciona el nombre con otro punto."
+       }
+      },
+      {
+       "id": "p3_talk_pianoforte_q4",
+       "stem": "What does the professor imply about nineteenth-century pianos?",
+       "options": [
+        "They cost much less to build than the earliest pianos did",
+        "They could be heard clearly in big performance spaces",
+        "They went back to using hooks instead of hammers",
+        "They were played mostly in small private homes"
+       ],
+       "answer": 1,
+       "why": {
+        "en": "Inference from \"loud enough to fill large concert halls\". D contradicts that point; C reverses the history of the mechanism.",
+        "tr": "\"Loud enough to fill large concert halls\" ifadesinden çıkarım. D bununla çelişiyor; C mekanizmanın tarihini tersine çeviriyor.",
+        "es": "Inferencia a partir de \"loud enough to fill large concert halls\". D contradice esa idea; C invierte la historia del mecanismo."
+       }
+      }
+     ]
+    }
+   ],
+   "adaptive": {
+    "routeFrom": [
+     "p3_cr2",
+     "p3_cr1",
+     "p3_cr4",
+     "p3_cr3",
+     "p3_cr6",
+     "p3_cr5",
+     "p3_cr8",
+     "p3_cr7",
+     "p3_cr9",
+     "p3_conv_room_swap_q1",
+     "p3_conv_room_swap_q2",
+     "p3_conv_tutoring_center_q1",
+     "p3_conv_tutoring_center_q2",
+     "p3_conv_radio_show_q1",
+     "p3_conv_radio_show_q2",
+     "p3_ann_shuttle_timetable_q1",
+     "p3_ann_shuttle_timetable_q2",
+     "p3_ann_study_abroad_q1",
+     "p3_ann_study_abroad_q2",
+     "p3_talk_pianoforte_q1",
+     "p3_talk_pianoforte_q2",
+     "p3_talk_pianoforte_q3",
+     "p3_talk_pianoforte_q4"
+    ],
+    "threshold": 17,
+    "hard": [
+     {
+      "type": "choose_response",
+      "id": "p3_hcr2",
+      "audio": [
+       {
+        "text": "I'm thinking of dropping my evening class.",
+        "voice": "male:us"
+       }
+      ],
+      "options": [
+       "I dropped my phone on the way to class this morning.",
+       "Evening classes usually start at six.",
+       "I think the class has about forty students.",
+       "Talk to your advisor before you make up your mind."
+      ],
+      "answer": 3,
+      "why": {
+       "en": "Statement → advice (idiom: \"make up your mind\" = decide). A repeats \"drop\" in its literal sense; C echoes \"think\" and \"class\" without responding.",
+       "tr": "Bildirim → tavsiye (deyim: \"make up your mind\" = karar vermek). A \"drop\" kelimesini gerçek anlamıyla tekrar ediyor; C \"think\" ve \"class\" kelimelerini yankılıyor ama cevap vermiyor.",
+       "es": "Comentario → un consejo (expresión: \"make up your mind\" = decidirse). A repite \"drop\" en sentido literal; C repite \"think\" y \"class\" sin responder."
+      }
+     },
+     {
+      "type": "choose_response",
+      "id": "p3_hcr5",
+      "audio": [
+       {
+        "text": "How did it go when you asked for an extension on your essay?",
+        "voice": "female:us"
+       }
+      ],
+      "options": [
+       "I went there by bus early this morning.",
+       "She gave me until Monday, so I can breathe again.",
+       "The essay has to be at least three thousand words long.",
+       "Yes, I asked her right after class."
+      ],
+      "answer": 1,
+      "why": {
+       "en": "\"How did it go\" → the result; \"I can breathe again\" shows relief. A repeats \"go\" literally; D answers a how-question with \"Yes\".",
+       "tr": "\"How did it go\" → sonuç; \"I can breathe again\" rahatladığını gösteriyor. A \"go\" kelimesini gerçek anlamıyla tekrar ediyor; D \"nasıl\" sorusuna \"Yes\" ile cevap veriyor.",
+       "es": "\"How did it go\" → el resultado; \"I can breathe again\" muestra alivio. A repite \"go\" en sentido literal; D responde \"Yes\" a una pregunta de \"cómo\"."
+      }
+     },
+     {
+      "type": "choose_response",
+      "id": "p3_hcr3",
+      "audio": [
+       {
+        "text": "You haven't seen my blue folder anywhere, have you?",
+        "voice": "female:au"
+       }
+      ],
+      "options": [
+       "Try the table by the window; someone left one there.",
+       "No, I haven't had a chance to see that new exhibition yet.",
+       "Blue has always been my favorite color.",
+       "I folded the posters before the meeting."
+      ],
+      "answer": 0,
+      "why": {
+       "en": "Indirect answer: instead of yes or no, the speaker suggests where the folder might be. B says \"No\" about something else; C repeats \"blue\"; D is a sound-alike trap (folder / folded).",
+       "tr": "Dolaylı cevap: evet/hayır yerine dosyanın nerede olabileceğini söylüyor. B başka bir şey için \"No\" diyor; C \"blue\" kelimesini tekrar ediyor; D ses benzerliği tuzağı (folder / folded).",
+       "es": "Respuesta indirecta: en vez de decir sí o no, sugiere dónde puede estar la carpeta. B dice \"No\" sobre otra cosa; C repite \"blue\"; D es una trampa de sonido parecido (folder / folded)."
+      }
+     },
+     {
+      "type": "choose_response",
+      "id": "p3_hcr8",
+      "audio": [
+       {
+        "text": "I doubt the rain will stop before the picnic starts.",
+        "voice": "male:us"
+       }
+      ],
+      "options": [
+       "We had a lot of fun at last year's picnic, didn't we?",
+       "I stopped at the store on the way to buy drinks.",
+       "Then we could hold it in the common room instead.",
+       "I doubt she'll be late, since she never is."
+      ],
+      "answer": 2,
+      "why": {
+       "en": "Doubt → an alternative plan (\"Then we could...\"). B repeats \"stop\" in a different sense; D repeats \"doubt\" about something unrelated; A talks about a past picnic instead of responding.",
+       "tr": "Şüphe → alternatif bir plan (\"Then we could...\"). B \"stop\" kelimesini başka anlamda tekrar ediyor; D \"doubt\" kelimesini ilgisiz bir konuda tekrar ediyor; A cevap vermek yerine geçen yılki pikniği anlatıyor.",
+       "es": "Duda → un plan alternativo (\"Then we could...\"). B repite \"stop\" con otro sentido; D repite \"doubt\" sobre algo que no tiene relación; A habla de un pícnic pasado en vez de responder."
+      }
+     },
+     {
+      "type": "choose_response",
+      "id": "p3_hcr1",
+      "audio": [
+       {
+        "text": "Weren't you planning to take advanced statistics this term?",
+        "voice": "female:gb"
+       }
+      ],
+      "options": [
+       "Yes, statistics is required for every major.",
+       "I was, but it clashed with my lab schedule.",
+       "I planned the trip for the end of term.",
+       "The advanced section meets on Tuesdays."
+      ],
+      "answer": 1,
+      "why": {
+       "en": "Negative question → \"I was, but...\" explains the change of plan. A says \"Yes\" about a different point; C repeats \"plan\" and \"term\" with no link to the course.",
+       "tr": "Olumsuz soru → \"I was, but...\" plan değişikliğini açıklıyor. A başka bir konuda \"Yes\" diyor; C \"plan\" ve \"term\" kelimelerini dersle ilgisiz biçimde tekrar ediyor.",
+       "es": "Pregunta negativa → \"I was, but...\" explica el cambio de planes. A dice \"Yes\" sobre otra cosa; C repite \"plan\" y \"term\" sin relación con la asignatura."
+      }
+     },
+     {
+      "type": "choose_response",
+      "id": "p3_hcr7",
+      "audio": [
+       {
+        "text": "Shouldn't we have heard back about the grant by now?",
+        "voice": "female:gb"
+       }
+      ],
+      "options": [
+       "I heard the band play in the park last night.",
+       "Yes, we should go back to the library.",
+       "The grant was for three thousand dollars.",
+       "They said decisions could take another couple of weeks."
+      ],
+      "answer": 3,
+      "why": {
+       "en": "Negative question expressing worry → an explanation for the delay. A repeats \"heard\" literally; B repeats \"should\" and \"back\" in a different sense.",
+       "tr": "Endişe bildiren olumsuz soru → gecikmeye bir açıklama. A \"heard\" kelimesini gerçek anlamıyla tekrar ediyor; B \"should\" ve \"back\" kelimelerini başka anlamda tekrar ediyor.",
+       "es": "Pregunta negativa que expresa preocupación → una explicación del retraso. A repite \"heard\" en sentido literal; B repite \"should\" y \"back\" con otro sentido."
+      }
+     },
+     {
+      "type": "choose_response",
+      "id": "p3_hcr4",
+      "audio": [
+       {
+        "text": "I could use a hand setting up the chairs for tonight's talk.",
+        "voice": "male:gb"
+       }
+      ],
+      "options": [
+       "Tonight's talk starts at seven, I believe.",
+       "I used that room for my club meeting.",
+       "Give me five minutes and I'll be right over.",
+       "Yes, I'd like to give a talk someday."
+      ],
+      "answer": 2,
+      "why": {
+       "en": "Idiom: \"I could use a hand\" = please help me, and the correct reply offers help. A gives a time; B repeats \"use\" literally; D takes \"talk\" in another sense.",
+       "tr": "Deyim: \"I could use a hand\" = yardıma ihtiyacım var; doğru cevap yardım teklif ediyor. A saat veriyor; B \"use\" kelimesini gerçek anlamıyla tekrar ediyor; D \"talk\" kelimesini başka anlamda alıyor.",
+       "es": "Expresión: \"I could use a hand\" = necesito ayuda, y la respuesta correcta ofrece ayuda. A da una hora; B repite \"use\" en sentido literal; D toma \"talk\" en otro sentido."
+      }
+     },
+     {
+      "type": "choose_response",
+      "id": "p3_hcr6",
+      "audio": [
+       {
+        "text": "Do you mind if I open the window a bit?",
+        "voice": "male:au"
+       }
+      ],
+      "options": [
+       "Go ahead, it's getting stuffy in here.",
+       "Yes, I'll mind your bag while you're gone.",
+       "The window looks out on the main square.",
+       "I opened a bank account last week."
+      ],
+      "answer": 0,
+      "why": {
+       "en": "Permission request → \"Go ahead\" grants it. B uses \"mind\" in another sense (= look after), and \"Yes\" here would actually mean a refusal; D repeats \"open\" with another meaning.",
+       "tr": "İzin isteme → \"Go ahead\" izin veriyor. B \"mind\" kelimesini başka anlamda (= göz kulak olmak) kullanıyor, üstelik burada \"Yes\" aslında itiraz anlamına gelir; D \"open\" kelimesini başka anlamda tekrar ediyor.",
+       "es": "Petición de permiso → \"Go ahead\" lo concede. B usa \"mind\" en otro sentido (= vigilar), y aquí \"Yes\" significaría en realidad que sí le molesta; D repite \"open\" con otro significado."
+      }
+     },
+     {
+      "type": "listening",
+      "title": "Conversation: A late recommendation letter",
+      "prompt": "Listen to a conversation between a student and a financial aid adviser.",
+      "audio": [
+       {
+        "text": "Hi, the Morgan Scholarship is due on Friday, but one of my professors can't send her recommendation until next week. Will my application still count?",
+        "voice": "male:us"
+       },
+       {
+        "text": "The Friday deadline applies to your part: the essay and the form. Letters are accepted for five working days after that, as long as the recommender sends them to us directly.",
+        "voice": "female:gb"
+       },
+       {
+        "text": "Oh, that's a relief. So I shouldn't hold my application until her letter is ready?",
+        "voice": "male:us"
+       },
+       {
+        "text": "Definitely not. If your part arrives late, the committee won't look at it at all.",
+        "voice": "female:gb"
+       },
+       {
+        "text": "Got it. I'll finish the essay tonight, then.",
+        "voice": "male:us"
+       }
+      ],
+      "questions": [
+       {
+        "id": "p3_conv_scholarship_letter_q1",
+        "stem": "Why does the student go to see the adviser?",
+        "options": [
+         "He wants permission to change the topic of his scholarship essay",
+         "He needs a form for a different scholarship",
+         "He is worried that a late letter will affect his application",
+         "He missed the deadline for the scholarship last Friday"
+        ],
+        "answer": 2,
+        "why": {
+         "en": "Purpose of the visit: his professor's letter will arrive after the deadline. D misreads the timing (the deadline is this coming Friday); A is never mentioned.",
+         "tr": "Ziyaretin amacı: hocasının mektubu son tarihten sonra gelecek. D zamanlamayı yanlış okuyor (son tarih önümüzdeki cuma); A hiç söz edilmiyor.",
+         "es": "Motivo de la visita: la carta de su profesora llegará después del plazo. D malinterpreta el momento (el plazo es este viernes que viene); A nunca se menciona."
+        }
+       },
+       {
+        "id": "p3_conv_scholarship_letter_q2",
+        "stem": "What does the adviser imply?",
+        "options": [
+         "The student's own materials must not be late",
+         "Professors should give their letters to the student",
+         "The committee may extend the deadline for him",
+         "The essay matters less than the application form"
+        ],
+        "answer": 0,
+        "why": {
+         "en": "Implication of \"If your part arrives late, the committee won't look at it\". B contradicts \"sends them to us directly\"; C is the opposite of what she says.",
+         "tr": "\"If your part arrives late, the committee won't look at it\" ifadesinin iması. B \"sends them to us directly\" bilgisiyle çelişiyor; C söylediğinin tam tersi.",
+         "es": "Implicación de \"If your part arrives late, the committee won't look at it\". B contradice \"sends them to us directly\"; C es lo contrario de lo que dice."
+        }
+       }
+      ]
+     },
+     {
+      "type": "listening",
+      "title": "Conversation: Revising a news story",
+      "prompt": "Listen to a conversation between a student reporter and the editor of the student newspaper.",
+      "audio": [
+       {
+        "text": "Jamal, I've read your piece on the new food trucks. The writing's lively, but right now it's mostly your own impressions.",
+        "voice": "female:au"
+       },
+       {
+        "text": "Well, I did spend a whole afternoon watching how busy they were.",
+        "voice": "male:gb"
+       },
+       {
+        "text": "Which is useful, but readers will want to hear from someone who's responsible for the program. Have you contacted the campus services office?",
+        "voice": "female:au"
+       },
+       {
+        "text": "I emailed them on Monday, but nobody's replied.",
+        "voice": "male:gb"
+       },
+       {
+        "text": "Then give them a call. We can hold the story for Thursday's issue, but not any longer.",
+        "voice": "female:au"
+       },
+       {
+        "text": "Okay. I'll phone them first thing tomorrow.",
+        "voice": "male:gb"
+       }
+      ],
+      "questions": [
+       {
+        "id": "p3_conv_news_story_q1",
+        "stem": "What is the editor's main concern about the story?",
+        "options": [
+         "It is written in a style that readers may find dull",
+         "It was handed in well after the deadline for this week's issue",
+         "It includes incorrect prices for the food trucks",
+         "It relies too heavily on the reporter's personal observations"
+        ],
+        "answer": 3,
+        "why": {
+         "en": "Main concern (paraphrase of \"mostly your own impressions\"). A contradicts \"The writing's lively\"; B misreads the plan to hold the story for Thursday's issue.",
+         "tr": "Asıl endişe (\"mostly your own impressions\" ifadesinin parafrazı). A \"The writing's lively\" ile çelişiyor; B haberin perşembe sayısına bekletilmesini yanlış yorumluyor.",
+         "es": "Preocupación principal (paráfrasis de \"mostly your own impressions\"). A contradice \"The writing's lively\"; B malinterpreta el plan de guardar la noticia para el número del jueves."
+        }
+       },
+       {
+        "id": "p3_conv_news_story_q2",
+        "stem": "What will the reporter most likely do next?",
+        "options": [
+         "Send the office a second email",
+         "Try to reach the office by telephone",
+         "Watch the food trucks again",
+         "Ask the editor to run it now"
+        ],
+        "answer": 1,
+        "why": {
+         "en": "Next action: \"I'll phone them first thing tomorrow\". A is the method that has already failed; D contradicts the plan to hold the story.",
+         "tr": "Sonraki adım: \"I'll phone them first thing tomorrow\". A zaten işe yaramamış olan yöntem; D haberi bekletme planıyla çelişiyor.",
+         "es": "Siguiente paso: \"I'll phone them first thing tomorrow\". A es el método que ya no funcionó; D contradice el plan de guardar la noticia."
+        }
+       }
+      ]
+     },
+     {
+      "type": "listening",
+      "title": "Announcement: Lab safety training",
+      "prompt": "Listen to an announcement in a chemistry class.",
+      "audio": [
+       {
+        "text": "Before next week's first lab, everyone must complete our two-part safety training. Part one is an online module, which takes about forty minutes and ends with a short quiz. Part two is a hands-on session in the lab. Your access card will open the lab door only once both parts are recorded, and records can take up to two days to update, so please don't leave the quiz until the night before.",
+        "voice": "male:us"
+       }
+      ],
+      "questions": [
+       {
+        "id": "p3_ann_lab_safety_q1",
+        "stem": "What is the announcement mainly about?",
+        "options": [
+         "Steps students must complete before using the lab",
+         "A change to the date of the first lab session",
+         "Problems that students have had with access cards",
+         "How the safety quiz will count toward the final grade"
+        ],
+        "answer": 0,
+        "why": {
+         "en": "Main topic: the two-part training required before lab access. C misuses \"access card\", which is only how the rule is enforced; D invents a grading rule.",
+         "tr": "Ana konu: laboratuvara girmeden önce gereken iki aşamalı eğitim. C kuralın uygulanma biçimi olan \"access card\" ifadesini yanlış kullanıyor; D olmayan bir notlandırma kuralı uyduruyor.",
+         "es": "Tema principal: la formación en dos partes necesaria antes de entrar al laboratorio. C usa mal \"access card\", que solo es cómo se aplica la norma; D se inventa una regla de calificación."
+        }
+       },
+       {
+        "id": "p3_ann_lab_safety_q2",
+        "stem": "Why does the speaker tell students not to wait until the night before?",
+        "options": [
+         "The online module closes on the weekend",
+         "The quiz is harder than it looks",
+         "Their card might not open the door in time",
+         "Hands-on sessions fill up quickly"
+        ],
+        "answer": 2,
+        "why": {
+         "en": "Inference: records \"can take up to two days to update\", so a last-minute quiz could leave a student locked out of the first lab. D gives a reason the speaker never mentions.",
+         "tr": "Çıkarım: kayıtlar \"can take up to two days to update\", yani son gece çözülen sınav öğrenciyi ilk laboratuvarda kapıda bırakabilir. D konuşmacının hiç söylemediği bir gerekçe.",
+         "es": "Inferencia: los registros \"can take up to two days to update\", así que hacer la prueba la víspera podría dejar al estudiante sin acceso al primer laboratorio. D da un motivo que el hablante nunca menciona."
+        }
+       }
+      ]
+     },
+     {
+      "type": "listening",
+      "title": "Academic Talk: How migrating birds find their way",
+      "prompt": "Listen to part of a lecture in a biology class.",
+      "audio": [
+       {
+        "text": "Every autumn, millions of songbirds fly thousands of kilometers to their wintering grounds, and many of them travel at night, alone, on their very first journey. So how do they know which way to go? It turns out they don't rely on a single cue. They carry what amounts to several compasses.",
+        "voice": "female:us"
+       },
+       {
+        "text": "One is the sun. Birds that fly by day can judge direction from the sun's position, adjusting for the time of day. Night migrants need something else, and a classic experiment revealed what it was. Researchers raised young birds in a planetarium, under an artificial sky that rotated around a different star than the real North Star. When migration season arrived, the birds oriented themselves using that false center of rotation. In other words, they had learned the pattern of the sky; they hadn't inherited a map of particular stars.",
+        "voice": "female:us"
+       },
+       {
+        "text": "Birds also sense the Earth's magnetic field. Interestingly, their magnetic compass doesn't distinguish north from south the way ours does. Instead, it detects the angle at which the field lines dip toward the ground, which tells a bird whether it's heading toward the pole or toward the equator. And on overcast nights, when the stars disappear, that magnetic sense appears to keep them on course.",
+        "voice": "female:us"
+       }
+      ],
+      "questions": [
+       {
+        "id": "p3_talk_bird_navigation_q1",
+        "stem": "What is the lecture mainly about?",
+        "options": [
+         "Why songbirds prefer to migrate at night rather than by day",
+         "The different cues birds use to orient themselves during migration",
+         "How planetariums are used to teach university students about the night sky",
+         "Why young birds follow older birds on long journeys"
+        ],
+        "answer": 1,
+        "why": {
+         "en": "Main idea: birds use several \"compasses\" (the sun, the stars, the magnetic field). D contradicts \"alone, on their very first journey\"; C turns the setting of the experiment into the topic.",
+         "tr": "Ana fikir: kuşlar birkaç \"pusula\" kullanır (güneş, yıldızlar, manyetik alan). D \"alone, on their very first journey\" ile çelişiyor; C deneyin yapıldığı yeri konu hâline getiriyor.",
+         "es": "Idea principal: las aves usan varias \"brújulas\" (el sol, las estrellas, el campo magnético). D contradice \"alone, on their very first journey\"; C convierte el lugar del experimento en el tema."
+        }
+       },
+       {
+        "id": "p3_talk_bird_navigation_q2",
+        "stem": "What did the planetarium experiment show?",
+        "options": [
+         "Birds lose their sense of direction completely when the sky rotates",
+         "Birds prefer artificial light to real starlight",
+         "Night migrants depend mainly on the position of the sun",
+         "Young birds learn the sky's pattern instead of inheriting it"
+        ],
+        "answer": 3,
+        "why": {
+         "en": "Detail/inference: the birds used the false center of rotation, so they \"had learned the pattern of the sky\". A contradicts the result (they oriented themselves successfully); C applies to day migrants.",
+         "tr": "Ayrıntı/çıkarım: kuşlar sahte dönme merkezini kullandı, yani \"had learned the pattern of the sky\". A sonuçla çelişiyor (kuşlar yönlerini buldu); C gündüz göç eden kuşlar için geçerli.",
+         "es": "Detalle/inferencia: las aves usaron el falso centro de rotación, así que \"had learned the pattern of the sky\". A contradice el resultado (se orientaron sin problema); C se aplica a las aves que migran de día."
+        }
+       },
+       {
+        "id": "p3_talk_bird_navigation_q3",
+        "stem": "According to the professor, what does a bird's magnetic compass detect?",
+        "options": [
+         "The angle at which the field lines meet the ground",
+         "The difference between magnetic north and south",
+         "The direction in which the night sky rotates",
+         "The distance remaining to the bird's wintering grounds"
+        ],
+        "answer": 0,
+        "why": {
+         "en": "Detail: it \"detects the angle at which the field lines dip toward the ground\". B is exactly what the professor says it does not do; C belongs to the star compass.",
+         "tr": "Ayrıntı: \"detects the angle at which the field lines dip toward the ground\". B profesörün tam olarak yapmadığını söylediği şey; C yıldız pusulasına ait.",
+         "es": "Detalle: \"detects the angle at which the field lines dip toward the ground\". B es justo lo que la profesora dice que no hace; C corresponde a la brújula estelar."
+        }
+       },
+       {
+        "id": "p3_talk_bird_navigation_q4",
+        "stem": "What can be inferred about a night migrant flying under heavy cloud?",
+        "options": [
+         "It must land until the stars return",
+         "It will steer by the position of the sun",
+         "It can still navigate without seeing the sky",
+         "It will follow birds of its own species"
+        ],
+        "answer": 2,
+        "why": {
+         "en": "Inference: on overcast nights the magnetic sense \"appears to keep them on course\". A contradicts that; B is impossible at night.",
+         "tr": "Çıkarım: kapalı gecelerde manyetik duyu \"appears to keep them on course\". A bununla çelişiyor; B gece mümkün değil.",
+         "es": "Inferencia: en noches nubladas, el sentido magnético \"appears to keep them on course\". A lo contradice; B es imposible de noche."
+        }
+       }
+      ]
+     },
+     {
+      "type": "listening",
+      "title": "Academic Talk: Finding planets around other stars",
+      "prompt": "Listen to part of a lecture in an astronomy class.",
+      "audio": [
+       {
+        "text": "Planets orbiting other stars are extremely hard to see directly. A star is millions of times brighter than any planet near it, so the planet's faint light is simply lost in the glare. Instead, astronomers usually detect these planets indirectly, and today the most productive approach is called the transit method.",
+        "voice": "male:gb"
+       },
+       {
+        "text": "Here's the idea. If a planet's orbit happens to be lined up with our line of sight, then once per orbit the planet passes in front of its star. When that happens, it blocks a tiny fraction of the starlight, often less than one percent. A sensitive telescope that measures the star's brightness continuously will record a small, regular dip. The time between dips tells us the length of the planet's year, and the depth of each dip tells us how large the planet is compared with its star.",
+        "voice": "male:gb"
+       },
+       {
+        "text": "Now, a single dip doesn't prove anything. Stars have dark spots, and a second star passing in front can produce a similar signal. That's why astronomers want to see at least three evenly spaced dips before they take a candidate seriously. And keep in mind the method's built-in bias: it only finds systems whose orbits we happen to see edge-on, so for every planet detected this way, many more must be passing by unseen.",
+        "voice": "male:gb"
+       }
+      ],
+      "questions": [
+       {
+        "id": "p3_talk_planet_transits_q1",
+        "stem": "What is the lecture mainly about?",
+        "options": [
+         "Why some stars shine much more brightly than others",
+         "How telescopes take direct photographs of distant planets",
+         "Detecting distant planets by measuring changes in starlight",
+         "Why the planets that orbit other stars have such short years"
+        ],
+        "answer": 2,
+        "why": {
+         "en": "Main idea: the transit method, its logic and its limits. B contradicts the opening point that such planets are \"extremely hard to see directly\".",
+         "tr": "Ana fikir: geçiş yöntemi, mantığı ve sınırları. B bu gezegenlerin \"extremely hard to see directly\" olduğu yönündeki açılış bilgisiyle çelişiyor.",
+         "es": "Idea principal: el método de tránsito, su lógica y sus límites. B contradice la idea inicial de que estos planetas son \"extremely hard to see directly\"."
+        }
+       },
+       {
+        "id": "p3_talk_planet_transits_q2",
+        "stem": "According to the professor, what does the depth of a dip reveal?",
+        "options": [
+         "The planet's size relative to its star",
+         "The length of the planet's year",
+         "The planet's distance from Earth",
+         "The temperature of the planet"
+        ],
+        "answer": 0,
+        "why": {
+         "en": "Detail: \"the depth of each dip tells us how large the planet is compared with its star\". B is what the time between dips shows, the classic swap.",
+         "tr": "Ayrıntı: \"the depth of each dip tells us how large the planet is compared with its star\". B düşüşler arasındaki sürenin gösterdiği şey; klasik yer değiştirme tuzağı.",
+         "es": "Detalle: \"the depth of each dip tells us how large the planet is compared with its star\". B es lo que indica el tiempo entre caídas: la trampa clásica del intercambio."
+        }
+       },
+       {
+        "id": "p3_talk_planet_transits_q3",
+        "stem": "Why does the professor mention dark spots on stars?",
+        "options": [
+         "To show how stars lose brightness as they grow older",
+         "To explain why one dip cannot confirm a planet",
+         "To describe a feature that makes planets easier to see",
+         "To compare the size of the spots with that of planets"
+        ],
+        "answer": 1,
+        "why": {
+         "en": "Purpose: spots, like a second star, can imitate a dip, so \"a single dip doesn't prove anything\". C reverses their role, since they are a source of false signals.",
+         "tr": "Amaç: lekeler, tıpkı ikinci bir yıldız gibi, düşüşü taklit edebilir; bu yüzden \"a single dip doesn't prove anything\". C rollerini tersine çeviriyor, çünkü lekeler yanıltıcı sinyal kaynağı.",
+         "es": "Propósito: las manchas, como una segunda estrella, pueden imitar una caída, así que \"a single dip doesn't prove anything\". C invierte su papel, porque son una fuente de señales falsas."
+        }
+       },
+       {
+        "id": "p3_talk_planet_transits_q4",
+        "stem": "What does the professor imply about the planets found with the transit method?",
+        "options": [
+         "They all orbit stars that are covered with dark spots",
+         "They are the largest planets in our galaxy",
+         "They can also be seen directly with telescopes",
+         "They are only a small share of the planets that exist"
+        ],
+        "answer": 3,
+        "why": {
+         "en": "Inference from \"for every planet detected this way, many more must be passing by unseen\". C contradicts the opening of the lecture; A misuses the point about dark spots, which can only imitate a planet's signal.",
+         "tr": "\"For every planet detected this way, many more must be passing by unseen\" ifadesinden çıkarım. C dersin girişiyle çelişiyor; A yalnızca gezegen sinyalini taklit edebilen karanlık lekelerle ilgili bilgiyi yanlış kullanıyor.",
+         "es": "Inferencia a partir de \"for every planet detected this way, many more must be passing by unseen\". C contradice el inicio de la clase; A usa mal lo dicho sobre las manchas oscuras, que solo pueden imitar la señal de un planeta."
+        }
+       }
+      ]
+     }
+    ],
+    "easy": [
+     {
+      "type": "choose_response",
+      "id": "p3_ecr2",
+      "audio": [
+       {
+        "text": "What time does the lab open?",
+        "voice": "male:au"
+       }
+      ],
+      "options": [
+       "In Room 12.",
+       "Yes, it's open.",
+       "At eight thirty.",
+       "It's a big lab."
+      ],
+      "answer": 2,
+      "why": {
+       "en": "\"What time\" → a time. A gives a place; B answers with \"Yes\".",
+       "tr": "\"What time\" → saat. A yer veriyor; B \"Yes\" ile cevap veriyor.",
+       "es": "\"What time\" → una hora. A da un lugar; B responde \"Yes\"."
+      }
+     },
+     {
+      "type": "choose_response",
+      "id": "p3_ecr5",
+      "audio": [
+       {
+        "text": "Would you like some tea?",
+        "voice": "female:au"
+       }
+      ],
+      "options": [
+       "Yes, please. Just a little.",
+       "I really like the teacher.",
+       "In the kitchen, I think.",
+       "It's a big green cup from home."
+      ],
+      "answer": 0,
+      "why": {
+       "en": "Offer → acceptance. B is a sound-alike trap (tea / teacher); C answers \"where\".",
+       "tr": "Teklif → kabul. B ses benzerliği tuzağı (tea / teacher); C \"nerede\" sorusuna cevap veriyor.",
+       "es": "Ofrecimiento → aceptación. B es una trampa de sonido parecido (tea / teacher); C responde a \"where\"."
+      }
+     },
+     {
+      "type": "choose_response",
+      "id": "p3_ecr3",
+      "audio": [
+       {
+        "text": "Who is giving the talk today?",
+        "voice": "female:gb"
+       }
+      ],
+      "options": [
+       "In the main lecture hall.",
+       "A visiting professor.",
+       "At two o'clock.",
+       "I gave it to her."
+      ],
+      "answer": 1,
+      "why": {
+       "en": "\"Who\" → a person. A gives a place; D repeats \"give\".",
+       "tr": "\"Who\" → kişi. A yer veriyor; D \"give\" kelimesini tekrar ediyor.",
+       "es": "\"Who\" → una persona. A da un lugar; D repite \"give\"."
+      }
+     },
+     {
+      "type": "choose_response",
+      "id": "p3_ecr8",
+      "audio": [
+       {
+        "text": "Can you close the door, please?",
+        "voice": "male:au"
+       }
+      ],
+      "options": [
+       "The door is red.",
+       "It's close to here.",
+       "Sure, no problem.",
+       "I closed my book."
+      ],
+      "answer": 2,
+      "why": {
+       "en": "Request → agreement. B is a sound-alike trap (\"close the door\" / \"close to here\"); D repeats \"close\" about something else.",
+       "tr": "Rica → kabul. B ses benzerliği tuzağı (\"close the door\" / \"close to here\"); D \"close\" kelimesini başka bir şey için tekrar ediyor.",
+       "es": "Petición → aceptación. B es una trampa de sonido parecido (\"close the door\" / \"close to here\"); D repite \"close\" sobre otra cosa."
+      }
+     },
+     {
+      "type": "choose_response",
+      "id": "p3_ecr1",
+      "audio": [
+       {
+        "text": "Where can I buy a notebook?",
+        "voice": "female:us"
+       }
+      ],
+      "options": [
+       "At the shop near the gate.",
+       "About three dollars each.",
+       "Yes, I need one too.",
+       "I bought one there yesterday."
+      ],
+      "answer": 0,
+      "why": {
+       "en": "\"Where\" → a place. B gives a price; C answers with \"Yes\".",
+       "tr": "\"Where\" → yer. B fiyat veriyor; C \"Yes\" ile cevap veriyor.",
+       "es": "\"Where\" → un lugar. B da un precio; C responde \"Yes\"."
+      }
+     },
+     {
+      "type": "choose_response",
+      "id": "p3_ecr7",
+      "audio": [
+       {
+        "text": "How long is the movie?",
+        "voice": "female:us"
+       }
+      ],
+      "options": [
+       "It's a funny movie.",
+       "At the cinema downtown.",
+       "Every Friday night.",
+       "About two hours."
+      ],
+      "answer": 3,
+      "why": {
+       "en": "\"How long\" → a length of time. C gives a frequency; B gives a place.",
+       "tr": "\"How long\" → süre. C sıklık veriyor; B yer veriyor.",
+       "es": "\"How long\" → una duración. C da una frecuencia; B da un lugar."
+      }
+     },
+     {
+      "type": "choose_response",
+      "id": "p3_ecr6",
+      "audio": [
+       {
+        "text": "Why is the café closed?",
+        "voice": "male:gb"
+       }
+      ],
+      "options": [
+       "Yes, it's closed.",
+       "The owner is on holiday.",
+       "Until next Monday.",
+       "It's near the bank."
+      ],
+      "answer": 1,
+      "why": {
+       "en": "\"Why\" → a reason. A answers with \"Yes\"; C says until when, not why.",
+       "tr": "\"Why\" → sebep. A \"Yes\" ile cevap veriyor; C neden değil, ne zamana kadar olduğunu söylüyor.",
+       "es": "\"Why\" → un motivo. A responde \"Yes\"; C dice hasta cuándo, no por qué."
+      }
+     },
+     {
+      "type": "choose_response",
+      "id": "p3_ecr4",
+      "audio": [
+       {
+        "text": "How do you get to the stadium?",
+        "voice": "male:us"
+       }
+      ],
+      "options": [
+       "It's a very big stadium.",
+       "On Saturday afternoon.",
+       "I got a ticket for the game.",
+       "Take the number five bus."
+      ],
+      "answer": 3,
+      "why": {
+       "en": "\"How do you get to\" → a way to travel. B gives a day; C repeats \"get\" with another meaning.",
+       "tr": "\"How do you get to\" → nasıl gidileceği. B gün veriyor; C \"get\" kelimesini başka anlamda tekrar ediyor.",
+       "es": "\"How do you get to\" → una forma de llegar. B da un día; C repite \"get\" con otro significado."
+      }
+     },
+     {
+      "type": "listening",
+      "title": "Conversation: Helping at the campus garden",
+      "prompt": "Listen to a conversation between two students.",
+      "audio": [
+       {
+        "text": "Hi, are you in charge of the campus garden? I'd like to help out.",
+        "voice": "female:us"
+       },
+       {
+        "text": "That's great! We work every Saturday morning, from nine to twelve.",
+        "voice": "male:au"
+       },
+       {
+        "text": "Do I need any experience?",
+        "voice": "female:us"
+       },
+       {
+        "text": "No, we'll show you everything. Just wear old clothes and bring a bottle of water. We have gloves and tools for everyone.",
+        "voice": "male:au"
+       },
+       {
+        "text": "Perfect. I'll come this Saturday.",
+        "voice": "female:us"
+       }
+      ],
+      "questions": [
+       {
+        "id": "p3_conv_garden_volunteers_q1",
+        "stem": "What does the woman want to do?",
+        "options": [
+         "Buy vegetables from the garden",
+         "Help at the campus garden",
+         "Take a class about gardening",
+         "Borrow some garden tools"
+        ],
+        "answer": 1,
+        "why": {
+         "en": "Main idea: \"I'd like to help out\". D misuses \"tools\", which the volunteers are given.",
+         "tr": "Ana fikir: \"I'd like to help out\". D gönüllülere verilen \"tools\" kelimesini yanlış kullanıyor.",
+         "es": "Idea principal: \"I'd like to help out\". D usa mal \"tools\", que se les dan a los voluntarios."
+        }
+       },
+       {
+        "id": "p3_conv_garden_volunteers_q2",
+        "stem": "What should the woman bring?",
+        "options": [
+         "Her own gloves",
+         "Some garden tools",
+         "New clothes",
+         "A bottle of water"
+        ],
+        "answer": 3,
+        "why": {
+         "en": "Detail: \"bring a bottle of water\". A and B are provided by the garden; C contradicts \"wear old clothes\".",
+         "tr": "Ayrıntı: \"bring a bottle of water\". A ve B bahçe tarafından veriliyor; C \"wear old clothes\" ile çelişiyor.",
+         "es": "Detalle: \"bring a bottle of water\". A y B los pone el huerto; C contradice \"wear old clothes\"."
+        }
+       }
+      ]
+     },
+     {
+      "type": "listening",
+      "title": "Announcement: Club funding forms",
+      "prompt": "Listen to an announcement in the student center.",
+      "audio": [
+       {
+        "text": "Hello, club leaders. Funding forms for next term are due this Friday at five p.m. You can pick up a form at the Student Activities desk or download it from our website. Please list everything your club plans to buy. Late forms will not be accepted. Thank you.",
+        "voice": "female:gb"
+       }
+      ],
+      "questions": [
+       {
+        "id": "p3_ann_club_funding_q1",
+        "stem": "Who is the announcement for?",
+        "options": [
+         "Students who lead clubs",
+         "New students on campus",
+         "Staff at the activities desk",
+         "Teachers of evening classes"
+        ],
+        "answer": 0,
+        "why": {
+         "en": "Audience: it begins \"Hello, club leaders\". C misuses \"Student Activities desk\", which is where the forms are.",
+         "tr": "Dinleyici kitlesi: duyuru \"Hello, club leaders\" diye başlıyor. C formların bulunduğu yer olan \"Student Activities desk\" ifadesini yanlış kullanıyor.",
+         "es": "Destinatarios: empieza con \"Hello, club leaders\". C usa mal \"Student Activities desk\", que es donde están los formularios."
+        }
+       },
+       {
+        "id": "p3_ann_club_funding_q2",
+        "stem": "What will happen to forms that arrive after Friday?",
+        "options": [
+         "They will be read next term",
+         "They will not be accepted",
+         "They must be sent by email",
+         "They need a teacher's signature"
+        ],
+        "answer": 1,
+        "why": {
+         "en": "Detail: \"Late forms will not be accepted\". A misuses \"next term\", which is when the money will be spent.",
+         "tr": "Ayrıntı: \"Late forms will not be accepted\". A paranın harcanacağı dönemi anlatan \"next term\" ifadesini yanlış kullanıyor.",
+         "es": "Detalle: \"Late forms will not be accepted\". A usa mal \"next term\", que es cuando se gastará el dinero."
+        }
+       }
+      ]
+     },
+     {
+      "type": "listening",
+      "title": "Academic Talk: Farming on hillsides",
+      "prompt": "Listen to part of a talk in a history class.",
+      "audio": [
+       {
+        "text": "Today let's talk about farming on steep hills. Farming on a slope is hard. When it rains, water runs down the hill very fast, and it carries the good soil away with it. So, thousands of years ago, farmers in many mountain areas found a clever answer. They built terraces. A terrace is a flat step cut into the side of a hill, usually held up by a low stone wall. A hill with terraces looks like a giant staircase. On each flat step, rainwater slows down and sinks into the ground, and the soil stays in place. Farmers grew rice, potatoes, and many other crops this way. Some of these old terraces are still used today.",
+        "voice": "female:au"
+       }
+      ],
+      "questions": [
+       {
+        "id": "p3_talk_hillside_terraces_q1",
+        "stem": "What is the talk mainly about?",
+        "options": [
+         "How rice is grown in very wet fields",
+         "Why stone walls were built around houses",
+         "How people climbed up and down mountains",
+         "Why farmers built flat steps on hills"
+        ],
+        "answer": 3,
+        "why": {
+         "en": "Main idea: terraces solved the problem of farming on slopes. C takes \"giant staircase\" literally; B misuses \"stone wall\".",
+         "tr": "Ana fikir: teraslar, yamaçta tarım yapma sorununu çözdü. C \"giant staircase\" ifadesini gerçek anlamıyla alıyor; B \"stone wall\" ifadesini yanlış kullanıyor.",
+         "es": "Idea principal: las terrazas resolvieron el problema de cultivar en pendiente. C toma \"giant staircase\" al pie de la letra; B usa mal \"stone wall\"."
+        }
+       },
+       {
+        "id": "p3_talk_hillside_terraces_q2",
+        "stem": "What problem did farmers have on slopes?",
+        "options": [
+         "Rain washed the soil away",
+         "There was too little sunlight",
+         "The stone was too hard to cut",
+         "Animals ate the young crops"
+        ],
+        "answer": 0,
+        "why": {
+         "en": "Detail: rainwater \"carries the good soil away with it\". C misuses \"stone\" from the description of the walls; B and D are never mentioned.",
+         "tr": "Ayrıntı: yağmur suyu \"carries the good soil away with it\". C duvarların tarifindeki \"stone\" kelimesini yanlış kullanıyor; B ve D hiç söylenmiyor.",
+         "es": "Detalle: el agua de lluvia \"carries the good soil away with it\". C usa mal \"stone\", de la descripción de los muros; B y D nunca se mencionan."
+        }
+       },
+       {
+        "id": "p3_talk_hillside_terraces_q3",
+        "stem": "Why does the speaker say a hill with terraces looks like \"a giant staircase\"?",
+        "options": [
+         "To explain how farmers climbed the hill",
+         "To help listeners picture its shape",
+         "To show that terraces were inside buildings",
+         "To say that every terrace was very tall"
+        ],
+        "answer": 1,
+        "why": {
+         "en": "Purpose: the comparison helps listeners imagine the row of flat steps. A takes the image literally.",
+         "tr": "Amaç: benzetme, dinleyicilerin art arda dizilen düz basamakları gözünde canlandırmasına yardım ediyor. A benzetmeyi gerçek anlamıyla alıyor.",
+         "es": "Propósito: la comparación ayuda a imaginar la fila de escalones planos. A toma la imagen al pie de la letra."
+        }
+       },
+       {
+        "id": "p3_talk_hillside_terraces_q4",
+        "stem": "What does the speaker say about some old terraces?",
+        "options": [
+         "Rain destroyed all of them",
+         "Houses are built on them now",
+         "People still farm on them",
+         "Only rice grows on them today"
+        ],
+        "answer": 2,
+        "why": {
+         "en": "Detail (paraphrase of \"still used today\"). A contradicts it; D misuses \"rice\", which was only one of several crops.",
+         "tr": "Ayrıntı (\"still used today\" ifadesinin parafrazı). A bununla çelişiyor; D birkaç üründen yalnızca biri olan \"rice\" kelimesini yanlış kullanıyor.",
+         "es": "Detalle (paráfrasis de \"still used today\"). A lo contradice; D usa mal \"rice\", que era solo uno de varios cultivos."
+        }
+       }
+      ]
+     }
+    ]
+   }
+  },
+  {
+   "id": "writing",
+   "name": "Writing",
+   "minutes": 23,
+   "intro": {
+    "en": "Writing: Build a Sentence (10), Write an Email (7 min) and Write for an Academic Discussion (10 min). In Build a Sentence some words are already in place, and a tile can hold more than one word.",
+    "tr": "Writing: Build a Sentence (10), Write an Email (7 dk) ve Write for an Academic Discussion (10 dk). Build a Sentence'ta bazı kelimeler cümlede hazır gelir; kutular bazen birden fazla kelimedir.",
+    "es": "Writing: Build a Sentence (10), Write an Email (7 min) y Write for an Academic Discussion (10 min). En Build a Sentence algunas palabras ya están colocadas y una ficha puede tener más de una palabra."
+   },
+   "screens": [
+    {
+     "type": "sentence_dialogue",
+     "id": "p3_bs3",
+     "personA": "I'm going to the post office after class.",
+     "frame": [
+      "Can you",
+      null,
+      null,
+      null,
+      null,
+      "padded envelopes?"
+     ],
+     "answer": [
+      "check",
+      "if",
+      "they",
+      "sell"
+     ],
+     "distractors": []
+    },
+    {
+     "type": "sentence_dialogue",
+     "id": "p3_bs6",
+     "personA": "Did the coach say anything about Saturday's game?",
+     "frame": [
+      "He told us",
+      null,
+      null,
+      null,
+      null,
+      "because of the rain."
+     ],
+     "answer": [
+      "that",
+      "it",
+      "had been",
+      "postponed"
+     ],
+     "distractors": []
+    },
+    {
+     "type": "sentence_dialogue",
+     "id": "p3_bs1",
+     "personA": "You missed the club meeting this morning, didn't you?",
+     "frame": [
+      "Yes. Could you",
+      null,
+      null,
+      null,
+      null,
+      "about the budget?"
+     ],
+     "answer": [
+      "tell me",
+      "what",
+      "the committee",
+      "decided"
+     ],
+     "distractors": [
+      "did"
+     ]
+    },
+    {
+     "type": "sentence_dialogue",
+     "id": "p3_bs8",
+     "personA": "I've finally finished my history essay.",
+     "frame": [
+      "Great!",
+      null,
+      null,
+      null,
+      null,
+      "it to Professor Ruiz?"
+     ],
+     "answer": [
+      "When",
+      "are",
+      "you",
+      "sending"
+     ],
+     "distractors": []
+    },
+    {
+     "type": "sentence_dialogue",
+     "id": "p3_bs4",
+     "personA": "Which film are we watching tonight?",
+     "frame": [
+      "The one",
+      null,
+      null,
+      null,
+      null,
+      "last week."
+     ],
+     "answer": [
+      "that",
+      "our professor",
+      "recommended",
+      "to us"
+     ],
+     "distractors": []
+    },
+    {
+     "type": "sentence_dialogue",
+     "id": "p3_bs10",
+     "personA": "How was the walk up to the old castle?",
+     "frame": [
+      "The path was",
+      null,
+      null,
+      null,
+      null,
+      "the top."
+     ],
+     "answer": [
+      "so",
+      "steep",
+      "that",
+      "we never reached"
+     ],
+     "distractors": []
+    },
+    {
+     "type": "sentence_dialogue",
+     "id": "p3_bs7",
+     "personA": "Who is organizing the welcome party this year?",
+     "frame": [
+      "It",
+      null,
+      null,
+      null,
+      null,
+      "from the student council."
+     ],
+     "answer": [
+      "is",
+      "being",
+      "planned",
+      "by volunteers"
+     ],
+     "distractors": [
+      "planning"
+     ]
+    },
+    {
+     "type": "sentence_dialogue",
+     "id": "p3_bs2",
+     "personA": "The new sports center opens next month.",
+     "frame": [
+      "I wonder",
+      null,
+      null,
+      null,
+      null,
+      "to use it."
+     ],
+     "answer": [
+      "whether",
+      "students",
+      "will have",
+      "to pay"
+     ],
+     "distractors": []
+    },
+    {
+     "type": "sentence_dialogue",
+     "id": "p3_bs9",
+     "personA": "Are you coming to the concert on Friday?",
+     "frame": [
+      "I'd like to, but",
+      null,
+      null,
+      null,
+      null,
+      "my lab report first."
+     ],
+     "answer": [
+      "I",
+      "need",
+      "to finish",
+      "writing"
+     ],
+     "distractors": []
+    },
+    {
+     "type": "sentence_dialogue",
+     "id": "p3_bs5",
+     "personA": "Who is that woman talking to the dean?",
+     "frame": [
+      "She's",
+      null,
+      null,
+      null,
+      null,
+      "the new library."
+     ],
+     "answer": [
+      "the architect",
+      "whose",
+      "firm",
+      "designed"
+     ],
+     "distractors": []
+    },
+    {
+     "type": "writing",
+     "id": "p3_email",
+     "kind": "email",
+     "minutes": 7,
+     "wordTarget": {
+      "en": "Cover all three points in full sentences. Do not forget a closing.",
+      "tr": "Üç maddenin hepsini karşıla; tam cümleler kur. Kapanışı unutma.",
+      "es": "Cubre los tres puntos con oraciones completas. No olvides la despedida."
+     },
+     "prompt": "Write an email to the editor of the student newspaper. In your email, do the following: (1) Thank the editor for the article and say what it was about. (2) Explain the mistake and the problem it is causing. (3) Ask the newspaper to correct it in a specific way.",
+     "scenario": "You lead the debate club at your university. Last week, the student newspaper published a friendly article about the club, but it gave the wrong date and room for the club's public debate next month. Several students have already told you that they plan to come on the wrong day."
+    },
+    {
+     "type": "writing",
+     "id": "p3_disc",
+     "kind": "discussion",
+     "minutes": 10,
+     "wordTarget": {
+      "en": "At least 100 words. State your opinion, support it, and add your own contribution to the discussion.",
+      "tr": "En az 100 kelime. Görüşünü belirt, destekle ve tartışmaya kendi katkını ekle.",
+      "es": "Al menos 100 palabras. Da tu opinión, justifícala y aporta algo propio a la discusión."
+     },
+     "prompt": "Your professor is teaching a class on education. Write a post responding to the professor's question. Express and support your opinion, and make a contribution to the discussion in your own words.",
+     "professor": {
+      "name": "Okafor",
+      "post": "Many universities are debating whether every lecture should be recorded and posted online. Supporters say recordings help students review difficult material and help those who sometimes have to miss class because of work or family responsibilities. Others worry that if recordings are always available, fewer students will come to class, and discussions in the room will suffer. Should universities require professors to record all of their lectures? Why or why not?"
+     },
+     "students": [
+      {
+       "name": "Lucia",
+       "post": "Yes, I think they should. Before my chemistry exam, I watched two lectures again, and parts I had missed the first time finally made sense. Also, many students have long commutes or part-time jobs. With a recording, missing one bus doesn't mean missing the material."
+      },
+      {
+       "name": "Tomas",
+       "post": "I don't think it should be required. When my statistics professor started posting recordings, attendance dropped by almost half, and the few students who came rarely asked questions. Some professors also feel uncomfortable being recorded. Each professor should decide what works for their own course."
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "speaking",
+   "name": "Speaking",
+   "minutes": 8,
+   "intro": {
+    "en": "Speaking: two tasks. Each task opens with a scenario. In Listen and Repeat the sentences get longer; in the Interview, the interviewer asks four questions on one topic.",
+    "tr": "Speaking: iki görev. Her görev bir senaryoyla başlar. Listen & Repeat'te cümleler giderek uzar; Interview'da görüşmeci aynı konuda dört soru sorar.",
+    "es": "Speaking: dos tareas. Cada tarea empieza con un escenario. En Listen and Repeat las oraciones se van alargando; en la entrevista, la persona que entrevista hace cuatro preguntas sobre un mismo tema."
+   },
+   "screens": [
+    {
+     "type": "listen_repeat",
+     "id": "p3_lr",
+     "scenario": {
+      "title": "Lab safety training",
+      "place": "Chemistry teaching laboratory",
+      "intro": "You are attending a safety training session before you can use the chemistry teaching lab. The instructor is explaining the lab rules. Listen and repeat what the instructor says."
+     },
+     "voice": "male",
+     "sentences": [
+      "Please put your bags away.",
+      "Always wear your safety glasses here.",
+      "Food and drinks are not allowed in here.",
+      "Please tie back long hair before you start any experiment.",
+      "If you spill anything, tell me right away instead of cleaning it yourself.",
+      "The emergency exits are marked in green, and there is a map beside each door.",
+      "Before you leave each session, check that the gas taps are closed and that your bench is clean for the next group."
+     ]
+    },
+    {
+     "type": "interview",
+     "id": "p3_iv",
+     "scenario": {
+      "title": "Research study: how students take part in clubs",
+      "place": "Student activities office",
+      "intro": "A researcher from the sociology department is interviewing students about how they take part in clubs and student organizations."
+     },
+     "interviewerVoice": "male",
+     "questions": [
+      {
+       "level": "factual",
+       "text": "To start, could you tell me whether you belong to any clubs or student groups, and how you first heard about them?",
+       "prep": 3,
+       "respSeconds": 45
+      },
+      {
+       "level": "experience",
+       "text": "Can you describe an event organized by students that you went to, and what made it memorable or disappointing for you?",
+       "prep": 3,
+       "respSeconds": 45
+      },
+      {
+       "level": "opinion",
+       "text": "Some people think universities should give student clubs more money, even if that means less funding for other campus services. What is your opinion, and why?",
+       "prep": 3,
+       "respSeconds": 45
+      },
+      {
+       "level": "prediction",
+       "text": "How do you think student clubs will change over the next ten years, especially as more activities move online?",
+       "prep": 3,
+       "respSeconds": 45
+      }
+     ]
+    }
+   ]
+  }
+ ],
+ "units": [
+  "p3_ctw_twinkling_stars",
+  "p3_ctw_ancient_middens",
+  "p3_dl_graduation_photos",
+  "p3_dl_microscope_booking",
+  "p3_ac_three_field_system",
+  "p3_ctw_metal_fatigue",
+  "p3_dl_course_withdrawal",
+  "p3_ac_weak_ties",
+  "p3_ctw_salmon_homing",
+  "p3_dl_fitness_signup",
+  "p3_ac_ocean_light",
+  "p3_cr2",
+  "p3_cr1",
+  "p3_cr4",
+  "p3_cr3",
+  "p3_cr6",
+  "p3_cr5",
+  "p3_cr8",
+  "p3_cr7",
+  "p3_cr9",
+  "p3_conv_room_swap",
+  "p3_conv_tutoring_center",
+  "p3_conv_radio_show",
+  "p3_ann_shuttle_timetable",
+  "p3_ann_study_abroad",
+  "p3_talk_pianoforte",
+  "p3_hcr2",
+  "p3_hcr5",
+  "p3_hcr3",
+  "p3_hcr8",
+  "p3_hcr1",
+  "p3_hcr7",
+  "p3_hcr4",
+  "p3_hcr6",
+  "p3_conv_scholarship_letter",
+  "p3_conv_news_story",
+  "p3_ann_lab_safety",
+  "p3_talk_bird_navigation",
+  "p3_talk_planet_transits",
+  "p3_ecr2",
+  "p3_ecr5",
+  "p3_ecr3",
+  "p3_ecr8",
+  "p3_ecr1",
+  "p3_ecr7",
+  "p3_ecr6",
+  "p3_ecr4",
+  "p3_conv_garden_volunteers",
+  "p3_ann_club_funding",
+  "p3_talk_hillside_terraces",
+  "p3_bs3",
+  "p3_bs6",
+  "p3_bs1",
+  "p3_bs8",
+  "p3_bs4",
+  "p3_bs10",
+  "p3_bs7",
+  "p3_bs2",
+  "p3_bs9",
+  "p3_bs5",
+  "p3_email",
+  "p3_disc",
+  "p3_lr",
+  "p3_iv"
+ ]
+}

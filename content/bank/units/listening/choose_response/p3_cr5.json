@@ -1,0 +1,29 @@
+{
+ "id": "p3_cr5",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "lunch invitation",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_cr5",
+  "audio": [
+   {
+    "text": "Do you want to grab lunch after the seminar?",
+    "voice": "female:gb"
+   }
+  ],
+  "options": [
+   "I'd love to, but I have a meeting at one.",
+   "The seminar room is on the second floor.",
+   "I grabbed a few notes from the board.",
+   "Yes, the seminar starts at eleven."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Invitation → a polite refusal with a reason. C repeats \"grab\" with another meaning; D says \"Yes\" but talks about the seminar, not lunch.",
+   "tr": "Davet → gerekçeli, kibar bir ret. C \"grab\" kelimesini başka anlamda tekrar ediyor; D \"Yes\" diyor ama öğle yemeğinden değil seminerden söz ediyor.",
+   "es": "Invitación → un rechazo amable con un motivo. C repite \"grab\" con otro significado; D dice \"Yes\", pero habla del seminario, no de la comida."
+  }
+ }
+}

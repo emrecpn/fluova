@@ -1,0 +1,29 @@
+{
+ "id": "p3_ecr1",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "buying a notebook",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_ecr1",
+  "audio": [
+   {
+    "text": "Where can I buy a notebook?",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "At the shop near the gate.",
+   "About three dollars each.",
+   "Yes, I need one too.",
+   "I bought one there yesterday."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "\"Where\" → a place. B gives a price; C answers with \"Yes\".",
+   "tr": "\"Where\" → yer. B fiyat veriyor; C \"Yes\" ile cevap veriyor.",
+   "es": "\"Where\" → un lugar. B da un precio; C responde \"Yes\"."
+  }
+ }
+}

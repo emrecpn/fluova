@@ -1,0 +1,68 @@
+{
+ "id": "p3_conv_scholarship_letter",
+ "task": "conversation",
+ "tier": "hard",
+ "topic": "scholarship deadline",
+ "origin": "practice-03",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: A late recommendation letter",
+  "prompt": "Listen to a conversation between a student and a financial aid adviser.",
+  "audio": [
+   {
+    "text": "Hi, the Morgan Scholarship is due on Friday, but one of my professors can't send her recommendation until next week. Will my application still count?",
+    "voice": "male:us"
+   },
+   {
+    "text": "The Friday deadline applies to your part: the essay and the form. Letters are accepted for five working days after that, as long as the recommender sends them to us directly.",
+    "voice": "female:gb"
+   },
+   {
+    "text": "Oh, that's a relief. So I shouldn't hold my application until her letter is ready?",
+    "voice": "male:us"
+   },
+   {
+    "text": "Definitely not. If your part arrives late, the committee won't look at it at all.",
+    "voice": "female:gb"
+   },
+   {
+    "text": "Got it. I'll finish the essay tonight, then.",
+    "voice": "male:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p3_conv_scholarship_letter_q1",
+    "stem": "Why does the student go to see the adviser?",
+    "options": [
+     "He wants permission to change the topic of his scholarship essay",
+     "He needs a form for a different scholarship",
+     "He is worried that a late letter will affect his application",
+     "He missed the deadline for the scholarship last Friday"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Purpose of the visit: his professor's letter will arrive after the deadline. D misreads the timing (the deadline is this coming Friday); A is never mentioned.",
+     "tr": "Ziyaretin amacı: hocasının mektubu son tarihten sonra gelecek. D zamanlamayı yanlış okuyor (son tarih önümüzdeki cuma); A hiç söz edilmiyor.",
+     "es": "Motivo de la visita: la carta de su profesora llegará después del plazo. D malinterpreta el momento (el plazo es este viernes que viene); A nunca se menciona."
+    }
+   },
+   {
+    "id": "p3_conv_scholarship_letter_q2",
+    "stem": "What does the adviser imply?",
+    "options": [
+     "The student's own materials must not be late",
+     "Professors should give their letters to the student",
+     "The committee may extend the deadline for him",
+     "The essay matters less than the application form"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Implication of \"If your part arrives late, the committee won't look at it\". B contradicts \"sends them to us directly\"; C is the opposite of what she says.",
+     "tr": "\"If your part arrives late, the committee won't look at it\" ifadesinin iması. B \"sends them to us directly\" bilgisiyle çelişiyor; C söylediğinin tam tersi.",
+     "es": "Implicación de \"If your part arrives late, the committee won't look at it\". B contradice \"sends them to us directly\"; C es lo contrario de lo que dice."
+    }
+   }
+  ]
+ }
+}

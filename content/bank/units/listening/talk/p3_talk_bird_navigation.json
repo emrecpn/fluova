@@ -1,0 +1,92 @@
+{
+ "id": "p3_talk_bird_navigation",
+ "task": "talk",
+ "tier": "hard",
+ "topic": "bird navigation",
+ "origin": "practice-03",
+ "screen": {
+  "type": "listening",
+  "title": "Academic Talk: How migrating birds find their way",
+  "prompt": "Listen to part of a lecture in a biology class.",
+  "audio": [
+   {
+    "text": "Every autumn, millions of songbirds fly thousands of kilometers to their wintering grounds, and many of them travel at night, alone, on their very first journey. So how do they know which way to go? It turns out they don't rely on a single cue. They carry what amounts to several compasses.",
+    "voice": "female:us"
+   },
+   {
+    "text": "One is the sun. Birds that fly by day can judge direction from the sun's position, adjusting for the time of day. Night migrants need something else, and a classic experiment revealed what it was. Researchers raised young birds in a planetarium, under an artificial sky that rotated around a different star than the real North Star. When migration season arrived, the birds oriented themselves using that false center of rotation. In other words, they had learned the pattern of the sky; they hadn't inherited a map of particular stars.",
+    "voice": "female:us"
+   },
+   {
+    "text": "Birds also sense the Earth's magnetic field. Interestingly, their magnetic compass doesn't distinguish north from south the way ours does. Instead, it detects the angle at which the field lines dip toward the ground, which tells a bird whether it's heading toward the pole or toward the equator. And on overcast nights, when the stars disappear, that magnetic sense appears to keep them on course.",
+    "voice": "female:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p3_talk_bird_navigation_q1",
+    "stem": "What is the lecture mainly about?",
+    "options": [
+     "Why songbirds prefer to migrate at night rather than by day",
+     "The different cues birds use to orient themselves during migration",
+     "How planetariums are used to teach university students about the night sky",
+     "Why young birds follow older birds on long journeys"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Main idea: birds use several \"compasses\" (the sun, the stars, the magnetic field). D contradicts \"alone, on their very first journey\"; C turns the setting of the experiment into the topic.",
+     "tr": "Ana fikir: kuşlar birkaç \"pusula\" kullanır (güneş, yıldızlar, manyetik alan). D \"alone, on their very first journey\" ile çelişiyor; C deneyin yapıldığı yeri konu hâline getiriyor.",
+     "es": "Idea principal: las aves usan varias \"brújulas\" (el sol, las estrellas, el campo magnético). D contradice \"alone, on their very first journey\"; C convierte el lugar del experimento en el tema."
+    }
+   },
+   {
+    "id": "p3_talk_bird_navigation_q2",
+    "stem": "What did the planetarium experiment show?",
+    "options": [
+     "Birds lose their sense of direction completely when the sky rotates",
+     "Birds prefer artificial light to real starlight",
+     "Night migrants depend mainly on the position of the sun",
+     "Young birds learn the sky's pattern instead of inheriting it"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Detail/inference: the birds used the false center of rotation, so they \"had learned the pattern of the sky\". A contradicts the result (they oriented themselves successfully); C applies to day migrants.",
+     "tr": "Ayrıntı/çıkarım: kuşlar sahte dönme merkezini kullandı, yani \"had learned the pattern of the sky\". A sonuçla çelişiyor (kuşlar yönlerini buldu); C gündüz göç eden kuşlar için geçerli.",
+     "es": "Detalle/inferencia: las aves usaron el falso centro de rotación, así que \"had learned the pattern of the sky\". A contradice el resultado (se orientaron sin problema); C se aplica a las aves que migran de día."
+    }
+   },
+   {
+    "id": "p3_talk_bird_navigation_q3",
+    "stem": "According to the professor, what does a bird's magnetic compass detect?",
+    "options": [
+     "The angle at which the field lines meet the ground",
+     "The difference between magnetic north and south",
+     "The direction in which the night sky rotates",
+     "The distance remaining to the bird's wintering grounds"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Detail: it \"detects the angle at which the field lines dip toward the ground\". B is exactly what the professor says it does not do; C belongs to the star compass.",
+     "tr": "Ayrıntı: \"detects the angle at which the field lines dip toward the ground\". B profesörün tam olarak yapmadığını söylediği şey; C yıldız pusulasına ait.",
+     "es": "Detalle: \"detects the angle at which the field lines dip toward the ground\". B es justo lo que la profesora dice que no hace; C corresponde a la brújula estelar."
+    }
+   },
+   {
+    "id": "p3_talk_bird_navigation_q4",
+    "stem": "What can be inferred about a night migrant flying under heavy cloud?",
+    "options": [
+     "It must land until the stars return",
+     "It will steer by the position of the sun",
+     "It can still navigate without seeing the sky",
+     "It will follow birds of its own species"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Inference: on overcast nights the magnetic sense \"appears to keep them on course\". A contradicts that; B is impossible at night.",
+     "tr": "Çıkarım: kapalı gecelerde manyetik duyu \"appears to keep them on course\". A bununla çelişiyor; B gece mümkün değil.",
+     "es": "Inferencia: en noches nubladas, el sentido magnético \"appears to keep them on course\". A lo contradice; B es imposible de noche."
+    }
+   }
+  ]
+ }
+}

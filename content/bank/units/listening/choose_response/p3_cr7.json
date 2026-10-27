@@ -1,0 +1,29 @@
+{
+ "id": "p3_cr7",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "missing ID card",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_cr7",
+  "audio": [
+   {
+    "text": "I can't find my student ID card anywhere.",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "My student number starts with a four.",
+   "Anywhere is fine with me, really.",
+   "I found the library much quieter than usual today.",
+   "Have you checked the pockets of your jacket?"
+  ],
+  "answer": 3,
+  "why": {
+   "en": "Problem → a helpful suggestion. B repeats \"anywhere\" as if a choice had been offered; C uses \"found\" in a different sense; A only repeats \"student\".",
+   "tr": "Sorun → yardımcı bir öneri. B \"anywhere\" kelimesini sanki bir seçenek sunulmuş gibi tekrar ediyor; C \"found\" kelimesini başka anlamda kullanıyor; A yalnızca \"student\" kelimesini tekrar ediyor.",
+   "es": "Problema → una sugerencia útil. B repite \"anywhere\" como si le hubieran ofrecido elegir; C usa \"found\" con otro sentido; A solo repite \"student\"."
+  }
+ }
+}

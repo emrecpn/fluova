@@ -1,0 +1,29 @@
+{
+ "id": "p3_hcr8",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "rainy picnic",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_hcr8",
+  "audio": [
+   {
+    "text": "I doubt the rain will stop before the picnic starts.",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "We had a lot of fun at last year's picnic, didn't we?",
+   "I stopped at the store on the way to buy drinks.",
+   "Then we could hold it in the common room instead.",
+   "I doubt she'll be late, since she never is."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "Doubt → an alternative plan (\"Then we could...\"). B repeats \"stop\" in a different sense; D repeats \"doubt\" about something unrelated; A talks about a past picnic instead of responding.",
+   "tr": "Şüphe → alternatif bir plan (\"Then we could...\"). B \"stop\" kelimesini başka anlamda tekrar ediyor; D \"doubt\" kelimesini ilgisiz bir konuda tekrar ediyor; A cevap vermek yerine geçen yılki pikniği anlatıyor.",
+   "es": "Duda → un plan alternativo (\"Then we could...\"). B repite \"stop\" con otro sentido; D repite \"doubt\" sobre algo que no tiene relación; A habla de un pícnic pasado en vez de responder."
+  }
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "id": "p3_bs6",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "postponed game",
+ "origin": "practice-03",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p3_bs6",
+  "personA": "Did the coach say anything about Saturday's game?",
+  "frame": [
+   "He told us",
+   null,
+   null,
+   null,
+   null,
+   "because of the rain."
+  ],
+  "answer": [
+   "that",
+   "it",
+   "had been",
+   "postponed"
+  ],
+  "distractors": []
+ }
+}

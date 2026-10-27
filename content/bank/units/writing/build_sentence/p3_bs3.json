@@ -1,0 +1,27 @@
+{
+ "id": "p3_bs3",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "post office errand",
+ "origin": "practice-03",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p3_bs3",
+  "personA": "I'm going to the post office after class.",
+  "frame": [
+   "Can you",
+   null,
+   null,
+   null,
+   null,
+   "padded envelopes?"
+  ],
+  "answer": [
+   "check",
+   "if",
+   "they",
+   "sell"
+  ],
+  "distractors": []
+ }
+}

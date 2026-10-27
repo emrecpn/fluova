@@ -1,0 +1,50 @@
+{
+ "id": "p3_dl_fitness_signup",
+ "task": "daily_life",
+ "tier": "easy",
+ "topic": "fitness classes",
+ "origin": "practice-03",
+ "screen": {
+  "type": "passage",
+  "title": "Fitness Class Sign-Up",
+  "directions": "Read in Daily Life (sign)",
+  "text": [
+   "<strong>Fitness Class Sign-Up</strong>",
+   "Spring yoga and dance classes are free for students. Sign up at the front desk with your student ID. Each class has 20 places. If a class is full, add your name to the waiting list."
+  ],
+  "questions": [
+   {
+    "id": "p3_dl_fitness_signup_q1",
+    "stem": "How can students join a class?",
+    "options": [
+     "By paying for it at the desk",
+     "By calling the yoga teacher",
+     "By signing up at the front desk",
+     "By sending an email to the sports center"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Detail: \"Sign up at the front desk with your student ID\". A contradicts \"free for students\".",
+     "tr": "Ayrıntı: \"Sign up at the front desk with your student ID\". A \"free for students\" bilgisiyle çelişiyor.",
+     "es": "Detalle: \"Sign up at the front desk with your student ID\". A contradice \"free for students\"."
+    }
+   },
+   {
+    "id": "p3_dl_fitness_signup_q2",
+    "stem": "What should a student do if a class is full?",
+    "options": [
+     "Put their name on the waiting list",
+     "Come back when the next term starts",
+     "Join a dance class at the same time",
+     "Ask the desk staff for a bigger room"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Detail: \"add your name to the waiting list\". C is not suggested anywhere on the sign.",
+     "tr": "Ayrıntı: \"add your name to the waiting list\". C tabelada hiçbir yerde önerilmiyor.",
+     "es": "Detalle: \"add your name to the waiting list\". C no se sugiere en ningún lugar del cartel."
+    }
+   }
+  ]
+ }
+}

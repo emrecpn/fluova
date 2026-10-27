@@ -1,0 +1,12 @@
+{
+ "id": "p3_ctw_twinkling_stars",
+ "task": "ctw",
+ "tier": "medium",
+ "topic": "stellar twinkling",
+ "origin": "practice-03",
+ "screen": {
+  "type": "ctw",
+  "title": "Complete the Words: Twinkling stars",
+  "source": "On a clear night, the stars seem to flicker and change color, even though the light they give off is actually steady. This effect, called twinkling, is caused by the air above us rather than by the stars themselves. Before starlight reaches our eyes, it passes through layers of air that differ in temperature and density. Each layer bends the light slightly, and because the layers are always moving, the image of the star shifts many times per second. Planets usually twinkle less, since they appear as tiny disks rather than single points of light."
+ }
+}

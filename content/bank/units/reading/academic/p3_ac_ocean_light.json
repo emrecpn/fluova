@@ -1,0 +1,98 @@
+{
+ "id": "p3_ac_ocean_light",
+ "task": "academic",
+ "tier": "easy",
+ "topic": "ocean light zones",
+ "origin": "practice-03",
+ "screen": {
+  "type": "passage",
+  "title": "Light in the Ocean",
+  "directions": "Read an Academic Passage — lower module",
+  "text": [
+   "Sunlight does not go very deep into the ocean. Scientists divide the ocean into zones based on how much light reaches them. The top zone, down to about 200 meters, gets plenty of sunlight. Most sea plants and many fish live there.",
+   "Below that is the twilight zone. Only a little blue light reaches it, and plants cannot grow there. Deeper still, below 1,000 meters, the water is completely dark. Many animals in this deep zone make their own light. They use it to find food, to attract partners, or to confuse enemies."
+  ],
+  "questions": [
+   {
+    "id": "p3_ac_ocean_light_q1",
+    "stem": "What is the passage mainly about?",
+    "options": [
+     "Why fish need blue light in order to grow",
+     "How scientists measure how deep the sea is",
+     "Why most sea plants live in shallow water close to the shore",
+     "How the amount of light changes with depth in the ocean"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Main idea: the passage describes the ocean's zones by the light that reaches them. A and C are never discussed; B misreads \"Scientists divide the ocean into zones\".",
+     "tr": "Ana fikir: metin okyanus katmanlarını aldıkları ışığa göre anlatıyor. A ve C metinde hiç geçmiyor; B \"Scientists divide the ocean into zones\" cümlesini yanlış okuyor.",
+     "es": "Idea principal: el texto describe las zonas del océano según la luz que les llega. A y C no se tratan; B malinterpreta \"Scientists divide the ocean into zones\"."
+    }
+   },
+   {
+    "id": "p3_ac_ocean_light_q2",
+    "stem": "According to the passage, where do most sea plants live?",
+    "options": [
+     "In the twilight zone of the ocean",
+     "In the water below 1,000 meters",
+     "In the top zone of the ocean",
+     "Next to deep-sea animals"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Detail: \"Most sea plants and many fish live there\", in the top zone. A is the zone where \"plants cannot grow\".",
+     "tr": "Ayrıntı: \"Most sea plants and many fish live there\", yani en üst katmanda. A \"plants cannot grow\" denen katman.",
+     "es": "Detalle: \"Most sea plants and many fish live there\", es decir, en la zona superior. A es la zona donde \"plants cannot grow\"."
+    }
+   },
+   {
+    "id": "p3_ac_ocean_light_q3",
+    "stem": "The word \"plenty\" in the passage is closest in meaning to",
+    "options": [
+     "a small amount",
+     "a large amount",
+     "a certain color",
+     "a short time"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Vocabulary in context: the top zone \"gets plenty of sunlight\" = a large amount. A is the opposite meaning.",
+     "tr": "Bağlamda kelime: en üst katman \"gets plenty of sunlight\" = bol miktarda alıyor. A tam tersi anlam.",
+     "es": "Vocabulario en contexto: la zona superior \"gets plenty of sunlight\" = recibe mucha luz. A significa lo contrario."
+    }
+   },
+   {
+    "id": "p3_ac_ocean_light_q4",
+    "stem": "Why can't plants grow in the twilight zone?",
+    "options": [
+     "There is not enough light for them",
+     "The water there is completely dark",
+     "The animals there eat all of them",
+     "The water there is far too salty"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference: only \"a little blue light\" reaches this zone, so plants lack the light they need. B describes the zone below 1,000 meters, not the twilight zone.",
+     "tr": "Çıkarım: bu katmana yalnızca \"a little blue light\" ulaşıyor, bitkilere yetecek ışık yok. B alacakaranlık katmanını değil, 1.000 metrenin altındaki katmanı anlatıyor.",
+     "es": "Inferencia: a esta zona solo llega \"a little blue light\", así que a las plantas les falta luz. B describe la zona por debajo de los 1.000 metros, no la zona de penumbra."
+    }
+   },
+   {
+    "id": "p3_ac_ocean_light_q5",
+    "stem": "What is one way deep-sea animals use their own light?",
+    "options": [
+     "To help plants grow in the dark",
+     "To warm the cold water around them",
+     "To help them catch food",
+     "To show scientists where they live"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Detail (paraphrase of \"to find food\"). A contradicts the passage: no plants grow in the deep zone.",
+     "tr": "Ayrıntı (\"to find food\" ifadesinin parafrazı). A metinle çelişiyor: derin katmanda bitki yetişmiyor.",
+     "es": "Detalle (paráfrasis de \"to find food\"). A contradice el texto: en la zona profunda no crecen plantas."
+    }
+   }
+  ]
+ }
+}

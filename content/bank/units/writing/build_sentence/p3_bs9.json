@@ -1,0 +1,27 @@
+{
+ "id": "p3_bs9",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "concert plans",
+ "origin": "practice-03",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p3_bs9",
+  "personA": "Are you coming to the concert on Friday?",
+  "frame": [
+   "I'd like to, but",
+   null,
+   null,
+   null,
+   null,
+   "my lab report first."
+  ],
+  "answer": [
+   "I",
+   "need",
+   "to finish",
+   "writing"
+  ],
+  "distractors": []
+ }
+}

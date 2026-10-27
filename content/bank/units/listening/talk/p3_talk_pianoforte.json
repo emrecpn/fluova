@@ -1,0 +1,92 @@
+{
+ "id": "p3_talk_pianoforte",
+ "task": "talk",
+ "tier": "medium",
+ "topic": "piano history",
+ "origin": "practice-03",
+ "screen": {
+  "type": "listening",
+  "title": "Academic Talk: From harpsichord to piano",
+  "prompt": "Listen to part of a lecture in a music history class.",
+  "audio": [
+   {
+    "text": "Today I want to look at an instrument you all know, the piano, and why it was such an important change. Before about 1700, the main keyboard instrument in Europe was the harpsichord. When you press a key on a harpsichord, a small hook plucks the string. The problem is that the hook plucks it in the same way no matter how hard you press, so a player can't make one note louder than another.",
+    "voice": "male:au"
+   },
+   {
+    "text": "Around 1700, an instrument maker in Florence, Bartolomeo Cristofori, replaced the hook with a small hammer that strikes the string and then falls away. Press the key gently and the hammer hits softly; press it hard and the note is loud. That's where the name comes from: pianoforte means soft-loud in Italian.",
+    "voice": "male:au"
+   },
+   {
+    "text": "Interestingly, the new instrument didn't catch on right away. Early pianos were quiet and expensive, and many musicians saw no reason to give up the harpsichord. It took several decades before composers began writing music that depended on gradual changes in volume. Then, in the nineteenth century, builders added iron frames, which could hold thicker strings under much greater tension. Pianos became loud enough to fill large concert halls, and that's the instrument we recognize today.",
+    "voice": "male:au"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p3_talk_pianoforte_q1",
+    "stem": "What is the lecture mainly about?",
+    "options": [
+     "The development of a keyboard that could play softly or loudly",
+     "Why many performers today still prefer the harpsichord to the piano",
+     "How concert halls in Florence were designed for music",
+     "The life and work of a famous composer of the 1700s"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main idea: how the piano solved the harpsichord's volume problem and later grew louder. B reverses the direction of the lecture; C misuses \"Florence\", where the inventor worked.",
+     "tr": "Ana fikir: piyanonun klavsenin ses şiddeti sorununu nasıl çözdüğü ve sonra nasıl daha güçlü hâle geldiği. B dersin yönünü tersine çeviriyor; C mucidin çalıştığı yer olan \"Florence\" kelimesini yanlış kullanıyor.",
+     "es": "Idea principal: cómo el piano resolvió el problema de volumen del clavecín y después ganó potencia. B invierte el sentido de la clase; C usa mal \"Florence\", donde trabajaba el inventor."
+    }
+   },
+   {
+    "id": "p3_talk_pianoforte_q2",
+    "stem": "According to the professor, what was the main limitation of the harpsichord?",
+    "options": [
+     "Its strings often broke when the keys were pressed hard",
+     "It was much too loud for small rooms in private homes",
+     "Players could not make some notes louder than others",
+     "Its hammers fell away from the strings too quickly"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Detail: the hook plucks the string \"in the same way no matter how hard you press\". D gives the harpsichord the piano's hammers; A is never mentioned.",
+     "tr": "Ayrıntı: kanca teli \"in the same way no matter how hard you press\" çekiyor. D piyanonun çekiçlerini klavsene mal ediyor; A hiç söylenmiyor.",
+     "es": "Detalle: el gancho pulsa la cuerda \"in the same way no matter how hard you press\". D atribuye al clavecín los martillos del piano; A nunca se menciona."
+    }
+   },
+   {
+    "id": "p3_talk_pianoforte_q3",
+    "stem": "Why does the professor explain the meaning of the word \"pianoforte\"?",
+    "options": [
+     "To prove that the piano was invented by an Italian composer",
+     "To explain why early pianos were so expensive to build",
+     "To introduce a second instrument made in Florence",
+     "To show that the name describes what the instrument could do"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Purpose: \"soft-loud\" names exactly the new ability to vary the volume. A turns the instrument maker into a composer; B links the name to a different point.",
+     "tr": "Amaç: \"soft-loud\", ses şiddetini değiştirme yeteneğini tam olarak adlandırıyor. A çalgı yapımcısını besteciye dönüştürüyor; B adı başka bir noktaya bağlıyor.",
+     "es": "Propósito: \"soft-loud\" nombra justo la nueva capacidad de variar el volumen. A convierte al fabricante de instrumentos en compositor; B relaciona el nombre con otro punto."
+    }
+   },
+   {
+    "id": "p3_talk_pianoforte_q4",
+    "stem": "What does the professor imply about nineteenth-century pianos?",
+    "options": [
+     "They cost much less to build than the earliest pianos did",
+     "They could be heard clearly in big performance spaces",
+     "They went back to using hooks instead of hammers",
+     "They were played mostly in small private homes"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Inference from \"loud enough to fill large concert halls\". D contradicts that point; C reverses the history of the mechanism.",
+     "tr": "\"Loud enough to fill large concert halls\" ifadesinden çıkarım. D bununla çelişiyor; C mekanizmanın tarihini tersine çeviriyor.",
+     "es": "Inferencia a partir de \"loud enough to fill large concert halls\". D contradice esa idea; C invierte la historia del mecanismo."
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "id": "p3_cr3",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "locked building",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_cr3",
+  "audio": [
+   {
+    "text": "Why is the science building locked this afternoon?",
+    "voice": "female:au"
+   }
+  ],
+  "options": [
+   "Yes, I locked my bike to the railing right outside it.",
+   "Until about five o'clock today.",
+   "It's the tall one next to the library.",
+   "They're replacing some of the windows, I heard."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "\"Why\" → a reason. A answers with \"Yes\" and repeats \"locked\"; B gives a time; C says where the building is.",
+   "tr": "\"Why\" → sebep. A \"Yes\" diyor ve \"locked\" kelimesini tekrar ediyor; B zaman veriyor; C binanın nerede olduğunu söylüyor.",
+   "es": "\"Why\" → un motivo. A responde \"Yes\" y repite \"locked\"; B da una hora; C dice dónde está el edificio."
+  }
+ }
+}

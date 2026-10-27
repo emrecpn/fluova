@@ -1,0 +1,68 @@
+{
+ "id": "p3_conv_garden_volunteers",
+ "task": "conversation",
+ "tier": "easy",
+ "topic": "garden volunteering",
+ "origin": "practice-03",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Helping at the campus garden",
+  "prompt": "Listen to a conversation between two students.",
+  "audio": [
+   {
+    "text": "Hi, are you in charge of the campus garden? I'd like to help out.",
+    "voice": "female:us"
+   },
+   {
+    "text": "That's great! We work every Saturday morning, from nine to twelve.",
+    "voice": "male:au"
+   },
+   {
+    "text": "Do I need any experience?",
+    "voice": "female:us"
+   },
+   {
+    "text": "No, we'll show you everything. Just wear old clothes and bring a bottle of water. We have gloves and tools for everyone.",
+    "voice": "male:au"
+   },
+   {
+    "text": "Perfect. I'll come this Saturday.",
+    "voice": "female:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p3_conv_garden_volunteers_q1",
+    "stem": "What does the woman want to do?",
+    "options": [
+     "Buy vegetables from the garden",
+     "Help at the campus garden",
+     "Take a class about gardening",
+     "Borrow some garden tools"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Main idea: \"I'd like to help out\". D misuses \"tools\", which the volunteers are given.",
+     "tr": "Ana fikir: \"I'd like to help out\". D gönüllülere verilen \"tools\" kelimesini yanlış kullanıyor.",
+     "es": "Idea principal: \"I'd like to help out\". D usa mal \"tools\", que se les dan a los voluntarios."
+    }
+   },
+   {
+    "id": "p3_conv_garden_volunteers_q2",
+    "stem": "What should the woman bring?",
+    "options": [
+     "Her own gloves",
+     "Some garden tools",
+     "New clothes",
+     "A bottle of water"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Detail: \"bring a bottle of water\". A and B are provided by the garden; C contradicts \"wear old clothes\".",
+     "tr": "Ayrıntı: \"bring a bottle of water\". A ve B bahçe tarafından veriliyor; C \"wear old clothes\" ile çelişiyor.",
+     "es": "Detalle: \"bring a bottle of water\". A y B los pone el huerto; C contradice \"wear old clothes\"."
+    }
+   }
+  ]
+ }
+}

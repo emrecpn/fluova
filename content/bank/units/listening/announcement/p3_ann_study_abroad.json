@@ -1,0 +1,52 @@
+{
+ "id": "p3_ann_study_abroad",
+ "task": "announcement",
+ "tier": "medium",
+ "topic": "study abroad",
+ "origin": "practice-03",
+ "screen": {
+  "type": "listening",
+  "title": "Announcement: Study-abroad information session",
+  "prompt": "Listen to an announcement at the end of a class.",
+  "audio": [
+   {
+    "text": "Before you go, a quick message from the International Office. If you're thinking about spending next year at one of our partner universities, there's an information session this Wednesday at four in the Lecture Theatre. Former exchange students will talk about housing, costs, and course credit. Applications open the following Monday, and places at the most popular universities usually fill within two weeks, so it's well worth coming along.",
+    "voice": "female:au"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p3_ann_study_abroad_q1",
+    "stem": "What is the purpose of the announcement?",
+    "options": [
+     "To introduce a new international relations course",
+     "To invite students to learn about studying overseas",
+     "To remind students that applications are due",
+     "To report a change to Wednesday's lectures"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Purpose (paraphrase): an invitation to an information session about spending a year at a partner university. C confuses the session with a deadline (applications only open the following Monday).",
+     "tr": "Amaç (parafraz): bir yılı anlaşmalı bir üniversitede geçirmeyle ilgili bilgilendirme toplantısına davet. C toplantıyı bir son tarihle karıştırıyor (başvurular ancak sonraki pazartesi açılıyor).",
+     "es": "Propósito (paráfrasis): una invitación a una sesión informativa sobre pasar un año en una universidad asociada. C confunde la sesión con un plazo (las solicitudes no se abren hasta el lunes siguiente)."
+    }
+   },
+   {
+    "id": "p3_ann_study_abroad_q2",
+    "stem": "Why does the speaker recommend attending the session?",
+    "options": [
+     "Attendance is required in order to apply",
+     "Students will receive course credit for attending",
+     "The session will not be offered again this year",
+     "Spaces at some universities are taken quickly"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Reason (paraphrase of \"places ... usually fill within two weeks\"). B misuses \"course credit\", which is only one of the topics; A and C are never said.",
+     "tr": "Sebep (\"places ... usually fill within two weeks\" ifadesinin parafrazı). B yalnızca konulardan biri olan \"course credit\" ifadesini yanlış kullanıyor; A ve C hiç söylenmiyor.",
+     "es": "Motivo (paráfrasis de \"places ... usually fill within two weeks\"). B usa mal \"course credit\", que solo es uno de los temas; A y C nunca se dicen."
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "id": "p3_dl_graduation_photos",
+ "task": "daily_life",
+ "tier": "medium",
+ "topic": "graduation photos",
+ "origin": "practice-03",
+ "screen": {
+  "type": "passage",
+  "title": "Notice: Graduation Photo Day",
+  "directions": "Read in Daily Life (notice)",
+  "text": [
+   "<strong>Graduation Photo Day — Thursday, April 17</strong>",
+   "Graduating students can have their official portraits taken free of charge in the Student Union ballroom between 10 a.m. and 6 p.m. Gowns will be provided, but please bring your own tie or scarf if you would like to wear one. To keep waiting times short, choose a fifteen-minute time slot on the alumni website by Monday. Students who arrive without a booking will be photographed only if a slot becomes free."
+  ],
+  "questions": [
+   {
+    "id": "p3_dl_graduation_photos_q1",
+    "stem": "What is the main purpose of the notice?",
+    "options": [
+     "To announce that the graduation ceremony will be held in the ballroom",
+     "To explain how final-year students can get their official photos",
+     "To ask graduating students to return the gowns they borrowed",
+     "To advertise a photography course for students in their last year"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Main purpose (paraphrase): the notice tells graduating students how to have their portraits taken. A confuses the photo session with the ceremony; C misuses the word \"gowns\", which will be provided on the day.",
+     "tr": "Ana amaç (parafraz): duyuru, mezun olacak öğrencilere portre fotoğraflarını nasıl çektireceklerini anlatıyor. A fotoğraf çekimini mezuniyet töreniyle karıştırıyor; C \"gowns\" kelimesini yanlış kullanıyor, cübbeler o gün zaten verilecek.",
+     "es": "Propósito principal (paráfrasis): el aviso explica a quienes se gradúan cómo hacerse el retrato oficial. A confunde la sesión de fotos con la ceremonia; C usa mal la palabra \"gowns\": las togas se entregan ese mismo día."
+    }
+   },
+   {
+    "id": "p3_dl_graduation_photos_q2",
+    "stem": "What are students asked to do by Monday?",
+    "options": [
+     "Pay a small fee for their portrait at the union",
+     "Collect a gown from the Student Union ballroom",
+     "Bring a tie or scarf to the alumni office",
+     "Reserve a time on the alumni website"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Detail (paraphrase of \"choose a fifteen-minute time slot ... by Monday\"). A contradicts \"free of charge\"; B misreads the gown information, since gowns are handed out at the session itself.",
+     "tr": "Ayrıntı (\"choose a fifteen-minute time slot ... by Monday\" ifadesinin parafrazı). A \"free of charge\" bilgisiyle çelişiyor; B cübbe bilgisini yanlış okuyor, cübbeler çekimin kendisinde veriliyor.",
+     "es": "Detalle (paráfrasis de \"choose a fifteen-minute time slot ... by Monday\"). A contradice \"free of charge\"; B malinterpreta lo de las togas, que se entregan en la propia sesión."
+    }
+   }
+  ]
+ }
+}

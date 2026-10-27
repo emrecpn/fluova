@@ -1,0 +1,66 @@
+{
+ "id": "p3_dl_course_withdrawal",
+ "task": "daily_life",
+ "tier": "hard",
+ "topic": "course withdrawal",
+ "origin": "practice-03",
+ "screen": {
+  "type": "passage",
+  "title": "Updated Course Withdrawal Policy",
+  "directions": "Read in Daily Life (policy notice)",
+  "text": [
+   "<strong>Updated Course Withdrawal Policy</strong>",
+   "Beginning this fall, students may withdraw from a course through the student portal until the end of the tenth week of the semester; previously, the limit was the eighth week. Withdrawals made after the second week will appear on the transcript as a \"W,\" which does not affect the grade point average. Tuition is refunded in full only for withdrawals completed during the first two weeks. Students holding scholarships that require full-time enrollment should consult the Financial Aid Office before withdrawing, since dropping below twelve credits may reduce their award. After the tenth week, withdrawals are approved only in documented exceptional circumstances."
+  ],
+  "questions": [
+   {
+    "id": "p3_dl_course_withdrawal_q1",
+    "stem": "What is the main change described in the notice?",
+    "options": [
+     "Students can no longer withdraw through the online portal",
+     "Tuition refunds will now cover the first ten weeks of a term",
+     "A \"W\" on the transcript will now lower the grade point average",
+     "The period for leaving a class has been extended"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Main change (paraphrase): the deadline moves from the eighth to the tenth week. B mixes up the refund period with the withdrawal deadline; C contradicts \"does not affect the grade point average\".",
+     "tr": "Ana değişiklik (parafraz): son tarih sekizinci haftadan onuncu haftaya kayıyor. B ücret iadesi süresini çekilme son tarihiyle karıştırıyor; C \"does not affect the grade point average\" bilgisiyle çelişiyor.",
+     "es": "Cambio principal (paráfrasis): el plazo pasa de la octava a la décima semana. B confunde el periodo de reembolso con el plazo para retirarse; C contradice \"does not affect the grade point average\"."
+    }
+   },
+   {
+    "id": "p3_dl_course_withdrawal_q2",
+    "stem": "What can be inferred about a student who withdraws from a course in the fourth week?",
+    "options": [
+     "The course will not appear on the student's transcript",
+     "Not all of the money they paid will be returned",
+     "The student's grade point average will be lowered",
+     "The student must provide documents explaining the decision"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Inference: full refunds are given only in the first two weeks, so a fourth-week withdrawal does not qualify. A applies only to very early withdrawals (a \"W\" appears after week two); D describes withdrawals after the tenth week.",
+     "tr": "Çıkarım: tam iade yalnızca ilk iki haftada yapılıyor, dördüncü haftadaki çekilme bu kapsama girmiyor. A yalnızca çok erken çekilmeler için geçerli (ikinci haftadan sonra transkriptte \"W\" görünür); D onuncu haftadan sonraki çekilmeleri anlatıyor.",
+     "es": "Inferencia: el reembolso completo solo se da en las dos primeras semanas, así que retirarse en la cuarta no da derecho a él. A solo vale para retiradas muy tempranas (tras la segunda semana aparece una \"W\"); D describe las retiradas después de la décima semana."
+    }
+   },
+   {
+    "id": "p3_dl_course_withdrawal_q3",
+    "stem": "Why should some scholarship holders contact the Financial Aid Office?",
+    "options": [
+     "Their scholarships pay tuition only for the first two weeks",
+     "They are not allowed to use the student portal to withdraw",
+     "Taking fewer credits could reduce the money they receive",
+     "They need special approval to take more than twelve credits"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Detail (paraphrase of \"dropping below twelve credits may reduce their award\"). D reverses the direction (more instead of fewer credits); A borrows the two-week refund rule.",
+     "tr": "Ayrıntı (\"dropping below twelve credits may reduce their award\" ifadesinin parafrazı). D yönü tersine çeviriyor (daha az yerine daha fazla kredi); A iki haftalık iade kuralını ödünç alıyor.",
+     "es": "Detalle (paráfrasis de \"dropping below twelve credits may reduce their award\"). D invierte la dirección (más créditos en vez de menos); A toma prestada la regla del reembolso de dos semanas."
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "id": "p3_talk_hillside_terraces",
+ "task": "talk",
+ "tier": "easy",
+ "topic": "terrace farming",
+ "origin": "practice-03",
+ "screen": {
+  "type": "listening",
+  "title": "Academic Talk: Farming on hillsides",
+  "prompt": "Listen to part of a talk in a history class.",
+  "audio": [
+   {
+    "text": "Today let's talk about farming on steep hills. Farming on a slope is hard. When it rains, water runs down the hill very fast, and it carries the good soil away with it. So, thousands of years ago, farmers in many mountain areas found a clever answer. They built terraces. A terrace is a flat step cut into the side of a hill, usually held up by a low stone wall. A hill with terraces looks like a giant staircase. On each flat step, rainwater slows down and sinks into the ground, and the soil stays in place. Farmers grew rice, potatoes, and many other crops this way. Some of these old terraces are still used today.",
+    "voice": "female:au"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p3_talk_hillside_terraces_q1",
+    "stem": "What is the talk mainly about?",
+    "options": [
+     "How rice is grown in very wet fields",
+     "Why stone walls were built around houses",
+     "How people climbed up and down mountains",
+     "Why farmers built flat steps on hills"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Main idea: terraces solved the problem of farming on slopes. C takes \"giant staircase\" literally; B misuses \"stone wall\".",
+     "tr": "Ana fikir: teraslar, yamaçta tarım yapma sorununu çözdü. C \"giant staircase\" ifadesini gerçek anlamıyla alıyor; B \"stone wall\" ifadesini yanlış kullanıyor.",
+     "es": "Idea principal: las terrazas resolvieron el problema de cultivar en pendiente. C toma \"giant staircase\" al pie de la letra; B usa mal \"stone wall\"."
+    }
+   },
+   {
+    "id": "p3_talk_hillside_terraces_q2",
+    "stem": "What problem did farmers have on slopes?",
+    "options": [
+     "Rain washed the soil away",
+     "There was too little sunlight",
+     "The stone was too hard to cut",
+     "Animals ate the young crops"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Detail: rainwater \"carries the good soil away with it\". C misuses \"stone\" from the description of the walls; B and D are never mentioned.",
+     "tr": "Ayrıntı: yağmur suyu \"carries the good soil away with it\". C duvarların tarifindeki \"stone\" kelimesini yanlış kullanıyor; B ve D hiç söylenmiyor.",
+     "es": "Detalle: el agua de lluvia \"carries the good soil away with it\". C usa mal \"stone\", de la descripción de los muros; B y D nunca se mencionan."
+    }
+   },
+   {
+    "id": "p3_talk_hillside_terraces_q3",
+    "stem": "Why does the speaker say a hill with terraces looks like \"a giant staircase\"?",
+    "options": [
+     "To explain how farmers climbed the hill",
+     "To help listeners picture its shape",
+     "To show that terraces were inside buildings",
+     "To say that every terrace was very tall"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Purpose: the comparison helps listeners imagine the row of flat steps. A takes the image literally.",
+     "tr": "Amaç: benzetme, dinleyicilerin art arda dizilen düz basamakları gözünde canlandırmasına yardım ediyor. A benzetmeyi gerçek anlamıyla alıyor.",
+     "es": "Propósito: la comparación ayuda a imaginar la fila de escalones planos. A toma la imagen al pie de la letra."
+    }
+   },
+   {
+    "id": "p3_talk_hillside_terraces_q4",
+    "stem": "What does the speaker say about some old terraces?",
+    "options": [
+     "Rain destroyed all of them",
+     "Houses are built on them now",
+     "People still farm on them",
+     "Only rice grows on them today"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Detail (paraphrase of \"still used today\"). A contradicts it; D misuses \"rice\", which was only one of several crops.",
+     "tr": "Ayrıntı (\"still used today\" ifadesinin parafrazı). A bununla çelişiyor; D birkaç üründen yalnızca biri olan \"rice\" kelimesini yanlış kullanıyor.",
+     "es": "Detalle (paráfrasis de \"still used today\"). A lo contradice; D usa mal \"rice\", que era solo uno de varios cultivos."
+    }
+   }
+  ]
+ }
+}
