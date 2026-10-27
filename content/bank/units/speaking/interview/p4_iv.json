@@ -1,0 +1,43 @@
+{
+ "id": "p4_iv",
+ "task": "interview",
+ "tier": "medium",
+ "topic": "writing feedback",
+ "origin": "practice-04",
+ "screen": {
+  "type": "interview",
+  "id": "p4_iv",
+  "scenario": {
+   "title": "Research study: how students get help with their writing",
+   "place": "Campus writing center",
+   "intro": "A researcher from the university writing center is interviewing students about how they get feedback on their writing."
+  },
+  "interviewerVoice": "male",
+  "questions": [
+   {
+    "level": "factual",
+    "text": "To start, could you tell me what kinds of writing you usually do for your classes, and how often you have a written assignment due?",
+    "prep": 3,
+    "respSeconds": 45
+   },
+   {
+    "level": "experience",
+    "text": "Can you describe a time when someone's feedback helped you improve a piece of writing? What did they suggest, and what did you change?",
+    "prep": 3,
+    "respSeconds": 45
+   },
+   {
+    "level": "opinion",
+    "text": "Some people believe that every first-year student should be required to visit the writing center at least once. Do you agree or disagree, and why?",
+    "prep": 3,
+    "respSeconds": 45
+   },
+   {
+    "level": "prediction",
+    "text": "How do you think the way students get help with their writing will change over the next ten years, and why?",
+    "prep": 3,
+    "respSeconds": 45
+   }
+  ]
+ }
+}

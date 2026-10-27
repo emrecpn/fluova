@@ -1,0 +1,99 @@
+{
+ "id": "p4_ac_first_coins",
+ "task": "academic",
+ "tier": "medium",
+ "topic": "early coinage",
+ "origin": "practice-04",
+ "screen": {
+  "type": "passage",
+  "title": "The First Coins",
+  "directions": "Read an Academic Passage — module 1",
+  "text": [
+   "For thousands of years, people traded using pieces of metal, such as silver, whose value depended on their weight and purity. Every sale therefore required a scale, and buyers often cut bits from a larger piece to pay the exact amount. Sellers also had to worry that the metal had been mixed with cheaper materials.",
+   "More than 2,600 years ago, rulers in Lydia, a kingdom in what is now western Turkey, began producing small lumps of metal of a standard weight and stamping each one with an official image. The stamp acted as a guarantee: people no longer needed to weigh or test every piece, because the state stood behind its value.",
+   "The idea spread quickly to Greek cities, which created their own designs. Before long, coins were used not only in markets but also to pay soldiers and collect taxes, which made it far easier for governments to manage large economies."
+  ],
+  "questions": [
+   {
+    "id": "p4_ac_first_coins_q1",
+    "stem": "What is the passage mainly about?",
+    "options": [
+     "Why silver was more valuable than other metals in ancient trade",
+     "How Greek cities competed with Lydia for control of markets",
+     "How an official mark on metal made buying and selling simpler",
+     "Why ancient governments found it difficult to collect taxes"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Main idea (paraphrase): stamped pieces of a standard weight removed the need to weigh and test metal. B invents a rivalry that the passage never mentions. D reverses the point; coins made taxes easier to collect.",
+     "tr": "Ana fikir (parafraz): standart ağırlıkta ve damgalı metal parçaları, metali tartma ve test etme ihtiyacını ortadan kaldırdı. B metinde hiç geçmeyen bir rekabet uyduruyor. D fikri tersine çeviriyor; madeni paralar vergi toplamayı kolaylaştırdı.",
+     "es": "Idea principal (paráfrasis): las piezas selladas de peso estándar eliminaron la necesidad de pesar y comprobar el metal. B inventa una rivalidad que el texto nunca menciona. D invierte la idea; las monedas facilitaron el cobro de impuestos."
+    }
+   },
+   {
+    "id": "p4_ac_first_coins_q2",
+    "stem": "The word \"guarantee\" in the passage is closest in meaning to",
+    "options": [
+     "an assurance",
+     "a decoration",
+     "a payment",
+     "a warning"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Vocabulary in context: the stamp was a guarantee because the state \"stood behind\" the value of each piece, so it was an assurance. B describes what the image looks like, not what it does.",
+     "tr": "Bağlamda kelime: damga bir \"guarantee\" idi, çünkü devlet her parçanın değerinin arkasında duruyordu (\"stood behind\"); yani bir güvenceydi. B resmin neye benzediğini anlatıyor, ne işe yaradığını değil.",
+     "es": "Vocabulario en contexto: el sello era una garantía porque el Estado \"stood behind\" el valor de cada pieza; es decir, era una seguridad. B describe el aspecto de la imagen, no su función."
+    }
+   },
+   {
+    "id": "p4_ac_first_coins_q3",
+    "stem": "Why does the author mention that buyers \"cut bits from a larger piece\"?",
+    "options": [
+     "To show that early metal was softer than modern coins",
+     "To explain how merchants made their own coins",
+     "To suggest that buyers often tried to cheat sellers",
+     "To illustrate how awkward payment was before coins"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Author's purpose: cutting metal to the right amount is an example of the inconvenience that coins later removed. C confuses this with the separate worry about mixed metal. B is wrong because coins did not exist yet at that point.",
+     "tr": "Yazarın amacı: metali doğru miktarda kesmek, madeni paraların daha sonra ortadan kaldırdığı zahmete bir örnek. C bunu ayrı bir endişe olan karışık metal meselesiyle karıştırıyor. B yanlış, çünkü o dönemde henüz madeni para yoktu.",
+     "es": "Propósito del autor: cortar el metal en la cantidad justa es un ejemplo de la incomodidad que las monedas eliminaron después. C lo confunde con la preocupación distinta del metal mezclado. B es incorrecta porque en ese momento aún no existían las monedas."
+    }
+   },
+   {
+    "id": "p4_ac_first_coins_q4",
+    "stem": "What can be inferred about trade before coins were invented?",
+    "options": [
+     "Most buyers preferred to pay with goods rather than with metal",
+     "A seller could receive metal worth less than it seemed to be",
+     "Only government officials were allowed to own a scale",
+     "Silver was used only for very large purchases"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Inference: sellers worried that the metal \"had been mixed with cheaper materials\", so a payment could be worth less than it looked. A is never mentioned. D contradicts the statement that every sale required a scale.",
+     "tr": "Çıkarım: satıcılar metalin \"had been mixed with cheaper materials\" olmasından endişe ediyordu; yani bir ödeme göründüğünden daha az değerli olabiliyordu. A metinde hiç geçmiyor. D, her satışın bir terazi gerektirdiği bilgisiyle çelişiyor.",
+     "es": "Inferencia: a los vendedores les preocupaba que el metal \"had been mixed with cheaper materials\", así que un pago podía valer menos de lo que parecía. A no se menciona nunca. D contradice que cada venta necesitaba una balanza."
+    }
+   },
+   {
+    "id": "p4_ac_first_coins_q5",
+    "stem": "According to the passage, coins were later used for which of the following?",
+    "options": [
+     "Measuring the purity of other metals",
+     "Decorating buildings in Greek cities",
+     "Paying soldiers for their service",
+     "Weighing goods at the market"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Detail: coins were used \"to pay soldiers and collect taxes\". B twists \"created their own designs\". D confuses coins with the scales they replaced.",
+     "tr": "Ayrıntı: madeni paralar \"to pay soldiers and collect taxes\" için kullanıldı. B \"created their own designs\" ifadesini çarpıtıyor. D madeni paraları, yerini aldıkları terazilerle karıştırıyor.",
+     "es": "Detalle: las monedas se usaron \"to pay soldiers and collect taxes\". B tergiversa \"created their own designs\". D confunde las monedas con las balanzas que sustituyeron."
+    }
+   }
+  ]
+ }
+}

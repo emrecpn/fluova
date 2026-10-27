@@ -1,0 +1,29 @@
+{
+ "id": "p4_cr8",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "bus routes",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_cr8",
+  "audio": [
+   {
+    "text": "Which bus goes to the science park?",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "Number nine, from the stop across the street.",
+   "It usually leaves every half hour during the day.",
+   "The park is beautiful in the spring.",
+   "Yes, buses are free for students now."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "\"Which\" → a choice (a bus number). B answers \"how often\"; C repeats \"park\" with a different meaning; D answers as if it were a yes/no question.",
+   "tr": "\"Which\" → bir seçim (otobüs numarası). B \"how often\" sorusunu cevaplıyor; C \"park\" kelimesini farklı anlamda tekrarlıyor; D soruyu evet/hayır sorusu gibi cevaplıyor.",
+   "es": "\"Which\" → una elección (un número de autobús). B responde a \"how often\"; C repite \"park\" con otro significado; D responde como si fuera una pregunta de sí o no."
+  }
+ }
+}

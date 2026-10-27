@@ -1,0 +1,27 @@
+{
+ "id": "p4_bs10",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "recycling team",
+ "origin": "practice-04",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p4_bs10",
+  "personA": "Are you joining the recycling team this year?",
+  "frame": [
+   "I'd like to, but",
+   null,
+   null,
+   null,
+   null,
+   "enough time."
+  ],
+  "answer": [
+   "I'm",
+   "not sure",
+   "I'll",
+   "have"
+  ],
+  "distractors": []
+ }
+}

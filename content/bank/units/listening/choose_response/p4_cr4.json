@@ -1,0 +1,29 @@
+{
+ "id": "p4_cr4",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "library elevator",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_cr4",
+  "audio": [
+   {
+    "text": "Why is the elevator in the library roped off?",
+    "voice": "female:au"
+   }
+  ],
+  "options": [
+   "It's on the left as you walk in the door.",
+   "They're replacing some of the cables, I heard.",
+   "Yes, so I had to take the stairs this morning.",
+   "The library closes early on Fridays, I think."
+  ],
+  "answer": 1,
+  "why": {
+   "en": "\"Why\" → a reason. A answers \"where\"; C starts with \"Yes\", which does not answer a \"why\" question; D repeats \"library\" but gives unrelated information.",
+   "tr": "\"Why\" → bir sebep. A \"where\" sorusunu cevaplıyor; C \"Yes\" ile başlıyor, bu bir \"why\" sorusunu cevaplamaz; D \"library\" kelimesini tekrarlıyor ama ilgisiz bir bilgi veriyor.",
+   "es": "\"Why\" → un motivo. A responde a \"where\"; C empieza con \"Yes\", que no responde a una pregunta con \"why\"; D repite \"library\" pero da información que no viene al caso."
+  }
+ }
+}

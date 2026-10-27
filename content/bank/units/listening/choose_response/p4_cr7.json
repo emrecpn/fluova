@@ -1,0 +1,29 @@
+{
+ "id": "p4_cr7",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "lost umbrella",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_cr7",
+  "audio": [
+   {
+    "text": "I think I left my umbrella in the lecture hall.",
+    "voice": "male:au"
+   }
+  ],
+  "options": [
+   "It rained all afternoon, didn't it?",
+   "The lecture was about weather patterns in the tropics.",
+   "Someone may have taken it to the front office.",
+   "Yes, I left a bit early too."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "Problem → a helpful suggestion. D repeats \"left\" with a different meaning; B picks up \"lecture\" but does not respond to the problem; A comments on the weather instead.",
+   "tr": "Sorun → yardımcı bir öneri. D \"left\" kelimesini farklı anlamda tekrarlıyor; B \"lecture\" kelimesini alıyor ama soruna cevap vermiyor; A soruna değil havaya yorum yapıyor.",
+   "es": "Problema → una sugerencia útil. D repite \"left\" con otro significado; B retoma \"lecture\" pero no responde al problema; A comenta el tiempo en lugar del problema."
+  }
+ }
+}

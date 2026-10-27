@@ -1,0 +1,67 @@
+{
+ "id": "p4_dl_museum_trip",
+ "task": "daily_life",
+ "tier": "medium",
+ "topic": "museum field trip",
+ "origin": "practice-04",
+ "screen": {
+  "type": "passage",
+  "title": "Class email: museum visit",
+  "directions": "Read in Daily Life (email)",
+  "text": [
+   "<strong>From:</strong> Professor Lena Brandt<br><strong>To:</strong> HIST 215 students<br><strong>Subject:</strong> Friday's museum visit",
+   "Hi all, a few reminders about Friday's trip to the City History Museum. The bus leaves from Hollis Hall at 9:15, and the driver cannot wait for latecomers. Backpacks are not allowed in the galleries, so bring just a notebook and a pencil; pens may not be used near the old documents. The department is paying for admission. Also, since several of you asked for more time, your response paper is now due Wednesday instead of Monday.",
+   "— Prof. Brandt"
+  ],
+  "questions": [
+   {
+    "id": "p4_dl_museum_trip_q1",
+    "stem": "Why did Professor Brandt send the email?",
+    "options": [
+     "To remind students about arrangements for Friday's museum trip",
+     "To ask students to pay for their museum tickets in advance",
+     "To remind students that their response papers are due Monday",
+     "To explain why backpacks are not allowed inside the museum galleries"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Purpose: the email reminds students of the arrangements for Friday's trip. B contradicts \"The department is paying for admission\". C gives the old deadline; the paper is now due Wednesday.",
+     "tr": "Amaç: e-posta öğrencilere cuma günkü gezinin ayrıntılarını hatırlatıyor. B \"The department is paying for admission\" ifadesiyle çelişiyor. C eski teslim tarihini veriyor; ödev artık çarşamba günü teslim edilecek.",
+     "es": "Propósito: el correo recuerda a los estudiantes los detalles de la salida del viernes. B contradice \"The department is paying for admission\". C da la fecha antigua; el trabajo ahora se entrega el miércoles."
+    }
+   },
+   {
+    "id": "p4_dl_museum_trip_q2",
+    "stem": "Why are students told to bring a pencil?",
+    "options": [
+     "Pencils are cheaper than pens at the museum shop",
+     "Students will be asked to draw some of the paintings",
+     "Ink could damage some of the items on display",
+     "The bus driver does not allow pens on the bus"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Inference: pens \"may not be used near the old documents\", so the museum is protecting its collection. B invents a drawing task. D links the rule to the bus instead of the galleries.",
+     "tr": "Çıkarım: tükenmez kalemler \"may not be used near the old documents\"; yani müze koleksiyonunu korumak istiyor. B metinde olmayan bir çizim görevi uyduruyor. D kuralı galeriler yerine otobüsle ilişkilendiriyor.",
+     "es": "Inferencia: los bolígrafos \"may not be used near the old documents\", así que el museo protege su colección. B inventa una tarea de dibujo. D relaciona la norma con el autobús en lugar de con las salas."
+    }
+   },
+   {
+    "id": "p4_dl_museum_trip_q3",
+    "stem": "What is true about the response paper?",
+    "options": [
+     "It must be handed in at the museum on Friday",
+     "Students now have two more days to complete it",
+     "It will be written in small groups during the trip",
+     "It was postponed because the bus was running late"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail (paraphrase): the deadline moved from Monday to Wednesday, two days later. D invents a reason; the change was made because students asked for more time. A confuses the paper with the trip itself.",
+     "tr": "Ayrıntı (parafraz): teslim tarihi pazartesiden çarşambaya, yani iki gün sonraya kaydı. D bir sebep uyduruyor; değişiklik öğrenciler daha fazla zaman istediği için yapıldı. A ödevi geziyle karıştırıyor.",
+     "es": "Detalle (paráfrasis): la fecha pasó del lunes al miércoles, dos días más tarde. D inventa un motivo; el cambio se hizo porque los estudiantes pidieron más tiempo. A confunde el trabajo con la propia visita."
+    }
+   }
+  ]
+ }
+}

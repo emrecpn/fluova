@@ -1,0 +1,29 @@
+{
+ "id": "p4_hcr4",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "cover letter",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_hcr4",
+  "audio": [
+   {
+    "text": "Could you look over my cover letter before I send it?",
+    "voice": "female:au"
+   }
+  ],
+  "options": [
+   "Sure, but it'll have to wait until this evening.",
+   "I sent you a letter last month, didn't I?",
+   "The cover of that book is badly torn.",
+   "It's over there, right next to the printer."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Request → agreement with a condition. C repeats \"cover\" with a different meaning; D repeats \"over\" and answers \"where\"; B repeats \"send\" and \"letter\".",
+   "tr": "Rica → koşullu kabul. C \"cover\" kelimesini farklı anlamda tekrarlıyor; D \"over\" kelimesini tekrarlıyor ve \"where\" sorusunu cevaplıyor; B \"send\" ve \"letter\" kelimelerini tekrarlıyor.",
+   "es": "Petición → aceptación con una condición. C repite \"cover\" con otro significado; D repite \"over\" y responde a \"where\"; B repite \"send\" y \"letter\"."
+  }
+ }
+}

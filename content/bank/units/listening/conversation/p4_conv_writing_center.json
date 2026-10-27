@@ -1,0 +1,68 @@
+{
+ "id": "p4_conv_writing_center",
+ "task": "conversation",
+ "tier": "medium",
+ "topic": "writing center",
+ "origin": "practice-04",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Booking a writing tutor",
+  "prompt": "Listen to a conversation between a student and a receptionist at the writing center.",
+  "audio": [
+   {
+    "text": "Hi, I'd like to book a session with a writing tutor. My history essay is due on Monday.",
+    "voice": "female:au"
+   },
+   {
+    "text": "Let me see. I'm afraid all the appointments this week are taken. But we have drop-in hours on Thursday from two to five.",
+    "voice": "male:us"
+   },
+   {
+    "text": "Drop-in? So I just come and wait?",
+    "voice": "female:au"
+   },
+   {
+    "text": "Right. Tutors see students in the order they arrive, and it gets busy. Oh, and bring a printed copy of your draft.",
+    "voice": "male:us"
+   },
+   {
+    "text": "Okay. My last class ends at one forty-five, so I'll come straight here.",
+    "voice": "female:au"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p4_conv_writing_center_q1",
+    "stem": "Why does the woman go to the writing center?",
+    "options": [
+     "To apply for a job as a writing tutor",
+     "To ask for more time on her history essay",
+     "To pick up a printed copy of her draft",
+     "To get help with a paper before it is due"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Purpose (paraphrase): she wants a tutor session before her essay is due on Monday. B is tempting, but she never asks for an extension; C reverses the advice to bring a printed draft.",
+     "tr": "Amaç (parafraz): pazartesi teslim edilecek ödevinden önce bir eğitmenle çalışmak istiyor. B çekici ama ek süre istemiyor; C, basılı taslağı getirme tavsiyesini tersine çeviriyor.",
+     "es": "Propósito (paráfrasis): quiere una sesión con un tutor antes de entregar su ensayo el lunes. B resulta tentadora, pero ella nunca pide una prórroga; C invierte el consejo de traer el borrador impreso."
+    }
+   },
+   {
+    "id": "p4_conv_writing_center_q2",
+    "stem": "What does the man imply about the drop-in hours?",
+    "options": [
+     "They are only for students with history essays",
+     "Students who arrive late may have a long wait",
+     "They have been moved from Thursday to Monday",
+     "Students must book them a week in advance"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Inference: tutors see students \"in the order they arrive, and it gets busy\", so coming late means waiting longer. D contradicts the idea of drop-in hours; C confuses the essay deadline with the drop-in day.",
+     "tr": "Çıkarım: eğitmenler öğrencileri \"in the order they arrive, and it gets busy\" şeklinde görüyor; yani geç gelen daha uzun bekler. D randevusuz saatler fikriyle çelişiyor; C ödevin teslim gününü randevusuz çalışma günüyle karıştırıyor.",
+     "es": "Inferencia: los tutores atienden \"in the order they arrive, and it gets busy\", así que quien llega tarde espera más. D contradice la idea de un horario sin cita; C confunde la fecha de entrega con el día de atención sin cita."
+    }
+   }
+  ]
+ }
+}

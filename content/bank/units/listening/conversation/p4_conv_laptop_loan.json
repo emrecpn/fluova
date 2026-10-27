@@ -1,0 +1,68 @@
+{
+ "id": "p4_conv_laptop_loan",
+ "task": "conversation",
+ "tier": "easy",
+ "topic": "laptop loan",
+ "origin": "practice-04",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Borrowing a laptop",
+  "prompt": "Listen to a conversation between a student and a library worker.",
+  "audio": [
+   {
+    "text": "Hi, my laptop is being repaired. Can I borrow one here?",
+    "voice": "female:us"
+   },
+   {
+    "text": "Sure. You can borrow a laptop for up to three days. I just need your student ID.",
+    "voice": "male:au"
+   },
+   {
+    "text": "Here you go. Can I take it home?",
+    "voice": "female:us"
+   },
+   {
+    "text": "Yes, you can. But please bring it back by Friday at five, or you'll have to pay a late fee.",
+    "voice": "male:au"
+   },
+   {
+    "text": "No problem. Thanks!",
+    "voice": "female:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p4_conv_laptop_loan_q1",
+    "stem": "Why does the woman want to borrow a laptop?",
+    "options": [
+     "She wants to take a test online",
+     "Her own laptop is being fixed",
+     "She lost her laptop on Friday",
+     "The library computers are full"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail (paraphrase): \"my laptop is being repaired\". C misuses \"Friday\", which is the return day; A and D are not mentioned.",
+     "tr": "Ayrıntı (parafraz): \"my laptop is being repaired\". C iade günü olan \"Friday\" kelimesini yanlış kullanıyor; A ve D konuşmada geçmiyor.",
+     "es": "Detalle (paráfrasis): \"my laptop is being repaired\". C usa mal \"Friday\", que es el día de devolución; A y D no se mencionan."
+    }
+   },
+   {
+    "id": "p4_conv_laptop_loan_q2",
+    "stem": "What does the man say about the laptop?",
+    "options": [
+     "It must stay in the library",
+     "It can be borrowed for a week",
+     "It costs five dollars a day",
+     "It must be returned by Friday"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Detail: \"bring it back by Friday at five\". A contradicts \"Yes, you can\", his answer about taking it home; C misuses \"five\", which is a time, not a price; B is wrong because the limit is three days.",
+     "tr": "Ayrıntı: \"bring it back by Friday at five\". A, eve götürme sorusuna verdiği \"Yes, you can\" cevabıyla çelişiyor; C bir saat olan \"five\" kelimesini fiyat gibi kullanıyor; B yanlış, çünkü süre üç gün.",
+     "es": "Detalle: \"bring it back by Friday at five\". A contradice \"Yes, you can\", su respuesta sobre llevárselo a casa; C usa mal \"five\", que es una hora y no un precio; B es incorrecta porque el límite es de tres días."
+    }
+   }
+  ]
+ }
+}

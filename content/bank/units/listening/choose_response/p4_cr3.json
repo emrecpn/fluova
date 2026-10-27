@@ -1,0 +1,29 @@
+{
+ "id": "p4_cr3",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "changing majors",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_cr3",
+  "audio": [
+   {
+    "text": "Who should I talk to about changing my major?",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "I changed my mind about the trip last week.",
+   "Before the end of the semester, if possible.",
+   "Yes, a lot of students change in their first year.",
+   "Your academic advisor is the best place to start."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "\"Who\" → a person. B answers \"when\"; A repeats \"change\" with another meaning; C begins with \"Yes\", which cannot answer a \"who\" question.",
+   "tr": "\"Who\" → bir kişi. B \"when\" sorusunu cevaplıyor; A \"change\" kelimesini başka bir anlamda tekrarlıyor; C \"Yes\" ile başlıyor, bu da bir \"who\" sorusunun cevabı olamaz.",
+   "es": "\"Who\" → una persona. B responde a \"when\"; A repite \"change\" con otro significado; C empieza con \"Yes\", que no puede responder a una pregunta con \"who\"."
+  }
+ }
+}

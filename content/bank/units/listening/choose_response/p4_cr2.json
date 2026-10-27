@@ -1,0 +1,29 @@
+{
+ "id": "p4_cr2",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "shuttle schedule",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_cr2",
+  "audio": [
+   {
+    "text": "How often does the campus shuttle run on weekends?",
+    "voice": "male:gb"
+   }
+  ],
+  "options": [
+   "It stops right outside the main library.",
+   "Every forty minutes or so, until midnight.",
+   "It takes about ten minutes to get downtown.",
+   "I often run on the track at the weekend."
+  ],
+  "answer": 1,
+  "why": {
+   "en": "\"How often\" → a frequency. C answers \"how long\" instead; D repeats \"run\" with a different meaning; A answers \"where\".",
+   "tr": "\"How often\" → sıklık. C bunun yerine \"how long\" sorusunu cevaplıyor; D \"run\" kelimesini farklı anlamda tekrarlıyor; A \"where\" sorusunu cevaplıyor.",
+   "es": "\"How often\" → una frecuencia. C responde a \"how long\"; D repite \"run\" con otro significado; A responde a \"where\"."
+  }
+ }
+}

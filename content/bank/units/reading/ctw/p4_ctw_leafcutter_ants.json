@@ -1,0 +1,12 @@
+{
+ "id": "p4_ctw_leafcutter_ants",
+ "task": "ctw",
+ "tier": "medium",
+ "topic": "leafcutter ants",
+ "origin": "practice-04",
+ "screen": {
+  "type": "ctw",
+  "title": "Complete the Words: Leafcutter ants",
+  "source": "Leafcutter ants, which live in the forests of Central and South America, are often seen carrying pieces of leaves much larger than their own bodies. Surprisingly, the ants do not eat these leaves. Instead, they carry them into underground rooms and chew them into a soft paste. A special fungus grows on this paste, and the fungus is what the colony actually eats. The ants tend their gardens with great care, removing harmful molds and adding fresh plant material every day."
+ }
+}

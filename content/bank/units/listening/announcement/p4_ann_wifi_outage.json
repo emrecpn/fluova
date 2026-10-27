@@ -1,0 +1,52 @@
+{
+ "id": "p4_ann_wifi_outage",
+ "task": "announcement",
+ "tier": "medium",
+ "topic": "Wi-Fi outage",
+ "origin": "practice-04",
+ "screen": {
+  "type": "listening",
+  "title": "Announcement: Wi-Fi maintenance",
+  "prompt": "Listen to an announcement made to students.",
+  "audio": [
+   {
+    "text": "Attention, students. Campus Wi-Fi will be unavailable this Sunday from midnight until six a.m. while the IT department installs new equipment. Computers in the library's basement lab are connected by cable, so they'll keep working during that time. If you have an online assignment due Sunday morning, please submit it on Saturday. After the upgrade, you'll need to sign in to the network again.",
+    "voice": "female:au"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p4_ann_wifi_outage_q1",
+    "stem": "What is the main purpose of the announcement?",
+    "options": [
+     "To ask students to report problems with the Wi-Fi",
+     "To warn students about a planned break in wireless service",
+     "To announce new opening hours for the library lab",
+     "To explain how to create a new network password"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Purpose (paraphrase): the Wi-Fi will be off early on Sunday for maintenance. C turns the detail about the library lab into the purpose; D goes beyond \"sign in to the network again\", since no new password is mentioned.",
+     "tr": "Amaç (parafraz): bakım nedeniyle pazar sabahı erken saatlerde Wi-Fi olmayacak. C kütüphane laboratuvarıyla ilgili ayrıntıyı ana amaç yapıyor; D \"sign in to the network again\" ifadesinin ötesine geçiyor, çünkü yeni bir şifreden söz edilmiyor.",
+     "es": "Propósito (paráfrasis): el wifi no funcionará el domingo de madrugada por mantenimiento. C convierte el detalle del laboratorio de la biblioteca en el propósito; D va más allá de \"sign in to the network again\", porque no se menciona ninguna contraseña nueva."
+    }
+   },
+   {
+    "id": "p4_ann_wifi_outage_q2",
+    "stem": "Why does the speaker mention the library's basement lab?",
+    "options": [
+     "It is where the new equipment will be installed",
+     "Students should collect their passwords there",
+     "Its computers will still have internet access",
+     "It will be closed on Sunday morning for the work"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Function: the lab's computers use cables, so they \"keep working\" during the outage. D says the opposite; A confuses the lab with the place where the IT work happens.",
+     "tr": "İşlev: laboratuvardaki bilgisayarlar kabloyla bağlı, bu yüzden kesinti sırasında \"keep working\". D bunun tersini söylüyor; A laboratuvarı bilgi işlem çalışmasının yapılacağı yerle karıştırıyor.",
+     "es": "Función: los ordenadores del laboratorio usan cable, así que \"keep working\" durante el corte. D dice lo contrario; A confunde el laboratorio con el lugar donde se hará el trabajo técnico."
+    }
+   }
+  ]
+ }
+}

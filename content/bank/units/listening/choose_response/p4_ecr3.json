@@ -1,0 +1,29 @@
+{
+ "id": "p4_ecr3",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "forgotten bag",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_ecr3",
+  "audio": [
+   {
+    "text": "Who left this bag here?",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "I think it's Sara's.",
+   "It's a blue bag.",
+   "Yes, it's very heavy.",
+   "I left at noon."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "\"Who\" → a person. D repeats \"left\" with a different meaning; C answers \"Yes\" to a \"who\" question; B describes the bag.",
+   "tr": "\"Who\" → bir kişi. D \"left\" kelimesini farklı anlamda tekrarlıyor; C \"who\" sorusuna \"Yes\" diyor; B çantayı tarif ediyor.",
+   "es": "\"Who\" → una persona. D repite \"left\" con otro significado; C responde \"Yes\" a una pregunta con \"who\"; B describe la bolsa."
+  }
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "id": "p4_talk_overregularization",
+ "task": "talk",
+ "tier": "hard",
+ "topic": "overregularization errors",
+ "origin": "practice-04",
+ "screen": {
+  "type": "listening",
+  "title": "Academic Talk: When children say \"goed\"",
+  "prompt": "Listen to part of a lecture in a linguistics class.",
+  "audio": [
+   {
+    "text": "Here's something parents often notice. A two-year-old correctly says \"I went\" or \"two feet.\" Then, a few months later, the same child starts saying \"I goed\" and \"two foots.\" It looks as if the child's language is getting worse. In fact, it's a sign of progress. Let me explain why.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "Linguists call these errors overregularization. At first, children seem to learn each past-tense form as a separate word, simply by copying what they hear. \"Went\" is just another word. But as their vocabulary grows, they begin to notice a pattern: most English verbs form the past by adding \"-ed.\" Once they've worked out that rule, they apply it everywhere, even to irregular verbs they used to get right. The same thing happens with plurals, which is where \"foots\" comes from.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "The key point is that children almost never hear forms like \"goed\" from adults. So they can't be imitating. They're producing something new from a rule they've discovered on their own. Eventually, with enough exposure, the correct irregular forms come back, and the rule is used only where it belongs. Researchers call this U-shaped development: performance starts high, drops, and then recovers, and the dip in the middle actually reflects deeper learning.",
+    "voice": "male:gb"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p4_talk_overregularization_q1",
+    "stem": "What is the lecture mainly about?",
+    "options": [
+     "Why parents should correct children's grammar mistakes",
+     "How adults learn irregular verbs in a second language",
+     "Why some children learn to speak later than others",
+     "What a common error reveals about how children learn"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Main idea: overregularization errors show that children have learned a rule. A is never recommended in the lecture; B shifts the topic to adults; C is not discussed.",
+     "tr": "Ana fikir: aşırı düzenlileştirme (overregularization) hataları çocukların bir kural öğrendiğini gösteriyor. A konuşmada hiç önerilmiyor; B konuyu yetişkinlere kaydırıyor; C ele alınmıyor.",
+     "es": "Idea principal: los errores de sobrerregularización muestran que los niños han aprendido una regla. A no se recomienda en ningún momento; B cambia el tema a los adultos; C no se trata."
+    }
+   },
+   {
+    "id": "p4_talk_overregularization_q2",
+    "stem": "According to the professor, why do children begin saying \"goed\"?",
+    "options": [
+     "They hear older children use that form",
+     "They have discovered a general pattern",
+     "They no longer remember the word \"went\"",
+     "Their parents have stopped correcting them"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail (paraphrase): once children notice that most verbs add \"-ed\", they apply that rule everywhere. A contradicts the point that they \"almost never hear\" such forms; C misreads the cause, because they are applying a rule, not forgetting a word.",
+     "tr": "Ayrıntı (parafraz): çocuklar fiillerin çoğunun \"-ed\" aldığını fark edince bu kuralı her yere uyguluyor. A bu tür biçimleri \"almost never hear\" bilgisiyle çelişiyor; C sebebi yanlış okuyor, çünkü çocuklar bir kelimeyi unutmuyor, bir kural uyguluyor.",
+     "es": "Detalle (paráfrasis): cuando los niños notan que la mayoría de los verbos añade \"-ed\", aplican esa regla a todo. A contradice que \"almost never hear\" esas formas; C malinterpreta la causa, porque no olvidan una palabra, sino que aplican una regla."
+    }
+   },
+   {
+    "id": "p4_talk_overregularization_q3",
+    "stem": "Why does the professor point out that children rarely hear \"goed\" from adults?",
+    "options": [
+     "To show that adults also make grammar errors at times",
+     "To explain why the errors disappear so quickly",
+     "To show that the errors cannot come from imitation",
+     "To suggest that parents should avoid baby talk"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Function: if children never hear \"goed\", they must be producing it from a rule, not copying it. B is wrong because the errors last for some time before the correct forms return; A reverses the point about adults.",
+     "tr": "İşlev: çocuklar \"goed\" biçimini hiç duymuyorsa, onu taklit etmiyor, bir kuraldan üretiyor olmalılar. B yanlış, çünkü hatalar doğru biçimler geri gelmeden önce bir süre devam ediyor; A yetişkinlerle ilgili noktayı tersine çeviriyor.",
+     "es": "Función: si los niños nunca oyen \"goed\", deben de producirlo a partir de una regla, no copiarlo. B es incorrecta porque los errores duran un tiempo antes de que vuelvan las formas correctas; A invierte lo que se dice de los adultos."
+    }
+   },
+   {
+    "id": "p4_talk_overregularization_q4",
+    "stem": "What would the professor most likely say to a parent who is worried because a child has started saying \"mouses\"?",
+    "options": [
+     "It is a normal stage that shows the child is learning",
+     "The child should practice the irregular plurals every day",
+     "The child is probably copying a friend's speech",
+     "The child's language development has slowed down"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference: the professor calls such errors \"a sign of progress\" in a U-shaped pattern. D is exactly the parents' mistaken impression; C contradicts the point about imitation.",
+     "tr": "Çıkarım: profesör bu tür hataları U biçimli bir gelişim içinde \"a sign of progress\" olarak görüyor. D tam da ebeveynlerin yanlış izlenimi; C taklitle ilgili noktayla çelişiyor.",
+     "es": "Inferencia: el profesor llama a estos errores \"a sign of progress\" dentro de un patrón en forma de U. D es justamente la impresión equivocada de los padres; C contradice lo dicho sobre la imitación."
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,25 @@
+{
+ "id": "p4_bs7",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "Wi-Fi outage",
+ "origin": "practice-04",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p4_bs7",
+  "personA": "Why isn't the Wi-Fi working in the library?",
+  "frame": [
+   "Apparently, a cable",
+   null,
+   null,
+   null,
+   "outside the building."
+  ],
+  "answer": [
+   "was cut",
+   "by",
+   "construction workers"
+  ],
+  "distractors": []
+ }
+}

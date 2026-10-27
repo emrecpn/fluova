@@ -1,0 +1,68 @@
+{
+ "id": "p4_conv_makeup_exam",
+ "task": "conversation",
+ "tier": "hard",
+ "topic": "makeup exam",
+ "origin": "practice-04",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Asking for a makeup exam",
+  "prompt": "Listen to a conversation between a student and a professor.",
+  "audio": [
+   {
+    "text": "Professor Adeyemi, I'll have to miss next Tuesday's midterm. I'm competing in the regional debate tournament.",
+    "voice": "male:us"
+   },
+   {
+    "text": "Hmm. Makeup exams are really meant for emergencies, and a tournament is planned well in advance.",
+    "voice": "female:au"
+   },
+   {
+    "text": "I know. That's why I'm telling you now instead of afterward.",
+    "voice": "male:us"
+   },
+   {
+    "text": "Fair point. If your debate coach sends me a note, you can take it on Monday afternoon instead. It'll be a different version, though.",
+    "voice": "female:au"
+   },
+   {
+    "text": "That's fine. I'll ask her today.",
+    "voice": "male:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p4_conv_makeup_exam_q1",
+    "stem": "Why does the man go to see the professor?",
+    "options": [
+     "To ask her to coach the debate team",
+     "To find out what the midterm will cover",
+     "To complain about the date of the midterm",
+     "To arrange another time to take a test"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Purpose (paraphrase): he will miss the midterm and needs to take it at another time. A misuses \"coach\"; C is wrong because he does not object to the date itself.",
+     "tr": "Amaç (parafraz): ara sınavı kaçıracak ve sınava başka bir zamanda girmesi gerekiyor. A \"coach\" kelimesini yanlış kullanıyor; C yanlış, çünkü tarihin kendisine itiraz etmiyor.",
+     "es": "Propósito (paráfrasis): va a perderse el examen parcial y necesita hacerlo en otro momento. A usa mal \"coach\"; C es incorrecta porque no se queja de la fecha en sí."
+    }
+   },
+   {
+    "id": "p4_conv_makeup_exam_q2",
+    "stem": "Why does the man say, \"That's why I'm telling you now instead of afterward\"?",
+    "options": [
+     "To show that he is giving notice responsibly",
+     "To admit that he forgot about an earlier exam",
+     "To suggest that the tournament is an emergency",
+     "To ask the professor to decide after the event"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Function: he answers her objection by pointing out that he is asking in advance, not after missing the exam. C is the opposite, since he accepts it is not an emergency; D reverses \"now instead of afterward\".",
+     "tr": "İşlev: hocanın itirazına, sınavı kaçırdıktan sonra değil önceden haber verdiğini vurgulayarak cevap veriyor. C tam tersi, çünkü bunun acil bir durum olmadığını kabul ediyor; D \"now instead of afterward\" ifadesini tersine çeviriyor.",
+     "es": "Función: responde a la objeción de la profesora señalando que avisa con antelación, no después de perder el examen. C es lo contrario, porque él acepta que no es una emergencia; D invierte \"now instead of afterward\"."
+    }
+   }
+  ]
+ }
+}

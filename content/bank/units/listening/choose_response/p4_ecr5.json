@@ -1,0 +1,29 @@
+{
+ "id": "p4_ecr5",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "moving furniture",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_ecr5",
+  "audio": [
+   {
+    "text": "Can you help me move this table?",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "It's a big table.",
+   "Sure, where should it go?",
+   "I moved here last year.",
+   "In the kitchen, I think."
+  ],
+  "answer": 1,
+  "why": {
+   "en": "Request → agreement. C repeats \"move\" with a different meaning; D answers \"where\" instead of agreeing to help; A only describes the table.",
+   "tr": "Rica → kabul. C \"move\" kelimesini farklı anlamda tekrarlıyor; D yardım etmeyi kabul etmek yerine \"where\" sorusunu cevaplıyor; A sadece masayı tarif ediyor.",
+   "es": "Petición → aceptación. C repite \"move\" con otro significado; D responde a \"where\" en lugar de aceptar ayudar; A solo describe la mesa."
+  }
+ }
+}

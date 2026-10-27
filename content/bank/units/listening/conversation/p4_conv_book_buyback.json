@@ -1,0 +1,68 @@
+{
+ "id": "p4_conv_book_buyback",
+ "task": "conversation",
+ "tier": "medium",
+ "topic": "bookstore buyback",
+ "origin": "practice-04",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Selling textbooks back",
+  "prompt": "Listen to a conversation between a student and a bookstore clerk.",
+  "audio": [
+   {
+    "text": "Hi, I'd like to sell back these two textbooks from last semester.",
+    "voice": "male:us"
+   },
+   {
+    "text": "Sure. I can give you twenty-two dollars for the biology one. But there's a new edition of the economics book coming out, so we can't buy that one back.",
+    "voice": "female:gb"
+   },
+   {
+    "text": "Oh no. Is there anything I can do with it?",
+    "voice": "male:us"
+   },
+   {
+    "text": "You could post it on the student exchange page. The summer economics course is still using the old edition.",
+    "voice": "female:gb"
+   },
+   {
+    "text": "Good idea. I'll put it up tonight.",
+    "voice": "male:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p4_conv_book_buyback_q1",
+    "stem": "What is the man's problem?",
+    "options": [
+     "He has lost the receipt for his textbooks.",
+     "He paid too much for his biology book.",
+     "The store will not take one of his books.",
+     "He needs the new edition of a textbook."
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Problem (paraphrase): the store \"can't buy that one back\" because a new edition is coming out. D is the trap: the new edition is the reason, but the man does not need it. A is never mentioned.",
+     "tr": "Sorun (parafraz): yeni baskı çıkacağı için mağaza \"can't buy that one back\". D tuzak: yeni baskı sebebin kendisi ama adamın ona ihtiyacı yok. A hiç geçmiyor.",
+     "es": "Problema (paráfrasis): la tienda \"can't buy that one back\" porque va a salir una nueva edición. D es la trampa: la nueva edición es el motivo, pero el chico no la necesita. A no se menciona."
+    }
+   },
+   {
+    "id": "p4_conv_book_buyback_q2",
+    "stem": "Why does the woman mention the summer economics course?",
+    "options": [
+     "To suggest that some students may still want his book",
+     "To recommend that he take the course next summer",
+     "To explain why the new edition costs more",
+     "To tell him when the store will buy books again"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Function: the summer course still uses the old edition, so students in it may buy his copy. B misreads the course as advice for the man; D is not mentioned; C is not discussed at all.",
+     "tr": "İşlev: yaz dersi hâlâ eski baskıyı kullanıyor, yani o dersteki öğrenciler onun kitabını alabilir. B dersi adama verilmiş bir tavsiye sanıyor; D konuşmada geçmiyor; C hiç tartışılmıyor.",
+     "es": "Función: el curso de verano sigue usando la edición antigua, así que sus estudiantes podrían comprarle el libro. B interpreta el curso como un consejo para él; D no se menciona; C no se trata en absoluto."
+    }
+   }
+  ]
+ }
+}

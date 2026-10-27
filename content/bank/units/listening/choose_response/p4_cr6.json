@@ -1,0 +1,29 @@
+{
+ "id": "p4_cr6",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "essay contest",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_cr6",
+  "audio": [
+   {
+    "text": "When are the results of the essay contest coming out?",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "In the student newspaper office upstairs.",
+   "About thirty students entered this year.",
+   "Mine came out much longer than I planned.",
+   "Sometime next week, according to the website."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "\"When\" → a time. A answers \"where\"; C repeats \"came out\" with a different meaning (the essay turned out long); B answers \"how many\".",
+   "tr": "\"When\" → bir zaman. A \"where\" sorusunu cevaplıyor; C \"came out\" ifadesini farklı anlamda tekrarlıyor (deneme uzun oldu); B \"how many\" sorusunu cevaplıyor.",
+   "es": "\"When\" → un momento. A responde a \"where\"; C repite \"came out\" con otro significado (el ensayo salió largo); B responde a \"how many\"."
+  }
+ }
+}

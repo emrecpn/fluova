@@ -1,0 +1,52 @@
+{
+ "id": "p4_ann_exam_room",
+ "task": "announcement",
+ "tier": "hard",
+ "topic": "exam room change",
+ "origin": "practice-04",
+ "screen": {
+  "type": "listening",
+  "title": "Announcement: Final exam rooms",
+  "prompt": "Listen to an announcement in a psychology class.",
+  "audio": [
+   {
+    "text": "Before you go, a note about Thursday's final. Because so many of you are registered this term, the exam won't be in our usual room, Baker 120. If your last name begins with A through L, you'll be in the Baker Hall auditorium. Everyone else will be in Room 305 of the Morris Building, about a ten-minute walk from here. The start time hasn't changed, so plan accordingly.",
+    "voice": "male:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p4_ann_exam_room_q1",
+    "stem": "Why is the location of the exam changing?",
+    "options": [
+     "The usual room cannot hold the whole class",
+     "Baker Hall will be closed on Thursday",
+     "The professor wants students to sit farther apart",
+     "The start time of the exam has been moved"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference: \"so many of you are registered\" implies that the usual room is too small. D contradicts \"The start time hasn't changed\"; B is wrong because the auditorium is in Baker Hall.",
+     "tr": "Çıkarım: \"so many of you are registered\" ifadesi her zamanki sınıfın küçük kaldığını gösteriyor. D \"The start time hasn't changed\" ile çelişiyor; B yanlış, çünkü amfi de Baker Hall'da.",
+     "es": "Inferencia: \"so many of you are registered\" implica que el aula de siempre es demasiado pequeña. D contradice \"The start time hasn't changed\"; B es incorrecta porque el auditorio está en Baker Hall."
+    }
+   },
+   {
+    "id": "p4_ann_exam_room_q2",
+    "stem": "What does the speaker imply about students whose last names begin with M to Z?",
+    "options": [
+     "They will take the exam on a different day",
+     "They should go to the Baker Hall auditorium",
+     "They may need to leave earlier than usual",
+     "They will be given extra time on the exam"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Inference: the Morris Building is a ten-minute walk away and the start time is the same, so these students should set off earlier. B is the room for names A to L; D is never mentioned.",
+     "tr": "Çıkarım: Morris binası on dakikalık yürüme mesafesinde ve başlama saati aynı; bu yüzden bu öğrenciler daha erken yola çıkmalı. B A–L harfleriyle başlayanların salonu; D hiç söylenmiyor.",
+     "es": "Inferencia: el edificio Morris está a diez minutos a pie y la hora de inicio es la misma, así que estos estudiantes deberían salir antes. B es el aula de los apellidos de la A a la L; D no se menciona."
+    }
+   }
+  ]
+ }
+}

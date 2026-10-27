@@ -1,0 +1,100 @@
+{
+ "id": "practice-04",
+ "title": "Fluova Practice Test 4",
+ "version": "1.0.0",
+ "level": "real",
+ "authors": [
+  "Fluova contributors"
+ ],
+ "sections": {
+  "reading": {
+   "screens": [
+    "p4_ctw_stale_bread",
+    "p4_ctw_leafcutter_ants",
+    "p4_dl_recycling_rules",
+    "p4_dl_museum_trip",
+    "p4_ac_first_coins"
+   ],
+   "hard": [
+    "p4_ctw_volcanic_gas",
+    "p4_dl_studio_access",
+    "p4_ac_infant_expectations"
+   ],
+   "easy": [
+    "p4_ctw_roof_shapes",
+    "p4_dl_id_replacement",
+    "p4_ac_cricket_chirps"
+   ]
+  },
+  "listening": {
+   "screens": [
+    "p4_cr5",
+    "p4_cr2",
+    "p4_cr4",
+    "p4_cr3",
+    "p4_cr1",
+    "p4_cr7",
+    "p4_cr6",
+    "p4_cr8",
+    "p4_cr9",
+    "p4_conv_book_buyback",
+    "p4_conv_writing_center",
+    "p4_conv_intramural_team",
+    "p4_ann_wifi_outage",
+    "p4_ann_intl_orientation",
+    "p4_talk_induced_demand"
+   ],
+   "hard": [
+    "p4_hcr3",
+    "p4_hcr2",
+    "p4_hcr6",
+    "p4_hcr5",
+    "p4_hcr8",
+    "p4_hcr1",
+    "p4_hcr7",
+    "p4_hcr4",
+    "p4_conv_internship_credit",
+    "p4_conv_makeup_exam",
+    "p4_ann_exam_room",
+    "p4_talk_overregularization",
+    "p4_talk_wind_catchers"
+   ],
+   "easy": [
+    "p4_ecr3",
+    "p4_ecr4",
+    "p4_ecr2",
+    "p4_ecr1",
+    "p4_ecr7",
+    "p4_ecr6",
+    "p4_ecr5",
+    "p4_ecr8",
+    "p4_conv_laptop_loan",
+    "p4_ann_quiet_hours",
+    "p4_talk_hotspot_islands"
+   ]
+  },
+  "writing": {
+   "screens": [
+    "p4_bs9",
+    "p4_bs7",
+    "p4_bs10",
+    "p4_bs3",
+    "p4_bs6",
+    "p4_bs8",
+    "p4_bs5",
+    "p4_bs2",
+    "p4_bs1",
+    "p4_bs4",
+    "p4_email",
+    "p4_disc"
+   ]
+  },
+  "speaking": {
+   "screens": [
+    "p4_lr",
+    "p4_iv"
+   ]
+  }
+ },
+ "notes": "Spec-faithful test assembled from the question bank (all units new). Explanations in English, Turkish and Spanish."
+}

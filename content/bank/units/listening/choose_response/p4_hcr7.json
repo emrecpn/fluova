@@ -1,0 +1,29 @@
+{
+ "id": "p4_hcr7",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "travel plans",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_hcr7",
+  "audio": [
+   {
+    "text": "Why don't we take the train instead of driving?",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "I trained for the race all summer.",
+   "Fine by me, if the tickets aren't too pricey.",
+   "Yes, I'd really like to learn how to drive one day.",
+   "Because the car is parked downstairs."
+  ],
+  "answer": 1,
+  "why": {
+   "en": "\"Why don't we…?\" is a suggestion, so the reply is agreement with a condition. D answers it as if it were a real \"why\" question; A is a sound-alike trap (train / trained); C repeats \"drive\".",
+   "tr": "\"Why don't we…?\" bir öneridir; bu yüzden cevap koşullu bir kabul. D soruyu gerçek bir \"why\" sorusu gibi cevaplıyor; A ses benzerliği tuzağı (train / trained); C \"drive\" kelimesini tekrarlıyor.",
+   "es": "\"Why don't we…?\" es una sugerencia, así que la respuesta es aceptarla con una condición. D la responde como si fuera una pregunta real con \"why\"; A es una trampa de sonido parecido (train / trained); C repite \"drive\"."
+  }
+ }
+}

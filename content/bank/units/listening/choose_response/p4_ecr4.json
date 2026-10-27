@@ -1,0 +1,29 @@
+{
+ "id": "p4_ecr4",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "getting to class",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_ecr4",
+  "audio": [
+   {
+    "text": "How did you get here today?",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "Yes, I'm here now.",
+   "At eight o'clock.",
+   "I got a new phone.",
+   "I rode my bike."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "\"How\" → a way of traveling. B gives a time; C repeats \"got\" with a different meaning; A answers \"Yes\" to a \"how\" question.",
+   "tr": "\"How\" → bir ulaşım şekli. B bir zaman veriyor; C \"got\" kelimesini farklı anlamda tekrarlıyor; A \"how\" sorusuna \"Yes\" diyor.",
+   "es": "\"How\" → una forma de viajar. B da una hora; C repite \"got\" con otro significado; A responde \"Yes\" a una pregunta con \"how\"."
+  }
+ }
+}

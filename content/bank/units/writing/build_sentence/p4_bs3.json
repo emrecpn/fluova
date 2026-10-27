@@ -1,0 +1,29 @@
+{
+ "id": "p4_bs3",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "museum trip",
+ "origin": "practice-04",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p4_bs3",
+  "personA": "Our art history class is visiting the museum on Friday.",
+  "frame": [
+   "I wonder",
+   null,
+   null,
+   null,
+   null,
+   null,
+   "or on foot."
+  ],
+  "answer": [
+   "whether",
+   "we",
+   "are",
+   "going",
+   "by bus"
+  ],
+  "distractors": []
+ }
+}

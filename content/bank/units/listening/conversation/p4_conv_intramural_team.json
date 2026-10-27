@@ -1,0 +1,72 @@
+{
+ "id": "p4_conv_intramural_team",
+ "task": "conversation",
+ "tier": "medium",
+ "topic": "intramural volleyball",
+ "origin": "practice-04",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Joining a volleyball league",
+  "prompt": "Listen to a conversation between a student and an employee at the recreation center.",
+  "audio": [
+   {
+    "text": "Hi, I'd like to join the intramural volleyball league, but I'm not on a team.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "That's fine. You can sign up as a free agent, and we'll place you on a team that needs players.",
+    "voice": "female:us"
+   },
+   {
+    "text": "Great. Is there a fee?",
+    "voice": "male:gb"
+   },
+   {
+    "text": "It's ten dollars a player, but each team pays as a group, so once you're placed, you'll pay your captain.",
+    "voice": "female:us"
+   },
+   {
+    "text": "And when do games start?",
+    "voice": "male:gb"
+   },
+   {
+    "text": "The week after next, on Tuesday or Wednesday evenings.",
+    "voice": "female:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p4_conv_intramural_team_q1",
+    "stem": "What will happen after the man signs up?",
+    "options": [
+     "He will be added to a team that is short of players",
+     "He will be asked to choose a team captain",
+     "He will have to find other players for a new team",
+     "He will play his first game on Tuesday this week"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Detail (paraphrase): as a free agent he will be placed \"on a team that needs players\". C is the opposite; he does not need to form a team. D ignores \"the week after next\".",
+     "tr": "Ayrıntı (parafraz): serbest oyuncu olarak \"on a team that needs players\" yerleştirilecek. C tam tersi; takım kurması gerekmiyor. D \"the week after next\" bilgisini yok sayıyor.",
+     "es": "Detalle (paráfrasis): como agente libre lo pondrán \"on a team that needs players\". C es lo contrario; no tiene que formar un equipo. D ignora \"the week after next\"."
+    }
+   },
+   {
+    "id": "p4_conv_intramural_team_q2",
+    "stem": "How will the man pay the fee?",
+    "options": [
+     "Online, before he is placed on a team",
+     "At the front desk of the recreation center",
+     "By paying ten dollars at his first game",
+     "By giving the money to his team captain"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Detail: \"each team pays as a group … you'll pay your captain\". C has the correct amount but the wrong way of paying; B is a usual place to pay, but it is not what she says.",
+     "tr": "Ayrıntı: \"each team pays as a group … you'll pay your captain\". C doğru tutarı veriyor ama ödeme şekli yanlış; B ödeme için olağan bir yer ama kadının söylediği bu değil.",
+     "es": "Detalle: \"each team pays as a group … you'll pay your captain\". C da la cantidad correcta, pero la forma de pago es incorrecta; B es un lugar habitual para pagar, pero no es lo que ella dice."
+    }
+   }
+  ]
+ }
+}

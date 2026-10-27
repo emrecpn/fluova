@@ -1,0 +1,66 @@
+{
+ "id": "p4_dl_studio_access",
+ "task": "daily_life",
+ "tier": "hard",
+ "topic": "art studio access",
+ "origin": "practice-04",
+ "screen": {
+  "type": "passage",
+  "title": "Fine Arts Studios: After-Hours Access",
+  "directions": "Read in Daily Life (policy notice)",
+  "text": [
+   "<strong>Fine Arts Studios — Revised After-Hours Access</strong>",
+   "Beginning next semester, students who wish to use the ceramics and printmaking studios after 6 p.m. must complete a one-hour safety session before their ID cards will be activated for evening entry. Sessions are held every Tuesday during the first four weeks of the term; students who completed the session last year need not repeat it. Only studio staff may load the kilns, and their shifts end at 8 p.m., so pieces to be fired should be placed on the labeled shelf before then. No one may work in the studios alone after 10 p.m. Daytime access remains unchanged."
+  ],
+  "questions": [
+   {
+    "id": "p4_dl_studio_access_q1",
+    "stem": "What is the main change described in the notice?",
+    "options": [
+     "The ceramics and printmaking studios will close to everyone at 6 p.m.",
+     "Students will need a new kind of ID card to enter the studios by day",
+     "Studio staff will now stay until 10 p.m. to help students with the kilns",
+     "Night-time access to two studios will depend on prior instruction"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Main change (paraphrase): after 6 p.m. the two studios can be used only after a safety session. A is too extreme; the studios stay open in the evening for trained students. C contradicts the notice, since staff shifts end at 8 p.m.",
+     "tr": "Ana değişiklik (parafraz): saat 18.00'den sonra iki atölye ancak güvenlik eğitiminden sonra kullanılabilecek. A aşırı; atölyeler eğitim almış öğrencilere akşam da açık. C duyuruyla çelişiyor, çünkü personelin mesaisi saat 20.00'de bitiyor.",
+     "es": "Cambio principal (paráfrasis): después de las 6 p. m., los dos talleres solo se pueden usar tras una sesión de seguridad. A es demasiado extremo; los talleres siguen abiertos por la noche para quien tenga la formación. C contradice el aviso, porque el turno del personal termina a las 8 p. m."
+    }
+   },
+   {
+    "id": "p4_dl_studio_access_q2",
+    "stem": "A student wants a vase fired in a kiln. What should she do?",
+    "options": [
+     "Leave the vase on the marked shelf before 8 p.m.",
+     "Load the kiln herself after the Tuesday session",
+     "Bring the vase to the studio after 10 p.m. with a friend",
+     "Ask a staff member to open the kiln room at 9 p.m."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Application: only staff may load the kilns, and they leave at 8 p.m., so the piece must be on the labeled shelf before then. B is the trap: the safety session does not allow students to load kilns. D asks for staff at an hour when they have already gone.",
+     "tr": "Uygulama: fırınlara yalnızca personel yükleme yapabilir ve personel saat 20.00'de çıkıyor; bu yüzden eser ondan önce etiketli rafa konmalı. B tuzak: güvenlik eğitimi öğrencilere fırın yükleme izni vermiyor. D personelin çoktan gitmiş olduğu bir saatte yardım istiyor.",
+     "es": "Aplicación: solo el personal puede cargar los hornos y se va a las 8 p. m., así que la pieza debe estar en el estante etiquetado antes de esa hora. B es la trampa: la sesión de seguridad no permite a los estudiantes cargar los hornos. D pide ayuda al personal a una hora en la que ya se ha ido."
+    }
+   },
+   {
+    "id": "p4_dl_studio_access_q3",
+    "stem": "What can be inferred about a student who attended the safety session last year?",
+    "options": [
+     "She must attend another Tuesday session at the start of next term",
+     "She may stay in the studios alone at any hour of the night",
+     "She can get evening access without taking the session again",
+     "She is now permitted to load the kilns herself after 8 p.m."
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Inference: students who \"completed the session last year need not repeat it\", so their cards can be activated without a new session. A contradicts this. B ignores the rule that no one may work alone after 10 p.m.",
+     "tr": "Çıkarım: \"completed the session last year need not repeat it\" deniyor; yani bu öğrencinin kartı yeni bir eğitim almadan akşam girişine açılabilir. A bununla çelişiyor. B, saat 22.00'den sonra kimsenin yalnız çalışamayacağı kuralını yok sayıyor.",
+     "es": "Inferencia: quienes \"completed the session last year need not repeat it\", así que su tarjeta se puede activar sin una nueva sesión. A contradice esto. B ignora la norma de que nadie puede trabajar solo después de las 10 p. m."
+    }
+   }
+  ]
+ }
+}

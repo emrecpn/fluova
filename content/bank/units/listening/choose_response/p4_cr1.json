@@ -1,0 +1,29 @@
+{
+ "id": "p4_cr1",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "paper topic",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_cr1",
+  "audio": [
+   {
+    "text": "Have you decided which topic you're writing about?",
+    "voice": "female:gb"
+   }
+  ],
+  "options": [
+   "I'm leaning toward the one on city buses.",
+   "Yes, I wrote it in pen yesterday.",
+   "The paper is due on the fifteenth, I think.",
+   "I decided to take the earlier train home."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Indirect answer: \"leaning toward\" a topic shows that the choice is almost made. B says \"Yes\" but talks about writing in pen; D repeats \"decided\" about something else; C gives a date, which does not tell us which topic.",
+   "tr": "Dolaylı cevap: bir konuya \"leaning toward\" demek seçimin neredeyse yapıldığını gösterir. B \"Yes\" diyor ama tükenmez kalemle yazmaktan bahsediyor; D \"decided\" kelimesini başka bir konu için tekrarlıyor; C bir tarih veriyor ama hangi konu olduğunu söylemiyor.",
+   "es": "Respuesta indirecta: decir que se inclina por un tema (\"leaning toward\") muestra que casi ha decidido. B dice \"Yes\" pero habla de escribir con bolígrafo; D repite \"decided\" sobre otra cosa; C da una fecha, que no dice qué tema es."
+  }
+ }
+}

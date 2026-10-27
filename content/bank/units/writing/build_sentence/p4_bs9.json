@@ -1,0 +1,27 @@
+{
+ "id": "p4_bs9",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "ID replacement",
+ "origin": "practice-04",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p4_bs9",
+  "personA": "Why did you go to the ID office this morning?",
+  "frame": [
+   "I lost my card, so I",
+   null,
+   null,
+   null,
+   null,
+   "one."
+  ],
+  "answer": [
+   "had",
+   "to",
+   "request",
+   "a new"
+  ],
+  "distractors": []
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "id": "p4_hcr3",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "pool hours",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_hcr3",
+  "audio": [
+   {
+    "text": "Do you happen to know if the pool's open late tonight?",
+    "voice": "male:au"
+   }
+  ],
+  "options": [
+   "I swim there almost every morning.",
+   "It happened late last night, after the game.",
+   "Your guess is as good as mine.",
+   "Yes, I know how to swim quite well."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "Idiom: \"Your guess is as good as mine\" means \"I don't know either\". B repeats \"happen\" and \"late\"; D says \"Yes\" to a different question; A talks about mornings, not tonight.",
+   "tr": "Deyim: \"Your guess is as good as mine\" = \"Ben de bilmiyorum.\" B \"happen\" ve \"late\" kelimelerini tekrarlıyor; D başka bir soruya \"Yes\" diyor; A bu geceden değil sabahlardan bahsediyor.",
+   "es": "Expresión idiomática: \"Your guess is as good as mine\" significa \"yo tampoco lo sé\". B repite \"happen\" y \"late\"; D dice \"Yes\" a otra pregunta; A habla de las mañanas, no de esta noche."
+  }
+ }
+}

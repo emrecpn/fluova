@@ -1,0 +1,29 @@
+{
+ "id": "p4_hcr6",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "study session",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_hcr6",
+  "audio": [
+   {
+    "text": "I'm afraid I can't make it to the study session after all.",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "We made it ourselves last weekend.",
+   "The session usually lasts about two hours or so.",
+   "That's a shame. Want me to send you my notes?",
+   "After all that rain, the field is a mess."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "Bad news → sympathy and an offer of help. A repeats \"made it\" with a different meaning; D repeats \"after all\"; B gives a length of time nobody asked about.",
+   "tr": "Kötü haber → üzüntü ve yardım teklifi. A \"made it\" ifadesini farklı anlamda tekrarlıyor; D \"after all\" ifadesini tekrarlıyor; B kimsenin sormadığı bir süre bilgisi veriyor.",
+   "es": "Mala noticia → comprensión y una oferta de ayuda. A repite \"made it\" con otro significado; D repite \"after all\"; B da una duración que nadie ha preguntado."
+  }
+ }
+}

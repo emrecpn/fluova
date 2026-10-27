@@ -1,0 +1,27 @@
+{
+ "id": "p4_bs5",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "laptop loan",
+ "origin": "practice-04",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p4_bs5",
+  "personA": "Which laptop did you end up borrowing?",
+  "frame": [
+   "I took",
+   null,
+   null,
+   null,
+   null,
+   "to me."
+  ],
+  "answer": [
+   "the one",
+   "that",
+   "the librarian",
+   "recommended"
+  ],
+  "distractors": []
+ }
+}

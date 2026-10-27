@@ -1,0 +1,12 @@
+{
+ "id": "p4_ctw_roof_shapes",
+ "task": "ctw",
+ "tier": "easy",
+ "topic": "roof shapes",
+ "origin": "practice-04",
+ "screen": {
+  "type": "ctw",
+  "title": "Complete the Words: Roof shapes",
+  "source": "In places that get a lot of snow, many houses are built with steep roofs instead of flat ones. Snow is heavy, and a thick layer can press down hard on a roof. On a steep roof, the snow slides off before it can pile up. Flat roofs are more common in dry and warm places, where people sometimes use them as an extra room on summer evenings. The shape of a roof can tell us a lot about the weather in an area."
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "id": "p4_ecr1",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "buying notebooks",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_ecr1",
+  "audio": [
+   {
+    "text": "Where can I buy a notebook?",
+    "voice": "female:gb"
+   }
+  ],
+  "options": [
+   "Yes, I need one too.",
+   "At the shop by the gate.",
+   "It costs two dollars.",
+   "This afternoon, I think."
+  ],
+  "answer": 1,
+  "why": {
+   "en": "\"Where\" → a place. A answers as if it were a yes/no question; D gives a time; C gives a price.",
+   "tr": "\"Where\" → bir yer. A soruyu evet/hayır sorusu gibi cevaplıyor; D bir zaman veriyor; C bir fiyat veriyor.",
+   "es": "\"Where\" → un lugar. A responde como si fuera una pregunta de sí o no; D da una hora; C da un precio."
+  }
+ }
+}

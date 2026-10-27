@@ -1,0 +1,29 @@
+{
+ "id": "p4_cr9",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "presentation practice",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_cr9",
+  "audio": [
+   {
+    "text": "Should we practice our presentation before class or after lunch?",
+    "voice": "female:au"
+   }
+  ],
+  "options": [
+   "Yes, I think we really need a lot more practice on it.",
+   "I had a sandwich for lunch today.",
+   "I've got a lab after lunch, so earlier works better.",
+   "Our class was canceled last Monday."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "Either/or question → a choice with a reason (\"earlier\" = before class). A answers \"Yes\" to an either/or question; B repeats \"lunch\"; D repeats \"class\".",
+   "tr": "Seçenek sorusu (\"… mı, … mı?\") → gerekçeli bir seçim (\"earlier\" = dersten önce). A seçenek soran bir soruya \"Yes\" diyor; B \"lunch\" kelimesini tekrarlıyor; D \"class\" kelimesini tekrarlıyor.",
+   "es": "Pregunta de elección → una elección con motivo (\"earlier\" = antes de clase). A responde \"Yes\" a una pregunta de elección; B repite \"lunch\"; D repite \"class\"."
+  }
+ }
+}
