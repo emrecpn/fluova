@@ -1,0 +1,27 @@
+{
+ "id": "p4_bs8",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "food pantry",
+ "origin": "practice-04",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p4_bs8",
+  "personA": "I'm volunteering at the food pantry this afternoon.",
+  "frame": [
+   "That's great!",
+   null,
+   null,
+   null,
+   null,
+   "a lot of help?"
+  ],
+  "answer": [
+   "Do",
+   "they",
+   "usually",
+   "need"
+  ],
+  "distractors": []
+ }
+}

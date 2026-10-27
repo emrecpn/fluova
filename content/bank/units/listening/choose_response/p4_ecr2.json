@@ -1,0 +1,29 @@
+{
+ "id": "p4_ecr2",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "library hours",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_ecr2",
+  "audio": [
+   {
+    "text": "What time does the library close?",
+    "voice": "male:au"
+   }
+  ],
+  "options": [
+   "On the second floor.",
+   "I closed the window.",
+   "At nine tonight.",
+   "Yes, it's open now."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "\"What time\" → a time. A gives a place; B repeats \"close\" with a different meaning; D answers \"Yes\" to a \"what time\" question.",
+   "tr": "\"What time\" → bir saat. A bir yer veriyor; B \"close\" kelimesini farklı anlamda tekrarlıyor; D \"what time\" sorusuna \"Yes\" diyor.",
+   "es": "\"What time\" → una hora. A da un lugar; B repite \"close\" con otro significado; D responde \"Yes\" a una pregunta con \"what time\"."
+  }
+ }
+}

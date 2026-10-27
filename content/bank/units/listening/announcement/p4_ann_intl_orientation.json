@@ -1,0 +1,52 @@
+{
+ "id": "p4_ann_intl_orientation",
+ "task": "announcement",
+ "tier": "medium",
+ "topic": "international orientation",
+ "origin": "practice-04",
+ "screen": {
+  "type": "listening",
+  "title": "Announcement: Orientation schedule change",
+  "prompt": "Listen to an announcement at an orientation event.",
+  "audio": [
+   {
+    "text": "Good morning, and welcome to all our new international students. There's one change to today's schedule. Because of the rain, the campus tour planned for eleven will now start at one-thirty, and lunch will be served at eleven instead, in the main hall. Before you leave, please pick up your welcome packet at the front table. It contains your temporary student card, which you'll need to enter the library.",
+    "voice": "male:gb"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p4_ann_intl_orientation_q1",
+    "stem": "What change does the speaker announce?",
+    "options": [
+     "Lunch has been canceled because of the weather",
+     "The tour will now take place inside the main hall",
+     "The orientation will end earlier than planned",
+     "Two of the day's activities have switched times"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Detail (paraphrase): the tour moved from eleven to one-thirty and lunch moved to eleven, so the two events swapped. B reuses \"main hall\", which is where lunch will be served; A is wrong because lunch is only moved, not canceled.",
+     "tr": "Ayrıntı (parafraz): tur saat on birden bir buçuğa, öğle yemeği de on bire alındı; yani iki etkinliğin saatleri yer değiştirdi. B \"main hall\" ifadesini kullanıyor ama orası yemeğin verileceği yer; A yanlış, çünkü yemek iptal edilmedi, sadece saati değişti.",
+     "es": "Detalle (paráfrasis): la visita pasó de las once a la una y media y el almuerzo pasó a las once, así que los dos eventos intercambiaron sus horas. B reutiliza \"main hall\", que es donde se servirá el almuerzo; A es incorrecta porque el almuerzo solo cambia de hora, no se cancela."
+    }
+   },
+   {
+    "id": "p4_ann_intl_orientation_q2",
+    "stem": "Why should students pick up a welcome packet?",
+    "options": [
+     "It has a card they need to get into the library",
+     "It shows the new route of the campus tour",
+     "It includes a ticket for lunch in the main hall",
+     "It explains how to apply for a permanent ID"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Detail (paraphrase): the packet contains a temporary student card \"which you'll need to enter the library\". C mixes in lunch, which is mentioned earlier; D twists \"temporary\".",
+     "tr": "Ayrıntı (parafraz): pakette \"which you'll need to enter the library\" denen geçici öğrenci kartı var. C daha önce geçen öğle yemeğini karıştırıyor; D \"temporary\" kelimesini çarpıtıyor.",
+     "es": "Detalle (paráfrasis): el paquete contiene una tarjeta temporal de estudiante \"which you'll need to enter the library\". C mezcla el almuerzo, que se menciona antes; D tergiversa \"temporary\"."
+    }
+   }
+  ]
+ }
+}

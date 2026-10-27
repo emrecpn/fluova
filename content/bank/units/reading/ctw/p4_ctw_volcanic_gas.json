@@ -1,0 +1,12 @@
+{
+ "id": "p4_ctw_volcanic_gas",
+ "task": "ctw",
+ "tier": "hard",
+ "topic": "volcanic gases",
+ "origin": "practice-04",
+ "screen": {
+  "type": "ctw",
+  "title": "Complete the Words: Volcanic gases",
+  "source": "Volcanologists increasingly rely on measurements of escaping gases to anticipate eruptions that seismic instruments alone might fail to predict. As magma ascends toward the surface, declining pressure allows dissolved gases to separate from the molten rock, much as bubbles appear when a bottle of soda is opened. Carbon dioxide escapes at comparatively great depths, whereas sulfur dioxide is released mainly as magma approaches shallower levels. Consequently, a rising ratio of sulfur dioxide to carbon dioxide may indicate that magma is nearing the surface. Interpreting such signals nevertheless remains difficult, because groundwater can absorb sulfur dioxide and obscure the pattern."
+ }
+}

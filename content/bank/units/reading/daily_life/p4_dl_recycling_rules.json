@@ -1,0 +1,50 @@
+{
+ "id": "p4_dl_recycling_rules",
+ "task": "daily_life",
+ "tier": "medium",
+ "topic": "recycling rules",
+ "origin": "practice-04",
+ "screen": {
+  "type": "passage",
+  "title": "Residence Life: New Recycling Rules",
+  "directions": "Read in Daily Life (notice)",
+  "text": [
+   "<strong>Residence Halls — New Recycling Rules</strong>",
+   "Beginning October 1, glass bottles and jars must go in the green bins in each building's basement instead of the blue bins on every floor. The blue bins will accept only paper, cans, and clean plastic containers. Pizza boxes and anything else with food on it belong in the regular trash. Halls that keep their bins correctly sorted all semester will be entered in a drawing for a free movie night."
+  ],
+  "questions": [
+   {
+    "id": "p4_dl_recycling_rules_q1",
+    "stem": "What is the main purpose of the notice?",
+    "options": [
+     "To announce that the blue bins on each floor will be removed",
+     "To explain where residents should now put certain kinds of waste",
+     "To invite residents to help sort the recycling in the basement",
+     "To tell residents how they can sign up for a free movie night"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Main purpose (paraphrase): the notice tells residents which bin to use for glass, for recyclables and for items with food on them. A is wrong because the blue bins stay; they simply accept fewer items. D turns a minor detail (the prize drawing) into the purpose.",
+     "tr": "Ana amaç (parafraz): duyuru cam, geri dönüştürülebilir atıklar ve üzerinde yemek kalıntısı olan şeyler için hangi kutunun kullanılacağını anlatıyor. A yanlış, çünkü mavi kutular kaldırılmıyor; yalnızca daha az şey kabul ediyor. D küçük bir ayrıntıyı (ödül çekilişini) ana amaç sanıyor.",
+     "es": "Propósito principal (paráfrasis): el aviso explica en qué contenedor va el vidrio, el material reciclable y lo que tiene restos de comida. A es incorrecta porque los contenedores azules se quedan; solo aceptan menos cosas. D convierte un detalle menor (el sorteo) en el propósito."
+    }
+   },
+   {
+    "id": "p4_dl_recycling_rules_q2",
+    "stem": "A resident has an empty yogurt container with some yogurt still inside. Where should it go?",
+    "options": [
+     "Into one of the blue bins on that floor",
+     "Into a green bin in the basement",
+     "Next to the bins, for staff to sort later",
+     "Together with the regular trash"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Application of a detail: the blue bins take only clean plastic, and anything with food on it belongs in the regular trash. A is the trap: the container is plastic, but it is not clean. B is only for glass bottles and jars.",
+     "tr": "Ayrıntının uygulanması: mavi kutular yalnızca temiz plastik kabul ediyor; üzerinde yemek olan her şey normal çöpe gidiyor. A tuzak: kap plastik ama temiz değil. B yalnızca cam şişe ve kavanozlar için.",
+     "es": "Aplicación de un detalle: los contenedores azules solo aceptan plástico limpio, y todo lo que tenga comida va a la basura normal. A es la trampa: el envase es de plástico, pero no está limpio. B es solo para botellas y frascos de vidrio."
+    }
+   }
+  ]
+ }
+}

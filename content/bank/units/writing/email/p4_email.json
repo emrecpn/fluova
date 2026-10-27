@@ -1,0 +1,20 @@
+{
+ "id": "p4_email",
+ "task": "email",
+ "tier": "medium",
+ "topic": "food pantry shift",
+ "origin": "practice-04",
+ "screen": {
+  "type": "writing",
+  "id": "p4_email",
+  "kind": "email",
+  "minutes": 7,
+  "wordTarget": {
+   "en": "Cover all three points in full sentences. Do not forget a closing.",
+   "tr": "Üç maddenin hepsini karşıla; tam cümleler kur. Kapanışı unutma.",
+   "es": "Cubre los tres puntos con oraciones completas. No olvides la despedida."
+  },
+  "prompt": "Write an email to Ms. Rivera. In your email, do the following: (1) Explain what has changed in your schedule. (2) Describe another way you could still help the food pantry. (3) Ask what she would like you to do about this Thursday's shift.",
+  "scenario": "At the start of the semester, you signed up to volunteer at the campus food pantry every Thursday afternoon. Your chemistry lab has just been moved to Thursday afternoons, so you can no longer work that shift. The pantry coordinator, Ms. Rivera, is expecting you this Thursday, when a large food delivery will arrive."
+ }
+}

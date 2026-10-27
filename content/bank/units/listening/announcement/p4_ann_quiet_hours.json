@@ -1,0 +1,52 @@
+{
+ "id": "p4_ann_quiet_hours",
+ "task": "announcement",
+ "tier": "easy",
+ "topic": "quiet hours",
+ "origin": "practice-04",
+ "screen": {
+  "type": "listening",
+  "title": "Announcement: Quiet hours before exams",
+  "prompt": "Listen to an announcement in a residence hall.",
+  "audio": [
+   {
+    "text": "Hello, residents. Starting Monday, quiet hours will begin at eight p.m. instead of ten, because final exams are coming. Please keep music and voices low after eight. The study room on the first floor will be open all night. Good luck with your exams!",
+    "voice": "female:gb"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p4_ann_quiet_hours_q1",
+    "stem": "What is changing?",
+    "options": [
+     "Final exams will start on Monday",
+     "The study room will close at ten",
+     "Quiet hours will start earlier",
+     "Music is not allowed in the hall"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Detail (paraphrase): quiet hours will begin at eight instead of ten. A misuses \"Monday\", the day the new rule starts; B contradicts \"open all night\"; D goes too far, since music must only be kept low.",
+     "tr": "Ayrıntı (parafraz): sessiz saatler ondan değil sekizden başlayacak. A yeni kuralın başladığı gün olan \"Monday\" kelimesini yanlış kullanıyor; B \"open all night\" ile çelişiyor; D aşırı, çünkü müziğin sadece kısık olması isteniyor.",
+     "es": "Detalle (paráfrasis): las horas de silencio empezarán a las ocho en lugar de a las diez. A usa mal \"Monday\", el día en que empieza la nueva norma; B contradice \"open all night\"; D exagera, porque solo se pide bajar la música."
+    }
+   },
+   {
+    "id": "p4_ann_quiet_hours_q2",
+    "stem": "What is true about the study room?",
+    "options": [
+     "It will be open all night",
+     "It is on the second floor",
+     "It closes at eight p.m.",
+     "It is only for final exams"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Detail: \"open all night\". B gives the wrong floor; C confuses the room with the new start of quiet hours.",
+     "tr": "Ayrıntı: \"open all night\". B yanlış katı veriyor; C çalışma odasını sessiz saatlerin yeni başlangıcıyla karıştırıyor.",
+     "es": "Detalle: \"open all night\". B da la planta equivocada; C confunde la sala con el nuevo inicio de las horas de silencio."
+    }
+   }
+  ]
+ }
+}

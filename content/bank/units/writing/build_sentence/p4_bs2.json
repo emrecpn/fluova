@@ -1,0 +1,27 @@
+{
+ "id": "p4_bs2",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "writing center hours",
+ "origin": "practice-04",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p4_bs2",
+  "personA": "The writing center was closed when I went there.",
+  "frame": [
+   "Did anyone tell you",
+   null,
+   null,
+   null,
+   null,
+   "open again?"
+  ],
+  "answer": [
+   "when",
+   "it",
+   "would",
+   "be"
+  ],
+  "distractors": []
+ }
+}

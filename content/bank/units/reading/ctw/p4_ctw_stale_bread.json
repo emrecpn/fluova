@@ -1,0 +1,12 @@
+{
+ "id": "p4_ctw_stale_bread",
+ "task": "ctw",
+ "tier": "medium",
+ "topic": "stale bread",
+ "origin": "practice-04",
+ "screen": {
+  "type": "ctw",
+  "title": "Complete the Words: Stale bread",
+  "source": "Most people assume that bread goes stale because it dries out, but the main cause is a change inside the starch. When dough is baked, heat and water make the starch grains swell and lose their orderly structure, which keeps the inside of the loaf soft. As the bread cools and sits, the starch molecules slowly line up again and form firm crystals. This happens fastest at refrigerator temperatures, so bread kept in the fridge often hardens sooner than bread left on the counter. Briefly warming a stale slice can partly reverse the process."
+ }
+}

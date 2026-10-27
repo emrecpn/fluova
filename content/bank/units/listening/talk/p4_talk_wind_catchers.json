@@ -1,0 +1,92 @@
+{
+ "id": "p4_talk_wind_catchers",
+ "task": "talk",
+ "tier": "hard",
+ "topic": "wind catchers",
+ "origin": "practice-04",
+ "screen": {
+  "type": "listening",
+  "title": "Academic Talk: Cooling buildings with wind catchers",
+  "prompt": "Listen to part of a lecture in an architecture class.",
+  "audio": [
+   {
+    "text": "Long before air conditioning, builders in hot, dry regions found ways to keep interiors comfortable. One of the most elegant is the wind catcher, a tall tower rising above the roof, which you can still see in parts of Iran and around the Persian Gulf. Near the top, the tower has openings that face the prevailing wind.",
+    "voice": "female:au"
+   },
+   {
+    "text": "The basic principle is simple. Wind enters the openings and is pushed down a shaft into the rooms below, while warm indoor air escapes through windows or another part of the tower. Moving air feels cooler on the skin, even when its temperature doesn't change. But many wind catchers went further. Some sent the incoming air over a pool of water or through an underground channel before it reached the living spaces. As the water evaporated, it absorbed heat, so the air arriving inside really was several degrees cooler.",
+    "voice": "female:au"
+   },
+   {
+    "text": "Interestingly, wind catchers can work even on still days. The tower's walls soak up sunlight, so the air inside the shaft warms up and rises, pulling fresh air through the house behind it. In other words, the tower acts as both a scoop and a chimney. Today, some architects are returning to the design, since it cools buildings without using any electricity.",
+    "voice": "female:au"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p4_talk_wind_catchers_q1",
+    "stem": "What is the lecture mainly about?",
+    "options": [
+     "Why buildings in dry regions were built without windows",
+     "How a traditional tower design keeps buildings cool",
+     "How modern air conditioners were first invented",
+     "Why pools of water were common in ancient homes"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Main idea: how wind catchers cool the rooms below them. A contradicts the lecture, since warm air escapes through windows; D turns one cooling technique into the topic; C is mentioned only as a contrast.",
+     "tr": "Ana fikir: rüzgâr kulelerinin alttaki odaları nasıl serinlettiği. A konuşmayla çelişiyor, çünkü sıcak hava pencerelerden çıkıyor; D tek bir serinletme yöntemini ana konu yapıyor; C yalnızca karşılaştırma için anılıyor.",
+     "es": "Idea principal: cómo las torres de viento refrescan las habitaciones de abajo. A contradice la clase, porque el aire caliente sale por las ventanas; D convierte una sola técnica de refrigeración en el tema; C solo se menciona como contraste."
+    }
+   },
+   {
+    "id": "p4_talk_wind_catchers_q2",
+    "stem": "According to the professor, why was air that passed over water cooler?",
+    "options": [
+     "The water was colder than the outside air at night",
+     "The pool blocked sunlight from entering the house",
+     "The water made the air move faster through the shaft",
+     "Evaporation took heat out of the air"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Detail (paraphrase): \"As the water evaporated, it absorbed heat\", so the air really was cooler. C confuses this with the separate point that moving air only feels cooler; A and B are not mentioned.",
+     "tr": "Ayrıntı (parafraz): \"As the water evaporated, it absorbed heat\"; bu yüzden hava gerçekten daha serindi. C bunu, hareket eden havanın yalnızca daha serin hissettirdiği ayrı noktayla karıştırıyor; A ve B konuşmada geçmiyor.",
+     "es": "Detalle (paráfrasis): \"As the water evaporated, it absorbed heat\", así que el aire estaba realmente más fresco. C lo confunde con la idea distinta de que el aire en movimiento solo se siente más fresco; A y B no se mencionan."
+    }
+   },
+   {
+    "id": "p4_talk_wind_catchers_q3",
+    "stem": "Why does the professor say that moving air feels cooler \"even when its temperature doesn't change\"?",
+    "options": [
+     "To separate feeling cooler from actually being cooler",
+     "To argue that wind catchers do not really cool buildings",
+     "To explain why the towers face the prevailing wind",
+     "To show that people in hot regions dress for the heat"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Function: she sets up a contrast with the water method, which \"really\" lowers the temperature. B is the trap: she goes on to say that some designs truly cooled the air; C confuses this point with the description of the openings.",
+     "tr": "İşlev: sıcaklığı \"really\" düşüren su yöntemiyle bir karşıtlık kuruyor. B tuzak: hoca devamında bazı tasarımların havayı gerçekten soğuttuğunu söylüyor; C bu noktayı açıklıkların tarifiyle karıştırıyor.",
+     "es": "Función: establece un contraste con el método del agua, que \"really\" baja la temperatura. B es la trampa: a continuación dice que algunos diseños sí enfriaban el aire; C confunde este punto con la descripción de las aberturas."
+    }
+   },
+   {
+    "id": "p4_talk_wind_catchers_q4",
+    "stem": "What can be inferred about a wind catcher on a windless day when its tower is in deep shade?",
+    "options": [
+     "It would cool the house better than on a sunny day",
+     "It would pull warm air down into the rooms below",
+     "It would move very little air through the house",
+     "It would work only if its openings faced north"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Inference: on still days the tower works only because sunlight warms the air in the shaft, so with no wind and no sun little air would move. A reverses the role of sunlight; D is not supported by the lecture.",
+     "tr": "Çıkarım: rüzgârsız günlerde kule ancak güneş bacadaki havayı ısıttığı için çalışıyor; rüzgâr da güneş de yoksa çok az hava hareket eder. A güneşin rolünü tersine çeviriyor; D konuşmada desteklenmiyor.",
+     "es": "Inferencia: en días sin viento la torre funciona solo porque el sol calienta el aire del conducto, así que sin viento ni sol se movería muy poco aire. A invierte el papel del sol; D no tiene apoyo en la clase."
+    }
+   }
+  ]
+ }
+}

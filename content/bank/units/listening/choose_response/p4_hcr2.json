@@ -1,0 +1,29 @@
+{
+ "id": "p4_hcr2",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "missed concert",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_hcr2",
+  "audio": [
+   {
+    "text": "I'd have gone to the concert if I'd known about it.",
+    "voice": "male:gb"
+   }
+  ],
+  "options": [
+   "It was announced on the campus radio all week.",
+   "I know a shortcut to the concert hall.",
+   "I think it starts at eight tomorrow night.",
+   "Yes, I'd go too if I had the time."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Indirect reply to a regret: the concert was advertised all week, so he could have known about it. C treats the concert as a future event, but it has already happened; B repeats \"concert\" and \"know\".",
+   "tr": "Pişmanlığa dolaylı cevap: konser bütün hafta duyurulmuştu, yani haberi olabilirdi. C konseri gelecekteki bir etkinlik gibi ele alıyor ama konser çoktan oldu; B \"concert\" ve \"know\" kelimelerini tekrarlıyor.",
+   "es": "Respuesta indirecta a un lamento: el concierto se anunció toda la semana, así que podría haberse enterado. C trata el concierto como algo futuro, pero ya ocurrió; B repite \"concert\" y \"know\"."
+  }
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "id": "p4_bs4",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "intramural league",
+ "origin": "practice-04",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p4_bs4",
+  "personA": "Who should I ask about joining the volleyball league?",
+  "frame": [
+   "Talk to",
+   null,
+   null,
+   null,
+   null,
+   "at the recreation center."
+  ],
+  "answer": [
+   "the student",
+   "who",
+   "runs",
+   "the front desk"
+  ],
+  "distractors": [
+   "which"
+  ]
+ }
+}

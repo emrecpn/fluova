@@ -1,0 +1,29 @@
+{
+ "id": "p4_cr5",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "holding doors",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_cr5",
+  "audio": [
+   {
+    "text": "Would you mind holding the door for a second?",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "Not at all. After you.",
+   "I don't mind the cold, actually.",
+   "It was open when I got here.",
+   "Just a second ago, I think."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Request → agreement. \"Would you mind…?\" is answered with \"Not at all\", which means \"yes, I'll do it\". B repeats \"mind\" with a different meaning; D repeats \"second\" as a time.",
+   "tr": "Rica → kabul. \"Would you mind…?\" sorusuna \"Not at all\" cevabı \"tabii, yaparım\" demektir. B \"mind\" kelimesini farklı anlamda tekrarlıyor; D \"second\" kelimesini zaman bildirmek için tekrarlıyor.",
+   "es": "Petición → aceptación. Cuando alguien pregunta \"Would you mind…?\", la respuesta \"Not at all\" significa \"claro, lo hago\". B repite \"mind\" con otro significado; D repite \"second\" como una indicación de tiempo."
+  }
+ }
+}

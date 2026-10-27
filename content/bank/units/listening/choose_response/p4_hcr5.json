@@ -1,0 +1,29 @@
+{
+ "id": "p4_hcr5",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "open-book exam",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_hcr5",
+  "audio": [
+   {
+    "text": "Isn't the history exam supposed to be open-book?",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "The history building is open until nine.",
+   "I'm supposed to return this book today.",
+   "No, I haven't opened it since Monday.",
+   "That's what I heard, but let's double-check."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "Negative question → a cautious confirmation. A repeats \"open\" and \"history\"; B repeats \"supposed\" and \"book\"; C says \"No\" about opening something else.",
+   "tr": "Olumsuz soru → temkinli bir onay. A \"open\" ve \"history\" kelimelerini tekrarlıyor; B \"supposed\" ve \"book\" kelimelerini tekrarlıyor; C başka bir şeyi açmakla ilgili \"No\" diyor.",
+   "es": "Pregunta negativa → una confirmación prudente. A repite \"open\" y \"history\"; B repite \"supposed\" y \"book\"; C dice \"No\" sobre abrir otra cosa."
+  }
+ }
+}

@@ -1,0 +1,33 @@
+{
+ "id": "p4_disc",
+ "task": "discussion",
+ "tier": "medium",
+ "topic": "student laptops",
+ "origin": "practice-04",
+ "screen": {
+  "type": "writing",
+  "id": "p4_disc",
+  "kind": "discussion",
+  "minutes": 10,
+  "wordTarget": {
+   "en": "At least 100 words. State your opinion, support it, and add your own contribution to the discussion.",
+   "tr": "En az 100 kelime. Görüşünü belirt, destekle ve tartışmaya kendi katkını ekle.",
+   "es": "Al menos 100 palabras. Da tu opinión, justifícala y aporta algo propio a la discusión."
+  },
+  "prompt": "Your professor is teaching a class on education policy. Write a post responding to the professor's question. Express and support your opinion, and make a contribution to the discussion in your own words.",
+  "professor": {
+   "name": "Lindqvist",
+   "post": "Laptops have become essential for almost every course. Some universities now give each new student a laptop and include the cost in tuition fees. Others keep fees lower and run a loan program instead, lending laptops for a few days or a whole semester to students who need one. Both approaches aim to make sure that no student falls behind. Which approach do you think serves students better, and why?"
+  },
+  "students": [
+   {
+    "name": "Amara",
+    "post": "I think every student should receive a laptop. When only some students borrow one, everyone can see who could not afford their own, and that can be embarrassing. Also, if everyone has the same model, professors can plan assignments around the same software without worrying about whether it will run on each student's computer."
+   },
+   {
+    "name": "Tomás",
+    "post": "I'd prefer a loan program. Most students already arrive with a laptop, so giving everyone another one wastes money and creates more electronic waste. A loan program keeps fees lower and still helps students whose computer breaks in the middle of the term, which is exactly when they need help the most."
+   }
+  ]
+ }
+}

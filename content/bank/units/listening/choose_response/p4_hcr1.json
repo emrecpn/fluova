@@ -1,0 +1,29 @@
+{
+ "id": "p4_hcr1",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "lab report",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_hcr1",
+  "audio": [
+   {
+    "text": "You're not still working on that lab report, are you?",
+    "voice": "female:gb"
+   }
+  ],
+  "options": [
+   "The lab is on the third floor of the science building.",
+   "I'm afraid so. The data took forever to sort out.",
+   "No, I don't report to anyone at my job.",
+   "I work at the café most weekends."
+  ],
+  "answer": 1,
+  "why": {
+   "en": "Indirect \"yes\": \"I'm afraid so\" confirms she is still working on it, and she adds a reason. C repeats \"report\" with a different meaning; A answers \"where\"; D repeats \"work\".",
+   "tr": "Dolaylı \"evet\": \"I'm afraid so\" hâlâ üzerinde çalıştığını doğruluyor ve bir sebep ekliyor. C \"report\" kelimesini farklı anlamda tekrarlıyor; A \"where\" sorusunu cevaplıyor; D \"work\" kelimesini tekrarlıyor.",
+   "es": "\"Sí\" indirecto: \"I'm afraid so\" confirma que sigue trabajando en él y añade un motivo. C repite \"report\" con otro significado; A responde a \"where\"; D repite \"work\"."
+  }
+ }
+}

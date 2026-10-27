@@ -1,0 +1,99 @@
+{
+ "id": "p4_ac_infant_expectations",
+ "task": "academic",
+ "tier": "hard",
+ "topic": "infant cognition",
+ "origin": "practice-04",
+ "screen": {
+  "type": "passage",
+  "title": "What Infants Expect",
+  "directions": "Read an Academic Passage — upper module",
+  "text": [
+   "For much of the twentieth century, the dominant account of infant cognition held that babies younger than about eight months lack object permanence, the understanding that objects continue to exist when they are out of sight. This conclusion rested largely on search tasks: when an attractive toy was covered by a cloth, young infants typically made no attempt to retrieve it.",
+   "Beginning in the 1980s, however, researchers adopted an alternative method that did not depend on reaching. Exploiting infants' tendency to look longer at surprising events, they presented apparently impossible scenes, such as a screen rotating straight through the space occupied by a hidden box. Infants as young as four months stared reliably longer at these outcomes, suggesting that they mentally represented the concealed object.",
+   "Critics caution that prolonged looking may reflect perceptual novelty rather than genuine reasoning about objects. Even so, the findings have persuaded many developmental psychologists that earlier failures revealed limitations in planning and coordinating actions rather than an absence of knowledge."
+  ],
+  "questions": [
+   {
+    "id": "p4_ac_infant_expectations_q1",
+    "stem": "What is the passage mainly about?",
+    "options": [
+     "Why infants prefer attractive toys to the ordinary objects around them",
+     "How a different method changed views of what babies understand",
+     "Why critics reject every study that measures how long infants look",
+     "How infants gradually learn to coordinate their reaching and looking"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Main idea (paraphrase): looking-time studies suggested that infants know more than search tasks had shown. C is too extreme; critics raise a doubt, but they do not reject every study. D turns a detail from the last sentence into the topic.",
+     "tr": "Ana fikir (parafraz): bakış süresi çalışmaları bebeklerin, arama görevlerinin gösterdiğinden daha fazlasını bildiğini düşündürdü. C aşırı; eleştirmenler bir şüphe dile getiriyor ama her çalışmayı reddetmiyor. D son cümledeki bir ayrıntıyı konunun kendisi yapıyor.",
+     "es": "Idea principal (paráfrasis): los estudios de tiempo de mirada sugirieron que los bebés saben más de lo que mostraban las tareas de búsqueda. C es demasiado extremo; los críticos plantean una duda, pero no rechazan todos los estudios. D convierte un detalle de la última frase en el tema."
+    }
+   },
+   {
+    "id": "p4_ac_infant_expectations_q2",
+    "stem": "The word \"Exploiting\" in the passage is closest in meaning to",
+    "options": [
+     "Paying no attention to",
+     "Measuring precisely",
+     "Calling into question",
+     "Making use of"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Vocabulary in context: researchers exploited, that is, made use of, infants' habit of looking longer at surprising events. B is tempting because looking time was measured, but the verb refers to taking advantage of the habit.",
+     "tr": "Bağlamda kelime: araştırmacılar bebeklerin şaşırtıcı olaylara daha uzun bakma eğiliminden yararlandı (\"exploiting\" = making use of). B çekici görünüyor çünkü bakış süresi ölçüldü; ama fiil bu eğilimden faydalanmayı anlatıyor.",
+     "es": "Vocabulario en contexto: los investigadores aprovecharon (\"exploiting\" = making use of) la tendencia de los bebés a mirar más tiempo los sucesos sorprendentes. B resulta tentadora porque se midió el tiempo de mirada, pero el verbo se refiere a aprovechar esa tendencia."
+    }
+   },
+   {
+    "id": "p4_ac_infant_expectations_q3",
+    "stem": "Why does the author mention \"a screen rotating straight through the space occupied by a hidden box\"?",
+    "options": [
+     "To illustrate an event that should surprise an infant aware of the box",
+     "To show how researchers taught infants to reach for objects behind screens",
+     "To describe a toy that infants found more attractive than a cloth",
+     "To explain why earlier search tasks produced unreliable results"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Author's purpose: the impossible scene is an example of an event that only surprises an infant who represents the hidden box. B is wrong because the new method \"did not depend on reaching\". D is not the reason the example is given.",
+     "tr": "Yazarın amacı: bu imkânsız sahne, yalnızca gizli kutuyu zihninde canlandıran bir bebeği şaşırtacak bir olaya örnek. B yanlış, çünkü yeni yöntem \"did not depend on reaching\". D örneğin veriliş amacı değil.",
+     "es": "Propósito del autor: la escena imposible es un ejemplo de un suceso que solo sorprende a un bebé que se representa la caja escondida. B es incorrecta porque el nuevo método \"did not depend on reaching\". D no es la razón por la que se da el ejemplo."
+    }
+   },
+   {
+    "id": "p4_ac_infant_expectations_q4",
+    "stem": "What does the author suggest about infants who did not search for a covered toy?",
+    "options": [
+     "They had not yet noticed that the toy was attractive",
+     "They were still too young to see any object partly hidden by a cloth",
+     "They may have known it was there but been unable to act on it",
+     "They were probably reacting to the novelty of the cloth"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Inference: the last sentence says earlier failures reflected limits in \"planning and coordinating actions\" rather than missing knowledge. D applies the critics' novelty argument to the wrong studies. B is never claimed in the passage.",
+     "tr": "Çıkarım: son cümle, önceki başarısızlıkların bilgi eksikliğinden değil \"planning and coordinating actions\" konusundaki sınırlılıklardan kaynaklandığını söylüyor. D eleştirmenlerin yenilik argümanını yanlış çalışmalara uyguluyor. B metinde hiç iddia edilmiyor.",
+     "es": "Inferencia: la última frase dice que los fallos anteriores reflejaban límites en \"planning and coordinating actions\" y no falta de conocimiento. D aplica el argumento de la novedad de los críticos a los estudios equivocados. B no se afirma en el texto."
+    }
+   },
+   {
+    "id": "p4_ac_infant_expectations_q5",
+    "stem": "According to the passage, what concern do critics raise about the newer studies?",
+    "options": [
+     "The studies tested too few infants to be reliable",
+     "Four-month-olds cannot see a rotating screen clearly",
+     "The scenes were not truly impossible in the real world",
+     "Infants might look longer simply because a scene is new to them"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Detail (paraphrase): longer looking \"may reflect perceptual novelty\", meaning the scene is simply new to the infant. A sounds like a typical criticism, but the passage never mentions how many infants were tested.",
+     "tr": "Ayrıntı (parafraz): daha uzun bakmak \"may reflect perceptual novelty\"; yani sahne bebek için sadece yeni olabilir. A tipik bir eleştiri gibi duruyor ama metin kaç bebeğin test edildiğinden hiç söz etmiyor.",
+     "es": "Detalle (paráfrasis): mirar más tiempo \"may reflect perceptual novelty\", es decir, la escena simplemente es nueva para el bebé. A parece una crítica típica, pero el texto nunca menciona cuántos bebés participaron."
+    }
+   }
+  ]
+ }
+}

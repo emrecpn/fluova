@@ -1,0 +1,98 @@
+{
+ "id": "p4_ac_cricket_chirps",
+ "task": "academic",
+ "tier": "easy",
+ "topic": "cricket sounds",
+ "origin": "practice-04",
+ "screen": {
+  "type": "passage",
+  "title": "Why Crickets Chirp",
+  "directions": "Read an Academic Passage — lower module",
+  "text": [
+   "On summer evenings, the sound of crickets fills many fields and gardens. Only male crickets make this sound. A male rubs the edge of one wing against a row of small ridges on the other wing, a little like running a fingernail along a comb.",
+   "Most chirping is meant to attract females, which hear the sound through tiny openings on their front legs. Males also use a different song to warn other males to stay away. Crickets chirp faster when the air is warm and more slowly when it is cool, so some people use them to estimate the temperature."
+  ],
+  "questions": [
+   {
+    "id": "p4_ac_cricket_chirps_q1",
+    "stem": "What is the passage mainly about?",
+    "options": [
+     "How and why crickets make their sound",
+     "Why crickets are found mainly in fields and gardens",
+     "How female crickets choose which male to follow",
+     "Why crickets are quieter on warm summer nights"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main idea: the passage explains how the sound is made and what it is used for. D contradicts the text, because crickets chirp faster when it is warm. C is never discussed.",
+     "tr": "Ana fikir: metin sesin nasıl çıkarıldığını ve ne işe yaradığını anlatıyor. D metinle çelişiyor, çünkü cırcır böcekleri havada sıcakken daha hızlı öter. C metinde hiç ele alınmıyor.",
+     "es": "Idea principal: el texto explica cómo se produce el sonido y para qué sirve. D contradice el texto, porque los grillos cantan más rápido cuando hace calor. C no se trata en ningún momento."
+    }
+   },
+   {
+    "id": "p4_ac_cricket_chirps_q2",
+    "stem": "According to the passage, how does a male cricket make its sound?",
+    "options": [
+     "By opening and closing its mouth quickly",
+     "By rubbing one wing against the other",
+     "By tapping its front legs on the ground",
+     "By pushing air through openings on its legs"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail: a male \"rubs the edge of one wing against\" ridges on the other wing. D is the trap: the openings on the legs are how females hear, not how males make sound.",
+     "tr": "Ayrıntı: erkek böcek \"rubs the edge of one wing against\" diğer kanattaki çıkıntılara. D tuzak: bacaklardaki açıklıklar dişilerin duymasını sağlar, erkeklerin ses çıkarmasını değil.",
+     "es": "Detalle: el macho \"rubs the edge of one wing against\" las crestas de la otra ala. D es la trampa: las aberturas de las patas sirven para que las hembras oigan, no para que los machos produzcan el sonido."
+    }
+   },
+   {
+    "id": "p4_ac_cricket_chirps_q3",
+    "stem": "Why does the author mention \"a fingernail along a comb\"?",
+    "options": [
+     "To show that crickets have very sharp edges on their legs",
+     "To explain why some people find the sound unpleasant",
+     "To compare the cricket's song with human music",
+     "To help readers picture how the sound is made"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Author's purpose: a familiar comparison that helps the reader imagine the movement. B is the trap: the comparison describes how the sound is produced, not whether it is pleasant. A moves the ridges from the wings to the legs.",
+     "tr": "Yazarın amacı: okurun hareketi gözünde canlandırmasına yardım eden tanıdık bir karşılaştırma. B tuzak: karşılaştırma sesin nasıl çıktığını anlatıyor, hoş olup olmadığını değil. A çıkıntıları kanatlardan bacaklara taşıyor.",
+     "es": "Propósito del autor: una comparación conocida que ayuda al lector a imaginar el movimiento. B es la trampa: la comparación describe cómo se produce el sonido, no si es agradable. A traslada las crestas de las alas a las patas."
+    }
+   },
+   {
+    "id": "p4_ac_cricket_chirps_q4",
+    "stem": "The word \"estimate\" in the passage is closest in meaning to",
+    "options": [
+     "change on purpose",
+     "pay no attention to",
+     "roughly judge",
+     "carefully record"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Vocabulary in context: people use crickets to estimate, that is, roughly judge, the temperature. D is too exact; crickets give only an approximate idea of the temperature.",
+     "tr": "Bağlamda kelime: insanlar cırcır böceklerini sıcaklığı \"estimate\" etmek, yani kabaca tahmin etmek için kullanıyor. D fazla kesin; böcekler sıcaklık hakkında yalnızca yaklaşık bir fikir verir.",
+     "es": "Vocabulario en contexto: la gente usa los grillos para \"estimate\", es decir, calcular aproximadamente, la temperatura. D es demasiado exacta; los grillos solo dan una idea aproximada de la temperatura."
+    }
+   },
+   {
+    "id": "p4_ac_cricket_chirps_q5",
+    "stem": "What can be inferred about crickets on a cold evening?",
+    "options": [
+     "Only the females will make any sound",
+     "Their chirps will come more slowly",
+     "They will switch to their warning song",
+     "They will fly to warmer fields to sing"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Inference: crickets chirp \"more slowly when it is cool\", so on a cold evening the chirps come at a slower rate. A contradicts the fact that only males make the sound. C and D are not supported by the passage.",
+     "tr": "Çıkarım: cırcır böcekleri \"more slowly when it is cool\" öter; dolayısıyla soğuk bir akşamda ötüşler daha yavaş gelir. A yalnızca erkeklerin ses çıkardığı bilgisiyle çelişiyor. C ve D metinle desteklenmiyor.",
+     "es": "Inferencia: los grillos cantan \"more slowly when it is cool\", así que en una tarde fría el canto será más lento. A contradice que solo los machos producen el sonido. C y D no tienen apoyo en el texto."
+    }
+   }
+  ]
+ }
+}

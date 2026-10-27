@@ -1,0 +1,29 @@
+{
+ "id": "p4_hcr8",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "sold-out workbook",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_hcr8",
+  "audio": [
+   {
+    "text": "The bookstore's run out of the chemistry workbook again.",
+    "voice": "male:gb"
+   }
+  ],
+  "options": [
+   "I ran into her at the bookstore yesterday.",
+   "Chemistry is my favorite subject this year.",
+   "It's next to the café, on the ground floor.",
+   "Then it might be worth asking for a digital copy."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "Problem → a practical suggestion. A repeats \"run\" (ran into = met by chance); C answers \"where\"; B repeats \"chemistry\" without responding to the problem.",
+   "tr": "Sorun → pratik bir öneri. A \"run\" kelimesini tekrarlıyor (\"ran into\" = tesadüfen karşılaşmak); C \"where\" sorusunu cevaplıyor; B \"chemistry\" kelimesini tekrarlıyor ama soruna cevap vermiyor.",
+   "es": "Problema → una sugerencia práctica. A repite \"run\" (\"ran into\" = encontrarse por casualidad); C responde a \"where\"; B repite \"chemistry\" sin responder al problema."
+  }
+ }
+}

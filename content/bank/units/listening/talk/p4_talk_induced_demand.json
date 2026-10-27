@@ -1,0 +1,92 @@
+{
+ "id": "p4_talk_induced_demand",
+ "task": "talk",
+ "tier": "medium",
+ "topic": "induced traffic demand",
+ "origin": "practice-04",
+ "screen": {
+  "type": "listening",
+  "title": "Academic Talk: Why wider roads fill up",
+  "prompt": "Listen to part of a lecture in an urban planning class.",
+  "audio": [
+   {
+    "text": "Today I want to look at a puzzle that city planners have struggled with for decades. When a highway is crowded, the obvious solution seems to be adding more lanes. More space for cars should mean less traffic, right? Yet study after study has found that within a few years, the widened road is often just as crowded as before.",
+    "voice": "female:us"
+   },
+   {
+    "text": "Planners call this induced demand. When driving becomes faster and easier, people change their behavior. Someone who used to take the train starts driving instead. Someone who avoided rush hour starts leaving at eight rather than seven. Some families even move farther out, because the commute now seems manageable. All these small decisions add up to more cars, until traffic is back where it started. Some studies have even found that traffic grows almost exactly in step with the amount of new road space.",
+    "voice": "female:us"
+   },
+   {
+    "text": "Now, this doesn't mean new roads are never useful. A road linking two towns that had no direct connection can make a real difference. But for busy routes inside a city, many planners now argue it's better to manage demand, for example by charging drivers to enter crowded areas at peak hours, or by improving bus service so that fewer people need to drive.",
+    "voice": "female:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p4_talk_induced_demand_q1",
+    "stem": "What is the lecture mainly about?",
+    "options": [
+     "How highways were first designed in large cities",
+     "Why trains are faster than cars at rush hour",
+     "Why adding road space often fails to reduce traffic",
+     "How families decide where to live in a city"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Main idea (paraphrase of induced demand): widened roads soon fill up again. B and D take small examples from the lecture and make them the topic; A is never discussed.",
+     "tr": "Ana fikir (\"induced demand\" kavramının parafrazı): genişletilen yollar kısa sürede yeniden doluyor. B ve D konuşmadaki küçük örnekleri ana konu yapıyor; A hiç ele alınmıyor.",
+     "es": "Idea principal (paráfrasis de \"induced demand\"): las carreteras ampliadas pronto vuelven a llenarse. B y D toman ejemplos pequeños de la clase y los convierten en el tema; A no se trata."
+    }
+   },
+   {
+    "id": "p4_talk_induced_demand_q2",
+    "stem": "According to the professor, how do some people respond when a highway becomes faster?",
+    "options": [
+     "They sell their cars and start cycling to work",
+     "They travel at times they used to avoid",
+     "They complain to the city about road charges",
+     "They move closer to the city center"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail (paraphrase): someone who \"avoided rush hour starts leaving at eight\". D reverses the example, since families move farther out, not closer; A is the opposite of what she describes.",
+     "tr": "Ayrıntı (parafraz): \"avoided rush hour\" olan biri artık saat sekizde yola çıkıyor. D örneği tersine çeviriyor, çünkü aileler merkeze yaklaşmıyor, uzaklaşıyor; A anlatılanın tam tersi.",
+     "es": "Detalle (paráfrasis): alguien que \"avoided rush hour\" empieza a salir a las ocho. D invierte el ejemplo, porque las familias se van más lejos, no más cerca; A es lo contrario de lo que ella describe."
+    }
+   },
+   {
+    "id": "p4_talk_induced_demand_q3",
+    "stem": "Why does the professor mention a road linking two towns?",
+    "options": [
+     "To show that induced demand affects small towns most",
+     "To describe a road that later became very crowded",
+     "To explain how the idea of induced demand began",
+     "To give an example of when building a road can help"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Function: it is the exception, a case where a new road \"can make a real difference\". B wrongly applies induced demand to this example; A reverses her point.",
+     "tr": "İşlev: bu bir istisna, yeni bir yolun \"can make a real difference\" olduğu bir durum. B \"induced demand\" kavramını yanlışlıkla bu örneğe uyguluyor; A hocanın söylediğini tersine çeviriyor.",
+     "es": "Función: es la excepción, un caso en que una carretera nueva \"can make a real difference\". B aplica por error \"induced demand\" a este ejemplo; A invierte lo que ella dice."
+    }
+   },
+   {
+    "id": "p4_talk_induced_demand_q4",
+    "stem": "What would the professor most likely recommend for a crowded city street?",
+    "options": [
+     "Making alternatives to driving more appealing",
+     "Adding an extra lane in each direction of traffic",
+     "Building a new road to a nearby town",
+     "Lowering the speed limit during rush hour"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference: for routes inside a city she favors managing demand, for example better buses so that fewer people drive. B is the solution the lecture argues against; C applies the two-towns exception to a city street.",
+     "tr": "Çıkarım: şehir içindeki yollar için talebi yönetmeyi, örneğin daha az kişinin araba kullanması için otobüsleri iyileştirmeyi savunuyor. B konuşmanın karşı çıktığı çözüm; C iki kasaba istisnasını şehir içi bir caddeye uyguluyor.",
+     "es": "Inferencia: para las rutas urbanas prefiere gestionar la demanda, por ejemplo con mejores autobuses para que menos gente conduzca. B es la solución que la clase critica; C aplica la excepción de los dos pueblos a una calle de la ciudad."
+    }
+   }
+  ]
+ }
+}

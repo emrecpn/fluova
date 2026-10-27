@@ -1,0 +1,68 @@
+{
+ "id": "p4_conv_internship_credit",
+ "task": "conversation",
+ "tier": "hard",
+ "topic": "internship credit",
+ "origin": "practice-04",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Credit for an internship",
+  "prompt": "Listen to a conversation between a student and an academic advisor.",
+  "audio": [
+   {
+    "text": "Hi, I've got a summer internship at an architecture firm, and I'd like course credit for it. I've filled in the form.",
+    "voice": "female:gb"
+   },
+   {
+    "text": "Good. Has your supervisor at the firm signed it?",
+    "voice": "male:au"
+   },
+   {
+    "text": "Not yet. She's away until next week, and the form's due Friday.",
+    "voice": "female:gb"
+   },
+   {
+    "text": "Technically, that's a problem. But if you hand it in now with a note saying when she'll sign, the department usually accepts that. What matters more is a faculty sponsor. Without one, there's no credit at all.",
+    "voice": "male:au"
+   },
+   {
+    "text": "Oh. Then I'd better email Professor Lund today.",
+    "voice": "female:gb"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p4_conv_internship_credit_q1",
+    "stem": "What is the woman worried about?",
+    "options": [
+     "Her internship might not be at an approved firm",
+     "Her supervisor has refused to sign the form",
+     "Her form may be incomplete when it is due",
+     "She will not have time to email her professor"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Concern (paraphrase): her supervisor is away until next week, but the form is due Friday. B is too strong: the supervisor has not refused, she is simply away. A is never mentioned.",
+     "tr": "Endişe (parafraz): amiri gelecek haftaya kadar yok ama form cuma günü teslim edilmeli. B fazla iddialı: amir imzalamayı reddetmedi, sadece şu anda burada değil. A konuşmada hiç geçmiyor.",
+     "es": "Preocupación (paráfrasis): su supervisora no vuelve hasta la semana que viene, pero el formulario se entrega el viernes. B es demasiado fuerte: la supervisora no se ha negado, simplemente está fuera. A no se menciona."
+    }
+   },
+   {
+    "id": "p4_conv_internship_credit_q2",
+    "stem": "What does the advisor imply?",
+    "options": [
+     "The deadline for the form will probably be extended for her",
+     "Finding a faculty sponsor is her most important task",
+     "The supervisor's signature is not needed at all",
+     "Professor Lund rarely agrees to sponsor interns"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Inference: the missing signature can be handled with a note, but \"what matters more\" is a sponsor, and without one there is no credit. C goes too far, because the signature is still needed, only later; A is never suggested.",
+     "tr": "Çıkarım: eksik imza bir notla çözülebilir ama \"what matters more\" bir öğretim üyesi danışman bulmak; o olmadan kredi yok. C fazla ileri gidiyor, çünkü imza yine gerekli, sadece daha sonra; A hiç önerilmiyor.",
+     "es": "Inferencia: la firma que falta se puede resolver con una nota, pero \"what matters more\" es tener un profesor patrocinador, y sin él no hay créditos. C va demasiado lejos, porque la firma sigue siendo necesaria, solo que más tarde; A no se sugiere en ningún momento."
+    }
+   }
+  ]
+ }
+}

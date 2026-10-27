@@ -1,0 +1,29 @@
+{
+ "id": "p4_ecr8",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "finishing homework",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_ecr8",
+  "audio": [
+   {
+    "text": "Did you finish the homework?",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "Yes, I did it this morning.",
+   "It's on page ten.",
+   "I finished my lunch.",
+   "The teacher gave it."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Yes/no question → \"Yes\" + when. C repeats \"finish\" with a different object; B answers \"where\".",
+   "tr": "Evet/hayır sorusu → \"Yes\" + ne zaman. C \"finish\" kelimesini başka bir nesneyle tekrarlıyor; B \"where\" sorusunu cevaplıyor.",
+   "es": "Pregunta de sí o no → \"Yes\" + cuándo. C repite \"finish\" con otro objeto; B responde a \"where\"."
+  }
+ }
+}

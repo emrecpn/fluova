@@ -1,0 +1,26 @@
+{
+ "id": "p4_lr",
+ "task": "listen_repeat",
+ "tier": "medium",
+ "topic": "orientation walk",
+ "origin": "practice-04",
+ "screen": {
+  "type": "listen_repeat",
+  "id": "p4_lr",
+  "scenario": {
+   "title": "Orientation campus walk",
+   "place": "Main square, international student orientation",
+   "intro": "You are a new international student at an orientation event. A student leader is showing your group around campus. Listen and repeat what the leader says."
+  },
+  "voice": "male",
+  "sentences": [
+   "Welcome to the main campus.",
+   "Please keep your name tags on.",
+   "The dining hall opens at seven every morning.",
+   "Your bus pass is waiting for you at the student center.",
+   "If you ever get lost, just follow the blue signs back to this square.",
+   "The international office, next to the bookstore, can answer questions about housing, part-time jobs, and forms.",
+   "Before the welcome dinner tonight, make sure you have activated your student email account, because all of your class schedules will be sent there."
+  ]
+ }
+}

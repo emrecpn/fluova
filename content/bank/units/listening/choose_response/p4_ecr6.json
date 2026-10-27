@@ -1,0 +1,29 @@
+{
+ "id": "p4_ecr6",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "busy café",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_ecr6",
+  "audio": [
+   {
+    "text": "Why is the café so busy?",
+    "voice": "male:gb"
+   }
+  ],
+  "options": [
+   "Yes, it's always busy.",
+   "It's open until six.",
+   "Coffee is free today.",
+   "Next to the bookstore."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "\"Why\" → a reason. A answers \"Yes\" and repeats \"busy\"; D answers \"where\"; B gives opening hours.",
+   "tr": "\"Why\" → bir sebep. A \"Yes\" diyor ve \"busy\" kelimesini tekrarlıyor; D \"where\" sorusunu cevaplıyor; B açık olduğu saatleri veriyor.",
+   "es": "\"Why\" → un motivo. A dice \"Yes\" y repite \"busy\"; D responde a \"where\"; B da el horario."
+  }
+ }
+}

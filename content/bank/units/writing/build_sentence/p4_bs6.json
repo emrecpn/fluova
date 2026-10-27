@@ -1,0 +1,27 @@
+{
+ "id": "p4_bs6",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "makeup exam",
+ "origin": "practice-04",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p4_bs6",
+  "personA": "What did the professor say about the makeup exam?",
+  "frame": [
+   "She said",
+   null,
+   null,
+   null,
+   null,
+   "next Monday."
+  ],
+  "answer": [
+   "that",
+   "I",
+   "could",
+   "take it"
+  ],
+  "distractors": []
+ }
+}

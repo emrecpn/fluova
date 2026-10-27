@@ -1,0 +1,29 @@
+{
+ "id": "p4_bs1",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "textbook buyback",
+ "origin": "practice-04",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p4_bs1",
+  "personA": "I'm thinking of selling my old textbooks.",
+  "frame": [
+   "Do you know",
+   null,
+   null,
+   null,
+   null,
+   "used books this week?"
+  ],
+  "answer": [
+   "if",
+   "the bookstore",
+   "is",
+   "buying"
+  ],
+  "distractors": [
+   "does"
+  ]
+ }
+}

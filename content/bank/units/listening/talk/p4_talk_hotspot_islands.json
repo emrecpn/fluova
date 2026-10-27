@@ -1,0 +1,84 @@
+{
+ "id": "p4_talk_hotspot_islands",
+ "task": "talk",
+ "tier": "easy",
+ "topic": "hotspot islands",
+ "origin": "practice-04",
+ "screen": {
+  "type": "listening",
+  "title": "Academic Talk: How island chains form",
+  "prompt": "Listen to part of a talk in a geology class.",
+  "audio": [
+   {
+    "text": "Today let's look at how some chains of volcanic islands form. Deep under certain parts of the ocean floor, there are very hot places called hot spots. Melted rock, called magma, rises from a hot spot and breaks through the ocean floor, building a volcano. If the volcano grows tall enough, it becomes an island. But the plate of rock that makes up the ocean floor moves slowly, a few centimeters a year, while the hot spot stays in one place. So, over millions of years, the island is carried away from the hot spot, its volcano stops erupting, and a new volcano starts to grow behind it. That's why the islands in a chain get older as you move along it.",
+    "voice": "male:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p4_talk_hotspot_islands_q1",
+    "stem": "What is the talk mainly about?",
+    "options": [
+     "Why volcanoes erupt more often in the ocean",
+     "How scientists measure the age of rocks",
+     "Why islands slowly sink into the sea",
+     "How a hot spot can create a line of islands"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Main idea: one hot spot builds island after island as the plate moves. C and A are not discussed; B is not explained in the talk.",
+     "tr": "Ana fikir: levha hareket ettikçe tek bir sıcak nokta art arda adalar oluşturur. C ve A konuşmada yok; B konuşmada anlatılmıyor.",
+     "es": "Idea principal: un solo punto caliente forma una isla tras otra a medida que se mueve la placa. C y A no se tratan; B no se explica en la charla."
+    }
+   },
+   {
+    "id": "p4_talk_hotspot_islands_q2",
+    "stem": "According to the speaker, what moves?",
+    "options": [
+     "The hot spot itself",
+     "The water around the islands",
+     "The plate of rock under the ocean",
+     "The level of the sea"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Detail: the plate \"moves slowly … while the hot spot stays in one place\". A is the trap: it reverses what moves and what stays still.",
+     "tr": "Ayrıntı: levha \"moves slowly … while the hot spot stays in one place\". A tuzak: neyin hareket ettiğini ve neyin sabit kaldığını tersine çeviriyor.",
+     "es": "Detalle: la placa \"moves slowly … while the hot spot stays in one place\". A es la trampa: invierte qué se mueve y qué se queda quieto."
+    }
+   },
+   {
+    "id": "p4_talk_hotspot_islands_q3",
+    "stem": "What happens when an island is carried away from the hot spot?",
+    "options": [
+     "It becomes taller and wider",
+     "Its volcano stops erupting",
+     "It joins with another island",
+     "A new hot spot forms under it"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail: \"its volcano stops erupting\". D is wrong because the new volcano grows over the same hot spot, not under the old island; A is the opposite of what happens.",
+     "tr": "Ayrıntı: \"its volcano stops erupting\". D yanlış, çünkü yeni yanardağ eski adanın altında değil, aynı sıcak noktanın üzerinde oluşuyor; A olanın tam tersi.",
+     "es": "Detalle: \"its volcano stops erupting\". D es incorrecta porque el nuevo volcán crece sobre el mismo punto caliente, no bajo la isla vieja; A es lo contrario de lo que ocurre."
+    }
+   },
+   {
+    "id": "p4_talk_hotspot_islands_q4",
+    "stem": "Where is the youngest island in a chain probably found?",
+    "options": [
+     "Closest to the hot spot",
+     "At the far end of the chain",
+     "In the middle of the chain",
+     "Where the plate is thickest"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference: islands get older as they move away, so the newest one is the one still over the hot spot. B is the trap: the far end holds the oldest islands.",
+     "tr": "Çıkarım: adalar uzaklaştıkça yaşlanıyor; demek ki en genç ada hâlâ sıcak noktanın üzerinde olandır. B tuzak: zincirin öbür ucunda en yaşlı adalar var.",
+     "es": "Inferencia: las islas envejecen a medida que se alejan, así que la más joven es la que sigue sobre el punto caliente. B es la trampa: en el otro extremo están las islas más antiguas."
+    }
+   }
+  ]
+ }
+}

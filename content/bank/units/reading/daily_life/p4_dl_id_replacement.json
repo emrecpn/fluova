@@ -1,0 +1,50 @@
+{
+ "id": "p4_dl_id_replacement",
+ "task": "daily_life",
+ "tier": "easy",
+ "topic": "ID card replacement",
+ "origin": "practice-04",
+ "screen": {
+  "type": "passage",
+  "title": "Replacing a Student ID",
+  "directions": "Read in Daily Life (sign)",
+  "text": [
+   "<strong>Lost Your Student ID Card?</strong>",
+   "New cards are made at the Card Office, Room 110, Monday to Friday, 9 a.m. to 4 p.m. Please bring a photo ID, such as a passport. A new card costs $15. If your card was stolen, show a police report and the new card is free."
+  ],
+  "questions": [
+   {
+    "id": "p4_dl_id_replacement_q1",
+    "stem": "When can students get a new card?",
+    "options": [
+     "Any day of the week, all day",
+     "On Saturday and Sunday mornings",
+     "From Monday to Friday",
+     "Every evening after 4 p.m."
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Detail: the Card Office is open \"Monday to Friday, 9 a.m. to 4 p.m.\" B names the weekend, when the office is closed. D gives a time after the office closes.",
+     "tr": "Ayrıntı: kart ofisi \"Monday to Friday, 9 a.m. to 4 p.m.\" açık. B ofisin kapalı olduğu hafta sonunu söylüyor. D ofis kapandıktan sonraki bir saati veriyor.",
+     "es": "Detalle: la oficina abre \"Monday to Friday, 9 a.m. to 4 p.m.\" B menciona el fin de semana, cuando la oficina está cerrada. D da una hora en la que la oficina ya ha cerrado."
+    }
+   },
+   {
+    "id": "p4_dl_id_replacement_q2",
+    "stem": "Who can get a new card for free?",
+    "options": [
+     "A student who shows a police report for a stolen card",
+     "A student who brings a passport to the office",
+     "A student who reports the card lost on the same day",
+     "A student who comes to the office before 9 a.m."
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Detail: \"If your card was stolen, show a police report and the new card is free.\" B is the trap: everyone must bring a photo ID, and it does not make the card free. C reuses \"report\" with a different meaning.",
+     "tr": "Ayrıntı: \"If your card was stolen, show a police report and the new card is free.\" B tuzak: fotoğraflı kimliği herkes getirmeli ve bu kartı ücretsiz yapmıyor. C \"report\" kelimesini farklı bir anlamda kullanıyor.",
+     "es": "Detalle: \"If your card was stolen, show a police report and the new card is free.\" B es la trampa: todos deben llevar un documento con foto y eso no hace gratuita la tarjeta. C reutiliza \"report\" con otro significado."
+    }
+   }
+  ]
+ }
+}

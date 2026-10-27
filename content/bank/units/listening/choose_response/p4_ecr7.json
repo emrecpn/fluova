@@ -1,0 +1,29 @@
+{
+ "id": "p4_ecr7",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "class times",
+ "origin": "practice-04",
+ "screen": {
+  "type": "choose_response",
+  "id": "p4_ecr7",
+  "audio": [
+   {
+    "text": "When is your next class?",
+    "voice": "female:au"
+   }
+  ],
+  "options": [
+   "In Room 12.",
+   "It's biology.",
+   "Yes, I have one.",
+   "At two o'clock."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "\"When\" → a time. A gives a place; B answers \"what\"; C answers \"Yes\" to a \"when\" question.",
+   "tr": "\"When\" → bir zaman. A bir yer veriyor; B \"what\" sorusunu cevaplıyor; C \"when\" sorusuna \"Yes\" diyor.",
+   "es": "\"When\" → un momento. A da un lugar; B responde a \"what\"; C responde \"Yes\" a una pregunta con \"when\"."
+  }
+ }
+}
