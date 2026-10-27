@@ -25,7 +25,8 @@
     "answer": 3,
     "why": {
      "en": "Detail: phones and wallets go to Campus Security. A is the general rule for other items — the classic trap.",
-     "tr": "Ayrıntı: telefon ve cüzdanlar Campus Security'ye gider. A diğer eşyalar için genel kural — klasik tuzak."
+     "tr": "Ayrıntı: telefon ve cüzdanlar Campus Security'ye gider. A diğer eşyalar için genel kural — klasik tuzak.",
+     "es": "Detalle: los teléfonos y las carteras van a Campus Security. A es la norma general para los demás objetos: la trampa clásica."
     }
    },
    {
@@ -40,7 +41,8 @@
     "answer": 2,
     "why": {
      "en": "Detail: \"describe it and show your student ID\". A misuses the 30-day storage period.",
-     "tr": "Ayrıntı: \"tarif et ve öğrenci kimliğini göster\". A 30 günlük saklama süresini yanlış kullanıyor."
+     "tr": "Ayrıntı: \"tarif et ve öğrenci kimliğini göster\". A 30 günlük saklama süresini yanlış kullanıyor.",
+     "es": "Detalle: \"describe it and show your student ID\". A usa mal el plazo de 30 días de almacenamiento."
     }
    }
   ]

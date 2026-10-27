@@ -14,7 +14,7 @@
    }
   ],
   "options": [
-   "It starts at four.",
+   "It starts at four, I think.",
    "At the stadium.",
    "I like soccer.",
    "We won by two goals."
@@ -22,7 +22,8 @@
   "answer": 3,
   "why": {
    "en": "\"How was\" → an evaluation. A gives a time.",
-   "tr": "\"How was\" → değerlendirme. A zaman veriyor."
+   "tr": "\"How was\" → değerlendirme. A zaman veriyor.",
+   "es": "\"How was\" → una valoración. A da una hora."
   }
  }
 }

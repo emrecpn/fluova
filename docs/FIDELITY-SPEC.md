@@ -42,6 +42,17 @@ The band works in **both directions**. The first draft of the pilot overshot to 
 
 The sample is 20 questions. Update the band when more official samples are published.
 
+### Answer cues (Reading and Listening)
+
+A test-wise student should not beat a test without reading. Two cues are checked on every multiple-choice question in every module:
+
+| Cue | Why | Linter rule |
+|---|---|---|
+| The correct option is the single longest one | Writers tend to add qualifiers to the right answer. With four options this happens by chance in ~25% of questions. | fail > 40%, warn > 33%, warn < 10% (the reverse cue) |
+| One letter holds too many keys | "When in doubt, pick B" | warn if any letter is outside 15–35% |
+
+An independent check in October 2026 found the correct option was the single longest one in 60% of the pilot's questions and 49% of practice-02's. We lengthened distractors in 51 units; both tests now sit at 17–20%, and assembled forms at 12–21%.
+
 ## 3. Task formats
 
 ### Complete the Words (a classic C-test)

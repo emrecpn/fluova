@@ -62,6 +62,17 @@ test('linter: published tests pass, a too-literal Reading set fails', () => {
   assert.match(high, /copy the passage too closely|Paraphrase\/inference share/);
 });
 
+test('linter flags answer cues: key is usually the longest option, or one letter dominates', () => {
+  const t = clone(load('content/tests/pilot-01.json'));
+  const all = t.sections.filter(s => s.id === 'reading' || s.id === 'listening')
+    .flatMap(s => [...s.screens, ...s.adaptive.hard, ...s.adaptive.easy])
+    .flatMap(sc => sc.type === 'choose_response' ? [sc] : (sc.questions || []).filter(q => q.options));
+  for (const q of all) { q.options[q.answer] += ' — this one is clearly the longest of all the options here'; }
+  assert.match(lint.lintTest(t, 'x').issues.filter(i => i.sev === 'high').map(i => i.msg).join('\n'), /single longest option/);
+  for (const q of all) { const k = q.options.splice(q.answer, 1)[0]; q.options.unshift(k); q.answer = 0; }
+  assert.match(lint.lintTest(t, 'x').issues.map(i => i.msg).join('\n'), /Option A is correct in 100%/);
+});
+
 test('bank: every unit passes its checks and ids are unique', () => {
   const ids = new Set();
   for (const u of bank.units) {
@@ -69,6 +80,18 @@ test('bank: every unit passes its checks and ids are unique', () => {
     assert.deepEqual(r.errors, [], `${u.id}: ${r.errors.join('; ')}`);
     assert.ok(!ids.has(u.id), `duplicate unit ${u.id}`); ids.add(u.id);
   }
+});
+
+test('every answer explanation in the bank has English, Turkish and Spanish', () => {
+  const missing = [];
+  const walk = (o, where) => {
+    if (Array.isArray(o)) return o.forEach((x, i) => walk(x, where));
+    if (!o || typeof o !== 'object') return;
+    if (o.why && typeof o.why === 'object') ['en', 'tr', 'es'].forEach(l => { if (!String(o.why[l] || '').trim()) missing.push(`${o.id || where}: ${l}`); });
+    Object.values(o).forEach(v => walk(v, where));
+  };
+  bank.units.forEach(u => walk(u.screen, u.id));
+  assert.deepEqual(missing, []);
 });
 
 test('recipes render exactly the committed tests', () => {

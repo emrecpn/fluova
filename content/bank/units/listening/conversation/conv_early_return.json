@@ -41,20 +41,21 @@
     "options": [
      "She can use a digital version instead.",
      "She wants some of her money back.",
-     "She has dropped the chemistry course.",
+     "She has decided to drop the chemistry course.",
      "The book has too much highlighting."
     ],
     "answer": 0,
     "why": {
      "en": "Reason (paraphrase of \"found the e-book\"). B contradicts \"no partial refund\", which she accepts.",
-     "tr": "Sebep (\"e-kitabı buldum\" parafrazı). B \"kısmi iade yok\" bilgisiyle çelişiyor; kadın bunu kabul ediyor."
+     "tr": "Sebep (\"e-kitabı buldum\" parafrazı). B \"kısmi iade yok\" bilgisiyle çelişiyor; kadın bunu kabul ediyor.",
+     "es": "Motivo (paráfrasis de \"found the e-book\"). B contradice \"no partial refund\", que ella acepta."
     }
    },
    {
     "id": "conv_early_return_q2",
     "stem": "Why does the woman mention her receipt?",
     "options": [
-     "To ask the clerk for a partial refund",
+     "To ask the clerk for a partial refund of the rental",
      "To show that the marks were already there",
      "To prove that she rented the book",
      "To check the last day for returns"
@@ -62,7 +63,8 @@
     "answer": 1,
     "why": {
      "en": "Function: the receipt shows the book was sold \"used, some highlighting\", so she avoids the damage fee.",
-     "tr": "İşlev: makbuz kitabın \"kullanılmış, biraz işaretli\" verildiğini gösteriyor; hasar ücretinden kurtuluyor."
+     "tr": "İşlev: makbuz kitabın \"kullanılmış, biraz işaretli\" verildiğini gösteriyor; hasar ücretinden kurtuluyor.",
+     "es": "Función: el recibo muestra que el libro se vendió \"used, some highlighting\", así que ella evita la multa por daños."
     }
    }
   ]

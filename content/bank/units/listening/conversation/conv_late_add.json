@@ -43,7 +43,8 @@
     "answer": 2,
     "why": {
      "en": "Problem (paraphrase of \"the deadline has passed\"). A borrows \"online system\".",
-     "tr": "Sorun (\"deadline has passed\" parafrazı). A \"online system\" ifadesini ödünç alıyor."
+     "tr": "Sorun (\"deadline has passed\" parafrazı). A \"online system\" ifadesini ödünç alıyor.",
+     "es": "Problema (paráfrasis de \"the deadline has passed\"). A toma prestado \"online system\"."
     }
    },
    {
@@ -58,7 +59,8 @@
     "answer": 3,
     "why": {
      "en": "Inference: she will email Professor Grant to get the signature. A names the wrong office (the fee is paid at the cashier's).",
-     "tr": "Çıkarım: imza için Profesör Grant'e e-posta atacak. A yanlış ofis (ücret kasada ödenir)."
+     "tr": "Çıkarım: imza için Profesör Grant'e e-posta atacak. A yanlış ofis (ücret kasada ödenir).",
+     "es": "Inferencia: escribirá al profesor Grant para conseguir la firma. A nombra la oficina equivocada (la tasa se paga en caja)."
     }
    }
   ]

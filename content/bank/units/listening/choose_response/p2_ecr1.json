@@ -15,14 +15,15 @@
   ],
   "options": [
    "Next to the main office.",
-   "At nine in the morning.",
+   "At nine in the morning, I think.",
    "Yes, it is.",
    "About twenty computers."
   ],
   "answer": 0,
   "why": {
    "en": "\"Where\" → a place. B gives a time.",
-   "tr": "\"Where\" → yer. B zaman veriyor."
+   "tr": "\"Where\" → yer. B zaman veriyor.",
+   "es": "\"Where\" → un lugar. B da una hora."
   }
  }
 }

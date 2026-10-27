@@ -27,7 +27,8 @@
     "answer": 1,
     "why": {
      "en": "Purpose (paraphrase of \"fire drill\"). A takes \"fire\" literally; D misuses \"lawn\".",
-     "tr": "Amaç (\"fire drill\" parafrazı). A \"fire\" kelimesini gerçek yangın sanıyor; D \"lawn\" kelimesini yanlış kullanıyor."
+     "tr": "Amaç (\"fire drill\" parafrazı). A \"fire\" kelimesini gerçek yangın sanıyor; D \"lawn\" kelimesini yanlış kullanıyor.",
+     "es": "Propósito (paráfrasis de \"fire drill\"). A toma \"fire\" de forma literal; D usa mal \"lawn\"."
     }
    },
    {
@@ -36,13 +37,14 @@
     "options": [
      "Take the elevators to the ground floor",
      "Wait outside until staff say they can return",
-     "Stay in their rooms for fifteen minutes",
+     "Stay in their rooms for about fifteen minutes",
      "Meet in the lobby of Hall B"
     ],
     "answer": 1,
     "why": {
      "en": "Detail (paraphrase). A contradicts \"do not use the elevators\"; C misuses \"fifteen minutes\".",
-     "tr": "Ayrıntı (parafraz). A \"asansör kullanmayın\" ile çelişiyor; C \"on beş dakika\" bilgisini yanlış kullanıyor."
+     "tr": "Ayrıntı (parafraz). A \"asansör kullanmayın\" ile çelişiyor; C \"on beş dakika\" bilgisini yanlış kullanıyor.",
+     "es": "Detalle (paráfrasis). A contradice \"do not use the elevators\"; C usa mal \"fifteen minutes\"."
     }
    }
   ]

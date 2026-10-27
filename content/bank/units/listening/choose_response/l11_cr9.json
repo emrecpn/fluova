@@ -21,7 +21,8 @@
   "answer": 0,
   "why": {
    "en": "Request → refusal with a reason. D repeats \"borrow\".",
-   "tr": "Rica → ret gerekçesiyle. D \"borrow\" kelimesini tekrar ediyor."
+   "tr": "Rica → ret gerekçesiyle. D \"borrow\" kelimesini tekrar ediyor.",
+   "es": "Petición → rechazo con un motivo. D repite \"borrow\"."
   }
  }
 }

@@ -17,7 +17,7 @@ Write **NUMBER** units of task **TASK** at tier **TIER**. Output a JSON array on
 ## Rules
 - Everything must be original. Never copy ETS questions or passages, or material from any other publisher. Use general international topics with no politics, religion, medical advice or brand names.
 - ids use `a-z0-9_` only. Question ids are `<unit id>_q1`, `<unit id>_q2`, and so on.
-- Multiple-choice questions have exactly 4 options of similar length, `"answer"` is the 0-based index, and the correct option is not always in the same position. Each has `"why": {"en": "…", "tr": "…"}`: the question type, why the answer is right, and the trap in a wrong option (by letter A–D).
+- Multiple-choice questions have exactly 4 options of similar length, `"answer"` is the 0-based index, and the correct option is not always in the same position. Each has `"why": {"en": "…", "tr": "…", "es": "…"}` (English is required; Turkish and Spanish can be left for a maintainer): the question type, why the answer is right, and the trap in a wrong option (by letter A–D).
 - In Reading, about half the correct options should paraphrase the text (few words copied) and the rest may stay close to it.
 
 ## Screen formats and lengths

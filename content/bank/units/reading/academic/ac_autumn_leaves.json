@@ -18,29 +18,31 @@
     "stem": "What is the passage mainly about?",
     "options": [
      "Why leaves show different colors in autumn",
-     "How trees store water for the winter",
+     "How trees store water and food for the winter",
      "Which trees have the brightest red leaves",
      "Why some leaves stay green all year"
     ],
     "answer": 0,
     "why": {
      "en": "Main idea. The other options are not discussed.",
-     "tr": "Ana fikir. Diğer şıklar metinde ele alınmıyor."
+     "tr": "Ana fikir. Diğer şıklar metinde ele alınmıyor.",
+     "es": "Idea principal. Las demás opciones no se tratan."
     }
    },
    {
     "id": "ac_autumn_leaves_q2",
     "stem": "According to the passage, why are leaves green in summer?",
     "options": [
-     "They receive more rain in summer",
      "They contain a lot of chlorophyll",
+     "They receive more rain in summer",
      "They have no yellow substances",
      "They are younger than autumn leaves"
     ],
-    "answer": 1,
+    "answer": 0,
     "why": {
      "en": "Detail: green comes from chlorophyll. C contradicts the text: yellow substances are there but hidden.",
-     "tr": "Ayrıntı: yeşil renk klorofilden gelir. C metinle çelişiyor: sarı maddeler vardır ama gizlidir."
+     "tr": "Ayrıntı: yeşil renk klorofilden gelir. C metinle çelişiyor: sarı maddeler vardır ama gizlidir.",
+     "es": "Detalle: el verde viene de la clorofila. C contradice el texto: las sustancias amarillas están ahí, pero ocultas."
     }
    },
    {
@@ -55,7 +57,8 @@
     "answer": 2,
     "why": {
      "en": "Vocabulary in context: the green color slowly fades = slowly becomes weaker.",
-     "tr": "Bağlamda kelime: fades = solar, zayıflar."
+     "tr": "Bağlamda kelime: fades = solar, zayıflar.",
+     "es": "Vocabulario en contexto: the green color slowly fades = se va debilitando poco a poco."
     }
    },
    {
@@ -70,7 +73,8 @@
     "answer": 3,
     "why": {
      "en": "Paraphrase of \"were there all along\". A and C invent a new source; B is said about the red colors only.",
-     "tr": "\"Were there all along\" ifadesinin parafrazı. A ve C yeni bir kaynak uyduruyor; B yalnızca kırmızı renkler için söyleniyor."
+     "tr": "\"Were there all along\" ifadesinin parafrazı. A ve C yeni bir kaynak uyduruyor; B yalnızca kırmızı renkler için söyleniyor.",
+     "es": "Paráfrasis de \"were there all along\". A y C inventan un origen nuevo; B solo se dice de los colores rojos."
     }
    },
    {
@@ -85,7 +89,8 @@
     "answer": 0,
     "why": {
      "en": "Inference: sunny days and cool nights make red stronger, so the opposite weather likely makes it weaker. D is too strong — yellow appears anyway.",
-     "tr": "Çıkarım: güneşli gün ve serin gece kırmızıyı güçlendirir, tersi hava muhtemelen zayıflatır. D fazla iddialı — sarı her durumda görünür."
+     "tr": "Çıkarım: güneşli gün ve serin gece kırmızıyı güçlendirir, tersi hava muhtemelen zayıflatır. D fazla iddialı — sarı her durumda görünür.",
+     "es": "Inferencia: los días soleados y las noches frescas intensifican el rojo, así que el tiempo contrario probablemente lo debilita. D es demasiado fuerte: el amarillo aparece de todos modos."
     }
    }
   ]

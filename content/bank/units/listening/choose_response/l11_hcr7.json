@@ -13,15 +13,16 @@
    }
   ],
   "options": [
-   "It's not just you. Mine keeps disconnecting.",
+   "The password is on the wall.",
    "I usually study in my room.",
    "Yes, it's me.",
-   "The password is on the wall."
+   "It's not just you. Mine keeps disconnecting."
   ],
-  "answer": 0,
+  "answer": 3,
   "why": {
    "en": "Idiomatic question → a shared experience. C takes it literally.",
-   "tr": "Deyimsel soru → paylaşılan deneyim. C sözcüğü sözcüğüne yanıt."
+   "tr": "Deyimsel soru → paylaşılan deneyim. C sözcüğü sözcüğüne yanıt.",
+   "es": "Pregunta idiomática → una experiencia compartida. C la toma de forma literal."
   }
  }
 }

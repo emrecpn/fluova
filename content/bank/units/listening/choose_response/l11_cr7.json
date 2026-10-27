@@ -13,15 +13,16 @@
    }
   ],
   "options": [
-   "There's a box in the supply closet.",
-   "I printed my essay last night.",
    "This floor is the quietest one.",
+   "I printed my essay last night.",
+   "There's a box in the supply closet.",
    "Paper is cheaper if you buy it online."
   ],
-  "answer": 0,
+  "answer": 2,
   "why": {
    "en": "Problem → solution. B repeats the word \"printed\".",
-   "tr": "Sorun → çözüm. B \"printed\" ile kelime tekrarı."
+   "tr": "Sorun → çözüm. B \"printed\" ile kelime tekrarı.",
+   "es": "Problema → solución. B repite la palabra \"printed\"."
   }
  }
 }

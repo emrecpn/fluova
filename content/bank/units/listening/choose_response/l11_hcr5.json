@@ -13,15 +13,16 @@
    }
   ],
   "options": [
+   "I applied for a scholarship last year, but I didn't get it.",
    "They extended it to the end of the month.",
-   "I applied for a scholarship last year.",
    "Yesterday was a really long day.",
    "The applications are available online."
   ],
-  "answer": 0,
+  "answer": 1,
   "why": {
    "en": "A correction with new information.",
-   "tr": "Yeni bilgiyle düzeltme."
+   "tr": "Yeni bilgiyle düzeltme.",
+   "es": "Una corrección con información nueva."
   }
  }
 }

@@ -19,29 +19,31 @@
     "stem": "What is the main purpose of the announcement?",
     "options": [
      "To tell residents about a temporary change to a shared space",
-     "To advertise a new microwave on the second floor",
+     "To advertise a new microwave that was installed on the second floor",
      "To ask residents to clean the refrigerator",
      "To invite residents to a cooking event"
     ],
     "answer": 0,
     "why": {
      "en": "Main purpose (paraphrase).",
-     "tr": "Ana amaç (parafraz)."
+     "tr": "Ana amaç (parafraz).",
+     "es": "Propósito principal (paráfrasis)."
     }
    },
    {
     "id": "l11_an2_q2",
     "stem": "What should residents do tonight?",
     "options": [
-     "Take their food out of the refrigerator",
      "Move the microwave to the second floor",
+     "Take their food out of the refrigerator",
      "Tell the cleaning staff about their food",
      "Throw away their old containers"
     ],
-    "answer": 0,
+    "answer": 1,
     "why": {
      "en": "Detail.",
-     "tr": "Detay."
+     "tr": "Detay.",
+     "es": "Detalle."
     }
    }
   ]

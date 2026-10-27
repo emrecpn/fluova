@@ -26,7 +26,8 @@
     "answer": 1,
     "why": {
      "en": "Main idea (paraphrase): the networks, what they may do, and doubts about the strongest claims. C treats a contested claim as fact.",
-     "tr": "Ana fikir (parafraz): ağlar, ne yapıyor olabilecekleri ve en iddialı yorumlara dair şüpheler. C tartışmalı bir iddiayı gerçek gibi sunuyor."
+     "tr": "Ana fikir (parafraz): ağlar, ne yapıyor olabilecekleri ve en iddialı yorumlara dair şüpheler. C tartışmalı bir iddiayı gerçek gibi sunuyor.",
+     "es": "Idea principal (paráfrasis): las redes, lo que podrían hacer y las dudas sobre las afirmaciones más fuertes. C trata una afirmación discutida como un hecho."
     }
    },
    {
@@ -41,7 +42,8 @@
     "answer": 2,
     "why": {
      "en": "Vocabulary in context: contested claims = claims that are disputed.",
-     "tr": "Bağlamda kelime: contested = tartışmalı, itiraz edilen."
+     "tr": "Bağlamda kelime: contested = tartışmalı, itiraz edilen.",
+     "es": "Vocabulario en contexto: contested claims = afirmaciones que se discuten."
     }
    },
    {
@@ -56,7 +58,8 @@
     "answer": 3,
     "why": {
      "en": "Author's purpose: an experimental result supporting transfer. A overstates it — the author says that claim remains contested.",
-     "tr": "Yazarın amacı: kaynak aktarımını destekleyen bir deney sonucu. A abartıyor; yazar bu iddianın tartışmalı olduğunu söylüyor."
+     "tr": "Yazarın amacı: kaynak aktarımını destekleyen bir deney sonucu. A abartıyor; yazar bu iddianın tartışmalı olduğunu söylüyor.",
+     "es": "Propósito del autor: un resultado experimental que apoya la transferencia. A lo exagera: el autor dice que esa afirmación sigue en discusión."
     }
    },
    {
@@ -71,7 +74,8 @@
     "answer": 1,
     "why": {
      "en": "Inference: the critics' points (small studies, hard measurement, fungi's own benefit) imply the claims exceed the evidence. A contradicts \"many field studies were small\".",
-     "tr": "Çıkarım: eleştiriler (küçük çalışmalar, ölçüm zorluğu, mantarların kendi çıkarı) iddiaların kanıtı aştığını gösteriyor. A \"çalışmaların çoğu küçüktü\" bilgisiyle çelişiyor."
+     "tr": "Çıkarım: eleştiriler (küçük çalışmalar, ölçüm zorluğu, mantarların kendi çıkarı) iddiaların kanıtı aştığını gösteriyor. A \"çalışmaların çoğu küçüktü\" bilgisiyle çelişiyor.",
+     "es": "Inferencia: los puntos de los críticos (estudios pequeños, medición difícil, el propio beneficio de los hongos) implican que las afirmaciones superan las pruebas. A contradice \"many field studies were small\"."
     }
    },
    {
@@ -81,12 +85,13 @@
      "Water absorbed from the soil",
      "Sugars made through photosynthesis",
      "Phosphorus and other minerals",
-     "Protection from insect attacks"
+     "Protection from insect attacks on the roots"
     ],
     "answer": 1,
     "why": {
      "en": "Detail: fungi get \"sugars that the trees produce through photosynthesis\". A and C are what the fungi give the trees — the direction trap.",
-     "tr": "Ayrıntı: mantarlar \"ağaçların fotosentezle ürettiği şekerleri\" alır. A ve C mantarların ağaçlara verdikleri — yön tuzağı."
+     "tr": "Ayrıntı: mantarlar \"ağaçların fotosentezle ürettiği şekerleri\" alır. A ve C mantarların ağaçlara verdikleri — yön tuzağı.",
+     "es": "Detalle: los hongos reciben \"sugars that the trees produce through photosynthesis\". A y C son lo que los hongos dan a los árboles: la trampa de la dirección."
     }
    }
   ]

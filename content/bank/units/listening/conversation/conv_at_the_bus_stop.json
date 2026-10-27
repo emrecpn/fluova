@@ -34,30 +34,32 @@
     "id": "l11_ecv_q1",
     "stem": "What is the woman's problem?",
     "options": [
-     "Her bus was cancelled and she might be late.",
      "She lost her airline ticket.",
+     "Her bus was cancelled and she might be late.",
      "She is waiting in the wrong line.",
-     "Her flight was cancelled."
+     "Her flight was cancelled because of the weather."
     ],
-    "answer": 0,
+    "answer": 1,
     "why": {
      "en": "The problem. D moves the bus cancellation to a flight.",
-     "tr": "Sorun. D otobüs iptalini uçağa taşıyor."
+     "tr": "Sorun. D otobüs iptalini uçağa taşıyor.",
+     "es": "El problema. D traslada la cancelación del autobús a un vuelo."
     }
    },
    {
     "id": "l11_ecv_q2",
     "stem": "What will the woman probably do?",
     "options": [
-     "Take a taxi to the airport",
-     "Wait for the two thirty bus",
      "Change her flight to a later time",
+     "Wait for the two thirty bus",
+     "Take a taxi to the airport",
      "Walk to the airport"
     ],
-    "answer": 0,
+    "answer": 2,
     "why": {
      "en": "Inference: \"I think I'll do that\".",
-     "tr": "Çıkarım: \"I think I'll do that\"."
+     "tr": "Çıkarım: \"I think I'll do that\".",
+     "es": "Inferencia: \"I think I'll do that\"."
     }
    }
   ]

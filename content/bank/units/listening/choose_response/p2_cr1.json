@@ -22,7 +22,8 @@
   "answer": 0,
   "why": {
    "en": "An indirect but relevant answer about opening hours. C answers \"where\", D repeats \"books\".",
-   "tr": "Açılış saatiyle ilgili dolaylı ama ilgili yanıt. C \"nerede\" sorusuna cevap veriyor, D \"books\" kelimesini tekrar ediyor."
+   "tr": "Açılış saatiyle ilgili dolaylı ama ilgili yanıt. C \"nerede\" sorusuna cevap veriyor, D \"books\" kelimesini tekrar ediyor.",
+   "es": "Una respuesta indirecta pero pertinente sobre el horario. C responde a \"where\"; D repite \"books\"."
   }
  }
 }

@@ -35,7 +35,8 @@
     "answer": 0,
     "why": {
      "en": "Main idea (paraphrase). D is too extreme: earlier painters did suggest depth.",
-     "tr": "Ana fikir (parafraz). D aşırı: önceki ressamlar da derinlik gösteriyordu."
+     "tr": "Ana fikir (parafraz). D aşırı: önceki ressamlar da derinlik gösteriyordu.",
+     "es": "Idea principal (paráfrasis). D es demasiado extremo: los pintores anteriores sí sugerían profundidad."
     }
    },
    {
@@ -50,7 +51,8 @@
     "answer": 1,
     "why": {
      "en": "Detail (paraphrase of \"compared directly with the real building\").",
-     "tr": "Ayrıntı (\"gerçek binayla doğrudan karşılaştırılabilsin\" parafrazı)."
+     "tr": "Ayrıntı (\"gerçek binayla doğrudan karşılaştırılabilsin\" parafrazı).",
+     "es": "Detalle (paráfrasis de \"compared directly with the real building\")."
     }
    },
    {
@@ -65,7 +67,8 @@
     "answer": 2,
     "why": {
      "en": "Function: his written description \"allowed it to spread\". B confuses Alberti with Brunelleschi.",
-     "tr": "İşlev: yazılı anlatımı yöntemin \"yayılmasını sağladı\". B Alberti'yi Brunelleschi ile karıştırıyor."
+     "tr": "İşlev: yazılı anlatımı yöntemin \"yayılmasını sağladı\". B Alberti'yi Brunelleschi ile karıştırıyor.",
+     "es": "Función: su descripción escrita \"allowed it to spread\". B confunde a Alberti con Brunelleschi."
     }
    },
    {
@@ -73,14 +76,15 @@
     "stem": "What point does the professor make at the end of the lecture?",
     "options": [
      "Perspective made paintings less accurate.",
-     "Important figures were always painted in the center.",
+     "Important figures were always painted in the very center.",
      "The vanishing point was rarely used after Alberti.",
      "Perspective also helped direct the viewer's attention."
     ],
     "answer": 3,
     "why": {
      "en": "Inference from \"used the vanishing point to guide the viewer's eye\". B overgeneralizes \"often\".",
-     "tr": "Çıkarım: \"kaçış noktasını izleyicinin bakışını yönlendirmek için kullandılar\". B \"often\" ifadesini genelleştiriyor."
+     "tr": "Çıkarım: \"kaçış noktasını izleyicinin bakışını yönlendirmek için kullandılar\". B \"often\" ifadesini genelleştiriyor.",
+     "es": "Inferencia a partir de \"used the vanishing point to guide the viewer's eye\". B generaliza en exceso \"often\"."
     }
    }
   ]

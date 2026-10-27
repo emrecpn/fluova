@@ -26,45 +26,48 @@
     "id": "l11_hac2_q1",
     "stem": "What is the main purpose of the lecture?",
     "options": [
-     "To illustrate an economic idea with a familiar example",
      "To argue that QWERTY is the fastest layout",
-     "To explain how mechanical typewriters were built",
+     "To illustrate an economic idea with a familiar example",
+     "To explain how the first mechanical typewriters were built",
      "To recommend that schools teach a new layout"
     ],
-    "answer": 0,
+    "answer": 1,
     "why": {
      "en": "Purpose (paraphrase).",
-     "tr": "Amaç (parafraz)."
+     "tr": "Amaç (parafraz).",
+     "es": "Propósito (paráfrasis)."
     }
    },
    {
     "id": "l11_hac2_q2",
     "stem": "What does the professor say about the explanation that QWERTY prevented jamming?",
     "options": [
-     "Its importance is still debated.",
-     "It has been proven completely false.",
      "It explains why QWERTY is faster today.",
+     "It has been proven completely false.",
+     "Its importance is still debated.",
      "It was proposed by modern economists."
     ],
-    "answer": 0,
+    "answer": 2,
     "why": {
      "en": "Detail (paraphrase): historians still argue.",
-     "tr": "Detay (parafraz): historians still argue."
+     "tr": "Detay (parafraz): historians still argue.",
+     "es": "Detalle (paráfrasis): los historiadores todavía discuten."
     }
    },
    {
     "id": "l11_hac2_q3",
     "stem": "According to the professor, why has QWERTY survived?",
     "options": [
-     "Changing would require too many people to relearn at once.",
+     "Typewriter arms still jam when people type quickly on other layouts.",
      "No other layouts have ever been designed.",
      "Manufacturers are not allowed to produce other layouts.",
-     "Typewriter arms still jam on other layouts."
+     "Changing would require too many people to relearn at once."
     ],
-    "answer": 0,
+    "answer": 3,
     "why": {
      "en": "Reason (paraphrase).",
-     "tr": "Sebep (parafraz)."
+     "tr": "Sebep (parafraz).",
+     "es": "Motivo (paráfrasis)."
     }
    },
    {
@@ -79,7 +82,8 @@
     "answer": 0,
     "why": {
      "en": "Application/inference.",
-     "tr": "Uygulama/çıkarım."
+     "tr": "Uygulama/çıkarım.",
+     "es": "Aplicación/inferencia."
     }
    }
   ]

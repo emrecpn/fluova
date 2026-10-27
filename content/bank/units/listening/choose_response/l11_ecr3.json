@@ -13,15 +13,16 @@
    }
   ],
   "options": [
-   "Sure, how about seven?",
+   "I want a new notebook.",
    "Yes, the study is on the left.",
    "Tonight is really cold.",
-   "I want a new notebook."
+   "Sure, how about seven?"
   ],
-  "answer": 0,
+  "answer": 3,
   "why": {
    "en": "Offer → suggesting a time. B uses \"study\" to mean a room.",
-   "tr": "Teklif → saat önerisi. B \"study\" kelimesini oda anlamında kullanıyor."
+   "tr": "Teklif → saat önerisi. B \"study\" kelimesini oda anlamında kullanıyor.",
+   "es": "Oferta → proponer una hora. B usa \"study\" con el sentido de una habitación."
   }
  }
 }

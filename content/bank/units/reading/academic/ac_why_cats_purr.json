@@ -17,15 +17,16 @@
     "id": "r11_ace_q1",
     "stem": "What is the passage mainly about?",
     "options": [
-     "The different reasons a cat might make a certain sound",
+     "How scientists study the bones of cats",
      "How mother cats take care of their kittens",
      "Why cats are happier than other pets",
-     "How scientists study the bones of cats"
+     "The different reasons a cat might make a certain sound"
     ],
-    "answer": 0,
+    "answer": 3,
     "why": {
      "en": "Main idea (paraphrase).",
-     "tr": "Ana fikir (parafraz)."
+     "tr": "Ana fikir (parafraz).",
+     "es": "Idea principal (paráfrasis)."
     }
    },
    {
@@ -40,52 +41,56 @@
     "answer": 0,
     "why": {
      "en": "Vocabulary in context: heal = recover.",
-     "tr": "Bağlamda kelime: heal = iyileşmek."
+     "tr": "Bağlamda kelime: heal = iyileşmek.",
+     "es": "Vocabulario en contexto: heal = recuperarse."
     }
    },
    {
     "id": "r11_ace_q3",
     "stem": "Why do kittens purr back to their mothers?",
     "options": [
+     "To ask their mothers for more food and milk",
      "To show their mothers that they are fine",
-     "To ask her for more food",
      "To show that they are scared",
      "To help their bones grow"
     ],
-    "answer": 0,
+    "answer": 1,
     "why": {
      "en": "Detail: \"show that they are fine\".",
-     "tr": "Detay: \"show that they are fine\"."
+     "tr": "Detay: \"show that they are fine\".",
+     "es": "Detalle: \"show that they are fine\"."
     }
    },
    {
     "id": "r11_ace_q4",
     "stem": "What can be inferred about a cat that is purring?",
     "options": [
-     "It is not always feeling good.",
-     "It is always hungry.",
      "It has just finished eating.",
+     "It is always hungry when it purrs.",
+     "It is not always feeling good.",
      "It wants to play with people."
     ],
-    "answer": 0,
+    "answer": 2,
     "why": {
      "en": "Inference: cats in pain or afraid also purr → purring does not always mean the cat feels good.",
-     "tr": "Çıkarım: acıyan/korkan kedi de mırlar → her zaman iyi hissettiği anlamına gelmez."
+     "tr": "Çıkarım: acıyan/korkan kedi de mırlar → her zaman iyi hissettiği anlamına gelmez.",
+     "es": "Inferencia: los gatos que sienten dolor o miedo también ronronean → ronronear no siempre significa que el gato esté bien."
     }
    },
    {
     "id": "r11_ace_q5",
     "stem": "How do cats produce the sound?",
     "options": [
-     "By quickly moving muscles in the throat",
-     "By pushing air out through the nose",
+     "By closing their mouth very tightly",
+     "By pushing air out through the nose very quickly",
      "By tapping their paws on the ground",
-     "By closing their mouth very tightly"
+     "By quickly moving muscles in the throat"
     ],
-    "answer": 0,
+    "answer": 3,
     "why": {
      "en": "Detail.",
-     "tr": "Detay."
+     "tr": "Detay.",
+     "es": "Detalle."
     }
    }
   ]

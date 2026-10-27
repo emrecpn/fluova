@@ -34,15 +34,16 @@
     "id": "l11_hcv2_q1",
     "stem": "Why hasn't the heater been repaired?",
     "options": [
-     "The request was given the wrong level of importance.",
+     "The heater needs parts that are not available.",
      "The maintenance staff are on vacation.",
-     "The man sent the request to the wrong office.",
-     "The heater needs parts that are not available."
+     "The man sent his repair request to the wrong office first.",
+     "The request was given the wrong level of importance."
     ],
-    "answer": 0,
+    "answer": 3,
     "why": {
      "en": "Reason (paraphrase): low priority.",
-     "tr": "Sebep (parafraz): low priority."
+     "tr": "Sebep (parafraz): low priority.",
+     "es": "Motivo (paráfrasis): baja prioridad."
     }
    },
    {
@@ -51,13 +52,14 @@
     "options": [
      "She accepts responsibility and acts quickly.",
      "She thinks the man is exaggerating.",
-     "She is unsure whether she can help.",
+     "She is unsure whether she can help him this week.",
      "She blames the maintenance staff."
     ],
     "answer": 0,
     "why": {
      "en": "Inferring the speaker's attitude.",
-     "tr": "Tutum çıkarımı."
+     "tr": "Tutum çıkarımı.",
+     "es": "Inferir la actitud del hablante."
     }
    }
   ]

@@ -22,7 +22,8 @@
   "answer": 1,
   "why": {
    "en": "Indirect \"yes\". A shifts the time; C just repeats \"afternoon\".",
-   "tr": "Dolaylı \"evet\". A zamanı kaydırıyor; C sadece \"afternoon\" kelimesini tekrar ediyor."
+   "tr": "Dolaylı \"evet\". A zamanı kaydırıyor; C sadece \"afternoon\" kelimesini tekrar ediyor.",
+   "es": "\"Sí\" indirecto. A cambia la hora; C solo repite \"afternoon\"."
   }
  }
 }

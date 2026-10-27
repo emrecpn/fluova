@@ -13,15 +13,16 @@
    }
   ],
   "options": [
+   "I picked mine up yesterday afternoon after class.",
    "At the registration office on the first floor.",
-   "I picked mine up yesterday afternoon.",
    "You'll need a recent photo for that.",
    "It stays valid for four years."
   ],
-  "answer": 0,
+  "answer": 1,
   "why": {
    "en": "A \"where\" question → a place. C is true but does not answer the question.",
-   "tr": "Nerede sorusuna yer. C doğru bir bilgi ama soruyu yanıtlamıyor."
+   "tr": "Nerede sorusuna yer. C doğru bir bilgi ama soruyu yanıtlamıyor.",
+   "es": "Una pregunta con \"where\" → un lugar. C es verdad, pero no responde a la pregunta."
   }
  }
 }

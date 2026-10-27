@@ -27,29 +27,31 @@
     "answer": 0,
     "why": {
      "en": "Main idea. The other options are not discussed.",
-     "tr": "Ana fikir. Diğer şıklar konuşmada yok."
+     "tr": "Ana fikir. Diğer şıklar konuşmada yok.",
+     "es": "Idea principal. Las demás opciones no se tratan."
     }
    },
    {
     "id": "talk_cave_formation_q2",
     "stem": "What happens to rainwater as it moves through the soil?",
     "options": [
-     "It turns into stone.",
      "It becomes slightly acidic.",
+     "It slowly turns into solid stone.",
      "It gets much colder.",
      "It loses its minerals."
     ],
-    "answer": 1,
+    "answer": 0,
     "why": {
      "en": "Paraphrase of \"picks up carbon dioxide and becomes a weak acid\".",
-     "tr": "\"Karbondioksit alır ve zayıf bir asit olur\" ifadesinin parafrazı."
+     "tr": "\"Karbondioksit alır ve zayıf bir asit olur\" ifadesinin parafrazı.",
+     "es": "Paráfrasis de \"picks up carbon dioxide and becomes a weak acid\"."
     }
    },
    {
     "id": "talk_cave_formation_q3",
     "stem": "What kind of rock do these caves form in?",
     "options": [
-     "Sand",
+     "Sandstone",
      "Granite",
      "Limestone",
      "Clay"
@@ -57,7 +59,8 @@
     "answer": 2,
     "why": {
      "en": "Detail: limestone.",
-     "tr": "Ayrıntı: kireç taşı."
+     "tr": "Ayrıntı: kireç taşı.",
+     "es": "Detalle: la piedra caliza."
     }
    },
    {
@@ -72,7 +75,8 @@
     "answer": 3,
     "why": {
      "en": "Function: stresses the slow process (\"over thousands of years\").",
-     "tr": "İşlev: sürecin yavaşlığını vurguluyor (\"binlerce yıl boyunca\")."
+     "tr": "İşlev: sürecin yavaşlığını vurguluyor (\"binlerce yıl boyunca\").",
+     "es": "Función: subraya lo lento del proceso (\"over thousands of years\")."
     }
    }
   ]

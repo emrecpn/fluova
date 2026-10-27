@@ -16,30 +16,32 @@
     "id": "r11_dl1_q1",
     "stem": "What is the main purpose of the notice?",
     "options": [
-     "To announce a free service for keeping bicycles in good condition",
-     "To sell new bicycles to students at a discount",
+     "To announce an event offering free bike check-ups",
+     "To sell new bicycles to students at a special discount",
      "To recruit volunteer mechanics for the Student Center",
      "To explain new parking rules for bicycles on campus"
     ],
     "answer": 0,
     "why": {
      "en": "Main purpose (paraphrase): free repair service. B and C reuse words from the text (bikes, volunteer mechanics, Student Center) but distort the meaning.",
-     "tr": "Ana amaç (parafraz): ücretsiz bakım hizmeti. B/C metindeki kelimeleri (bikes, volunteer mechanics, Student Center) kullanıp anlamı bozuyor."
+     "tr": "Ana amaç (parafraz): ücretsiz bakım hizmeti. B/C metindeki kelimeleri (bikes, volunteer mechanics, Student Center) kullanıp anlamı bozuyor.",
+     "es": "Propósito principal (paráfrasis): un servicio gratuito de reparación. B y C reutilizan palabras del texto (bikes, volunteer mechanics, Student Center), pero deforman el significado."
     }
    },
    {
     "id": "r11_dl1_q2",
     "stem": "What will most likely happen to a bike that is dropped off at 1 p.m.?",
     "options": [
+     "Its repairs will cost more than in the morning.",
      "It may not be ready until a later day.",
-     "It will be checked by mechanics at no cost.",
      "Its basket will be removed by the volunteers.",
      "It will receive new parts at cost price."
     ],
-    "answer": 0,
+    "answer": 1,
     "why": {
-     "en": "Inference: a bike not dropped off before noon will not be ready the same day. B is true but does not answer the question.",
-     "tr": "Çıkarım: öğleden önce bırakılmayan bisiklet aynı gün hazır olmaz. B doğru bir bilgi ama soruyu yanıtlamıyor."
+     "en": "Inference: bikes must be dropped off before noon \"to be ready the same day\", so a 1 p.m. bike may not be ready that day. A contradicts \"at no cost\"; C and D misuse details about baskets and parts.",
+     "tr": "Çıkarım: bisikletler \"aynı gün hazır olması için\" öğleden önce bırakılmalı; 13.00'te bırakılan o gün hazır olmayabilir. A \"ücretsiz\" bilgisiyle çelişiyor; C ve D sepet ve parça ayrıntılarını yanlış kullanıyor.",
+     "es": "Inferencia: las bicicletas deben dejarse antes del mediodía \"to be ready the same day\", así que una bicicleta dejada a la 1 p. m. quizá no esté lista ese día. A contradice \"at no cost\"; C y D usan mal detalles sobre cestas y piezas."
     }
    }
   ]

@@ -27,7 +27,8 @@
     "answer": 2,
     "why": {
      "en": "Reason (paraphrase of \"more than two hundred people have registered\"). D contradicts \"still starts at two\".",
-     "tr": "Sebep (\"iki yüzden fazla kişi kayıt oldu\" parafrazı). D \"yine saat ikide başlıyor\" ile çelişiyor."
+     "tr": "Sebep (\"iki yüzden fazla kişi kayıt oldu\" parafrazı). D \"yine saat ikide başlıyor\" ile çelişiyor.",
+     "es": "Motivo (paráfrasis de \"more than two hundred people have registered\"). D contradice \"still starts at two\"."
     }
    },
    {
@@ -42,7 +43,8 @@
     "answer": 3,
     "why": {
      "en": "Detail (paraphrase of \"arrive a few minutes early\"). C contradicts \"no assigned seating\".",
-     "tr": "Ayrıntı (\"birkaç dakika erken gelin\" parafrazı). C \"numaralı oturma yok\" bilgisiyle çelişiyor."
+     "tr": "Ayrıntı (\"birkaç dakika erken gelin\" parafrazı). C \"numaralı oturma yok\" bilgisiyle çelişiyor.",
+     "es": "Detalle (paráfrasis de \"arrive a few minutes early\"). C contradice \"no assigned seating\"."
     }
    }
   ]

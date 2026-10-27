@@ -17,7 +17,7 @@
     "id": "dl_overnight_parking_q1",
     "stem": "What is the main change described in the notice?",
     "options": [
-     "Commuters will no longer be allowed to use Lots C and D",
+     "Commuters will no longer be allowed to use Lots C and D at all",
      "Overnight parking in two lots will be reserved for residents",
      "Lot E will now close to all vehicles at 10 p.m.",
      "Resident permits will be given out free of charge"
@@ -25,12 +25,13 @@
     "answer": 1,
     "why": {
      "en": "Main change (paraphrase). A is too extreme (commuters can still park there during the day); C contradicts the last sentence.",
-     "tr": "Ana değişiklik (parafraz). A aşırı genelleme (gündüz hâlâ park edebilirler); C son cümleyle çelişiyor."
+     "tr": "Ana değişiklik (parafraz). A aşırı genelleme (gündüz hâlâ park edebilirler); C son cümleyle çelişiyor.",
+     "es": "Cambio principal (paráfrasis). A es demasiado extremo (los que vienen en coche pueden seguir aparcando allí de día); C contradice la última frase."
     }
    },
    {
     "id": "dl_overnight_parking_q2",
-    "stem": "What should a commuter with a late rehearsal next week most likely do?",
+    "stem": "What should a commuter with a late rehearsal next term most likely do?",
     "options": [
      "Buy a resident permit from the office near the stadium",
      "Request a pass from Campus Security on the night itself",
@@ -40,7 +41,8 @@
     "answer": 2,
     "why": {
      "en": "Inference: passes must be requested 24 hours in advance. B is the timing trap; D ignores the 10 p.m. limit for commuter permits.",
-     "tr": "Çıkarım: geçiş izni 24 saat önceden istenmeli. B zamanlama tuzağı; D yolcu izinleri için 22.00 sınırını yok sayıyor."
+     "tr": "Çıkarım: geçiş izni 24 saat önceden istenmeli. B zamanlama tuzağı; D yolcu izinleri için 22.00 sınırını yok sayıyor.",
+     "es": "Inferencia: los pases deben pedirse con 24 horas de antelación. B es la trampa de la hora; D ignora el límite de las 10 p. m. para los permisos de commuter."
     }
    },
    {
@@ -54,8 +56,9 @@
     ],
     "answer": 3,
     "why": {
-     "en": "Detail (paraphrase of \"continue to allow overnight parking for all permit holders\"). A and B apply the new Lot D/C rules to the wrong lot.",
-     "tr": "Ayrıntı (\"tüm izin sahiplerine gece park\" ifadesinin parafrazı). A ve B, D/C otoparklarının yeni kurallarını yanlış otoparka uyguluyor."
+     "en": "Detail (paraphrase of \"continue to allow overnight parking for all permit holders\"). A and B apply the new Lot C/D rules to the wrong lot.",
+     "tr": "Ayrıntı (\"tüm izin sahiplerine gece park\" ifadesinin parafrazı). A ve B, C/D otoparklarının yeni kurallarını yanlış otoparka uyguluyor.",
+     "es": "Detalle (paráfrasis de \"continue to allow overnight parking for all permit holders\"). A y B aplican las nuevas normas de los aparcamientos C/D al aparcamiento equivocado."
     }
    }
   ]

@@ -26,45 +26,48 @@
     "id": "l11_ac1_q1",
     "stem": "What is the talk mainly about?",
     "options": [
-     "Why an item's place in a sequence affects how well it is remembered",
      "How to write down long lists of words quickly",
+     "Why an item's place in a sequence affects how well it is remembered",
      "The difference between reading and listening to words",
      "Why people forget information after thirty seconds"
     ],
-    "answer": 0,
+    "answer": 1,
     "why": {
      "en": "Main idea (paraphrase).",
-     "tr": "Ana fikir (parafraz)."
+     "tr": "Ana fikir (parafraz).",
+     "es": "Idea principal (paráfrasis)."
     }
    },
    {
     "id": "l11_ac1_q2",
     "stem": "According to the professor, why are the first words remembered well?",
     "options": [
-     "People repeat them to themselves more often.",
-     "They are still in short-term memory at the end.",
      "They are usually shorter than other words.",
+     "They are still in short-term memory at the end.",
+     "People repeat them to themselves more often.",
      "People write them down first."
     ],
-    "answer": 0,
+    "answer": 2,
     "why": {
      "en": "Detail (paraphrase): rehearsal. B is the explanation given for the last words.",
-     "tr": "Detay (parafraz): rehearsal. B son kelimeler için verilen açıklama."
+     "tr": "Detay (parafraz): rehearsal. B son kelimeler için verilen açıklama.",
+     "es": "Detalle (paráfrasis): el repaso. B es la explicación que se da para las últimas palabras."
     }
    },
    {
     "id": "l11_ac1_q3",
     "stem": "What does the experiment with the thirty-second delay show?",
     "options": [
-     "Different kinds of memory explain the two advantages.",
+     "Short-term memory lasts longer than thirty seconds.",
      "Counting backward improves long-term memory.",
-     "The final words are always remembered best.",
-     "Short-term memory lasts longer than thirty seconds."
+     "The final words are always remembered better than the first ones.",
+     "Different kinds of memory explain the two advantages."
     ],
-    "answer": 0,
+    "answer": 3,
     "why": {
      "en": "Inference: two different memory systems.",
-     "tr": "Çıkarım: iki farklı bellek sistemi."
+     "tr": "Çıkarım: iki farklı bellek sistemi.",
+     "es": "Inferencia: dos sistemas de memoria distintos."
     }
    },
    {
@@ -79,7 +82,8 @@
     "answer": 0,
     "why": {
      "en": "Purpose: to apply the research to how students study.",
-     "tr": "Amaç: araştırmayı öğrencilerin çalışmasına uygulamak."
+     "tr": "Amaç: araştırmayı öğrencilerin çalışmasına uygulamak.",
+     "es": "Propósito: aplicar la investigación a la forma de estudiar de los estudiantes."
     }
    }
   ]

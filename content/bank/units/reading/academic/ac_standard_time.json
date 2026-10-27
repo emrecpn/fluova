@@ -26,7 +26,8 @@
     "answer": 2,
     "why": {
      "en": "Main idea (paraphrase). B reverses the outcome; A and D are not discussed.",
-     "tr": "Ana fikir (parafraz). B sonucu tersine çeviriyor; A ve D metinde yok."
+     "tr": "Ana fikir (parafraz). B sonucu tersine çeviriyor; A ve D metinde yok.",
+     "es": "Idea principal (paráfrasis). B invierte el resultado; A y D no se tratan."
     }
    },
    {
@@ -41,7 +42,8 @@
     "answer": 3,
     "why": {
      "en": "Vocabulary in context: adopted a system = began to use it.",
-     "tr": "Bağlamda kelime: adopted a system = kullanmaya başladı."
+     "tr": "Bağlamda kelime: adopted a system = kullanmaya başladı.",
+     "es": "Vocabulario en contexto: adopted a system = empezó a usarlo."
     }
    },
    {
@@ -56,7 +58,8 @@
     "answer": 0,
     "why": {
      "en": "Author's purpose: an example of the confusion caused by local time. B takes the example literally.",
-     "tr": "Yazarın amacı: yerel saatin yarattığı karmaşaya örnek. B örneği gerçek anlamıyla alıyor."
+     "tr": "Yazarın amacı: yerel saatin yarattığı karmaşaya örnek. B örneği gerçek anlamıyla alıyor.",
+     "es": "Propósito del autor: un ejemplo de la confusión que causaba la hora local. B toma el ejemplo de forma literal."
     }
    },
    {
@@ -65,20 +68,21 @@
     "options": [
      "Most travelers carried several clocks with them",
      "Slight differences between places mattered little",
-     "Towns to the east always set their clocks later",
+     "Towns to the east always set their clocks a little later",
      "Governments required every town to use sun time"
     ],
     "answer": 1,
     "why": {
      "en": "Inference from \"caused few problems while travel was slow\". C reverses the direction; D is not stated.",
-     "tr": "\"Yolculuk yavaşken pek sorun çıkarmadı\" ifadesinden çıkarım. C yönü tersine çeviriyor; D metinde yok."
+     "tr": "\"Yolculuk yavaşken pek sorun çıkarmadı\" ifadesinden çıkarım. C yönü tersine çeviriyor; D metinde yok.",
+     "es": "Inferencia a partir de \"caused few problems while travel was slow\". C invierte la dirección; D no se dice."
     }
    },
    {
     "id": "ac_standard_time_q5",
     "stem": "According to the passage, what was true of the new time zones?",
     "options": [
-     "Each zone set its clocks by the local sun",
+     "Each zone still set its clocks by the local sun",
      "They were first used in European cities",
      "Neighboring zones were exactly one hour apart",
      "Communities accepted them immediately"
@@ -86,7 +90,8 @@
     "answer": 2,
     "why": {
      "en": "Detail: \"each differing from its neighbor by exactly one hour\". D contradicts \"at first resisted\".",
-     "tr": "Ayrıntı: \"her biri komşusundan tam bir saat farklı\". D \"başta direndiler\" bilgisiyle çelişiyor."
+     "tr": "Ayrıntı: \"her biri komşusundan tam bir saat farklı\". D \"başta direndiler\" bilgisiyle çelişiyor.",
+     "es": "Detalle: \"each differing from its neighbor by exactly one hour\". D contradice \"at first resisted\"."
     }
    }
   ]

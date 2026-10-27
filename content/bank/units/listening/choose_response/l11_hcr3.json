@@ -13,15 +13,16 @@
    }
   ],
   "options": [
-   "He'd be great with the data analysis.",
+   "Marco invited me to dinner once.",
    "The project is due next month.",
-   "I already joined a different group.",
-   "Marco invited me to dinner once."
+   "I already joined a different group for this project.",
+   "He'd be great with the data analysis."
   ],
-  "answer": 0,
+  "answer": 3,
   "why": {
    "en": "Indirect agreement: support with a reason.",
-   "tr": "Dolaylı onay: gerekçeli destek."
+   "tr": "Dolaylı onay: gerekçeli destek.",
+   "es": "Acuerdo indirecto: apoyo con un motivo."
   }
  }
 }

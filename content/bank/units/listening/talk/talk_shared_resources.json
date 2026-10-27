@@ -35,7 +35,8 @@
     "answer": 0,
     "why": {
      "en": "Main idea (paraphrase of the conclusion). B and C are the views Ostrom challenged.",
-     "tr": "Ana fikir (sonucun parafrazı). B ve C, Ostrom'un karşı çıktığı görüşler."
+     "tr": "Ana fikir (sonucun parafrazı). B ve C, Ostrom'un karşı çıktığı görüşler.",
+     "es": "Idea principal (paráfrasis de la conclusión). B y C son las ideas que Ostrom cuestionó."
     }
    },
    {
@@ -50,7 +51,8 @@
     "answer": 1,
     "why": {
      "en": "Detail (paraphrase of the herder's reasoning). C contradicts the outcome described.",
-     "tr": "Ayrıntı (çobanın mantığının parafrazı). C anlatılan sonuçla çelişiyor."
+     "tr": "Ayrıntı (çobanın mantığının parafrazı). C anlatılan sonuçla çelişiyor.",
+     "es": "Detalle (paráfrasis del razonamiento del pastor). C contradice el resultado descrito."
     }
    },
    {
@@ -65,7 +67,8 @@
     "answer": 2,
     "why": {
      "en": "Function: evidence for Ostrom's challenge. A reverses their role.",
-     "tr": "İşlev: Ostrom'un itirazının kanıtı. A rollerini tersine çeviriyor."
+     "tr": "İşlev: Ostrom'un itirazının kanıtı. A rollerini tersine çeviriyor.",
+     "es": "Función: pruebas para el cuestionamiento de Ostrom. A invierte su papel."
     }
    },
    {
@@ -80,7 +83,8 @@
     "answer": 3,
     "why": {
      "en": "Inference: monitoring was one of the shared features she found. B ignores that all features mattered; C and A are the two \"standard\" solutions.",
-     "tr": "Çıkarım: karşılıklı denetim bulduğu ortak özelliklerden biriydi. B bunu yok sayıyor; C ve A iki \"standart\" çözüm."
+     "tr": "Çıkarım: karşılıklı denetim bulduğu ortak özelliklerden biriydi. B bunu yok sayıyor; C ve A iki \"standart\" çözüm.",
+     "es": "Inferencia: la vigilancia era uno de los rasgos comunes que ella encontró. B ignora que todos los rasgos importaban; C y A son las dos soluciones \"estándar\"."
     }
    }
   ]

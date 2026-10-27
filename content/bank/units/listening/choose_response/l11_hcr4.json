@@ -15,13 +15,14 @@
   "options": [
    "Do you still have your receipt?",
    "The course starts next week.",
-   "I hope you enjoy the course.",
+   "I hope you enjoy the course next semester.",
    "It costs forty dollars."
   ],
   "answer": 0,
   "why": {
    "en": "A question in response to a request (indirect answer). C repeats \"hope\".",
-   "tr": "Talebe karşı soru (dolaylı yanıt). C \"hope\" tekrarı."
+   "tr": "Talebe karşı soru (dolaylı yanıt). C \"hope\" tekrarı.",
+   "es": "Una pregunta como respuesta a una petición (respuesta indirecta). C repite \"hope\"."
   }
  }
 }

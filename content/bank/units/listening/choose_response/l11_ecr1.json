@@ -13,15 +13,16 @@
    }
   ],
   "options": [
-   "At eight on weekdays.",
    "I had pasta for lunch.",
+   "At eight on weekdays.",
    "Yes, it's very close to here.",
    "The food there is great."
   ],
-  "answer": 0,
+  "answer": 1,
   "why": {
    "en": "A \"what time\" question. C is a sound-alike trap (\"close\").",
-   "tr": "Saat sorusu. C \"close\" eş sesli tuzak."
+   "tr": "Saat sorusu. C \"close\" eş sesli tuzak.",
+   "es": "Una pregunta con \"what time\". C es una trampa de sonido parecido (\"close\")."
   }
  }
 }

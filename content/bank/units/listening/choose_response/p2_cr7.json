@@ -9,20 +9,21 @@
   "id": "p2_cr7",
   "audio": [
    {
-    "text": "The printer in the lab is out of paper again.",
+    "text": "The vending machine took my money but didn't give me anything.",
     "voice": "female:us"
    }
   ],
   "options": [
-   "There's a box of paper in the supply closet.",
-   "I printed my essay yesterday.",
-   "The lab closes at nine tonight.",
-   "Yes, it's a brand-new printer."
+   "You can ask for a refund at the front desk.",
+   "I bought a snack from it this morning.",
+   "It's next to the stairs on the second floor.",
+   "Yes, it takes both coins and cards now."
   ],
   "answer": 0,
   "why": {
-   "en": "Problem → solution. B repeats \"print\" without addressing the problem.",
-   "tr": "Sorun → çözüm. B \"print\" kelimesini tekrar ediyor ama soruna değinmiyor."
+   "en": "Problem → a solution. B repeats the situation; C answers \"where\"; D answers a yes/no question nobody asked.",
+   "tr": "Sorun → çözüm. B durumu tekrar ediyor; C \"nerede\" sorusuna cevap veriyor; D sorulmamış bir evet/hayır sorusunu cevaplıyor.",
+   "es": "Problema → una solución. B repite la situación; C responde a \"where\"; D responde a una pregunta de sí/no que nadie hizo."
   }
  }
 }

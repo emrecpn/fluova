@@ -14,15 +14,16 @@
    }
   ],
   "options": [
-   "I had a sandwich.",
    "Yes, until five.",
+   "I had a sandwich.",
    "It's near the gym.",
    "The coffee is good."
   ],
-  "answer": 1,
+  "answer": 0,
   "why": {
    "en": "Yes/no question → yes + detail. C answers \"where\".",
-   "tr": "Evet/hayır sorusu → evet + ayrıntı. C \"nerede\" sorusuna cevap veriyor."
+   "tr": "Evet/hayır sorusu → evet + ayrıntı. C \"nerede\" sorusuna cevap veriyor.",
+   "es": "Pregunta de sí/no → sí + detalle. C responde a \"where\"."
   }
  }
 }

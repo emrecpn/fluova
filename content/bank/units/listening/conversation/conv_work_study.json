@@ -43,7 +43,8 @@
     "answer": 2,
     "why": {
      "en": "Purpose (paraphrase). B reverses the situation: the manager wants more hours.",
-     "tr": "Amaç (parafraz). B durumu tersine çeviriyor: yönetici daha fazla saat istiyor."
+     "tr": "Amaç (parafraz). B durumu tersine çeviriyor: yönetici daha fazla saat istiyor.",
+     "es": "Propósito (paráfrasis). B invierte la situación: es su responsable quien quiere que trabaje más horas."
     }
    },
    {
@@ -52,13 +53,14 @@
     "options": [
      "They are not allowed under any circumstances.",
      "They are the best way to increase her award.",
-     "They will be paid automatically from her award.",
-     "They are possible only if the library agrees to pay."
+     "They will be paid automatically from her work-study award.",
+     "They would be paid only if the library covers them."
     ],
     "answer": 3,
     "why": {
-     "en": "Attitude/inference: \"not necessarily … the library could pay you … your manager would have to approve\". A is too extreme; C contradicts him.",
-     "tr": "Tutum/çıkarım: \"illa değil… kütüphane ödeyebilir… yönetici onaylamalı\". A aşırı; C onunla çelişiyor."
+     "en": "Attitude/inference: \"not necessarily … the library could pay you from its own budget … your manager would have to approve\". A is too extreme; C contradicts him.",
+     "tr": "Tutum/çıkarım: \"illa değil… kütüphane kendi bütçesinden ödeyebilir… yönetici onaylamalı\". A aşırı; C onunla çelişiyor.",
+     "es": "Actitud/inferencia: \"not necessarily … the library could pay you from its own budget … your manager would have to approve\". A es demasiado extremo; C le contradice."
     }
    }
   ]

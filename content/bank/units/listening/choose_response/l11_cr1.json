@@ -15,13 +15,14 @@
   "options": [
    "It was, but they moved it to the student center.",
    "Yes, the library closes at nine tonight.",
-   "I'd rather not join a new group this term.",
+   "I'd rather not join a new study group this term, thanks.",
    "No, I haven't been to the library yet."
   ],
   "answer": 0,
   "why": {
    "en": "A natural reply saying the plan has changed. B repeats \"library\" but does not answer.",
-   "tr": "Planın değiştiğini söyleyen doğal yanıt. B \"library\" kelimesini tekrar edip soruyu yanıtlamıyor."
+   "tr": "Planın değiştiğini söyleyen doğal yanıt. B \"library\" kelimesini tekrar edip soruyu yanıtlamıyor.",
+   "es": "Una respuesta natural que dice que el plan ha cambiado. B repite \"library\" pero no responde."
   }
  }
 }

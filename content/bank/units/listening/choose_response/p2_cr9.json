@@ -22,7 +22,8 @@
   "answer": 2,
   "why": {
    "en": "Choice question → a choice with a reason. A answers \"Yes\" to an either/or question.",
-   "tr": "Seçim sorusu → gerekçeli seçim. A \"ya o ya bu\" sorusuna \"Evet\" diyor."
+   "tr": "Seçim sorusu → gerekçeli seçim. A \"ya o ya bu\" sorusuna \"Evet\" diyor.",
+   "es": "Pregunta de elección → una elección con un motivo. A responde \"Yes\" a una pregunta de \"esto o aquello\"."
   }
  }
 }

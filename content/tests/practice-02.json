@@ -159,7 +159,8 @@
        "answer": 0,
        "why": {
         "en": "Main purpose (paraphrase): a new credit system for printing. C and D reuse words from the notice (ID card, color) with a different meaning.",
-        "tr": "Ana amaç (parafraz): baskı için yeni kredi sistemi. C ve D metindeki kelimeleri (ID card, color) farklı anlamda kullanıyor."
+        "tr": "Ana amaç (parafraz): baskı için yeni kredi sistemi. C ve D metindeki kelimeleri (ID card, color) farklı anlamda kullanıyor.",
+        "es": "Propósito principal (paráfrasis): un nuevo sistema de créditos para imprimir. C y D reutilizan palabras del aviso (ID card, color) con otro significado."
        }
       },
       {
@@ -174,7 +175,8 @@
        "answer": 1,
        "why": {
         "en": "Paraphrase: \"do not carry over to the next semester\" = they expire. C says the opposite; A borrows \"front desk\".",
-        "tr": "Parafraz: \"do not carry over\" = dönem sonunda geçersiz olur. C tam tersini söylüyor; A \"front desk\" ifadesini ödünç alıyor."
+        "tr": "Parafraz: \"do not carry over\" = dönem sonunda geçersiz olur. C tam tersini söylüyor; A \"front desk\" ifadesini ödünç alıyor.",
+        "es": "Paráfrasis: \"do not carry over to the next semester\" = caducan. C dice lo contrario; A toma prestado \"front desk\"."
        }
       }
      ]
@@ -196,12 +198,13 @@
         "To ask the manager to repair a pipe in his apartment",
         "To invite residents to try the new washing machines",
         "To warn neighbors about a planned interruption in service",
-        "To complain about the noise from the construction work"
+        "To complain about the noise from the construction work next door"
        ],
        "answer": 2,
        "why": {
         "en": "Purpose (paraphrase): the water will be turned off for repairs. A misreads who is asking for the repair; B picks a minor detail.",
-        "tr": "Amaç (parafraz): onarım için suyun kesileceği uyarısı. A onarımı kimin istediğini yanlış okuyor; B küçük bir ayrıntıyı ana amaç sanıyor."
+        "tr": "Amaç (parafraz): onarım için suyun kesileceği uyarısı. A onarımı kimin istediğini yanlış okuyor; B küçük bir ayrıntıyı ana amaç sanıyor.",
+        "es": "Propósito (paráfrasis): se cortará el agua por unas reparaciones. A malinterpreta quién pide la reparación; B se queda con un detalle menor."
        }
       },
       {
@@ -216,7 +219,8 @@
        "answer": 3,
        "why": {
         "en": "Paraphrase of \"fill a few bottles the night before\". B contradicts the email (contact the office, not Daniel); A is impossible because the laundry room is closed.",
-        "tr": "\"Fill a few bottles the night before\" ifadesinin parafrazı. B e-postayla çelişiyor (Daniel'e değil ofise yazılmalı); A imkânsız çünkü çamaşırhane kapalı."
+        "tr": "\"Fill a few bottles the night before\" ifadesinin parafrazı. B e-postayla çelişiyor (Daniel'e değil ofise yazılmalı); A imkânsız çünkü çamaşırhane kapalı.",
+        "es": "Paráfrasis de \"fill a few bottles the night before\". B contradice el correo (hay que contactar con la oficina, no con Daniel); A es imposible porque la lavandería está cerrada."
        }
       },
       {
@@ -224,14 +228,15 @@
        "stem": "What can be inferred about the laundry room?",
        "options": [
         "It will be closed for the rest of the week",
-        "Its equipment is being upgraded.",
+        "Its equipment is being upgraded",
         "It is the reason the water must be turned off",
         "It will be open only to residents of Apartment 4B"
        ],
        "answer": 1,
        "why": {
         "en": "Inference: it \"will reopen ... with two new washing machines\". A contradicts \"reopen on Friday\"; C confuses the cause of the shut-off.",
-        "tr": "Çıkarım: \"iki yeni çamaşır makinesiyle yeniden açılacak\". A \"Cuma açılacak\" bilgisiyle çelişiyor; C kesintinin nedenini karıştırıyor."
+        "tr": "Çıkarım: \"iki yeni çamaşır makinesiyle yeniden açılacak\". A \"Cuma açılacak\" bilgisiyle çelişiyor; C kesintinin nedenini karıştırıyor.",
+        "es": "Inferencia: \"will reopen ... with two new washing machines\". A contradice \"reopen on Friday\"; C confunde la causa del corte."
        }
       }
      ]
@@ -258,7 +263,8 @@
        "answer": 2,
        "why": {
         "en": "Main idea (paraphrase). B reverses the outcome; A and D are not discussed.",
-        "tr": "Ana fikir (parafraz). B sonucu tersine çeviriyor; A ve D metinde yok."
+        "tr": "Ana fikir (parafraz). B sonucu tersine çeviriyor; A ve D metinde yok.",
+        "es": "Idea principal (paráfrasis). B invierte el resultado; A y D no se tratan."
        }
       },
       {
@@ -273,7 +279,8 @@
        "answer": 3,
        "why": {
         "en": "Vocabulary in context: adopted a system = began to use it.",
-        "tr": "Bağlamda kelime: adopted a system = kullanmaya başladı."
+        "tr": "Bağlamda kelime: adopted a system = kullanmaya başladı.",
+        "es": "Vocabulario en contexto: adopted a system = empezó a usarlo."
        }
       },
       {
@@ -288,7 +295,8 @@
        "answer": 0,
        "why": {
         "en": "Author's purpose: an example of the confusion caused by local time. B takes the example literally.",
-        "tr": "Yazarın amacı: yerel saatin yarattığı karmaşaya örnek. B örneği gerçek anlamıyla alıyor."
+        "tr": "Yazarın amacı: yerel saatin yarattığı karmaşaya örnek. B örneği gerçek anlamıyla alıyor.",
+        "es": "Propósito del autor: un ejemplo de la confusión que causaba la hora local. B toma el ejemplo de forma literal."
        }
       },
       {
@@ -297,20 +305,21 @@
        "options": [
         "Most travelers carried several clocks with them",
         "Slight differences between places mattered little",
-        "Towns to the east always set their clocks later",
+        "Towns to the east always set their clocks a little later",
         "Governments required every town to use sun time"
        ],
        "answer": 1,
        "why": {
         "en": "Inference from \"caused few problems while travel was slow\". C reverses the direction; D is not stated.",
-        "tr": "\"Yolculuk yavaşken pek sorun çıkarmadı\" ifadesinden çıkarım. C yönü tersine çeviriyor; D metinde yok."
+        "tr": "\"Yolculuk yavaşken pek sorun çıkarmadı\" ifadesinden çıkarım. C yönü tersine çeviriyor; D metinde yok.",
+        "es": "Inferencia a partir de \"caused few problems while travel was slow\". C invierte la dirección; D no se dice."
        }
       },
       {
        "id": "ac_standard_time_q5",
        "stem": "According to the passage, what was true of the new time zones?",
        "options": [
-        "Each zone set its clocks by the local sun",
+        "Each zone still set its clocks by the local sun",
         "They were first used in European cities",
         "Neighboring zones were exactly one hour apart",
         "Communities accepted them immediately"
@@ -318,7 +327,8 @@
        "answer": 2,
        "why": {
         "en": "Detail: \"each differing from its neighbor by exactly one hour\". D contradicts \"at first resisted\".",
-        "tr": "Ayrıntı: \"her biri komşusundan tam bir saat farklı\". D \"başta direndiler\" bilgisiyle çelişiyor."
+        "tr": "Ayrıntı: \"her biri komşusundan tam bir saat farklı\". D \"başta direndiler\" bilgisiyle çelişiyor.",
+        "es": "Detalle: \"each differing from its neighbor by exactly one hour\". D contradice \"at first resisted\"."
        }
       }
      ]
@@ -411,7 +421,7 @@
         "id": "dl_overnight_parking_q1",
         "stem": "What is the main change described in the notice?",
         "options": [
-         "Commuters will no longer be allowed to use Lots C and D",
+         "Commuters will no longer be allowed to use Lots C and D at all",
          "Overnight parking in two lots will be reserved for residents",
          "Lot E will now close to all vehicles at 10 p.m.",
          "Resident permits will be given out free of charge"
@@ -419,12 +429,13 @@
         "answer": 1,
         "why": {
          "en": "Main change (paraphrase). A is too extreme (commuters can still park there during the day); C contradicts the last sentence.",
-         "tr": "Ana değişiklik (parafraz). A aşırı genelleme (gündüz hâlâ park edebilirler); C son cümleyle çelişiyor."
+         "tr": "Ana değişiklik (parafraz). A aşırı genelleme (gündüz hâlâ park edebilirler); C son cümleyle çelişiyor.",
+         "es": "Cambio principal (paráfrasis). A es demasiado extremo (los que vienen en coche pueden seguir aparcando allí de día); C contradice la última frase."
         }
        },
        {
         "id": "dl_overnight_parking_q2",
-        "stem": "What should a commuter with a late rehearsal next week most likely do?",
+        "stem": "What should a commuter with a late rehearsal next term most likely do?",
         "options": [
          "Buy a resident permit from the office near the stadium",
          "Request a pass from Campus Security on the night itself",
@@ -434,7 +445,8 @@
         "answer": 2,
         "why": {
          "en": "Inference: passes must be requested 24 hours in advance. B is the timing trap; D ignores the 10 p.m. limit for commuter permits.",
-         "tr": "Çıkarım: geçiş izni 24 saat önceden istenmeli. B zamanlama tuzağı; D yolcu izinleri için 22.00 sınırını yok sayıyor."
+         "tr": "Çıkarım: geçiş izni 24 saat önceden istenmeli. B zamanlama tuzağı; D yolcu izinleri için 22.00 sınırını yok sayıyor.",
+         "es": "Inferencia: los pases deben pedirse con 24 horas de antelación. B es la trampa de la hora; D ignora el límite de las 10 p. m. para los permisos de commuter."
         }
        },
        {
@@ -448,8 +460,9 @@
         ],
         "answer": 3,
         "why": {
-         "en": "Detail (paraphrase of \"continue to allow overnight parking for all permit holders\"). A and B apply the new Lot D/C rules to the wrong lot.",
-         "tr": "Ayrıntı (\"tüm izin sahiplerine gece park\" ifadesinin parafrazı). A ve B, D/C otoparklarının yeni kurallarını yanlış otoparka uyguluyor."
+         "en": "Detail (paraphrase of \"continue to allow overnight parking for all permit holders\"). A and B apply the new Lot C/D rules to the wrong lot.",
+         "tr": "Ayrıntı (\"tüm izin sahiplerine gece park\" ifadesinin parafrazı). A ve B, C/D otoparklarının yeni kurallarını yanlış otoparka uyguluyor.",
+         "es": "Detalle (paráfrasis de \"continue to allow overnight parking for all permit holders\"). A y B aplican las nuevas normas de los aparcamientos C/D al aparcamiento equivocado."
         }
        }
       ]
@@ -476,7 +489,8 @@
         "answer": 1,
         "why": {
          "en": "Main idea (paraphrase): the networks, what they may do, and doubts about the strongest claims. C treats a contested claim as fact.",
-         "tr": "Ana fikir (parafraz): ağlar, ne yapıyor olabilecekleri ve en iddialı yorumlara dair şüpheler. C tartışmalı bir iddiayı gerçek gibi sunuyor."
+         "tr": "Ana fikir (parafraz): ağlar, ne yapıyor olabilecekleri ve en iddialı yorumlara dair şüpheler. C tartışmalı bir iddiayı gerçek gibi sunuyor.",
+         "es": "Idea principal (paráfrasis): las redes, lo que podrían hacer y las dudas sobre las afirmaciones más fuertes. C trata una afirmación discutida como un hecho."
         }
        },
        {
@@ -491,7 +505,8 @@
         "answer": 2,
         "why": {
          "en": "Vocabulary in context: contested claims = claims that are disputed.",
-         "tr": "Bağlamda kelime: contested = tartışmalı, itiraz edilen."
+         "tr": "Bağlamda kelime: contested = tartışmalı, itiraz edilen.",
+         "es": "Vocabulario en contexto: contested claims = afirmaciones que se discuten."
         }
        },
        {
@@ -506,7 +521,8 @@
         "answer": 3,
         "why": {
          "en": "Author's purpose: an experimental result supporting transfer. A overstates it — the author says that claim remains contested.",
-         "tr": "Yazarın amacı: kaynak aktarımını destekleyen bir deney sonucu. A abartıyor; yazar bu iddianın tartışmalı olduğunu söylüyor."
+         "tr": "Yazarın amacı: kaynak aktarımını destekleyen bir deney sonucu. A abartıyor; yazar bu iddianın tartışmalı olduğunu söylüyor.",
+         "es": "Propósito del autor: un resultado experimental que apoya la transferencia. A lo exagera: el autor dice que esa afirmación sigue en discusión."
         }
        },
        {
@@ -521,7 +537,8 @@
         "answer": 1,
         "why": {
          "en": "Inference: the critics' points (small studies, hard measurement, fungi's own benefit) imply the claims exceed the evidence. A contradicts \"many field studies were small\".",
-         "tr": "Çıkarım: eleştiriler (küçük çalışmalar, ölçüm zorluğu, mantarların kendi çıkarı) iddiaların kanıtı aştığını gösteriyor. A \"çalışmaların çoğu küçüktü\" bilgisiyle çelişiyor."
+         "tr": "Çıkarım: eleştiriler (küçük çalışmalar, ölçüm zorluğu, mantarların kendi çıkarı) iddiaların kanıtı aştığını gösteriyor. A \"çalışmaların çoğu küçüktü\" bilgisiyle çelişiyor.",
+         "es": "Inferencia: los puntos de los críticos (estudios pequeños, medición difícil, el propio beneficio de los hongos) implican que las afirmaciones superan las pruebas. A contradice \"many field studies were small\"."
         }
        },
        {
@@ -531,12 +548,13 @@
          "Water absorbed from the soil",
          "Sugars made through photosynthesis",
          "Phosphorus and other minerals",
-         "Protection from insect attacks"
+         "Protection from insect attacks on the roots"
         ],
         "answer": 1,
         "why": {
          "en": "Detail: fungi get \"sugars that the trees produce through photosynthesis\". A and C are what the fungi give the trees — the direction trap.",
-         "tr": "Ayrıntı: mantarlar \"ağaçların fotosentezle ürettiği şekerleri\" alır. A ve C mantarların ağaçlara verdikleri — yön tuzağı."
+         "tr": "Ayrıntı: mantarlar \"ağaçların fotosentezle ürettiği şekerleri\" alır. A ve C mantarların ağaçlara verdikleri — yön tuzağı.",
+         "es": "Detalle: los hongos reciben \"sugars that the trees produce through photosynthesis\". A y C son lo que los hongos dan a los árboles: la trampa de la dirección."
         }
        }
       ]
@@ -623,7 +641,8 @@
         "answer": 3,
         "why": {
          "en": "Detail: phones and wallets go to Campus Security. A is the general rule for other items — the classic trap.",
-         "tr": "Ayrıntı: telefon ve cüzdanlar Campus Security'ye gider. A diğer eşyalar için genel kural — klasik tuzak."
+         "tr": "Ayrıntı: telefon ve cüzdanlar Campus Security'ye gider. A diğer eşyalar için genel kural — klasik tuzak.",
+         "es": "Detalle: los teléfonos y las carteras van a Campus Security. A es la norma general para los demás objetos: la trampa clásica."
         }
        },
        {
@@ -638,7 +657,8 @@
         "answer": 2,
         "why": {
          "en": "Detail: \"describe it and show your student ID\". A misuses the 30-day storage period.",
-         "tr": "Ayrıntı: \"tarif et ve öğrenci kimliğini göster\". A 30 günlük saklama süresini yanlış kullanıyor."
+         "tr": "Ayrıntı: \"tarif et ve öğrenci kimliğini göster\". A 30 günlük saklama süresini yanlış kullanıyor.",
+         "es": "Detalle: \"describe it and show your student ID\". A usa mal el plazo de 30 días de almacenamiento."
         }
        }
       ]
@@ -657,29 +677,31 @@
         "stem": "What is the passage mainly about?",
         "options": [
          "Why leaves show different colors in autumn",
-         "How trees store water for the winter",
+         "How trees store water and food for the winter",
          "Which trees have the brightest red leaves",
          "Why some leaves stay green all year"
         ],
         "answer": 0,
         "why": {
          "en": "Main idea. The other options are not discussed.",
-         "tr": "Ana fikir. Diğer şıklar metinde ele alınmıyor."
+         "tr": "Ana fikir. Diğer şıklar metinde ele alınmıyor.",
+         "es": "Idea principal. Las demás opciones no se tratan."
         }
        },
        {
         "id": "ac_autumn_leaves_q2",
         "stem": "According to the passage, why are leaves green in summer?",
         "options": [
-         "They receive more rain in summer",
          "They contain a lot of chlorophyll",
+         "They receive more rain in summer",
          "They have no yellow substances",
          "They are younger than autumn leaves"
         ],
-        "answer": 1,
+        "answer": 0,
         "why": {
          "en": "Detail: green comes from chlorophyll. C contradicts the text: yellow substances are there but hidden.",
-         "tr": "Ayrıntı: yeşil renk klorofilden gelir. C metinle çelişiyor: sarı maddeler vardır ama gizlidir."
+         "tr": "Ayrıntı: yeşil renk klorofilden gelir. C metinle çelişiyor: sarı maddeler vardır ama gizlidir.",
+         "es": "Detalle: el verde viene de la clorofila. C contradice el texto: las sustancias amarillas están ahí, pero ocultas."
         }
        },
        {
@@ -694,7 +716,8 @@
         "answer": 2,
         "why": {
          "en": "Vocabulary in context: the green color slowly fades = slowly becomes weaker.",
-         "tr": "Bağlamda kelime: fades = solar, zayıflar."
+         "tr": "Bağlamda kelime: fades = solar, zayıflar.",
+         "es": "Vocabulario en contexto: the green color slowly fades = se va debilitando poco a poco."
         }
        },
        {
@@ -709,7 +732,8 @@
         "answer": 3,
         "why": {
          "en": "Paraphrase of \"were there all along\". A and C invent a new source; B is said about the red colors only.",
-         "tr": "\"Were there all along\" ifadesinin parafrazı. A ve C yeni bir kaynak uyduruyor; B yalnızca kırmızı renkler için söyleniyor."
+         "tr": "\"Were there all along\" ifadesinin parafrazı. A ve C yeni bir kaynak uyduruyor; B yalnızca kırmızı renkler için söyleniyor.",
+         "es": "Paráfrasis de \"were there all along\". A y C inventan un origen nuevo; B solo se dice de los colores rojos."
         }
        },
        {
@@ -724,7 +748,8 @@
         "answer": 0,
         "why": {
          "en": "Inference: sunny days and cool nights make red stronger, so the opposite weather likely makes it weaker. D is too strong — yellow appears anyway.",
-         "tr": "Çıkarım: güneşli gün ve serin gece kırmızıyı güçlendirir, tersi hava muhtemelen zayıflatır. D fazla iddialı — sarı her durumda görünür."
+         "tr": "Çıkarım: güneşli gün ve serin gece kırmızıyı güçlendirir, tersi hava muhtemelen zayıflatır. D fazla iddialı — sarı her durumda görünür.",
+         "es": "Inferencia: los días soleados y las noches frescas intensifican el rojo, así que el tiempo contrario probablemente lo debilita. D es demasiado fuerte: el amarillo aparece de todos modos."
         }
        }
       ]
@@ -754,14 +779,15 @@
      ],
      "options": [
       "The lecture was really interesting.",
-      "Professor Lin gave it this morning.",
+      "Professor Lin gave it in the big hall this morning.",
       "Sure, I'll email them to you tonight.",
       "I slid on the wet floor earlier."
      ],
      "answer": 2,
      "why": {
       "en": "Request → agreement. D is a sound-alike trap (slides / slid).",
-      "tr": "Rica → kabul. D ses benzerliği tuzağı (slides / slid)."
+      "tr": "Rica → kabul. D ses benzerliği tuzağı (slides / slid).",
+      "es": "Petición → aceptación. D es una trampa de sonido parecido (slides / slid)."
      }
     },
     {
@@ -782,7 +808,8 @@
      "answer": 2,
      "why": {
       "en": "\"How long\" → a length of time. A gives a frequency, the classic trap.",
-      "tr": "\"How long\" → süre. A sıklık veriyor; klasik tuzak."
+      "tr": "\"How long\" → süre. A sıklık veriyor; klasik tuzak.",
+      "es": "\"How long\" → una duración. A da una frecuencia, la trampa clásica."
      }
     },
     {
@@ -803,7 +830,8 @@
      "answer": 1,
      "why": {
       "en": "\"Why\" → a reason. A answers a \"why\" question with \"Yes\".",
-      "tr": "\"Why\" → sebep. A \"neden\" sorusuna \"Evet\" ile cevap veriyor."
+      "tr": "\"Why\" → sebep. A \"neden\" sorusuna \"Evet\" ile cevap veriyor.",
+      "es": "\"Why\" → un motivo. A responde a un \"why\" con \"Yes\"."
      }
     },
     {
@@ -818,13 +846,14 @@
      "options": [
       "In Room 204 at three o'clock.",
       "Yes, I'm going to review my notes.",
-      "It should last about an hour.",
+      "It should last about an hour and a half.",
       "One of the teaching assistants, I think."
      ],
      "answer": 3,
      "why": {
       "en": "\"Who\" → a person. B answers yes/no and repeats \"review\".",
-      "tr": "\"Who\" → kişi. B evet/hayır diyor ve \"review\" kelimesini tekrar ediyor."
+      "tr": "\"Who\" → kişi. B evet/hayır diyor ve \"review\" kelimesini tekrar ediyor.",
+      "es": "\"Who\" → una persona. B responde sí/no y repite \"review\"."
      }
     },
     {
@@ -845,7 +874,8 @@
      "answer": 0,
      "why": {
       "en": "An indirect but relevant answer about opening hours. C answers \"where\", D repeats \"books\".",
-      "tr": "Açılış saatiyle ilgili dolaylı ama ilgili yanıt. C \"nerede\" sorusuna cevap veriyor, D \"books\" kelimesini tekrar ediyor."
+      "tr": "Açılış saatiyle ilgili dolaylı ama ilgili yanıt. C \"nerede\" sorusuna cevap veriyor, D \"books\" kelimesini tekrar ediyor.",
+      "es": "Una respuesta indirecta pero pertinente sobre el horario. C responde a \"where\"; D repite \"books\"."
      }
     },
     {
@@ -853,20 +883,21 @@
      "id": "p2_cr7",
      "audio": [
       {
-       "text": "The printer in the lab is out of paper again.",
+       "text": "The vending machine took my money but didn't give me anything.",
        "voice": "female:us"
       }
      ],
      "options": [
-      "There's a box of paper in the supply closet.",
-      "I printed my essay yesterday.",
-      "The lab closes at nine tonight.",
-      "Yes, it's a brand-new printer."
+      "You can ask for a refund at the front desk.",
+      "I bought a snack from it this morning.",
+      "It's next to the stairs on the second floor.",
+      "Yes, it takes both coins and cards now."
      ],
      "answer": 0,
      "why": {
-      "en": "Problem → solution. B repeats \"print\" without addressing the problem.",
-      "tr": "Sorun → çözüm. B \"print\" kelimesini tekrar ediyor ama soruna değinmiyor."
+      "en": "Problem → a solution. B repeats the situation; C answers \"where\"; D answers a yes/no question nobody asked.",
+      "tr": "Sorun → çözüm. B durumu tekrar ediyor; C \"nerede\" sorusuna cevap veriyor; D sorulmamış bir evet/hayır sorusunu cevaplıyor.",
+      "es": "Problema → una solución. B repite la situación; C responde a \"where\"; D responde a una pregunta de sí/no que nadie hizo."
      }
     },
     {
@@ -887,7 +918,8 @@
      "answer": 3,
      "why": {
       "en": "\"Which\" → a choice. A repeats \"choosing\" with a different object.",
-      "tr": "\"Which\" → seçim. A \"choosing\" kelimesini başka bir nesneyle tekrar ediyor."
+      "tr": "\"Which\" → seçim. A \"choosing\" kelimesini başka bir nesneyle tekrar ediyor.",
+      "es": "\"Which\" → una elección. A repite \"choosing\" con otro objeto."
      }
     },
     {
@@ -900,7 +932,7 @@
       }
      ],
      "options": [
-      "The event starts at seven.",
+      "The event starts at seven in the main hall.",
       "Just stack them against the back wall.",
       "About fifty people came.",
       "Yes, the chairs are comfortable."
@@ -908,7 +940,8 @@
      "answer": 1,
      "why": {
       "en": "\"Where\" → a place. A gives a time.",
-      "tr": "\"Where\" → yer. A zaman veriyor."
+      "tr": "\"Where\" → yer. A zaman veriyor.",
+      "es": "\"Where\" → un lugar. A da una hora."
      }
     },
     {
@@ -929,7 +962,8 @@
      "answer": 2,
      "why": {
       "en": "Choice question → a choice with a reason. A answers \"Yes\" to an either/or question.",
-      "tr": "Seçim sorusu → gerekçeli seçim. A \"ya o ya bu\" sorusuna \"Evet\" diyor."
+      "tr": "Seçim sorusu → gerekçeli seçim. A \"ya o ya bu\" sorusuna \"Evet\" diyor.",
+      "es": "Pregunta de elección → una elección con un motivo. A responde \"Yes\" a una pregunta de \"esto o aquello\"."
      }
     },
     {
@@ -969,20 +1003,21 @@
        "options": [
         "She can use a digital version instead.",
         "She wants some of her money back.",
-        "She has dropped the chemistry course.",
+        "She has decided to drop the chemistry course.",
         "The book has too much highlighting."
        ],
        "answer": 0,
        "why": {
         "en": "Reason (paraphrase of \"found the e-book\"). B contradicts \"no partial refund\", which she accepts.",
-        "tr": "Sebep (\"e-kitabı buldum\" parafrazı). B \"kısmi iade yok\" bilgisiyle çelişiyor; kadın bunu kabul ediyor."
+        "tr": "Sebep (\"e-kitabı buldum\" parafrazı). B \"kısmi iade yok\" bilgisiyle çelişiyor; kadın bunu kabul ediyor.",
+        "es": "Motivo (paráfrasis de \"found the e-book\"). B contradice \"no partial refund\", que ella acepta."
        }
       },
       {
        "id": "conv_early_return_q2",
        "stem": "Why does the woman mention her receipt?",
        "options": [
-        "To ask the clerk for a partial refund",
+        "To ask the clerk for a partial refund of the rental",
         "To show that the marks were already there",
         "To prove that she rented the book",
         "To check the last day for returns"
@@ -990,7 +1025,8 @@
        "answer": 1,
        "why": {
         "en": "Function: the receipt shows the book was sold \"used, some highlighting\", so she avoids the damage fee.",
-        "tr": "İşlev: makbuz kitabın \"kullanılmış, biraz işaretli\" verildiğini gösteriyor; hasar ücretinden kurtuluyor."
+        "tr": "İşlev: makbuz kitabın \"kullanılmış, biraz işaretli\" verildiğini gösteriyor; hasar ücretinden kurtuluyor.",
+        "es": "Función: el recibo muestra que el libro se vendió \"used, some highlighting\", así que ella evita la multa por daños."
        }
       }
      ]
@@ -1034,7 +1070,8 @@
        "answer": 2,
        "why": {
         "en": "Problem (paraphrase of \"the deadline has passed\"). A borrows \"online system\".",
-        "tr": "Sorun (\"deadline has passed\" parafrazı). A \"online system\" ifadesini ödünç alıyor."
+        "tr": "Sorun (\"deadline has passed\" parafrazı). A \"online system\" ifadesini ödünç alıyor.",
+        "es": "Problema (paráfrasis de \"the deadline has passed\"). A toma prestado \"online system\"."
        }
       },
       {
@@ -1049,7 +1086,8 @@
        "answer": 3,
        "why": {
         "en": "Inference: she will email Professor Grant to get the signature. A names the wrong office (the fee is paid at the cashier's).",
-        "tr": "Çıkarım: imza için Profesör Grant'e e-posta atacak. A yanlış ofis (ücret kasada ödenir)."
+        "tr": "Çıkarım: imza için Profesör Grant'e e-posta atacak. A yanlış ofis (ücret kasada ödenir).",
+        "es": "Inferencia: escribirá al profesor Grant para conseguir la firma. A nombra la oficina equivocada (la tasa se paga en caja)."
        }
       }
      ]
@@ -1093,7 +1131,8 @@
        "answer": 0,
        "why": {
         "en": "Purpose (paraphrase): a practice room before his piano exam. C borrows \"account\".",
-        "tr": "Amaç (parafraz): sınav öncesi çalışma odası. C \"account\" kelimesini ödünç alıyor."
+        "tr": "Amaç (parafraz): sınav öncesi çalışma odası. C \"account\" kelimesini ödünç alıyor.",
+        "es": "Propósito (paráfrasis): una sala de práctica antes de su examen de piano. C toma prestado \"account\"."
        }
       },
       {
@@ -1108,7 +1147,8 @@
        "answer": 1,
        "why": {
         "en": "Inference: the website needs a music student account and \"students from other departments\" book in person. D contradicts the conversation.",
-        "tr": "Çıkarım: site müzik öğrencisi hesabı istiyor ve \"başka bölüm öğrencileri\" yüz yüze rezervasyon yapıyor. D konuşmayla çelişiyor."
+        "tr": "Çıkarım: site müzik öğrencisi hesabı istiyor ve \"başka bölüm öğrencileri\" yüz yüze rezervasyon yapıyor. D konuşmayla çelişiyor.",
+        "es": "Inferencia: el sitio web exige una cuenta de estudiante de música y los \"students from other departments\" reservan en persona. D contradice la conversación."
        }
       }
      ]
@@ -1136,7 +1176,8 @@
        "answer": 1,
        "why": {
         "en": "Purpose (paraphrase of \"fire drill\"). A takes \"fire\" literally; D misuses \"lawn\".",
-        "tr": "Amaç (\"fire drill\" parafrazı). A \"fire\" kelimesini gerçek yangın sanıyor; D \"lawn\" kelimesini yanlış kullanıyor."
+        "tr": "Amaç (\"fire drill\" parafrazı). A \"fire\" kelimesini gerçek yangın sanıyor; D \"lawn\" kelimesini yanlış kullanıyor.",
+        "es": "Propósito (paráfrasis de \"fire drill\"). A toma \"fire\" de forma literal; D usa mal \"lawn\"."
        }
       },
       {
@@ -1145,13 +1186,14 @@
        "options": [
         "Take the elevators to the ground floor",
         "Wait outside until staff say they can return",
-        "Stay in their rooms for fifteen minutes",
+        "Stay in their rooms for about fifteen minutes",
         "Meet in the lobby of Hall B"
        ],
        "answer": 1,
        "why": {
         "en": "Detail (paraphrase). A contradicts \"do not use the elevators\"; C misuses \"fifteen minutes\".",
-        "tr": "Ayrıntı (parafraz). A \"asansör kullanmayın\" ile çelişiyor; C \"on beş dakika\" bilgisini yanlış kullanıyor."
+        "tr": "Ayrıntı (parafraz). A \"asansör kullanmayın\" ile çelişiyor; C \"on beş dakika\" bilgisini yanlış kullanıyor.",
+        "es": "Detalle (paráfrasis). A contradice \"do not use the elevators\"; C usa mal \"fifteen minutes\"."
        }
       }
      ]
@@ -1179,7 +1221,8 @@
        "answer": 2,
        "why": {
         "en": "Reason (paraphrase of \"more than two hundred people have registered\"). D contradicts \"still starts at two\".",
-        "tr": "Sebep (\"iki yüzden fazla kişi kayıt oldu\" parafrazı). D \"yine saat ikide başlıyor\" ile çelişiyor."
+        "tr": "Sebep (\"iki yüzden fazla kişi kayıt oldu\" parafrazı). D \"yine saat ikide başlıyor\" ile çelişiyor.",
+        "es": "Motivo (paráfrasis de \"more than two hundred people have registered\"). D contradice \"still starts at two\"."
        }
       },
       {
@@ -1194,7 +1237,8 @@
        "answer": 3,
        "why": {
         "en": "Detail (paraphrase of \"arrive a few minutes early\"). C contradicts \"no assigned seating\".",
-        "tr": "Ayrıntı (\"birkaç dakika erken gelin\" parafrazı). C \"numaralı oturma yok\" bilgisiyle çelişiyor."
+        "tr": "Ayrıntı (\"birkaç dakika erken gelin\" parafrazı). C \"numaralı oturma yok\" bilgisiyle çelişiyor.",
+        "es": "Detalle (paráfrasis de \"arrive a few minutes early\"). C contradice \"no assigned seating\"."
        }
       }
      ]
@@ -1230,7 +1274,8 @@
        "answer": 0,
        "why": {
         "en": "Main idea (paraphrase of echolocation and hunting). B overgeneralizes the moth example.",
-        "tr": "Ana fikir (yankıyla yer bulma ve avlanma). B güve örneğini abartıyor."
+        "tr": "Ana fikir (yankıyla yer bulma ve avlanma). B güve örneğini abartıyor.",
+        "es": "Idea principal (paráfrasis de la ecolocalización y la caza). B generaliza en exceso el ejemplo de las polillas."
        }
       },
       {
@@ -1245,7 +1290,8 @@
        "answer": 1,
        "why": {
         "en": "Detail (paraphrase of \"the rate rises sharply\"). A reverses what happens.",
-        "tr": "Ayrıntı (\"oran keskin biçimde artar\" parafrazı). A olanı tersine çeviriyor."
+        "tr": "Ayrıntı (\"oran keskin biçimde artar\" parafrazı). A olanı tersine çeviriyor.",
+        "es": "Detalle (paráfrasis de \"the rate rises sharply\"). A invierte lo que ocurre."
        }
       },
       {
@@ -1260,7 +1306,8 @@
        "answer": 2,
        "why": {
         "en": "Function: moths illustrate the \"contest between hunter and prey\". A overstates the point.",
-        "tr": "İşlev: güveler \"avcı ile av arasındaki yarışı\" örnekliyor. A fazla genelleme yapıyor."
+        "tr": "İşlev: güveler \"avcı ile av arasındaki yarışı\" örnekliyor. A fazla genelleme yapıyor.",
+        "es": "Función: las polillas ilustran la \"contest between hunter and prey\". A exagera la idea."
        }
       },
       {
@@ -1275,7 +1322,8 @@
        "answer": 3,
        "why": {
         "en": "Detail: \"how long each echo takes to return\". A is not mentioned; C is what moths do.",
-        "tr": "Ayrıntı: \"her yankının geri dönmesi ne kadar sürüyor\". A söylenmiyor; C güvelerin yaptığı şey."
+        "tr": "Ayrıntı: \"her yankının geri dönmesi ne kadar sürüyor\". A söylenmiyor; C güvelerin yaptığı şey.",
+        "es": "Detalle: \"how long each echo takes to return\". A no se menciona; C es lo que hacen las polillas."
        }
       }
      ]
@@ -1327,7 +1375,8 @@
       "answer": 2,
       "why": {
        "en": "A comment → a likely explanation. A reuses \"believe\".",
-       "tr": "Yorum → olası açıklama. A \"believe\" kelimesini tekrar ediyor."
+       "tr": "Yorum → olası açıklama. A \"believe\" kelimesini tekrar ediyor.",
+       "es": "Un comentario → una explicación probable. A reutiliza \"believe\"."
       }
      },
      {
@@ -1335,20 +1384,21 @@
       "id": "p2_hcr2",
       "audio": [
        {
-        "text": "Didn't the deadline for the scholarship get extended?",
+        "text": "Didn't the library extend its hours for finals week?",
         "voice": "male:gb"
        }
       ],
       "options": [
-       "Only for students who applied last year.",
-       "Yes, the scholarship is very generous.",
-       "I'm extending my stay until Sunday.",
-       "The deadline was printed in bold."
+       "Only on weekdays, as far as I know.",
+       "Yes, I finished my final essay already.",
+       "I'm extending my trip until Sunday instead.",
+       "The library is right next to the gym."
       ],
       "answer": 0,
       "why": {
-       "en": "A qualified answer (only for some students). C reuses \"extend\" with another meaning.",
-       "tr": "Kısıtlı bir yanıt (yalnızca bazı öğrenciler için). C \"extend\" kelimesini başka anlamda kullanıyor."
+       "en": "A qualified answer (only on weekdays). B says \"yes\" about something else; C reuses \"extend\" with another meaning; D answers \"where\".",
+       "tr": "Kısıtlı bir yanıt (yalnızca hafta içi). B başka bir şey için \"evet\" diyor; C \"extend\" kelimesini başka anlamda kullanıyor; D \"nerede\" sorusuna cevap veriyor.",
+       "es": "Una respuesta con matiz (solo entre semana). B dice \"sí\" a otra cosa; C reutiliza \"extend\" con otro significado; D responde a \"where\"."
       }
      },
      {
@@ -1361,15 +1411,16 @@
        }
       ],
       "options": [
-       "Chicago is great in the summer.",
        "My flight got canceled because of the storm.",
+       "Chicago is great in the summer.",
        "Yes, I lived there for two years.",
        "I'm supposed to call them later."
       ],
-      "answer": 1,
+      "answer": 0,
       "why": {
        "en": "Explains why the plan changed. D reuses \"supposed to\".",
-       "tr": "Planın neden değiştiğini açıklıyor. D \"supposed to\" ifadesini tekrar ediyor."
+       "tr": "Planın neden değiştiğini açıklıyor. D \"supposed to\" ifadesini tekrar ediyor.",
+       "es": "Explica por qué cambió el plan. D reutiliza \"supposed to\"."
       }
      },
      {
@@ -1384,13 +1435,14 @@
       "options": [
        "It's worth checking the online catalog.",
        "I copied my notes from Jake.",
-       "Yes, I still live near the library.",
+       "Yes, I still live right near the main library.",
        "The library has three floors."
       ],
       "answer": 0,
       "why": {
        "en": "Indirect: suggests how to find out. B reuses \"copy\" with another meaning.",
-       "tr": "Dolaylı: nasıl öğrenileceğini öneriyor. B \"copy\" kelimesini başka anlamda kullanıyor."
+       "tr": "Dolaylı: nasıl öğrenileceğini öneriyor. B \"copy\" kelimesini başka anlamda kullanıyor.",
+       "es": "Indirecta: sugiere cómo averiguarlo. B reutiliza \"copy\" con otro significado."
       }
      },
      {
@@ -1411,7 +1463,8 @@
       "answer": 1,
       "why": {
        "en": "Complaint → helpful information. A reuses \"changed\" and \"office\".",
-       "tr": "Şikâyet → yardımcı bilgi. A \"changed\" ve \"office\" kelimelerini tekrar ediyor."
+       "tr": "Şikâyet → yardımcı bilgi. A \"changed\" ve \"office\" kelimelerini tekrar ediyor.",
+       "es": "Queja → información útil. A reutiliza \"changed\" y \"office\"."
       }
      },
      {
@@ -1432,7 +1485,8 @@
       "answer": 1,
       "why": {
        "en": "Indirect \"yes\". A shifts the time; C just repeats \"afternoon\".",
-       "tr": "Dolaylı \"evet\". A zamanı kaydırıyor; C sadece \"afternoon\" kelimesini tekrar ediyor."
+       "tr": "Dolaylı \"evet\". A zamanı kaydırıyor; C sadece \"afternoon\" kelimesini tekrar ediyor.",
+       "es": "\"Sí\" indirecto. A cambia la hora; C solo repite \"afternoon\"."
       }
      },
      {
@@ -1453,7 +1507,8 @@
       "answer": 2,
       "why": {
        "en": "Suggestion → agreement with a reason. B reuses \"split\".",
-       "tr": "Öneri → gerekçeli kabul. B \"split\" kelimesini tekrar ediyor."
+       "tr": "Öneri → gerekçeli kabul. B \"split\" kelimesini tekrar ediyor.",
+       "es": "Sugerencia → aceptación con un motivo. B reutiliza \"split\"."
       }
      },
      {
@@ -1467,14 +1522,15 @@
       ],
       "options": [
        "I sent you an email yesterday.",
-       "The report is about twenty pages.",
+       "The report is about twenty pages long, I think.",
        "Yes, you should do that.",
        "Professor Kim prefers paper copies."
       ],
       "answer": 3,
       "why": {
        "en": "An indirect answer to an either/or question (→ print it). C answers \"yes\" to a choice.",
-       "tr": "Seçim sorusuna dolaylı yanıt (→ yazdır). C seçim sorusuna \"evet\" diyor."
+       "tr": "Seçim sorusuna dolaylı yanıt (→ yazdır). C seçim sorusuna \"evet\" diyor.",
+       "es": "Una respuesta indirecta a una pregunta de \"esto o aquello\" (→ imprimirlo). C responde \"sí\" a una elección."
       }
      },
      {
@@ -1516,7 +1572,8 @@
         "answer": 2,
         "why": {
          "en": "Purpose (paraphrase). B reverses the situation: the manager wants more hours.",
-         "tr": "Amaç (parafraz). B durumu tersine çeviriyor: yönetici daha fazla saat istiyor."
+         "tr": "Amaç (parafraz). B durumu tersine çeviriyor: yönetici daha fazla saat istiyor.",
+         "es": "Propósito (paráfrasis). B invierte la situación: es su responsable quien quiere que trabaje más horas."
         }
        },
        {
@@ -1525,13 +1582,14 @@
         "options": [
          "They are not allowed under any circumstances.",
          "They are the best way to increase her award.",
-         "They will be paid automatically from her award.",
-         "They are possible only if the library agrees to pay."
+         "They will be paid automatically from her work-study award.",
+         "They would be paid only if the library covers them."
         ],
         "answer": 3,
         "why": {
-         "en": "Attitude/inference: \"not necessarily … the library could pay you … your manager would have to approve\". A is too extreme; C contradicts him.",
-         "tr": "Tutum/çıkarım: \"illa değil… kütüphane ödeyebilir… yönetici onaylamalı\". A aşırı; C onunla çelişiyor."
+         "en": "Attitude/inference: \"not necessarily … the library could pay you from its own budget … your manager would have to approve\". A is too extreme; C contradicts him.",
+         "tr": "Tutum/çıkarım: \"illa değil… kütüphane kendi bütçesinden ödeyebilir… yönetici onaylamalı\". A aşırı; C onunla çelişiyor.",
+         "es": "Actitud/inferencia: \"not necessarily … the library could pay you from its own budget … your manager would have to approve\". A es demasiado extremo; C le contradice."
         }
        }
       ]
@@ -1571,7 +1629,7 @@
         "id": "conv_narrow_topic_q1",
         "stem": "What is the professor's main concern?",
         "options": [
-         "The student's outline was submitted late.",
+         "The student's outline was submitted a week late.",
          "The survey data is several years old.",
          "The project is too broad for the assignment.",
          "The student chose the wrong country."
@@ -1579,7 +1637,8 @@
         "answer": 2,
         "why": {
          "en": "Main concern (paraphrase of \"too ambitious for ten pages\"). B contradicts \"a really solid survey from last year\".",
-         "tr": "Ana endişe (\"on sayfa için fazla iddialı\" parafrazı). B \"geçen yılın sağlam anketi\" bilgisiyle çelişiyor."
+         "tr": "Ana endişe (\"on sayfa için fazla iddialı\" parafrazı). B \"geçen yılın sağlam anketi\" bilgisiyle çelişiyor.",
+         "es": "Preocupación principal (paráfrasis de \"too ambitious for ten pages\"). B contradice \"a really solid survey from last year\"."
         }
        },
        {
@@ -1594,7 +1653,8 @@
         "answer": 3,
         "why": {
          "en": "Inference: he will start with Brazil only. A twists the Monday deadline for the outline into a meeting.",
-         "tr": "Çıkarım: yalnızca Brezilya ile başlayacak. A taslak için verilen Pazartesi tarihini bir görüşmeye çeviriyor."
+         "tr": "Çıkarım: yalnızca Brezilya ile başlayacak. A taslak için verilen Pazartesi tarihini bir görüşmeye çeviriyor.",
+         "es": "Inferencia: empezará solo con Brasil. A convierte la fecha límite del esquema del lunes en una reunión."
         }
        }
       ]
@@ -1622,14 +1682,15 @@
         "answer": 2,
         "why": {
          "en": "Main change (paraphrase of \"submitted through the new online portal instead of by email\"). A: the rules are only checked, not changed.",
-         "tr": "Ana değişiklik (\"e-posta yerine çevrim içi portal\" parafrazı). A: kurallar değişmiyor, yalnızca kontrol ediliyor."
+         "tr": "Ana değişiklik (\"e-posta yerine çevrim içi portal\" parafrazı). A: kurallar değişmiyor, yalnızca kontrol ediliyor.",
+         "es": "Cambio principal (paráfrasis de \"submitted through the new online portal instead of by email\"). A: las normas solo se revisan, no cambian."
         }
        },
        {
         "id": "ann_thesis_portal_q2",
         "stem": "What is implied about students who wait until the last day to submit?",
         "options": [
-         "They will receive a lower grade for being late.",
+         "They will automatically receive a lower grade for being late.",
          "They will have to deliver two bound copies.",
          "They will be allowed to send the thesis by email.",
          "They may not have time to fix formatting problems."
@@ -1637,7 +1698,8 @@
         "answer": 3,
         "why": {
          "en": "Inference from \"allow extra time for corrections\". B applies only to architecture students.",
-         "tr": "Çıkarım: \"düzeltmeler için fazladan zaman ayırın\". B yalnızca mimarlık öğrencileri için geçerli."
+         "tr": "Çıkarım: \"düzeltmeler için fazladan zaman ayırın\". B yalnızca mimarlık öğrencileri için geçerli.",
+         "es": "Inferencia a partir de \"allow extra time for corrections\". B solo se aplica a los estudiantes de arquitectura."
         }
        }
       ]
@@ -1673,7 +1735,8 @@
         "answer": 0,
         "why": {
          "en": "Main idea (paraphrase of the conclusion). B and C are the views Ostrom challenged.",
-         "tr": "Ana fikir (sonucun parafrazı). B ve C, Ostrom'un karşı çıktığı görüşler."
+         "tr": "Ana fikir (sonucun parafrazı). B ve C, Ostrom'un karşı çıktığı görüşler.",
+         "es": "Idea principal (paráfrasis de la conclusión). B y C son las ideas que Ostrom cuestionó."
         }
        },
        {
@@ -1688,7 +1751,8 @@
         "answer": 1,
         "why": {
          "en": "Detail (paraphrase of the herder's reasoning). C contradicts the outcome described.",
-         "tr": "Ayrıntı (çobanın mantığının parafrazı). C anlatılan sonuçla çelişiyor."
+         "tr": "Ayrıntı (çobanın mantığının parafrazı). C anlatılan sonuçla çelişiyor.",
+         "es": "Detalle (paráfrasis del razonamiento del pastor). C contradice el resultado descrito."
         }
        },
        {
@@ -1703,7 +1767,8 @@
         "answer": 2,
         "why": {
          "en": "Function: evidence for Ostrom's challenge. A reverses their role.",
-         "tr": "İşlev: Ostrom'un itirazının kanıtı. A rollerini tersine çeviriyor."
+         "tr": "İşlev: Ostrom'un itirazının kanıtı. A rollerini tersine çeviriyor.",
+         "es": "Función: pruebas para el cuestionamiento de Ostrom. A invierte su papel."
         }
        },
        {
@@ -1718,7 +1783,8 @@
         "answer": 3,
         "why": {
          "en": "Inference: monitoring was one of the shared features she found. B ignores that all features mattered; C and A are the two \"standard\" solutions.",
-         "tr": "Çıkarım: karşılıklı denetim bulduğu ortak özelliklerden biriydi. B bunu yok sayıyor; C ve A iki \"standart\" çözüm."
+         "tr": "Çıkarım: karşılıklı denetim bulduğu ortak özelliklerden biriydi. B bunu yok sayıyor; C ve A iki \"standart\" çözüm.",
+         "es": "Inferencia: la vigilancia era uno de los rasgos comunes que ella encontró. B ignora que todos los rasgos importaban; C y A son las dos soluciones \"estándar\"."
         }
        }
       ]
@@ -1754,7 +1820,8 @@
         "answer": 0,
         "why": {
          "en": "Main idea (paraphrase). D is too extreme: earlier painters did suggest depth.",
-         "tr": "Ana fikir (parafraz). D aşırı: önceki ressamlar da derinlik gösteriyordu."
+         "tr": "Ana fikir (parafraz). D aşırı: önceki ressamlar da derinlik gösteriyordu.",
+         "es": "Idea principal (paráfrasis). D es demasiado extremo: los pintores anteriores sí sugerían profundidad."
         }
        },
        {
@@ -1769,7 +1836,8 @@
         "answer": 1,
         "why": {
          "en": "Detail (paraphrase of \"compared directly with the real building\").",
-         "tr": "Ayrıntı (\"gerçek binayla doğrudan karşılaştırılabilsin\" parafrazı)."
+         "tr": "Ayrıntı (\"gerçek binayla doğrudan karşılaştırılabilsin\" parafrazı).",
+         "es": "Detalle (paráfrasis de \"compared directly with the real building\")."
         }
        },
        {
@@ -1784,7 +1852,8 @@
         "answer": 2,
         "why": {
          "en": "Function: his written description \"allowed it to spread\". B confuses Alberti with Brunelleschi.",
-         "tr": "İşlev: yazılı anlatımı yöntemin \"yayılmasını sağladı\". B Alberti'yi Brunelleschi ile karıştırıyor."
+         "tr": "İşlev: yazılı anlatımı yöntemin \"yayılmasını sağladı\". B Alberti'yi Brunelleschi ile karıştırıyor.",
+         "es": "Función: su descripción escrita \"allowed it to spread\". B confunde a Alberti con Brunelleschi."
         }
        },
        {
@@ -1792,14 +1861,15 @@
         "stem": "What point does the professor make at the end of the lecture?",
         "options": [
          "Perspective made paintings less accurate.",
-         "Important figures were always painted in the center.",
+         "Important figures were always painted in the very center.",
          "The vanishing point was rarely used after Alberti.",
          "Perspective also helped direct the viewer's attention."
         ],
         "answer": 3,
         "why": {
          "en": "Inference from \"used the vanishing point to guide the viewer's eye\". B overgeneralizes \"often\".",
-         "tr": "Çıkarım: \"kaçış noktasını izleyicinin bakışını yönlendirmek için kullandılar\". B \"often\" ifadesini genelleştiriyor."
+         "tr": "Çıkarım: \"kaçış noktasını izleyicinin bakışını yönlendirmek için kullandılar\". B \"often\" ifadesini genelleştiriyor.",
+         "es": "Inferencia a partir de \"used the vanishing point to guide the viewer's eye\". B generaliza en exceso \"often\"."
         }
        }
       ]
@@ -1824,7 +1894,8 @@
       "answer": 2,
       "why": {
        "en": "Request → agreement. B repeats \"borrow\".",
-       "tr": "Rica → kabul. B \"borrow\" kelimesini tekrar ediyor."
+       "tr": "Rica → kabul. B \"borrow\" kelimesini tekrar ediyor.",
+       "es": "Petición → aceptación. B repite \"borrow\"."
       }
      },
      {
@@ -1837,7 +1908,7 @@
        }
       ],
       "options": [
-       "It starts at four.",
+       "It starts at four, I think.",
        "At the stadium.",
        "I like soccer.",
        "We won by two goals."
@@ -1845,7 +1916,8 @@
       "answer": 3,
       "why": {
        "en": "\"How was\" → an evaluation. A gives a time.",
-       "tr": "\"How was\" → değerlendirme. A zaman veriyor."
+       "tr": "\"How was\" → değerlendirme. A zaman veriyor.",
+       "es": "\"How was\" → una valoración. A da una hora."
       }
      },
      {
@@ -1866,7 +1938,8 @@
       "answer": 1,
       "why": {
        "en": "\"When\" → a time. A gives a place.",
-       "tr": "\"When\" → zaman. A yer veriyor."
+       "tr": "\"When\" → zaman. A yer veriyor.",
+       "es": "\"When\" → una hora. A da un lugar."
       }
      },
      {
@@ -1880,14 +1953,15 @@
       ],
       "options": [
        "Next to the main office.",
-       "At nine in the morning.",
+       "At nine in the morning, I think.",
        "Yes, it is.",
        "About twenty computers."
       ],
       "answer": 0,
       "why": {
        "en": "\"Where\" → a place. B gives a time.",
-       "tr": "\"Where\" → yer. B zaman veriyor."
+       "tr": "\"Where\" → yer. B zaman veriyor.",
+       "es": "\"Where\" → un lugar. B da una hora."
       }
      },
      {
@@ -1908,7 +1982,8 @@
       "answer": 2,
       "why": {
        "en": "\"What time\" → a time. A repeats \"bus\".",
-       "tr": "\"What time\" → zaman. A \"bus\" kelimesini tekrar ediyor."
+       "tr": "\"What time\" → zaman. A \"bus\" kelimesini tekrar ediyor.",
+       "es": "\"What time\" → una hora. A repite \"bus\"."
       }
      },
      {
@@ -1921,15 +1996,16 @@
        }
       ],
       "options": [
-       "I had a sandwich.",
        "Yes, until five.",
+       "I had a sandwich.",
        "It's near the gym.",
        "The coffee is good."
       ],
-      "answer": 1,
+      "answer": 0,
       "why": {
        "en": "Yes/no question → yes + detail. C answers \"where\".",
-       "tr": "Evet/hayır sorusu → evet + ayrıntı. C \"nerede\" sorusuna cevap veriyor."
+       "tr": "Evet/hayır sorusu → evet + ayrıntı. C \"nerede\" sorusuna cevap veriyor.",
+       "es": "Pregunta de sí/no → sí + detalle. C responde a \"where\"."
       }
      },
      {
@@ -1950,7 +2026,8 @@
       "answer": 0,
       "why": {
        "en": "\"Who\" → a person. B gives days.",
-       "tr": "\"Who\" → kişi. B günleri veriyor."
+       "tr": "\"Who\" → kişi. B günleri veriyor.",
+       "es": "\"Who\" → una persona. B da días."
       }
      },
      {
@@ -1965,13 +2042,14 @@
       "options": [
        "Yes, I am.",
        "At eleven o'clock.",
-       "In my room.",
+       "In my room, with my roommate.",
        "I studied all night."
       ],
       "answer": 3,
       "why": {
        "en": "\"Why\" → a reason. A answers \"yes\".",
-       "tr": "\"Why\" → sebep. A \"evet\" diyor."
+       "tr": "\"Why\" → sebep. A \"evet\" diyor.",
+       "es": "\"Why\" → un motivo. A responde \"yes\"."
       }
      },
      {
@@ -2007,28 +2085,30 @@
         "options": [
          "He lost his meal card.",
          "He cannot pay with cash at the counter.",
-         "The machine by the door is broken.",
+         "The machine by the door is not working today.",
          "The cafeteria is about to close."
         ],
         "answer": 1,
         "why": {
          "en": "Problem: the cafeteria only takes meal cards. A and C are not mentioned.",
-         "tr": "Sorun: kafeterya yalnızca yemek kartı alıyor. A ve C söylenmiyor."
+         "tr": "Sorun: kafeterya yalnızca yemek kartı alıyor. A ve C söylenmiyor.",
+         "es": "Problema: la cafetería solo acepta tarjetas de comida. A y C no se mencionan."
         }
        },
        {
         "id": "conv_meal_card_q2",
         "stem": "What will the man probably do next?",
         "options": [
-         "Go to the bank for cash",
          "Put money on his meal card",
-         "Buy a new meal card",
+         "Go to the bank for cash",
+         "Buy a new meal card at the counter",
          "Eat somewhere else today"
         ],
-        "answer": 1,
+        "answer": 0,
         "why": {
          "en": "Inference: he will use the machine and come right back.",
-         "tr": "Çıkarım: makineyi kullanıp hemen geri dönecek."
+         "tr": "Çıkarım: makineyi kullanıp hemen geri dönecek.",
+         "es": "Inferencia: usará la máquina y volverá enseguida."
         }
        }
       ]
@@ -2056,22 +2136,24 @@
         "answer": 1,
         "why": {
          "en": "Detail: the gym closes for cleaning. A moves the cleaning to the pool.",
-         "tr": "Ayrıntı: spor salonu temizlik için kapanıyor. A temizliği havuza taşıyor."
+         "tr": "Ayrıntı: spor salonu temizlik için kapanıyor. A temizliği havuza taşıyor.",
+         "es": "Detalle: el gimnasio cierra por limpieza. A traslada la limpieza a la piscina."
         }
        },
        {
         "id": "ann_gym_closed_q2",
         "stem": "What is true about the swimming pool?",
         "options": [
-         "It will close on Sunday.",
          "It will be open on Saturday.",
+         "It will close on Sunday.",
          "It will open at eight a.m.",
          "It will be cleaned this week."
         ],
-        "answer": 1,
+        "answer": 0,
         "why": {
          "en": "Detail: \"will stay open as usual on Saturday\". C belongs to the gym.",
-         "tr": "Ayrıntı: \"Cumartesi her zamanki gibi açık\". C spor salonuna ait."
+         "tr": "Ayrıntı: \"Cumartesi her zamanki gibi açık\". C spor salonuna ait.",
+         "es": "Detalle: \"will stay open as usual on Saturday\". C corresponde al gimnasio."
         }
        }
       ]
@@ -2099,29 +2181,31 @@
         "answer": 0,
         "why": {
          "en": "Main idea. The other options are not discussed.",
-         "tr": "Ana fikir. Diğer şıklar konuşmada yok."
+         "tr": "Ana fikir. Diğer şıklar konuşmada yok.",
+         "es": "Idea principal. Las demás opciones no se tratan."
         }
        },
        {
         "id": "talk_cave_formation_q2",
         "stem": "What happens to rainwater as it moves through the soil?",
         "options": [
-         "It turns into stone.",
          "It becomes slightly acidic.",
+         "It slowly turns into solid stone.",
          "It gets much colder.",
          "It loses its minerals."
         ],
-        "answer": 1,
+        "answer": 0,
         "why": {
          "en": "Paraphrase of \"picks up carbon dioxide and becomes a weak acid\".",
-         "tr": "\"Karbondioksit alır ve zayıf bir asit olur\" ifadesinin parafrazı."
+         "tr": "\"Karbondioksit alır ve zayıf bir asit olur\" ifadesinin parafrazı.",
+         "es": "Paráfrasis de \"picks up carbon dioxide and becomes a weak acid\"."
         }
        },
        {
         "id": "talk_cave_formation_q3",
         "stem": "What kind of rock do these caves form in?",
         "options": [
-         "Sand",
+         "Sandstone",
          "Granite",
          "Limestone",
          "Clay"
@@ -2129,7 +2213,8 @@
         "answer": 2,
         "why": {
          "en": "Detail: limestone.",
-         "tr": "Ayrıntı: kireç taşı."
+         "tr": "Ayrıntı: kireç taşı.",
+         "es": "Detalle: la piedra caliza."
         }
        },
        {
@@ -2144,7 +2229,8 @@
         "answer": 3,
         "why": {
          "en": "Function: stresses the slow process (\"over thousands of years\").",
-         "tr": "İşlev: sürecin yavaşlığını vurguluyor (\"binlerce yıl boyunca\")."
+         "tr": "İşlev: sürecin yavaşlığını vurguluyor (\"binlerce yıl boyunca\").",
+         "es": "Función: subraya lo lento del proceso (\"over thousands of years\")."
         }
        }
       ]

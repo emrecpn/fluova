@@ -26,45 +26,48 @@
     "id": "l11_hac1_q1",
     "stem": "What is the lecture mainly about?",
     "options": [
-     "A well-known ecological success story is more complicated than it first seemed.",
      "Wolves were the only reason the elk population declined.",
+     "A well-known ecological success story is more complicated than it first seemed.",
      "Beavers are more important to ecosystems than wolves.",
      "Bringing back predators always reverses earlier damage."
     ],
-    "answer": 0,
+    "answer": 1,
     "why": {
-     "en": "Main idea (paraphrase). B and D are too extreme.",
-     "tr": "Ana fikir (parafraz). B ve D aşırı uç."
+     "en": "Main idea (paraphrase). A and D are too extreme.",
+     "tr": "Ana fikir (parafraz). A ve D aşırı uç.",
+     "es": "Idea principal (paráfrasis). A y D son demasiado extremos."
     }
    },
    {
     "id": "l11_hac1_q2",
     "stem": "Why does the professor mention bears and harsh winters?",
     "options": [
-     "To point out other factors that reduced the number of elk",
+     "To explain why beavers left the rivers before the wolves returned",
      "To describe dangers that wolves face in the park",
-     "To explain why beavers left the rivers",
+     "To point out other factors that reduced the number of elk",
      "To compare Yellowstone with other national parks"
     ],
-    "answer": 0,
+    "answer": 2,
     "why": {
      "en": "Purpose.",
-     "tr": "Amaç."
+     "tr": "Amaç.",
+     "es": "Propósito."
     }
    },
    {
     "id": "l11_hac1_q3",
     "stem": "What can be inferred about the areas where willows have not recovered?",
     "options": [
-     "Restoring the trees there requires more than bringing back wolves.",
+     "The water table there has returned to normal.",
      "Elk still graze freely along those rivers.",
      "Beavers built too many dams in those areas.",
-     "The water table there has returned to normal."
+     "Restoring the trees there requires more than bringing back wolves."
     ],
-    "answer": 0,
+    "answer": 3,
     "why": {
-     "en": "Inference. D contradicts the talk.",
-     "tr": "Çıkarım. D metnin tersi."
+     "en": "Inference. A contradicts the talk.",
+     "tr": "Çıkarım. A metnin tersi.",
+     "es": "Inferencia. A contradice la charla."
     }
    },
    {
@@ -79,7 +82,8 @@
     "answer": 0,
     "why": {
      "en": "Figurative meaning.",
-     "tr": "Mecaz anlamı."
+     "tr": "Mecaz anlamı.",
+     "es": "Sentido figurado."
     }
    }
   ]

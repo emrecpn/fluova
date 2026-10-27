@@ -34,15 +34,16 @@
     "id": "l11_cv1_q1",
     "stem": "What is the woman's problem?",
     "options": [
-     "A book she needs is not available right now.",
+     "Her paper is due next Tuesday.",
      "She cannot find the library's online catalog.",
      "She forgot her student login details.",
-     "Her paper is due next Tuesday."
+     "A book she needs is not available right now."
     ],
-    "answer": 0,
+    "answer": 3,
     "why": {
-     "en": "Problem: the book is checked out. D is a wrong detail (Tuesday is when the book is due back).",
-     "tr": "Sorun: kitap ödünçte. D yanlış ayrıntı (Tuesday kitabın dönüş günü)."
+     "en": "Problem: the book is checked out. A is a wrong detail (Tuesday is when the book is due back).",
+     "tr": "Sorun: kitap ödünçte. A yanlış ayrıntı (Tuesday kitabın dönüş günü).",
+     "es": "Problema: el libro está prestado. A es un detalle equivocado (el martes es cuando hay que devolver el libro)."
     }
    },
    {
@@ -57,7 +58,8 @@
     "answer": 0,
     "why": {
      "en": "Inference: \"I'll check tonight\" → the electronic version. B was suggested but does not help.",
-     "tr": "Çıkarım: \"I'll check tonight\" → elektronik sürüm. B önerildi ama işine yaramıyor."
+     "tr": "Çıkarım: \"I'll check tonight\" → elektronik sürüm. B önerildi ama işine yaramıyor.",
+     "es": "Inferencia: \"I'll check tonight\" → la versión electrónica. B se sugirió, pero no ayuda."
     }
    }
   ]

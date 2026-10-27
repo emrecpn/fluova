@@ -22,45 +22,48 @@
     "id": "l11_eac_q1",
     "stem": "What is the talk mainly about?",
     "options": [
-     "The ways penguins protect themselves from the cold",
      "Where penguins find food in winter",
+     "The ways penguins protect themselves from the cold",
      "How penguins raise their young",
      "Why penguins cannot fly"
     ],
-    "answer": 0,
+    "answer": 1,
     "why": {
      "en": "Main idea.",
-     "tr": "Ana fikir."
+     "tr": "Ana fikir.",
+     "es": "Idea principal."
     }
    },
    {
     "id": "l11_eac_q2",
     "stem": "What does the fat under a penguin's skin do?",
     "options": [
-     "It keeps body heat inside.",
-     "It helps penguins swim faster.",
      "It makes their feathers short.",
+     "It helps penguins swim faster.",
+     "It keeps body heat inside.",
      "It stores food for the winter."
     ],
-    "answer": 0,
+    "answer": 2,
     "why": {
      "en": "Detail.",
-     "tr": "Detay."
+     "tr": "Detay.",
+     "es": "Detalle."
     }
    },
    {
     "id": "l11_eac_q3",
     "stem": "Why do emperor penguins take turns in a huddle?",
     "options": [
-     "So that each penguin spends time in the warm center",
-     "So that the strongest penguins eat first",
+     "So that young penguins learn to swim",
+     "So that the strongest penguins can always eat first.",
      "So that they can watch for danger",
-     "So that young penguins learn to swim"
+     "So that each penguin spends time in the warm center"
     ],
-    "answer": 0,
+    "answer": 3,
     "why": {
      "en": "Reason.",
-     "tr": "Sebep."
+     "tr": "Sebep.",
+     "es": "Motivo."
     }
    },
    {
@@ -75,7 +78,8 @@
     "answer": 0,
     "why": {
      "en": "Purpose.",
-     "tr": "Amaç."
+     "tr": "Amaç.",
+     "es": "Propósito."
     }
    }
   ]

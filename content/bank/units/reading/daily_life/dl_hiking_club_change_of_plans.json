@@ -17,30 +17,32 @@
     "id": "r11_dl2_q1",
     "stem": "Why was the hike moved?",
     "options": [
-     "Dangerous conditions are expected in the area.",
-     "The bus company cancelled the Sunday trip.",
      "The mountain trail was closed for repairs.",
-     "Too few members signed up for Sunday."
+     "The bus company cancelled the Sunday trip.",
+     "Dangerous conditions are expected in the area.",
+     "Not enough members had signed up for the Sunday hike."
     ],
-    "answer": 0,
+    "answer": 2,
     "why": {
      "en": "Paraphrase: \"storm warning\" → dangerous conditions are expected. The others are not in the text.",
-     "tr": "Parafraz: \"storm warning\" → tehlikeli koşullar bekleniyor. Diğerleri metinde yok."
+     "tr": "Parafraz: \"storm warning\" → tehlikeli koşullar bekleniyor. Diğerleri metinde yok.",
+     "es": "Paráfrasis: \"storm warning\" → se esperan condiciones peligrosas. Las demás no están en el texto."
     }
    },
    {
     "id": "r11_dl2_q2",
     "stem": "How is the new trip different from the original plan?",
     "options": [
-     "It leaves one hour earlier in the morning.",
-     "It leaves from a different place.",
+     "It follows a shorter trail.",
+     "It leaves from a different place than the first trip.",
      "It costs more than the first trip.",
-     "It follows a shorter trail."
+     "It leaves one hour earlier in the morning."
     ],
-    "answer": 0,
+    "answer": 3,
     "why": {
-     "en": "The change: one hour earlier. B and D say the opposite of the text (same place, longer trail).",
-     "tr": "Fark: bir saat erken. B ve D metnin söylediğinin tersi (same place, longer trail)."
+     "en": "The change: one hour earlier. B and A say the opposite of the text (same place, longer trail).",
+     "tr": "Fark: bir saat erken. B ve A metnin söylediğinin tersi (same place, longer trail).",
+     "es": "El cambio: una hora antes. B y A dicen lo contrario que el texto (mismo lugar, ruta más larga)."
     }
    },
    {
@@ -55,7 +57,8 @@
     "answer": 0,
     "why": {
      "en": "Detail: \"reply by Thursday\" → let them know before the deadline. B borrows \"waiting list\" from the text and puts the responsibility on the member.",
-     "tr": "Detay: \"reply by Thursday\" → son tarihten önce haber ver. B metindeki \"waiting list\" kelimesini kullanıp sorumluluğu üyeye yüklüyor."
+     "tr": "Detay: \"reply by Thursday\" → son tarihten önce haber ver. B metindeki \"waiting list\" kelimesini kullanıp sorumluluğu üyeye yüklüyor.",
+     "es": "Detalle: \"reply by Thursday\" → avisar antes de la fecha límite. B toma prestado \"waiting list\" del texto y traslada la responsabilidad al socio."
     }
    }
   ]

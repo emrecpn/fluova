@@ -21,12 +21,13 @@
      "To ask the manager to repair a pipe in his apartment",
      "To invite residents to try the new washing machines",
      "To warn neighbors about a planned interruption in service",
-     "To complain about the noise from the construction work"
+     "To complain about the noise from the construction work next door"
     ],
     "answer": 2,
     "why": {
      "en": "Purpose (paraphrase): the water will be turned off for repairs. A misreads who is asking for the repair; B picks a minor detail.",
-     "tr": "Amaç (parafraz): onarım için suyun kesileceği uyarısı. A onarımı kimin istediğini yanlış okuyor; B küçük bir ayrıntıyı ana amaç sanıyor."
+     "tr": "Amaç (parafraz): onarım için suyun kesileceği uyarısı. A onarımı kimin istediğini yanlış okuyor; B küçük bir ayrıntıyı ana amaç sanıyor.",
+     "es": "Propósito (paráfrasis): se cortará el agua por unas reparaciones. A malinterpreta quién pide la reparación; B se queda con un detalle menor."
     }
    },
    {
@@ -41,7 +42,8 @@
     "answer": 3,
     "why": {
      "en": "Paraphrase of \"fill a few bottles the night before\". B contradicts the email (contact the office, not Daniel); A is impossible because the laundry room is closed.",
-     "tr": "\"Fill a few bottles the night before\" ifadesinin parafrazı. B e-postayla çelişiyor (Daniel'e değil ofise yazılmalı); A imkânsız çünkü çamaşırhane kapalı."
+     "tr": "\"Fill a few bottles the night before\" ifadesinin parafrazı. B e-postayla çelişiyor (Daniel'e değil ofise yazılmalı); A imkânsız çünkü çamaşırhane kapalı.",
+     "es": "Paráfrasis de \"fill a few bottles the night before\". B contradice el correo (hay que contactar con la oficina, no con Daniel); A es imposible porque la lavandería está cerrada."
     }
    },
    {
@@ -49,14 +51,15 @@
     "stem": "What can be inferred about the laundry room?",
     "options": [
      "It will be closed for the rest of the week",
-     "Its equipment is being upgraded.",
+     "Its equipment is being upgraded",
      "It is the reason the water must be turned off",
      "It will be open only to residents of Apartment 4B"
     ],
     "answer": 1,
     "why": {
      "en": "Inference: it \"will reopen ... with two new washing machines\". A contradicts \"reopen on Friday\"; C confuses the cause of the shut-off.",
-     "tr": "Çıkarım: \"iki yeni çamaşır makinesiyle yeniden açılacak\". A \"Cuma açılacak\" bilgisiyle çelişiyor; C kesintinin nedenini karıştırıyor."
+     "tr": "Çıkarım: \"iki yeni çamaşır makinesiyle yeniden açılacak\". A \"Cuma açılacak\" bilgisiyle çelişiyor; C kesintinin nedenini karıştırıyor.",
+     "es": "Inferencia: \"will reopen ... with two new washing machines\". A contradice \"reopen on Friday\"; C confunde la causa del corte."
     }
    }
   ]

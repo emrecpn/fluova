@@ -1,6 +1,6 @@
 # Multilingual site
 
-Languages: **English, Turkish and Spanish**. The Spanish interface is machine-drafted and still needs a native-speaker review, and answer explanations exist in English and Turkish only. Portuguese (BR), Arabic, Vietnamese and Indonesian will follow based on demand.
+Languages: **English, Turkish and Spanish**. The Spanish interface and the Spanish answer explanations are machine-drafted and still need a native-speaker review. Portuguese (BR), Arabic, Vietnamese and Indonesian will follow based on demand.
 
 ## URLs: one subfolder per language
 ```
@@ -27,7 +27,7 @@ Languages: **English, Turkish and Spanish**. The Spanish interface is machine-dr
 ## What gets localised (cheapest first)
 1. UI strings: machine draft plus a one-time check by a native speaker.
 2. Landing copy: rewritten for each language rather than translated word for word.
-3. Answer explanations (`why` fields): `{"en": "...", "tr": "..."}` per question.
+3. Answer explanations (`why` fields): `{"en": "...", "tr": "...", "es": "..."}` per question. Only English is required; a missing language falls back to English.
 4. Native-language coaching, e.g. "Turkish speakers often drop articles". This needs error data.
 
 ## Layout must survive every language

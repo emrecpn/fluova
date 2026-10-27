@@ -15,14 +15,15 @@
   ],
   "options": [
    "The lecture was really interesting.",
-   "Professor Lin gave it this morning.",
+   "Professor Lin gave it in the big hall this morning.",
    "Sure, I'll email them to you tonight.",
    "I slid on the wet floor earlier."
   ],
   "answer": 2,
   "why": {
    "en": "Request → agreement. D is a sound-alike trap (slides / slid).",
-   "tr": "Rica → kabul. D ses benzerliği tuzağı (slides / slid)."
+   "tr": "Rica → kabul. D ses benzerliği tuzağı (slides / slid).",
+   "es": "Petición → aceptación. D es una trampa de sonido parecido (slides / slid)."
   }
  }
 }

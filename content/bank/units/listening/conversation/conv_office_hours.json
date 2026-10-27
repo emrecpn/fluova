@@ -34,30 +34,32 @@
     "id": "l11_cv3_q1",
     "stem": "Why does the student want to change his topic?",
     "options": [
+     "His proposal was not approved by the committee.",
      "The people he planned to talk to are too busy.",
-     "His proposal was not approved.",
      "He finished the project two weeks early.",
      "He is no longer interested in farming."
     ],
-    "answer": 0,
+    "answer": 1,
     "why": {
      "en": "Reason (paraphrase): harvest → farmers have no time.",
-     "tr": "Sebep (parafraz): hasat → çiftçilerin zamanı yok."
+     "tr": "Sebep (parafraz): hasat → çiftçilerin zamanı yok.",
+     "es": "Motivo (paráfrasis): cosecha → los agricultores no tienen tiempo."
     }
    },
    {
     "id": "l11_cv3_q2",
     "stem": "What does the professor imply about the student's topic?",
     "options": [
-     "It is too late to choose a different one.",
-     "It needs more farmers to be useful.",
      "It should focus on the harvest season.",
-     "It was the best proposal she received."
+     "It needs more farmers to be useful.",
+     "It is too late to choose a different one.",
+     "It was the best proposal she received this year."
     ],
-    "answer": 0,
+    "answer": 2,
     "why": {
      "en": "Inference: \"It's a bit late for that\".",
-     "tr": "Çıkarım: \"It's a bit late for that\"."
+     "tr": "Çıkarım: \"It's a bit late for that\".",
+     "es": "Inferencia: \"It's a bit late for that\"."
     }
    }
   ]

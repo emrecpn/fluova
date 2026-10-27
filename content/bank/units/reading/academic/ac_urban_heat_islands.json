@@ -17,30 +17,32 @@
     "id": "r11_ac1_q1",
     "stem": "What is the passage mainly about?",
     "options": [
-     "The causes and effects of extra warmth in urban areas, and possible solutions",
-     "The history of the building materials used in large cities",
      "The way sweat helps people stay comfortable in hot weather",
+     "The history of the building materials used in large cities",
+     "The causes and effects of extra warmth in urban areas, and possible solutions",
      "Differences in summer weather between countries"
     ],
-    "answer": 0,
+    "answer": 2,
     "why": {
-     "en": "Main idea (paraphrase). B and C mistake details (materials, sweat) for the whole.",
-     "tr": "Ana fikir (parafraz). B ve C metindeki ayrıntıları (materials, sweat) bütün sanıyor."
+     "en": "Main idea (paraphrase). B and A mistake details (materials, sweat) for the whole.",
+     "tr": "Ana fikir (parafraz). B ve A metindeki ayrıntıları (materials, sweat) bütün sanıyor.",
+     "es": "Idea principal (paráfrasis). B y A confunden detalles (materiales, sudor) con el todo."
     }
    },
    {
     "id": "r11_ac1_q2",
     "stem": "The word \"release\" in paragraph 1 is closest in meaning to",
     "options": [
-     "give off",
+     "block",
      "store up",
      "reflect",
-     "block"
+     "give off"
     ],
-    "answer": 0,
+    "answer": 3,
     "why": {
      "en": "Vocabulary in context: release = give off.",
-     "tr": "Bağlamda kelime: release = give off."
+     "tr": "Bağlamda kelime: release = give off.",
+     "es": "Vocabulario en contexto: release = desprender, liberar."
     }
    },
    {
@@ -55,37 +57,40 @@
     "answer": 0,
     "why": {
      "en": "Author's purpose: to compare how trees cool the air with a familiar process (sweating). B builds a false claim from words in the text.",
-     "tr": "Yazarın amacı: ağaçların havayı serinletmesini tanıdık bir süreçle (terleme) karşılaştırmak. B metindeki kelimelerle yanlış bir iddia kuruyor."
+     "tr": "Yazarın amacı: ağaçların havayı serinletmesini tanıdık bir süreçle (terleme) karşılaştırmak. B metindeki kelimelerle yanlış bir iddia kuruyor.",
+     "es": "Propósito del autor: comparar cómo los árboles enfrían el aire con un proceso conocido (sudar). B construye una afirmación falsa con palabras del texto."
     }
    },
    {
     "id": "r11_ac1_q4",
     "stem": "What can be inferred about people who live in city centers during a heat wave?",
     "options": [
-     "They get little relief even after the sun goes down.",
      "They visit parks more often than other residents.",
+     "They get little relief even after the sun goes down.",
      "They usually paint their roofs white.",
      "They are less affected than people in the countryside."
     ],
-    "answer": 0,
+    "answer": 1,
     "why": {
      "en": "Inference: warm nights prevent recovery. C wrongly attributes \"paint roofs white\" to individuals.",
-     "tr": "Çıkarım: sıcak geceler toparlanmayı engelliyor. C metindeki \"paint roofs white\" ifadesini kişilere yanlış atfediyor."
+     "tr": "Çıkarım: sıcak geceler toparlanmayı engelliyor. C metindeki \"paint roofs white\" ifadesini kişilere yanlış atfediyor.",
+     "es": "Inferencia: las noches cálidas impiden la recuperación. C atribuye por error \"paint roofs white\" a los particulares."
     }
    },
    {
     "id": "r11_ac1_q5",
     "stem": "According to paragraph 3, which step have some cities taken?",
     "options": [
-     "Planting trees along streets",
-     "Building roads to replace green spaces",
      "Opening more hospitals during heat waves",
+     "Building roads to replace green spaces",
+     "Planting trees along streets",
      "Using darker materials on roofs"
     ],
-    "answer": 0,
+    "answer": 2,
     "why": {
      "en": "Detail: planting trees along streets. B mistakes the cause in paragraph 2 for the solution; D says the opposite.",
-     "tr": "Detay: sokaklara ağaç dikmek. B paragraf 2'deki nedeni çözüm sanıyor; D tersini söylüyor."
+     "tr": "Detay: sokaklara ağaç dikmek. B paragraf 2'deki nedeni çözüm sanıyor; D tersini söylüyor.",
+     "es": "Detalle: plantar árboles a lo largo de las calles. B confunde la causa del párrafo 2 con la solución; D dice lo contrario."
     }
    }
   ]

@@ -13,15 +13,16 @@
    }
   ],
   "options": [
-   "It's freezing outside.",
+   "My coat is in the closet.",
    "I bought it on sale.",
    "Yes, it's a new coat.",
-   "My coat is in the closet."
+   "It's freezing outside."
   ],
-  "answer": 0,
+  "answer": 3,
   "why": {
    "en": "\"Why\" → a reason.",
-   "tr": "Neden → sebep."
+   "tr": "Neden → sebep.",
+   "es": "\"Why\" → un motivo."
   }
  }
 }

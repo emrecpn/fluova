@@ -13,15 +13,16 @@
    }
   ],
   "options": [
-   "Better than I expected.",
    "It's on Monday.",
-   "I really like math.",
+   "Better than I expected.",
+   "I really like math and science.",
    "Yes, I took it."
   ],
-  "answer": 0,
+  "answer": 1,
   "why": {
    "en": "\"How did it go\" → an evaluation.",
-   "tr": "Nasıl geçti → değerlendirme."
+   "tr": "Nasıl geçti → değerlendirme.",
+   "es": "\"How did it go\" → una valoración."
   }
  }
 }

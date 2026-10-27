@@ -151,30 +151,32 @@
        "id": "r11_dl1_q1",
        "stem": "What is the main purpose of the notice?",
        "options": [
-        "To announce a free service for keeping bicycles in good condition",
-        "To sell new bicycles to students at a discount",
+        "To announce an event offering free bike check-ups",
+        "To sell new bicycles to students at a special discount",
         "To recruit volunteer mechanics for the Student Center",
         "To explain new parking rules for bicycles on campus"
        ],
        "answer": 0,
        "why": {
         "en": "Main purpose (paraphrase): free repair service. B and C reuse words from the text (bikes, volunteer mechanics, Student Center) but distort the meaning.",
-        "tr": "Ana amaç (parafraz): ücretsiz bakım hizmeti. B/C metindeki kelimeleri (bikes, volunteer mechanics, Student Center) kullanıp anlamı bozuyor."
+        "tr": "Ana amaç (parafraz): ücretsiz bakım hizmeti. B/C metindeki kelimeleri (bikes, volunteer mechanics, Student Center) kullanıp anlamı bozuyor.",
+        "es": "Propósito principal (paráfrasis): un servicio gratuito de reparación. B y C reutilizan palabras del texto (bikes, volunteer mechanics, Student Center), pero deforman el significado."
        }
       },
       {
        "id": "r11_dl1_q2",
        "stem": "What will most likely happen to a bike that is dropped off at 1 p.m.?",
        "options": [
+        "Its repairs will cost more than in the morning.",
         "It may not be ready until a later day.",
-        "It will be checked by mechanics at no cost.",
         "Its basket will be removed by the volunteers.",
         "It will receive new parts at cost price."
        ],
-       "answer": 0,
+       "answer": 1,
        "why": {
-        "en": "Inference: a bike not dropped off before noon will not be ready the same day. B is true but does not answer the question.",
-        "tr": "Çıkarım: öğleden önce bırakılmayan bisiklet aynı gün hazır olmaz. B doğru bir bilgi ama soruyu yanıtlamıyor."
+        "en": "Inference: bikes must be dropped off before noon \"to be ready the same day\", so a 1 p.m. bike may not be ready that day. A contradicts \"at no cost\"; C and D misuse details about baskets and parts.",
+        "tr": "Çıkarım: bisikletler \"aynı gün hazır olması için\" öğleden önce bırakılmalı; 13.00'te bırakılan o gün hazır olmayabilir. A \"ücretsiz\" bilgisiyle çelişiyor; C ve D sepet ve parça ayrıntılarını yanlış kullanıyor.",
+        "es": "Inferencia: las bicicletas deben dejarse antes del mediodía \"to be ready the same day\", así que una bicicleta dejada a la 1 p. m. quizá no esté lista ese día. A contradice \"at no cost\"; C y D usan mal detalles sobre cestas y piezas."
        }
       }
      ]
@@ -193,30 +195,32 @@
        "id": "r11_dl2_q1",
        "stem": "Why was the hike moved?",
        "options": [
-        "Dangerous conditions are expected in the area.",
-        "The bus company cancelled the Sunday trip.",
         "The mountain trail was closed for repairs.",
-        "Too few members signed up for Sunday."
+        "The bus company cancelled the Sunday trip.",
+        "Dangerous conditions are expected in the area.",
+        "Not enough members had signed up for the Sunday hike."
        ],
-       "answer": 0,
+       "answer": 2,
        "why": {
         "en": "Paraphrase: \"storm warning\" → dangerous conditions are expected. The others are not in the text.",
-        "tr": "Parafraz: \"storm warning\" → tehlikeli koşullar bekleniyor. Diğerleri metinde yok."
+        "tr": "Parafraz: \"storm warning\" → tehlikeli koşullar bekleniyor. Diğerleri metinde yok.",
+        "es": "Paráfrasis: \"storm warning\" → se esperan condiciones peligrosas. Las demás no están en el texto."
        }
       },
       {
        "id": "r11_dl2_q2",
        "stem": "How is the new trip different from the original plan?",
        "options": [
-        "It leaves one hour earlier in the morning.",
-        "It leaves from a different place.",
+        "It follows a shorter trail.",
+        "It leaves from a different place than the first trip.",
         "It costs more than the first trip.",
-        "It follows a shorter trail."
+        "It leaves one hour earlier in the morning."
        ],
-       "answer": 0,
+       "answer": 3,
        "why": {
-        "en": "The change: one hour earlier. B and D say the opposite of the text (same place, longer trail).",
-        "tr": "Fark: bir saat erken. B ve D metnin söylediğinin tersi (same place, longer trail)."
+        "en": "The change: one hour earlier. B and A say the opposite of the text (same place, longer trail).",
+        "tr": "Fark: bir saat erken. B ve A metnin söylediğinin tersi (same place, longer trail).",
+        "es": "El cambio: una hora antes. B y A dicen lo contrario que el texto (mismo lugar, ruta más larga)."
        }
       },
       {
@@ -231,7 +235,8 @@
        "answer": 0,
        "why": {
         "en": "Detail: \"reply by Thursday\" → let them know before the deadline. B borrows \"waiting list\" from the text and puts the responsibility on the member.",
-        "tr": "Detay: \"reply by Thursday\" → son tarihten önce haber ver. B metindeki \"waiting list\" kelimesini kullanıp sorumluluğu üyeye yüklüyor."
+        "tr": "Detay: \"reply by Thursday\" → son tarihten önce haber ver. B metindeki \"waiting list\" kelimesini kullanıp sorumluluğu üyeye yüklüyor.",
+        "es": "Detalle: \"reply by Thursday\" → avisar antes de la fecha límite. B toma prestado \"waiting list\" del texto y traslada la responsabilidad al socio."
        }
       }
      ]
@@ -250,30 +255,32 @@
        "id": "r11_ac1_q1",
        "stem": "What is the passage mainly about?",
        "options": [
-        "The causes and effects of extra warmth in urban areas, and possible solutions",
-        "The history of the building materials used in large cities",
         "The way sweat helps people stay comfortable in hot weather",
+        "The history of the building materials used in large cities",
+        "The causes and effects of extra warmth in urban areas, and possible solutions",
         "Differences in summer weather between countries"
        ],
-       "answer": 0,
+       "answer": 2,
        "why": {
-        "en": "Main idea (paraphrase). B and C mistake details (materials, sweat) for the whole.",
-        "tr": "Ana fikir (parafraz). B ve C metindeki ayrıntıları (materials, sweat) bütün sanıyor."
+        "en": "Main idea (paraphrase). B and A mistake details (materials, sweat) for the whole.",
+        "tr": "Ana fikir (parafraz). B ve A metindeki ayrıntıları (materials, sweat) bütün sanıyor.",
+        "es": "Idea principal (paráfrasis). B y A confunden detalles (materiales, sudor) con el todo."
        }
       },
       {
        "id": "r11_ac1_q2",
        "stem": "The word \"release\" in paragraph 1 is closest in meaning to",
        "options": [
-        "give off",
+        "block",
         "store up",
         "reflect",
-        "block"
+        "give off"
        ],
-       "answer": 0,
+       "answer": 3,
        "why": {
         "en": "Vocabulary in context: release = give off.",
-        "tr": "Bağlamda kelime: release = give off."
+        "tr": "Bağlamda kelime: release = give off.",
+        "es": "Vocabulario en contexto: release = desprender, liberar."
        }
       },
       {
@@ -288,37 +295,40 @@
        "answer": 0,
        "why": {
         "en": "Author's purpose: to compare how trees cool the air with a familiar process (sweating). B builds a false claim from words in the text.",
-        "tr": "Yazarın amacı: ağaçların havayı serinletmesini tanıdık bir süreçle (terleme) karşılaştırmak. B metindeki kelimelerle yanlış bir iddia kuruyor."
+        "tr": "Yazarın amacı: ağaçların havayı serinletmesini tanıdık bir süreçle (terleme) karşılaştırmak. B metindeki kelimelerle yanlış bir iddia kuruyor.",
+        "es": "Propósito del autor: comparar cómo los árboles enfrían el aire con un proceso conocido (sudar). B construye una afirmación falsa con palabras del texto."
        }
       },
       {
        "id": "r11_ac1_q4",
        "stem": "What can be inferred about people who live in city centers during a heat wave?",
        "options": [
-        "They get little relief even after the sun goes down.",
         "They visit parks more often than other residents.",
+        "They get little relief even after the sun goes down.",
         "They usually paint their roofs white.",
         "They are less affected than people in the countryside."
        ],
-       "answer": 0,
+       "answer": 1,
        "why": {
         "en": "Inference: warm nights prevent recovery. C wrongly attributes \"paint roofs white\" to individuals.",
-        "tr": "Çıkarım: sıcak geceler toparlanmayı engelliyor. C metindeki \"paint roofs white\" ifadesini kişilere yanlış atfediyor."
+        "tr": "Çıkarım: sıcak geceler toparlanmayı engelliyor. C metindeki \"paint roofs white\" ifadesini kişilere yanlış atfediyor.",
+        "es": "Inferencia: las noches cálidas impiden la recuperación. C atribuye por error \"paint roofs white\" a los particulares."
        }
       },
       {
        "id": "r11_ac1_q5",
        "stem": "According to paragraph 3, which step have some cities taken?",
        "options": [
-        "Planting trees along streets",
-        "Building roads to replace green spaces",
         "Opening more hospitals during heat waves",
+        "Building roads to replace green spaces",
+        "Planting trees along streets",
         "Using darker materials on roofs"
        ],
-       "answer": 0,
+       "answer": 2,
        "why": {
         "en": "Detail: planting trees along streets. B mistakes the cause in paragraph 2 for the solution; D says the opposite.",
-        "tr": "Detay: sokaklara ağaç dikmek. B paragraf 2'deki nedeni çözüm sanıyor; D tersini söylüyor."
+        "tr": "Detay: sokaklara ağaç dikmek. B paragraf 2'deki nedeni çözüm sanıyor; D tersini söylüyor.",
+        "es": "Detalle: plantar árboles a lo largo de las calles. B confunde la causa del párrafo 2 con la solución; D dice lo contrario."
        }
       }
      ]
@@ -411,45 +421,48 @@
         "id": "r11_dlh_q1",
         "stem": "What is the main change described in the notice?",
         "options": [
-         "How long people keep items will depend on whether others want them",
          "Borrowers must now renew every item at the front desk",
-         "The library will begin charging higher fines for late returns",
+         "How long people keep items will depend on whether others want them",
+         "The library will begin charging higher fines for all late returns of books",
          "Laptops may now be borrowed for longer periods"
         ],
-        "answer": 0,
+        "answer": 1,
         "why": {
-         "en": "Main change (paraphrase): the loan period depends on demand. B and C contradict the text; D is equipment that is excluded.",
-         "tr": "Ana değişiklik (parafraz): süre talebe bağlı. B ve C metnin tersi; D hariç tutulan ekipman."
+         "en": "Main change (paraphrase): the loan period depends on demand. A and C contradict the text; D is equipment that is excluded.",
+         "tr": "Ana değişiklik (parafraz): süre talebe bağlı. A ve C metnin tersi; D hariç tutulan ekipman.",
+         "es": "Cambio principal (paráfrasis): el plazo de préstamo depende de la demanda. A y C contradicen el texto; D es material que queda excluido."
         }
        },
        {
         "id": "r11_dlh_q2",
         "stem": "What will most likely happen to a student who keeps a requested book past its new due date?",
         "options": [
-         "The student will be unable to borrow anything else for a while.",
-         "The student will pay a fine for each extra day.",
          "The loan will renew automatically up to five times.",
+         "The student will have to pay a small fine for each extra day it is late.",
+         "The student will be unable to borrow anything else for a while.",
          "The library will send the book to the other user."
         ],
-        "answer": 0,
+        "answer": 2,
         "why": {
-         "en": "Inference: borrowing rights are suspended instead of a fine. B is the old rule that was removed; C applies to books with no waiting list.",
-         "tr": "Çıkarım: ceza yerine ödünç alma hakkı askıya alınır. B kaldırılan eski kural; C bekleme listesi olmayan kitaplar için."
+         "en": "Inference: borrowing rights are suspended instead of a fine. B is the old rule that was removed; A applies to books with no waiting list.",
+         "tr": "Çıkarım: ceza yerine ödünç alma hakkı askıya alınır. B kaldırılan eski kural; A bekleme listesi olmayan kitaplar için.",
+         "es": "Inferencia: se suspende el derecho de préstamo en lugar de poner una multa. B es la norma antigua que se eliminó; A se aplica a los libros sin lista de espera."
         }
        },
        {
         "id": "r11_dlh_q3",
         "stem": "Which items are NOT covered by the new system?",
         "options": [
-         "Laptops and other equipment",
+         "Items borrowed before March 1",
          "Items that nobody has requested",
          "Books that are already overdue",
-         "Items borrowed before March 1"
+         "Laptops and other equipment"
         ],
-        "answer": 0,
+        "answer": 3,
         "why": {
          "en": "Detail/paraphrase: laptops and other equipment → equipment such as computers.",
-         "tr": "Detay/parafraz: laptops and other equipment → bilgisayar gibi ekipman."
+         "tr": "Detay/parafraz: laptops and other equipment → bilgisayar gibi ekipman.",
+         "es": "Detalle/paráfrasis: laptops and other equipment → material como ordenadores."
         }
        }
       ]
@@ -468,45 +481,48 @@
         "id": "r11_ach_q1",
         "stem": "Which of the following best states the main idea of the passage?",
         "options": [
-         "Color terms can slightly speed up some visual decisions without limiting what people perceive.",
          "Russian speakers are able to see more colors than English speakers can.",
+         "Color terms can slightly speed up some visual decisions without limiting what people perceive.",
          "Doing a verbal task improves people's ability to tell colors apart.",
          "Linguists disagree about how many basic color terms each language has."
         ],
-        "answer": 0,
+        "answer": 1,
         "why": {
-         "en": "Main idea (paraphrase). B is too extreme; C contradicts the text.",
-         "tr": "Ana fikir (parafraz). B aşırı uç; C metnin tersi."
+         "en": "Main idea (paraphrase). A is too extreme; C contradicts the text.",
+         "tr": "Ana fikir (parafraz). A aşırı uç; C metnin tersi.",
+         "es": "Idea principal (paráfrasis). A es demasiado extremo; C contradice el texto."
         }
        },
        {
         "id": "r11_ach_q2",
         "stem": "The word \"straddled\" in paragraph 2 is closest in meaning to",
         "options": [
-         "crossed",
-         "matched",
          "avoided",
+         "matched",
+         "crossed",
          "darkened"
         ],
-        "answer": 0,
+        "answer": 2,
         "why": {
          "en": "Vocabulary in context: straddle the boundary = fall on both sides of the boundary, cross it.",
-         "tr": "Bağlamda kelime: straddle the boundary = sınırın iki yanına düşmek, sınırı geçmek."
+         "tr": "Bağlamda kelime: straddle the boundary = sınırın iki yanına düşmek, sınırı geçmek.",
+         "es": "Vocabulario en contexto: straddle the boundary = quedar a ambos lados del límite, cruzarlo."
         }
        },
        {
         "id": "r11_ach_q3",
         "stem": "Why does the author mention the verbal task?",
         "options": [
-         "To show that the advantage depends on language being actively engaged",
+         "To describe a common method of teaching color names",
          "To explain why English speakers performed poorly overall",
          "To prove that Russian speakers have sharper eyesight",
-         "To describe a common method of teaching color names"
+         "To show that the advantage depends on language being actively engaged"
         ],
-        "answer": 0,
+        "answer": 3,
         "why": {
          "en": "Author's purpose: the effect disappears when language resources are busy → the advantage depends on actively using language.",
-         "tr": "Yazarın amacı: etki dil kaynakları meşgulken kayboluyor → avantaj dilin aktif kullanımına bağlı."
+         "tr": "Yazarın amacı: etki dil kaynakları meşgulken kayboluyor → avantaj dilin aktif kullanımına bağlı.",
+         "es": "Propósito del autor: el efecto desaparece cuando los recursos lingüísticos están ocupados → la ventaja depende de usar activamente el lenguaje."
         }
        },
        {
@@ -514,29 +530,31 @@
         "stem": "What would the researchers most likely say about the claim that speakers cannot see a color their language has no word for?",
         "options": [
          "It goes further than the evidence supports.",
-         "It is confirmed by the Russian study.",
+         "It is fully confirmed by the Russian study's results.",
          "It explains why the effect vanished.",
          "It applies only to shades of blue."
         ],
         "answer": 0,
         "why": {
          "en": "Inference: \"caution against strong claims\" → it goes beyond the evidence.",
-         "tr": "Çıkarım: \"caution against strong claims\" → kanıtın ötesine geçiyor."
+         "tr": "Çıkarım: \"caution against strong claims\" → kanıtın ötesine geçiyor.",
+         "es": "Inferencia: \"caution against strong claims\" → va más allá de las pruebas."
         }
        },
        {
         "id": "r11_ach_q5",
         "stem": "According to paragraph 2, when did Russian speakers respond faster?",
         "options": [
-         "When the two shades fell on different sides of the category boundary",
          "When both shades were dark blue",
+         "When the two shades fell on different sides of the category boundary",
          "When they were also doing a verbal task",
          "When English speakers had answered first"
         ],
-        "answer": 0,
+        "answer": 1,
         "why": {
          "en": "Detail: shades on both sides of the boundary = groups with different names. C contradicts the text.",
-         "tr": "Detay : sınırın iki yanındaki tonlar = farklı adlandırılmış gruplar. C metnin tersi."
+         "tr": "Detay : sınırın iki yanındaki tonlar = farklı adlandırılmış gruplar. C metnin tersi.",
+         "es": "Detalle: tonos a ambos lados del límite = grupos con nombres distintos. C contradice el texto."
         }
        }
       ]
@@ -623,22 +641,24 @@
         "answer": 0,
         "why": {
          "en": "Detail: \"must swim with an adult\".",
-         "tr": "Detay: \"must swim with an adult\"."
+         "tr": "Detay: \"must swim with an adult\".",
+         "es": "Detalle: \"must swim with an adult\"."
         }
        },
        {
         "id": "r11_dle_q2",
         "stem": "When can people NOT use the pool?",
         "options": [
-         "During cleaning time, from 1 to 2 p.m.",
          "Early in the morning",
+         "During cleaning time, from 1 to 2 p.m.",
          "On weekends",
          "After 6 p.m."
         ],
-        "answer": 0,
+        "answer": 1,
         "why": {
          "en": "Detail: cleaning hour is 1–2 p.m.",
-         "tr": "Detay: temizlik saati 13–14."
+         "tr": "Detay: temizlik saati 13–14.",
+         "es": "Detalle: la hora de limpieza es de 1 a 2 p. m."
         }
        }
       ]
@@ -657,15 +677,16 @@
         "id": "r11_ace_q1",
         "stem": "What is the passage mainly about?",
         "options": [
-         "The different reasons a cat might make a certain sound",
+         "How scientists study the bones of cats",
          "How mother cats take care of their kittens",
          "Why cats are happier than other pets",
-         "How scientists study the bones of cats"
+         "The different reasons a cat might make a certain sound"
         ],
-        "answer": 0,
+        "answer": 3,
         "why": {
          "en": "Main idea (paraphrase).",
-         "tr": "Ana fikir (parafraz)."
+         "tr": "Ana fikir (parafraz).",
+         "es": "Idea principal (paráfrasis)."
         }
        },
        {
@@ -680,52 +701,56 @@
         "answer": 0,
         "why": {
          "en": "Vocabulary in context: heal = recover.",
-         "tr": "Bağlamda kelime: heal = iyileşmek."
+         "tr": "Bağlamda kelime: heal = iyileşmek.",
+         "es": "Vocabulario en contexto: heal = recuperarse."
         }
        },
        {
         "id": "r11_ace_q3",
         "stem": "Why do kittens purr back to their mothers?",
         "options": [
+         "To ask their mothers for more food and milk",
          "To show their mothers that they are fine",
-         "To ask her for more food",
          "To show that they are scared",
          "To help their bones grow"
         ],
-        "answer": 0,
+        "answer": 1,
         "why": {
          "en": "Detail: \"show that they are fine\".",
-         "tr": "Detay: \"show that they are fine\"."
+         "tr": "Detay: \"show that they are fine\".",
+         "es": "Detalle: \"show that they are fine\"."
         }
        },
        {
         "id": "r11_ace_q4",
         "stem": "What can be inferred about a cat that is purring?",
         "options": [
-         "It is not always feeling good.",
-         "It is always hungry.",
          "It has just finished eating.",
+         "It is always hungry when it purrs.",
+         "It is not always feeling good.",
          "It wants to play with people."
         ],
-        "answer": 0,
+        "answer": 2,
         "why": {
          "en": "Inference: cats in pain or afraid also purr → purring does not always mean the cat feels good.",
-         "tr": "Çıkarım: acıyan/korkan kedi de mırlar → her zaman iyi hissettiği anlamına gelmez."
+         "tr": "Çıkarım: acıyan/korkan kedi de mırlar → her zaman iyi hissettiği anlamına gelmez.",
+         "es": "Inferencia: los gatos que sienten dolor o miedo también ronronean → ronronear no siempre significa que el gato esté bien."
         }
        },
        {
         "id": "r11_ace_q5",
         "stem": "How do cats produce the sound?",
         "options": [
-         "By quickly moving muscles in the throat",
-         "By pushing air out through the nose",
+         "By closing their mouth very tightly",
+         "By pushing air out through the nose very quickly",
          "By tapping their paws on the ground",
-         "By closing their mouth very tightly"
+         "By quickly moving muscles in the throat"
         ],
-        "answer": 0,
+        "answer": 3,
         "why": {
          "en": "Detail.",
-         "tr": "Detay."
+         "tr": "Detay.",
+         "es": "Detalle."
         }
        }
       ]
@@ -756,13 +781,14 @@
      "options": [
       "It was, but they moved it to the student center.",
       "Yes, the library closes at nine tonight.",
-      "I'd rather not join a new group this term.",
+      "I'd rather not join a new study group this term, thanks.",
       "No, I haven't been to the library yet."
      ],
      "answer": 0,
      "why": {
       "en": "A natural reply saying the plan has changed. B repeats \"library\" but does not answer.",
-      "tr": "Planın değiştiğini söyleyen doğal yanıt. B \"library\" kelimesini tekrar edip soruyu yanıtlamıyor."
+      "tr": "Planın değiştiğini söyleyen doğal yanıt. B \"library\" kelimesini tekrar edip soruyu yanıtlamıyor.",
+      "es": "Una respuesta natural que dice que el plan ha cambiado. B repite \"library\" pero no responde."
      }
     },
     {
@@ -775,15 +801,16 @@
       }
      ],
      "options": [
+      "I picked mine up yesterday afternoon after class.",
       "At the registration office on the first floor.",
-      "I picked mine up yesterday afternoon.",
       "You'll need a recent photo for that.",
       "It stays valid for four years."
      ],
-     "answer": 0,
+     "answer": 1,
      "why": {
       "en": "A \"where\" question → a place. C is true but does not answer the question.",
-      "tr": "Nerede sorusuna yer. C doğru bir bilgi ama soruyu yanıtlamıyor."
+      "tr": "Nerede sorusuna yer. C doğru bir bilgi ama soruyu yanıtlamıyor.",
+      "es": "Una pregunta con \"where\" → un lugar. C es verdad, pero no responde a la pregunta."
      }
     },
     {
@@ -796,15 +823,16 @@
       }
      ],
      "options": [
-      "About twenty minutes, if traffic is light.",
-      "It leaves every half hour from here.",
       "Downtown is really crowded today.",
+      "It leaves every half hour from the stop outside.",
+      "About twenty minutes, if traffic is light.",
       "I usually ride my bike there."
      ],
-     "answer": 0,
+     "answer": 2,
      "why": {
       "en": "A \"how long\" question. B gives a frequency (a classic trap).",
-      "tr": "Süre sorusu. B sıklık veriyor (ETS'nin klasik tuzağı)."
+      "tr": "Süre sorusu. B sıklık veriyor (ETS'nin klasik tuzağı).",
+      "es": "Una pregunta con \"how long\". B da una frecuencia (una trampa clásica)."
      }
     },
     {
@@ -817,15 +845,16 @@
       }
      ],
      "options": [
-      "No problem, I'll send you the slides.",
+      "Tomorrow works better for me too.",
       "It starts at ten in room two-oh-four.",
       "I made it all myself, actually.",
-      "Tomorrow works better for me too."
+      "No problem, I'll send you the slides."
      ],
-     "answer": 0,
+     "answer": 3,
      "why": {
       "en": "Responding to an apology. C repeats \"make it\" with a different meaning.",
-      "tr": "Özre karşılık. C \"make it\" ifadesini yanlış anlamda tekrar ediyor."
+      "tr": "Özre karşılık. C \"make it\" ifadesini yanlış anlamda tekrar ediyor.",
+      "es": "Respuesta a una disculpa. C repite \"make it\" con otro significado."
      }
     },
     {
@@ -846,7 +875,8 @@
      "answer": 0,
      "why": {
       "en": "Request → agreement. B repeats \"mind\" and \"warm\" without answering the request.",
-      "tr": "Rica → kabul. B \"mind\" ve \"warm\" kelimelerini tekrar edip isteği yanıtlamıyor."
+      "tr": "Rica → kabul. B \"mind\" ve \"warm\" kelimelerini tekrar edip isteği yanıtlamıyor.",
+      "es": "Petición → aceptación. B repite \"mind\" y \"warm\" sin responder a la petición."
      }
     },
     {
@@ -859,15 +889,16 @@
       }
      ],
      "options": [
-      "I'm leaning toward the photography course.",
       "Yes, I decided to take the bus instead.",
+      "I'm leaning toward the photography course.",
       "Next term starts in early September.",
-      "The electives are all listed online."
+      "The electives are all listed on the department website."
      ],
-     "answer": 0,
+     "answer": 1,
      "why": {
       "en": "\"Which class\" → a choice. D is true but is not an answer.",
-      "tr": "Hangi ders → seçim. D doğru bir bilgi ama yanıt değil."
+      "tr": "Hangi ders → seçim. D doğru bir bilgi ama yanıt değil.",
+      "es": "\"Which class\" → una elección. D es verdad, pero no es una respuesta."
      }
     },
     {
@@ -880,15 +911,16 @@
       }
      ],
      "options": [
-      "There's a box in the supply closet.",
-      "I printed my essay last night.",
       "This floor is the quietest one.",
+      "I printed my essay last night.",
+      "There's a box in the supply closet.",
       "Paper is cheaper if you buy it online."
      ],
-     "answer": 0,
+     "answer": 2,
      "why": {
       "en": "Problem → solution. B repeats the word \"printed\".",
-      "tr": "Sorun → çözüm. B \"printed\" ile kelime tekrarı."
+      "tr": "Sorun → çözüm. B \"printed\" ile kelime tekrarı.",
+      "es": "Problema → solución. B repite la palabra \"printed\"."
      }
     },
     {
@@ -901,15 +933,16 @@
       }
      ],
      "options": [
-      "She's at a conference in Chicago.",
+      "I'll take notes for you next time.",
       "The lecture is in the main hall.",
       "Yes, she cancelled it this morning.",
-      "I'll take notes for you next time."
+      "She's at a conference in Chicago."
      ],
-     "answer": 0,
+     "answer": 3,
      "why": {
       "en": "A \"why\" question → a reason. C answers a \"why\" question with \"Yes\".",
-      "tr": "Neden sorusu → sebep. C \"Neden\" sorusuna \"Evet\" diyor."
+      "tr": "Neden sorusu → sebep. C \"Neden\" sorusuna \"Evet\" diyor.",
+      "es": "Una pregunta con \"why\" → un motivo. C responde a un \"why\" con \"Yes\"."
      }
     },
     {
@@ -930,7 +963,8 @@
      "answer": 0,
      "why": {
       "en": "Request → refusal with a reason. D repeats \"borrow\".",
-      "tr": "Rica → ret gerekçesiyle. D \"borrow\" kelimesini tekrar ediyor."
+      "tr": "Rica → ret gerekçesiyle. D \"borrow\" kelimesini tekrar ediyor.",
+      "es": "Petición → rechazo con un motivo. D repite \"borrow\"."
      }
     },
     {
@@ -964,15 +998,16 @@
        "id": "l11_cv1_q1",
        "stem": "What is the woman's problem?",
        "options": [
-        "A book she needs is not available right now.",
+        "Her paper is due next Tuesday.",
         "She cannot find the library's online catalog.",
         "She forgot her student login details.",
-        "Her paper is due next Tuesday."
+        "A book she needs is not available right now."
        ],
-       "answer": 0,
+       "answer": 3,
        "why": {
-        "en": "Problem: the book is checked out. D is a wrong detail (Tuesday is when the book is due back).",
-        "tr": "Sorun: kitap ödünçte. D yanlış ayrıntı (Tuesday kitabın dönüş günü)."
+        "en": "Problem: the book is checked out. A is a wrong detail (Tuesday is when the book is due back).",
+        "tr": "Sorun: kitap ödünçte. A yanlış ayrıntı (Tuesday kitabın dönüş günü).",
+        "es": "Problema: el libro está prestado. A es un detalle equivocado (el martes es cuando hay que devolver el libro)."
        }
       },
       {
@@ -987,7 +1022,8 @@
        "answer": 0,
        "why": {
         "en": "Inference: \"I'll check tonight\" → the electronic version. B was suggested but does not help.",
-        "tr": "Çıkarım: \"I'll check tonight\" → elektronik sürüm. B önerildi ama işine yaramıyor."
+        "tr": "Çıkarım: \"I'll check tonight\" → elektronik sürüm. B önerildi ama işine yaramıyor.",
+        "es": "Inferencia: \"I'll check tonight\" → la versión electrónica. B se sugirió, pero no ayuda."
        }
       }
      ]
@@ -1023,15 +1059,16 @@
        "id": "l11_cv2_q1",
        "stem": "Why did the organizers change the fair's schedule?",
        "options": [
-        "Many students could not attend because of their classes.",
-        "Companies wanted more time to interview students.",
+        "The woman's lab was moved to Thursday.",
+        "Companies wanted more time to interview the students they met.",
         "The building was not available in the morning.",
-        "The woman's lab was moved to Thursday."
+        "Many students could not attend because of their classes."
        ],
-       "answer": 0,
+       "answer": 3,
        "why": {
         "en": "Reason (paraphrase): \"class conflicts\".",
-        "tr": "Sebep (parafraz): \"class conflicts\"."
+        "tr": "Sebep (parafraz): \"class conflicts\".",
+        "es": "Motivo (paráfrasis): \"class conflicts\"."
        }
       },
       {
@@ -1046,7 +1083,8 @@
        "answer": 0,
        "why": {
         "en": "Suggestion: \"Bring a few copies\". C relies on outdated information.",
-        "tr": "Öneri: \"Bring a few copies\". C eski bilgiye dayanıyor."
+        "tr": "Öneri: \"Bring a few copies\". C eski bilgiye dayanıyor.",
+        "es": "Sugerencia: \"Bring a few copies\". C se basa en información desactualizada."
        }
       }
      ]
@@ -1082,30 +1120,32 @@
        "id": "l11_cv3_q1",
        "stem": "Why does the student want to change his topic?",
        "options": [
+        "His proposal was not approved by the committee.",
         "The people he planned to talk to are too busy.",
-        "His proposal was not approved.",
         "He finished the project two weeks early.",
         "He is no longer interested in farming."
        ],
-       "answer": 0,
+       "answer": 1,
        "why": {
         "en": "Reason (paraphrase): harvest → farmers have no time.",
-        "tr": "Sebep (parafraz): hasat → çiftçilerin zamanı yok."
+        "tr": "Sebep (parafraz): hasat → çiftçilerin zamanı yok.",
+        "es": "Motivo (paráfrasis): cosecha → los agricultores no tienen tiempo."
        }
       },
       {
        "id": "l11_cv3_q2",
        "stem": "What does the professor imply about the student's topic?",
        "options": [
-        "It is too late to choose a different one.",
-        "It needs more farmers to be useful.",
         "It should focus on the harvest season.",
-        "It was the best proposal she received."
+        "It needs more farmers to be useful.",
+        "It is too late to choose a different one.",
+        "It was the best proposal she received this year."
        ],
-       "answer": 0,
+       "answer": 2,
        "why": {
         "en": "Inference: \"It's a bit late for that\".",
-        "tr": "Çıkarım: \"It's a bit late for that\"."
+        "tr": "Çıkarım: \"It's a bit late for that\".",
+        "es": "Inferencia: \"It's a bit late for that\"."
        }
       }
      ]
@@ -1125,30 +1165,32 @@
        "id": "l11_an1_q1",
        "stem": "Why is the exam being moved?",
        "options": [
-        "The original date falls on a holiday.",
-        "The room is needed for a guest lecture.",
         "Students asked for more time to study.",
+        "The room is needed for a guest lecture.",
+        "The original date falls on a holiday.",
         "The professor will be away on Monday."
        ],
-       "answer": 0,
+       "answer": 2,
        "why": {
         "en": "Reason: Monday is a holiday.",
-        "tr": "Sebep: Pazartesi tatil."
+        "tr": "Sebep: Pazartesi tatil.",
+        "es": "Motivo: el lunes es festivo."
        }
       },
       {
        "id": "l11_an1_q2",
        "stem": "What are students allowed to bring to the exam?",
        "options": [
-        "A sheet of notes written by hand",
+        "A printed copy of the lecture slides",
         "Their textbooks for chapters one to six",
         "Their notes from the guest lecture",
-        "A printed copy of the lecture slides"
+        "A sheet of notes written by hand"
        ],
-       "answer": 0,
+       "answer": 3,
        "why": {
         "en": "Detail (paraphrase): one page of handwritten notes.",
-        "tr": "Detay (parafraz): one page of handwritten notes."
+        "tr": "Detay (parafraz): one page of handwritten notes.",
+        "es": "Detalle (paráfrasis): una página de apuntes escritos a mano."
        }
       }
      ]
@@ -1169,29 +1211,31 @@
        "stem": "What is the main purpose of the announcement?",
        "options": [
         "To tell residents about a temporary change to a shared space",
-        "To advertise a new microwave on the second floor",
+        "To advertise a new microwave that was installed on the second floor",
         "To ask residents to clean the refrigerator",
         "To invite residents to a cooking event"
        ],
        "answer": 0,
        "why": {
         "en": "Main purpose (paraphrase).",
-        "tr": "Ana amaç (parafraz)."
+        "tr": "Ana amaç (parafraz).",
+        "es": "Propósito principal (paráfrasis)."
        }
       },
       {
        "id": "l11_an2_q2",
        "stem": "What should residents do tonight?",
        "options": [
-        "Take their food out of the refrigerator",
         "Move the microwave to the second floor",
+        "Take their food out of the refrigerator",
         "Tell the cleaning staff about their food",
         "Throw away their old containers"
        ],
-       "answer": 0,
+       "answer": 1,
        "why": {
         "en": "Detail.",
-        "tr": "Detay."
+        "tr": "Detay.",
+        "es": "Detalle."
        }
       }
      ]
@@ -1219,45 +1263,48 @@
        "id": "l11_ac1_q1",
        "stem": "What is the talk mainly about?",
        "options": [
-        "Why an item's place in a sequence affects how well it is remembered",
         "How to write down long lists of words quickly",
+        "Why an item's place in a sequence affects how well it is remembered",
         "The difference between reading and listening to words",
         "Why people forget information after thirty seconds"
        ],
-       "answer": 0,
+       "answer": 1,
        "why": {
         "en": "Main idea (paraphrase).",
-        "tr": "Ana fikir (parafraz)."
+        "tr": "Ana fikir (parafraz).",
+        "es": "Idea principal (paráfrasis)."
        }
       },
       {
        "id": "l11_ac1_q2",
        "stem": "According to the professor, why are the first words remembered well?",
        "options": [
-        "People repeat them to themselves more often.",
-        "They are still in short-term memory at the end.",
         "They are usually shorter than other words.",
+        "They are still in short-term memory at the end.",
+        "People repeat them to themselves more often.",
         "People write them down first."
        ],
-       "answer": 0,
+       "answer": 2,
        "why": {
         "en": "Detail (paraphrase): rehearsal. B is the explanation given for the last words.",
-        "tr": "Detay (parafraz): rehearsal. B son kelimeler için verilen açıklama."
+        "tr": "Detay (parafraz): rehearsal. B son kelimeler için verilen açıklama.",
+        "es": "Detalle (paráfrasis): el repaso. B es la explicación que se da para las últimas palabras."
        }
       },
       {
        "id": "l11_ac1_q3",
        "stem": "What does the experiment with the thirty-second delay show?",
        "options": [
-        "Different kinds of memory explain the two advantages.",
+        "Short-term memory lasts longer than thirty seconds.",
         "Counting backward improves long-term memory.",
-        "The final words are always remembered best.",
-        "Short-term memory lasts longer than thirty seconds."
+        "The final words are always remembered better than the first ones.",
+        "Different kinds of memory explain the two advantages."
        ],
-       "answer": 0,
+       "answer": 3,
        "why": {
         "en": "Inference: two different memory systems.",
-        "tr": "Çıkarım: iki farklı bellek sistemi."
+        "tr": "Çıkarım: iki farklı bellek sistemi.",
+        "es": "Inferencia: dos sistemas de memoria distintos."
        }
       },
       {
@@ -1272,7 +1319,8 @@
        "answer": 0,
        "why": {
         "en": "Purpose: to apply the research to how students study.",
-        "tr": "Amaç: araştırmayı öğrencilerin çalışmasına uygulamak."
+        "tr": "Amaç: araştırmayı öğrencilerin çalışmasına uygulamak.",
+        "es": "Propósito: aplicar la investigación a la forma de estudiar de los estudiantes."
        }
       }
      ]
@@ -1316,15 +1364,16 @@
        }
       ],
       "options": [
+       "I believe it's the latest edition of the textbook.",
        "Maybe the library has a copy on reserve.",
-       "I believe it's the latest edition.",
        "Chemistry was my favorite class too.",
        "The bookstore opens at eight."
       ],
-      "answer": 0,
+      "answer": 1,
       "why": {
-       "en": "An indirect suggestion for a solution. B repeats \"believe\".",
-       "tr": "Dolaylı çözüm önerisi. B \"believe\" kelimesini tekrar ediyor."
+       "en": "An indirect suggestion for a solution. A repeats \"believe\".",
+       "tr": "Dolaylı çözüm önerisi. A \"believe\" kelimesini tekrar ediyor.",
+       "es": "Una sugerencia indirecta de solución. A repite \"believe\"."
       }
      },
      {
@@ -1337,15 +1386,16 @@
        }
       ],
       "options": [
-       "I'm just giving it one last read.",
-       "No, I'm not working this semester.",
        "The essay is about climate policy.",
+       "No, I'm not working this semester.",
+       "I'm just giving it one last read.",
        "Yes, I'm still waiting for you."
       ],
-      "answer": 0,
+      "answer": 2,
       "why": {
        "en": "An indirect \"yes\": the final reading. B uses \"working\" with a different meaning.",
-       "tr": "Dolaylı \"evet\": son okuma. B \"working\" kelimesini başka anlamda kullanıyor."
+       "tr": "Dolaylı \"evet\": son okuma. B \"working\" kelimesini başka anlamda kullanıyor.",
+       "es": "Un \"sí\" indirecto: la lectura final. B usa \"working\" con otro significado."
       }
      },
      {
@@ -1358,15 +1408,16 @@
        }
       ],
       "options": [
-       "He'd be great with the data analysis.",
+       "Marco invited me to dinner once.",
        "The project is due next month.",
-       "I already joined a different group.",
-       "Marco invited me to dinner once."
+       "I already joined a different group for this project.",
+       "He'd be great with the data analysis."
       ],
-      "answer": 0,
+      "answer": 3,
       "why": {
        "en": "Indirect agreement: support with a reason.",
-       "tr": "Dolaylı onay: gerekçeli destek."
+       "tr": "Dolaylı onay: gerekçeli destek.",
+       "es": "Acuerdo indirecto: apoyo con un motivo."
       }
      },
      {
@@ -1381,13 +1432,14 @@
       "options": [
        "Do you still have your receipt?",
        "The course starts next week.",
-       "I hope you enjoy the course.",
+       "I hope you enjoy the course next semester.",
        "It costs forty dollars."
       ],
       "answer": 0,
       "why": {
        "en": "A question in response to a request (indirect answer). C repeats \"hope\".",
-       "tr": "Talebe karşı soru (dolaylı yanıt). C \"hope\" tekrarı."
+       "tr": "Talebe karşı soru (dolaylı yanıt). C \"hope\" tekrarı.",
+       "es": "Una pregunta como respuesta a una petición (respuesta indirecta). C repite \"hope\"."
       }
      },
      {
@@ -1400,15 +1452,16 @@
        }
       ],
       "options": [
+       "I applied for a scholarship last year, but I didn't get it.",
        "They extended it to the end of the month.",
-       "I applied for a scholarship last year.",
        "Yesterday was a really long day.",
        "The applications are available online."
       ],
-      "answer": 0,
+      "answer": 1,
       "why": {
        "en": "A correction with new information.",
-       "tr": "Yeni bilgiyle düzeltme."
+       "tr": "Yeni bilgiyle düzeltme.",
+       "es": "Una corrección con información nueva."
       }
      },
      {
@@ -1421,15 +1474,16 @@
        }
       ],
       "options": [
-       "You're right, I don't want to lose my financial aid.",
-       "The advisor's office is upstairs.",
        "I dropped my phone in class today.",
+       "The advisor's office is upstairs.",
+       "You're right, I don't want to lose my financial aid.",
        "That class meets on Tuesdays."
       ],
-      "answer": 0,
+      "answer": 2,
       "why": {
-       "en": "Agreeing with advice and giving a reason. C uses \"dropped\" with a different meaning.",
-       "tr": "Tavsiyeye gerekçeli katılım. C \"dropped\" kelimesini başka anlamda kullanıyor."
+       "en": "Agreeing with advice and giving a reason. A uses \"dropped\" with a different meaning.",
+       "tr": "Tavsiyeye gerekçeli katılım. A \"dropped\" kelimesini başka anlamda kullanıyor.",
+       "es": "Acepta el consejo y da un motivo. A usa \"dropped\" con otro significado."
       }
      },
      {
@@ -1442,15 +1496,16 @@
        }
       ],
       "options": [
-       "It's not just you. Mine keeps disconnecting.",
+       "The password is on the wall.",
        "I usually study in my room.",
        "Yes, it's me.",
-       "The password is on the wall."
+       "It's not just you. Mine keeps disconnecting."
       ],
-      "answer": 0,
+      "answer": 3,
       "why": {
        "en": "Idiomatic question → a shared experience. C takes it literally.",
-       "tr": "Deyimsel soru → paylaşılan deneyim. C sözcüğü sözcüğüne yanıt."
+       "tr": "Deyimsel soru → paylaşılan deneyim. C sözcüğü sözcüğüne yanıt.",
+       "es": "Pregunta idiomática → una experiencia compartida. C la toma de forma literal."
       }
      },
      {
@@ -1471,7 +1526,8 @@
       "answer": 0,
       "why": {
        "en": "\"in the shop\" = being repaired. B misreads the idiom.",
-       "tr": "\"in the shop\" = tamirde. B deyimi yanlış anlıyor."
+       "tr": "\"in the shop\" = tamirde. B deyimi yanlış anlıyor.",
+       "es": "\"in the shop\" = en reparación. B interpreta mal la expresión."
       }
      },
      {
@@ -1505,30 +1561,32 @@
         "id": "l11_hcv1_q1",
         "stem": "What was the main criticism of their essays?",
         "options": [
-         "They depended on secondary rather than original research.",
          "They were too short for a university essay.",
+         "They depended on secondary rather than original research.",
          "They summarized the news incorrectly.",
          "They used too many peer-reviewed articles."
         ],
-        "answer": 0,
+        "answer": 1,
         "why": {
          "en": "Main criticism (paraphrase): relying on the research summary.",
-         "tr": "Ana eleştiri (parafraz): araştırmanın özetine dayanmak."
+         "tr": "Ana eleştiri (parafraz): araştırmanın özetine dayanmak.",
+         "es": "Crítica principal (paráfrasis): basarse en el resumen de la investigación."
         }
        },
        {
         "id": "l11_hcv1_q2",
         "stem": "What does the woman imply she will do for the final paper?",
         "options": [
-         "Base her arguments on academic journals",
-         "Ask Dr. Patel to change her grade",
          "Write about a different economic topic",
-         "Use only reputable news websites"
+         "Ask Dr. Patel to change her grade",
+         "Base her arguments on academic journals",
+         "Use only reputable news websites from now on"
         ],
-        "answer": 0,
+        "answer": 2,
         "why": {
          "en": "Inference: \"Lesson learned\" → journals.",
-         "tr": "Çıkarım: \"Lesson learned\" → dergiler."
+         "tr": "Çıkarım: \"Lesson learned\" → dergiler.",
+         "es": "Inferencia: \"Lesson learned\" → las revistas académicas."
         }
        }
       ]
@@ -1564,15 +1622,16 @@
         "id": "l11_hcv2_q1",
         "stem": "Why hasn't the heater been repaired?",
         "options": [
-         "The request was given the wrong level of importance.",
+         "The heater needs parts that are not available.",
          "The maintenance staff are on vacation.",
-         "The man sent the request to the wrong office.",
-         "The heater needs parts that are not available."
+         "The man sent his repair request to the wrong office first.",
+         "The request was given the wrong level of importance."
         ],
-        "answer": 0,
+        "answer": 3,
         "why": {
          "en": "Reason (paraphrase): low priority.",
-         "tr": "Sebep (parafraz): low priority."
+         "tr": "Sebep (parafraz): low priority.",
+         "es": "Motivo (paráfrasis): baja prioridad."
         }
        },
        {
@@ -1581,13 +1640,14 @@
         "options": [
          "She accepts responsibility and acts quickly.",
          "She thinks the man is exaggerating.",
-         "She is unsure whether she can help.",
+         "She is unsure whether she can help him this week.",
          "She blames the maintenance staff."
         ],
         "answer": 0,
         "why": {
          "en": "Inferring the speaker's attitude.",
-         "tr": "Tutum çıkarımı."
+         "tr": "Tutum çıkarımı.",
+         "es": "Inferir la actitud del hablante."
         }
        }
       ]
@@ -1608,29 +1668,31 @@
         "stem": "What change is being announced?",
         "options": [
          "Lab sessions will take place in a different building.",
-         "Lab sessions will start ten minutes later.",
+         "Lab sessions will start ten minutes later than they do now.",
          "The chemistry course will be cancelled.",
          "The west annex will be renovated."
         ],
         "answer": 0,
         "why": {
          "en": "The change (paraphrase). B distorts the time information.",
-         "tr": "Değişiklik (parafraz). B süre bilgisini çarpıtıyor."
+         "tr": "Değişiklik (parafraz). B süre bilgisini çarpıtıyor.",
+         "es": "El cambio (paráfrasis). B distorsiona la información sobre la hora."
         }
        },
        {
         "id": "l11_han_q2",
-        "stem": "What can be inferred about students who used the lab's goggles?",
+        "stem": "What are students who used the lab's goggles told to do?",
         "options": [
-         "They will need to get goggles of their own.",
          "They can pick them up in the annex.",
-         "They will arrive ten minutes late.",
+         "They will need to get goggles of their own.",
+         "They will arrive ten minutes later than usual.",
          "They must move to a different lab time."
         ],
-        "answer": 0,
+        "answer": 1,
         "why": {
-         "en": "Inference.",
-         "tr": "Çıkarım."
+         "en": "Detail.",
+         "tr": "Ayrıntı.",
+         "es": "Detalle."
         }
        }
       ]
@@ -1658,45 +1720,48 @@
         "id": "l11_hac1_q1",
         "stem": "What is the lecture mainly about?",
         "options": [
-         "A well-known ecological success story is more complicated than it first seemed.",
          "Wolves were the only reason the elk population declined.",
+         "A well-known ecological success story is more complicated than it first seemed.",
          "Beavers are more important to ecosystems than wolves.",
          "Bringing back predators always reverses earlier damage."
         ],
-        "answer": 0,
+        "answer": 1,
         "why": {
-         "en": "Main idea (paraphrase). B and D are too extreme.",
-         "tr": "Ana fikir (parafraz). B ve D aşırı uç."
+         "en": "Main idea (paraphrase). A and D are too extreme.",
+         "tr": "Ana fikir (parafraz). A ve D aşırı uç.",
+         "es": "Idea principal (paráfrasis). A y D son demasiado extremos."
         }
        },
        {
         "id": "l11_hac1_q2",
         "stem": "Why does the professor mention bears and harsh winters?",
         "options": [
-         "To point out other factors that reduced the number of elk",
+         "To explain why beavers left the rivers before the wolves returned",
          "To describe dangers that wolves face in the park",
-         "To explain why beavers left the rivers",
+         "To point out other factors that reduced the number of elk",
          "To compare Yellowstone with other national parks"
         ],
-        "answer": 0,
+        "answer": 2,
         "why": {
          "en": "Purpose.",
-         "tr": "Amaç."
+         "tr": "Amaç.",
+         "es": "Propósito."
         }
        },
        {
         "id": "l11_hac1_q3",
         "stem": "What can be inferred about the areas where willows have not recovered?",
         "options": [
-         "Restoring the trees there requires more than bringing back wolves.",
+         "The water table there has returned to normal.",
          "Elk still graze freely along those rivers.",
          "Beavers built too many dams in those areas.",
-         "The water table there has returned to normal."
+         "Restoring the trees there requires more than bringing back wolves."
         ],
-        "answer": 0,
+        "answer": 3,
         "why": {
-         "en": "Inference. D contradicts the talk.",
-         "tr": "Çıkarım. D metnin tersi."
+         "en": "Inference. A contradicts the talk.",
+         "tr": "Çıkarım. A metnin tersi.",
+         "es": "Inferencia. A contradice la charla."
         }
        },
        {
@@ -1711,7 +1776,8 @@
         "answer": 0,
         "why": {
          "en": "Figurative meaning.",
-         "tr": "Mecaz anlamı."
+         "tr": "Mecaz anlamı.",
+         "es": "Sentido figurado."
         }
        }
       ]
@@ -1739,45 +1805,48 @@
         "id": "l11_hac2_q1",
         "stem": "What is the main purpose of the lecture?",
         "options": [
-         "To illustrate an economic idea with a familiar example",
          "To argue that QWERTY is the fastest layout",
-         "To explain how mechanical typewriters were built",
+         "To illustrate an economic idea with a familiar example",
+         "To explain how the first mechanical typewriters were built",
          "To recommend that schools teach a new layout"
         ],
-        "answer": 0,
+        "answer": 1,
         "why": {
          "en": "Purpose (paraphrase).",
-         "tr": "Amaç (parafraz)."
+         "tr": "Amaç (parafraz).",
+         "es": "Propósito (paráfrasis)."
         }
        },
        {
         "id": "l11_hac2_q2",
         "stem": "What does the professor say about the explanation that QWERTY prevented jamming?",
         "options": [
-         "Its importance is still debated.",
-         "It has been proven completely false.",
          "It explains why QWERTY is faster today.",
+         "It has been proven completely false.",
+         "Its importance is still debated.",
          "It was proposed by modern economists."
         ],
-        "answer": 0,
+        "answer": 2,
         "why": {
          "en": "Detail (paraphrase): historians still argue.",
-         "tr": "Detay (parafraz): historians still argue."
+         "tr": "Detay (parafraz): historians still argue.",
+         "es": "Detalle (paráfrasis): los historiadores todavía discuten."
         }
        },
        {
         "id": "l11_hac2_q3",
         "stem": "According to the professor, why has QWERTY survived?",
         "options": [
-         "Changing would require too many people to relearn at once.",
+         "Typewriter arms still jam when people type quickly on other layouts.",
          "No other layouts have ever been designed.",
          "Manufacturers are not allowed to produce other layouts.",
-         "Typewriter arms still jam on other layouts."
+         "Changing would require too many people to relearn at once."
         ],
-        "answer": 0,
+        "answer": 3,
         "why": {
          "en": "Reason (paraphrase).",
-         "tr": "Sebep (parafraz)."
+         "tr": "Sebep (parafraz).",
+         "es": "Motivo (paráfrasis)."
         }
        },
        {
@@ -1792,7 +1861,8 @@
         "answer": 0,
         "why": {
          "en": "Application/inference.",
-         "tr": "Uygulama/çıkarım."
+         "tr": "Uygulama/çıkarım.",
+         "es": "Aplicación/inferencia."
         }
        }
       ]
@@ -1809,15 +1879,16 @@
        }
       ],
       "options": [
-       "At eight on weekdays.",
        "I had pasta for lunch.",
+       "At eight on weekdays.",
        "Yes, it's very close to here.",
        "The food there is great."
       ],
-      "answer": 0,
+      "answer": 1,
       "why": {
        "en": "A \"what time\" question. C is a sound-alike trap (\"close\").",
-       "tr": "Saat sorusu. C \"close\" eş sesli tuzak."
+       "tr": "Saat sorusu. C \"close\" eş sesli tuzak.",
+       "es": "Una pregunta con \"what time\". C es una trampa de sonido parecido (\"close\")."
       }
      },
      {
@@ -1830,15 +1901,16 @@
        }
       ],
       "options": [
-       "No, go ahead and sit down.",
-       "I took the bus today.",
        "The seats are all blue.",
-       "It's a long class."
+       "I took the bus today.",
+       "No, go ahead and sit down.",
+       "It's a long class, about two hours."
       ],
-      "answer": 0,
+      "answer": 2,
       "why": {
        "en": "Yes/no + invitation. B repeats \"took\".",
-       "tr": "Evet/hayır + davet. B \"took\" tekrarı."
+       "tr": "Evet/hayır + davet. B \"took\" tekrarı.",
+       "es": "Sí/no + invitación. B repite \"took\"."
       }
      },
      {
@@ -1851,15 +1923,16 @@
        }
       ],
       "options": [
-       "Sure, how about seven?",
+       "I want a new notebook.",
        "Yes, the study is on the left.",
        "Tonight is really cold.",
-       "I want a new notebook."
+       "Sure, how about seven?"
       ],
-      "answer": 0,
+      "answer": 3,
       "why": {
        "en": "Offer → suggesting a time. B uses \"study\" to mean a room.",
-       "tr": "Teklif → saat önerisi. B \"study\" kelimesini oda anlamında kullanıyor."
+       "tr": "Teklif → saat önerisi. B \"study\" kelimesini oda anlamında kullanıyor.",
+       "es": "Oferta → proponer una hora. B usa \"study\" con el sentido de una habitación."
       }
      },
      {
@@ -1880,7 +1953,8 @@
       "answer": 0,
       "why": {
        "en": "\"Where\" → a place. C gives a time.",
-       "tr": "Nerede → yer. C zaman veriyor."
+       "tr": "Nerede → yer. C zaman veriyor.",
+       "es": "\"Where\" → un lugar. C da una hora."
       }
      },
      {
@@ -1893,15 +1967,16 @@
        }
       ],
       "options": [
-       "Better than I expected.",
        "It's on Monday.",
-       "I really like math.",
+       "Better than I expected.",
+       "I really like math and science.",
        "Yes, I took it."
       ],
-      "answer": 0,
+      "answer": 1,
       "why": {
        "en": "\"How did it go\" → an evaluation.",
-       "tr": "Nasıl geçti → değerlendirme."
+       "tr": "Nasıl geçti → değerlendirme.",
+       "es": "\"How did it go\" → una valoración."
       }
      },
      {
@@ -1914,15 +1989,16 @@
        }
       ],
       "options": [
-       "Of course. Where are they going?",
-       "The boxes are brown.",
        "I carried them yesterday.",
-       "No, I don't have any boxes."
+       "The boxes are brown.",
+       "Of course. Where are they going?",
+       "No, I don't have any boxes at my place."
       ],
-      "answer": 0,
+      "answer": 2,
       "why": {
        "en": "Request → agreement.",
-       "tr": "Rica → kabul."
+       "tr": "Rica → kabul.",
+       "es": "Petición → aceptación."
       }
      },
      {
@@ -1935,15 +2011,16 @@
        }
       ],
       "options": [
-       "It's freezing outside.",
+       "My coat is in the closet.",
        "I bought it on sale.",
        "Yes, it's a new coat.",
-       "My coat is in the closet."
+       "It's freezing outside."
       ],
-      "answer": 0,
+      "answer": 3,
       "why": {
        "en": "\"Why\" → a reason.",
-       "tr": "Neden → sebep."
+       "tr": "Neden → sebep.",
+       "es": "\"Why\" → un motivo."
       }
      },
      {
@@ -1964,7 +2041,8 @@
       "answer": 0,
       "why": {
        "en": "\"When\" → a time. B gives a place.",
-       "tr": "Ne zaman → zaman. B yer veriyor."
+       "tr": "Ne zaman → zaman. B yer veriyor.",
+       "es": "\"When\" → una hora. B da un lugar."
       }
      },
      {
@@ -1998,30 +2076,32 @@
         "id": "l11_ecv_q1",
         "stem": "What is the woman's problem?",
         "options": [
-         "Her bus was cancelled and she might be late.",
          "She lost her airline ticket.",
+         "Her bus was cancelled and she might be late.",
          "She is waiting in the wrong line.",
-         "Her flight was cancelled."
+         "Her flight was cancelled because of the weather."
         ],
-        "answer": 0,
+        "answer": 1,
         "why": {
          "en": "The problem. D moves the bus cancellation to a flight.",
-         "tr": "Sorun. D otobüs iptalini uçağa taşıyor."
+         "tr": "Sorun. D otobüs iptalini uçağa taşıyor.",
+         "es": "El problema. D traslada la cancelación del autobús a un vuelo."
         }
        },
        {
         "id": "l11_ecv_q2",
         "stem": "What will the woman probably do?",
         "options": [
-         "Take a taxi to the airport",
-         "Wait for the two thirty bus",
          "Change her flight to a later time",
+         "Wait for the two thirty bus",
+         "Take a taxi to the airport",
          "Walk to the airport"
         ],
-        "answer": 0,
+        "answer": 2,
         "why": {
          "en": "Inference: \"I think I'll do that\".",
-         "tr": "Çıkarım: \"I think I'll do that\"."
+         "tr": "Çıkarım: \"I think I'll do that\".",
+         "es": "Inferencia: \"I think I'll do that\"."
         }
        }
       ]
@@ -2041,30 +2121,32 @@
         "id": "l11_ean_q1",
         "stem": "Why will the library stay open late?",
         "options": [
-         "Because students have exams",
-         "Because it is being cleaned",
          "Because of a special event",
+         "Because it is being cleaned",
+         "Because students have exams",
          "Because new books arrived"
         ],
-        "answer": 0,
+        "answer": 2,
         "why": {
          "en": "Reason.",
-         "tr": "Sebep."
+         "tr": "Sebep.",
+         "es": "Motivo."
         }
        },
        {
         "id": "l11_ean_q2",
         "stem": "How can students reserve a study room?",
         "options": [
-         "On the library website",
+         "By asking a teacher",
          "At the front desk",
          "By calling the library",
-         "By asking a teacher"
+         "On the library website"
         ],
-        "answer": 0,
+        "answer": 3,
         "why": {
          "en": "Detail (paraphrase): booked online.",
-         "tr": "Detay (parafraz): booked online."
+         "tr": "Detay (parafraz): booked online.",
+         "es": "Detalle (paráfrasis): reservado en línea."
         }
        }
       ]
@@ -2088,45 +2170,48 @@
         "id": "l11_eac_q1",
         "stem": "What is the talk mainly about?",
         "options": [
-         "The ways penguins protect themselves from the cold",
          "Where penguins find food in winter",
+         "The ways penguins protect themselves from the cold",
          "How penguins raise their young",
          "Why penguins cannot fly"
         ],
-        "answer": 0,
+        "answer": 1,
         "why": {
          "en": "Main idea.",
-         "tr": "Ana fikir."
+         "tr": "Ana fikir.",
+         "es": "Idea principal."
         }
        },
        {
         "id": "l11_eac_q2",
         "stem": "What does the fat under a penguin's skin do?",
         "options": [
-         "It keeps body heat inside.",
-         "It helps penguins swim faster.",
          "It makes their feathers short.",
+         "It helps penguins swim faster.",
+         "It keeps body heat inside.",
          "It stores food for the winter."
         ],
-        "answer": 0,
+        "answer": 2,
         "why": {
          "en": "Detail.",
-         "tr": "Detay."
+         "tr": "Detay.",
+         "es": "Detalle."
         }
        },
        {
         "id": "l11_eac_q3",
         "stem": "Why do emperor penguins take turns in a huddle?",
         "options": [
-         "So that each penguin spends time in the warm center",
-         "So that the strongest penguins eat first",
+         "So that young penguins learn to swim",
+         "So that the strongest penguins can always eat first.",
          "So that they can watch for danger",
-         "So that young penguins learn to swim"
+         "So that each penguin spends time in the warm center"
         ],
-        "answer": 0,
+        "answer": 3,
         "why": {
          "en": "Reason.",
-         "tr": "Sebep."
+         "tr": "Sebep.",
+         "es": "Motivo."
         }
        },
        {
@@ -2141,7 +2226,8 @@
         "answer": 0,
         "why": {
          "en": "Purpose.",
-         "tr": "Amaç."
+         "tr": "Amaç.",
+         "es": "Propósito."
         }
        }
       ]
@@ -2348,7 +2434,10 @@
       "finished",
       "it"
      ],
-     "distractors": []
+     "distractors": [],
+     "accept": [
+      "Not yet, but I will have it finished by Wednesday."
+     ]
     },
     {
      "type": "sentence_dialogue",

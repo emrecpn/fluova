@@ -13,15 +13,16 @@
    }
   ],
   "options": [
-   "You're right, I don't want to lose my financial aid.",
-   "The advisor's office is upstairs.",
    "I dropped my phone in class today.",
+   "The advisor's office is upstairs.",
+   "You're right, I don't want to lose my financial aid.",
    "That class meets on Tuesdays."
   ],
-  "answer": 0,
+  "answer": 2,
   "why": {
-   "en": "Agreeing with advice and giving a reason. C uses \"dropped\" with a different meaning.",
-   "tr": "Tavsiyeye gerekçeli katılım. C \"dropped\" kelimesini başka anlamda kullanıyor."
+   "en": "Agreeing with advice and giving a reason. A uses \"dropped\" with a different meaning.",
+   "tr": "Tavsiyeye gerekçeli katılım. A \"dropped\" kelimesini başka anlamda kullanıyor.",
+   "es": "Acepta el consejo y da un motivo. A usa \"dropped\" con otro significado."
   }
  }
 }

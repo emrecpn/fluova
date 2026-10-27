@@ -55,7 +55,7 @@ window.FLUOVA_I18N = {
     f4_h: "Adaptive, like the real test",
     f4_p: "Reading and Listening send you to an easier or harder second module based on your first-module answers, just as the actual test does.",
     f5_h: "Explained in your language",
-    f5_p: "The test stays in English. The interface is available in English, Turkish and Spanish, and answer explanations in English and Turkish. More languages come with community help.",
+    f5_p: "The test stays in English. The interface and the answer explanations are in English, Turkish and Spanish. More languages come with community help.",
     f6_h: "Built by the community",
     f6_p: "Write a test, translate the interface or improve the checker. Every contribution passes the same quality gate.",
 
@@ -143,7 +143,7 @@ window.FLUOVA_I18N = {
     f4_h: "Gerçek sınav gibi adaptif",
     f4_p: "Reading ve Listening, ilk modüldeki yanıtlarına göre seni daha kolay ya da daha zor bir ikinci modüle gönderir; gerçek sınav da böyle yapar.",
     f5_h: "Kendi dilinde açıklama",
-    f5_p: "Sınav İngilizce kalır. Arayüz İngilizce, Türkçe ve İspanyolca; cevap açıklamaları İngilizce ve Türkçe. Topluluğun yardımıyla daha fazla dil gelecek.",
+    f5_p: "Sınav İngilizce kalır. Arayüz ve cevap açıklamaları İngilizce, Türkçe ve İspanyolca. Topluluğun yardımıyla daha fazla dil gelecek.",
     f6_h: "Topluluk tarafından",
     f6_p: "Test yaz, arayüzü çevir ya da kontrol aracını geliştir. Her katkı aynı kalite kontrolünden geçer.",
 
@@ -227,7 +227,7 @@ window.FLUOVA_I18N = {
     f4_h: "Adaptativo, como el examen real",
     f4_p: "Reading y Listening te envían a un segundo módulo más fácil o más difícil según tus respuestas en el primero, igual que el examen real.",
     f5_h: "Explicado en tu idioma",
-    f5_p: "El examen sigue en inglés. La interfaz está disponible en inglés, turco y español, y las explicaciones de las respuestas en inglés y turco. Habrá más idiomas con ayuda de la comunidad.",
+    f5_p: "El examen sigue en inglés. La interfaz y las explicaciones de las respuestas están en inglés, turco y español. Habrá más idiomas con ayuda de la comunidad.",
     f6_h: "Hecho por la comunidad",
     f6_p: "Escribe un examen, traduce la interfaz o mejora el revisor. Cada contribución pasa por el mismo control de calidad.",
     path_h: "Tu camino hasta el día del examen",

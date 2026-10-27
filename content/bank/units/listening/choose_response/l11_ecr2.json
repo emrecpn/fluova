@@ -13,15 +13,16 @@
    }
   ],
   "options": [
-   "No, go ahead and sit down.",
-   "I took the bus today.",
    "The seats are all blue.",
-   "It's a long class."
+   "I took the bus today.",
+   "No, go ahead and sit down.",
+   "It's a long class, about two hours."
   ],
-  "answer": 0,
+  "answer": 2,
   "why": {
    "en": "Yes/no + invitation. B repeats \"took\".",
-   "tr": "Evet/hayır + davet. B \"took\" tekrarı."
+   "tr": "Evet/hayır + davet. B \"took\" tekrarı.",
+   "es": "Sí/no + invitación. B repite \"took\"."
   }
  }
 }

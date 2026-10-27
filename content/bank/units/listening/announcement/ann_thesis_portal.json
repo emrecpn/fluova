@@ -27,14 +27,15 @@
     "answer": 2,
     "why": {
      "en": "Main change (paraphrase of \"submitted through the new online portal instead of by email\"). A: the rules are only checked, not changed.",
-     "tr": "Ana değişiklik (\"e-posta yerine çevrim içi portal\" parafrazı). A: kurallar değişmiyor, yalnızca kontrol ediliyor."
+     "tr": "Ana değişiklik (\"e-posta yerine çevrim içi portal\" parafrazı). A: kurallar değişmiyor, yalnızca kontrol ediliyor.",
+     "es": "Cambio principal (paráfrasis de \"submitted through the new online portal instead of by email\"). A: las normas solo se revisan, no cambian."
     }
    },
    {
     "id": "ann_thesis_portal_q2",
     "stem": "What is implied about students who wait until the last day to submit?",
     "options": [
-     "They will receive a lower grade for being late.",
+     "They will automatically receive a lower grade for being late.",
      "They will have to deliver two bound copies.",
      "They will be allowed to send the thesis by email.",
      "They may not have time to fix formatting problems."
@@ -42,7 +43,8 @@
     "answer": 3,
     "why": {
      "en": "Inference from \"allow extra time for corrections\". B applies only to architecture students.",
-     "tr": "Çıkarım: \"düzeltmeler için fazladan zaman ayırın\". B yalnızca mimarlık öğrencileri için geçerli."
+     "tr": "Çıkarım: \"düzeltmeler için fazladan zaman ayırın\". B yalnızca mimarlık öğrencileri için geçerli.",
+     "es": "Inferencia a partir de \"allow extra time for corrections\". B solo se aplica a los estudiantes de arquitectura."
     }
    }
   ]

@@ -13,15 +13,16 @@
    }
   ],
   "options": [
+   "I believe it's the latest edition of the textbook.",
    "Maybe the library has a copy on reserve.",
-   "I believe it's the latest edition.",
    "Chemistry was my favorite class too.",
    "The bookstore opens at eight."
   ],
-  "answer": 0,
+  "answer": 1,
   "why": {
-   "en": "An indirect suggestion for a solution. B repeats \"believe\".",
-   "tr": "Dolaylı çözüm önerisi. B \"believe\" kelimesini tekrar ediyor."
+   "en": "An indirect suggestion for a solution. A repeats \"believe\".",
+   "tr": "Dolaylı çözüm önerisi. A \"believe\" kelimesini tekrar ediyor.",
+   "es": "Una sugerencia indirecta de solución. A repite \"believe\"."
   }
  }
 }

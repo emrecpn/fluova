@@ -17,6 +17,9 @@ const SPEC = {
   lowOverlap: 0.25, lowShareMin: 0.30, lowShareMax: 0.50,  // paraphrase/inference share (ETS 35%) — equal to the real test, not harder
   optionLenRatioMax: 1.8,    // longest / shortest option (characters)
   fkMedium: [7.4, 10.5], fkHigh: 10.5,
+  // Test-wise cues across all multiple-choice questions. With 4 options a random key is the unique longest ~25% of the time.
+  longestKeyMax: 0.40, longestKeyWarn: 0.33, longestKeyMin: 0.10,  // share of questions whose key is the single longest option
+  keyPosShare: [0.15, 0.35],                                       // share of keys on each letter A–D
 };
 
 const STOP = new Set('the a an and or but of to in on at for with from by is are was were be been being it its this that these those as not no they them their there he she his her we our you your i my me can could should would will may might must do does did has have had than then so such into about over more most very also only which who whom what when where why how all any each other some'.split(' '));
@@ -155,6 +158,25 @@ function lintTest(f, key) {
   if (iv && !iv.scenario) flag('high', 'Interview has no scenario/topic (spec: one topic, factual → opinion)');
   if (iv && iv.questions.length !== SPEC.interview) flag('med', `Interview: ${iv.questions.length} questions (spec: 4)`);
 
+  // ---------- ANSWER CUES (all multiple-choice questions, every module) ----------
+  SEC = 'answers';
+  const mcqs = [];
+  for (const sec of [R, L]) if (sec) for (const sc of [...(sec.screens || []), ...((sec.adaptive || {}).hard || []), ...((sec.adaptive || {}).easy || [])]) {
+    if (sc.type === 'choose_response') mcqs.push(sc); else (sc.questions || []).forEach(q => { if (Array.isArray(q.options)) mcqs.push(q); });
+  }
+  if (mcqs.length >= 20) {
+    const plain = o => String(o).replace(/<[^>]+>/g, '').trim().length;
+    const longest = mcqs.filter(q => { const l = q.options.map(plain), mx = Math.max(...l); return l[q.answer] === mx && l.filter(x => x === mx).length === 1; }).length;
+    const share = longest / mcqs.length, pct = Math.round(share * 100);
+    m.longestKey = `${pct}% (${longest}/${mcqs.length})`;
+    if (share > SPEC.longestKeyMax) flag('high', `The correct answer is the single longest option in ${pct}% of questions (chance ≈25%) — "pick the longest" would beat the test`);
+    else if (share > SPEC.longestKeyWarn) flag('med', `The correct answer is the single longest option in ${pct}% of questions (chance ≈25%)`);
+    else if (share < SPEC.longestKeyMin) flag('med', `The correct answer is almost never the longest option (${pct}%) — "skip the longest" becomes a cue`);
+    const pos = [0, 0, 0, 0]; mcqs.forEach(q => pos[q.answer]++);
+    m.keyPos = pos.join('/');
+    pos.forEach((n, i) => { const v = n / mcqs.length; if (v < SPEC.keyPosShare[0] || v > SPEC.keyPosShare[1]) flag('med', `Option ${'ABCD'[i]} is correct in ${Math.round(v * 100)}% of questions (keep each letter at 15–35%)`); });
+  }
+
   return { m, issues };
 }
 
@@ -180,8 +202,8 @@ const files = inputs.flatMap(p => fs.statSync(p).isDirectory()
   : [p]);
 const rows = files.map(f => ({ f: path.basename(f), ...lintForm(f) }));
 
-const cols = ['form', 'ctw', 'readingTotal', 'overlapAvg', 'overlapOver', 'fkHard', 'chooseResp', 'announcement', 'talk', 'talkMax', 'listeningTotal', 'bas', 'basDistr', 'lrLens'];
-const hdr = { form: 'Test', ctw: 'CTW (30)', readingTotal: 'R total (50)', overlapAvg: 'Overlap mean (30–50%; ETS 46%)', overlapOver: 'Paraphrase share (30–50%; ETS 35%)', fkHard: 'FK hard (≥10.5)', chooseResp: 'L&C (15–19)', announcement: 'Ann (6–10)', talk: 'Talk Q (8–16)', talkMax: 'Longest talk (≤250)', listeningTotal: 'L total (47)', bas: 'BaS (10)', basDistr: 'BaS w/ distractor (~2/10)', lrLens: 'L&R words' };
+const cols = ['form', 'ctw', 'readingTotal', 'overlapAvg', 'overlapOver', 'fkHard', 'chooseResp', 'announcement', 'talk', 'talkMax', 'listeningTotal', 'bas', 'basDistr', 'lrLens', 'longestKey', 'keyPos'];
+const hdr = { form: 'Test', ctw: 'CTW (30)', readingTotal: 'R total (50)', overlapAvg: 'Overlap mean (30–50%; ETS 46%)', overlapOver: 'Paraphrase share (30–50%; ETS 35%)', fkHard: 'FK hard (≥10.5)', chooseResp: 'L&C (15–19)', announcement: 'Ann (6–10)', talk: 'Talk Q (8–16)', talkMax: 'Longest talk (≤250)', listeningTotal: 'L total (47)', bas: 'BaS (10)', basDistr: 'BaS w/ distractor (~2/10)', lrLens: 'L&R words', longestKey: 'Key = longest (≤33%)', keyPos: 'Keys A/B/C/D' };
 let md = `# Quality gate report — ${new Date().toISOString().slice(0, 10)}\n\nReference: ETS 2026 Test Blueprint & Specifications · rules: docs/FIDELITY-SPEC.md\n\n`;
 md += '| ' + cols.map(c => hdr[c]).join(' | ') + ' |\n|' + cols.map(() => '---').join('|') + '|\n';
 rows.forEach(r => { md += '| ' + cols.map(c => r.m[c]).join(' | ') + ' |\n'; });

@@ -16,13 +16,14 @@
   "options": [
    "It's worth checking the online catalog.",
    "I copied my notes from Jake.",
-   "Yes, I still live near the library.",
+   "Yes, I still live right near the main library.",
    "The library has three floors."
   ],
   "answer": 0,
   "why": {
    "en": "Indirect: suggests how to find out. B reuses \"copy\" with another meaning.",
-   "tr": "Dolaylı: nasıl öğrenileceğini öneriyor. B \"copy\" kelimesini başka anlamda kullanıyor."
+   "tr": "Dolaylı: nasıl öğrenileceğini öneriyor. B \"copy\" kelimesini başka anlamda kullanıyor.",
+   "es": "Indirecta: sugiere cómo averiguarlo. B reutiliza \"copy\" con otro significado."
   }
  }
 }

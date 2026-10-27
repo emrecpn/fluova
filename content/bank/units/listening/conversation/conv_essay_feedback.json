@@ -34,30 +34,32 @@
     "id": "l11_hcv1_q1",
     "stem": "What was the main criticism of their essays?",
     "options": [
-     "They depended on secondary rather than original research.",
      "They were too short for a university essay.",
+     "They depended on secondary rather than original research.",
      "They summarized the news incorrectly.",
      "They used too many peer-reviewed articles."
     ],
-    "answer": 0,
+    "answer": 1,
     "why": {
      "en": "Main criticism (paraphrase): relying on the research summary.",
-     "tr": "Ana eleştiri (parafraz): araştırmanın özetine dayanmak."
+     "tr": "Ana eleştiri (parafraz): araştırmanın özetine dayanmak.",
+     "es": "Crítica principal (paráfrasis): basarse en el resumen de la investigación."
     }
    },
    {
     "id": "l11_hcv1_q2",
     "stem": "What does the woman imply she will do for the final paper?",
     "options": [
-     "Base her arguments on academic journals",
-     "Ask Dr. Patel to change her grade",
      "Write about a different economic topic",
-     "Use only reputable news websites"
+     "Ask Dr. Patel to change her grade",
+     "Base her arguments on academic journals",
+     "Use only reputable news websites from now on"
     ],
-    "answer": 0,
+    "answer": 2,
     "why": {
      "en": "Inference: \"Lesson learned\" → journals.",
-     "tr": "Çıkarım: \"Lesson learned\" → dergiler."
+     "tr": "Çıkarım: \"Lesson learned\" → dergiler.",
+     "es": "Inferencia: \"Lesson learned\" → las revistas académicas."
     }
    }
   ]

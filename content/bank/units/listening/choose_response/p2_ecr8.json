@@ -16,13 +16,14 @@
   "options": [
    "Yes, I am.",
    "At eleven o'clock.",
-   "In my room.",
+   "In my room, with my roommate.",
    "I studied all night."
   ],
   "answer": 3,
   "why": {
    "en": "\"Why\" → a reason. A answers \"yes\".",
-   "tr": "\"Why\" → sebep. A \"evet\" diyor."
+   "tr": "\"Why\" → sebep. A \"evet\" diyor.",
+   "es": "\"Why\" → un motivo. A responde \"yes\"."
   }
  }
 }

@@ -13,15 +13,16 @@
    }
   ],
   "options": [
-   "About twenty minutes, if traffic is light.",
-   "It leaves every half hour from here.",
    "Downtown is really crowded today.",
+   "It leaves every half hour from the stop outside.",
+   "About twenty minutes, if traffic is light.",
    "I usually ride my bike there."
   ],
-  "answer": 0,
+  "answer": 2,
   "why": {
    "en": "A \"how long\" question. B gives a frequency (a classic trap).",
-   "tr": "Süre sorusu. B sıklık veriyor (ETS'nin klasik tuzağı)."
+   "tr": "Süre sorusu. B sıklık veriyor (ETS'nin klasik tuzağı).",
+   "es": "Una pregunta con \"how long\". B da una frecuencia (una trampa clásica)."
   }
  }
 }

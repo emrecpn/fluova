@@ -15,14 +15,15 @@
   ],
   "options": [
    "I sent you an email yesterday.",
-   "The report is about twenty pages.",
+   "The report is about twenty pages long, I think.",
    "Yes, you should do that.",
    "Professor Kim prefers paper copies."
   ],
   "answer": 3,
   "why": {
    "en": "An indirect answer to an either/or question (→ print it). C answers \"yes\" to a choice.",
-   "tr": "Seçim sorusuna dolaylı yanıt (→ yazdır). C seçim sorusuna \"evet\" diyor."
+   "tr": "Seçim sorusuna dolaylı yanıt (→ yazdır). C seçim sorusuna \"evet\" diyor.",
+   "es": "Una respuesta indirecta a una pregunta de \"esto o aquello\" (→ imprimirlo). C responde \"sí\" a una elección."
   }
  }
 }

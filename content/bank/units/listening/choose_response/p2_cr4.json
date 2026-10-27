@@ -22,7 +22,8 @@
   "answer": 1,
   "why": {
    "en": "\"Why\" → a reason. A answers a \"why\" question with \"Yes\".",
-   "tr": "\"Why\" → sebep. A \"neden\" sorusuna \"Evet\" ile cevap veriyor."
+   "tr": "\"Why\" → sebep. A \"neden\" sorusuna \"Evet\" ile cevap veriyor.",
+   "es": "\"Why\" → un motivo. A responde a un \"why\" con \"Yes\"."
   }
  }
 }

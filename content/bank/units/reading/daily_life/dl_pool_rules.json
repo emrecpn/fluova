@@ -24,22 +24,24 @@
     "answer": 0,
     "why": {
      "en": "Detail: \"must swim with an adult\".",
-     "tr": "Detay: \"must swim with an adult\"."
+     "tr": "Detay: \"must swim with an adult\".",
+     "es": "Detalle: \"must swim with an adult\"."
     }
    },
    {
     "id": "r11_dle_q2",
     "stem": "When can people NOT use the pool?",
     "options": [
-     "During cleaning time, from 1 to 2 p.m.",
      "Early in the morning",
+     "During cleaning time, from 1 to 2 p.m.",
      "On weekends",
      "After 6 p.m."
     ],
-    "answer": 0,
+    "answer": 1,
     "why": {
      "en": "Detail: cleaning hour is 1–2 p.m.",
-     "tr": "Detay: temizlik saati 13–14."
+     "tr": "Detay: temizlik saati 13–14.",
+     "es": "Detalle: la hora de limpieza es de 1 a 2 p. m."
     }
    }
   ]

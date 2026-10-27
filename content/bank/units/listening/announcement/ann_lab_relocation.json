@@ -19,29 +19,31 @@
     "stem": "What change is being announced?",
     "options": [
      "Lab sessions will take place in a different building.",
-     "Lab sessions will start ten minutes later.",
+     "Lab sessions will start ten minutes later than they do now.",
      "The chemistry course will be cancelled.",
      "The west annex will be renovated."
     ],
     "answer": 0,
     "why": {
      "en": "The change (paraphrase). B distorts the time information.",
-     "tr": "Değişiklik (parafraz). B süre bilgisini çarpıtıyor."
+     "tr": "Değişiklik (parafraz). B süre bilgisini çarpıtıyor.",
+     "es": "El cambio (paráfrasis). B distorsiona la información sobre la hora."
     }
    },
    {
     "id": "l11_han_q2",
-    "stem": "What can be inferred about students who used the lab's goggles?",
+    "stem": "What are students who used the lab's goggles told to do?",
     "options": [
-     "They will need to get goggles of their own.",
      "They can pick them up in the annex.",
-     "They will arrive ten minutes late.",
+     "They will need to get goggles of their own.",
+     "They will arrive ten minutes later than usual.",
      "They must move to a different lab time."
     ],
-    "answer": 0,
+    "answer": 1,
     "why": {
-     "en": "Inference.",
-     "tr": "Çıkarım."
+     "en": "Detail.",
+     "tr": "Ayrıntı.",
+     "es": "Detalle."
     }
    }
   ]

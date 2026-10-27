@@ -16,45 +16,48 @@
     "id": "r11_dlh_q1",
     "stem": "What is the main change described in the notice?",
     "options": [
-     "How long people keep items will depend on whether others want them",
      "Borrowers must now renew every item at the front desk",
-     "The library will begin charging higher fines for late returns",
+     "How long people keep items will depend on whether others want them",
+     "The library will begin charging higher fines for all late returns of books",
      "Laptops may now be borrowed for longer periods"
     ],
-    "answer": 0,
+    "answer": 1,
     "why": {
-     "en": "Main change (paraphrase): the loan period depends on demand. B and C contradict the text; D is equipment that is excluded.",
-     "tr": "Ana değişiklik (parafraz): süre talebe bağlı. B ve C metnin tersi; D hariç tutulan ekipman."
+     "en": "Main change (paraphrase): the loan period depends on demand. A and C contradict the text; D is equipment that is excluded.",
+     "tr": "Ana değişiklik (parafraz): süre talebe bağlı. A ve C metnin tersi; D hariç tutulan ekipman.",
+     "es": "Cambio principal (paráfrasis): el plazo de préstamo depende de la demanda. A y C contradicen el texto; D es material que queda excluido."
     }
    },
    {
     "id": "r11_dlh_q2",
     "stem": "What will most likely happen to a student who keeps a requested book past its new due date?",
     "options": [
-     "The student will be unable to borrow anything else for a while.",
-     "The student will pay a fine for each extra day.",
      "The loan will renew automatically up to five times.",
+     "The student will have to pay a small fine for each extra day it is late.",
+     "The student will be unable to borrow anything else for a while.",
      "The library will send the book to the other user."
     ],
-    "answer": 0,
+    "answer": 2,
     "why": {
-     "en": "Inference: borrowing rights are suspended instead of a fine. B is the old rule that was removed; C applies to books with no waiting list.",
-     "tr": "Çıkarım: ceza yerine ödünç alma hakkı askıya alınır. B kaldırılan eski kural; C bekleme listesi olmayan kitaplar için."
+     "en": "Inference: borrowing rights are suspended instead of a fine. B is the old rule that was removed; A applies to books with no waiting list.",
+     "tr": "Çıkarım: ceza yerine ödünç alma hakkı askıya alınır. B kaldırılan eski kural; A bekleme listesi olmayan kitaplar için.",
+     "es": "Inferencia: se suspende el derecho de préstamo en lugar de poner una multa. B es la norma antigua que se eliminó; A se aplica a los libros sin lista de espera."
     }
    },
    {
     "id": "r11_dlh_q3",
     "stem": "Which items are NOT covered by the new system?",
     "options": [
-     "Laptops and other equipment",
+     "Items borrowed before March 1",
      "Items that nobody has requested",
      "Books that are already overdue",
-     "Items borrowed before March 1"
+     "Laptops and other equipment"
     ],
-    "answer": 0,
+    "answer": 3,
     "why": {
      "en": "Detail/paraphrase: laptops and other equipment → equipment such as computers.",
-     "tr": "Detay/parafraz: laptops and other equipment → bilgisayar gibi ekipman."
+     "tr": "Detay/parafraz: laptops and other equipment → bilgisayar gibi ekipman.",
+     "es": "Detalle/paráfrasis: laptops and other equipment → material como ordenadores."
     }
    }
   ]

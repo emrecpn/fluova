@@ -13,15 +13,16 @@
    }
   ],
   "options": [
-   "I'm just giving it one last read.",
-   "No, I'm not working this semester.",
    "The essay is about climate policy.",
+   "No, I'm not working this semester.",
+   "I'm just giving it one last read.",
    "Yes, I'm still waiting for you."
   ],
-  "answer": 0,
+  "answer": 2,
   "why": {
    "en": "An indirect \"yes\": the final reading. B uses \"working\" with a different meaning.",
-   "tr": "Dolaylı \"evet\": son okuma. B \"working\" kelimesini başka anlamda kullanıyor."
+   "tr": "Dolaylı \"evet\": son okuma. B \"working\" kelimesini başka anlamda kullanıyor.",
+   "es": "Un \"sí\" indirecto: la lectura final. B usa \"working\" con otro significado."
   }
  }
 }

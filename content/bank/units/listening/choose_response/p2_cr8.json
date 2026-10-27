@@ -14,7 +14,7 @@
    }
   ],
   "options": [
-   "The event starts at seven.",
+   "The event starts at seven in the main hall.",
    "Just stack them against the back wall.",
    "About fifty people came.",
    "Yes, the chairs are comfortable."
@@ -22,7 +22,8 @@
   "answer": 1,
   "why": {
    "en": "\"Where\" → a place. A gives a time.",
-   "tr": "\"Where\" → yer. A zaman veriyor."
+   "tr": "\"Where\" → yer. A zaman veriyor.",
+   "es": "\"Where\" → un lugar. A da una hora."
   }
  }
 }

@@ -25,7 +25,8 @@
     "answer": 0,
     "why": {
      "en": "Main purpose (paraphrase): a new credit system for printing. C and D reuse words from the notice (ID card, color) with a different meaning.",
-     "tr": "Ana amaç (parafraz): baskı için yeni kredi sistemi. C ve D metindeki kelimeleri (ID card, color) farklı anlamda kullanıyor."
+     "tr": "Ana amaç (parafraz): baskı için yeni kredi sistemi. C ve D metindeki kelimeleri (ID card, color) farklı anlamda kullanıyor.",
+     "es": "Propósito principal (paráfrasis): un nuevo sistema de créditos para imprimir. C y D reutilizan palabras del aviso (ID card, color) con otro significado."
     }
    },
    {
@@ -40,7 +41,8 @@
     "answer": 1,
     "why": {
      "en": "Paraphrase: \"do not carry over to the next semester\" = they expire. C says the opposite; A borrows \"front desk\".",
-     "tr": "Parafraz: \"do not carry over\" = dönem sonunda geçersiz olur. C tam tersini söylüyor; A \"front desk\" ifadesini ödünç alıyor."
+     "tr": "Parafraz: \"do not carry over\" = dönem sonunda geçersiz olur. C tam tersini söylüyor; A \"front desk\" ifadesini ödünç alıyor.",
+     "es": "Paráfrasis: \"do not carry over to the next semester\" = caducan. C dice lo contrario; A toma prestado \"front desk\"."
     }
    }
   ]

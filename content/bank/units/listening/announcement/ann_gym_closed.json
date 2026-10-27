@@ -27,22 +27,24 @@
     "answer": 1,
     "why": {
      "en": "Detail: the gym closes for cleaning. A moves the cleaning to the pool.",
-     "tr": "Ayrıntı: spor salonu temizlik için kapanıyor. A temizliği havuza taşıyor."
+     "tr": "Ayrıntı: spor salonu temizlik için kapanıyor. A temizliği havuza taşıyor.",
+     "es": "Detalle: el gimnasio cierra por limpieza. A traslada la limpieza a la piscina."
     }
    },
    {
     "id": "ann_gym_closed_q2",
     "stem": "What is true about the swimming pool?",
     "options": [
-     "It will close on Sunday.",
      "It will be open on Saturday.",
+     "It will close on Sunday.",
      "It will open at eight a.m.",
      "It will be cleaned this week."
     ],
-    "answer": 1,
+    "answer": 0,
     "why": {
      "en": "Detail: \"will stay open as usual on Saturday\". C belongs to the gym.",
-     "tr": "Ayrıntı: \"Cumartesi her zamanki gibi açık\". C spor salonuna ait."
+     "tr": "Ayrıntı: \"Cumartesi her zamanki gibi açık\". C spor salonuna ait.",
+     "es": "Detalle: \"will stay open as usual on Saturday\". C corresponde al gimnasio."
     }
    }
   ]

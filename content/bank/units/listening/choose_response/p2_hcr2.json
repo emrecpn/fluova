@@ -9,20 +9,21 @@
   "id": "p2_hcr2",
   "audio": [
    {
-    "text": "Didn't the deadline for the scholarship get extended?",
+    "text": "Didn't the library extend its hours for finals week?",
     "voice": "male:gb"
    }
   ],
   "options": [
-   "Only for students who applied last year.",
-   "Yes, the scholarship is very generous.",
-   "I'm extending my stay until Sunday.",
-   "The deadline was printed in bold."
+   "Only on weekdays, as far as I know.",
+   "Yes, I finished my final essay already.",
+   "I'm extending my trip until Sunday instead.",
+   "The library is right next to the gym."
   ],
   "answer": 0,
   "why": {
-   "en": "A qualified answer (only for some students). C reuses \"extend\" with another meaning.",
-   "tr": "Kısıtlı bir yanıt (yalnızca bazı öğrenciler için). C \"extend\" kelimesini başka anlamda kullanıyor."
+   "en": "A qualified answer (only on weekdays). B says \"yes\" about something else; C reuses \"extend\" with another meaning; D answers \"where\".",
+   "tr": "Kısıtlı bir yanıt (yalnızca hafta içi). B başka bir şey için \"evet\" diyor; C \"extend\" kelimesini başka anlamda kullanıyor; D \"nerede\" sorusuna cevap veriyor.",
+   "es": "Una respuesta con matiz (solo entre semana). B dice \"sí\" a otra cosa; C reutiliza \"extend\" con otro significado; D responde a \"where\"."
   }
  }
 }

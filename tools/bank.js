@@ -95,7 +95,10 @@
       const lint = deps.lint.lintTest({ id: 'u', sections: [{ id: 'reading', screens: [sc] }] }, 'u');
       meta.overlap = lint.m.overlapAvg; meta.paraphrase = lint.m.overlapOver;
     }
-    (sc.questions || []).concat(sc.type === 'choose_response' ? [sc] : []).forEach(q => { if (q.options && !q.why) W(`${q.id}: no "why" explanation`); });
+    (sc.questions || []).concat(sc.type === 'choose_response' ? [sc] : []).forEach(q => {
+      if (q.options && !q.why) W(`${q.id}: no "why" explanation`);
+      else if (q.why && typeof q.why === 'object') { const miss = ['tr', 'es'].filter(l => !q.why[l]); if (miss.length) W(`${q.id}: "why" has no ${miss.join('/')} translation (optional; falls back to English)`); }
+    });
     return { errors, warnings, meta };
   }
 

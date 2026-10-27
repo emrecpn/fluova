@@ -16,13 +16,14 @@
   "options": [
    "In Room 204 at three o'clock.",
    "Yes, I'm going to review my notes.",
-   "It should last about an hour.",
+   "It should last about an hour and a half.",
    "One of the teaching assistants, I think."
   ],
   "answer": 3,
   "why": {
    "en": "\"Who\" → a person. B answers yes/no and repeats \"review\".",
-   "tr": "\"Who\" → kişi. B evet/hayır diyor ve \"review\" kelimesini tekrar ediyor."
+   "tr": "\"Who\" → kişi. B evet/hayır diyor ve \"review\" kelimesini tekrar ediyor.",
+   "es": "\"Who\" → una persona. B responde sí/no y repite \"review\"."
   }
  }
 }

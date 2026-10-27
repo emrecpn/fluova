@@ -39,7 +39,7 @@
     "id": "conv_narrow_topic_q1",
     "stem": "What is the professor's main concern?",
     "options": [
-     "The student's outline was submitted late.",
+     "The student's outline was submitted a week late.",
      "The survey data is several years old.",
      "The project is too broad for the assignment.",
      "The student chose the wrong country."
@@ -47,7 +47,8 @@
     "answer": 2,
     "why": {
      "en": "Main concern (paraphrase of \"too ambitious for ten pages\"). B contradicts \"a really solid survey from last year\".",
-     "tr": "Ana endişe (\"on sayfa için fazla iddialı\" parafrazı). B \"geçen yılın sağlam anketi\" bilgisiyle çelişiyor."
+     "tr": "Ana endişe (\"on sayfa için fazla iddialı\" parafrazı). B \"geçen yılın sağlam anketi\" bilgisiyle çelişiyor.",
+     "es": "Preocupación principal (paráfrasis de \"too ambitious for ten pages\"). B contradice \"a really solid survey from last year\"."
     }
    },
    {
@@ -62,7 +63,8 @@
     "answer": 3,
     "why": {
      "en": "Inference: he will start with Brazil only. A twists the Monday deadline for the outline into a meeting.",
-     "tr": "Çıkarım: yalnızca Brezilya ile başlayacak. A taslak için verilen Pazartesi tarihini bir görüşmeye çeviriyor."
+     "tr": "Çıkarım: yalnızca Brezilya ile başlayacak. A taslak için verilen Pazartesi tarihini bir görüşmeye çeviriyor.",
+     "es": "Inferencia: empezará solo con Brasil. A convierte la fecha límite del esquema del lunes en una reunión."
     }
    }
   ]

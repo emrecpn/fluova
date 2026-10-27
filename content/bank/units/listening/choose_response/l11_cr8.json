@@ -13,15 +13,16 @@
    }
   ],
   "options": [
-   "She's at a conference in Chicago.",
+   "I'll take notes for you next time.",
    "The lecture is in the main hall.",
    "Yes, she cancelled it this morning.",
-   "I'll take notes for you next time."
+   "She's at a conference in Chicago."
   ],
-  "answer": 0,
+  "answer": 3,
   "why": {
    "en": "A \"why\" question → a reason. C answers a \"why\" question with \"Yes\".",
-   "tr": "Neden sorusu → sebep. C \"Neden\" sorusuna \"Evet\" diyor."
+   "tr": "Neden sorusu → sebep. C \"Neden\" sorusuna \"Evet\" diyor.",
+   "es": "Una pregunta con \"why\" → un motivo. C responde a un \"why\" con \"Yes\"."
   }
  }
 }

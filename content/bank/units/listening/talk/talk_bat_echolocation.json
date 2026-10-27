@@ -35,7 +35,8 @@
     "answer": 0,
     "why": {
      "en": "Main idea (paraphrase of echolocation and hunting). B overgeneralizes the moth example.",
-     "tr": "Ana fikir (yankıyla yer bulma ve avlanma). B güve örneğini abartıyor."
+     "tr": "Ana fikir (yankıyla yer bulma ve avlanma). B güve örneğini abartıyor.",
+     "es": "Idea principal (paráfrasis de la ecolocalización y la caza). B generaliza en exceso el ejemplo de las polillas."
     }
    },
    {
@@ -50,7 +51,8 @@
     "answer": 1,
     "why": {
      "en": "Detail (paraphrase of \"the rate rises sharply\"). A reverses what happens.",
-     "tr": "Ayrıntı (\"oran keskin biçimde artar\" parafrazı). A olanı tersine çeviriyor."
+     "tr": "Ayrıntı (\"oran keskin biçimde artar\" parafrazı). A olanı tersine çeviriyor.",
+     "es": "Detalle (paráfrasis de \"the rate rises sharply\"). A invierte lo que ocurre."
     }
    },
    {
@@ -65,7 +67,8 @@
     "answer": 2,
     "why": {
      "en": "Function: moths illustrate the \"contest between hunter and prey\". A overstates the point.",
-     "tr": "İşlev: güveler \"avcı ile av arasındaki yarışı\" örnekliyor. A fazla genelleme yapıyor."
+     "tr": "İşlev: güveler \"avcı ile av arasındaki yarışı\" örnekliyor. A fazla genelleme yapıyor.",
+     "es": "Función: las polillas ilustran la \"contest between hunter and prey\". A exagera la idea."
     }
    },
    {
@@ -80,7 +83,8 @@
     "answer": 3,
     "why": {
      "en": "Detail: \"how long each echo takes to return\". A is not mentioned; C is what moths do.",
-     "tr": "Ayrıntı: \"her yankının geri dönmesi ne kadar sürüyor\". A söylenmiyor; C güvelerin yaptığı şey."
+     "tr": "Ayrıntı: \"her yankının geri dönmesi ne kadar sürüyor\". A söylenmiyor; C güvelerin yaptığı şey.",
+     "es": "Detalle: \"how long each echo takes to return\". A no se menciona; C es lo que hacen las polillas."
     }
    }
   ]

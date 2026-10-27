@@ -34,15 +34,16 @@
     "id": "l11_cv2_q1",
     "stem": "Why did the organizers change the fair's schedule?",
     "options": [
-     "Many students could not attend because of their classes.",
-     "Companies wanted more time to interview students.",
+     "The woman's lab was moved to Thursday.",
+     "Companies wanted more time to interview the students they met.",
      "The building was not available in the morning.",
-     "The woman's lab was moved to Thursday."
+     "Many students could not attend because of their classes."
     ],
-    "answer": 0,
+    "answer": 3,
     "why": {
      "en": "Reason (paraphrase): \"class conflicts\".",
-     "tr": "Sebep (parafraz): \"class conflicts\"."
+     "tr": "Sebep (parafraz): \"class conflicts\".",
+     "es": "Motivo (paráfrasis): \"class conflicts\"."
     }
    },
    {
@@ -57,7 +58,8 @@
     "answer": 0,
     "why": {
      "en": "Suggestion: \"Bring a few copies\". C relies on outdated information.",
-     "tr": "Öneri: \"Bring a few copies\". C eski bilgiye dayanıyor."
+     "tr": "Öneri: \"Bring a few copies\". C eski bilgiye dayanıyor.",
+     "es": "Sugerencia: \"Bring a few copies\". C se basa en información desactualizada."
     }
    }
   ]

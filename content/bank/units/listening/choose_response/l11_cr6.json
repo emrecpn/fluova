@@ -13,15 +13,16 @@
    }
   ],
   "options": [
-   "I'm leaning toward the photography course.",
    "Yes, I decided to take the bus instead.",
+   "I'm leaning toward the photography course.",
    "Next term starts in early September.",
-   "The electives are all listed online."
+   "The electives are all listed on the department website."
   ],
-  "answer": 0,
+  "answer": 1,
   "why": {
    "en": "\"Which class\" → a choice. D is true but is not an answer.",
-   "tr": "Hangi ders → seçim. D doğru bir bilgi ama yanıt değil."
+   "tr": "Hangi ders → seçim. D doğru bir bilgi ama yanıt değil.",
+   "es": "\"Which class\" → una elección. D es verdad, pero no es una respuesta."
   }
  }
 }

@@ -17,45 +17,48 @@
     "id": "r11_ach_q1",
     "stem": "Which of the following best states the main idea of the passage?",
     "options": [
-     "Color terms can slightly speed up some visual decisions without limiting what people perceive.",
      "Russian speakers are able to see more colors than English speakers can.",
+     "Color terms can slightly speed up some visual decisions without limiting what people perceive.",
      "Doing a verbal task improves people's ability to tell colors apart.",
      "Linguists disagree about how many basic color terms each language has."
     ],
-    "answer": 0,
+    "answer": 1,
     "why": {
-     "en": "Main idea (paraphrase). B is too extreme; C contradicts the text.",
-     "tr": "Ana fikir (parafraz). B aşırı uç; C metnin tersi."
+     "en": "Main idea (paraphrase). A is too extreme; C contradicts the text.",
+     "tr": "Ana fikir (parafraz). A aşırı uç; C metnin tersi.",
+     "es": "Idea principal (paráfrasis). A es demasiado extremo; C contradice el texto."
     }
    },
    {
     "id": "r11_ach_q2",
     "stem": "The word \"straddled\" in paragraph 2 is closest in meaning to",
     "options": [
-     "crossed",
-     "matched",
      "avoided",
+     "matched",
+     "crossed",
      "darkened"
     ],
-    "answer": 0,
+    "answer": 2,
     "why": {
      "en": "Vocabulary in context: straddle the boundary = fall on both sides of the boundary, cross it.",
-     "tr": "Bağlamda kelime: straddle the boundary = sınırın iki yanına düşmek, sınırı geçmek."
+     "tr": "Bağlamda kelime: straddle the boundary = sınırın iki yanına düşmek, sınırı geçmek.",
+     "es": "Vocabulario en contexto: straddle the boundary = quedar a ambos lados del límite, cruzarlo."
     }
    },
    {
     "id": "r11_ach_q3",
     "stem": "Why does the author mention the verbal task?",
     "options": [
-     "To show that the advantage depends on language being actively engaged",
+     "To describe a common method of teaching color names",
      "To explain why English speakers performed poorly overall",
      "To prove that Russian speakers have sharper eyesight",
-     "To describe a common method of teaching color names"
+     "To show that the advantage depends on language being actively engaged"
     ],
-    "answer": 0,
+    "answer": 3,
     "why": {
      "en": "Author's purpose: the effect disappears when language resources are busy → the advantage depends on actively using language.",
-     "tr": "Yazarın amacı: etki dil kaynakları meşgulken kayboluyor → avantaj dilin aktif kullanımına bağlı."
+     "tr": "Yazarın amacı: etki dil kaynakları meşgulken kayboluyor → avantaj dilin aktif kullanımına bağlı.",
+     "es": "Propósito del autor: el efecto desaparece cuando los recursos lingüísticos están ocupados → la ventaja depende de usar activamente el lenguaje."
     }
    },
    {
@@ -63,29 +66,31 @@
     "stem": "What would the researchers most likely say about the claim that speakers cannot see a color their language has no word for?",
     "options": [
      "It goes further than the evidence supports.",
-     "It is confirmed by the Russian study.",
+     "It is fully confirmed by the Russian study's results.",
      "It explains why the effect vanished.",
      "It applies only to shades of blue."
     ],
     "answer": 0,
     "why": {
      "en": "Inference: \"caution against strong claims\" → it goes beyond the evidence.",
-     "tr": "Çıkarım: \"caution against strong claims\" → kanıtın ötesine geçiyor."
+     "tr": "Çıkarım: \"caution against strong claims\" → kanıtın ötesine geçiyor.",
+     "es": "Inferencia: \"caution against strong claims\" → va más allá de las pruebas."
     }
    },
    {
     "id": "r11_ach_q5",
     "stem": "According to paragraph 2, when did Russian speakers respond faster?",
     "options": [
-     "When the two shades fell on different sides of the category boundary",
      "When both shades were dark blue",
+     "When the two shades fell on different sides of the category boundary",
      "When they were also doing a verbal task",
      "When English speakers had answered first"
     ],
-    "answer": 0,
+    "answer": 1,
     "why": {
      "en": "Detail: shades on both sides of the boundary = groups with different names. C contradicts the text.",
-     "tr": "Detay : sınırın iki yanındaki tonlar = farklı adlandırılmış gruplar. C metnin tersi."
+     "tr": "Detay : sınırın iki yanındaki tonlar = farklı adlandırılmış gruplar. C metnin tersi.",
+     "es": "Detalle: tonos a ambos lados del límite = grupos con nombres distintos. C contradice el texto."
     }
    }
   ]

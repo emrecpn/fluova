@@ -43,7 +43,8 @@
     "answer": 0,
     "why": {
      "en": "Purpose (paraphrase): a practice room before his piano exam. C borrows \"account\".",
-     "tr": "Amaç (parafraz): sınav öncesi çalışma odası. C \"account\" kelimesini ödünç alıyor."
+     "tr": "Amaç (parafraz): sınav öncesi çalışma odası. C \"account\" kelimesini ödünç alıyor.",
+     "es": "Propósito (paráfrasis): una sala de práctica antes de su examen de piano. C toma prestado \"account\"."
     }
    },
    {
@@ -58,7 +59,8 @@
     "answer": 1,
     "why": {
      "en": "Inference: the website needs a music student account and \"students from other departments\" book in person. D contradicts the conversation.",
-     "tr": "Çıkarım: site müzik öğrencisi hesabı istiyor ve \"başka bölüm öğrencileri\" yüz yüze rezervasyon yapıyor. D konuşmayla çelişiyor."
+     "tr": "Çıkarım: site müzik öğrencisi hesabı istiyor ve \"başka bölüm öğrencileri\" yüz yüze rezervasyon yapıyor. D konuşmayla çelişiyor.",
+     "es": "Inferencia: el sitio web exige una cuenta de estudiante de música y los \"students from other departments\" reservan en persona. D contradice la conversación."
     }
    }
   ]

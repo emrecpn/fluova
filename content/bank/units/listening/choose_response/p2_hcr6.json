@@ -14,15 +14,16 @@
    }
   ],
   "options": [
-   "Chicago is great in the summer.",
    "My flight got canceled because of the storm.",
+   "Chicago is great in the summer.",
    "Yes, I lived there for two years.",
    "I'm supposed to call them later."
   ],
-  "answer": 1,
+  "answer": 0,
   "why": {
    "en": "Explains why the plan changed. D reuses \"supposed to\".",
-   "tr": "Planın neden değiştiğini açıklıyor. D \"supposed to\" ifadesini tekrar ediyor."
+   "tr": "Planın neden değiştiğini açıklıyor. D \"supposed to\" ifadesini tekrar ediyor.",
+   "es": "Explica por qué cambió el plan. D reutiliza \"supposed to\"."
   }
  }
 }
