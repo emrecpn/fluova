@@ -61,4 +61,9 @@ for (const lang of LANGS) {
 fs.writeFileSync(path.join(OUT, 'index.html'), render('en', { base: './', canonical: `${SITE}/en/` }));
 console.log('✓ dist/index.html (x-default)');
 for (const f of ['i18n.js', 'app.js', 'og.png']) fs.copyFileSync(path.join(DIR, f), path.join(OUT, f));
+// sitemap for search engines (submitted in Google Search Console; a project site cannot serve its own robots.txt)
+const pages = [...LANGS.map(l => l + '/'), 'engine/']; // canonical URLs only (the root's canonical is /en/)
+fs.writeFileSync(path.join(OUT, 'sitemap.xml'), '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+  + pages.map(p => `  <url><loc>${SITE}/${p}</loc><lastmod>${new Date().toISOString().slice(0, 10)}</lastmod></url>`).join('\n') + '\n</urlset>\n');
+console.log(`✓ dist/sitemap.xml (${pages.length} pages)`);
 console.log(warnings ? `\n${warnings} missing translation(s).` : '\nNo missing translations.');

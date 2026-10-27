@@ -12,7 +12,6 @@
 
   const esc = x => (x == null ? '' : String(x)).replace(/[&<>"]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]));
   const stripTags = s => (s || '').replace(/<[^>]*>/g, '');
-  const norm = s => (s || '').toLowerCase().replace(/[^a-z0-9]/g, '');
   const letter = i => 'ABCD'[i];
   const BLANK = t('empty');
 
@@ -63,7 +62,7 @@
     rows.forEach((r, i) => {
       let lines, ok;
       if (r.kind === 'ctw') {
-        const yv = answers[r.id]; ok = norm(yv) === norm(r.answer);
+        const yv = answers[r.id]; ok = FluovaScore.ctwCorrect(yv, r.answer);
         lines = `<div class="ans">${t('rv.you')}: <strong>${esc(yv ? r.stub + yv : BLANK)}</strong>${tag(ok)}</div>${ok ? '' : `<div class="ans">${t('rv.correct')}: <strong>${esc(r.stub + r.answer)}</strong></div>`}`;
       } else if (r.kind === 'insert') {
         const yi = answers[r.id]; ok = yi === r.answer;

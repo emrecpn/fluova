@@ -1,8 +1,7 @@
 #!/usr/bin/env node
 /* Structural validator for content/tests/*.json (no dependencies).
    Checks what the engine needs to run a test correctly; tools/lint_forms.js then checks fidelity to the ETS spec.
-   Usage: node tools/validate.js [file-or-dir ...]   → exit code 1 on any error.
-   Yapısal doğrulayıcı: motorun testi doğru çalıştırması için gerekenleri kontrol eder. */
+   Usage: node tools/validate.js [file-or-dir ...]   → exit code 1 on any error. */
 (function () {
 
 const SCREEN_TYPES = ['ctw', 'passage', 'text_chain', 'insert_text', 'choose_response', 'listening', 'sentence_dialogue', 'writing', 'listen_repeat', 'interview'];

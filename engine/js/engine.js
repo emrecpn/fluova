@@ -153,12 +153,9 @@ function nextSection(auto) {
 }
 
 function injectStage2(sec) {
-  const a = sec.adaptive;
-  let raw = 0;
-  a.routeFrom.forEach(qid => { if (isCorrect(qid)) raw++; });
-  const path = raw >= a.threshold ? 'hard' : 'easy';
+  const path = FluovaScore.route(State.form, sec, State.answers);
   State._stage2Path = path;
-  State.screens = State.screens.concat(a[path].map(s => ({ ...s })));
+  State.screens = State.screens.concat(sec.adaptive[path].map(s => ({ ...s })));
   State.stage2Injected = true;
   // remember the route (used for scoring and resume)
   State['_' + sec.id + '_path'] = path;
@@ -386,11 +383,7 @@ function renderBuildSentence(stage, scr) {
 /* Build a Sentence (2026 format): speaker A says something; the test taker builds B's reply from a bank of tiles.
    scr.frame: the sentence skeleton; null = a blank, strings = prefilled words. Tiles can be word groups
    ("showed us around"); there is usually no distractor tile, at most one. */
-function basFill(scr, chunks) {
-  if (!scr.frame) return chunks.join(' ');
-  let k = 0;
-  return scr.frame.map(t => (t === null ? (chunks[k++] || '____') : t)).join(' ').replace(/\s+([?.!,])/g, '$1');
-}
+const basFill = FluovaScore.fillFrame;
 function renderSentenceDialogue(stage, scr) {
   const saved = State.buildSentence[scr.id];
   stage.innerHTML = `<div class="card">
@@ -673,26 +666,9 @@ function runSpeakingItems(stage, items, countSel, areaSel, playBtn) {
 }
 
 /* ---------------- Scoring ---------------- */
-function isCorrect(qid) {
-  const q = findQuestion(qid);
-  if (!q) return false;
-  if (q.type === 'ctw') {
-    const val = (State.answers[qid] || '').toLowerCase().replace(/[^a-z]/g, '');
-    return val === (q.answer || '').toLowerCase();
-  }
-  return State.answers[qid] === q.answer;
-}
-
-// Simple word-level similarity between two texts (0..1), for Listen and Repeat
-function similarity(said, target) {
-  const norm = s => (s || '').toLowerCase().replace(/[^a-z0-9\s]/g, '').split(/\s+/).filter(Boolean);
-  const a = norm(said), b = norm(target);
-  if (!b.length) return 0;
-  const bcount = {}; b.forEach(w => bcount[w] = (bcount[w] || 0) + 1);
-  let match = 0;
-  a.forEach(w => { if (bcount[w] > 0) { match++; bcount[w]--; } });
-  return Math.min(1, match / b.length);
-}
+// Scoring rules live in js/scoring.js (pure functions, unit-tested); these wrappers bind them to the current attempt.
+const isCorrect = qid => FluovaScore.isCorrect(State.form, State.answers, qid);
+const similarity = FluovaScore.similarity;
 
 // Fluency measures (objective delivery indicators)
 function speechMetrics(transcript, seconds, confidence) {
@@ -708,47 +684,8 @@ function speechMetrics(transcript, seconds, confidence) {
   return { seconds, wordCount: wc, wpm, repetitions: reps, confidence: (confidence != null ? confidence : null) };
 }
 
-function findQuestion(qid) {
-  // Finds a question in any section (adaptive modules included)
-  for (const sec of State.form.sections) {
-    const pools = [sec.screens];
-    if (sec.adaptive) pools.push(sec.adaptive.hard, sec.adaptive.easy);
-    for (const pool of pools) for (const scr of pool) {
-      if (scr.type === 'ctw') { const it = (scr.items || []).find(x => x.id === qid); if (it) return { type: 'ctw', answer: it.answer }; }
-      if ((scr.type === 'choose_response' || scr.type === 'insert_text') && scr.id === qid) return { type: 'mcq', answer: scr.answer };
-      if (scr.questions) { const q = scr.questions.find(x => x.id === qid); if (q) return { type: 'mcq', answer: q.answer }; }
-    }
-  }
-  return null;
-}
-
-// percent correct → band (approximate)
-function pctToBand(pct, capEasy) {
-  const table = [[.92, 6], [.85, 5.5], [.78, 5], [.70, 4.5], [.62, 4], [.52, 3.5], [.42, 3], [.32, 2.5], [.22, 2], [.12, 1.5]];
-  let band = 1;
-  for (const [p, b] of table) { if (pct >= p) { band = b; break; } }
-  if (capEasy && band > 4) band = 4; // cap for the lower route
-  return band;
-}
-const bandTo30 = b => ({ 6: 30, 5.5: 28, 5: 26, 4.5: 24, 4: 22, 3.5: 19, 3: 16, 2.5: 13, 2: 10, 1.5: 7, 1: 4 }[b] || 4);
-
 function scoreSection(secId) {
-  const sec = State.form.sections.find(s => s.id === secId);
-  if (!sec) return { correct: 0, total: 0, pct: 0, band: null, scaled30: null, path: null, missing: true }; // a test may leave out a section (e.g. a practice set)
-  const ids = [];
-  const collect = pool => pool.forEach(scr => {
-    if (scr.type === 'ctw') (scr.items || []).forEach(it => ids.push(it.id));
-    else if (scr.type === 'choose_response' || scr.type === 'insert_text') ids.push(scr.id);
-    else if (scr.questions) scr.questions.forEach(q => ids.push(q.id));
-  });
-  collect(sec.screens);
-  const path = State['_' + sec.id + '_path'] || null;
-  if (sec.adaptive && path) collect(sec.adaptive[path]);
-  let correct = 0; ids.forEach(id => { if (isCorrect(id)) correct++; });
-  const total = ids.length || 1;
-  const pct = correct / total;
-  const band = pctToBand(pct, path === 'easy');
-  return { correct, total, pct, band, scaled30: bandTo30(band), path };
+  return FluovaScore.scoreSection(State.form, secId, State.answers, State['_' + secId + '_path']);
 }
 
 function collectDetails(secId) {
@@ -798,16 +735,11 @@ function collectWriting() {
   for (const sec of State.form.sections) if (sec.id === 'writing') for (const scr of sec.screens) {
     if (scr.type === 'build_sentence') {
       const b = State.buildSentence[scr.id] || {};
-      const nrm = s => (s || '').trim().toLowerCase().replace(/[.,!?;:]/g, '');
-      const accepted = [scr.answer].concat(scr.accept || []).map(nrm);
-      out.buildSentence.push({ prompt: scr.prompt, given: b.given || t('empty'), correct: scr.answer, ok: accepted.includes(nrm(b.given)) });
+      out.buildSentence.push({ prompt: scr.prompt, given: b.given || t('empty'), correct: scr.answer, ok: FluovaScore.sentenceCorrect(scr, b.given) });
     }
     if (scr.type === 'sentence_dialogue') {
       const b = State.buildSentence[scr.id] || {};
-      const nrm = s => (s || '').trim().toLowerCase().replace(/[.,!?;:]/g, '').replace(/\s+/g, ' ');
-      const correct = basFill(scr, scr.answer);
-      const accepted = [correct].concat(scr.accept || []).map(nrm);
-      out.buildSentence.push({ prompt: 'A: ' + scr.personA, given: b.given || t('empty'), correct, ok: accepted.includes(nrm(b.given)) });
+      out.buildSentence.push({ prompt: 'A: ' + scr.personA, given: b.given || t('empty'), correct: basFill(scr, scr.answer), ok: FluovaScore.sentenceCorrect(scr, b.given) });
     }
     if (scr.type === 'writing') out[scr.kind] = State.writing[scr.id] || '';
   }

@@ -8,6 +8,8 @@
 - After a reload, a notice says the clock was paused while the page was closed
 - Strict Content-Security-Policy on every page; fonts served from the repository; favicon
 - Browser smoke test in headless Chrome (`npm run e2e`) on every pull request
+- Scoring, answer checking and adaptive routing moved to `engine/js/scoring.js` with unit tests; the review page now checks answers with the same rules as the test
+- `sitemap.xml` for search engines
 
 ## 0.1.0 — 2026-10-27
 First public release.

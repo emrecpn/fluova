@@ -6,6 +6,7 @@
    - the landing page passes tools/layout_audit.js in every language, at phone and desktop width
    - Complete the Words boxes fit their letters (landing demo and the test itself)
    - an attempt resumes on the same screen after a reload, with the paused-clock notice
+   - adaptive routing sends a strong first module to the upper module
    - a new test can be built from the question bank in the browser
    - results and review pages work, and Spanish answer explanations reach the review page
    Usage: node tools/e2e.js        (CHROME_PATH=/path/to/chrome to pick the browser) */
@@ -196,6 +197,14 @@ async function main() {
       if (now.screen !== firstBlank.screen || now.section !== firstBlank.section) throw new Error(`resumed at section ${now.section} screen ${now.screen}, expected ${firstBlank.section}/${firstBlank.screen}`);
       if (!now.value) throw new Error('the saved answer was not restored');
       await clean(page, 'exam after reload');
+    });
+
+    await check('adaptive routing in the browser: a strong first module leads to the upper module', async () => {
+      const r = await page.evaluate(`(() => { const sec = State.form.sections[State.sectionIndex], before = State.screens.length;
+        sec.adaptive.routeFrom.forEach(id => { State.answers[id] = FluovaScore.findQuestion(State.form, id).answer; });
+        injectStage2(sec); return { path: State._stage2Path, added: State.screens.length - before, expected: sec.adaptive.hard.length }; })()`);
+      if (r.path !== 'hard' || r.added !== r.expected) throw new Error('routing went wrong: ' + JSON.stringify(r));
+      await clean(page, 'routing');
     });
 
     await check('finish → results → review in Spanish shows Spanish explanations', async () => {

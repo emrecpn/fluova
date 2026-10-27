@@ -46,11 +46,12 @@ Open <http://localhost:8000/engine/>. Use Chrome or Edge, because Listening uses
 ## Repository layout
 
 ```
-engine/     the test player (static HTML/JS/CSS) and its UI translations (js/i18n.js)
+engine/     the test player (static HTML/JS/CSS): js/scoring.js (scoring and routing), js/i18n.js (UI translations)
 content/    question bank (content/bank), fixed-test recipes and rendered tests (content/tests), schema
 generator/  form assembler, test builder page, prompt pack, Build a Sentence builder
-tools/      bank.js, validate.js (structure), lint_forms.js (fidelity gate), check_syntax.js, build_manifest.js, ctw_generate.js, layout_audit.js, stt-lab/
-test/       unit tests (node:test)
+tools/      bank.js, validate.js (structure), lint_forms.js (fidelity gate), e2e.js (browser smoke test), check_syntax.js, build_manifest.js, ctw_generate.js, layout_audit.js, stt-lab/
+test/       unit tests (node:test): content pipeline, scoring and routing
+fonts/      self-hosted fonts (OFL)
 site/       landing page (multilingual static build)
 docs/       fidelity spec, i18n architecture
 ```
@@ -63,7 +64,7 @@ No dependencies: Node.js 22+ and Python 3 (for the local server) are enough.
 npm run check   # syntax of every script, unit tests, question bank, random forms, validator, fidelity linter
 npm test        # unit tests only (node:test)
 npm run build   # rebuild bank.json, fixed tests, the manifest and the landing page
-npm run e2e     # headless Chrome: page errors, CSP, layout in every language, resume, a new test, Spanish review
+npm run e2e     # headless Chrome: page errors, CSP, layout in every language, resume, routing, a new test, Spanish review
 npm run serve   # http://localhost:8000/engine/
 ```
 
