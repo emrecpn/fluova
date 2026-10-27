@@ -123,7 +123,31 @@
     return { test, missing };
   }
 
-  const api = { TASKS, TIERS, checkUnit, expand, renderRecipe, mcqIds, words, plain };
+  /* Near-duplicates across the bank: two units of the same task that share most of their content words.
+     Assembled tests mix units from every batch, so a reworded copy of an older item would show up as a repeat. */
+  const SIM_STOP = new Set('the a an and or but of to in on at for with from by is are was were be been being it its this that these those as not no they them their there he she his her we our you your i my me can could should would will may might must do does did has have had than then so such into about over more most very also only which who whom what when where why how all any each other some just like get got one two'.split(' '));
+  const SIM_SKIP = new Set(['id', 'type', 'voice', 'kind', 'why', 'interviewerVoice', 'options', 'answer', 'distractors', 'accept', 'minutes', 'wordTarget', 'directions', 'title', 'items']);
+  const SHORT_TASKS = new Set(['choose_response', 'build_sentence']);
+  const SIM_LIMIT = { short: 0.5, long: 0.4 };
+  function contentWords(screen) {
+    const out = [];
+    const walk = o => { if (typeof o === 'string') out.push(o); else if (Array.isArray(o)) o.forEach(walk);
+      else if (o && typeof o === 'object') { if (typeof o.en === 'string') return out.push(o.en); for (const [k, v] of Object.entries(o)) if (!SIM_SKIP.has(k)) walk(v); } };
+    if (screen.type === 'ctw') out.push(plain(screen)); else walk(screen); // CTW: whole words, not {{blank}} placeholders
+    return new Set(out.join(' ').replace(/<[^>]+>/g, ' ').toLowerCase().replace(/[^a-z' ]+/g, ' ').split(/\s+/).filter(w => w.length > 3 && !SIM_STOP.has(w)));
+  }
+  function similarPairs(units) {
+    const W = units.map(u => ({ id: u.id, task: u.task, w: contentWords(u.screen || {}) })), pairs = [];
+    for (let i = 0; i < W.length; i++) for (let j = i + 1; j < W.length; j++) {
+      const a = W[i], b = W[j]; if (a.task !== b.task) continue;
+      const shared = [...a.w].filter(x => b.w.has(x)), sim = shared.length / ((a.w.size + b.w.size - shared.length) || 1);
+      const limit = SHORT_TASKS.has(a.task) ? SIM_LIMIT.short : SIM_LIMIT.long;
+      if (sim >= limit && shared.length >= 2) pairs.push({ a: a.id, b: b.id, task: a.task, sim: Math.round(sim * 100) / 100, shared });
+    }
+    return pairs;
+  }
+
+  const api = { TASKS, TIERS, checkUnit, expand, renderRecipe, mcqIds, words, plain, similarPairs, SIM_LIMIT };
   if (typeof window !== 'undefined') window.FluovaBank = api;
   if (typeof module === 'undefined' || require.main !== module) { if (typeof module !== 'undefined') module.exports = api; return; }
 
@@ -151,6 +175,9 @@
     if (r.warnings.length) { warned++; console.log(`⚠ ${rel}\n    - ${r.warnings.join('\n    - ')}`); }
     const { _ctwWarning, ...clean } = u;
     units.push({ ...clean, meta: r.meta });
+  }
+  for (const p of similarPairs(units)) {
+    warned++; console.log(`⚠ ${p.a} and ${p.b} (${p.task}) are near-duplicates: ${Math.round(p.sim * 100)}% of content words shared (${p.shared.slice(0, 6).join(', ')}). Reword one so assembled tests do not repeat an item.`);
   }
   const count = {};
   units.forEach(u => { const k = `${u.task}/${u.tier}`; count[k] = (count[k] || 0) + 1; });

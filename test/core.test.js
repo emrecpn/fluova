@@ -82,6 +82,13 @@ test('bank: every unit passes its checks and ids are unique', () => {
   }
 });
 
+test('bank: no near-duplicate units (assembled tests would repeat an item)', () => {
+  assert.deepEqual(bankLib.similarPairs(bank.units).map(p => `${p.a} ~ ${p.b} (${p.sim})`), []);
+  const twin = clone(bank.units.find(u => u.task === 'choose_response'));
+  twin.id = 'twin_test'; twin.screen.id = 'twin_test';
+  assert.ok(bankLib.similarPairs([...bank.units, twin]).some(p => p.b === 'twin_test' || p.a === 'twin_test'), 'a reworded copy is caught');
+});
+
 test('every answer explanation in the bank has English, Turkish and Spanish', () => {
   const missing = [];
   const walk = (o, where) => {
