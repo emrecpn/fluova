@@ -32,7 +32,7 @@ Fluova builds every test from the official 2026 blueprint. An automatic quality 
 
 After each test you can copy two ready-made prompts and paste them into any AI chatbot, free ones included. One gets you feedback on your Writing and Speaking. The other turns your results into a personal study plan: it shows your accuracy by task and question type, lists every missed question with its explanation, and asks for targeted drills in the real format plus a day-by-day plan until your test date.
 
-The interface is available in English, Turkish and Spanish (Spanish still needs a native-speaker review), and answer explanations in English and Turkish. More languages are welcome. Test content is always in English.
+The interface and the answer explanations are available in English, Turkish and Spanish (Spanish still needs a native-speaker review). More languages are welcome. Test content is always in English.
 
 ## Run it locally
 
@@ -63,10 +63,11 @@ No dependencies: Node.js 22+ and Python 3 (for the local server) are enough.
 npm run check   # syntax of every script, unit tests, question bank, random forms, validator, fidelity linter
 npm test        # unit tests only (node:test)
 npm run build   # rebuild bank.json, fixed tests, the manifest and the landing page
+npm run e2e     # headless Chrome: page errors, CSP, layout in every language, resume, a new test, Spanish review
 npm run serve   # http://localhost:8000/engine/
 ```
 
-The same checks run on every pull request, and a test with a critical finding cannot be merged. Content is rendered as HTML, so only a few formatting tags are allowed (see [SECURITY.md](SECURITY.md)).
+The same checks run on every pull request, and a test with a critical finding cannot be merged. The browser smoke test (`tools/e2e.js`) has no dependencies either: it drives Chrome through the DevTools Protocol with Node's built-in WebSocket. Content is rendered as HTML, so only a few formatting tags are allowed (see [SECURITY.md](SECURITY.md)).
 
 ## Question bank
 

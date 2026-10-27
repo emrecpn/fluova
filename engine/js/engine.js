@@ -27,6 +27,14 @@ const fmt = s => { s = Math.max(0, Math.round(s)); const m = Math.floor(s / 60),
 function shuffleArr(a) { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1));[a[i], a[j]] = [a[j], a[i]]; } return a; }
 
 /* ---------------- Boot ---------------- */
+// One delegated listener for the top bar and footer buttons (no inline onclick, so the page can run a strict CSP)
+document.addEventListener('click', e => {
+  const b = e.target.closest('[data-action]'); if (!b || b.disabled) return;
+  if (b.dataset.action === 'next') next();
+  else if (b.dataset.action === 'back') back();
+  else if (b.dataset.action === 'finish' && confirm(t('ex.confirmFinish'))) finishExam();
+});
+
 function startExam(form) {
   State.form = form;
   if (window.WhisperSTT && WhisperSTT.mode() === 'whisper') WhisperSTT.load().catch(() => {});
@@ -58,7 +66,18 @@ function resumeProgress() {
   State.screenIndex = Math.min(p.screenIndex || 0, State.screens.length - 1);
   if (p.remaining > 0) { State.remaining = p.remaining; startTimer(); }
   render();
+  showResumeNote(p.saved);
   return true;
+}
+
+/* The section clock is paused while the page is closed (the real test does not pause), so say so once. */
+function showResumeNote(saved) {
+  const away = saved ? Math.round((Date.now() - saved) / 60000) : 0;
+  const el = document.createElement('div');
+  el.className = 'resume-note'; el.setAttribute('role', 'status');
+  el.innerHTML = `<span>${t('ex.resumed', { time: fmt(State.remaining) })}${away >= 1 ? ' ' + t('ex.resumedAway', { n: away }) : ''}</span><button type="button" aria-label="${t('ex.close')}">×</button>`;
+  el.querySelector('button').addEventListener('click', () => el.remove());
+  $('#stage').prepend(el); // inside the stage, so it covers nothing and goes away with the next screen
 }
 
 function loadSection(i) {
@@ -175,7 +194,7 @@ function renderTopbar(sec, scr) {
     <div class="sec">${esc(State.form.title)}</div>
     <div class="mid">${qInfo}<span id="timer" class="timer">${fmt(State.remaining)}</span></div>
     <div class="tools">
-      <button onclick="if(confirm(t('ex.confirmFinish')))finishExam()">${t('ex.finish')}</button>
+      <button data-action="finish">${t('ex.finish')}</button>
     </div>`;
   updateTimerUI();
 }
@@ -185,12 +204,12 @@ function renderFooter(sec, scr) {
   const isIntro = scr.type === 'section_intro';
   const atLast = State.screenIndex >= State.screens.length - 1;
   const backBtn = (!sec.oneWay && !isIntro && State.screenIndex > 0)
-    ? `<button class="btn btn-ghost" onclick="back()">${t('ex.back')}</button>` : `<span></span>`;
+    ? `<button class="btn btn-ghost" data-action="back">${t('ex.back')}</button>` : `<span></span>`;
   const nextLabel = isIntro ? t('ex.startSection') : (atLast ? t('ex.finishSection') : t('ex.next'));
   f.innerHTML = `
     <div class="left">${sec.oneWay && !isIntro ? '⚠ ' + t('ex.noReturn') : ''}</div>
     <div>${backBtn}
-      <button id="nextBtn" class="btn btn-primary" onclick="next()">${nextLabel}</button></div>`;
+      <button id="nextBtn" class="btn btn-primary" data-action="next">${nextLabel}</button></div>`;
 }
 
 /* ---------------- Screen renderers ---------------- */
@@ -263,9 +282,11 @@ function renderCTW(stage, scr) {
     ${html}</div>`;
   stage.querySelectorAll('.blank').forEach(inp => {
     const n = parseInt(inp.getAttribute('maxlength'), 10) || 6;
-    inp.style.width = ((n + 1) * 13) + 'px';
+    // width from the font itself (ch) + letter spacing, so it fits on every platform's monospace font
     inp.style.fontFamily = 'ui-monospace,Menlo,Consolas,monospace';
     inp.style.letterSpacing = '3px';
+    inp.style.boxSizing = 'content-box';
+    inp.style.width = `calc(${n}ch + ${n * 3 + 6}px)`;
     inp.addEventListener('input', e => { State.answers[e.target.dataset.id] = e.target.value.trim(); saveProgress(); });
   });
 }

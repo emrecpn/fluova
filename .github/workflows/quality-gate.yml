@@ -37,3 +37,16 @@ jobs:
       - name: Lint report
         if: always()
         run: test -f lint-report.md && cat lint-report.md >> "$GITHUB_STEP_SUMMARY" || true
+
+  e2e:
+    name: Browser smoke test
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with: { node-version: 24 }
+      - name: Build the landing page
+        run: node site/build.js
+      - name: Headless Chrome end-to-end checks
+        run: node tools/e2e.js

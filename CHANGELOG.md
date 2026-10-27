@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+- Answer keys checked by an independent solver that never saw them: 0 disagreements in 192 questions; 12 unclear items fixed
+- Correct options are no longer usually the longest (60% → 20% in `pilot-01`, 49% → 17% in `practice-02`); the linter now checks this and the A–D balance
+- Answer explanations in Spanish
+- Complete the Words boxes are wide enough for their letters on phones and desktops
+- After a reload, a notice says the clock was paused while the page was closed
+- Strict Content-Security-Policy on every page; fonts served from the repository; favicon
+- Browser smoke test in headless Chrome (`npm run e2e`) on every pull request
+
 ## 0.1.0 — 2026-10-27
 First public release.
 - Test engine with adaptive Reading and Listening, Writing and Speaking, in English, Turkish and Spanish

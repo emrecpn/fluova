@@ -29,6 +29,7 @@ jobs:
           mkdir -p _site
           cp -r site/dist/. _site/
           cp -r engine _site/engine
+          cp -r fonts _site/fonts
           mkdir -p _site/content && cp -r content/tests content/schema content/bank _site/content/ && rm -rf _site/content/bank/units _site/content/tests/recipes
           cp -r generator _site/generator
           mkdir -p _site/tools && cp tools/ctw_generate.js tools/validate.js tools/lint_forms.js tools/bank.js _site/tools/

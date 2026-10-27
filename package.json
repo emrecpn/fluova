@@ -12,6 +12,7 @@
     "syntax": "node tools/check_syntax.js",
     "check": "npm run syntax && node tools/bank.js --check && node generator/form_assemble.js --check 20 && node tools/validate.js && node tools/lint_forms.js && npm test",
     "build": "node tools/bank.js && node tools/build_manifest.js && node site/build.js",
+    "e2e": "node site/build.js && node tools/e2e.js",
     "serve": "python3 -m http.server 8000"
   }
 }

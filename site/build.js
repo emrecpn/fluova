@@ -43,6 +43,7 @@ function render(lang, { base, canonical }) {
     (m, l, label) => `<a data-lang="${l}" href="${base}${l}/" hreflang="${l}"${l === lang ? ' aria-current="page"' : ''}>${label}</a>`);
   // 5) links to the test engine carry the language
   html = html.replace(/href="\.\.\/engine\/index\.html"/g, `href="${base}engine/index.html${base === './' ? '' : '?lang=' + lang}"`);
+  html = html.replace('href="../fonts/fonts.css"', `href="${base}fonts/fonts.css"`).replace('href="../engine/favicon.svg"', `href="${base}engine/favicon.svg"`);
   // 6) asset paths
   html = html.replace('<script src="i18n.js"></script>', `<script src="${base}i18n.js"></script>`)
              .replace('<script src="app.js"></script>', `<script src="${base}app.js"></script>`);

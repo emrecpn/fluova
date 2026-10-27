@@ -203,6 +203,9 @@ audio{max-width:100%}
 .stt-opt input{margin-top:5px;accent-color:var(--accent);width:18px;height:18px;flex:0 0 auto}
 .stt-opt .pill{margin:0 0 0 6px;vertical-align:1px}
 .note a{color:var(--ink);font-weight:700}
+.resume-note{display:flex;gap:12px;align-items:flex-start;margin:0 0 16px;background:var(--c3);color:var(--ink);border:2px solid var(--ink);border-radius:var(--r-sm);box-shadow:4px 4px 0 var(--ink);padding:12px 14px;font-size:15px;line-height:1.45}
+.resume-note span{flex:1;min-width:0}
+.resume-note button{flex:none;border:0;background:none;color:var(--ink);font-size:22px;line-height:1;cursor:pointer;padding:0 4px}
 .note{background:var(--c3);border:2px solid var(--ink);border-radius:var(--r-sm);padding:14px 18px;font-size:15px;margin-top:26px}
 .secbars{display:grid;gap:6px;margin:4px 0 18px}
 .secbar{display:grid;grid-template-columns:96px 1fr auto;align-items:center;gap:10px;font-size:14px}

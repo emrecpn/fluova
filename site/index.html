@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+<link rel="icon" href="../engine/favicon.svg" type="image/svg+xml">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; connect-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Fluova</title>
 <meta name="description" content="Fluova is a free, open-source practice platform for the TOEFL® test (2026 format). Full-length adaptive tests built from the official specification, each one checked automatically before release.">
@@ -13,9 +15,7 @@
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Fluova: practice like the real test. Free for everyone.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;800&family=Figtree:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="../fonts/fonts.css">
 <style>
 /* Layout concept: a board game. Chunky sticker tiles with ink outlines and offset shadows sit on a soft
    pastel field; a dotted quest path links the route to test day; solving a question pays out XP. */
@@ -182,7 +182,8 @@ h2{font-size:clamp(26px,3.4vw,40px);font-weight:800;line-height:1.1}
 .games > *{min-width:0}
 .ctw{font-size:19px;line-height:2.5;margin:0}
 .ctw .stub{font-weight:700}
-.ctw input{font:500 19px var(--f-mono);letter-spacing:.6em;padding:2px 0 2px .3em;border:2px solid var(--ink);border-radius:10px;background:var(--c3);color:var(--ink);outline:none;vertical-align:baseline}
+/* width = letters × (character + letter spacing) + padding; the size attribute ignores letter spacing, so letters overflowed */
+.ctw input{--n:2;box-sizing:content-box;width:calc(var(--n) * (1ch + .45em));font:500 19px var(--f-mono);letter-spacing:.45em;padding:2px .25em 2px .45em;border:2px solid var(--ink);border-radius:10px;background:var(--c3);color:var(--ink);outline:none;vertical-align:baseline}
 .ctw input:focus{background:var(--surface);box-shadow:3px 3px 0 var(--ink)}
 .ctw input.is-right{background:var(--c2)}.ctw input.is-wrong{background:var(--c4)}
 .g2-row{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin-top:12px}
@@ -342,7 +343,7 @@ footer p{margin:0;max-width:70ch}
     <div class="sticker game" data-game="g2">
       <div class="game-head"><span class="chip" data-i18n="g2_label">Try it · Complete the Words</span><span class="mono">+30 XP</span></div>
       <p style="margin:0 0 10px;color:var(--muted);font-size:15px" data-i18n="g2_intro">Fill in the missing letters. Each box is one letter, the way the real task works.</p>
-      <p class="ctw">Many students take practice tests before the exam. Some of <span class="stub">th</span><input aria-label="these" data-ans="ese" maxlength="3" size="3" autocomplete="off" spellcheck="false"> tests <span class="stub">fe</span><input aria-label="feel" data-ans="el" maxlength="2" size="2" autocomplete="off" spellcheck="false"> easier <span class="stub">th</span><input aria-label="than" data-ans="an" maxlength="2" size="2" autocomplete="off" spellcheck="false"> the <span class="stub">re</span><input aria-label="real" data-ans="al" maxlength="2" size="2" autocomplete="off" spellcheck="false"> exam.</p>
+      <p class="ctw">Many students take practice tests before the exam. Some of <span class="stub">th</span><input aria-label="these" data-ans="ese" maxlength="3" style="--n:3" autocomplete="off" spellcheck="false"> tests <span class="stub">fe</span><input aria-label="feel" data-ans="el" maxlength="2" style="--n:2" autocomplete="off" spellcheck="false"> easier <span class="stub">th</span><input aria-label="than" data-ans="an" maxlength="2" style="--n:2" autocomplete="off" spellcheck="false"> the <span class="stub">re</span><input aria-label="real" data-ans="al" maxlength="2" style="--n:2" autocomplete="off" spellcheck="false"> exam.</p>
       <div class="g2-row"><button class="btn btn-primary btn-sm" data-check data-i18n="g2_check">Check</button><p class="feedback" data-feedback aria-live="polite" style="margin:0"></p></div>
     </div>
     <div class="sticker badge" id="badge">

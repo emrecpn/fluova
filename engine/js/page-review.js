@@ -1,0 +1,151 @@
+/* Page script, kept in a file (not inline) so the page can use a strict Content-Security-Policy. */
+(function () {
+  I18N.apply(); I18N.switcher(document.getElementById('lang'));
+  const id = FluovaContent.testId();
+  const c = document.getElementById('content');
+  let form = null;
+  FluovaContent.load(id).then(f => { form = f; boot(); }).catch(() => boot());
+
+  function boot() {
+  document.getElementById('sub').textContent = form ? form.title : '';
+  if (!form) { c.innerHTML = `<div class="note">${t('ex.notFound')} — content/tests/${id}.json</div>`; return; }
+
+  const esc = x => (x == null ? '' : String(x)).replace(/[&<>"]/g, ch => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[ch]));
+  const stripTags = s => (s || '').replace(/<[^>]*>/g, '');
+  const norm = s => (s || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+  const letter = i => 'ABCD'[i];
+  const BLANK = t('empty');
+
+  // Find a question by id (adaptive pools included)
+  function findQ(secId, qid) {
+    const sec = form.sections.find(s => s.id === secId);
+    const pools = [sec.screens]; if (sec.adaptive) pools.push(sec.adaptive.hard, sec.adaptive.easy);
+    for (const pool of pools) for (const scr of pool) {
+      if (scr.type === 'ctw') { const it = (scr.items || []).find(x => x.id === qid); if (it) return { kind: 'ctw', group: scr.title, stub: it.stub, answer: it.answer, why: it.why }; }
+      if (scr.type === 'insert_text' && scr.id === qid) return { kind: 'insert', group: scr.title || 'Insert Text', sentence: scr.sentence, answer: scr.answer, why: scr.why };
+      if (scr.type === 'choose_response' && scr.id === qid) return { kind: 'mcq', group: 'Listen and Choose a Response', stem: t('rv.audioPrompt'), options: scr.options, answer: scr.answer, why: scr.why };
+      if (scr.questions) { const q = scr.questions.find(x => x.id === qid); if (q) return { kind: 'mcq', group: scr.title, stem: q.stem, options: q.options, answer: q.answer, why: q.why }; }
+    }
+    return null;
+  }
+
+  function walk(secId, path) {
+    const sec = form.sections.find(s => s.id === secId);
+    const rows = [];
+    const doPool = pool => pool.forEach(scr => {
+      const group = scr.title || scr.type;
+      if (scr.type === 'ctw') scr.items.forEach(it => rows.push({ kind: 'ctw', id: it.id, group, stub: it.stub, answer: it.answer, why: it.why }));
+      else if (scr.type === 'insert_text') rows.push({ kind: 'insert', id: scr.id, group: scr.title || 'Insert Text', sentence: scr.sentence, answer: scr.answer, why: scr.why });
+      else if (scr.type === 'choose_response') rows.push({ kind: 'mcq', id: scr.id, group: 'Listen and Choose a Response', stem: t('rv.audioPrompt'), options: scr.options, answer: scr.answer, why: scr.why });
+      else if (scr.questions) scr.questions.forEach(q => rows.push({ kind: 'mcq', id: q.id, group, stem: q.stem, options: q.options, answer: q.answer, why: q.why }));
+    });
+    doPool(sec.screens);
+    if (sec.adaptive && path) doPool(sec.adaptive[path]);
+    return rows;
+  }
+
+  const tag = ok => `<span class="tag ${ok ? 'ok' : 'bad'}">${ok ? '✓ ' + t('rv.ok') : '✗ ' + t('rv.bad')}</span>`;
+  // All four options in their original order, so letters in the explanations ("B repeats…") match.
+  const optList = (r, picked) => `<ol class="optlist">${r.options.map((o, i) =>
+    `<li class="${i === r.answer ? 'right' : ''} ${i === picked ? 'picked' : ''}"><span class="k">${letter(i)}</span><span>${esc(stripTags(o))}</span></li>`).join('')}</ol>`;
+
+  function qrow(cls, group, stem, lines, why) {
+    const w = tx(why);
+    return `<div class="qrow ${cls}"><div class="grp">${esc(group)}</div>
+      ${stem ? `<div class="stem" lang="en">${esc(stripTags(stem))}</div>` : ''}
+      ${lines}${w ? `<div class="why"><strong>${t('rv.why')}:</strong> ${esc(w)}</div>` : ''}</div>`;
+  }
+
+  // Full mode: your answer + correct answer (answers saved in this browser)
+  function renderRL_local(secId, path, answers) {
+    const sec = form.sections.find(s => s.id === secId); if (!sec) return '';
+    const rows = walk(secId, path); let correct = 0, html = '';
+    rows.forEach((r, i) => {
+      let lines, ok;
+      if (r.kind === 'ctw') {
+        const yv = answers[r.id]; ok = norm(yv) === norm(r.answer);
+        lines = `<div class="ans">${t('rv.you')}: <strong>${esc(yv ? r.stub + yv : BLANK)}</strong>${tag(ok)}</div>${ok ? '' : `<div class="ans">${t('rv.correct')}: <strong>${esc(r.stub + r.answer)}</strong></div>`}`;
+      } else if (r.kind === 'insert') {
+        const yi = answers[r.id]; ok = yi === r.answer;
+        lines = `<div class="ans">${t('rv.you')}: <strong>${yi != null ? t('rv.position', { n: yi }) : BLANK}</strong>${tag(ok)}</div>${ok ? '' : `<div class="ans">${t('rv.correct')}: <strong>${t('rv.position', { n: r.answer })}</strong> — "${esc(stripTags(r.sentence))}"</div>`}`;
+      } else {
+        const yi = answers[r.id]; ok = yi === r.answer;
+        lines = `<div class="ans">${yi == null ? t('rv.you') + ': <strong>' + BLANK + '</strong>' : ''}${tag(ok)}</div>${optList(r, yi)}`;
+      }
+      if (ok) correct++;
+      html += qrow(ok ? 'ok' : 'bad', (i + 1) + '. ' + r.group, r.stem, lines, r.why);
+    });
+    return `<h2 class="secttl">${t('rv.sectionScore', { name: esc(sec.name), c: correct, n: rows.length })}</h2>${html}`;
+  }
+
+  // File mode: details[] (id + correct) — correct answer comes from the test file
+  function renderRL_details(secId, details) {
+    if (!details) return '';
+    const sec = form.sections.find(s => s.id === secId);
+    let correct = 0, html = '';
+    details.forEach((d, i) => {
+      const q = findQ(secId, d.id) || {};
+      if (d.correct) correct++;
+      let lines = `<div class="ans">${tag(d.correct)}</div>`;
+      if (q.kind === 'mcq') lines += optList(q, null);
+      else if (!d.correct) lines += `<div class="ans">${t('rv.correct')}: <strong>${esc(q.kind === 'ctw' ? q.stub + q.answer : q.kind === 'insert' ? t('rv.position', { n: q.answer }) : '?')}</strong></div>`;
+      html += qrow(d.correct ? 'ok' : 'bad', (i + 1) + '. ' + (q.group || d.group || ''), q.stem, lines, q.why);
+    });
+    return `<h2 class="secttl">${t('rv.sectionScore', { name: esc(sec.name), c: correct, n: details.length })}</h2>${html}`;
+  }
+
+  function renderWriting(w, progress) {
+    if (!w) w = {};
+    let out = '<h2 class="secttl" lang="en">Writing</h2>';
+    (w.buildSentence || []).forEach(x => {
+      out += qrow(x.ok ? 'ok' : 'bad', 'Build a Sentence', '', `<div class="ans">${t('rv.you')}: <strong>${esc(x.given || BLANK)}</strong>${tag(x.ok)}</div>${x.ok ? '' : `<div class="ans">${t('rv.correct')}: <strong>${esc(x.correct)}</strong></div>`}`);
+    });
+    const email = w.email || (progress && progress.writing && progress.writing.w_email);
+    const disc = w.discussion || (progress && progress.writing && progress.writing.w_disc);
+    if (email) out += qrow('', 'Write an Email', '', `<div class="ans">${esc(email).replace(/\n/g, '<br>')}</div>`);
+    if (disc) out += qrow('', 'Academic Discussion', '', `<div class="ans">${esc(disc).replace(/\n/g, '<br>')}</div>`);
+    return out;
+  }
+
+  function renderSpeaking(s) {
+    if (!s) return '';
+    let out = '<h2 class="secttl" lang="en">Speaking</h2>';
+    (s.listenRepeat || []).forEach(x => {
+      out += qrow(x.accuracy >= 80 ? 'ok' : 'bad', 'Listen and Repeat — ' + t('rv.accuracy', { n: x.accuracy }), '',
+        `<div class="ans">${t('rv.target')}: ${esc(x.target)}</div><div class="ans">${t('rv.heard')}: <strong>${esc(x.transcript || t('sp.nothing'))}</strong></div>`);
+    });
+    (s.interview || []).forEach((x, i) => {
+      const m = x.metrics;
+      out += qrow('', 'Interview ' + (i + 1), x.question,
+        `<div class="ans">${t('rv.transcript')}: ${esc(x.transcript || t('sp.nothing'))}</div>${m ? `<div class="metrics">${t('sp.metrics', { w: m.wordCount, wpm: m.wpm, r: m.repetitions })}${m.confidence != null ? ' · ' + t('sp.clarity', { n: Math.round(m.confidence * 100) }) : ''}</div>` : ''}`);
+    });
+    return out;
+  }
+
+  function renderAll(results, answers, progress) {
+    let out = '';
+    const rPath = (results.reading && results.reading.path) || null;
+    const lPath = (results.listening && results.listening.path) || null;
+    if (answers && Object.keys(answers).length) out += renderRL_local('reading', rPath, answers) + renderRL_local('listening', lPath, answers);
+    else if (results.details) out += renderRL_details('reading', results.details.reading) + renderRL_details('listening', results.details.listening);
+    else out += `<div class="note">${t('rv.noBreakdown')}</div>`;
+    out += renderWriting(results.writing, progress);
+    out += renderSpeaking(results.speaking);
+    c.innerHTML = out;
+  }
+
+  document.getElementById('fileInput').addEventListener('change', e => {
+    const f = e.target.files[0]; if (!f) return;
+    const rd = new FileReader();
+    rd.onload = () => { try { renderAll(JSON.parse(rd.result), null, null); window.scrollTo(0, 300); } catch (err) { c.insertAdjacentHTML('afterbegin', `<div class="note">${t('rv.readErr', { msg: esc(err.message) })}</div>`); } };
+    rd.readAsText(f);
+  });
+
+  let progress = {}, results = {};
+  try { progress = JSON.parse(localStorage.getItem('fluova_progress_' + id) || '{}'); } catch (e) {}
+  try { results = JSON.parse(localStorage.getItem('fluova_results_' + id) || '{}'); } catch (e) {}
+  const answers = results.answers || progress.answers || {};
+  if (Object.keys(answers).length || results.reading || results.speaking) renderAll(results, answers, progress);
+  else c.innerHTML = `<div class="note">${t('rv.noData')}</div>`;
+  } // boot
+})();

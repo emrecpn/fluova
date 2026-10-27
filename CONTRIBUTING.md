@@ -61,13 +61,14 @@ See [docs/FIDELITY-SPEC.md](docs/FIDELITY-SPEC.md). The ones people miss most of
 - **Build a Sentence:** use a `frame` with prefilled words and allow multi-word tiles. Only about 2 of the 10 items should have a distractor, and never more than one per item. `generator/bas_build.js` helps.
 - **Listening titles:** conversations and announcements are recognised by their `title` ("Conversation: …", "Announcement: …"). Every other listening screen counts as an academic talk.
 - **Speaking:** Listen and Repeat sentences must grow from about 5 to 20+ words around one scenario, and the Interview must stay on one topic, moving from factual questions to opinion.
+- **Answer cues:** the correct option should not usually be the longest one (keep it at most a third of a test; by chance it is about a quarter), and each letter A–D should hold 15–35% of the keys. Lengthen a distractor rather than shorten the key.
 
 ### Explanations
 Every multiple-choice question should have a `why` explaining **why the answer is right and what the trap in a wrong option is**. Letters (A–D) refer to the option order in the JSON. The engine shuffles options on screen, but the review page shows them in JSON order.
 
 `why` can be a plain string (English) or a translation map:
 ```json
-"why": { "en": "Inference: …", "tr": "Çıkarım: …" }
+"why": { "en": "Inference: …", "tr": "Çıkarım: …", "es": "Inferencia: …" }
 ```
 
 ### Using AI to draft
@@ -79,7 +80,7 @@ AI drafts are fine, but **you are responsible for the result**. Set `"generatedB
 - Keep "TOEFL®", task names (Complete the Words, Build a Sentence…) and all test content in English. See [docs/I18N-ARCHITECTURE.md](docs/I18N-ARCHITECTURE.md).
 
 ## 5. Code
-Plain HTML/CSS/JS with no build step for the engine and no dependencies. Keep it that way unless there is a strong reason. Before you open a PR, run `npm run check`, add a test in `test/` for new logic, and try the change in Chrome at desktop width and at 375 px, in both light and dark mode.
+Plain HTML/CSS/JS with no build step for the engine and no dependencies. Keep it that way unless there is a strong reason. Before you open a PR, run `npm run check` and `npm run e2e`, add a test in `test/` for new logic, and try the change in Chrome at desktop width and at 375 px, in both light and dark mode. Pages use a strict Content-Security-Policy, so put scripts in `.js` files and attach handlers with `addEventListener` (no inline `<script>` or `onclick`).
 
 By taking part you agree to the [code of conduct](CODE_OF_CONDUCT.md). Security issues: see [SECURITY.md](SECURITY.md).
 
