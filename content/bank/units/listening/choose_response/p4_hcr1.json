@@ -2,28 +2,28 @@
  "id": "p4_hcr1",
  "task": "choose_response",
  "tier": "hard",
- "topic": "lab report",
+ "topic": "conference poster",
  "origin": "practice-04",
  "screen": {
   "type": "choose_response",
   "id": "p4_hcr1",
   "audio": [
    {
-    "text": "You're not still working on that lab report, are you?",
+    "text": "Weren't you presenting your poster at the conference this morning?",
     "voice": "female:gb"
    }
   ],
   "options": [
-   "The lab is on the third floor of the science building.",
-   "I'm afraid so. The data took forever to sort out.",
-   "No, I don't report to anyone at my job.",
-   "I work at the café most weekends."
+   "The poster printer on the second floor is out of ink again.",
+   "They moved our session to the afternoon, so I've still got time to practice.",
+   "Yes, I'm planning to go to that conference with my roommate next spring.",
+   "I usually present my ideas much better in writing than I do out loud."
   ],
   "answer": 1,
   "why": {
-   "en": "Indirect \"yes\": \"I'm afraid so\" confirms she is still working on it, and she adds a reason. C repeats \"report\" with a different meaning; A answers \"where\"; D repeats \"work\".",
-   "tr": "Dolaylı \"evet\": \"I'm afraid so\" hâlâ üzerinde çalıştığını doğruluyor ve bir sebep ekliyor. C \"report\" kelimesini farklı anlamda tekrarlıyor; A \"where\" sorusunu cevaplıyor; D \"work\" kelimesini tekrarlıyor.",
-   "es": "\"Sí\" indirecto: \"I'm afraid so\" confirma que sigue trabajando en él y añade un motivo. C repite \"report\" con otro significado; A responde a \"where\"; D repite \"work\"."
+   "en": "Indirect \"no\": her session was moved to the afternoon, so she has not presented yet. A repeats \"poster\" on another topic; C says \"yes\" about the wrong time; D repeats \"present\" with another meaning.",
+   "tr": "Dolaylı \"hayır\": oturumu öğleden sonraya alınmış, yani henüz sunum yapmadı. A \"poster\" kelimesini başka bir konuda tekrar ediyor; C yanlış zaman için \"evet\" diyor; D \"present\" kelimesini başka anlamda kullanıyor.",
+   "es": "Un \"no\" indirecto: su sesión se pasó a la tarde, así que todavía no ha presentado. A repite \"poster\" con otro tema; C dice \"yes\" sobre otro momento; D usa \"present\" con otro significado."
   }
  }
 }

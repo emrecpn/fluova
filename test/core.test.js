@@ -17,6 +17,8 @@ const clone = o => JSON.parse(JSON.stringify(o));
 const bank = load('content/bank/bank.json');
 const blueprint = load('content/bank/blueprint.json');
 const deps = { bank: bankLib, validate, lint };
+const PUBLISHED = load('content/tests/index.json').tests.map(t => t.id);
+const RECIPES = fs.readdirSync(path.join(ROOT, 'content/tests/recipes')).map(f => f.replace(/\.json$/, ''));
 
 test('Complete the Words follows the C-test rule', () => {
   const r = ctw.generate('Bees share news about food in a surprising way. When a forager finds a rich patch of flowers, it returns to the hive and performs a short dance on the wall of the comb. The angle of the dance shows the direction of the food.', 'x', 10);
@@ -30,7 +32,7 @@ test('Complete the Words follows the C-test rule', () => {
 });
 
 test('validator accepts the published tests and rejects broken ones', () => {
-  for (const id of ['pilot-01', 'practice-02']) assert.deepEqual(validate.validateTest(load(`content/tests/${id}.json`), id), []);
+  for (const id of PUBLISHED) assert.deepEqual(validate.validateTest(load(`content/tests/${id}.json`), id), [], id);
   const t = clone(load('content/tests/pilot-01.json'));
   t.sections[0].screens[2].questions[0].answer = 7;
   t.sections[0].screens[2].questions[1].id = t.sections[0].screens[2].questions[0].id;
@@ -49,7 +51,7 @@ test('validator blocks unsafe HTML in content', () => {
 });
 
 test('linter: published tests pass, a too-literal Reading set fails', () => {
-  for (const id of ['pilot-01', 'practice-02']) {
+  for (const id of PUBLISHED) {
     const high = lint.lintTest(load(`content/tests/${id}.json`), id).issues.filter(i => i.sev === 'high');
     assert.deepEqual(high, [], `${id} has critical findings`);
   }
@@ -101,8 +103,9 @@ test('every answer explanation in the bank has English, Turkish and Spanish', ()
   assert.deepEqual(missing, []);
 });
 
-test('recipes render exactly the committed tests', () => {
-  for (const id of ['pilot-01', 'practice-02']) {
+test('recipes render exactly the committed tests, and every recipe is published', () => {
+  assert.deepEqual([...RECIPES].sort(), [...PUBLISHED].sort());
+  for (const id of RECIPES) {
     const { test: rendered, missing } = bankLib.renderRecipe(load(`content/tests/recipes/${id}.json`), bank.units, blueprint);
     assert.deepEqual(missing, []);
     assert.deepEqual(rendered, load(`content/tests/${id}.json`));

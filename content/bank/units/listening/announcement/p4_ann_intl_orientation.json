@@ -10,7 +10,7 @@
   "prompt": "Listen to an announcement at an orientation event.",
   "audio": [
    {
-    "text": "Good morning, and welcome to all our new international students. There's one change to today's schedule. Because of the rain, the campus tour planned for eleven will now start at one-thirty, and lunch will be served at eleven instead, in the main hall. Before you leave, please pick up your welcome packet at the front table. It contains your temporary student card, which you'll need to enter the library.",
+    "text": "Good morning, and welcome to all our new international students. There's one change to today's schedule. Because of the rain, the campus tour planned for eleven will now start at one-thirty, and lunch, which was planned for one-thirty, will be served at eleven instead, in the main hall. Before you leave, please pick up your welcome packet at the front table. It contains your temporary student card, which you'll need to enter the library.",
     "voice": "male:gb"
    }
   ],

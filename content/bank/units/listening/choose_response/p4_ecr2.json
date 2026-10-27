@@ -2,28 +2,28 @@
  "id": "p4_ecr2",
  "task": "choose_response",
  "tier": "easy",
- "topic": "library hours",
+ "topic": "seminar teacher",
  "origin": "practice-04",
  "screen": {
   "type": "choose_response",
   "id": "p4_ecr2",
   "audio": [
    {
-    "text": "What time does the library close?",
+    "text": "Who's teaching the history seminar this term?",
     "voice": "male:au"
    }
   ],
   "options": [
-   "On the second floor.",
-   "I closed the window.",
-   "At nine tonight.",
-   "Yes, it's open now."
+   "On Tuesdays and Thursdays.",
+   "Yes, it's a great seminar.",
+   "Professor Diaz, I think.",
+   "I'm teaching myself Spanish."
   ],
   "answer": 2,
   "why": {
-   "en": "\"What time\" → a time. A gives a place; B repeats \"close\" with a different meaning; D answers \"Yes\" to a \"what time\" question.",
-   "tr": "\"What time\" → bir saat. A bir yer veriyor; B \"close\" kelimesini farklı anlamda tekrarlıyor; D \"what time\" sorusuna \"Yes\" diyor.",
-   "es": "\"What time\" → una hora. A da un lugar; B repite \"close\" con otro significado; D responde \"Yes\" a una pregunta con \"what time\"."
+   "en": "\"Who\" → a person. A gives days; B answers \"Yes\" to a \"who\" question; D repeats \"teaching\" with a different meaning.",
+   "tr": "\"Who\" → bir kişi. A gün veriyor; B \"who\" sorusuna \"Yes\" diye cevap veriyor; D \"teaching\" kelimesini başka anlamda tekrar ediyor.",
+   "es": "\"Who\" → una persona. A da días; B responde \"Yes\" a una pregunta con \"who\"; D repite \"teaching\" con otro sentido."
   }
  }
 }

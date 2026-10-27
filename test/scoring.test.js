@@ -8,7 +8,7 @@ const S = require('../engine/js/scoring.js');
 const form = require('../generator/form_assemble.js');
 const ROOT = path.join(__dirname, '..');
 const load = p => JSON.parse(fs.readFileSync(path.join(ROOT, p), 'utf8'));
-const FIXED = ['pilot-01', 'practice-02'].map(id => load(`content/tests/${id}.json`));
+const FIXED = load('content/tests/index.json').tests.map(t => load(`content/tests/${t.id}.json`));
 const bank = load('content/bank/bank.json'), blueprint = load('content/bank/blueprint.json');
 const deps = { bank: require('../tools/bank.js'), validate: require('../tools/validate.js'), lint: require('../tools/lint_forms.js') };
 

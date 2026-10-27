@@ -170,7 +170,7 @@
         "Into one of the blue bins on that floor",
         "Into a green bin in the basement",
         "Next to the bins, for staff to sort later",
-        "Together with the regular trash"
+        "In the regular trash"
        ],
        "answer": 3,
        "why": {
@@ -1204,7 +1204,7 @@
      "prompt": "Listen to an announcement at an orientation event.",
      "audio": [
       {
-       "text": "Good morning, and welcome to all our new international students. There's one change to today's schedule. Because of the rain, the campus tour planned for eleven will now start at one-thirty, and lunch will be served at eleven instead, in the main hall. Before you leave, please pick up your welcome packet at the front table. It contains your temporary student card, which you'll need to enter the library.",
+       "text": "Good morning, and welcome to all our new international students. There's one change to today's schedule. Because of the rain, the campus tour planned for eleven will now start at one-thirty, and lunch, which was planned for one-thirty, will be served at eleven instead, in the main hall. Before you leave, please pick up your welcome packet at the front table. It contains your temporary student card, which you'll need to enter the library.",
        "voice": "male:gb"
       }
      ],
@@ -1472,21 +1472,21 @@
       "id": "p4_hcr1",
       "audio": [
        {
-        "text": "You're not still working on that lab report, are you?",
+        "text": "Weren't you presenting your poster at the conference this morning?",
         "voice": "female:gb"
        }
       ],
       "options": [
-       "The lab is on the third floor of the science building.",
-       "I'm afraid so. The data took forever to sort out.",
-       "No, I don't report to anyone at my job.",
-       "I work at the café most weekends."
+       "The poster printer on the second floor is out of ink again.",
+       "They moved our session to the afternoon, so I've still got time to practice.",
+       "Yes, I'm planning to go to that conference with my roommate next spring.",
+       "I usually present my ideas much better in writing than I do out loud."
       ],
       "answer": 1,
       "why": {
-       "en": "Indirect \"yes\": \"I'm afraid so\" confirms she is still working on it, and she adds a reason. C repeats \"report\" with a different meaning; A answers \"where\"; D repeats \"work\".",
-       "tr": "Dolaylı \"evet\": \"I'm afraid so\" hâlâ üzerinde çalıştığını doğruluyor ve bir sebep ekliyor. C \"report\" kelimesini farklı anlamda tekrarlıyor; A \"where\" sorusunu cevaplıyor; D \"work\" kelimesini tekrarlıyor.",
-       "es": "\"Sí\" indirecto: \"I'm afraid so\" confirma que sigue trabajando en él y añade un motivo. C repite \"report\" con otro significado; A responde a \"where\"; D repite \"work\"."
+       "en": "Indirect \"no\": her session was moved to the afternoon, so she has not presented yet. A repeats \"poster\" on another topic; C says \"yes\" about the wrong time; D repeats \"present\" with another meaning.",
+       "tr": "Dolaylı \"hayır\": oturumu öğleden sonraya alınmış, yani henüz sunum yapmadı. A \"poster\" kelimesini başka bir konuda tekrar ediyor; C yanlış zaman için \"evet\" diyor; D \"present\" kelimesini başka anlamda kullanıyor.",
+       "es": "Un \"no\" indirecto: su sesión se pasó a la tarde, así que todavía no ha presentado. A repite \"poster\" con otro tema; C dice \"yes\" sobre otro momento; D usa \"present\" con otro significado."
       }
      },
      {
@@ -1578,7 +1578,7 @@
        },
        {
         "id": "p4_conv_internship_credit_q2",
-        "stem": "What does the advisor imply?",
+        "stem": "What does the man imply?",
         "options": [
          "The deadline for the form will probably be extended for her",
          "Finding a faculty sponsor is her most important task",
@@ -1921,21 +1921,21 @@
       "id": "p4_ecr2",
       "audio": [
        {
-        "text": "What time does the library close?",
+        "text": "Who's teaching the history seminar this term?",
         "voice": "male:au"
        }
       ],
       "options": [
-       "On the second floor.",
-       "I closed the window.",
-       "At nine tonight.",
-       "Yes, it's open now."
+       "On Tuesdays and Thursdays.",
+       "Yes, it's a great seminar.",
+       "Professor Diaz, I think.",
+       "I'm teaching myself Spanish."
       ],
       "answer": 2,
       "why": {
-       "en": "\"What time\" → a time. A gives a place; B repeats \"close\" with a different meaning; D answers \"Yes\" to a \"what time\" question.",
-       "tr": "\"What time\" → bir saat. A bir yer veriyor; B \"close\" kelimesini farklı anlamda tekrarlıyor; D \"what time\" sorusuna \"Yes\" diyor.",
-       "es": "\"What time\" → una hora. A da un lugar; B repite \"close\" con otro significado; D responde \"Yes\" a una pregunta con \"what time\"."
+       "en": "\"Who\" → a person. A gives days; B answers \"Yes\" to a \"who\" question; D repeats \"teaching\" with a different meaning.",
+       "tr": "\"Who\" → bir kişi. A gün veriyor; B \"who\" sorusuna \"Yes\" diye cevap veriyor; D \"teaching\" kelimesini başka anlamda tekrar ediyor.",
+       "es": "\"Who\" → una persona. A da días; B responde \"Yes\" a una pregunta con \"who\"; D repite \"teaching\" con otro sentido."
       }
      },
      {
@@ -2218,7 +2218,7 @@
         "stem": "Where is the youngest island in a chain probably found?",
         "options": [
          "Closest to the hot spot",
-         "At the far end of the chain",
+         "At the end farthest from the hot spot",
          "In the middle of the chain",
          "Where the plate is thickest"
         ],
