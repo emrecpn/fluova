@@ -1,0 +1,64 @@
+{
+ "id": "p5_conv_guest_speaker",
+ "task": "conversation",
+ "tier": "medium",
+ "topic": "guest speaker funding",
+ "origin": "practice-05",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Inviting a guest speaker",
+  "prompt": "Listen to a conversation between a student and an employee in the student activities office.",
+  "audio": [
+   {
+    "text": "Our film club wants to invite a director to speak next month. Is there any funding for that?",
+    "voice": "female:au"
+   },
+   {
+    "text": "There is. Fill out the speaker request on the activities website. We can cover travel, but not a speaking fee.",
+    "voice": "male:us"
+   },
+   {
+    "text": "She lives three hours away, so travel is the main cost anyway.",
+    "voice": "female:au"
+   },
+   {
+    "text": "Then you're in good shape. Just submit it at least three weeks before the event.",
+    "voice": "male:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p5_conv_guest_speaker_q1",
+    "stem": "What does the woman want to find out?",
+    "options": [
+     "How to start a new film club on campus",
+     "Whether the school will pay for a visitor's costs",
+     "Which films the director will show next month",
+     "How far the director lives from the campus"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Purpose (paraphrase of \"Is there any funding for that?\"). D is something she tells him, not something she asks; A and C are not discussed.",
+     "tr": "Amaç (\"Is there any funding for that?\" ifadesinin parafrazı). D onun sorduğu değil, söylediği bir şey; A ve C konuşulmuyor.",
+     "es": "Propósito (paráfrasis de \"Is there any funding for that?\"). D es algo que ella dice, no algo que pregunta; A y C no se tratan."
+    }
+   },
+   {
+    "id": "p5_conv_guest_speaker_q2",
+    "stem": "What can be inferred about the director's visit?",
+    "options": [
+     "The office's rules on payments should not cause a problem",
+     "The club will have to pay the director a speaking fee itself",
+     "The visit must be moved to a later month",
+     "The director has asked the club to pay for a hotel"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference: the office pays only for travel, and travel is \"the main cost anyway\", so \"you're in good shape\". B ignores that no fee is mentioned; C and D are not stated.",
+     "tr": "Çıkarım: ofis yalnızca yol masrafını ödüyor ve zaten \"asıl masraf yol\"; bu yüzden \"you're in good shape\". B hiçbir ücretten söz edilmediğini görmüyor; C ve D söylenmiyor.",
+     "es": "Inferencia: la oficina solo paga el viaje, y el viaje es \"el gasto principal de todos modos\", así que \"you're in good shape\". B pasa por alto que no se menciona ningún honorario; C y D no se dicen."
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "id": "p5_hcr4",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "payment plan",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_hcr4",
+  "audio": [
+   {
+    "text": "I'm not sure the payment plan is worth the extra fee.",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "The fee for the gym is twenty dollars a term for students.",
+   "I'm sure I paid for our lunch yesterday.",
+   "It might be, if it saves you from taking out a loan.",
+   "Plans for the new library were approved."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "Doubt → a reasoned reply. A repeats \"fee\" about the gym; B repeats \"sure\" and \"paid\"; D repeats \"plan\" with another meaning.",
+   "tr": "Şüphe → gerekçeli bir cevap. A \"fee\" kelimesini spor salonu için tekrar ediyor; B \"sure\" ve \"paid\" kelimelerini tekrar ediyor; D \"plan\" kelimesini başka anlamda kullanıyor.",
+   "es": "Duda → una respuesta razonada. A repite \"fee\" sobre el gimnasio; B repite \"sure\" y \"paid\"; D usa \"plan\" con otro sentido."
+  }
+ }
+}

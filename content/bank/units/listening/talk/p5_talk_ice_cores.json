@@ -1,0 +1,92 @@
+{
+ "id": "p5_talk_ice_cores",
+ "task": "talk",
+ "tier": "hard",
+ "topic": "ice cores",
+ "origin": "practice-05",
+ "screen": {
+  "type": "listening",
+  "title": "Academic Talk: What ice cores record",
+  "prompt": "Listen to part of a lecture in an earth science class.",
+  "audio": [
+   {
+    "text": "When snow falls on a large ice sheet, such as the one covering Antarctica, it doesn't melt. Year after year, new layers pile up, and the weight of the snow above slowly presses the older layers into solid ice. As this happens, tiny bubbles of air become trapped inside. Those bubbles are, in effect, samples of the atmosphere from the time the snow fell.",
+    "voice": "male:us"
+   },
+   {
+    "text": "By drilling deep into the ice and pulling out long cylinders, which we call ice cores, researchers can measure what the air contained thousands of years ago. The deepest Antarctic cores reach back roughly eight hundred thousand years. Scientists can also estimate past temperatures from the chemistry of the ice itself, since snow that falls in colder periods contains a slightly different mix of oxygen atoms.",
+    "voice": "male:us"
+   },
+   {
+    "text": "Now, the method has limits. Near the surface, the snow hasn't sealed yet, so air can still move between the layers. This means the air in a bubble is always somewhat younger than the ice around it, sometimes by thousands of years, and researchers have to correct for that gap before they compare the two records.",
+    "voice": "male:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p5_talk_ice_cores_q1",
+    "stem": "What is the talk mainly about?",
+    "options": [
+     "How layers of ice preserve information about past climates",
+     "Why the Antarctic ice sheet is now melting faster than ever before",
+     "How researchers drill through rock beneath the ice",
+     "Why snow in cold periods contains more oxygen"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main idea (paraphrase): ice cores record past air and temperatures, with one limitation. B is never mentioned; D distorts the detail about \"a slightly different mix\" of oxygen atoms.",
+     "tr": "Ana fikir (parafraz): buz karotları geçmişin havasını ve sıcaklıklarını kaydeder, bir sınırlamayla. B hiç geçmiyor; D oksijen atomlarının \"biraz farklı karışımı\" ayrıntısını çarpıtıyor.",
+     "es": "Idea principal (paráfrasis): los testigos de hielo registran el aire y las temperaturas del pasado, con una limitación. B no se menciona; D deforma el detalle de \"una mezcla algo distinta\" de átomos de oxígeno."
+    }
+   },
+   {
+    "id": "p5_talk_ice_cores_q2",
+    "stem": "According to the professor, what do the air bubbles contain?",
+    "options": [
+     "Water from melted snow on the surface",
+     "Gases released by the rock under the ice",
+     "Air from roughly the period when the snow fell",
+     "Oxygen produced by the ice as it forms"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Detail (paraphrase of \"samples of the atmosphere from the time the snow fell\"). A contradicts \"it doesn't melt\"; B and D are not stated.",
+     "tr": "Ayrıntı (\"samples of the atmosphere from the time the snow fell\" ifadesinin parafrazı). A \"it doesn't melt\" ile çelişiyor; B ve D söylenmiyor.",
+     "es": "Detalle (paráfrasis de \"samples of the atmosphere from the time the snow fell\"). A contradice \"it doesn't melt\"; B y D no se dicen."
+    }
+   },
+   {
+    "id": "p5_talk_ice_cores_q3",
+    "stem": "Why does the professor mention oxygen atoms?",
+    "options": [
+     "To explain how temperatures of the past can be estimated",
+     "To show that the air in the bubbles is younger than the ice itself",
+     "To describe how snow is pressed into solid ice",
+     "To explain why the deepest cores are so old"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Function: the mix of oxygen atoms in the ice is the clue to past temperatures. B is the point of the last paragraph, not of this detail; C and D are separate details.",
+     "tr": "İşlev: buzdaki oksijen atomlarının karışımı geçmiş sıcaklıkların ipucu. B son paragrafın konusu, bu ayrıntının değil; C ve D ayrı ayrıntılar.",
+     "es": "Función: la mezcla de átomos de oxígeno en el hielo es la pista de las temperaturas pasadas. B es la idea del último párrafo, no de este detalle; C y D son detalles distintos."
+    }
+   },
+   {
+    "id": "p5_talk_ice_cores_q4",
+    "stem": "What can be inferred about comparing the air record with the temperature record?",
+    "options": [
+     "The two records always match exactly in age",
+     "The air in a bubble is usually older than the ice that holds it",
+     "Researchers cannot compare the two records at all",
+     "Researchers must adjust the dates before comparing the two"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Inference: because the air is \"somewhat younger than the ice\", researchers \"have to correct for that gap\" first. B is the direction trap: the air is younger, not older. A ignores the gap; C goes too far.",
+     "tr": "Çıkarım: hava \"buzdan biraz daha genç\" olduğu için araştırmacılar önce \"bu farkı düzeltmek zorunda\". B yön tuzağı: hava daha yaşlı değil, daha genç. A farkı görmüyor; C fazla ileri gidiyor.",
+     "es": "Inferencia: como el aire es \"algo más joven que el hielo\", los investigadores \"tienen que corregir esa diferencia\" antes. B es la trampa de la dirección: el aire es más joven, no más viejo. A ignora la diferencia; C va demasiado lejos."
+    }
+   }
+  ]
+ }
+}

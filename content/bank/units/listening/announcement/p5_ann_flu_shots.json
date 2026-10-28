@@ -1,0 +1,52 @@
+{
+ "id": "p5_ann_flu_shots",
+ "task": "announcement",
+ "tier": "medium",
+ "topic": "flu vaccination day",
+ "origin": "practice-05",
+ "screen": {
+  "type": "listening",
+  "title": "Announcement: Flu vaccination day",
+  "prompt": "Listen to an announcement made to students.",
+  "audio": [
+   {
+    "text": "Good morning, everyone. The student health center is holding a free flu vaccination day this Wednesday from nine to four. It will take place in the gym, not at the health center, because the center is being painted this week. No appointment is needed, but please bring your student ID. If you can't come on Wednesday, you can book a shot at the health center starting next week.",
+    "voice": "female:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p5_ann_flu_shots_q1",
+    "stem": "What is the main purpose of the announcement?",
+    "options": [
+     "To tell students about a free flu shot event",
+     "To explain why the health center will close for good",
+     "To remind students to renew their student IDs",
+     "To invite students to help paint the health center"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main purpose (paraphrase). B overstates the painting into a permanent closure; C and D misuse details (the ID, the painting).",
+     "tr": "Ana amaç (parafraz). B boyamayı kalıcı kapanmaya dönüştürüyor; C ve D ayrıntıları yanlış kullanıyor (kimlik kartı, boya).",
+     "es": "Propósito principal (paráfrasis). B convierte la pintura en un cierre definitivo; C y D usan mal los detalles (el carné, la pintura)."
+    }
+   },
+   {
+    "id": "p5_ann_flu_shots_q2",
+    "stem": "Why will the event be held in the gym?",
+    "options": [
+     "The gym is closer to most dormitories",
+     "The health center building is being painted",
+     "Too many students are expected for the center",
+     "The gym is open for longer hours"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail (paraphrase of \"because the center is being painted this week\"). C sounds reasonable but is not the reason given; A and D are never mentioned.",
+     "tr": "Ayrıntı (\"because the center is being painted this week\" ifadesinin parafrazı). C mantıklı görünüyor ama söylenen neden bu değil; A ve D hiç geçmiyor.",
+     "es": "Detalle (paráfrasis de \"because the center is being painted this week\"). C parece razonable, pero no es el motivo que se da; A y D no se mencionan."
+    }
+   }
+  ]
+ }
+}

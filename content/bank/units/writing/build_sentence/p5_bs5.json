@@ -1,0 +1,25 @@
+{
+ "id": "p5_bs5",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "study room booking",
+ "origin": "practice-05",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p5_bs5",
+  "personA": "Did you book a study room for tonight?",
+  "frame": [
+   "Yes, I reserved",
+   null,
+   null,
+   null,
+   "from six to eight."
+  ],
+  "answer": [
+   "the one",
+   "on",
+   "the third floor"
+  ],
+  "distractors": []
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "id": "p5_cr6",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "course registration",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_cr6",
+  "audio": [
+   {
+    "text": "Why can't I see my biology course on my schedule?",
+    "voice": "male:au"
+   }
+  ],
+  "options": [
+   "Biology is taught in the new science building across the street.",
+   "Yes, it meets on Monday mornings.",
+   "I can see the lake from my window.",
+   "Maybe the registration didn't go through; check your email."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "\"Why\" → a possible reason and a suggestion. A gives a place; C repeats \"see\" literally; B answers \"Yes\" to a \"why\" question.",
+   "tr": "\"Why\" → olası bir neden ve öneri. A yer söylüyor; C \"see\" kelimesini gerçek anlamıyla tekrar ediyor; B \"why\" sorusuna \"Yes\" diyor.",
+   "es": "\"Why\" → una posible razón y una sugerencia. A da un lugar; C repite \"see\" en sentido literal; B responde \"Yes\" a una pregunta con \"why\"."
+  }
+ }
+}

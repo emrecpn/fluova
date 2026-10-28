@@ -1,0 +1,29 @@
+{
+ "id": "p5_cr9",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "roommate agreement",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_cr9",
+  "audio": [
+   {
+    "text": "Have you signed the roommate agreement yet?",
+    "voice": "female:au"
+   }
+  ],
+  "options": [
+   "My roommate is from Brazil, actually.",
+   "I agree that the room is too small.",
+   "Not yet; I want to read the part about guests first.",
+   "Yes, I finally signed up for the gym and the pool on Monday."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "Yes/no question → \"not yet\" with a reason. A repeats \"roommate\" without answering; B repeats \"agree\" in another sense; D says \"Yes\" about something else.",
+   "tr": "Evet/hayır sorusu → gerekçeli \"henüz değil\". A \"roommate\" kelimesini cevap vermeden tekrar ediyor; B \"agree\" kelimesini başka anlamda kullanıyor; D başka bir şey için \"Yes\" diyor.",
+   "es": "Pregunta de sí/no → \"todavía no\" con un motivo. A repite \"roommate\" sin responder; B usa \"agree\" con otro sentido; D dice \"Yes\" sobre otra cosa."
+  }
+ }
+}

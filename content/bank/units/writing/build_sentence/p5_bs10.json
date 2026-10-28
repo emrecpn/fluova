@@ -1,0 +1,25 @@
+{
+ "id": "p5_bs10",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "missed dinner",
+ "origin": "practice-05",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p5_bs10",
+  "personA": "Why weren't you at the mentoring dinner?",
+  "frame": [
+   "I wanted to go, but",
+   null,
+   null,
+   null,
+   "until late."
+  ],
+  "answer": [
+   "my lab",
+   "didn't",
+   "end"
+  ],
+  "distractors": []
+ }
+}

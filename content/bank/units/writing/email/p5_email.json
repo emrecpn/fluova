@@ -1,0 +1,20 @@
+{
+ "id": "p5_email",
+ "task": "email",
+ "tier": "medium",
+ "topic": "maintenance request",
+ "origin": "practice-05",
+ "screen": {
+  "type": "writing",
+  "id": "p5_email",
+  "kind": "email",
+  "minutes": 7,
+  "wordTarget": {
+   "en": "Cover all three points in full sentences. Do not forget a closing.",
+   "tr": "Üç maddenin hepsini karşıla; tam cümleler kur. Kapanışı unutma.",
+   "es": "Cubre los tres puntos con oraciones completas. No olvides la despedida."
+  },
+  "prompt": "Write an email to Mr. Alvarez. In your email, do the following: (1) Describe the problem in your room. (2) Explain how it is affecting you. (3) Ask for a specific solution.",
+  "scenario": "The heater in your residence hall room stopped working eight days ago, and the nights have become very cold. You submitted an online maintenance request on the first day, but nobody has contacted you. Your final exams start next week. Mr. Alvarez is the manager of your residence hall."
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "id": "p5_cr5",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "bike share app",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_cr5",
+  "audio": [
+   {
+    "text": "Can you show me how to use the new bike share app?",
+    "voice": "female:gb"
+   }
+  ],
+  "options": [
+   "I usually walk to campus when it's sunny.",
+   "The app was free to download, I think.",
+   "Sure, open it and tap the map icon first.",
+   "I showed my photos to my family."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "Request → agreement with help. A and D do not respond to the request (D repeats \"show\" in another sense); B gives information but not the help that was asked for.",
+   "tr": "Rica → kabul ve yardım. A ve D ricaya cevap vermiyor (D \"show\" kelimesini başka anlamda tekrar ediyor); B bilgi veriyor ama istenen yardımı vermiyor.",
+   "es": "Petición → aceptación y ayuda. A y D no responden a la petición (D repite \"show\" con otro sentido); B da información pero no la ayuda que se pidió."
+  }
+ }
+}

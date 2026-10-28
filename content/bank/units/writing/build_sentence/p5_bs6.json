@@ -1,0 +1,29 @@
+{
+ "id": "p5_bs6",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "concert venue",
+ "origin": "practice-05",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p5_bs6",
+  "personA": "Do you know why the concert was moved?",
+  "frame": [
+   "The organizers said",
+   null,
+   null,
+   null,
+   null,
+   "for the audience."
+  ],
+  "answer": [
+   "the hall",
+   "was not",
+   "big",
+   "enough"
+  ],
+  "distractors": [
+   "too"
+  ]
+ }
+}

@@ -1,0 +1,88 @@
+{
+ "id": "p5_talk_beaver_dams",
+ "task": "talk",
+ "tier": "easy",
+ "topic": "beaver dams",
+ "origin": "practice-05",
+ "screen": {
+  "type": "listening",
+  "title": "Academic Talk: How beavers change rivers",
+  "prompt": "Listen to part of a lecture in a biology class.",
+  "audio": [
+   {
+    "text": "Beavers are famous for building dams across small rivers. They use sticks, mud and stones to block the water, and a pond forms behind the dam. The beavers build their homes in this pond, where they're safe from many animals. But the pond helps other living things too. Fish, frogs and birds find food and shelter in the still water.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "The dam also slows the river down, so during heavy rain, less water rushes downstream at once. And in dry summers, the pond holds water that would otherwise flow away. So one small animal can change a whole river valley.",
+    "voice": "male:gb"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p5_talk_beaver_dams_q1",
+    "stem": "What is the talk mainly about?",
+    "options": [
+     "How beavers choose the best rivers and streams to live in",
+     "How beaver dams affect rivers and other animals",
+     "Why fish and frogs prefer fast rivers",
+     "How people build dams on small rivers"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Main idea (paraphrase): beaver dams help other animals and change how the river flows. C contradicts \"still water\"; A and D are not discussed.",
+     "tr": "Ana fikir (parafraz): kunduz barajları başka hayvanlara yardım ediyor ve nehrin akışını değiştiriyor. C \"still water\" ile çelişiyor; A ve D ele alınmıyor.",
+     "es": "Idea principal (paráfrasis): las presas de los castores ayudan a otros animales y cambian el curso del río. C contradice \"still water\"; A y D no se tratan."
+    }
+   },
+   {
+    "id": "p5_talk_beaver_dams_q2",
+    "stem": "Why do beavers build their homes in the pond?",
+    "options": [
+     "The water there is warmer",
+     "They are safe there from many animals",
+     "There is more food at the bottom",
+     "The pond is close to the river bank"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail: their homes are in the pond, \"where they're safe from many animals\". A, C and D are not mentioned.",
+     "tr": "Ayrıntı: yuvaları göletin içinde, \"where they're safe from many animals\". A, C ve D hiç geçmiyor.",
+     "es": "Detalle: sus casas están en el estanque, \"where they're safe from many animals\". A, C y D no se mencionan."
+    }
+   },
+   {
+    "id": "p5_talk_beaver_dams_q3",
+    "stem": "What does the dam do during heavy rain?",
+    "options": [
+     "It breaks and lets all the water out",
+     "It sends more water downstream",
+     "It keeps the beavers out of the pond",
+     "It slows down the water going downstream"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Detail (paraphrase of \"less water rushes downstream at once\"). B is the opposite; A and C are not stated.",
+     "tr": "Ayrıntı (\"less water rushes downstream at once\" ifadesinin parafrazı). B tam tersi; A ve C söylenmiyor.",
+     "es": "Detalle (paráfrasis de \"less water rushes downstream at once\"). B es lo contrario; A y C no se dicen."
+    }
+   },
+   {
+    "id": "p5_talk_beaver_dams_q4",
+    "stem": "What does the professor mean when he says \"one small animal can change a whole river valley\"?",
+    "options": [
+     "Beavers have a large effect on the area around them",
+     "Beavers travel very long distances along rivers every year",
+     "Beavers are larger than most people think",
+     "Beavers destroy the rivers where they live"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Speaker's meaning: the dams change water, plants and animals across the valley. C takes \"small\" too literally; D reverses the positive effects; B is not mentioned.",
+     "tr": "Konuşmacının kastettiği: barajlar vadi boyunca suyu, bitkileri ve hayvanları değiştiriyor. C \"small\" kelimesini fazla gerçek anlamıyla alıyor; D olumlu etkileri tersine çeviriyor; B hiç geçmiyor.",
+     "es": "Lo que quiere decir: las presas cambian el agua, las plantas y los animales de todo el valle. C toma \"small\" demasiado al pie de la letra; D invierte los efectos positivos; B no se menciona."
+    }
+   }
+  ]
+ }
+}

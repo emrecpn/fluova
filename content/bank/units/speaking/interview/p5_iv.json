@@ -1,0 +1,43 @@
+{
+ "id": "p5_iv",
+ "task": "interview",
+ "tier": "medium",
+ "topic": "part-time jobs",
+ "origin": "practice-05",
+ "screen": {
+  "type": "interview",
+  "id": "p5_iv",
+  "scenario": {
+   "title": "Research study: students and part-time work",
+   "place": "Career center",
+   "intro": "A researcher from the career center is interviewing students about how they choose and balance part-time jobs."
+  },
+  "interviewerVoice": "female",
+  "questions": [
+   {
+    "level": "factual",
+    "text": "First, could you tell me whether you have a part-time job at the moment, and how many hours a week you usually work or would like to work?",
+    "prep": 3,
+    "respSeconds": 45
+   },
+   {
+    "level": "experience",
+    "text": "Can you describe a time when a job, or another regular responsibility, made it difficult to keep up with your studies? How did you deal with it?",
+    "prep": 3,
+    "respSeconds": 45
+   },
+   {
+    "level": "opinion",
+    "text": "Some people think students learn more from a part-time job than from many of their classes. Do you agree or disagree, and why?",
+    "prep": 3,
+    "respSeconds": 45
+   },
+   {
+    "level": "prediction",
+    "text": "How do you think the kinds of part-time jobs available to students will change over the next ten years?",
+    "prep": 3,
+    "respSeconds": 45
+   }
+  ]
+ }
+}

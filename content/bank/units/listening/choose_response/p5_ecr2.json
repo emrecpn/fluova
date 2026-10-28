@@ -1,0 +1,29 @@
+{
+ "id": "p5_ecr2",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "concert time",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_ecr2",
+  "audio": [
+   {
+    "text": "When does the concert start?",
+    "voice": "female:au"
+   }
+  ],
+  "options": [
+   "In the big hall.",
+   "Yes, it does.",
+   "I like jazz a lot.",
+   "At eight tonight."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "\"When\" → a time. A gives a place; C changes the subject; B answers \"Yes\" to a \"when\" question.",
+   "tr": "\"When\" → bir zaman. A yer veriyor; C konuyu değiştiriyor; B \"when\" sorusuna \"Yes\" diyor.",
+   "es": "\"When\" → un momento. A da un lugar; C cambia de tema; B responde \"Yes\" a una pregunta con \"when\"."
+  }
+ }
+}

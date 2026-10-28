@@ -1,0 +1,52 @@
+{
+ "id": "p5_ann_ticket_lottery",
+ "task": "announcement",
+ "tier": "hard",
+ "topic": "concert ticket lottery",
+ "origin": "practice-05",
+ "screen": {
+  "type": "listening",
+  "title": "Announcement: A lottery for concert tickets",
+  "prompt": "Listen to an announcement made to students.",
+  "audio": [
+   {
+    "text": "Good afternoon. Because tickets for the spring concert sold out within minutes last year, we're trying something different. Instead of selling tickets first come, first served, we'll hold a lottery. Enter online by Friday. Winners will be emailed on Monday and must pay within forty-eight hours, or their tickets will go to the next name on the list. Each student may enter only once.",
+    "voice": "female:au"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p5_ann_ticket_lottery_q1",
+    "stem": "Why is the lottery being introduced?",
+    "options": [
+     "The concert hall has fewer seats this year",
+     "The website could not handle online payments",
+     "Students complained that tickets were too expensive",
+     "Tickets were gone too quickly under the old system"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Reason (paraphrase of \"sold out within minutes last year\"). A, B and C give reasons the speaker never mentions.",
+     "tr": "Neden (\"sold out within minutes last year\" ifadesinin parafrazı). A, B ve C konuşmacının hiç söylemediği nedenler veriyor.",
+     "es": "Motivo (paráfrasis de \"sold out within minutes last year\"). A, B y C dan razones que la hablante nunca menciona."
+    }
+   },
+   {
+    "id": "p5_ann_ticket_lottery_q2",
+    "stem": "What will happen if a winner has not paid by Wednesday evening, more than two days after the email?",
+    "options": [
+     "The winner will be charged a late fee",
+     "The winner will be entered in next year's lottery",
+     "Another student will be offered the ticket",
+     "The ticket will be sold at the door instead"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Inference: winners are emailed on Monday and have forty-eight hours, so by Wednesday evening the time is up and the ticket \"will go to the next name on the list\". A, B and D are not stated.",
+     "tr": "Çıkarım: kazananlara Pazartesi e-posta gidiyor ve kırk sekiz saatleri var; Çarşamba akşamı süre dolmuş olur ve bilet \"listedeki bir sonraki isme\" geçer. A, B ve D söylenmiyor.",
+     "es": "Inferencia: a los ganadores se les escribe el lunes y tienen cuarenta y ocho horas, así que el miércoles por la tarde el plazo ha terminado y la entrada \"pasa al siguiente nombre de la lista\". A, B y D no se dicen."
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,50 @@
+{
+ "id": "p5_dl_study_room_app",
+ "task": "daily_life",
+ "tier": "medium",
+ "topic": "study room booking",
+ "origin": "practice-05",
+ "screen": {
+  "type": "passage",
+  "title": "Library notice: booking study rooms",
+  "directions": "Read in Daily Life (notice)",
+  "text": [
+   "<strong>Group Study Rooms — Now Booked Through the Campus App</strong>",
+   "Starting Monday, the paper sign-up sheets outside the group study rooms will be removed. Rooms can be reserved up to three days ahead in the Campus app, for a maximum of two hours a day per student. If your group has not arrived within fifteen minutes of the start time, the room will be released to anyone waiting. Students without a smartphone can ask the staff at the circulation desk to book a room for them."
+  ],
+  "questions": [
+   {
+    "id": "p5_dl_study_room_app_q1",
+    "stem": "What is the notice mainly about?",
+    "options": [
+     "A new procedure for getting a place to work with classmates",
+     "New opening hours for the library during exam weeks",
+     "A plan to add more group study rooms to the library",
+     "Rules about the noise level allowed in the group study rooms"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main idea (paraphrase): rooms are now reserved in the app instead of on paper sheets. B, C and D bring in topics the notice never mentions (hours, new rooms, noise).",
+     "tr": "Ana fikir (parafraz): odalar artık kâğıt listeler yerine uygulamadan ayırtılıyor. B, C ve D duyuruda hiç geçmeyen konular getiriyor (saatler, yeni odalar, gürültü).",
+     "es": "Idea principal (paráfrasis): las salas ahora se reservan en la app en lugar de en hojas de papel. B, C y D introducen temas que el aviso no menciona (horarios, salas nuevas, ruido)."
+    }
+   },
+   {
+    "id": "p5_dl_study_room_app_q2",
+    "stem": "A group reserved a room for 3:00 but arrives at 3:20. What will most likely happen?",
+    "options": [
+     "They will keep the room but lose twenty minutes of their time",
+     "They will have to ask the circulation desk to extend the booking",
+     "They may find that the room has been given to someone else",
+     "They will not be allowed to book a room again that week"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Inference: a room is \"released to anyone waiting\" after fifteen minutes, so at 3:20 it may already be taken. A assumes the booking still stands; D invents a penalty the notice does not state.",
+     "tr": "Çıkarım: on beş dakika içinde gelinmezse oda \"bekleyen herkese\" açılıyor; 3.20'de oda başkasına verilmiş olabilir. A rezervasyonun sürdüğünü varsayıyor; D duyuruda olmayan bir ceza uyduruyor.",
+     "es": "Inferencia: la sala se \"libera para quien esté esperando\" a los quince minutos, así que a las 3:20 puede estar ocupada. A supone que la reserva sigue; D inventa una sanción que el aviso no menciona."
+    }
+   }
+  ]
+ }
+}

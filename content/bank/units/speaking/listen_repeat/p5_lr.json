@@ -1,0 +1,26 @@
+{
+ "id": "p5_lr",
+ "task": "listen_repeat",
+ "tier": "medium",
+ "topic": "bike share orientation",
+ "origin": "practice-05",
+ "screen": {
+  "type": "listen_repeat",
+  "id": "p5_lr",
+  "scenario": {
+   "title": "Bike share introduction",
+   "place": "Bike share station, outside the student center",
+   "intro": "You are joining the campus bike share program. A staff member is explaining how it works to a small group of students. Listen and repeat what the staff member says."
+  },
+  "voice": "female",
+  "sentences": [
+   "Welcome to the bike share.",
+   "Hold your card near the screen.",
+   "The light turns green when the bike is unlocked.",
+   "Remember to adjust the seat before you start riding.",
+   "Your first thirty minutes are free, and after that you pay one dollar.",
+   "If a bike has a flat tire, press the red button so that our team can repair it.",
+   "When you return a bike, push it firmly into an empty dock and wait until you hear a short beep, or the ride will not end."
+  ]
+ }
+}

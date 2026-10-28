@@ -1,0 +1,99 @@
+{
+ "id": "p5_ac_printing_spelling",
+ "task": "academic",
+ "tier": "medium",
+ "topic": "printing and spelling",
+ "origin": "practice-05",
+ "screen": {
+  "type": "passage",
+  "title": "How Printing Changed Spelling",
+  "directions": "Read an Academic Passage — module 1",
+  "text": [
+   "Before the printing press reached England in the late fifteenth century, English spelling varied widely. Writers spelled words as they heard them, and the same scribe might write a common word in two or three ways on a single page.",
+   "Printing gradually reduced this variety. Because a printer produced hundreds of identical copies, readers across the country began to see the same forms again and again. Printers also had practical reasons to settle on fixed spellings, since consistent forms made it faster to set the metal type for each page.",
+   "The change was slow, however. Early printers sometimes added or removed letters simply to fill a line evenly, and many spellings did not become stable until dictionaries appeared in the eighteenth century. Even so, historians generally agree that printing started the movement toward standard spelling."
+  ],
+  "questions": [
+   {
+    "id": "p5_ac_printing_spelling_q1",
+    "stem": "What is the passage mainly about?",
+    "options": [
+     "Why scribes preferred writing by hand to using the printing press",
+     "How a machine for copying text made written words more alike",
+     "Why eighteenth-century dictionaries contained many spelling mistakes",
+     "How printers set metal type to produce identical pages quickly"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Main idea (paraphrase of \"printing started the movement toward standard spelling\"). D is only one supporting detail; C is not stated; A invents a preference.",
+     "tr": "Ana fikir (\"printing started the movement toward standard spelling\" ifadesinin parafrazı). D yalnızca destekleyici bir ayrıntı; C metinde yok; A bir tercih uyduruyor.",
+     "es": "Idea principal (paráfrasis de \"printing started the movement toward standard spelling\"). D es solo un detalle de apoyo; C no se dice; A inventa una preferencia."
+    }
+   },
+   {
+    "id": "p5_ac_printing_spelling_q2",
+    "stem": "The word \"settle on\" in paragraph 2 is closest in meaning to",
+    "options": [
+     "argue about",
+     "decide on",
+     "look for",
+     "write down"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Vocabulary in context: printers wanted to \"settle on fixed spellings\", that is, choose them and keep them. A is close to the opposite; C and D do not fit \"fixed spellings\".",
+     "tr": "Bağlamda kelime: matbaacılar \"settle on fixed spellings\" istiyordu, yani yazımları seçip korumak. A neredeyse tersi; C ve D \"fixed spellings\" ile uyuşmuyor.",
+     "es": "Vocabulario en contexto: los impresores querían \"settle on fixed spellings\", es decir, elegirlas y mantenerlas. A es casi lo contrario; C y D no encajan con \"fixed spellings\"."
+    }
+   },
+   {
+    "id": "p5_ac_printing_spelling_q3",
+    "stem": "Why does the author mention that printers added or removed letters to fill a line?",
+    "options": [
+     "To show that printing did not make spelling consistent right away",
+     "To explain why printed books were usually cheaper than handwritten ones",
+     "To suggest that printers did not know how to spell correctly",
+     "To prove that dictionaries were based on early printed books"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Author's purpose: the example supports \"The change was slow\". C reads too much into it: the letters changed for layout, not from ignorance. B and D are never discussed.",
+     "tr": "Yazarın amacı: örnek \"The change was slow\" ifadesini destekliyor. C fazla yorum katıyor: harfler bilgisizlikten değil sayfa düzeni için değişiyordu. B ve D hiç ele alınmıyor.",
+     "es": "Propósito del autor: el ejemplo apoya \"The change was slow\". C interpreta de más: las letras cambiaban por la maquetación, no por ignorancia. B y D no se tratan."
+    }
+   },
+   {
+    "id": "p5_ac_printing_spelling_q4",
+    "stem": "What can be inferred about spelling before the printing press?",
+    "options": [
+     "Most writers followed the rules of an early English dictionary",
+     "Spelling depended more on how words sounded to each writer",
+     "Only scribes in large cities were allowed to write official documents",
+     "Readers found handwritten texts easier to understand than printed ones"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Inference from \"Writers spelled words as they heard them\". A contradicts the timeline: dictionaries came much later. C and D are not supported.",
+     "tr": "\"Writers spelled words as they heard them\" ifadesinden çıkarım. A zaman sırasıyla çelişiyor: sözlükler çok sonra geldi. C ve D metinle desteklenmiyor.",
+     "es": "Inferencia a partir de \"Writers spelled words as they heard them\". A contradice la cronología: los diccionarios llegaron mucho después. C y D no tienen apoyo."
+    }
+   },
+   {
+    "id": "p5_ac_printing_spelling_q5",
+    "stem": "According to paragraph 2, why did printers prefer consistent spellings?",
+    "options": [
+     "Readers complained when words appeared in unfamiliar forms",
+     "The government required printers to use official spellings",
+     "It saved time when they were getting pages ready",
+     "Scribes refused to work with printers who changed spellings"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Detail (paraphrase of \"consistent forms made it faster to set the metal type\"). A, B and D give reasons the passage never mentions.",
+     "tr": "Ayrıntı (\"consistent forms made it faster to set the metal type\" ifadesinin parafrazı). A, B ve D metinde hiç geçmeyen gerekçeler veriyor.",
+     "es": "Detalle (paráfrasis de \"consistent forms made it faster to set the metal type\"). A, B y D dan razones que el texto nunca menciona."
+    }
+   }
+  ]
+ }
+}

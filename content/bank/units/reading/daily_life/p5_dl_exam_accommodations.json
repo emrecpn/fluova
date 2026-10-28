@@ -1,0 +1,66 @@
+{
+ "id": "p5_dl_exam_accommodations",
+ "task": "daily_life",
+ "tier": "hard",
+ "topic": "exam accommodations",
+ "origin": "practice-05",
+ "screen": {
+  "type": "passage",
+  "title": "Accessibility Office: exam accommodations",
+  "directions": "Read in Daily Life (policy notice)",
+  "text": [
+   "<strong>Accessibility Services — Requesting Exam Accommodations</strong>",
+   "Students registered with Accessibility Services who need extended time or a separate room for an exam must submit a request through the online portal at least seven days before the exam. Requests submitted later will be considered only if space and staff are available, and approval cannot be guaranteed. Instructors are notified automatically once a request is approved, so students need not deliver letters in person. Accommodations approved for midterm exams do not carry over to final exams; a new request is required for each."
+  ],
+  "questions": [
+   {
+    "id": "p5_dl_exam_accommodations_q1",
+    "stem": "What is the main purpose of the notice?",
+    "options": [
+     "To explain how and when students should ask for special exam arrangements",
+     "To announce that the Accessibility Services office is moving to a new building",
+     "To tell instructors how to prepare separate rooms for their final exams",
+     "To invite students to register with Accessibility Services before midterms"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main purpose (paraphrase): the notice sets out the procedure and the deadline for accommodation requests. C reverses the audience: instructors are only notified. D is a precondition, not the purpose.",
+     "tr": "Ana amaç (parafraz): duyuru düzenleme taleplerinin nasıl ve ne zamana kadar yapılacağını anlatıyor. C hitap edilen kişiyi tersine çeviriyor; öğretim üyeleri yalnızca bilgilendiriliyor. D bir ön koşul, amaç değil.",
+     "es": "Propósito principal (paráfrasis): el aviso explica el procedimiento y el plazo para pedir adaptaciones. C invierte el destinatario: a los profesores solo se les avisa. D es un requisito previo, no el propósito."
+    }
+   },
+   {
+    "id": "p5_dl_exam_accommodations_q2",
+    "stem": "A student submits a request four days before an exam. What can be inferred?",
+    "options": [
+     "The request will be rejected without being reviewed",
+     "The student must deliver a letter to the instructor in person",
+     "The request might be approved, but only if resources allow",
+     "The exam will be moved to give the office more time"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Inference: late requests are \"considered only if space and staff are available\", so approval is possible but uncertain. A goes too far (\"rejected without being reviewed\"); B contradicts \"need not deliver letters in person\".",
+     "tr": "Çıkarım: geç talepler \"yer ve personel varsa\" değerlendiriliyor; onay mümkün ama kesin değil. A fazla ileri gidiyor (\"incelenmeden reddedilir\"); B \"need not deliver letters in person\" ifadesiyle çelişiyor.",
+     "es": "Inferencia: las solicitudes tardías se consideran \"solo si hay espacio y personal\", así que la aprobación es posible pero no segura. A va demasiado lejos (\"rechazada sin revisarla\"); B contradice \"need not deliver letters in person\"."
+    }
+   },
+   {
+    "id": "p5_dl_exam_accommodations_q3",
+    "stem": "According to the notice, what must a student who had extended time for a midterm do before the final exam?",
+    "options": [
+     "Nothing, because the midterm arrangement continues automatically",
+     "Ask the instructor to sign a letter confirming the arrangement",
+     "Register again with Accessibility Services as a new student",
+     "Ask once more, because each permission lasts for one exam period"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Detail (paraphrase): approvals \"do not carry over to final exams; a new request is required\". A is the trap: it assumes the midterm approval continues. C confuses a new request with a new registration.",
+     "tr": "Ayrıntı (parafraz): onaylar \"final sınavlarına geçmiyor; yeni bir talep gerekiyor\". A tuzak: ara sınav onayının sürdüğünü varsayıyor. C yeni talebi yeni kayıtla karıştırıyor.",
+     "es": "Detalle (paráfrasis): las aprobaciones \"no se trasladan a los exámenes finales; se necesita una nueva solicitud\". A es la trampa: supone que la aprobación del parcial sigue. C confunde una nueva solicitud con un nuevo registro."
+    }
+   }
+  ]
+ }
+}

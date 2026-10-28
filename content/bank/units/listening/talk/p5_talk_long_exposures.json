@@ -1,0 +1,92 @@
+{
+ "id": "p5_talk_long_exposures",
+ "task": "talk",
+ "tier": "hard",
+ "topic": "early photography",
+ "origin": "practice-05",
+ "screen": {
+  "type": "listening",
+  "title": "Academic Talk: Why early photos look empty",
+  "prompt": "Listen to part of a lecture in a history of photography class.",
+  "audio": [
+   {
+    "text": "Let's look at one of the earliest photographs of people, taken in Paris in 1838 by Louis Daguerre. It shows a boulevard that was normally full of traffic, yet the street appears almost empty. The reason is the exposure time. Daguerre's plates needed several minutes of light to record an image, so anything that moved, such as carriages or people walking, simply didn't stay in one place long enough to appear.",
+    "voice": "female:au"
+   },
+   {
+    "text": "There's one exception, though, and it's easy to miss. In the lower corner, you can make out a man who seems to be having his boots polished. Because he stood still for minutes, he became, quite by accident, one of the first people ever photographed.",
+    "voice": "female:au"
+   },
+   {
+    "text": "Long exposures shaped early portrait photography too. Sitters had to hold their position for a long time, and studios used hidden metal stands to support their heads. This is one reason people in early portraits rarely smile: holding a natural smile for that long is almost impossible. As the chemistry improved over the following decades, exposure times dropped to a few seconds, and photographers could finally capture busy streets as they really looked.",
+    "voice": "female:au"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p5_talk_long_exposures_q1",
+    "stem": "What is the talk mainly about?",
+    "options": [
+     "How the long time needed to record an image affected early photographs",
+     "Why Louis Daguerre preferred photographing empty streets to photographing people",
+     "How studios built metal stands for early portrait cameras",
+     "Why people in the 1800s rarely smiled in daily life"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main idea (paraphrase): exposure time explains the empty street, the accidental portrait and the serious faces. C and D twist details about portraits; B is never stated.",
+     "tr": "Ana fikir (parafraz): pozlama süresi boş sokağı, tesadüfi portreyi ve ciddi yüzleri açıklıyor. C ve D portrelerle ilgili ayrıntıları çarpıtıyor; B hiç söylenmiyor.",
+     "es": "Idea principal (paráfrasis): el tiempo de exposición explica la calle vacía, el retrato accidental y las caras serias. C y D deforman detalles sobre los retratos; B no se dice."
+    }
+   },
+   {
+    "id": "p5_talk_long_exposures_q2",
+    "stem": "According to the professor, why does the street in the photograph look empty?",
+    "options": [
+     "It was photographed very early in the morning",
+     "The city had closed the boulevard that day",
+     "People and carriages moved too much to be recorded",
+     "Daguerre removed the people from the image later"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Detail (paraphrase of \"anything that moved ... didn't stay in one place long enough to appear\"). A and B offer explanations the professor does not give; D is invented.",
+     "tr": "Ayrıntı (\"anything that moved ... didn't stay in one place long enough to appear\" ifadesinin parafrazı). A ve B profesörün vermediği açıklamalar; D uydurma.",
+     "es": "Detalle (paráfrasis de \"anything that moved ... didn't stay in one place long enough to appear\"). A y B dan explicaciones que la profesora no da; D es inventada."
+    }
+   },
+   {
+    "id": "p5_talk_long_exposures_q3",
+    "stem": "Why does the professor mention the man having his boots polished?",
+    "options": [
+     "To show that only people who stayed still could appear in the picture",
+     "To describe the kind of work that was common in Paris in 1838",
+     "To explain why Daguerre chose that particular boulevard for his photograph",
+     "To suggest that the man knew he was being photographed"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Function: he appears because \"he stood still for minutes\", which confirms the explanation about exposure time. D contradicts \"quite by accident\"; B and C are not the point.",
+     "tr": "İşlev: adam \"dakikalarca kıpırdamadan durduğu\" için görünüyor; bu da pozlama süresi açıklamasını doğruluyor. D \"quite by accident\" ile çelişiyor; B ve C asıl amaç değil.",
+     "es": "Función: el hombre aparece porque \"se quedó quieto varios minutos\", lo que confirma la explicación sobre el tiempo de exposición. D contradice \"quite by accident\"; B y C no son la idea."
+    }
+   },
+   {
+    "id": "p5_talk_long_exposures_q4",
+    "stem": "What can be inferred about photographs taken later in the nineteenth century?",
+    "options": [
+     "They were more likely to show moving crowds in the street",
+     "They required even longer exposure times than Daguerre's",
+     "They no longer needed any chemistry to record an image",
+     "They showed fewer people because cameras became smaller"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference: when exposure times \"dropped to a few seconds\", photographers \"could finally capture busy streets\". B reverses the change; C overstates it; D is not supported.",
+     "tr": "Çıkarım: pozlama süreleri \"birkaç saniyeye düşünce\" fotoğrafçılar \"nihayet kalabalık sokakları çekebildi\". B değişimi tersine çeviriyor; C abartıyor; D desteklenmiyor.",
+     "es": "Inferencia: cuando la exposición \"bajó a unos segundos\", los fotógrafos \"por fin pudieron captar calles concurridas\". B invierte el cambio; C lo exagera; D no tiene apoyo."
+    }
+   }
+  ]
+ }
+}

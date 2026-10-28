@@ -1,0 +1,29 @@
+{
+ "id": "p5_hcr2",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "heater repair",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_hcr2",
+  "audio": [
+   {
+    "text": "I can't believe maintenance still hasn't fixed my heater.",
+    "voice": "female:gb"
+   }
+  ],
+  "options": [
+   "Office hours are listed on the course syllabus.",
+   "I can't believe how fast this semester has gone by, honestly.",
+   "Yes, the heater was installed last year.",
+   "Have you tried calling them instead of using the form?"
+  ],
+  "answer": 3,
+  "why": {
+   "en": "Complaint → a practical suggestion. A has nothing to do with the complaint; B repeats \"can't believe\" about something else; C says \"Yes\" and gives an irrelevant fact.",
+   "tr": "Şikâyet → pratik bir öneri. A şikâyetle ilgisiz; B \"can't believe\" ifadesini başka bir konuda tekrar ediyor; C \"Yes\" diyor ve ilgisiz bir bilgi veriyor.",
+   "es": "Queja → una sugerencia práctica. A no tiene relación con la queja; B repite \"can't believe\" sobre otra cosa; C dice \"Yes\" y da un dato que no viene al caso."
+  }
+ }
+}

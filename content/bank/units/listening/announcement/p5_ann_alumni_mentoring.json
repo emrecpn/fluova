@@ -1,0 +1,52 @@
+{
+ "id": "p5_ann_alumni_mentoring",
+ "task": "announcement",
+ "tier": "medium",
+ "topic": "alumni mentoring",
+ "origin": "practice-05",
+ "screen": {
+  "type": "listening",
+  "title": "Announcement: Alumni mentoring program",
+  "prompt": "Listen to an announcement made to students.",
+  "audio": [
+   {
+    "text": "Attention, third- and fourth-year students. Applications are now open for the alumni mentoring program, which pairs you with a graduate who works in your field for one semester. Mentors and students usually meet online once a month. The program has room for sixty pairs, and last year more than two hundred students applied, so please don't wait until the deadline on November fifteenth.",
+    "voice": "male:gb"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p5_ann_alumni_mentoring_q1",
+    "stem": "What is the alumni mentoring program?",
+    "options": [
+     "A class taught by graduates during the summer",
+     "A plan that matches students with former students in their field",
+     "A job fair where companies meet fourth-year students",
+     "A monthly online meeting that is open to every third-year student in the school"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail (paraphrase of \"pairs you with a graduate who works in your field\"). D misuses \"online once a month\", which describes the meetings of each pair; A and C are not mentioned.",
+     "tr": "Ayrıntı (\"pairs you with a graduate who works in your field\" ifadesinin parafrazı). D her eşin buluşmalarını anlatan \"online once a month\" ifadesini yanlış kullanıyor; A ve C hiç geçmiyor.",
+     "es": "Detalle (paráfrasis de \"pairs you with a graduate who works in your field\"). D usa mal \"online once a month\", que describe las reuniones de cada pareja; A y C no se mencionan."
+    }
+   },
+   {
+    "id": "p5_ann_alumni_mentoring_q2",
+    "stem": "Why does the speaker mention last year's applications?",
+    "options": [
+     "To show that the program is likely to fill up",
+     "To explain why the deadline has been moved",
+     "To announce that the program will accept more pairs",
+     "To thank students for their interest last year"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Function: more than two hundred applicants for sixty places shows that space runs out, so students should apply early. B and C are not stated; D is not the point.",
+     "tr": "İşlev: altmış yer için iki yüzden fazla başvuru, yerlerin dolduğunu gösteriyor; öğrenciler erken başvurmalı. B ve C söylenmiyor; D asıl amaç değil.",
+     "es": "Función: más de doscientas solicitudes para sesenta plazas muestra que las plazas se agotan, así que conviene presentarse pronto. B y C no se dicen; D no es la idea."
+    }
+   }
+  ]
+ }
+}

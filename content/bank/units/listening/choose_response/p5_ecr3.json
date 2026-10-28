@@ -1,0 +1,29 @@
+{
+ "id": "p5_ecr3",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "bus pass price",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_ecr3",
+  "audio": [
+   {
+    "text": "How much is a bus pass?",
+    "voice": "male:gb"
+   }
+  ],
+  "options": [
+   "At the front desk.",
+   "I passed my test.",
+   "Twenty dollars a month.",
+   "It's very fast."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "\"How much\" → a price. A gives a place; B repeats a similar word (\"passed\"); D describes the bus.",
+   "tr": "\"How much\" → bir fiyat. A yer veriyor; B benzer bir kelimeyi (\"passed\") tekrar ediyor; D otobüsü anlatıyor.",
+   "es": "\"How much\" → un precio. A da un lugar; B repite una palabra parecida (\"passed\"); D describe el autobús."
+  }
+ }
+}

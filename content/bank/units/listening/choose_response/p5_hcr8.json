@@ -1,0 +1,29 @@
+{
+ "id": "p5_hcr8",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "booking app",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_hcr8",
+  "audio": [
+   {
+    "text": "Is it just me, or is the study room app impossible to use?",
+    "voice": "female:gb"
+   }
+  ],
+  "options": [
+   "Just me and two friends from my class.",
+   "The study rooms are all on the second floor of the library.",
+   "I use my phone mostly for music.",
+   "It took me a few tries, but you get used to it."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "\"Is it just me\" asks for agreement → a partial agreement with encouragement. A takes \"just me\" literally; B gives a place; C repeats \"use\" without answering.",
+   "tr": "\"Is it just me\" onay istiyor → kısmen katılan ve cesaret veren bir cevap. A \"just me\" ifadesini gerçek anlamıyla alıyor; B yer söylüyor; C \"use\" kelimesini cevap vermeden tekrar ediyor.",
+   "es": "\"Is it just me\" busca acuerdo → un acuerdo parcial con ánimo. A toma \"just me\" en sentido literal; B da un lugar; C repite \"use\" sin responder."
+  }
+ }
+}

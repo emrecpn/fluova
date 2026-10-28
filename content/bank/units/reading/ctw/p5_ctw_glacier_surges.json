@@ -1,0 +1,12 @@
+{
+ "id": "p5_ctw_glacier_surges",
+ "task": "ctw",
+ "tier": "hard",
+ "topic": "glacier surges",
+ "origin": "practice-05",
+ "screen": {
+  "type": "ctw",
+  "title": "Complete the Words: Glacier surges",
+  "source": "Most glaciers advance at a pace of a few meters per year, but a small proportion periodically accelerate dramatically. During these episodes, known as surges, a glacier may travel tens of meters per day for several months before returning to its customary slow movement. Researchers attribute surges principally to conditions at the glacier's base, where meltwater can accumulate under considerable pressure. Once sufficient water collects, it partially separates the ice from the underlying rock, substantially reducing friction. Because these conditions develop gradually, surges frequently recur at remarkably regular intervals."
+ }
+}

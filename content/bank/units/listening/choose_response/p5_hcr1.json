@@ -1,0 +1,29 @@
+{
+ "id": "p5_hcr1",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "mentoring dinner",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_hcr1",
+  "audio": [
+   {
+    "text": "You're coming to the alumni mentoring dinner, aren't you?",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "The dinner menu has three vegetarian options.",
+   "Yes, alumni pay a small fee to attend.",
+   "I came to campus by train this morning.",
+   "I wouldn't miss it; my mentor is flying in for it."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "Indirect \"yes\": \"I wouldn't miss it\" means she is definitely going. A describes the menu; C repeats \"came\" about something else; B says \"Yes\" but gives unrelated information.",
+   "tr": "Dolaylı \"evet\": \"I wouldn't miss it\" kesinlikle gideceği anlamına geliyor. A menüyü anlatıyor; C \"came\" kelimesini başka bir şey için tekrar ediyor; B \"Yes\" diyor ama ilgisiz bilgi veriyor.",
+   "es": "Un \"sí\" indirecto: \"I wouldn't miss it\" significa que irá sin falta. A describe el menú; C repite \"came\" sobre otra cosa; B dice \"Yes\" pero da información que no viene al caso."
+  }
+ }
+}

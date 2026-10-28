@@ -1,0 +1,29 @@
+{
+ "id": "p5_cr4",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "guest speaker",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_cr4",
+  "audio": [
+   {
+    "text": "Who's giving the guest talk on Thursday?",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "On Thursday at four, in the main hall.",
+   "I gave my first talk in front of a big audience last semester.",
+   "Yes, I'm going with my roommate.",
+   "A journalist who covered the last Olympics, I think."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "\"Who\" → a person. A gives a time and place; B repeats \"talk\" about something else; C answers \"Yes\" to a \"who\" question.",
+   "tr": "\"Who\" → bir kişi. A saat ve yer veriyor; B \"talk\" kelimesini başka bir konu için tekrar ediyor; C \"who\" sorusuna \"Yes\" diyor.",
+   "es": "\"Who\" → una persona. A da una hora y un lugar; B repite \"talk\" sobre otra cosa; C responde \"Yes\" a una pregunta con \"who\"."
+  }
+ }
+}

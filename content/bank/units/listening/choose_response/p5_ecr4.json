@@ -1,0 +1,29 @@
+{
+ "id": "p5_ecr4",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "academic advisor",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_ecr4",
+  "audio": [
+   {
+    "text": "Who is your academic advisor?",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "Every Tuesday.",
+   "I need some advice about my classes.",
+   "In room nine.",
+   "Professor Lin, in History."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "\"Who\" → a person. A gives a day; B repeats a similar word (\"advice\"); C gives a place.",
+   "tr": "\"Who\" → bir kişi. A gün veriyor; B benzer bir kelimeyi (\"advice\") tekrar ediyor; C yer veriyor.",
+   "es": "\"Who\" → una persona. A da un día; B repite una palabra parecida (\"advice\"); C da un lugar."
+  }
+ }
+}

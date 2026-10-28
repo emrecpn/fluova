@@ -1,0 +1,29 @@
+{
+ "id": "p5_hcr3",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "résumé workshop",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_hcr3",
+  "audio": [
+   {
+    "text": "Do you happen to know if the résumé workshop is still on?",
+    "voice": "male:au"
+   }
+  ],
+  "options": [
+   "As far as I know, nothing has changed.",
+   "I happened to see her at the café earlier.",
+   "My résumé is still two pages long.",
+   "It's on the table by the front door."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Indirect \"yes\": nothing has changed, so the workshop is still happening. B repeats \"happen\"; C repeats \"résumé\" and \"still\"; D takes \"on\" literally.",
+   "tr": "Dolaylı \"evet\": hiçbir şey değişmemiş, yani atölye yapılıyor. B \"happen\" kelimesini tekrar ediyor; C \"résumé\" ve \"still\" kelimelerini tekrar ediyor; D \"on\" kelimesini gerçek anlamıyla alıyor.",
+   "es": "Un \"sí\" indirecto: nada ha cambiado, así que el taller sigue en pie. B repite \"happen\"; C repite \"résumé\" y \"still\"; D toma \"on\" en sentido literal."
+  }
+ }
+}

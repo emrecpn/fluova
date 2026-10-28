@@ -1,0 +1,12 @@
+{
+ "id": "p5_ctw_thunder_and_lightning",
+ "task": "ctw",
+ "tier": "easy",
+ "topic": "thunder",
+ "origin": "practice-05",
+ "screen": {
+  "type": "ctw",
+  "title": "Complete the Words: Thunder and lightning",
+  "source": "During a storm, we usually see lightning before we hear thunder. Both happen at the same moment, but light travels much faster than sound. Light reaches our eyes almost at once, while sound needs about three seconds to travel one kilometer. People can count the seconds between the flash and the noise to guess how far away the storm is. If the gap gets shorter, the storm is coming closer."
+ }
+}

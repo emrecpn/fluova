@@ -1,0 +1,27 @@
+{
+ "id": "p5_bs2",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "bike shop hours",
+ "origin": "practice-05",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p5_bs2",
+  "personA": "Do you know when the bike shop opens?",
+  "frame": [
+   "I'm not sure, but",
+   null,
+   null,
+   null,
+   null,
+   "on weekdays."
+  ],
+  "answer": [
+   "I",
+   "think",
+   "it opens",
+   "at nine"
+  ],
+  "distractors": []
+ }
+}

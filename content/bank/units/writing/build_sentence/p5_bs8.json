@@ -1,0 +1,27 @@
+{
+ "id": "p5_bs8",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "health center hours",
+ "origin": "practice-05",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p5_bs8",
+  "personA": "Is the health center open on Sunday?",
+  "frame": [
+   "Only for emergencies, so",
+   null,
+   null,
+   null,
+   null,
+   "until Monday."
+  ],
+  "answer": [
+   "you'll",
+   "have",
+   "to",
+   "wait"
+  ],
+  "distractors": []
+ }
+}

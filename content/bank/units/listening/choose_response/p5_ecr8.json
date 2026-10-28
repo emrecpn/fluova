@@ -1,0 +1,29 @@
+{
+ "id": "p5_ecr8",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "tired today",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_ecr8",
+  "audio": [
+   {
+    "text": "Why are you so tired today?",
+    "voice": "female:au"
+   }
+  ],
+  "options": [
+   "Yes, I am.",
+   "Tomorrow morning.",
+   "It's a really nice day for a walk.",
+   "I studied until two last night."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "\"Why\" → a reason. A answers \"Yes\"; B gives a time; C repeats \"day\" without answering.",
+   "tr": "\"Why\" → bir neden. A \"Yes\" diyor; B zaman veriyor; C \"day\" kelimesini cevap vermeden tekrar ediyor.",
+   "es": "\"Why\" → una razón. A responde \"Yes\"; B da un momento; C repite \"day\" sin responder."
+  }
+ }
+}

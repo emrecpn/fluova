@@ -1,0 +1,52 @@
+{
+ "id": "p5_ann_elevator_repairs",
+ "task": "announcement",
+ "tier": "easy",
+ "topic": "elevator repairs",
+ "origin": "practice-05",
+ "screen": {
+  "type": "listening",
+  "title": "Announcement: Elevator repairs",
+  "prompt": "Listen to an announcement made to students.",
+  "audio": [
+   {
+    "text": "Hello, residents of Oak Hall. The elevator will be closed for repairs from Monday to Wednesday next week. Please use the stairs during this time. If you need help carrying something heavy, ask at the front desk, and a staff member will help you. Thank you.",
+    "voice": "male:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p5_ann_elevator_repairs_q1",
+    "stem": "What is the announcement about?",
+    "options": [
+     "A new elevator in Oak Hall",
+     "An elevator that will not work for a few days",
+     "A change in the front desk hours",
+     "A fire drill next Wednesday"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Main idea (paraphrase of \"closed for repairs from Monday to Wednesday\"). A confuses repairs with a new elevator; C and D are not mentioned.",
+     "tr": "Ana fikir (\"closed for repairs from Monday to Wednesday\" ifadesinin parafrazı). A onarımı yeni asansörle karıştırıyor; C ve D hiç geçmiyor.",
+     "es": "Idea principal (paráfrasis de \"closed for repairs from Monday to Wednesday\"). A confunde la reparación con un ascensor nuevo; C y D no se mencionan."
+    }
+   },
+   {
+    "id": "p5_ann_elevator_repairs_q2",
+    "stem": "What should residents do if they need help with something heavy?",
+    "options": [
+     "Call the repair company",
+     "Wait until Thursday",
+     "Ask at the front desk",
+     "Use the elevator anyway"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Detail: \"ask at the front desk, and a staff member will help you\". B and D are not suggested; A is never mentioned.",
+     "tr": "Ayrıntı: \"ask at the front desk, and a staff member will help you\". B ve D önerilmiyor; A hiç geçmiyor.",
+     "es": "Detalle: \"ask at the front desk, and a staff member will help you\". B y D no se proponen; A no se menciona."
+    }
+   }
+  ]
+ }
+}

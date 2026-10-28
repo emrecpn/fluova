@@ -1,0 +1,68 @@
+{
+ "id": "p5_conv_museum_job",
+ "task": "conversation",
+ "tier": "hard",
+ "topic": "campus job interview",
+ "origin": "practice-05",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: An on-campus job interview",
+  "prompt": "Listen to a conversation between a student and the manager of the campus museum.",
+  "audio": [
+   {
+    "text": "Thanks for coming in. The front-desk job here is mostly weekends. Is that a problem?",
+    "voice": "male:us"
+   },
+   {
+    "text": "Saturdays are fine, but I have a lab on Sunday mornings until noon.",
+    "voice": "female:gb"
+   },
+   {
+    "text": "Hmm. We open at ten on Sundays. Could you do afternoons only?",
+    "voice": "male:us"
+   },
+   {
+    "text": "Definitely, from one o'clock on.",
+    "voice": "female:gb"
+   },
+   {
+    "text": "Good. Most of our weekend visitors come after lunch anyway, so that might actually suit us better.",
+    "voice": "male:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p5_conv_museum_job_q1",
+    "stem": "What problem comes up during the interview?",
+    "options": [
+     "The student cannot work on Saturdays",
+     "The museum is closed on Sunday mornings",
+     "The student's class schedule overlaps with part of the job",
+     "The manager needs someone only on weekdays during the busy season"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Problem (paraphrase): her Sunday lab runs until noon, but the museum opens at ten. A contradicts \"Saturdays are fine\"; B contradicts \"We open at ten on Sundays\"; D contradicts \"mostly weekends\".",
+     "tr": "Sorun (parafraz): Pazar laboratuvarı öğlene kadar sürüyor, müze ise onda açılıyor. A \"Saturdays are fine\" ile, B \"We open at ten on Sundays\" ile, D \"mostly weekends\" ile çelişiyor.",
+     "es": "Problema (paráfrasis): su laboratorio del domingo dura hasta el mediodía, pero el museo abre a las diez. A contradice \"Saturdays are fine\"; B contradice \"We open at ten on Sundays\"; D contradice \"mostly weekends\"."
+    }
+   },
+   {
+    "id": "p5_conv_museum_job_q2",
+    "stem": "What does the manager imply at the end of the conversation?",
+    "options": [
+     "The student will need to change her lab to another day",
+     "The student's limited Sunday hours may not be a disadvantage",
+     "The museum will start opening later on Sundays",
+     "He will have to find a second person to cover Sunday mornings"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Inference: since most visitors \"come after lunch anyway\", afternoons \"might actually suit us better\". D may be true but is not what he implies; A and C are never suggested.",
+     "tr": "Çıkarım: ziyaretçilerin çoğu \"zaten öğleden sonra\" geldiği için öğleden sonraları \"işimize daha iyi gelebilir\". D doğru olabilir ama onun ima ettiği bu değil; A ve C hiç önerilmiyor.",
+     "es": "Inferencia: como la mayoría de visitantes \"viene después de comer de todos modos\", las tardes \"podrían venirnos mejor\". D podría ser cierto pero no es lo que él da a entender; A y C no se proponen."
+    }
+   }
+  ]
+ }
+}

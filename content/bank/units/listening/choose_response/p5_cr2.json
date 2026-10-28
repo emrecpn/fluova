@@ -1,0 +1,29 @@
+{
+ "id": "p5_cr2",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "lab report",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_cr2",
+  "audio": [
+   {
+    "text": "Where should I hand in the lab report?",
+    "voice": "male:gb"
+   }
+  ],
+  "options": [
+   "Put your lab report in the box outside room 210.",
+   "The lab report should be about five pages long.",
+   "I handed out the flyers this morning.",
+   "Yes, the lab closes at six today."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "\"Where\" → a place. B gives a length; C repeats \"handed\" with a different meaning; D answers \"Yes\" to a \"where\" question.",
+   "tr": "\"Where\" → bir yer. B uzunluk söylüyor; C \"handed\" kelimesini başka anlamda tekrar ediyor; D \"where\" sorusuna \"Yes\" diyor.",
+   "es": "\"Where\" → un lugar. B da una extensión; C repite \"handed\" con otro sentido; D responde \"Yes\" a una pregunta con \"where\"."
+  }
+ }
+}

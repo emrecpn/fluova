@@ -1,0 +1,29 @@
+{
+ "id": "p5_cr7",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "career center",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_cr7",
+  "audio": [
+   {
+    "text": "Should we take the bus or walk to the career center?",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "The career center can help you with your résumé.",
+   "I took the bus to the airport last month.",
+   "Yes, we should go there together.",
+   "Let's walk; it's a nice day and it isn't far."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "Choice question → a choice with a reason. A describes the place; B repeats \"took the bus\" about another trip; C answers \"Yes\" to an either/or question.",
+   "tr": "Seçim sorusu → gerekçeli bir seçim. A yeri anlatıyor; B \"took the bus\" ifadesini başka bir yolculuk için tekrar ediyor; C \"ya o ya bu\" sorusuna \"Yes\" diyor.",
+   "es": "Pregunta de elección → una elección con un motivo. A describe el lugar; B repite \"took the bus\" sobre otro viaje; C responde \"Yes\" a una pregunta de \"esto o aquello\"."
+  }
+ }
+}

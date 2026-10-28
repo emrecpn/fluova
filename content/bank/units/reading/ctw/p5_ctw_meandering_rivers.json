@@ -1,0 +1,12 @@
+{
+ "id": "p5_ctw_meandering_rivers",
+ "task": "ctw",
+ "tier": "medium",
+ "topic": "river shape",
+ "origin": "practice-05",
+ "screen": {
+  "type": "ctw",
+  "title": "Complete the Words: Meandering rivers",
+  "source": "Rivers that flow across flat land rarely stay straight for long. Water moves faster along the outside of a bend, so it wears away that bank and carries the loose soil downstream. On the inside of the bend, the water slows down and drops sand and gravel. Over many years, this process makes each curve wider and pushes it slowly across the valley. Eventually two bends may meet, and the river takes the shorter path, leaving behind a curved lake."
+ }
+}

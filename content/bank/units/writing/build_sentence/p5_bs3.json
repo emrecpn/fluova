@@ -1,0 +1,27 @@
+{
+ "id": "p5_bs3",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "roommate agreement",
+ "origin": "practice-05",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p5_bs3",
+  "personA": "How is it going with your new roommate?",
+  "frame": [
+   "Much better since",
+   null,
+   null,
+   null,
+   null,
+   "about quiet hours."
+  ],
+  "answer": [
+   "we",
+   "wrote",
+   "an agreement",
+   "together"
+  ],
+  "distractors": []
+ }
+}

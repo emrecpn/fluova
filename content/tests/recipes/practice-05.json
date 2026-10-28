@@ -1,0 +1,100 @@
+{
+ "id": "practice-05",
+ "title": "Fluova Practice Test 5",
+ "version": "1.0.0",
+ "level": "real",
+ "authors": [
+  "Fluova contributors"
+ ],
+ "notes": "Spec-faithful test assembled from the question bank (all units new). Explanations in English, Turkish and Spanish.",
+ "sections": {
+  "reading": {
+   "screens": [
+    "p5_ctw_meandering_rivers",
+    "p5_ctw_flavor_and_smell",
+    "p5_dl_study_room_app",
+    "p5_dl_payment_plan",
+    "p5_ac_printing_spelling"
+   ],
+   "hard": [
+    "p5_ctw_glacier_surges",
+    "p5_dl_exam_accommodations",
+    "p5_ac_sticky_wages"
+   ],
+   "easy": [
+    "p5_ctw_thunder_and_lightning",
+    "p5_dl_bike_share",
+    "p5_ac_night_flowers"
+   ]
+  },
+  "listening": {
+   "screens": [
+    "p5_cr1",
+    "p5_cr2",
+    "p5_cr3",
+    "p5_cr4",
+    "p5_cr5",
+    "p5_cr6",
+    "p5_cr7",
+    "p5_cr8",
+    "p5_cr9",
+    "p5_conv_registration_mixup",
+    "p5_conv_resume_review",
+    "p5_conv_guest_speaker",
+    "p5_ann_flu_shots",
+    "p5_ann_alumni_mentoring",
+    "p5_talk_fog"
+   ],
+   "hard": [
+    "p5_hcr1",
+    "p5_hcr2",
+    "p5_hcr3",
+    "p5_hcr4",
+    "p5_hcr5",
+    "p5_hcr6",
+    "p5_hcr7",
+    "p5_hcr8",
+    "p5_conv_replacement_fee",
+    "p5_conv_museum_job",
+    "p5_ann_ticket_lottery",
+    "p5_talk_ice_cores",
+    "p5_talk_long_exposures"
+   ],
+   "easy": [
+    "p5_ecr1",
+    "p5_ecr2",
+    "p5_ecr3",
+    "p5_ecr4",
+    "p5_ecr5",
+    "p5_ecr6",
+    "p5_ecr7",
+    "p5_ecr8",
+    "p5_conv_lab_report_format",
+    "p5_ann_elevator_repairs",
+    "p5_talk_beaver_dams"
+   ]
+  },
+  "writing": {
+   "screens": [
+    "p5_bs1",
+    "p5_bs2",
+    "p5_bs3",
+    "p5_bs4",
+    "p5_bs5",
+    "p5_bs6",
+    "p5_bs7",
+    "p5_bs8",
+    "p5_bs9",
+    "p5_bs10",
+    "p5_email",
+    "p5_disc"
+   ]
+  },
+  "speaking": {
+   "screens": [
+    "p5_lr",
+    "p5_iv"
+   ]
+  }
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "id": "p5_ecr6",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "reading homework",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_ecr6",
+  "audio": [
+   {
+    "text": "Did you finish the reading?",
+    "voice": "female:gb"
+   }
+  ],
+  "options": [
+   "Reading is my favorite class.",
+   "I finished at the gym.",
+   "The library is quiet.",
+   "Almost, just two pages left."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "Yes/no question → \"almost\" with detail. A repeats \"reading\" in another sense; C changes the subject; B repeats \"finished\" about something else.",
+   "tr": "Evet/hayır sorusu → ayrıntılı bir \"neredeyse\". A \"reading\" kelimesini başka anlamda tekrar ediyor; C konuyu değiştiriyor; B \"finished\" kelimesini başka bir şey için tekrar ediyor.",
+   "es": "Pregunta de sí/no → \"casi\" con un detalle. A repite \"reading\" con otro sentido; C cambia de tema; B repite \"finished\" sobre otra cosa."
+  }
+ }
+}

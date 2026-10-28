@@ -1,0 +1,64 @@
+{
+ "id": "p5_conv_resume_review",
+ "task": "conversation",
+ "tier": "medium",
+ "topic": "résumé review",
+ "origin": "practice-05",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Booking a résumé review",
+  "prompt": "Listen to a conversation between a student and an employee at the career center.",
+  "audio": [
+   {
+    "text": "Hi, I'd like someone to look at my résumé before Friday. I'm applying for a summer internship.",
+    "voice": "male:au"
+   },
+   {
+    "text": "Our advisers are booked until next Tuesday, I'm afraid. But we have drop-in hours tomorrow from two to four, and you don't need an appointment.",
+    "voice": "female:gb"
+   },
+   {
+    "text": "Drop-in hours? Should I just bring a printed copy?",
+    "voice": "male:au"
+   },
+   {
+    "text": "Bring it on your laptop instead, so the adviser can make changes with you right there.",
+    "voice": "female:gb"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p5_conv_resume_review_q1",
+    "stem": "What problem does the student have?",
+    "options": [
+     "He has lost the printed copy of his résumé",
+     "He missed the drop-in hours that were held earlier in the week",
+     "He does not know which internship to apply for",
+     "He needs feedback sooner than an appointment would allow"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Main problem (inference): he needs help \"before Friday\", but appointments are booked \"until next Tuesday\". C and A are never mentioned; B confuses the time: drop-in hours are tomorrow.",
+     "tr": "Ana sorun (çıkarım): \"Cuma'dan önce\" yardım istiyor ama randevular \"gelecek Salı'ya kadar\" dolu. C ve A hiç geçmiyor; B zamanı karıştırıyor: serbest saatler yarın.",
+     "es": "Problema principal (inferencia): necesita ayuda \"before Friday\", pero las citas están ocupadas \"until next Tuesday\". C y A no se mencionan; B confunde el momento: las horas libres son mañana."
+    }
+   },
+   {
+    "id": "p5_conv_resume_review_q2",
+    "stem": "What does the woman suggest the student do?",
+    "options": [
+     "Wait for an appointment next Tuesday",
+     "Email his résumé to one of the advisers before tonight",
+     "Bring his résumé on a computer rather than on paper",
+     "Apply for the internship without a review"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Detail (paraphrase of \"Bring it on your laptop instead\"). A is what she says is the only appointment option, not her advice; B and D are never suggested.",
+     "tr": "Ayrıntı (\"Bring it on your laptop instead\" ifadesinin parafrazı). A tek randevu seçeneği olarak söylediği şey, önerisi değil; B ve D hiç önerilmiyor.",
+     "es": "Detalle (paráfrasis de \"Bring it on your laptop instead\"). A es la única cita disponible que menciona, no su consejo; B y D no se proponen."
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "id": "p5_hcr7",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "job interview",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_hcr7",
+  "audio": [
+   {
+    "text": "Something tells me the interview went better than you expected.",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "Something is wrong with my phone again.",
+   "I expected the bus to be late again, and of course it was.",
+   "You could say that; they asked when I can start.",
+   "The interview room was on the third floor."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "Indirect \"yes\": being asked about a start date means the interview went very well. A repeats \"something\"; B repeats \"expected\"; D repeats \"interview\" but only gives a place.",
+   "tr": "Dolaylı \"evet\": başlama tarihinin sorulması görüşmenin çok iyi geçtiğini gösteriyor. A \"something\" kelimesini tekrar ediyor; B \"expected\" kelimesini tekrar ediyor; D \"interview\" kelimesini tekrar ediyor ama yalnızca yer söylüyor.",
+   "es": "Un \"sí\" indirecto: que le pregunten cuándo puede empezar significa que la entrevista fue muy bien. A repite \"something\"; B repite \"expected\"; D repite \"interview\" pero solo da un lugar."
+  }
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "id": "p5_hcr5",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "ticket sale",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_hcr5",
+  "audio": [
+   {
+    "text": "Weren't the tickets supposed to go on sale at noon?",
+    "voice": "male:gb"
+   }
+  ],
+  "options": [
+   "I bought a sweater on sale at noon.",
+   "Yes, I'm supposed to be there at noon.",
+   "The theater seats about two hundred people.",
+   "They pushed it back because the website crashed."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "Indirect answer: the sale was moved, and here is why. A repeats \"on sale\" and \"noon\"; B says \"Yes\" about a different plan; C gives an unrelated fact.",
+   "tr": "Dolaylı cevap: satış ertelenmiş ve nedeni bu. A \"on sale\" ve \"noon\" ifadelerini tekrar ediyor; B başka bir plan için \"Yes\" diyor; C ilgisiz bir bilgi veriyor.",
+   "es": "Respuesta indirecta: la venta se aplazó, y este es el motivo. A repite \"on sale\" y \"noon\"; B dice \"Yes\" sobre otro plan; C da un dato que no viene al caso."
+  }
+ }
+}

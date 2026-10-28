@@ -1,0 +1,68 @@
+{
+ "id": "p5_conv_registration_mixup",
+ "task": "conversation",
+ "tier": "medium",
+ "topic": "registration error",
+ "origin": "practice-05",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: A registration mix-up",
+  "prompt": "Listen to a conversation between a student and an employee at the registrar's office.",
+  "audio": [
+   {
+    "text": "Hi, I registered for Introduction to Biology last week, but it isn't on my schedule anymore.",
+    "voice": "female:us"
+   },
+   {
+    "text": "Let me look. Ah, the system dropped you because the lab section you picked was already full.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "So I can't take the course this term?",
+    "voice": "female:us"
+   },
+   {
+    "text": "You can. There's still a seat in the Thursday lab. If I move you there, the lecture comes back too.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "Thursday works. Please do that.",
+    "voice": "female:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p5_conv_registration_mixup_q1",
+    "stem": "Why does the student go to the office?",
+    "options": [
+     "She wants to change the time of her biology lecture",
+     "A course she signed up for has disappeared from her schedule",
+     "She was charged twice for the same biology course",
+     "Her lab partner asked her to switch to a different lab section with him"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Main problem (paraphrase of \"it isn't on my schedule anymore\"). A reverses the request: she wants the course back, not a new lecture time. C and D are never mentioned.",
+     "tr": "Ana sorun (\"it isn't on my schedule anymore\" ifadesinin parafrazı). A isteği tersine çeviriyor: ders saatini değiştirmek değil, dersi geri istiyor. C ve D hiç geçmiyor.",
+     "es": "Problema principal (paráfrasis de \"it isn't on my schedule anymore\"). A invierte la petición: quiere recuperar el curso, no cambiar la hora. C y D no se mencionan."
+    }
+   },
+   {
+    "id": "p5_conv_registration_mixup_q2",
+    "stem": "What will the man most likely do next?",
+    "options": [
+     "Put the student in a different lab section",
+     "Cancel the student's registration for the course",
+     "Ask the biology department to open a new lab",
+     "Tell the student to register again next term"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference: he offers to move her to the Thursday lab and she agrees (\"Please do that\"). B and D contradict \"You can\"; C is never suggested.",
+     "tr": "Çıkarım: onu Perşembe laboratuvarına almayı öneriyor ve öğrenci kabul ediyor (\"Please do that\"). B ve D \"You can\" ifadesiyle çelişiyor; C hiç önerilmiyor.",
+     "es": "Inferencia: le ofrece pasarla al laboratorio del jueves y ella acepta (\"Please do that\"). B y D contradicen \"You can\"; C no se propone."
+    }
+   }
+  ]
+ }
+}

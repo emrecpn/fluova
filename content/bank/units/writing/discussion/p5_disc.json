@@ -1,0 +1,33 @@
+{
+ "id": "p5_disc",
+ "task": "discussion",
+ "tier": "medium",
+ "topic": "pass/fail grading",
+ "origin": "practice-05",
+ "screen": {
+  "type": "writing",
+  "id": "p5_disc",
+  "kind": "discussion",
+  "minutes": 10,
+  "wordTarget": {
+   "en": "At least 100 words. State your opinion, support it, and add your own contribution to the discussion.",
+   "tr": "En az 100 kelime. Görüşünü belirt, destekle ve tartışmaya kendi katkını ekle.",
+   "es": "Al menos 100 palabras. Da tu opinión, justifícala y aporta algo propio a la discusión."
+  },
+  "prompt": "Your professor is teaching a class on education policy. Write a post responding to the professor's question. Express and support your opinion, and make a contribution to the discussion in your own words.",
+  "professor": {
+   "name": "Okonkwo",
+   "post": "Many universities let students take a few courses outside their major on a pass/fail basis instead of receiving a letter grade. Supporters say this encourages students to explore subjects they would otherwise avoid. Critics worry that students put in less effort when a grade does not count. Should universities allow students to take some courses pass/fail? Why or why not?"
+  },
+  "students": [
+   {
+    "name": "Lena",
+    "post": "Yes, they should. I wanted to take a physics course last year, but I was afraid a low grade would hurt my scholarship, so I chose something easier instead. With a pass/fail option, students can try difficult subjects without risking their grade average, and that is what university should be about."
+   },
+   {
+    "name": "Marco",
+    "post": "I'm not convinced. When I know a grade does not really matter, I study only enough to pass, and I think many students are the same. Employers and graduate schools also look closely at transcripts, so a list of passes might make it harder to see what a student actually learned."
+   }
+  ]
+ }
+}

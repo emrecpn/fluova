@@ -1,0 +1,29 @@
+{
+ "id": "p5_cr1",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "concert tickets",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_cr1",
+  "audio": [
+   {
+    "text": "Did you manage to get a ticket for Saturday's concert?",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "The concert hall is right next to the gym.",
+   "I managed the ticket office at the theater last summer.",
+   "Only one in the back row, but I'm not complaining.",
+   "My brother plays the drums in a band."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "Indirect \"yes\": she got a ticket, even if the seat is not great. A gives a place; B repeats \"managed\" and \"ticket\" with another meaning; D changes the subject.",
+   "tr": "Dolaylı \"evet\": koltuk iyi olmasa da bilet almış. A bir yer söylüyor; B \"managed\" ve \"ticket\" kelimelerini başka anlamda tekrar ediyor; D konuyu değiştiriyor.",
+   "es": "Un \"sí\" indirecto: consiguió entrada, aunque el asiento no sea bueno. A da un lugar; B repite \"managed\" y \"ticket\" con otro sentido; D cambia de tema."
+  }
+ }
+}

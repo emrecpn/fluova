@@ -1,0 +1,67 @@
+{
+ "id": "p5_dl_payment_plan",
+ "task": "daily_life",
+ "tier": "medium",
+ "topic": "tuition payment plan",
+ "origin": "practice-05",
+ "screen": {
+  "type": "passage",
+  "title": "Email: tuition payment plan",
+  "directions": "Read in Daily Life (email)",
+  "text": [
+   "<strong>From:</strong> Student Accounts Office<br><strong>To:</strong> Daniel Okafor<br><strong>Subject:</strong> Your payment plan request",
+   "Dear Daniel, thank you for applying to pay this semester's tuition in installments. Your plan has been approved: the balance will be divided into four equal payments, due on the first day of each month from September to December. There is a one-time setup fee of $25, which will be added to your first payment. Please note that a payment more than ten days late will cancel the plan, and the full remaining balance will then be due at once.",
+   "— Student Accounts Office"
+  ],
+  "questions": [
+   {
+    "id": "p5_dl_payment_plan_q1",
+    "stem": "Why did the office write to Daniel?",
+    "options": [
+     "To confirm that his request to pay in parts was accepted",
+     "To remind him that his first payment is already overdue",
+     "To explain why his application for a payment plan was refused",
+     "To ask him to choose how many payments he would like to make"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Purpose (paraphrase): \"Your plan has been approved.\" B is not stated: no payment is late yet. C reverses the decision; D is wrong because the office has already set four payments.",
+     "tr": "Amaç (parafraz): \"Your plan has been approved.\" B metinde yok, henüz geciken bir ödeme yok. C kararı tersine çeviriyor; D yanlış, çünkü ofis dört taksiti zaten belirlemiş.",
+     "es": "Propósito (paráfrasis): \"Your plan has been approved.\" B no se dice: todavía no hay ningún pago atrasado. C invierte la decisión; D es incorrecta porque la oficina ya fijó cuatro pagos."
+    }
+   },
+   {
+    "id": "p5_dl_payment_plan_q2",
+    "stem": "What is true about the $25 fee?",
+    "options": [
+     "It is charged every month together with each payment",
+     "It will be paid as part of the September payment",
+     "It is charged only if a payment arrives late",
+     "It can be avoided by paying the full balance in December"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail (paraphrase): the fee is \"one-time\" and \"added to your first payment\", which is due in September. A contradicts \"one-time\"; C confuses the fee with the late-payment rule.",
+     "tr": "Ayrıntı (parafraz): ücret \"tek seferlik\" ve \"ilk ödemeye ekleniyor\"; ilk ödeme Eylül'de. A \"one-time\" ifadesiyle çelişiyor; C ücreti gecikme kuralıyla karıştırıyor.",
+     "es": "Detalle (paráfrasis): la tarifa es \"one-time\" y se \"añade al primer pago\", que vence en septiembre. A contradice \"one-time\"; C confunde la tarifa con la regla de los pagos atrasados."
+    }
+   },
+   {
+    "id": "p5_dl_payment_plan_q3",
+    "stem": "What would happen if Daniel paid his October installment on October 15?",
+    "options": [
+     "He would be charged a second setup fee of $25",
+     "His November payment would be moved to a later date",
+     "He would have to pay everything he still owes immediately",
+     "Nothing would happen, because payments may be up to twenty days late"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Inference: October 15 is fourteen days late, more than ten, so the plan is cancelled and \"the full remaining balance\" becomes due. D invents a twenty-day limit; A and B are never mentioned.",
+     "tr": "Çıkarım: 15 Ekim on dört gün gecikme demek, yani on günden fazla; plan iptal olur ve \"kalan borcun tamamı\" ödenmeli. D yirmi günlük bir süre uyduruyor; A ve B hiç geçmiyor.",
+     "es": "Inferencia: el 15 de octubre son catorce días de retraso, más de diez, así que el plan se cancela y vence \"todo el saldo pendiente\". D inventa un límite de veinte días; A y B no se mencionan."
+    }
+   }
+  ]
+ }
+}

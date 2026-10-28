@@ -1,0 +1,29 @@
+{
+ "id": "p5_cr8",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "first paycheck",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_cr8",
+  "audio": [
+   {
+    "text": "I just got my first paycheck from my campus job.",
+    "voice": "male:gb"
+   }
+  ],
+  "options": [
+   "Congratulations! Are you going to celebrate?",
+   "The campus is lovely at this time of year.",
+   "The job fair was held in the student center.",
+   "I check my email every morning before class."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Good news → congratulations. B and C repeat \"campus\" and \"job\" without responding; D repeats a sound (\"check\") with a different meaning.",
+   "tr": "İyi haber → tebrik. B ve C \"campus\" ve \"job\" kelimelerini cevap vermeden tekrar ediyor; D benzer bir sesi (\"check\") başka anlamda kullanıyor.",
+   "es": "Buena noticia → felicitación. B y C repiten \"campus\" y \"job\" sin responder; D repite un sonido parecido (\"check\") con otro sentido."
+  }
+ }
+}

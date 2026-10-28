@@ -1,0 +1,50 @@
+{
+ "id": "p5_dl_bike_share",
+ "task": "daily_life",
+ "tier": "easy",
+ "topic": "bike share",
+ "origin": "practice-05",
+ "screen": {
+  "type": "passage",
+  "title": "Campus bike share",
+  "directions": "Read in Daily Life (sign)",
+  "text": [
+   "<strong>Campus Bike Share</strong>",
+   "Unlock a bike with your student ID at any station. The first 30 minutes are free. After that, each extra 30 minutes costs one dollar. Please return bikes to a station, not to a tree or a fence."
+  ],
+  "questions": [
+   {
+    "id": "p5_dl_bike_share_q1",
+    "stem": "What do students need to take a bike?",
+    "options": [
+     "A key from the station",
+     "Their student ID card",
+     "A one-dollar coin",
+     "A form from the office"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail: \"Unlock a bike with your student ID.\" C confuses the extra-time price with what you need to start; A and D are not mentioned.",
+     "tr": "Ayrıntı: \"Unlock a bike with your student ID.\" C ek süre ücretini başlamak için gereken şeyle karıştırıyor; A ve D hiç geçmiyor.",
+     "es": "Detalle: \"Unlock a bike with your student ID.\" C confunde el precio del tiempo extra con lo que se necesita para empezar; A y D no se mencionan."
+    }
+   },
+   {
+    "id": "p5_dl_bike_share_q2",
+    "stem": "How much does a one-hour ride cost?",
+    "options": [
+     "Nothing",
+     "One dollar",
+     "Two dollars",
+     "Three dollars"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail with a small calculation: the first 30 minutes are free and the next 30 minutes cost one dollar. A forgets the second half hour; C charges for the free part too.",
+     "tr": "Küçük bir hesapla ayrıntı: ilk 30 dakika ücretsiz, sonraki 30 dakika bir dolar. A ikinci yarım saati unutuyor; C ücretsiz kısmı da ücretlendiriyor.",
+     "es": "Detalle con un pequeño cálculo: los primeros 30 minutos son gratis y los siguientes 30 cuestan un dólar. A olvida la segunda media hora; C cobra también la parte gratuita."
+    }
+   }
+  ]
+ }
+}

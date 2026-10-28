@@ -1,0 +1,29 @@
+{
+ "id": "p5_hcr6",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "bike share cost",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_hcr6",
+  "audio": [
+   {
+    "text": "I'll believe the bike share is cheaper when I see it.",
+    "voice": "female:au"
+   }
+  ],
+  "options": [
+   "I saw a red bike outside the library.",
+   "Sharing a room is usually much cheaper than living alone.",
+   "I believe the store opens at nine.",
+   "Do the math: the free thirty minutes cover most trips."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "Skeptical idiom (\"I'll believe it when I see it\") → an argument against the doubt. A repeats \"see\" literally; C repeats \"believe\"; B repeats \"share\" and \"cheaper\" about housing.",
+   "tr": "Şüpheci deyim (\"I'll believe it when I see it\") → şüpheye karşı bir argüman. A \"see\" kelimesini gerçek anlamıyla tekrar ediyor; C \"believe\" kelimesini tekrar ediyor; B \"share\" ve \"cheaper\" kelimelerini barınma için tekrar ediyor.",
+   "es": "Expresión escéptica (\"I'll believe it when I see it\") → un argumento contra la duda. A repite \"see\" en sentido literal; C repite \"believe\"; B repite \"share\" y \"cheaper\" sobre la vivienda."
+  }
+ }
+}

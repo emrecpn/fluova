@@ -1,0 +1,29 @@
+{
+ "id": "p5_ecr7",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "bus downtown",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_ecr7",
+  "audio": [
+   {
+    "text": "Which bus goes downtown?",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "It goes very fast.",
+   "Yes, it does.",
+   "The number twelve.",
+   "I went yesterday."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "\"Which\" → a choice. A repeats \"goes\"; B answers \"Yes\"; D repeats a form of \"go\" about the past.",
+   "tr": "\"Which\" → bir seçim. A \"goes\" kelimesini tekrar ediyor; B \"Yes\" diyor; D \"go\" fiilini geçmiş için tekrar ediyor.",
+   "es": "\"Which\" → una elección. A repite \"goes\"; B responde \"Yes\"; D repite una forma de \"go\" sobre el pasado."
+  }
+ }
+}

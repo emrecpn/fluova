@@ -1,0 +1,27 @@
+{
+ "id": "p5_bs4",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "guest talk topic",
+ "origin": "practice-05",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p5_bs4",
+  "personA": "Could you tell me what the guest speaker will talk about?",
+  "frame": [
+   "I heard",
+   null,
+   null,
+   null,
+   null,
+   "in developing countries."
+  ],
+  "answer": [
+   "that",
+   "her talk",
+   "is",
+   "about clean water"
+  ],
+  "distractors": []
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "id": "p5_ac_sticky_wages",
+ "task": "academic",
+ "tier": "hard",
+ "topic": "sticky wages",
+ "origin": "practice-05",
+ "screen": {
+  "type": "passage",
+  "title": "Why Wages Rarely Fall",
+  "directions": "Read an Academic Passage — upper module",
+  "text": [
+   "Elementary economic theory predicts that when the demand for labor declines, wages should fall until employers are again willing to hire everyone seeking work. Empirical studies, however, consistently find that nominal wages are remarkably resistant to reduction, even during severe recessions; firms typically respond to weaker demand by dismissing employees rather than by lowering pay.",
+   "Economists have proposed several explanations for this rigidity. Surveys of managers indicate that wage cuts are perceived as unfair and consequently damage morale, diminishing the effort of the very employees a firm most wishes to retain. Efficiency-wage theory extends this reasoning, arguing that paying above the market rate can be profitable because it reduces turnover and the considerable costs of recruiting and training replacements.",
+   "Wage rigidity has significant consequences. Because pay does not adjust, the burden of a downturn is concentrated on those who lose their jobs rather than distributed across the entire workforce, which may help explain why unemployment rises so sharply during recessions."
+  ],
+  "questions": [
+   {
+    "id": "p5_ac_sticky_wages_q1",
+    "stem": "What is the passage mainly about?",
+    "options": [
+     "The reasons wages seldom fall and what this means during downturns",
+     "The methods firms use to recruit and train new employees cheaply",
+     "The ways in which economic theory predicts the length of recessions",
+     "The advantages of lowering wages instead of dismissing workers"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main idea (paraphrase): the passage explains why wages are rigid and how this concentrates the cost of recessions. D reverses the evidence; B is a minor detail inside one explanation.",
+     "tr": "Ana fikir (parafraz): metin ücretlerin neden düşmediğini ve bunun durgunluğun yükünü nasıl yoğunlaştırdığını anlatıyor. D kanıtı tersine çeviriyor; B bir açıklamanın içindeki küçük bir ayrıntı.",
+     "es": "Idea principal (paráfrasis): el texto explica por qué los salarios son rígidos y cómo eso concentra el coste de las recesiones. D invierte la evidencia; B es un detalle menor dentro de una explicación."
+    }
+   },
+   {
+    "id": "p5_ac_sticky_wages_q2",
+    "stem": "The word \"rigidity\" in paragraph 2 is closest in meaning to",
+    "options": [
+     "unfair treatment",
+     "unwillingness to change",
+     "a period of rapid growth",
+     "great complexity"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Vocabulary in context: \"this rigidity\" refers back to wages being \"resistant to reduction\", that is, not changing. A is the reason given by managers, not the meaning of the word.",
+     "tr": "Bağlamda kelime: \"this rigidity\" ücretlerin \"resistant to reduction\" olmasına, yani değişmemesine işaret ediyor. A yöneticilerin gerekçesi, kelimenin anlamı değil.",
+     "es": "Vocabulario en contexto: \"this rigidity\" remite a que los salarios son \"resistant to reduction\", es decir, que no cambian. A es la razón que dan los directivos, no el significado de la palabra."
+    }
+   },
+   {
+    "id": "p5_ac_sticky_wages_q3",
+    "stem": "Why does the author mention surveys of managers?",
+    "options": [
+     "To show that managers misunderstand basic economic theory",
+     "To prove that recessions are caused by unfair treatment of employees",
+     "To support the claim that cutting pay can lower workers' effort",
+     "To compare how often firms dismiss workers in different countries"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Author's purpose: the surveys support the idea that wage cuts \"damage morale, diminishing the effort\" of employees. B overstates the claim into a cause of recessions; A and D are not in the passage.",
+     "tr": "Yazarın amacı: anketler ücret kesintisinin \"moral bozduğu ve çabayı azalttığı\" fikrini destekliyor. B iddiayı durgunluğun nedenine dönüştürerek abartıyor; A ve D metinde yok.",
+     "es": "Propósito del autor: las encuestas apoyan la idea de que los recortes \"dañan la moral y reducen el esfuerzo\". B exagera la idea hasta convertirla en causa de las recesiones; A y D no están en el texto."
+    }
+   },
+   {
+    "id": "p5_ac_sticky_wages_q4",
+    "stem": "What can be inferred from efficiency-wage theory?",
+    "options": [
+     "Generous salaries can end up saving a company money",
+     "Firms that pay high wages rarely need to hire new employees at all",
+     "Training new employees costs less than keeping experienced ones",
+     "Employers should reduce wages whenever demand for labor declines"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference: paying above the market rate \"can be profitable\" because it lowers turnover costs. B overstates \"reduces turnover\" as \"rarely need to hire\"; C reverses the costs; D contradicts the theory.",
+     "tr": "Çıkarım: piyasanın üstünde ödemek, işten ayrılma maliyetini düşürdüğü için \"kârlı olabilir\". B \"reduces turnover\" ifadesini \"neredeyse hiç işe alım gerekmez\" diye abartıyor; C maliyetleri tersine çeviriyor; D teoriyle çelişiyor.",
+     "es": "Inferencia: pagar por encima del mercado \"puede ser rentable\" porque reduce los costes de rotación. B exagera \"reduces turnover\" como \"casi nunca necesitan contratar\"; C invierte los costes; D contradice la teoría."
+    }
+   },
+   {
+    "id": "p5_ac_sticky_wages_q5",
+    "stem": "According to paragraph 3, what is one effect of wage rigidity?",
+    "options": [
+     "All employees share equally in the losses of a recession",
+     "The costs of a downturn fall mainly on workers who are dismissed",
+     "Firms recover more slowly because their total wage costs remain high",
+     "Unemployment remains steady even when demand for labor falls"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail (paraphrase of \"the burden of a downturn is concentrated on those who lose their jobs\"). A is the opposite; D contradicts \"unemployment rises so sharply\"; C is never stated.",
+     "tr": "Ayrıntı (\"the burden of a downturn is concentrated on those who lose their jobs\" ifadesinin parafrazı). A tam tersi; D \"unemployment rises so sharply\" ifadesiyle çelişiyor; C hiç söylenmiyor.",
+     "es": "Detalle (paráfrasis de \"the burden of a downturn is concentrated on those who lose their jobs\"). A es lo contrario; D contradice \"unemployment rises so sharply\"; C no se dice."
+    }
+   }
+  ]
+ }
+}

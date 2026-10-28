@@ -1,0 +1,29 @@
+{
+ "id": "p5_cr3",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "health center line",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_cr3",
+  "audio": [
+   {
+    "text": "How long is the line at the health center?",
+    "voice": "female:au"
+   }
+  ],
+  "options": [
+   "The health center is open on Saturday mornings too, I think.",
+   "It's moving fast; I was in and out in ten minutes.",
+   "My cousin works there as a nurse.",
+   "Yes, it's a really long line."
+  ],
+  "answer": 1,
+  "why": {
+   "en": "\"How long\" → how much waiting. A gives opening days; C changes the subject; D answers \"Yes\" to a \"how long\" question.",
+   "tr": "\"How long\" → ne kadar bekleneceği. A açık olduğu günleri söylüyor; C konuyu değiştiriyor; D \"how long\" sorusuna \"Yes\" diyor.",
+   "es": "\"How long\" → cuánto hay que esperar. A da los días de apertura; C cambia de tema; D responde \"Yes\" a una pregunta con \"how long\"."
+  }
+ }
+}

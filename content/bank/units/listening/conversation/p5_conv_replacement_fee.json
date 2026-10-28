@@ -1,0 +1,64 @@
+{
+ "id": "p5_conv_replacement_fee",
+ "task": "conversation",
+ "tier": "hard",
+ "topic": "library replacement fee",
+ "origin": "practice-05",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: A library replacement fee",
+  "prompt": "Listen to a conversation between a student and a librarian.",
+  "audio": [
+   {
+    "text": "I got a notice saying I owe ninety dollars for a book I lost. That seems like a lot for one book.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "It's the replacement price plus a processing fee. But if you find a new copy of the same edition yourself, we'd only charge the processing fee, which is fifteen.",
+    "voice": "female:us"
+   },
+   {
+    "text": "I've seen it online for about forty.",
+    "voice": "male:gb"
+   },
+   {
+    "text": "Then that's worth doing. Just make sure it's the third edition, not the newer one.",
+    "voice": "female:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p5_conv_replacement_fee_q1",
+    "stem": "What does the librarian suggest the student do?",
+    "options": [
+     "Pay the ninety dollars before the deadline",
+     "Look for the lost book in the library again",
+     "Ask the library to order a newer edition",
+     "Buy a replacement copy of the book himself"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Detail (paraphrase of \"if you find a new copy of the same edition yourself\"). C is the trap: she warns him NOT to get the newer edition. A is what the notice says, not her advice.",
+     "tr": "Ayrıntı (\"if you find a new copy of the same edition yourself\" ifadesinin parafrazı). C tuzak: daha yeni baskıyı ALMAMASI konusunda uyarıyor. A bildirimde yazan, onun önerisi değil.",
+     "es": "Detalle (paráfrasis de \"if you find a new copy of the same edition yourself\"). C es la trampa: le advierte que NO compre la edición nueva. A es lo que dice el aviso, no su consejo."
+    }
+   },
+   {
+    "id": "p5_conv_replacement_fee_q2",
+    "stem": "What can be inferred about the student's plan?",
+    "options": [
+     "It will cost him less than paying the amount on the notice",
+     "It will cost him more than the notice because of the processing fee",
+     "The library will refund the forty dollars he spends",
+     "He will no longer have to pay any library fees"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference with a calculation: about forty dollars for the book plus the fifteen-dollar fee is far less than ninety. D ignores the processing fee; B reverses the comparison; C is never mentioned.",
+     "tr": "Hesaplı çıkarım: kitap için yaklaşık kırk dolar artı on beş dolarlık ücret, doksandan çok daha az. D işlem ücretini unutuyor; B karşılaştırmayı tersine çeviriyor; C hiç geçmiyor.",
+     "es": "Inferencia con un cálculo: unos cuarenta dólares por el libro más la tarifa de quince es mucho menos que noventa. D olvida la tarifa de gestión; B invierte la comparación; C no se menciona."
+    }
+   }
+  ]
+ }
+}

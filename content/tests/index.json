@@ -127,6 +127,38 @@
      "items": 11
     }
    ]
+  },
+  {
+   "id": "practice-05",
+   "title": "Fluova Practice Test 5",
+   "version": "1.0.0",
+   "level": "real",
+   "authors": [
+    "Fluova contributors"
+   ],
+   "minutes": 89,
+   "sections": [
+    {
+     "id": "reading",
+     "minutes": 29,
+     "items": 48
+    },
+    {
+     "id": "listening",
+     "minutes": 29,
+     "items": 45
+    },
+    {
+     "id": "writing",
+     "minutes": 23,
+     "items": 12
+    },
+    {
+     "id": "speaking",
+     "minutes": 8,
+     "items": 11
+    }
+   ]
   }
  ]
 }

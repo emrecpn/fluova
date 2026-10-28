@@ -1,0 +1,29 @@
+{
+ "id": "p5_ecr5",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "spare pencil",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_ecr5",
+  "audio": [
+   {
+    "text": "Do you have a spare pencil?",
+    "voice": "male:au"
+   }
+  ],
+  "options": [
+   "Sure, here you go.",
+   "I spared some time.",
+   "Yes, it's raining.",
+   "On Friday morning."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Request → \"Sure\" and the pencil. B repeats a similar word (\"spared\"); C says \"Yes\" about the weather; D gives a time.",
+   "tr": "Rica → \"Sure\" ve kalemi veriyor. B benzer bir kelimeyi (\"spared\") tekrar ediyor; C hava için \"Yes\" diyor; D zaman veriyor.",
+   "es": "Petición → \"Sure\" y le da el lápiz. B repite una palabra parecida (\"spared\"); C dice \"Yes\" sobre el tiempo; D da un momento."
+  }
+ }
+}

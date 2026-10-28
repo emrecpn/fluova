@@ -1,0 +1,88 @@
+{
+ "id": "p5_talk_fog",
+ "task": "talk",
+ "tier": "medium",
+ "topic": "fog",
+ "origin": "practice-05",
+ "screen": {
+  "type": "listening",
+  "title": "Academic Talk: How fog forms",
+  "prompt": "Listen to part of a lecture in a meteorology class.",
+  "audio": [
+   {
+    "text": "Today let's talk about fog, which is really just a cloud that forms at ground level. Fog appears when the air near the ground cools until it can't hold all of its water vapor, so the extra vapor condenses into tiny droplets. One common type is radiation fog. On clear, calm nights, the ground loses heat quickly into the sky, and it cools the air just above it. By early morning, valleys can fill with fog, because cold air is heavier and collects in low places. Once the sun warms the ground, this kind of fog usually disappears by midmorning.",
+    "voice": "female:gb"
+   },
+   {
+    "text": "A second type, advection fog, forms in a different way. Here, warm, moist air moves across a cold surface, such as a cold ocean current. The air is cooled from below, and fog develops even when it's windy. That's why some coastal cities can be foggy for days in summer, when the land is hot but the water offshore stays cold. So if you want to predict fog, don't just look at the temperature. Look at the wind, the sky, and the kind of surface the air is moving over.",
+    "voice": "female:gb"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p5_talk_fog_q1",
+    "stem": "What is the talk mainly about?",
+    "options": [
+     "Why fog is more dangerous than other kinds of clouds",
+     "Two different ways in which fog develops",
+     "How the sun heats the ground in the morning",
+     "Why coastal cities have hotter summers than valleys"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Main idea: the talk explains radiation fog and advection fog. C is only a detail about radiation fog; A and D are not discussed.",
+     "tr": "Ana fikir: konuşma radyasyon sisini ve adveksiyon sisini açıklıyor. C radyasyon sisiyle ilgili yalnızca bir ayrıntı; A ve D ele alınmıyor.",
+     "es": "Idea principal: la charla explica la niebla de radiación y la de advección. C es solo un detalle sobre la niebla de radiación; A y D no se tratan."
+    }
+   },
+   {
+    "id": "p5_talk_fog_q2",
+    "stem": "According to the professor, why do valleys fill with fog?",
+    "options": [
+     "Wind pushes the fog down from the hills",
+     "Valleys receive less sunlight in the evening",
+     "Rivers in valleys release warm water vapor",
+     "Cold air sinks and gathers in low areas"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Detail (paraphrase of \"cold air is heavier and collects in low places\"). A and C invent causes; B is not mentioned.",
+     "tr": "Ayrıntı (\"cold air is heavier and collects in low places\" ifadesinin parafrazı). A ve C neden uyduruyor; B hiç geçmiyor.",
+     "es": "Detalle (paráfrasis de \"cold air is heavier and collects in low places\"). A y C inventan causas; B no se menciona."
+    }
+   },
+   {
+    "id": "p5_talk_fog_q3",
+    "stem": "Why does the professor mention coastal cities in summer?",
+    "options": [
+     "To show that advection fog can form even when the land is hot",
+     "To explain why radiation fog disappears by midmorning",
+     "To argue that fog is more common in summer than in winter",
+     "To compare the temperature of the ocean with that of nearby rivers"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Function: the example shows that advection fog depends on warm air over cold water, so it appears even on hot days. B belongs to radiation fog; C overgeneralizes; D is not discussed.",
+     "tr": "İşlev: örnek, adveksiyon sisinin soğuk suyun üstündeki sıcak havaya bağlı olduğunu, yani sıcak günlerde bile oluştuğunu gösteriyor. B radyasyon sisine ait; C aşırı genelleme; D ele alınmıyor.",
+     "es": "Función: el ejemplo muestra que la niebla de advección depende de aire cálido sobre agua fría, así que aparece incluso en días calurosos. B corresponde a la niebla de radiación; C generaliza en exceso; D no se trata."
+    }
+   },
+   {
+    "id": "p5_talk_fog_q4",
+    "stem": "What would most likely prevent radiation fog from forming?",
+    "options": [
+     "A cold ocean current near the coast",
+     "Very calm air during the night",
+     "A layer of clouds covering the night sky",
+     "A valley surrounded by high hills"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Inference: radiation fog needs \"clear, calm nights\" so the ground can lose heat into the sky; clouds would keep that heat in. B and D would help fog form; A belongs to advection fog.",
+     "tr": "Çıkarım: radyasyon sisi zeminin ısısını gökyüzüne verebilmesi için \"açık ve sakin gecelere\" ihtiyaç duyar; bulutlar bu ısıyı tutar. B ve D sisin oluşmasına yardım eder; A adveksiyon sisine ait.",
+     "es": "Inferencia: la niebla de radiación necesita \"noches despejadas y tranquilas\" para que el suelo pierda calor hacia el cielo; las nubes retendrían ese calor. B y D favorecerían la niebla; A corresponde a la niebla de advección."
+    }
+   }
+  ]
+ }
+}

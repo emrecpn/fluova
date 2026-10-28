@@ -1,0 +1,98 @@
+{
+ "id": "p5_ac_night_flowers",
+ "task": "academic",
+ "tier": "easy",
+ "topic": "night-blooming flowers",
+ "origin": "practice-05",
+ "screen": {
+  "type": "passage",
+  "title": "Flowers That Open at Night",
+  "directions": "Read an Academic Passage — lower module",
+  "text": [
+   "Most flowers open during the day, when bees and butterflies are busy. Some plants, however, open their flowers only at night. These plants depend on night animals, such as moths and bats, to carry their pollen from flower to flower.",
+   "Night flowers are often white or pale, so they are easy to see in moonlight. Many also have a strong, sweet smell that moths can follow from far away. Flowers visited by bats are usually large and strong, because bats are heavy and push their heads deep inside to drink."
+  ],
+  "questions": [
+   {
+    "id": "p5_ac_night_flowers_q1",
+    "stem": "What is the passage mainly about?",
+    "options": [
+     "Why bees and butterflies stop working at night",
+     "How some flowers are suited to animals that visit at night",
+     "Why moths are more useful to plants than bats are",
+     "How gardeners can grow flowers that bloom only in the moonlight"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Main idea (paraphrase): the passage describes how night flowers match moths and bats. A misreads the first sentence; C and D are never discussed.",
+     "tr": "Ana fikir (parafraz): metin gece açan çiçeklerin güvelere ve yarasalara nasıl uyduğunu anlatıyor. A ilk cümleyi yanlış okuyor; C ve D hiç ele alınmıyor.",
+     "es": "Idea principal (paráfrasis): el texto describe cómo las flores nocturnas se adaptan a las polillas y los murciélagos. A malinterpreta la primera frase; C y D no se tratan."
+    }
+   },
+   {
+    "id": "p5_ac_night_flowers_q2",
+    "stem": "The word \"pale\" in paragraph 2 is closest in meaning to",
+    "options": [
+     "light in color",
+     "very small",
+     "easy to break",
+     "sweet-smelling"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Vocabulary in context: \"white or pale\" flowers are \"easy to see in moonlight\", so pale means light in color. D describes the smell mentioned in the next sentence.",
+     "tr": "Bağlamda kelime: \"white or pale\" çiçekler \"ay ışığında kolay görülüyor\"; pale açık renkli demek. D bir sonraki cümledeki kokuyu anlatıyor.",
+     "es": "Vocabulario en contexto: las flores \"white or pale\" son \"fáciles de ver a la luz de la luna\", así que pale significa de color claro. D describe el olor de la frase siguiente."
+    }
+   },
+   {
+    "id": "p5_ac_night_flowers_q3",
+    "stem": "Why does the author mention that bats are heavy?",
+    "options": [
+     "To explain why some night flowers are large and strong",
+     "To show that bats are dangerous to small plants",
+     "To compare the size of bats with the much smaller size of moths",
+     "To explain why bats cannot see in the moonlight"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Author's purpose: the bats' weight explains why the flowers they visit are \"large and strong\". B and D are not stated; C is not the point being made.",
+     "tr": "Yazarın amacı: yarasaların ağırlığı, ziyaret ettikleri çiçeklerin neden \"large and strong\" olduğunu açıklıyor. B ve D metinde yok; C anlatılmak istenen nokta değil.",
+     "es": "Propósito del autor: el peso de los murciélagos explica por qué las flores que visitan son \"large and strong\". B y D no se dicen; C no es la idea que se quiere mostrar."
+    }
+   },
+   {
+    "id": "p5_ac_night_flowers_q4",
+    "stem": "What can be inferred about moths?",
+    "options": [
+     "They are active mainly during the day",
+     "They prefer brightly colored flowers",
+     "They are too heavy to land on most flowers",
+     "They find some flowers by their smell"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Inference from \"a strong, sweet smell that moths can follow from far away\". A contradicts \"night animals\"; C describes bats; B contradicts \"white or pale\".",
+     "tr": "\"A strong, sweet smell that moths can follow from far away\" ifadesinden çıkarım. A \"night animals\" ile çelişiyor; C yarasaları anlatıyor; B \"white or pale\" ile çelişiyor.",
+     "es": "Inferencia a partir de \"a strong, sweet smell that moths can follow from far away\". A contradice \"night animals\"; C describe a los murciélagos; B contradice \"white or pale\"."
+    }
+   },
+   {
+    "id": "p5_ac_night_flowers_q5",
+    "stem": "According to the passage, why do bats push their heads deep into flowers?",
+    "options": [
+     "To hide from other animals",
+     "To drink from the flower",
+     "To keep the flower closed",
+     "To clean the flower"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail: bats \"push their heads deep inside to drink\". A, C and D give reasons the passage never mentions.",
+     "tr": "Ayrıntı: yarasalar \"push their heads deep inside to drink\". A, C ve D metinde geçmeyen gerekçeler veriyor.",
+     "es": "Detalle: los murciélagos \"push their heads deep inside to drink\". A, C y D dan razones que el texto no menciona."
+    }
+   }
+  ]
+ }
+}

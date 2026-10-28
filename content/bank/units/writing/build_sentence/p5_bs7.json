@@ -1,0 +1,27 @@
+{
+ "id": "p5_bs7",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "résumé advice",
+ "origin": "practice-05",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p5_bs7",
+  "personA": "What did the career adviser say about your résumé?",
+  "frame": [
+   "She told me",
+   null,
+   null,
+   null,
+   null,
+   "my work experience."
+  ],
+  "answer": [
+   "to",
+   "add",
+   "more details",
+   "about"
+  ],
+  "distractors": []
+ }
+}

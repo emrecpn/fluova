@@ -1,0 +1,27 @@
+{
+ "id": "p5_bs9",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "payment plan form",
+ "origin": "practice-05",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p5_bs9",
+  "personA": "How do I sign up for the payment plan?",
+  "frame": [
+   "You have to",
+   null,
+   null,
+   null,
+   null,
+   "before the semester starts."
+  ],
+  "answer": [
+   "fill out",
+   "a form",
+   "at",
+   "the accounts office"
+  ],
+  "distractors": []
+ }
+}

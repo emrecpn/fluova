@@ -1,0 +1,68 @@
+{
+ "id": "p5_conv_lab_report_format",
+ "task": "conversation",
+ "tier": "easy",
+ "topic": "lab report format",
+ "origin": "practice-05",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Lab report format",
+  "prompt": "Listen to a conversation between a student and a teaching assistant.",
+  "audio": [
+   {
+    "text": "Excuse me, does the lab report need a title page?",
+    "voice": "male:au"
+   },
+   {
+    "text": "No. Just put your name and the date at the top of the first page.",
+    "voice": "female:us"
+   },
+   {
+    "text": "OK. And how long should it be?",
+    "voice": "male:au"
+   },
+   {
+    "text": "Four pages at most. And don't forget to include your data table at the end.",
+    "voice": "female:us"
+   },
+   {
+    "text": "Great, thanks. I'll add the table tonight.",
+    "voice": "male:au"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p5_conv_lab_report_format_q1",
+    "stem": "What does the student ask about first?",
+    "options": [
+     "Where to hand in the report",
+     "Whether the report needs a separate title page",
+     "When the report is due",
+     "Which data to put in the table"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail: his first question is \"does the lab report need a title page?\" A and C are never asked; D confuses the table, which the woman mentions later.",
+     "tr": "Ayrıntı: ilk sorusu \"does the lab report need a title page?\". A ve C hiç sorulmuyor; D kadının sonra söylediği tabloyu karıştırıyor.",
+     "es": "Detalle: su primera pregunta es \"does the lab report need a title page?\". A y C no se preguntan; D confunde la tabla, que ella menciona después."
+    }
+   },
+   {
+    "id": "p5_conv_lab_report_format_q2",
+    "stem": "What does the woman remind the student to do?",
+    "options": [
+     "Write at least four pages",
+     "Put the date on every page",
+     "Include a table of his data",
+     "Bring the report to her office"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Detail (paraphrase of \"don't forget to include your data table\"). A reverses \"four pages at most\"; B changes \"the top of the first page\" to every page.",
+     "tr": "Ayrıntı (\"don't forget to include your data table\" ifadesinin parafrazı). A \"four pages at most\" ifadesini tersine çeviriyor; B \"ilk sayfanın üstü\"nü her sayfaya çeviriyor.",
+     "es": "Detalle (paráfrasis de \"don't forget to include your data table\"). A invierte \"four pages at most\"; B cambia \"la parte superior de la primera página\" por todas las páginas."
+    }
+   }
+  ]
+ }
+}

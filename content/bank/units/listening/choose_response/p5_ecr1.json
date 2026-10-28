@@ -1,0 +1,29 @@
+{
+ "id": "p5_ecr1",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "computer lab",
+ "origin": "practice-05",
+ "screen": {
+  "type": "choose_response",
+  "id": "p5_ecr1",
+  "audio": [
+   {
+    "text": "Where is the computer lab?",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "Behind the main library.",
+   "At ten o'clock.",
+   "Yes, I use computers.",
+   "My laptop is new."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "\"Where\" → a place. B gives a time; C answers \"Yes\"; D does not answer the question.",
+   "tr": "\"Where\" → bir yer. B saat veriyor; C \"Yes\" diyor; D soruya cevap vermiyor.",
+   "es": "\"Where\" → un lugar. B da una hora; C responde \"Yes\"; D no responde a la pregunta."
+  }
+ }
+}

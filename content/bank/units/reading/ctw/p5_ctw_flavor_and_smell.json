@@ -1,0 +1,12 @@
+{
+ "id": "p5_ctw_flavor_and_smell",
+ "task": "ctw",
+ "tier": "medium",
+ "topic": "taste and smell",
+ "origin": "practice-05",
+ "screen": {
+  "type": "ctw",
+  "title": "Complete the Words: Flavor and smell",
+  "source": "Many people notice that food seems to lose its taste when they have a bad cold. The tongue can detect only a few basic qualities, such as sweetness, saltiness and bitterness. Most of what we call flavor actually comes from smell, as tiny particles from food travel up the back of the throat to the nose. When the nose is blocked, those particles cannot reach the cells that sense them. As a result, an apple and a raw potato can taste surprisingly similar."
+ }
+}

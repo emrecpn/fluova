@@ -1,0 +1,29 @@
+{
+ "id": "p5_bs1",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "job decision",
+ "origin": "practice-05",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p5_bs1",
+  "personA": "Have you heard back about the campus job?",
+  "frame": [
+   "Not yet, but",
+   null,
+   null,
+   null,
+   null,
+   "by Friday."
+  ],
+  "answer": [
+   "they",
+   "said",
+   "they would",
+   "decide"
+  ],
+  "distractors": [
+   "will"
+  ]
+ }
+}
