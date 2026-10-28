@@ -1,0 +1,29 @@
+{
+ "id": "p3_hcr3",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "lost folder",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_hcr3",
+  "audio": [
+   {
+    "text": "You haven't seen my blue folder anywhere, have you?",
+    "voice": "female:au"
+   }
+  ],
+  "options": [
+   "Try the table by the window; someone left a blue one there.",
+   "No, I haven't had a chance to see that new photo exhibition yet.",
+   "Blue has always been my favorite color.",
+   "I folded the posters before the meeting."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Indirect answer: instead of yes or no, the speaker suggests where the folder might be. B says \"No\" about something else; C repeats \"blue\"; D is a sound-alike trap (folder / folded).",
+   "tr": "Dolaylı cevap: evet/hayır yerine dosyanın nerede olabileceğini söylüyor. B başka bir şey için \"No\" diyor; C \"blue\" kelimesini tekrar ediyor; D ses benzerliği tuzağı (folder / folded).",
+   "es": "Respuesta indirecta: en vez de decir sí o no, sugiere dónde puede estar la carpeta. B dice \"No\" sobre otra cosa; C repite \"blue\"; D es una trampa de sonido parecido (folder / folded)."
+  }
+ }
+}

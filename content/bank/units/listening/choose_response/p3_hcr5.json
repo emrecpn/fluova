@@ -1,0 +1,29 @@
+{
+ "id": "p3_hcr5",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "essay extension",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_hcr5",
+  "audio": [
+   {
+    "text": "How did it go when you asked for an extension on your essay?",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "I went there by bus early this morning.",
+   "She gave me until Monday for the essay, so I can breathe again.",
+   "The essay has to be at least three thousand words long, not counting notes.",
+   "Yes, I asked her right after class."
+  ],
+  "answer": 1,
+  "why": {
+   "en": "\"How did it go\" → the result; \"I can breathe again\" shows relief. A repeats \"go\" literally; D answers a how-question with \"Yes\".",
+   "tr": "\"How did it go\" → sonuç; \"I can breathe again\" rahatladığını gösteriyor. A \"go\" kelimesini gerçek anlamıyla tekrar ediyor; D \"nasıl\" sorusuna \"Yes\" ile cevap veriyor.",
+   "es": "\"How did it go\" → el resultado; \"I can breathe again\" muestra alivio. A repite \"go\" en sentido literal; D responde \"Yes\" a una pregunta de \"cómo\"."
+  }
+ }
+}

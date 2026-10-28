@@ -1,0 +1,52 @@
+{
+ "id": "p3_ann_shuttle_timetable",
+ "task": "announcement",
+ "tier": "medium",
+ "topic": "shuttle timetable",
+ "origin": "practice-03",
+ "screen": {
+  "type": "listening",
+  "title": "Announcement: New shuttle timetable",
+  "prompt": "Listen to an announcement at a campus shuttle stop.",
+  "audio": [
+   {
+    "text": "Attention, passengers. From Monday, the campus shuttle will follow a new timetable. Buses will run every ten minutes between eight and ten a.m., when most classes begin, and every twenty minutes for the rest of the day. The last shuttle will now leave the library at eleven p.m., an hour later than before. Paper copies of the timetable are available at the information desk.",
+    "voice": "male:gb"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p3_ann_shuttle_timetable_q1",
+    "stem": "Why will buses run more often in the early morning?",
+    "options": [
+     "The library opens at eight o'clock",
+     "Fewer drivers work in the afternoon",
+     "Many students are traveling to class then",
+     "The old timetable caused long delays at most stops"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Reason (paraphrase of \"when most classes begin\"). A and B are never said; D invents a problem with the old timetable.",
+     "tr": "Sebep (\"when most classes begin\" ifadesinin parafrazı). A ve B hiç söylenmiyor; D eski tarifeyle ilgili bir sorun uyduruyor.",
+     "es": "Motivo (paráfrasis de \"when most classes begin\"). A y B nunca se dicen; D se inventa un problema del horario anterior."
+    }
+   },
+   {
+    "id": "p3_ann_shuttle_timetable_q2",
+    "stem": "What is true about the last shuttle of the day?",
+    "options": [
+     "It will start from the information desk",
+     "It will leave later than it does now",
+     "It will run every twenty minutes",
+     "It will no longer stop at the library"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail (paraphrase of \"an hour later than before\"). A misuses \"information desk\", where the timetables are handed out; D contradicts \"leave the library\".",
+     "tr": "Ayrıntı (\"an hour later than before\" ifadesinin parafrazı). A tarifelerin dağıtıldığı \"information desk\" ifadesini yanlış kullanıyor; D \"leave the library\" bilgisiyle çelişiyor.",
+     "es": "Detalle (paráfrasis de \"an hour later than before\"). A usa mal \"information desk\", donde se reparten los horarios; D contradice \"leave the library\"."
+    }
+   }
+  ]
+ }
+}

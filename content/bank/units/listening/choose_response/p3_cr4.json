@@ -1,0 +1,29 @@
+{
+ "id": "p3_cr4",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "museum trip",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_cr4",
+  "audio": [
+   {
+    "text": "How many people signed up for the museum trip?",
+    "voice": "male:us"
+   }
+  ],
+  "options": [
+   "I signed the form this morning.",
+   "Almost thirty people, so we'll need a bigger bus.",
+   "It opens at ten o'clock on weekends.",
+   "Yes, I've been to that museum twice with my class."
+  ],
+  "answer": 1,
+  "why": {
+   "en": "\"How many\" → a number. A repeats \"signed\" in another sense; C gives a time; D answers with \"Yes\".",
+   "tr": "\"How many\" → sayı. A \"signed\" kelimesini başka anlamda tekrar ediyor; C saat veriyor; D \"Yes\" ile cevap veriyor.",
+   "es": "\"How many\" → una cantidad. A repite \"signed\" con otro sentido; C da una hora; D responde \"Yes\"."
+  }
+ }
+}

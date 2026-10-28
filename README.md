@@ -72,7 +72,7 @@ The same checks run on every pull request, and a test with a critical finding ca
 
 ## Question bank
 
-All content lives in a shared **question bank** (`content/bank/`), one small file per passage, conversation or task. Fixed tests are recipes of bank units, and **New test** on the start page assembles a fresh test in your browser from questions you have not seen yet. It uses no AI and no server, and the result still follows the 2026 blueprint and passes the quality gate. Today the bank holds two full tests' worth of questions. **Every unit you add makes every new test more varied: see [CONTRIBUTING.md](CONTRIBUTING.md#question-bank).**
+All content lives in a shared **question bank** (`content/bank/`), one small file per passage, conversation or task. Fixed tests are recipes of bank units, and **New test** on the start page assembles a fresh test in your browser from questions you have not seen yet. It uses no AI and no server, and the result still follows the 2026 blueprint and passes the quality gate. Today the bank holds four full tests' worth of questions (256 units). **Every unit you add makes every new test more varied: see [CONTRIBUTING.md](CONTRIBUTING.md#question-bank).**
 
 ## Making a new test
 

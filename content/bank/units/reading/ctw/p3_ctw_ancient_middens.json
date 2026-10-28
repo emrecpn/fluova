@@ -1,0 +1,12 @@
+{
+ "id": "p3_ctw_ancient_middens",
+ "task": "ctw",
+ "tier": "medium",
+ "topic": "ancient middens",
+ "origin": "practice-03",
+ "screen": {
+  "type": "ctw",
+  "title": "Complete the Words: Ancient rubbish heaps",
+  "source": "Some of the most useful evidence that archaeologists study comes from ancient piles of household waste. These piles, known as middens, grew over many years as people threw away shells, bones, broken pots, and ashes from their fires. Because new layers were added on top of older ones, a midden works like a calendar of daily life. By examining each layer in turn, researchers can tell which foods people ate and how their diet changed over time. In this way, objects that once seemed worthless now help explain how whole communities lived."
+ }
+}

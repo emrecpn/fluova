@@ -1,0 +1,12 @@
+{
+ "id": "p3_ctw_salmon_homing",
+ "task": "ctw",
+ "tier": "easy",
+ "topic": "salmon migration",
+ "origin": "practice-03",
+ "screen": {
+  "type": "ctw",
+  "title": "Complete the Words: Salmon going home",
+  "source": "Many salmon begin their lives in small rivers that are far away from the sea. When the young fish are big enough, they swim down the river to the ocean. They stay there for a few years, eating a lot and growing fast. Then they do something amazing: they swim all the way back to the same river where they were born. Scientists think that the fish use the smell of the water to find their way home."
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "id": "p3_cr1",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "lab report deadline",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_cr1",
+  "audio": [
+   {
+    "text": "When is the deadline for the physics lab report?",
+    "voice": "female:us"
+   }
+  ],
+  "options": [
+   "In the lab on the third floor.",
+   "I already reported the problem to the instructor.",
+   "The lab report is due next Thursday by noon.",
+   "Yes, the physics lab is really hard."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "\"When\" → a time. A answers \"where\"; B repeats \"report\" with a different meaning; D answers a yes/no question nobody asked.",
+   "tr": "\"When\" → zaman. A \"nerede\" sorusunu cevaplıyor; B \"report\" kelimesini başka anlamda tekrar ediyor; D sorulmamış bir evet/hayır sorusuna cevap veriyor.",
+   "es": "\"When\" → un momento. A responde a \"where\"; B repite \"report\" con otro significado; D responde a una pregunta de sí/no que nadie hizo."
+  }
+ }
+}

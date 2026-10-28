@@ -1,0 +1,27 @@
+{
+ "id": "p3_bs5",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "library architect",
+ "origin": "practice-03",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p3_bs5",
+  "personA": "Who is that woman talking to the dean?",
+  "frame": [
+   "She's",
+   null,
+   null,
+   null,
+   null,
+   "the new library."
+  ],
+  "answer": [
+   "the architect",
+   "whose",
+   "firm",
+   "designed"
+  ],
+  "distractors": []
+ }
+}

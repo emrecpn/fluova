@@ -1,0 +1,12 @@
+{
+ "id": "p3_ctw_metal_fatigue",
+ "task": "ctw",
+ "tier": "hard",
+ "topic": "metal fatigue",
+ "origin": "practice-03",
+ "screen": {
+  "type": "ctw",
+  "title": "Complete the Words: Metal fatigue",
+  "source": "Engineers have long recognized that metal components can fail suddenly even when the loads applied to them remain well below the strength measured in laboratory tests. This phenomenon, termed fatigue, results from repeated cycles of stress rather than from a single excessive force. Each cycle may slightly enlarge microscopic cracks that originate at scratches, sharp corners, or internal defects. Because the damage accumulates invisibly, a component can appear perfectly sound until the remaining material becomes too small to support the load. Consequently, designers specify regular inspections and smooth, rounded transitions that reduce local concentrations of stress."
+ }
+}

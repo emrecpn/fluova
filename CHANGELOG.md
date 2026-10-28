@@ -1,6 +1,8 @@
 # Changelog
 
 ## Unreleased
+- Practice Tests 3 and 4: 128 new bank units, each set checked by an independent solver without the key (0 disagreements in 192 items)
+- `bank.js` flags near-duplicate units across batches
 - Answer keys checked by an independent solver that never saw them: 0 disagreements in 192 questions; 12 unclear items fixed
 - Correct options are no longer usually the longest (60% → 20% in `pilot-01`, 49% → 17% in `practice-02`); the linter now checks this and the A–D balance
 - Answer explanations in Spanish

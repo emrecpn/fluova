@@ -1,0 +1,20 @@
+{
+ "id": "p3_email",
+ "task": "email",
+ "tier": "medium",
+ "topic": "newspaper correction",
+ "origin": "practice-03",
+ "screen": {
+  "type": "writing",
+  "id": "p3_email",
+  "kind": "email",
+  "minutes": 7,
+  "wordTarget": {
+   "en": "Cover all three points in full sentences. Do not forget a closing.",
+   "tr": "Üç maddenin hepsini karşıla; tam cümleler kur. Kapanışı unutma.",
+   "es": "Cubre los tres puntos con oraciones completas. No olvides la despedida."
+  },
+  "prompt": "Write an email to the editor of the student newspaper. In your email, do the following: (1) Thank the editor for the article and say what it was about. (2) Explain the mistake and the problem it is causing. (3) Ask the newspaper to correct it in a specific way.",
+  "scenario": "You lead the debate club at your university. Last week, the student newspaper published a friendly article about the club, but it gave the wrong date and room for the club's public debate next month. Several students have already told you that they plan to come on the wrong day."
+ }
+}

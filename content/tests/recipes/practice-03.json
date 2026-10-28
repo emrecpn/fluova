@@ -1,0 +1,100 @@
+{
+ "id": "practice-03",
+ "title": "Fluova Practice Test 3",
+ "version": "1.0.0",
+ "level": "real",
+ "authors": [
+  "Fluova contributors"
+ ],
+ "sections": {
+  "reading": {
+   "screens": [
+    "p3_ctw_twinkling_stars",
+    "p3_ctw_ancient_middens",
+    "p3_dl_graduation_photos",
+    "p3_dl_microscope_booking",
+    "p3_ac_three_field_system"
+   ],
+   "hard": [
+    "p3_ctw_metal_fatigue",
+    "p3_dl_course_withdrawal",
+    "p3_ac_weak_ties"
+   ],
+   "easy": [
+    "p3_ctw_salmon_homing",
+    "p3_dl_fitness_signup",
+    "p3_ac_ocean_light"
+   ]
+  },
+  "listening": {
+   "screens": [
+    "p3_cr2",
+    "p3_cr1",
+    "p3_cr4",
+    "p3_cr3",
+    "p3_cr6",
+    "p3_cr5",
+    "p3_cr8",
+    "p3_cr7",
+    "p3_cr9",
+    "p3_conv_room_swap",
+    "p3_conv_tutoring_center",
+    "p3_conv_radio_show",
+    "p3_ann_shuttle_timetable",
+    "p3_ann_study_abroad",
+    "p3_talk_pianoforte"
+   ],
+   "hard": [
+    "p3_hcr2",
+    "p3_hcr5",
+    "p3_hcr3",
+    "p3_hcr8",
+    "p3_hcr1",
+    "p3_hcr7",
+    "p3_hcr4",
+    "p3_hcr6",
+    "p3_conv_scholarship_letter",
+    "p3_conv_news_story",
+    "p3_ann_lab_safety",
+    "p3_talk_bird_navigation",
+    "p3_talk_planet_transits"
+   ],
+   "easy": [
+    "p3_ecr2",
+    "p3_ecr5",
+    "p3_ecr3",
+    "p3_ecr8",
+    "p3_ecr1",
+    "p3_ecr7",
+    "p3_ecr6",
+    "p3_ecr4",
+    "p3_conv_garden_volunteers",
+    "p3_ann_club_funding",
+    "p3_talk_hillside_terraces"
+   ]
+  },
+  "writing": {
+   "screens": [
+    "p3_bs3",
+    "p3_bs6",
+    "p3_bs1",
+    "p3_bs8",
+    "p3_bs4",
+    "p3_bs10",
+    "p3_bs7",
+    "p3_bs2",
+    "p3_bs9",
+    "p3_bs5",
+    "p3_email",
+    "p3_disc"
+   ]
+  },
+  "speaking": {
+   "screens": [
+    "p3_lr",
+    "p3_iv"
+   ]
+  }
+ },
+ "notes": "Spec-faithful test assembled from the question bank (all units new). Explanations in English, Turkish and Spanish."
+}

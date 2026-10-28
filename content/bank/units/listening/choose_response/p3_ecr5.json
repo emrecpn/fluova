@@ -1,0 +1,29 @@
+{
+ "id": "p3_ecr5",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "offering tea",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_ecr5",
+  "audio": [
+   {
+    "text": "Would you like some tea?",
+    "voice": "female:au"
+   }
+  ],
+  "options": [
+   "Yes, please. Just a little.",
+   "I really like the teacher.",
+   "In the kitchen, I think.",
+   "It's a big green cup from home."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Offer → acceptance. B is a sound-alike trap (tea / teacher); C answers \"where\".",
+   "tr": "Teklif → kabul. B ses benzerliği tuzağı (tea / teacher); C \"nerede\" sorusuna cevap veriyor.",
+   "es": "Ofrecimiento → aceptación. B es una trampa de sonido parecido (tea / teacher); C responde a \"where\"."
+  }
+ }
+}

@@ -1,0 +1,99 @@
+{
+ "id": "p3_ac_weak_ties",
+ "task": "academic",
+ "tier": "hard",
+ "topic": "weak social ties",
+ "origin": "practice-03",
+ "screen": {
+  "type": "passage",
+  "title": "The Strength of Weak Ties",
+  "directions": "Read an Academic Passage — upper module",
+  "text": [
+   "Sociologists distinguish between strong ties, such as those connecting close friends and relatives, and weak ties, which link acquaintances who interact only occasionally. Intuitively, one might assume that strong ties constitute the more valuable resource, since close contacts are typically more willing to offer assistance.",
+   "A frequently cited study of professional workers, however, found that people who had obtained jobs through personal contacts more often heard about the position from acquaintances than from close friends. The explanation proposed was structural: members of a tightly knit circle tend to know the same people and encounter the same information, whereas acquaintances move in different social circles and can therefore transmit news that would otherwise remain inaccessible.",
+   "Subsequent research has qualified this conclusion. Strong ties appear more influential when information is scarce or when a recommendation requires considerable trust, and the advantage of weak ties seems to depend on the type of labor market. Nevertheless, the central insight, that the value of a connection lies partly in the novelty of what it can provide, has proved remarkably durable."
+  ],
+  "questions": [
+   {
+    "id": "p3_ac_weak_ties_q1",
+    "stem": "What is the passage mainly about?",
+    "options": [
+     "A finding about the value of distant contacts and later limits on it",
+     "How professional workers can turn their acquaintances into close friends",
+     "Why strong ties always outperform weak ties during a job search",
+     "The research methods that sociologists use to measure friendship"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main idea (paraphrase): the weak-ties finding, its explanation and the later qualifications. C contradicts the study; B invents a topic the passage never discusses.",
+     "tr": "Ana fikir (parafraz): zayıf bağlar bulgusu, açıklaması ve sonradan getirilen sınırlamalar. C çalışmayla çelişiyor; B metinde hiç ele alınmayan bir konu uyduruyor.",
+     "es": "Idea principal (paráfrasis): el hallazgo sobre los lazos débiles, su explicación y los matices posteriores. C contradice el estudio; B se inventa un tema que el texto nunca trata."
+    }
+   },
+   {
+    "id": "p3_ac_weak_ties_q2",
+    "stem": "The word \"qualified\" in the passage is closest in meaning to",
+    "options": [
+     "certified",
+     "confirmed",
+     "rejected",
+     "limited"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Vocabulary in context: later research \"qualified\" the conclusion, i.e. limited it by adding conditions. A is another meaning of \"qualified\" that does not fit here; C is too strong, because the central insight survived.",
+     "tr": "Bağlamda kelime: sonraki araştırmalar sonucu \"qualified\" etti, yani koşullar ekleyerek sınırladı. A \"qualified\" kelimesinin buraya uymayan başka bir anlamı; C fazla güçlü, çünkü temel fikir geçerliliğini korudu.",
+     "es": "Vocabulario en contexto: la investigación posterior \"qualified\" la conclusión, es decir, la limitó añadiendo condiciones. A es otro significado de \"qualified\" que aquí no encaja; C es demasiado fuerte, porque la idea central se mantuvo."
+    }
+   },
+   {
+    "id": "p3_ac_weak_ties_q3",
+    "stem": "Why does the author mention that members of a tightly knit circle \"tend to know the same people\"?",
+    "options": [
+     "To argue that close friends are usually unwilling to help",
+     "To explain why close contacts often provide little new information",
+     "To show that the study included too few professional workers",
+     "To describe how acquaintances eventually become close friends"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Author's purpose: it is part of the structural explanation, in which close friends share the same information while acquaintances bring news from other circles. A contradicts \"more willing to offer assistance\".",
+     "tr": "Yazarın amacı: bu, yapısal açıklamanın parçası; yakın arkadaşlar aynı bilgiyi paylaşırken tanıdıklar başka çevrelerden haber getirir. A \"more willing to offer assistance\" bilgisiyle çelişiyor.",
+     "es": "Propósito del autor: forma parte de la explicación estructural: los amigos íntimos comparten la misma información, mientras que los conocidos traen noticias de otros círculos. A contradice \"more willing to offer assistance\"."
+    }
+   },
+   {
+    "id": "p3_ac_weak_ties_q4",
+    "stem": "Based on the passage, in which situation would a strong tie most likely be more useful than a weak one?",
+    "options": [
+     "When news about job openings is easy to find",
+     "When a person wants news from unfamiliar social circles",
+     "When an employer wants a reliable personal reference",
+     "When acquaintances belong to many different groups"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Inference: strong ties matter more \"when a recommendation requires considerable trust\". A is the opposite of \"information is scarce\"; B and D describe situations in which weak ties are the useful ones.",
+     "tr": "Çıkarım: güçlü bağlar \"when a recommendation requires considerable trust\" durumunda daha etkili. A \"information is scarce\" ifadesinin tersi; B ve D zayıf bağların işe yaradığı durumları anlatıyor.",
+     "es": "Inferencia: los lazos fuertes pesan más \"when a recommendation requires considerable trust\". A es lo contrario de \"information is scarce\"; B y D describen situaciones en las que son útiles los lazos débiles."
+    }
+   },
+   {
+    "id": "p3_ac_weak_ties_q5",
+    "stem": "According to the passage, what did the study of professional workers find?",
+    "options": [
+     "Job news came more often from acquaintances than from friends",
+     "Close friends were the most common source of job leads",
+     "Most workers found their jobs without help from any personal contacts",
+     "Acquaintances gave less reliable information than friends"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Detail (paraphrase): people more often heard about the position \"from acquaintances than from close friends\". B reverses the finding; C contradicts \"obtained jobs through personal contacts\".",
+     "tr": "Ayrıntı (parafraz): insanlar iş ilanını daha çok \"from acquaintances than from close friends\" duymuştu. B bulguyu tersine çeviriyor; C \"obtained jobs through personal contacts\" bilgisiyle çelişiyor.",
+     "es": "Detalle (paráfrasis): la gente se enteraba del puesto más a menudo \"from acquaintances than from close friends\". B invierte el hallazgo; C contradice \"obtained jobs through personal contacts\"."
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,27 @@
+{
+ "id": "p3_bs2",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "sports center fees",
+ "origin": "practice-03",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p3_bs2",
+  "personA": "The new sports center opens next month.",
+  "frame": [
+   "I wonder",
+   null,
+   null,
+   null,
+   null,
+   "to use it."
+  ],
+  "answer": [
+   "whether",
+   "students",
+   "will have",
+   "to pay"
+  ],
+  "distractors": []
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "id": "p3_hcr1",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "changed course plans",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_hcr1",
+  "audio": [
+   {
+    "text": "Weren't you planning to take advanced statistics this term?",
+    "voice": "female:gb"
+   }
+  ],
+  "options": [
+   "Yes, statistics is required for nearly every major at this school.",
+   "I was planning to, but it clashed with my lab schedule.",
+   "I planned the trip for the end of term.",
+   "The advanced section meets on Tuesdays."
+  ],
+  "answer": 1,
+  "why": {
+   "en": "Negative question → \"I was, but...\" explains the change of plan. A says \"Yes\" about a different point; C repeats \"plan\" and \"term\" with no link to the course.",
+   "tr": "Olumsuz soru → \"I was, but...\" plan değişikliğini açıklıyor. A başka bir konuda \"Yes\" diyor; C \"plan\" ve \"term\" kelimelerini dersle ilgisiz biçimde tekrar ediyor.",
+   "es": "Pregunta negativa → \"I was, but...\" explica el cambio de planes. A dice \"Yes\" sobre otra cosa; C repite \"plan\" y \"term\" sin relación con la asignatura."
+  }
+ }
+}

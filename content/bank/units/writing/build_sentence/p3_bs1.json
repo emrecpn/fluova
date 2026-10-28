@@ -1,0 +1,29 @@
+{
+ "id": "p3_bs1",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "meeting budget question",
+ "origin": "practice-03",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p3_bs1",
+  "personA": "You missed the club meeting this morning, didn't you?",
+  "frame": [
+   "Yes. Could you",
+   null,
+   null,
+   null,
+   null,
+   "about the budget?"
+  ],
+  "answer": [
+   "tell me",
+   "what",
+   "the committee",
+   "decided"
+  ],
+  "distractors": [
+   "did"
+  ]
+ }
+}

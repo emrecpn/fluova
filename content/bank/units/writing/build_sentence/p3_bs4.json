@@ -1,0 +1,27 @@
+{
+ "id": "p3_bs4",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "film choice",
+ "origin": "practice-03",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p3_bs4",
+  "personA": "Which film are we watching tonight?",
+  "frame": [
+   "The one",
+   null,
+   null,
+   null,
+   null,
+   "last week."
+  ],
+  "answer": [
+   "that",
+   "our professor",
+   "recommended",
+   "to us"
+  ],
+  "distractors": []
+ }
+}

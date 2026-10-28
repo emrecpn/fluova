@@ -1,0 +1,29 @@
+{
+ "id": "p3_ecr3",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "guest speaker",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_ecr3",
+  "audio": [
+   {
+    "text": "Who is giving the talk today?",
+    "voice": "female:gb"
+   }
+  ],
+  "options": [
+   "In the main lecture hall.",
+   "A visiting professor.",
+   "At two o'clock.",
+   "I gave it to her."
+  ],
+  "answer": 1,
+  "why": {
+   "en": "\"Who\" → a person. A gives a place; D repeats \"give\".",
+   "tr": "\"Who\" → kişi. A yer veriyor; D \"give\" kelimesini tekrar ediyor.",
+   "es": "\"Who\" → una persona. A da un lugar; D repite \"give\"."
+  }
+ }
+}

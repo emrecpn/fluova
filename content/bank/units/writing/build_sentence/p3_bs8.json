@@ -1,0 +1,27 @@
+{
+ "id": "p3_bs8",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "finished essay",
+ "origin": "practice-03",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p3_bs8",
+  "personA": "I've finally finished my history essay.",
+  "frame": [
+   "Great!",
+   null,
+   null,
+   null,
+   null,
+   "it to Professor Ruiz?"
+  ],
+  "answer": [
+   "When",
+   "are",
+   "you",
+   "sending"
+  ],
+  "distractors": []
+ }
+}

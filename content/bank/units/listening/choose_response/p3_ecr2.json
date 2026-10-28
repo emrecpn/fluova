@@ -1,0 +1,29 @@
+{
+ "id": "p3_ecr2",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "lab hours",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_ecr2",
+  "audio": [
+   {
+    "text": "What time does the lab open?",
+    "voice": "male:au"
+   }
+  ],
+  "options": [
+   "In Room 12.",
+   "Yes, it's open.",
+   "At eight thirty.",
+   "It's a big lab."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "\"What time\" → a time. A gives a place; B answers with \"Yes\".",
+   "tr": "\"What time\" → saat. A yer veriyor; B \"Yes\" ile cevap veriyor.",
+   "es": "\"What time\" → una hora. A da un lugar; B responde \"Yes\"."
+  }
+ }
+}

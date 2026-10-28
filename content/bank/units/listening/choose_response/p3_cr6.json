@@ -1,0 +1,29 @@
+{
+ "id": "p3_cr6",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "laptop advice",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_cr6",
+  "audio": [
+   {
+    "text": "Which of these two laptops would you recommend for writing papers?",
+    "voice": "male:au"
+   }
+  ],
+  "options": [
+   "I wrote my last paper on a completely different topic.",
+   "Yes, I'd happily recommend it to anyone.",
+   "The lighter laptop, since you'll carry it to class.",
+   "The store closes at nine o'clock tonight."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "\"Which\" → a choice. A repeats \"writing\" and \"papers\" in another sense; B answers a which-question with \"Yes\".",
+   "tr": "\"Which\" → seçim. A \"writing\" ve \"papers\" kelimelerini başka anlamda tekrar ediyor; B \"hangisi\" sorusuna \"Yes\" ile cevap veriyor.",
+   "es": "\"Which\" → una elección. A repite \"writing\" y \"papers\" con otro sentido; B responde \"Yes\" a una pregunta de \"cuál\"."
+  }
+ }
+}

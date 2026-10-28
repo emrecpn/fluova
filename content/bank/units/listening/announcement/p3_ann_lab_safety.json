@@ -1,0 +1,52 @@
+{
+ "id": "p3_ann_lab_safety",
+ "task": "announcement",
+ "tier": "hard",
+ "topic": "lab safety training",
+ "origin": "practice-03",
+ "screen": {
+  "type": "listening",
+  "title": "Announcement: Lab safety training",
+  "prompt": "Listen to an announcement in a chemistry class.",
+  "audio": [
+   {
+    "text": "Before next week's first lab, everyone must complete our two-part safety training. Part one is an online module, which takes about forty minutes and ends with a short quiz. Part two is a hands-on session in the lab. Your access card will open the lab door only once both parts are recorded, and records can take up to two days to update, so please don't leave the quiz until the night before.",
+    "voice": "male:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p3_ann_lab_safety_q1",
+    "stem": "What is the announcement mainly about?",
+    "options": [
+     "Steps students must complete before using the lab",
+     "A change to the date of the first lab session",
+     "Problems that students have had with access cards",
+     "How the safety quiz will count toward the final grade"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main topic: the two-part training required before lab access. C misuses \"access card\", which is only how the rule is enforced; D invents a grading rule.",
+     "tr": "Ana konu: laboratuvara girmeden önce gereken iki aşamalı eğitim. C kuralın uygulanma biçimi olan \"access card\" ifadesini yanlış kullanıyor; D olmayan bir notlandırma kuralı uyduruyor.",
+     "es": "Tema principal: la formación en dos partes necesaria antes de entrar al laboratorio. C usa mal \"access card\", que solo es cómo se aplica la norma; D se inventa una regla de calificación."
+    }
+   },
+   {
+    "id": "p3_ann_lab_safety_q2",
+    "stem": "Why does the speaker tell students not to wait until the night before?",
+    "options": [
+     "The online module closes on the weekend",
+     "The quiz is harder than it looks",
+     "Their card might not open the door in time",
+     "Hands-on sessions fill up quickly"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Inference: records \"can take up to two days to update\", so a last-minute quiz could leave a student locked out of the first lab. D gives a reason the speaker never mentions.",
+     "tr": "Çıkarım: kayıtlar \"can take up to two days to update\", yani son gece çözülen sınav öğrenciyi ilk laboratuvarda kapıda bırakabilir. D konuşmacının hiç söylemediği bir gerekçe.",
+     "es": "Inferencia: los registros \"can take up to two days to update\", así que hacer la prueba la víspera podría dejar al estudiante sin acceso al primer laboratorio. D da un motivo que el hablante nunca menciona."
+    }
+   }
+  ]
+ }
+}

@@ -1,0 +1,29 @@
+{
+ "id": "p3_ecr6",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "closed café",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_ecr6",
+  "audio": [
+   {
+    "text": "Why is the café closed?",
+    "voice": "male:gb"
+   }
+  ],
+  "options": [
+   "Yes, it's closed.",
+   "The owner is on holiday.",
+   "Until next Monday.",
+   "It's near the bank."
+  ],
+  "answer": 1,
+  "why": {
+   "en": "\"Why\" → a reason. A answers with \"Yes\"; C says until when, not why.",
+   "tr": "\"Why\" → sebep. A \"Yes\" ile cevap veriyor; C neden değil, ne zamana kadar olduğunu söylüyor.",
+   "es": "\"Why\" → un motivo. A responde \"Yes\"; C dice hasta cuándo, no por qué."
+  }
+ }
+}

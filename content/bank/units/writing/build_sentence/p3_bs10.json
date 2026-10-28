@@ -1,0 +1,27 @@
+{
+ "id": "p3_bs10",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "steep path",
+ "origin": "practice-03",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p3_bs10",
+  "personA": "How was the walk up to the old castle?",
+  "frame": [
+   "The path was",
+   null,
+   null,
+   null,
+   null,
+   "the top."
+  ],
+  "answer": [
+   "so",
+   "steep",
+   "that",
+   "we never reached"
+  ],
+  "distractors": []
+ }
+}

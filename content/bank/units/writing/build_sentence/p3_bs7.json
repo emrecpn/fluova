@@ -1,0 +1,29 @@
+{
+ "id": "p3_bs7",
+ "task": "build_sentence",
+ "tier": "medium",
+ "topic": "welcome party planning",
+ "origin": "practice-03",
+ "screen": {
+  "type": "sentence_dialogue",
+  "id": "p3_bs7",
+  "personA": "Who is organizing the welcome party this year?",
+  "frame": [
+   "It",
+   null,
+   null,
+   null,
+   null,
+   "from the student council."
+  ],
+  "answer": [
+   "is",
+   "being",
+   "planned",
+   "by volunteers"
+  ],
+  "distractors": [
+   "planning"
+  ]
+ }
+}

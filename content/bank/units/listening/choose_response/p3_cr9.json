@@ -1,0 +1,29 @@
+{
+ "id": "p3_cr9",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "presentation order",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_cr9",
+  "audio": [
+   {
+    "text": "Would you rather present first or last on Friday?",
+    "voice": "female:au"
+   }
+  ],
+  "options": [
+   "Yes, I'd rather present on Friday.",
+   "I gave her a present for her birthday last week.",
+   "Last, if that gives me more time to practice.",
+   "Friday's session is in Room 5."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "Either/or question → a choice with a reason. A answers \"Yes\" to a choice; B uses \"present\" as a noun (a gift).",
+   "tr": "\"Ya o ya bu\" sorusu → gerekçeli seçim. A seçim sorusuna \"Yes\" diyor; B \"present\" kelimesini isim (hediye) anlamında kullanıyor.",
+   "es": "Pregunta de \"esto o aquello\" → una elección con un motivo. A responde \"Yes\" a una elección; B usa \"present\" como sustantivo (regalo)."
+  }
+ }
+}

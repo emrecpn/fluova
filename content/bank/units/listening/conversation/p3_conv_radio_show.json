@@ -1,0 +1,68 @@
+{
+ "id": "p3_conv_radio_show",
+ "task": "conversation",
+ "tier": "medium",
+ "topic": "campus radio",
+ "origin": "practice-03",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Hosting a radio show",
+  "prompt": "Listen to a conversation between a student and the manager of the campus radio station.",
+  "audio": [
+   {
+    "text": "Hi, I'm interested in hosting a music show on the station. How do I get started?",
+    "voice": "female:us"
+   },
+   {
+    "text": "Great! New hosts first complete two training sessions on the equipment. After that, you co-host with an experienced student for a month.",
+    "voice": "male:au"
+   },
+   {
+    "text": "A whole month? I was hoping to have my own show this term.",
+    "voice": "female:us"
+   },
+   {
+    "text": "You still might. Training starts next week, so if it goes well, you'd have your own slot by November. Late-night slots are the easiest to get, though.",
+    "voice": "male:au"
+   },
+   {
+    "text": "Honestly, I don't mind staying up late. Sign me up.",
+    "voice": "female:us"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p3_conv_radio_show_q1",
+    "stem": "What is the conversation mainly about?",
+    "options": [
+     "What a student must do before hosting her own show",
+     "How the station decides what music to play",
+     "Why the station needs new recording equipment",
+     "When the station's first program will air"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Main topic: the steps (training, then co-hosting) before she can have her own show. C misuses \"equipment\", which is only what the training covers.",
+     "tr": "Ana konu: kendi programını yapabilmesi için gereken adımlar (önce eğitim, sonra ortak sunuculuk). C \"equipment\" kelimesini yanlış kullanıyor; ekipman yalnızca eğitimin konusu.",
+     "es": "Tema principal: los pasos (formación y luego copresentar) antes de tener su propio programa. C usa mal \"equipment\", que solo es el contenido de la formación."
+    }
+   },
+   {
+    "id": "p3_conv_radio_show_q2",
+    "stem": "What does the woman imply when she says, \"I don't mind staying up late\"?",
+    "options": [
+     "She usually prefers to study late at night",
+     "She hopes to skip the two training sessions entirely",
+     "She plans to co-host for only one week",
+     "She will accept a time slot others may not want"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Implication: late-night slots are \"the easiest to get\", so she is willing to take a less popular time to get her own show sooner. B contradicts her agreement to sign up for the training.",
+     "tr": "İma: gece geç saatler \"the easiest to get\", yani kendi programına daha erken sahip olmak için daha az tercih edilen bir saati kabul ediyor. B eğitime kaydolmayı kabul etmesiyle çelişiyor.",
+     "es": "Implicación: las franjas de madrugada son \"the easiest to get\", así que acepta un horario menos deseado para tener antes su propio programa. B contradice que acepte apuntarse a la formación."
+    }
+   }
+  ]
+ }
+}

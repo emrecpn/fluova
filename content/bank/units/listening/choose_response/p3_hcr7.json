@@ -1,0 +1,29 @@
+{
+ "id": "p3_hcr7",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "grant decision",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_hcr7",
+  "audio": [
+   {
+    "text": "Shouldn't we have heard back about the grant by now?",
+    "voice": "female:gb"
+   }
+  ],
+  "options": [
+   "I heard the band play in the park last night.",
+   "Yes, we should go back to the library.",
+   "The grant was for three thousand dollars.",
+   "They said decisions could take another couple of weeks."
+  ],
+  "answer": 3,
+  "why": {
+   "en": "Negative question expressing worry → an explanation for the delay. A repeats \"heard\" literally; B repeats \"should\" and \"back\" in a different sense.",
+   "tr": "Endişe bildiren olumsuz soru → gecikmeye bir açıklama. A \"heard\" kelimesini gerçek anlamıyla tekrar ediyor; B \"should\" ve \"back\" kelimelerini başka anlamda tekrar ediyor.",
+   "es": "Pregunta negativa que expresa preocupación → una explicación del retraso. A repite \"heard\" en sentido literal; B repite \"should\" y \"back\" con otro sentido."
+  }
+ }
+}

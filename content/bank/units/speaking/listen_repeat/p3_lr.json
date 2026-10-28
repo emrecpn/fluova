@@ -1,0 +1,26 @@
+{
+ "id": "p3_lr",
+ "task": "listen_repeat",
+ "tier": "medium",
+ "topic": "lab safety rules",
+ "origin": "practice-03",
+ "screen": {
+  "type": "listen_repeat",
+  "id": "p3_lr",
+  "scenario": {
+   "title": "Lab safety training",
+   "place": "Chemistry teaching laboratory",
+   "intro": "You are attending a safety training session before you can use the chemistry teaching lab. The instructor is explaining the lab rules. Listen and repeat what the instructor says."
+  },
+  "voice": "male",
+  "sentences": [
+   "Please put your bags away.",
+   "Always wear your safety glasses here.",
+   "Food and drinks are not allowed in here.",
+   "Please tie back long hair before you start any experiment.",
+   "If you spill anything, tell me right away instead of cleaning it yourself.",
+   "The emergency exits are marked in green, and there is a map beside each door.",
+   "Before you leave each session, check that the gas taps are closed and that your bench is clean for the next group."
+  ]
+ }
+}

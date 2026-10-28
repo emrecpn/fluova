@@ -1,0 +1,67 @@
+{
+ "id": "p3_dl_microscope_booking",
+ "task": "daily_life",
+ "tier": "medium",
+ "topic": "lab equipment booking",
+ "origin": "practice-03",
+ "screen": {
+  "type": "passage",
+  "title": "Lab email: booking the microscopes",
+  "directions": "Read in Daily Life (email)",
+  "text": [
+   "<strong>From:</strong> Lena Hoffmann, Biology Lab Coordinator<br><strong>To:</strong> Biology 210 students<br><strong>Subject:</strong> Booking the microscopes",
+   "Hi all, starting next week, the four digital microscopes in Room 118 must be booked through the department's online calendar instead of the paper sign-up sheet. Each booking can last up to two hours, and you may hold only one future booking at a time. If you can't use your slot, please cancel it at least a day ahead so that classmates can take it. Students who miss two bookings without cancelling will lose access for the rest of the month.",
+   "— Lena"
+  ],
+  "questions": [
+   {
+    "id": "p3_dl_microscope_booking_q1",
+    "stem": "Why did Lena write the email?",
+    "options": [
+     "To announce that the microscopes in Room 118 will be replaced",
+     "To ask students to write their names on the paper sign-up sheet",
+     "To describe a new procedure for reserving equipment",
+     "To remind students that their lab reports are due next week"
+    ],
+    "answer": 2,
+    "why": {
+     "en": "Purpose (paraphrase): the email explains the new online booking rules. B describes the old method that is being replaced; A wrongly assumes the microscopes themselves are changing.",
+     "tr": "Amaç (parafraz): e-posta yeni çevrim içi rezervasyon kurallarını açıklıyor. B kaldırılan eski yöntemi anlatıyor; A mikroskopların değiştirileceğini sanıyor.",
+     "es": "Propósito (paráfrasis): el correo explica las nuevas normas de reserva en línea. B describe el método antiguo que se elimina; A supone por error que se cambian los microscopios."
+    }
+   },
+   {
+    "id": "p3_dl_microscope_booking_q2",
+    "stem": "What should a student do if they cannot use a booked slot?",
+    "options": [
+     "Cancel it at least one day in advance",
+     "Give the slot to a classmate",
+     "Email Lena before the session begins",
+     "Book a second slot later in the week"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Detail (close to \"cancel it at least a day ahead\"). B misreads \"so that classmates can take it\": the slot is freed by cancelling, not handed over; D breaks the one-booking rule.",
+     "tr": "Ayrıntı (\"cancel it at least a day ahead\" ifadesine yakın). B \"so that classmates can take it\" kısmını yanlış okuyor: saat iptal edilerek boşaltılır, birine devredilmez; D tek rezervasyon kuralını çiğniyor.",
+     "es": "Detalle (cercano a \"cancel it at least a day ahead\"). B malinterpreta \"so that classmates can take it\": el turno se libera cancelándolo, no se cede; D incumple la regla de una sola reserva."
+    }
+   },
+   {
+    "id": "p3_dl_microscope_booking_q3",
+    "stem": "What is true about the new booking rules?",
+    "options": [
+     "Bookings longer than two hours need special permission",
+     "Students who cancel twice will lose access for a month",
+     "The paper sign-up sheet can still be used in emergencies",
+     "A student cannot reserve several future sessions at once"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Detail from \"you may hold only one future booking at a time\". B changes the rule: access is lost for missing bookings without cancelling, not for cancelling; A adds a permission that is never mentioned.",
+     "tr": "\"You may hold only one future booking at a time\" ifadesinden çıkarım. B kuralı değiştiriyor: erişim, iptal etmeden gelmemek yüzünden kaybedilir, iptal etmek yüzünden değil; A hiç söz edilmeyen bir izin ekliyor.",
+     "es": "Detalle a partir de \"you may hold only one future booking at a time\". B cambia la norma: el acceso se pierde por faltar sin cancelar, no por cancelar; A añade un permiso que nunca se menciona."
+    }
+   }
+  ]
+ }
+}

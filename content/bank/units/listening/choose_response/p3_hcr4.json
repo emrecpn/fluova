@@ -1,0 +1,29 @@
+{
+ "id": "p3_hcr4",
+ "task": "choose_response",
+ "tier": "hard",
+ "topic": "setting up chairs",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_hcr4",
+  "audio": [
+   {
+    "text": "I could use a hand setting up the chairs for tonight's talk.",
+    "voice": "male:gb"
+   }
+  ],
+  "options": [
+   "Tonight's talk starts at seven, I believe.",
+   "The music in there was a bit too loud for me.",
+   "Give me five minutes and I'll be right over.",
+   "Yes, I'd like to give a talk someday."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "Idiom: \"I could use a hand\" = please help me, and the correct reply offers help. A gives a time; B does not respond to the request; D takes \"talk\" in another sense.",
+   "tr": "Deyim: \"I could use a hand\" = yardıma ihtiyacım var; doğru cevap yardım teklif ediyor. A saat veriyor; B isteğe cevap vermiyor; D \"talk\" kelimesini başka anlamda alıyor.",
+   "es": "Expresión: \"I could use a hand\" = necesito ayuda, y la respuesta correcta ofrece ayuda. A da una hora; B no responde a la petición; D toma \"talk\" en otro sentido."
+  }
+ }
+}

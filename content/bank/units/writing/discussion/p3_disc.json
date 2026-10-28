@@ -1,0 +1,33 @@
+{
+ "id": "p3_disc",
+ "task": "discussion",
+ "tier": "medium",
+ "topic": "lecture recording",
+ "origin": "practice-03",
+ "screen": {
+  "type": "writing",
+  "id": "p3_disc",
+  "kind": "discussion",
+  "minutes": 10,
+  "wordTarget": {
+   "en": "At least 100 words. State your opinion, support it, and add your own contribution to the discussion.",
+   "tr": "En az 100 kelime. Görüşünü belirt, destekle ve tartışmaya kendi katkını ekle.",
+   "es": "Al menos 100 palabras. Da tu opinión, justifícala y aporta algo propio a la discusión."
+  },
+  "prompt": "Your professor is teaching a class on education. Write a post responding to the professor's question. Express and support your opinion, and make a contribution to the discussion in your own words.",
+  "professor": {
+   "name": "Okafor",
+   "post": "Many universities are debating whether every lecture should be recorded and posted online. Supporters say recordings help students review difficult material and help those who sometimes have to miss class because of work or family responsibilities. Others worry that if recordings are always available, fewer students will come to class, and discussions in the room will suffer. Should universities require professors to record all of their lectures? Why or why not?"
+  },
+  "students": [
+   {
+    "name": "Lucia",
+    "post": "Yes, I think they should. Before my chemistry exam, I watched two lectures again, and parts I had missed the first time finally made sense. Also, many students have long commutes or part-time jobs. With a recording, missing one bus doesn't mean missing the material."
+   },
+   {
+    "name": "Tomas",
+    "post": "I don't think it should be required. When my statistics professor started posting recordings, attendance dropped by almost half, and the few students who came rarely asked questions. Some professors also feel uncomfortable being recorded. Each professor should decide what works for their own course."
+   }
+  ]
+ }
+}

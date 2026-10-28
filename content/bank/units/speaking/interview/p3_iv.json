@@ -1,0 +1,43 @@
+{
+ "id": "p3_iv",
+ "task": "interview",
+ "tier": "medium",
+ "topic": "student clubs",
+ "origin": "practice-03",
+ "screen": {
+  "type": "interview",
+  "id": "p3_iv",
+  "scenario": {
+   "title": "Research study: how students take part in clubs",
+   "place": "Student activities office",
+   "intro": "A researcher from the sociology department is interviewing students about how they take part in clubs and student organizations."
+  },
+  "interviewerVoice": "male",
+  "questions": [
+   {
+    "level": "factual",
+    "text": "To start, could you tell me whether you belong to any clubs or student groups, and how you first heard about them?",
+    "prep": 3,
+    "respSeconds": 45
+   },
+   {
+    "level": "experience",
+    "text": "Can you describe an event organized by students that you went to, and what made it memorable or disappointing for you?",
+    "prep": 3,
+    "respSeconds": 45
+   },
+   {
+    "level": "opinion",
+    "text": "Some people think universities should give student clubs more money, even if that means less funding for other campus services. What is your opinion, and why?",
+    "prep": 3,
+    "respSeconds": 45
+   },
+   {
+    "level": "prediction",
+    "text": "How do you think student clubs will change over the next ten years, especially as more activities move online?",
+    "prep": 3,
+    "respSeconds": 45
+   }
+  ]
+ }
+}

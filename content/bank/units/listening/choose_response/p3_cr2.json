@@ -1,0 +1,29 @@
+{
+ "id": "p3_cr2",
+ "task": "choose_response",
+ "tier": "medium",
+ "topic": "moving boxes",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_cr2",
+  "audio": [
+   {
+    "text": "Could you help me move these boxes to the storage room?",
+    "voice": "male:gb"
+   }
+  ],
+  "options": [
+   "Sure, just let me finish this email first.",
+   "The storage room is down in the basement.",
+   "I'm moving to a new apartment next month.",
+   "They're the boxes from last week's book fair."
+  ],
+  "answer": 0,
+  "why": {
+   "en": "Request → agreement with a short delay. B answers \"where\" and repeats \"storage room\"; C repeats \"move\" with a different meaning.",
+   "tr": "Rica → kısa bir gecikmeyle kabul. B \"nerede\" sorusuna cevap veriyor ve \"storage room\" ifadesini tekrar ediyor; C \"move\" kelimesini başka anlamda kullanıyor.",
+   "es": "Petición → aceptación con un pequeño retraso. B responde a \"where\" y repite \"storage room\"; C repite \"move\" con otro significado."
+  }
+ }
+}

@@ -1,0 +1,52 @@
+{
+ "id": "p3_ann_club_funding",
+ "task": "announcement",
+ "tier": "easy",
+ "topic": "club funding",
+ "origin": "practice-03",
+ "screen": {
+  "type": "listening",
+  "title": "Announcement: Club funding forms",
+  "prompt": "Listen to an announcement in the student center.",
+  "audio": [
+   {
+    "text": "Hello, club leaders. Funding forms for next term are due this Friday at five p.m. You can pick up a form at the Student Activities desk or download it from our website. Please list everything your club plans to buy. Late forms will not be accepted. Thank you.",
+    "voice": "female:gb"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p3_ann_club_funding_q1",
+    "stem": "Who is the announcement for?",
+    "options": [
+     "Students who lead clubs",
+     "New students on campus",
+     "Staff at the activities desk",
+     "Teachers of evening classes"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Audience: it begins \"Hello, club leaders\". C misuses \"Student Activities desk\", which is where the forms are.",
+     "tr": "Dinleyici kitlesi: duyuru \"Hello, club leaders\" diye başlıyor. C formların bulunduğu yer olan \"Student Activities desk\" ifadesini yanlış kullanıyor.",
+     "es": "Destinatarios: empieza con \"Hello, club leaders\". C usa mal \"Student Activities desk\", que es donde están los formularios."
+    }
+   },
+   {
+    "id": "p3_ann_club_funding_q2",
+    "stem": "What will happen to forms that arrive after Friday?",
+    "options": [
+     "They will be read next term",
+     "They will not be accepted",
+     "They must be sent by email",
+     "They need a teacher's signature"
+    ],
+    "answer": 1,
+    "why": {
+     "en": "Detail: \"Late forms will not be accepted\". A misuses \"next term\", which is when the money will be spent.",
+     "tr": "Ayrıntı: \"Late forms will not be accepted\". A paranın harcanacağı dönemi anlatan \"next term\" ifadesini yanlış kullanıyor.",
+     "es": "Detalle: \"Late forms will not be accepted\". A usa mal \"next term\", que es cuando se gastará el dinero."
+    }
+   }
+  ]
+ }
+}

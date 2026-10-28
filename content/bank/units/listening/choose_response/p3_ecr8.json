@@ -1,0 +1,29 @@
+{
+ "id": "p3_ecr8",
+ "task": "choose_response",
+ "tier": "easy",
+ "topic": "closing the door",
+ "origin": "practice-03",
+ "screen": {
+  "type": "choose_response",
+  "id": "p3_ecr8",
+  "audio": [
+   {
+    "text": "Can you close the door, please?",
+    "voice": "male:au"
+   }
+  ],
+  "options": [
+   "The door is red.",
+   "It's close to here.",
+   "Sure, no problem.",
+   "I closed my book."
+  ],
+  "answer": 2,
+  "why": {
+   "en": "Request → agreement. B is a sound-alike trap (\"close the door\" / \"close to here\"); D repeats \"close\" about something else.",
+   "tr": "Rica → kabul. B ses benzerliği tuzağı (\"close the door\" / \"close to here\"); D \"close\" kelimesini başka bir şey için tekrar ediyor.",
+   "es": "Petición → aceptación. B es una trampa de sonido parecido (\"close the door\" / \"close to here\"); D repite \"close\" sobre otra cosa."
+  }
+ }
+}

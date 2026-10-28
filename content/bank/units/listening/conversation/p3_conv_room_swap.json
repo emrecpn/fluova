@@ -1,0 +1,68 @@
+{
+ "id": "p3_conv_room_swap",
+ "task": "conversation",
+ "tier": "medium",
+ "topic": "dorm room swap",
+ "origin": "practice-03",
+ "screen": {
+  "type": "listening",
+  "title": "Conversation: Swapping dorm rooms",
+  "prompt": "Listen to a conversation between a student and an employee at the housing office.",
+  "audio": [
+   {
+    "text": "Hi, my friend and I want to switch dorm rooms. She lives in Baker Hall, and I'm in Lin Hall. Is that allowed?",
+    "voice": "female:au"
+   },
+   {
+    "text": "It is, as long as you both agree. Each of you fills out a swap request, and both forms have to reach us in the same week.",
+    "voice": "male:us"
+   },
+   {
+    "text": "Great. Could we move this weekend, then?",
+    "voice": "female:au"
+   },
+   {
+    "text": "Not that fast, I'm afraid. We inspect both rooms first, which usually takes about ten days. Then you'll get an email with a moving date.",
+    "voice": "male:us"
+   },
+   {
+    "text": "Okay. I'll ask her to stop by tomorrow, then.",
+    "voice": "female:au"
+   }
+  ],
+  "questions": [
+   {
+    "id": "p3_conv_room_swap_q1",
+    "stem": "What does the woman want to do?",
+    "options": [
+     "Move out of student housing completely",
+     "Find a room in a quieter residence hall",
+     "Report a problem in her friend's room",
+     "Exchange rooms with a student in another hall"
+    ],
+    "answer": 3,
+    "why": {
+     "en": "Main topic (paraphrase of \"switch dorm rooms\"). B adds a reason that is never mentioned; A goes much further than a swap between two students.",
+     "tr": "Ana konu (\"switch dorm rooms\" ifadesinin parafrazı). B hiç söylenmeyen bir gerekçe ekliyor; A iki öğrenci arasındaki oda değişiminin çok ötesine geçiyor.",
+     "es": "Tema principal (paráfrasis de \"switch dorm rooms\"). B añade un motivo que nunca se menciona; A va mucho más allá de un intercambio entre dos estudiantes."
+    }
+   },
+   {
+    "id": "p3_conv_room_swap_q2",
+    "stem": "What will the woman's friend most likely do next?",
+    "options": [
+     "Submit her own swap request",
+     "Inspect the two rooms with the staff",
+     "Move into Lin Hall this weekend",
+     "Email the office to ask for a date"
+    ],
+    "answer": 0,
+    "why": {
+     "en": "Inference: both students must send a swap request, so the friend will come in to fill out hers. C contradicts \"Not that fast\"; B is the office's job, not the friend's.",
+     "tr": "Çıkarım: iki öğrencinin de değişim talebi göndermesi gerekiyor, bu yüzden arkadaşı kendi formunu doldurmaya gelecek. C \"Not that fast\" ile çelişiyor; B arkadaşın değil ofisin işi.",
+     "es": "Inferencia: los dos estudiantes deben enviar una solicitud, así que la amiga irá a rellenar la suya. C contradice \"Not that fast\"; B es tarea de la oficina, no de la amiga."
+    }
+   }
+  ]
+ }
+}
